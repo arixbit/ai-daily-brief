@@ -1,0 +1,74 @@
+{
+  "date": "2026-04-21",
+  "generated_at": "2026-04-23T12:18:45.892071+00:00",
+  "title": "2026-04-21 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Designing Memory for AI Agents: inside Linkedin’s Cognitive Memory Agent",
+      "title_cn": "LinkedIn 推出认知记忆 Agent：构建 AI 的持久记忆层",
+      "summary_cn": "LinkedIn 推出认知记忆 Agent（CMA），这是一个生成式 AI 基础设施层，旨在解决大语言模型无状态问题。CMA 提供跨情景、语义和程序层的持久记忆，支持多 Agent 协调、检索和生命周期管理，使 AI 应用能够实现生产级个性化和长期上下文保持。",
+      "why_it_matters_cn": "为构建真正具有记忆能力的 AI 系统提供了企业级基础设施方案。",
+      "tags": [
+        "Agent",
+        "记忆架构",
+        "LinkedIn",
+        "基础设施"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/linkedin-cognitive-memory-agent",
+      "published_at": "2026-04-20T14:59:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Subagents in Gemini CLI Enable Task Delegation and Parallel Agent Workflows",
+      "title_cn": "Gemini CLI 推出子 Agent 功能，支持任务委派与并行工作流",
+      "summary_cn": "Google 在 Gemini CLI 中引入子 Agent 功能，允许开发者将复杂或重复性任务委派给专门的 AI Agent，这些子 Agent 可与主会话并行运行。该功能旨在提高开发效率，使复杂任务能够被分解并由多个专用 Agent 协同完成。",
+      "why_it_matters_cn": "提升了 AI Agent 处理复杂任务的能力，推动多 Agent 协作开发模式。",
+      "tags": [
+        "Gemini",
+        "Subagents",
+        "任务委派",
+        "工作流"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/subagents-gemini-cli",
+      "published_at": "2026-04-20T12:26:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Can we AI our way to a more sustainable world?",
+      "title_cn": "AI 能否助力打造更可持续的世界？",
+      "summary_cn": "Microsoft Research 播客邀请可持续性专家 Doug Burger、Amy Luers 和优化研究员 Ishai Menache，探讨数据中心运营、效率提升以及 AI 在电气化、材料和食品系统领域的潜力，分析 AI 对全球排放的影响及其在可持续发展中的角色。",
+      "why_it_matters_cn": "探索 AI 技术在应对气候变化和可持续发展挑战中的潜在价值。",
+      "tags": [
+        "可持续性",
+        "AI 应用",
+        "Microsoft Research",
+        "气候变化"
+      ],
+      "source": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/podcast/can-we-ai-our-way-to-a-more-sustainable-world",
+      "published_at": "2026-04-20T16:24:01+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Google ADK for Java 1.0 Introduces New App and Plugin Architecture, External Tools Support, and More",
+      "title_cn": "Google ADK for Java 1.0 发布：新应用架构与插件系统",
+      "summary_cn": "Google 的 Agent Development Kit for Java 达到 1.0 版本，引入外部工具集成、新应用和插件架构、高级上下文工程、人工介入工作流等功能。此次更新标志着该开发工具包的成熟，为 Java 开发者提供了更完善的 AI Agent 开发能力。",
+      "why_it_matters_cn": "为 Java 生态系统的 AI Agent 开发提供了标准化、企业级的开发框架。",
+      "tags": [
+        "ADK",
+        "Java",
+        "Agent 开发",
+        "Google"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/google-adk-1-0-new-architecture",
+      "published_at": "2026-04-20T10:00:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
