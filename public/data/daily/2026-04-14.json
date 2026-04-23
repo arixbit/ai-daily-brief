@@ -1,0 +1,100 @@
+{
+  "date": "2026-04-14",
+  "generated_at": "2026-04-23T13:16:23.265882+00:00",
+  "title": "2026-04-14 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Anthropic 最强 AI 大模型 Mythos 被指夸大：所谓发现数千个漏洞徒有虚表",
+      "title_cn": "Anthropic 最强 AI 大模型 Mythos 被指夸大：所谓发现数千个漏洞徒有虚表",
+      "summary_cn": "Anthropic 发布 Claude Mythos Preview 大模型，号称最强 AI，宣称能发现数千个安全漏洞，包括 OpenBSD 系统 27 年未被发现的漏洞。但 Tomshardware 研究发现这是夸张宣传，实际基于少量人工审计报告外推，测试漏洞多存在于老旧软件且很多是功能缺陷。Mythos 不开放给公众使用，编程大模型口碑下滑。",
+      "why_it_matters_cn": "暴露 AI 行业营销夸大问题，可能影响市场对 AI 安全能力的真实评估与信任，也反映 Anthropic 口碑下滑的深层原因。",
+      "tags": [
+        "AI 安全",
+        "大模型",
+        "营销争议"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sGTPd3Grpk",
+      "published_at": "2026-04-13T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning",
+      "title_cn": "Gemini Robotics-ER 1.6：增强具身推理赋能真实世界机器人任务",
+      "summary_cn": "Google DeepMind 推出 Gemini Robotics-ER 1.6，通过增强空间推理和多视角理解能力，为自主机器人提供更强支持。该模型旨在提升机器人在真实世界环境中的任务执行能力，通过改进的具身推理机制实现更精准的感知与决策。",
+      "why_it_matters_cn": "推动 AI 从纯软件向物理世界延伸，加速机器人自动化发展，为工业和服务业带来变革性突破。",
+      "tags": [
+        "机器人",
+        "具身 AI",
+        "空间推理"
+      ],
+      "source": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-1-6",
+      "published_at": "2026-04-13T15:52:13+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI 创始人奥尔特曼的住所再遭枪击",
+      "title_cn": "OpenAI 创始人奥尔特曼的住所再遭枪击",
+      "summary_cn": "OpenAI 创始人奥尔特曼的住所当地时间周日早上再次遭袭，两天前曾有人投掷燃烧弹。旧金山警察局逮捕两名嫌疑人，理由是疏忽开枪。初步报告显示，周日凌晨 1 点 40 分，一辆本田轿车内两人经过奥尔特曼住所后停车，副驾驶座上的人伸手窗外似向住所一侧开了一枪。",
+      "why_it_matters_cn": "凸显 AI 行业领袖面临的安全威胁，反映社会对 AI 发展的复杂态度，也暴露科技巨头高管的安全隐患。",
+      "tags": [
+        "OpenAI",
+        "安全事件",
+        "奥尔特曼"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sHrCGbDYTn",
+      "published_at": "2026-04-13T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI：微软限制了我们接触客户的能力",
+      "title_cn": "OpenAI：微软限制了我们接触客户的能力",
+      "summary_cn": "OpenAI 在备忘录中称赞与亚马逊的联盟，称微软「限制了我们接触客户的能力」。这一表态暗示 OpenAI 与微软之间的合作关系出现裂痕，可能影响双方未来的战略方向。OpenAI 正寻求更多独立性和客户接触渠道。",
+      "why_it_matters_cn": "显示 OpenAI 与微软合作紧张，可能重塑 AI 云市场格局，影响大模型商业生态和竞争态势。",
+      "tags": [
+        "OpenAI",
+        "微软",
+        "商业合作"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sIVBq9xg0z",
+      "published_at": "2026-04-13T22:29:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI 将于 2027 年在伦敦设立首个永久性办公室",
+      "title_cn": "OpenAI 将于 2027 年在伦敦设立首个永久性办公室",
+      "summary_cn": "OpenAI 已在英国伦敦国王十字区确定其在伦敦的首个永久性办公室，预计 2027 年启用，可容纳 544 名员工。这一扩张计划显示 OpenAI 正在全球范围内加强其研发和运营能力，可能涉及更多国际人才招募。",
+      "why_it_matters_cn": "显示 OpenAI 全球化战略，伦敦是重要 AI 人才中心，有助于吸引欧洲顶尖工程师和扩大市场影响力。",
+      "tags": [
+        "OpenAI",
+        "全球化",
+        "办公室"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sI8LgYMoIu",
+      "published_at": "2026-04-13T22:29:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "苹果前 AI 负责人将于本周正式离职",
+      "title_cn": "苹果前 AI 负责人将于本周正式离职",
+      "summary_cn": "苹果前机器学习与 AI 战略高级副总裁 John Giannandrea 预计 4 月 15 日正式离开公司。自 2025 年 12 月宣布退休后，他一直处于「顾问」状态，等待股票期权归属。他 2018 年从谷歌加入苹果，负责 Siri 和自动驾驶汽车项目，后扩展至后端机器学习与 AI 功能。其职责已拆分给他人，虽被边缘化，但他奠定的工作基础仍是苹果 AI 野心的核心。",
+      "why_it_matters_cn": "苹果 AI 团队重大人事变动，可能影响其 AI 战略方向和执行力，也标志一个时代的结束和新阶段的开始。",
+      "tags": [
+        "苹果",
+        "AI 战略",
+        "人事变动"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sH2QbXk1OL",
+      "published_at": "2026-04-13T22:29:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
