@@ -1,0 +1,538 @@
+#!/usr/bin/env python3
+"""Generate a Chinese AI daily brief as static JSON data.
+
+The script fetches configured RSS/Atom/API sources, ranks recent AI-related
+items, optionally rewrites them through an OpenAI-compatible local model, and
+writes files consumed by the static website.
+"""
+
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import email.utils
+import html
+import json
+import os
+import re
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+
+
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_CONFIG = ROOT / "config" / "sources.json"
+DEFAULT_OUTPUT = ROOT / "public" / "data"
+USER_AGENT = "ai-daily-brief/0.1 (+https://ai.arixbit.me)"
+
+
+@dataclass(frozen=True)
+class NewsItem:
+    """Normalized source item before Chinese brief generation."""
+
+    title: str
+    url: str
+    source: str
+    published_at: str
+    summary: str
+
+
+def utc_now() -> dt.datetime:
+    """Return the current UTC time with timezone information."""
+
+    return dt.datetime.now(dt.UTC)
+
+
+def parse_date(value: str | None) -> dt.datetime | None:
+    """Parse common RSS, Atom, API, and ISO date strings."""
+
+    if not value:
+        return None
+
+    value = value.strip()
+    if not value:
+        return None
+
+    try:
+        parsed = email.utils.parsedate_to_datetime(value)
+        return parsed if parsed.tzinfo else parsed.replace(tzinfo=dt.UTC)
+    except (TypeError, ValueError):
+        pass
+
+    normalized = value.replace("Z", "+00:00")
+    try:
+        parsed = dt.datetime.fromisoformat(normalized)
+        return parsed if parsed.tzinfo else parsed.replace(tzinfo=dt.UTC)
+    except ValueError:
+        return None
+
+
+def strip_html(value: str | None) -> str:
+    """Convert small HTML snippets from feeds into compact plain text."""
+
+    if not value:
+        return ""
+    text = re.sub(r"(?is)<(script|style).*?>.*?</\1>", " ", value)
+    text = re.sub(r"(?s)<[^>]+>", " ", text)
+    text = html.unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def normalize_url(value: str) -> str:
+    """Remove common tracking parameters so duplicate links compare cleanly."""
+
+    parsed = urllib.parse.urlsplit(value.strip())
+    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    kept = [
+        (key, val)
+        for key, val in query
+        if not key.lower().startswith("utm_") and key.lower() not in {"fbclid", "gclid"}
+    ]
+    return urllib.parse.urlunsplit(
+        (parsed.scheme, parsed.netloc.lower(), parsed.path.rstrip("/"), urllib.parse.urlencode(kept), "")
+    )
+
+
+def fetch_text(url: str, timeout: int = 25) -> str:
+    """Fetch a URL and decode the response as text."""
+
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        charset = response.headers.get_content_charset() or "utf-8"
+        return response.read().decode(charset, errors="replace")
+
+
+def child_text(element: ET.Element, names: tuple[str, ...]) -> str:
+    """Return text for the first matching child, ignoring XML namespaces."""
+
+    for child in element:
+        local_name = child.tag.rsplit("}", 1)[-1].lower()
+        if local_name in names:
+            return "".join(child.itertext()).strip()
+    return ""
+
+
+def child_link(element: ET.Element) -> str:
+    """Return a feed item link from RSS or Atom shapes."""
+
+    direct = child_text(element, ("link",))
+    if direct:
+        return direct
+
+    for child in element:
+        local_name = child.tag.rsplit("}", 1)[-1].lower()
+        if local_name == "link" and child.attrib.get("href"):
+            return child.attrib["href"]
+    return ""
+
+
+def parse_feed(source: dict[str, Any]) -> list[NewsItem]:
+    """Fetch and parse RSS or Atom feeds into normalized items."""
+
+    text = fetch_text(source["url"])
+    root = ET.fromstring(text)
+    root_name = root.tag.rsplit("}", 1)[-1].lower()
+
+    if root_name == "rss":
+        candidates = root.findall(".//item")
+    elif root_name == "feed":
+        candidates = root.findall("{*}entry") or root.findall(".//entry")
+    else:
+        candidates = root.findall(".//item") or root.findall(".//{*}entry")
+
+    items: list[NewsItem] = []
+    for entry in candidates:
+        title = strip_html(child_text(entry, ("title",)))
+        link = child_link(entry)
+        summary = strip_html(
+            child_text(entry, ("description", "summary", "content", "encoded"))
+        )
+        published = (
+            child_text(entry, ("published", "updated", "pubdate", "dc:date"))
+            or child_text(entry, ("date",))
+        )
+        parsed = parse_date(published) or utc_now()
+
+        if title and link:
+            items.append(
+                NewsItem(
+                    title=title,
+                    url=normalize_url(link),
+                    source=source["name"],
+                    published_at=parsed.astimezone(dt.UTC).isoformat(),
+                    summary=summary,
+                )
+            )
+    return items
+
+
+def parse_hn_algolia(source: dict[str, Any]) -> list[NewsItem]:
+    """Fetch Hacker News items from Algolia's public API."""
+
+    payload = json.loads(fetch_text(source["url"]))
+    items: list[NewsItem] = []
+    for hit in payload.get("hits", []):
+        title = strip_html(hit.get("title") or hit.get("story_title"))
+        link = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
+        published = parse_date(hit.get("created_at")) or utc_now()
+        points = hit.get("points")
+        comments = hit.get("num_comments")
+        metadata = []
+        if points is not None:
+            metadata.append(f"{points} points")
+        if comments is not None:
+            metadata.append(f"{comments} comments")
+
+        if title and link:
+            items.append(
+                NewsItem(
+                    title=title,
+                    url=normalize_url(link),
+                    source=source["name"],
+                    published_at=published.astimezone(dt.UTC).isoformat(),
+                    summary=", ".join(metadata),
+                )
+            )
+    return items
+
+
+def fetch_source(source: dict[str, Any]) -> list[NewsItem]:
+    """Dispatch source fetching by source type."""
+
+    if source.get("type") == "feed":
+        return parse_feed(source)
+    if source.get("type") == "hn_algolia":
+        return parse_hn_algolia(source)
+    raise ValueError(f"Unsupported source type: {source.get('type')}")
+
+
+def keyword_score(item: NewsItem, keywords: list[str]) -> int:
+    """Score an item by keyword matches in title and summary."""
+
+    haystack = f"{item.title} {item.summary}".lower()
+    score = 0
+    for keyword in keywords:
+        term = keyword.lower()
+        if term in haystack:
+            score += 3 if term in item.title.lower() else 1
+    return score
+
+
+def collect_items(config: dict[str, Any]) -> tuple[list[NewsItem], list[str]]:
+    """Fetch all sources and return deduplicated, ranked recent items."""
+
+    now = utc_now()
+    lookback = dt.timedelta(hours=int(config.get("lookback_hours", 72)))
+    keywords = list(config.get("keywords", []))
+    errors: list[str] = []
+    seen: set[str] = set()
+    scored: list[tuple[int, dt.datetime, NewsItem]] = []
+
+    for source in config.get("sources", []):
+        try:
+            fetched = fetch_source(source)
+        except (ET.ParseError, OSError, TimeoutError, urllib.error.URLError, ValueError, json.JSONDecodeError) as exc:
+            errors.append(f"{source.get('name', source.get('url'))}: {exc}")
+            continue
+
+        for item in fetched:
+            published = parse_date(item.published_at) or now
+            if now - published > lookback:
+                continue
+            dedupe_key = normalize_url(item.url)
+            if dedupe_key in seen:
+                continue
+            seen.add(dedupe_key)
+
+            score = keyword_score(item, keywords)
+            if score <= 0:
+                continue
+            scored.append((score, published, item))
+
+        time.sleep(0.25)
+
+    scored.sort(key=lambda row: (row[0], row[1]), reverse=True)
+    return [item for _, _, item in scored[: int(config.get("max_items", 10))]], errors
+
+
+def load_env(path: Path) -> None:
+    """Load simple KEY=VALUE pairs from .env without overriding environment."""
+
+    if not path.exists():
+        return
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def llm_chat(messages: list[dict[str, str]], timeout: int = 240) -> str:
+    """Call an OpenAI-compatible chat completions endpoint."""
+
+    base_url = os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:12345/v1").rstrip("/")
+    api_key = os.environ.get("OPENAI_API_KEY", "smartisan")
+    model = os.environ.get("OPENAI_MODEL", "Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit")
+    body = json.dumps(
+        {
+            "model": model,
+            "messages": messages,
+            "temperature": 0.2,
+        }
+    ).encode("utf-8")
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+    return payload["choices"][0]["message"]["content"]
+
+
+def parse_llm_json(content: str) -> dict[str, Any]:
+    """Parse model output that may wrap JSON in explanatory text."""
+
+    try:
+        data = json.loads(content)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", content, flags=re.S)
+        if not match:
+            raise
+        data = json.loads(match.group(0))
+
+    if not isinstance(data, dict):
+        raise ValueError("LLM returned non-object JSON")
+    return data
+
+
+def fallback_brief(item: NewsItem) -> dict[str, Any]:
+    """Build a usable brief when the local model is unavailable."""
+
+    return {
+        "title_cn": item.title,
+        "summary_cn": strip_html(item.summary)[:220] or "暂无摘要，请点击原文查看详情。",
+        "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+        "tags": infer_tags(item),
+    }
+
+
+def infer_tags(item: NewsItem) -> list[str]:
+    """Infer compact Chinese tags from the source text."""
+
+    text = f"{item.title} {item.summary}".lower()
+    tag_rules = [
+        ("agent", "agent"),
+        ("openai", "OpenAI"),
+        ("anthropic", "Anthropic"),
+        ("claude", "Claude"),
+        ("google", "Google"),
+        ("deepmind", "DeepMind"),
+        ("chatgpt", "ChatGPT"),
+        ("arxiv", "论文"),
+        ("model", "模型"),
+        ("inference", "推理"),
+        ("token", "token"),
+        ("robot", "机器人"),
+        ("enterprise", "企业应用"),
+    ]
+    tags = [label for needle, label in tag_rules if needle in text]
+    return tags[:4] or ["AI"]
+
+
+def normalize_brief(data: dict[str, Any], item: NewsItem) -> dict[str, Any]:
+    """Normalize one model-generated brief and fill missing fields."""
+
+    fallback = fallback_brief(item)
+    tags = data.get("tags", fallback["tags"])
+    if not isinstance(tags, list):
+        tags = fallback["tags"]
+    return {
+        "title_cn": str(data.get("title_cn") or fallback["title_cn"]).strip(),
+        "summary_cn": str(data.get("summary_cn") or fallback["summary_cn"]).strip(),
+        "why_it_matters_cn": str(
+            data.get("why_it_matters_cn") or fallback["why_it_matters_cn"]
+        ).strip(),
+        "tags": [str(tag).strip() for tag in tags if str(tag).strip()][:4],
+    }
+
+
+def generate_llm_briefs(items: list[NewsItem], skip_llm: bool) -> list[dict[str, Any]]:
+    """Generate Chinese briefs in one model call, falling back on errors."""
+
+    if skip_llm:
+        return [fallback_brief(item) for item in items]
+
+    prompt_items = [
+        {
+            "index": index,
+            "title": item.title,
+            "source": item.source,
+            "published_at": item.published_at,
+            "url": item.url,
+            "source_summary": item.summary[:1000],
+        }
+        for index, item in enumerate(items, start=1)
+    ]
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "你是中文 AI 新闻简报编辑。输出严格 JSON，不要 Markdown。"
+                "保留必要英文术语，比如 agent、token、Claude Code、Codex、ChatGPT。"
+                "不要虚构输入中没有的信息。"
+            ),
+        },
+        {
+            "role": "user",
+            "content": (
+                "请把这些 AI 资讯整理成中文简报。输出 JSON 对象，唯一顶层字段是 items。"
+                "items 必须是数组，长度和输入一致，每项字段必须是："
+                "index, title_cn, summary_cn, why_it_matters_cn, tags。"
+                "summary_cn 控制在 80-140 个中文字符；why_it_matters_cn 控制在 40-90 个中文字符；"
+                "tags 是 2-4 个短标签。输入："
+                f"{json.dumps(prompt_items, ensure_ascii=False)}"
+            ),
+        },
+    ]
+
+    try:
+        content = llm_chat(messages)
+        data = parse_llm_json(content)
+        generated = data.get("items", [])
+        if not isinstance(generated, list):
+            raise ValueError("LLM JSON missing items array")
+
+        by_index: dict[int, dict[str, Any]] = {}
+        for brief in generated:
+            if isinstance(brief, dict):
+                try:
+                    by_index[int(brief.get("index"))] = brief
+                except (TypeError, ValueError):
+                    continue
+
+        return [
+            normalize_brief(by_index.get(index, {}), item)
+            for index, item in enumerate(items, start=1)
+        ]
+    except (OSError, TimeoutError, urllib.error.URLError, KeyError, ValueError, json.JSONDecodeError) as exc:
+        briefs = [fallback_brief(item) for item in items]
+        for brief in briefs:
+            brief["llm_error"] = str(exc)
+        return briefs
+
+
+def build_daily_payload(items: list[NewsItem], errors: list[str], target_date: str, skip_llm: bool) -> dict[str, Any]:
+    """Build the final daily JSON payload."""
+
+    generated_at = utc_now().isoformat()
+    entries = []
+    briefs = generate_llm_briefs(items, skip_llm)
+    for index, (item, brief) in enumerate(zip(items, briefs, strict=True), start=1):
+        entries.append(
+            {
+                "rank": index,
+                "title": item.title,
+                "title_cn": brief["title_cn"],
+                "summary_cn": brief["summary_cn"],
+                "why_it_matters_cn": brief["why_it_matters_cn"],
+                "tags": brief["tags"],
+                "source": item.source,
+                "url": item.url,
+                "published_at": item.published_at,
+                **({"llm_error": brief["llm_error"]} if "llm_error" in brief else {}),
+            }
+        )
+
+    return {
+        "date": target_date,
+        "generated_at": generated_at,
+        "title": f"{target_date} AI 每日简报",
+        "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+        "items": entries,
+        "source_errors": errors,
+    }
+
+
+def update_manifest(output_dir: Path, daily_payload: dict[str, Any]) -> None:
+    """Update the static site manifest with the generated day."""
+
+    manifest_path = output_dir / "manifest.json"
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    else:
+        manifest = {"updated_at": None, "days": []}
+
+    day_entry = {
+        "date": daily_payload["date"],
+        "title": daily_payload["title"],
+        "count": len(daily_payload["items"]),
+        "path": f"data/daily/{daily_payload['date']}.json",
+        "generated_at": daily_payload["generated_at"],
+    }
+    days = [day for day in manifest.get("days", []) if day.get("date") != daily_payload["date"]]
+    days.append(day_entry)
+    days.sort(key=lambda day: day["date"], reverse=True)
+
+    manifest["updated_at"] = daily_payload["generated_at"]
+    manifest["days"] = days
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_outputs(payload: dict[str, Any], output_dir: Path) -> None:
+    """Write daily data and manifest files for the static site."""
+
+    daily_dir = output_dir / "daily"
+    daily_dir.mkdir(parents=True, exist_ok=True)
+    daily_path = daily_dir / f"{payload['date']}.json"
+    daily_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    update_manifest(output_dir, payload)
+
+
+def parse_args(argv: list[str]) -> argparse.Namespace:
+    """Parse CLI arguments."""
+
+    parser = argparse.ArgumentParser(description="Generate the AI daily brief.")
+    parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--date", default=dt.date.today().isoformat())
+    parser.add_argument("--skip-llm", action="store_true", help="Use fallback summaries without calling the model.")
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str]) -> int:
+    """CLI entry point."""
+
+    args = parse_args(argv)
+    load_env(ROOT / ".env")
+
+    config = json.loads(args.config.read_text(encoding="utf-8"))
+    items, errors = collect_items(config)
+    if not items:
+        print("No matching AI news items found.", file=sys.stderr)
+        for error in errors:
+            print(f"source error: {error}", file=sys.stderr)
+        return 1
+
+    payload = build_daily_payload(items, errors, args.date, args.skip_llm)
+    write_outputs(payload, args.output)
+    print(f"Generated {len(payload['items'])} items for {args.date}.")
+    if errors:
+        print(f"{len(errors)} source(s) failed; see source_errors in the JSON output.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

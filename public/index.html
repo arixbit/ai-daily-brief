@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AI 每日简报，中文摘要，按日期归档。" />
+    <title>AI 每日简报</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">ai.arixbit.me</p>
+        <h1>AI 每日简报</h1>
+      </div>
+      <p id="updatedAt" class="updated-at">加载中</p>
+    </header>
+
+    <main class="layout">
+      <aside class="archive" aria-label="日期归档">
+        <h2>日期</h2>
+        <nav id="archiveList" class="archive-list"></nav>
+      </aside>
+
+      <section class="brief" aria-live="polite">
+        <div class="brief-head">
+          <div>
+            <p id="briefDate" class="eyebrow">今日</p>
+            <h2 id="briefTitle">正在加载简报</h2>
+          </div>
+          <p id="briefCount" class="brief-count"></p>
+        </div>
+
+        <ol id="newsList" class="news-list"></ol>
+        <p id="emptyState" class="empty-state" hidden>暂无简报数据。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>中文摘要由本机模型辅助生成</span>
+      <span>来源链接保留原文出处</span>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
+

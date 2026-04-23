@@ -1,0 +1,169 @@
+{
+  "date": "2026-04-23",
+  "generated_at": "2026-04-23T09:50:10.406775+00:00",
+  "title": "2026-04-23 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI launches workspace agents that turn ChatGPT from a chatbot into a team automation platform",
+      "title_cn": "OpenAI 推出工作区 agent，将 ChatGPT 从聊天机器人转变为团队自动化平台",
+      "summary_cn": "OpenAI 正在 ChatGPT 中推出工作区 agent，这是自定义 GPT 的进化版本。由 Codex 驱动，这些 agent 能够自动化复杂的团队工作流，即使无人值守也能持续运行。现有的自定义 GPT 暂时保留，后续将提供迁移路径。",
+      "why_it_matters_cn": "标志着 AI 从对话工具向自主工作平台的重大转变，为企业自动化带来新可能。",
+      "tags": [
+        "OpenAI",
+        "agent",
+        "自动化",
+        "ChatGPT"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-launches-workspace-agents-that-turn-chatgpt-from-a-chatbot-into-a-team-automation-platform",
+      "published_at": "2026-04-22T18:23:33+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Unauthorized users breach Anthropic's restricted Mythos AI model",
+      "title_cn": "未经授权用户入侵 Anthropic 受限的 Mythos AI 模型",
+      "summary_cn": "据彭博社报道，一小群未经授权的用户获得了访问 Anthropic 新 AI 模型 Claude Mythos 的权限。该模型此前被限制访问，此次安全事件暴露了模型分发的潜在漏洞。",
+      "why_it_matters_cn": "凸显了 AI 模型访问控制和分发的安全挑战，引发对模型管制的关注。",
+      "tags": [
+        "Anthropic",
+        "安全",
+        "Claude",
+        "数据泄露"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/unauthorized-users-breach-anthropics-restricted-mythos-ai-model",
+      "published_at": "2026-04-22T12:54:43+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Meta tracks US employees' clicks and keystrokes to train AI agents",
+      "title_cn": "Meta 追踪美国员工点击和击键以训练 AI agent",
+      "summary_cn": "Meta 正在其美国员工的电脑上安装新的监控软件，捕捉鼠标移动、点击和击键，用于训练 AI 模型。这一举措旨在收集真实工作场景数据以提升 agent 性能。",
+      "why_it_matters_cn": "引发员工隐私担忧，同时展示了科技巨头获取高质量训练数据的激进策略。",
+      "tags": [
+        "Meta",
+        "隐私",
+        "训练数据",
+        "监控"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/meta-tracks-us-employees-clicks-and-keystrokes-to-train-ai-agents",
+      "published_at": "2026-04-22T12:43:38+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Google launches Deep Research and Deep Research Max agents to automate complex research",
+      "title_cn": "Google 推出 Deep Research 和 Deep Research Max agent 以自动化复杂研究",
+      "summary_cn": "Google Deepmind 推出 Deep Research Max，这是基于 Gemini 3.1 Pro 构建的新 AI agent，可在网络和专有数据源上运行自主研究。开发者首次可通过 Model Context Protocol 接入金融数据等专业数据源。",
+      "why_it_matters_cn": "为学术和商业研究提供强大的自主研究工具，推动 AI 在知识工作中的应用。",
+      "tags": [
+        "Google",
+        "研究",
+        "agent",
+        "Gemini"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/google-launches-deep-research-and-deep-research-max-agents-to-automate-complex-research",
+      "published_at": "2026-04-21T18:11:38+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Cortex Auth – Rust secrets vault for AI agents (exec-based injection)",
+      "title_cn": "Cortex Auth – 面向 AI agent 的 Rust 密钥库（基于执行的注入）",
+      "summary_cn": "一个用 Rust 编写的开源项目，为 AI agent 提供安全的密钥管理功能。采用基于执行的注入机制，帮助开发者在 agent 应用中安全地存储和访问敏感凭据。",
+      "why_it_matters_cn": "为 AI agent 开发提供重要的安全基础设施，解决密钥管理的实际需求。",
+      "tags": [
+        "开源",
+        "安全",
+        "Rust",
+        "agent"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://github.com/davideuler/cortex-auth",
+      "published_at": "2026-04-23T09:37:53+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Show HN: Nova by civai, a platform for managed AI agents",
+      "title_cn": "Show HN：Nova by civai，一个托管 AI agent 平台",
+      "summary_cn": "civai 推出的 Nova 是一个托管 AI agent 平台，旨在简化 agent 的部署和管理。该平台提供开箱即用的功能，帮助开发者和企业快速构建和运行 AI agent 应用。",
+      "why_it_matters_cn": "降低 AI agent 部署门槛，加速 agent 技术在企业和开发者中的采用。",
+      "tags": [
+        "平台",
+        "agent",
+        "SaaS",
+        "部署"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://nova.civai.co",
+      "published_at": "2026-04-23T09:00:52+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Hackers breach Anthropic's 'too dangerous to release' Mythos AI model",
+      "title_cn": "黑客入侵 Anthropic'过于危险无法发布'的 Mythos AI 模型",
+      "summary_cn": "据 EuroNews 报道，黑客成功入侵了 Anthropic 内部标记为'过于危险无法发布'的 Mythos AI 模型。该模型原本因潜在风险而被严格限制，此次事件引发了对 AI 安全管制的讨论。",
+      "why_it_matters_cn": "再次暴露 AI 模型安全漏洞，质疑内部'危险'模型的实际管控能力。",
+      "tags": [
+        "黑客",
+        "Anthropic",
+        "安全",
+        "Mythos"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://www.euronews.com/next/2026/04/22/hackers-breach-anthropics-too-dangerous-to-release-mythos-ai-model-report",
+      "published_at": "2026-04-23T08:55:13+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+      "title_cn": "使用 LLM 进行自动本体构建：混合智能系统的外部记忆、验证和规划层",
+      "summary_cn": "该论文提出一种混合架构，为 LLM 扩展外部本体记忆层。与仅依赖参数化知识和向量检索（RAG）不同，该方法构建和维护基于 RDF/OWL 的结构化知识图谱，实现持久化、可验证的语义推理。",
+      "why_it_matters_cn": "为超越 RAG 的知识管理提供新范式，提升 AI 系统的推理和规划能力。",
+      "tags": [
+        "研究",
+        "知识图谱",
+        "RAG",
+        "arXiv"
+      ],
+      "source": "arXiv AI/ML",
+      "url": "https://arxiv.org/abs/2604.20795v1",
+      "published_at": "2026-04-22T17:19:43+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Can \"AI\" Be a Doctor? A Study of Empathy, Readability, and Alignment in Clinical LLMs",
+      "title_cn": "'AI'能成为医生吗？临床 LLM 的同理心、可读性和对齐研究",
+      "summary_cn": "该研究评估通用和专用 LLM 在医疗场景中的沟通对齐能力。发现基线模型的情感极性高于医生，GPT-5 和 Claude 等模型的阅读难度显著更高。同理心提示可降低复杂度但未能显著提升语义忠实度。",
+      "why_it_matters_cn": "为医疗 AI 的沟通能力和临床对齐提供重要评估基准，指导医疗场景应用。",
+      "tags": [
+        "医疗",
+        "LLM",
+        "研究",
+        "对齐"
+      ],
+      "source": "arXiv AI/ML",
+      "url": "https://arxiv.org/abs/2604.20791v1",
+      "published_at": "2026-04-22T17:17:27+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "AI research lab NeoCognition lands $40M seed to build agents that learn like humans",
+      "title_cn": "AI 研究实验室 NeoCognition 获 4000 万美元种子轮融资，打造像人类一样学习的 agent",
+      "summary_cn": "由俄勒冈州立大学研究者创立的初创公司 NeoCognition 获得 4000 万美元种子轮融资，致力于开发能够像人类一样学习的 AI agent，目标是让 agent 成为任何领域的专家。",
+      "why_it_matters_cn": "显示市场对类人学习能力的 agent 的强烈兴趣，代表 AI 研发的新方向。",
+      "tags": [
+        "融资",
+        "agent",
+        "学习",
+        "初创公司"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/21/ai-research-lab-neocognition-lands-40m-seed-to-build-agents-that-learn-like-humans",
+      "published_at": "2026-04-21T19:11:29+00:00"
+    }
+  ],
+  "source_errors": []
+}

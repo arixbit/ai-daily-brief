@@ -1,0 +1,63 @@
+{
+  "max_items": 10,
+  "lookback_hours": 72,
+  "keywords": [
+    "ai",
+    "artificial intelligence",
+    "agent",
+    "agents",
+    "chatgpt",
+    "openai",
+    "anthropic",
+    "claude",
+    "codex",
+    "gemini",
+    "deepmind",
+    "llm",
+    "large language model",
+    "machine learning",
+    "model",
+    "inference",
+    "token",
+    "transformer",
+    "reasoning"
+  ],
+  "sources": [
+    {
+      "name": "TechCrunch AI",
+      "type": "feed",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+    },
+    {
+      "name": "VentureBeat AI",
+      "type": "feed",
+      "url": "https://venturebeat.com/category/ai/feed/"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "type": "feed",
+      "url": "https://huggingface.co/blog/feed.xml"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "type": "feed",
+      "url": "https://deepmind.google/blog/rss.xml"
+    },
+    {
+      "name": "The Decoder",
+      "type": "feed",
+      "url": "https://the-decoder.com/feed/"
+    },
+    {
+      "name": "arXiv AI/ML",
+      "type": "feed",
+      "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=25"
+    },
+    {
+      "name": "Hacker News AI",
+      "type": "hn_algolia",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=25"
+    }
+  ]
+}
+
