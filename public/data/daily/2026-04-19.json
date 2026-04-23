@@ -1,0 +1,26 @@
+{
+  "date": "2026-04-19",
+  "generated_at": "2026-04-23T12:41:35.871102+00:00",
+  "title": "2026-04-19 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "AWS Announces General Availability of DevOps Agent for Automated Incident Investigation",
+      "title_cn": "AWS 宣布 DevOps Agent 正式推出，用于自动化事件调查",
+      "summary_cn": "AWS 正式推出 DevOps Agent，这是一款由生成式 AI 驱动的助手，旨在帮助开发人员和运维工程师排查问题、分析部署情况，并在 AWS 环境中自动化执行运维任务。该工具通过自然语言交互，能够自动分析日志、追踪错误根源，并建议修复方案，显著降低故障排查的时间成本。",
+      "why_it_matters_cn": "自动化运维调查可大幅减少故障排查时间，提升系统可用性，让工程师专注于更高价值的开发工作。",
+      "tags": [
+        "AWS",
+        "DevOps",
+        "生成式 AI",
+        "自动化运维"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/aws-devops-agent-ga",
+      "published_at": "2026-04-18T11:31:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
