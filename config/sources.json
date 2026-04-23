@@ -5,6 +5,7 @@
   "fallback_lookback_hours": 72,
   "history_dedupe_days": 14,
   "default_source_daily_limit": 3,
+  "default_source_weight": 3,
   "keywords": [
     "ai",
     "artificial intelligence",
@@ -28,46 +29,86 @@
   ],
   "sources": [
     {
-      "name": "TechCrunch AI",
+      "name": "Microsoft Research",
       "type": "feed",
-      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "daily_limit": 2
-    },
-    {
-      "name": "VentureBeat AI",
-      "type": "feed",
-      "url": "https://venturebeat.com/category/ai/feed/",
-      "daily_limit": 2
-    },
-    {
-      "name": "Hugging Face Blog",
-      "type": "feed",
-      "url": "https://huggingface.co/blog/feed.xml",
+      "url": "https://www.microsoft.com/en-us/research/feed/",
+      "tier": "official_research",
+      "weight": 10,
       "daily_limit": 2
     },
     {
       "name": "Google DeepMind Blog",
       "type": "feed",
       "url": "https://deepmind.google/blog/rss.xml",
+      "tier": "official_research",
+      "weight": 10,
+      "daily_limit": 2
+    },
+    {
+      "name": "Hugging Face Blog",
+      "type": "feed",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "tier": "official_ecosystem",
+      "weight": 9,
+      "daily_limit": 2
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "type": "feed",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+      "tier": "analysis",
+      "weight": 8,
+      "daily_limit": 2
+    },
+    {
+      "name": "InfoQ AI/ML",
+      "type": "feed",
+      "url": "https://feed.infoq.com/ai-ml-data-eng",
+      "tier": "engineering_media",
+      "weight": 8,
       "daily_limit": 2
     },
     {
       "name": "The Decoder",
       "type": "feed",
       "url": "https://the-decoder.com/feed/",
-      "daily_limit": 3
+      "tier": "industry_media",
+      "weight": 6,
+      "daily_limit": 2
+    },
+    {
+      "name": "TechCrunch AI",
+      "type": "feed",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "tier": "industry_media",
+      "weight": 5,
+      "daily_limit": 2
+    },
+    {
+      "name": "VentureBeat AI",
+      "type": "feed",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "tier": "industry_media",
+      "weight": 4,
+      "daily_limit": 1
     },
     {
       "name": "arXiv AI/ML",
       "type": "feed",
       "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=25",
-      "daily_limit": 3
+      "tier": "paper",
+      "weight": 3,
+      "daily_limit": 2
     },
     {
       "name": "Hacker News AI",
       "type": "hn_algolia",
       "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=25",
-      "daily_limit": 2
+      "tier": "community",
+      "weight": 1,
+      "daily_limit": 1,
+      "min_points": 80,
+      "min_comments": 20
     }
   ]
 }

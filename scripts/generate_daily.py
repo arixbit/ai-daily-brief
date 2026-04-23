@@ -351,12 +351,16 @@ def parse_hn_algolia(source: dict[str, Any]) -> list[NewsItem]:
         title = strip_html(hit.get("title") or hit.get("story_title"))
         link = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
         published = parse_date(hit.get("created_at")) or utc_now()
-        points = hit.get("points")
-        comments = hit.get("num_comments")
+        points = int(hit.get("points") or 0)
+        comments = int(hit.get("num_comments") or 0)
+        min_points = int(source.get("min_points", 0))
+        min_comments = int(source.get("min_comments", 0))
+        if (min_points or min_comments) and points < min_points and comments < min_comments:
+            continue
         metadata = []
-        if points is not None:
+        if points:
             metadata.append(f"{points} points")
-        if comments is not None:
+        if comments:
             metadata.append(f"{comments} comments")
 
         if title and link:
@@ -408,6 +412,7 @@ def collect_items(
         fallback = dt.timedelta(hours=int(config.get("fallback_lookback_hours", 72)))
         window_start, window_end = now - fallback, now
     keywords = list(config.get("keywords", []))
+    default_source_weight = int(config.get("default_source_weight", 3))
     history_urls, history_titles = load_history_dedupe(
         output_dir,
         target_date,
@@ -440,7 +445,10 @@ def collect_items(
             score = keyword_score(item, keywords)
             if score <= 0:
                 continue
-            scored.append((score, published, item))
+            source_weight = int(source.get("weight", default_source_weight))
+            hours_old = max(0.0, (window_end - published).total_seconds() / 3600)
+            freshness_score = max(0, 6 - int(hours_old // 4))
+            scored.append((score + source_weight + freshness_score, published, item))
 
         time.sleep(0.25)
 
