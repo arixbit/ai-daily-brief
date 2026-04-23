@@ -22,6 +22,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
@@ -98,6 +99,134 @@ def normalize_url(value: str) -> str:
     return urllib.parse.urlunsplit(
         (parsed.scheme, parsed.netloc.lower(), parsed.path.rstrip("/"), urllib.parse.urlencode(kept), "")
     )
+
+
+def title_fingerprint(value: str) -> str:
+    """Normalize a title for cross-day duplicate detection."""
+
+    text = html.unescape(value).lower()
+    text = re.sub(r"https?://\S+", " ", text)
+    text = re.sub(r"['’`]s\b", "", text)
+    text = re.sub(r"['’`\"]", "", text)
+    text = re.sub(r"[^a-z0-9\u4e00-\u9fff]+", " ", text)
+    stop_words = {
+        "the",
+        "a",
+        "an",
+        "and",
+        "or",
+        "to",
+        "of",
+        "in",
+        "on",
+        "for",
+        "with",
+        "by",
+        "from",
+        "is",
+        "its",
+        "new",
+        "report",
+        "reports",
+    }
+    words = [word for word in text.split() if word not in stop_words]
+    return " ".join(words)
+
+
+def is_similar_title(title: str, previous_titles: set[str]) -> bool:
+    """Return true when a title likely describes an already published story."""
+
+    current = title_fingerprint(title)
+    if not current:
+        return False
+    if current in previous_titles:
+        return True
+
+    current_words = set(current.split())
+    entity_terms = {
+        "ai",
+        "agent",
+        "agents",
+        "openai",
+        "anthropic",
+        "claude",
+        "chatgpt",
+        "codex",
+        "google",
+        "gemini",
+        "deepmind",
+        "meta",
+        "microsoft",
+        "nvidia",
+        "llm",
+    }
+    for previous in previous_titles:
+        previous_words = set(previous.split())
+        if not previous_words:
+            continue
+        shared = len(current_words & previous_words)
+        shared_words = current_words & previous_words
+        meaningful_shared = {
+            word for word in shared_words if len(word) >= 4 or word.isdigit()
+        }
+        broad_overlap = shared / max(len(current_words), len(previous_words))
+        contained_overlap = shared / min(len(current_words), len(previous_words))
+        if broad_overlap >= 0.75:
+            return True
+        if shared >= 5 and contained_overlap >= 0.8:
+            return True
+        if len(meaningful_shared) >= 3 and shared_words & entity_terms:
+            return True
+        if SequenceMatcher(None, current, previous).ratio() >= 0.82:
+            return True
+    return False
+
+
+def load_history_dedupe(output_dir: Path, target_date: str, days: int) -> tuple[set[str], set[str]]:
+    """Load URLs and title fingerprints from prior daily briefs."""
+
+    if days <= 0:
+        return set(), set()
+
+    try:
+        cutoff = dt.date.fromisoformat(target_date) - dt.timedelta(days=days)
+        target = dt.date.fromisoformat(target_date)
+    except ValueError:
+        cutoff = dt.date.min
+        target = dt.date.max
+
+    urls: set[str] = set()
+    titles: set[str] = set()
+    daily_dir = output_dir / "daily"
+    if not daily_dir.exists():
+        return urls, titles
+
+    for path in daily_dir.glob("*.json"):
+        try:
+            day = dt.date.fromisoformat(path.stem)
+        except ValueError:
+            continue
+        if not (cutoff <= day < target):
+            continue
+
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+
+        for item in payload.get("items", []):
+            if not isinstance(item, dict):
+                continue
+            url = item.get("url")
+            if url:
+                urls.add(normalize_url(str(url)))
+            for title_key in ("title", "title_cn"):
+                title = item.get(title_key)
+                if title:
+                    fingerprint = title_fingerprint(str(title))
+                    if fingerprint:
+                        titles.add(fingerprint)
+    return urls, titles
 
 
 def fetch_text(url: str, timeout: int = 25) -> str:
@@ -225,13 +354,23 @@ def keyword_score(item: NewsItem, keywords: list[str]) -> int:
     return score
 
 
-def collect_items(config: dict[str, Any]) -> tuple[list[NewsItem], list[str]]:
+def collect_items(
+    config: dict[str, Any],
+    output_dir: Path,
+    target_date: str,
+) -> tuple[list[NewsItem], list[str], list[str]]:
     """Fetch all sources and return deduplicated, ranked recent items."""
 
     now = utc_now()
     lookback = dt.timedelta(hours=int(config.get("lookback_hours", 72)))
     keywords = list(config.get("keywords", []))
+    history_urls, history_titles = load_history_dedupe(
+        output_dir,
+        target_date,
+        int(config.get("history_dedupe_days", 14)),
+    )
     errors: list[str] = []
+    skipped_duplicates: list[str] = []
     seen: set[str] = set()
     scored: list[tuple[int, dt.datetime, NewsItem]] = []
 
@@ -249,6 +388,9 @@ def collect_items(config: dict[str, Any]) -> tuple[list[NewsItem], list[str]]:
             dedupe_key = normalize_url(item.url)
             if dedupe_key in seen:
                 continue
+            if dedupe_key in history_urls or is_similar_title(item.title, history_titles):
+                skipped_duplicates.append(item.title)
+                continue
             seen.add(dedupe_key)
 
             score = keyword_score(item, keywords)
@@ -259,7 +401,22 @@ def collect_items(config: dict[str, Any]) -> tuple[list[NewsItem], list[str]]:
         time.sleep(0.25)
 
     scored.sort(key=lambda row: (row[0], row[1]), reverse=True)
-    return [item for _, _, item in scored[: int(config.get("max_items", 10))]], errors
+
+    selected: list[NewsItem] = []
+    selected_titles: set[str] = set()
+    max_items = int(config.get("max_items", 10))
+    for _, _, item in scored:
+        if is_similar_title(item.title, selected_titles):
+            skipped_duplicates.append(item.title)
+            continue
+        selected.append(item)
+        fingerprint = title_fingerprint(item.title)
+        if fingerprint:
+            selected_titles.add(fingerprint)
+        if len(selected) >= max_items:
+            break
+
+    return selected, errors, skipped_duplicates
 
 
 def load_env(path: Path) -> None:
@@ -435,7 +592,13 @@ def generate_llm_briefs(items: list[NewsItem], skip_llm: bool) -> list[dict[str,
         return briefs
 
 
-def build_daily_payload(items: list[NewsItem], errors: list[str], target_date: str, skip_llm: bool) -> dict[str, Any]:
+def build_daily_payload(
+    items: list[NewsItem],
+    errors: list[str],
+    skipped_duplicates: list[str],
+    target_date: str,
+    skip_llm: bool,
+) -> dict[str, Any]:
     """Build the final daily JSON payload."""
 
     generated_at = utc_now().isoformat()
@@ -467,6 +630,7 @@ def build_daily_payload(items: list[NewsItem], errors: list[str], target_date: s
         "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
         "items": entries,
         "source_errors": errors,
+        "skipped_duplicates": skipped_duplicates,
     }
 
 
@@ -523,16 +687,18 @@ def main(argv: list[str]) -> int:
     load_env(ROOT / ".env")
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
-    items, errors = collect_items(config)
+    items, errors, skipped_duplicates = collect_items(config, args.output, args.date)
     if not items:
         print("No matching AI news items found.", file=sys.stderr)
         for error in errors:
             print(f"source error: {error}", file=sys.stderr)
         return 1
 
-    payload = build_daily_payload(items, errors, args.date, args.skip_llm)
+    payload = build_daily_payload(items, errors, skipped_duplicates, args.date, args.skip_llm)
     write_outputs(payload, args.output)
     print(f"Generated {len(payload['items'])} items for {args.date}.")
+    if skipped_duplicates:
+        print(f"Skipped {len(skipped_duplicates)} historical duplicate(s).")
     if errors:
         print(f"{len(errors)} source(s) failed; see source_errors in the JSON output.")
     return 0

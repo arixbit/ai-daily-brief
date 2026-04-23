@@ -1,6 +1,7 @@
 {
   "max_items": 10,
   "lookback_hours": 72,
+  "history_dedupe_days": 14,
   "keywords": [
     "ai",
     "artificial intelligence",
@@ -60,4 +61,3 @@
     }
   ]
 }
-
