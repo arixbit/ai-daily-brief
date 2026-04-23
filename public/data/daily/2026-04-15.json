@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-15",
+  "generated_at": "2026-04-23T13:14:55.581268+00:00",
+  "title": "2026-04-15 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI 内部备忘录流出：代号 Spud 模型对标 Mythos，正面反击 Anthropic",
+      "title_cn": "OpenAI 内部备忘录流出：代号 Spud 模型对标 Mythos，正面反击 Anthropic",
+      "summary_cn": "OpenAI 内部备忘录显示，首席营收官丹尼斯・德莱瑟规划 2026 年第二季度战略蓝图，准备通过技术迭代和生态结盟反击竞争对手 Anthropic。备忘录披露代号为 Spud 的全新 AI 模型，采用英伟达 Blackwell 芯片训练，性能表现强劲，计划融入核心产品推动向 SuperApp 演进。",
+      "why_it_matters_cn": "预示 2026 年全球 AI 竞争焦点转向企业落地与生态基础设施之争，Spud 模型可能改变市场格局。",
+      "tags": [
+        "OpenAI",
+        "竞争战略",
+        "Spud 模型"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sJicAgNyKH",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI 四页内部信曝光：Anthropic 营收注水 80 亿美元",
+      "title_cn": "OpenAI 四页内部信曝光：Anthropic 营收注水 80 亿美元",
+      "summary_cn": "OpenAI 首席营收官德尼丝・德雷塞尔给员工发四页备忘录，质疑竞争对手 Anthropic 数据可信度。备忘录指出其采用总额法处理与云服务提供商的收入分成，虚增 80 亿美元收入，真实年化收入约 220 亿美元，未超 OpenAI 的 250 亿美元。",
+      "why_it_matters_cn": "营收会计方法争议凸显 AI 巨头间竞争白热化，影响投资者判断和市场估值基准。",
+      "tags": [
+        "OpenAI",
+        "Anthropic",
+        "营收争议"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sJHVDHM21y",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "2026 斯坦福 AI 指数报告：美国 AI 投资规模是中国的 23 倍，但 AI 模型基本没差距了",
+      "title_cn": "2026 斯坦福 AI 指数报告：美国 AI 投资规模是中国的 23 倍，但 AI 模型基本没差距了",
+      "summary_cn": "斯坦福大学发布《2026 年人工智能指数》，报告指出 AI 技术普及速度空前，生成式 AI 渗透率达 53%，企业采用率 88%。中美 AI 技术差距基本抹平，中国在论文、专利、工业机器人装机量领先，美国在顶级模型、高价值专利、投资领先。",
+      "why_it_matters_cn": "中美 AI 技术势均力敌，竞争集中在成本与生态层面，投资差距仍显著。",
+      "tags": [
+        "斯坦福报告",
+        "中美 AI",
+        "技术差距"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sJXtJoMjiI",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "​OpenAI 收购 Hiro Finance，专注提升金融 AI 能力",
+      "title_cn": "OpenAI 收购 Hiro Finance，专注提升金融 AI 能力",
+      "summary_cn": "OpenAI 宣布收购个人金融初创公司 Hiro Finance，创始人伊桑・布洛赫及其约 10 人团队将加入。收购主要是为吸纳专业人才，增强 OpenAI 在金融数学与规划领域技术能力。Hiro Finance 成立于 2023 年，提供基于 AI 的财务规划工具。",
+      "why_it_matters_cn": "OpenAI 通过收购补齐金融场景能力，可能推出专业财务规划应用，拓展生活场景覆盖。",
+      "tags": [
+        "OpenAI",
+        "收购",
+        "金融 AI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sJM5KTMWmo",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "美团发布 AI 产品「小团健康管家」",
+      "title_cn": "美团发布 AI 产品「小团健康管家」",
+      "summary_cn": "在乌镇健康大会上，美团发布聚焦家庭健康管理的 AI 产品「小团健康管家」和付费会员服务「健康卡」。小团健康管家提供问病问药、健康咨询等服务，支持家庭健康档案管理和体检报告智能解读，可形成从咨询到履约的完整闭环。",
+      "why_it_matters_cn": "美团将 AI 能力延伸至医疗健康领域，打造从咨询到药品履约的闭环服务生态。",
+      "tags": [
+        "美团",
+        "AI 健康",
+        "产品发布"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sJkVs1b4Uo",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "苹果筹划 Mac Neo 入门级桌面主机 应对 Mac mini 供应短缺",
+      "title_cn": "苹果筹划 Mac Neo 入门级桌面主机 应对 Mac mini 供应短缺",
+      "summary_cn": "苹果计划推出全新入门级桌面电脑 Mac Neo，以应对 Mac mini 供应紧张问题。其定位低于 Mac mini，主打轻量化日常使用，搭载 A19 Pro 芯片，标配 12GB 内存，能稳定供货并控制成本。预计以 299 美元入市，价格优势显著。",
+      "why_it_matters_cn": "Mac Neo 以更低价格拓展入门市场，缓解供应链压力，吸引预算有限用户群体。",
+      "tags": [
+        "苹果",
+        "Mac Neo",
+        "硬件"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sK7LR3UY5R",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "马斯克入驻 TikTok 认证账号发布首个帖子",
+      "title_cn": "马斯克入驻 TikTok 认证账号发布首个帖子",
+      "summary_cn": "上周三，一个带有认证标识的@elonmusk TikTok 账号首发布内容，目前粉丝量 10.46 万。一个同样用户名且带认证标识的账号也出现在 Instagram 平台，但未发布内容。这些账号活跃正值马斯克推动 SpaceX 进行首次公开招股之际。",
+      "why_it_matters_cn": "马斯克重返竞争对手平台，可能为 SpaceX IPO 造势，显示其营销策略灵活性。",
+      "tags": [
+        "马斯克",
+        "TikTok",
+        "SpaceX"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sHhAjJoj8e",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Seedance 2.0 全面开放 API 服务",
+      "title_cn": "Seedance 2.0 全面开放 API 服务",
+      "summary_cn": "火山引擎正式上线 Seedance 2.0 系列 API 服务，该版本支持文字、图片、音频、视频四种模态输入，还建立了肖像与版权安全标准，覆盖视频生成各模态及创作全流程。",
+      "why_it_matters_cn": "多模态视频生成 API 开放，降低开发者使用门槛，推动 AI 视频创作商业化落地。",
+      "tags": [
+        "火山引擎",
+        "Seedance",
+        "API"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sJjgkWag5z",
+      "published_at": "2026-04-14T22:29:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
