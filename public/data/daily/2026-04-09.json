@@ -1,0 +1,90 @@
+{
+  "date": "2026-04-09",
+  "generated_at": "2026-04-23T16:17:06.090200+00:00",
+  "title": "2026-04-09 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Anthropic 推出顶级 AI 安全模型 Claude Mythos，暂时仅供科技巨头试用",
+      "title_cn": "Anthropic 推出顶级 AI 安全模型 Claude Mythos，暂仅供科技巨头试用",
+      "summary_cn": "Anthropic 发布新一代前沿模型 Mythos 预览版，被内部誉为迄今最强大 AI，在推理能力上实现跨越。该模型被称为 AI 界超级探针，在智能体级编程与推理上表现惊人，能扫描数千个零日漏洞，精准锁定老旧代码中的遗留问题。因攻击性潜力强，暂不向公众开放，通过 Project Glasswing 项目定向供 Apple 等行业巨头试用，Anthropic 还与美国联邦官员探讨其在国家级关键系统的防御应用。",
+      "why_it_matters_cn": "标志着 AI 安全研究进入新阶段，展示了 AI 在网络安全领域的巨大潜力和双重用途风险。",
+      "tags": [
+        "AI 安全",
+        "Anthropic",
+        "漏洞扫描",
+        "前沿模型"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8s9BUoZFCIq",
+      "published_at": "2026-04-08T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Anthropic 挖角微软高管，领导 AI 基础设施建设",
+      "title_cn": "Anthropic 挖角微软高管，领导 AI 基础设施建设",
+      "summary_cn": "Anthropic 聘请微软资深高管埃里克・博伊德出任基础设施负责人，负责搭建支撑 AI 服务增长的基础设施。博伊德表示过去六个月尤其是近两个月 Claude Code 展现出 AI 无限潜力。由于产品需求大幅攀升，服务多次难以维持稳定运行，Anthropic 承诺投入 500 亿美元建设 AI 数据中心，以扩充云计算算力满足全球用户创纪录的使用需求。",
+      "why_it_matters_cn": "显示 Anthropic 正大规模投入基础设施建设，以应对 Claude Code 等产品带来的爆炸性需求增长。",
+      "tags": [
+        "Anthropic",
+        "基础设施",
+        "Claude Code",
+        "云计算"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8s9NGGxm4Vj",
+      "published_at": "2026-04-08T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "马斯克起诉 OpenAI 案升级：要求罢免 CEO 奥特曼",
+      "title_cn": "马斯克起诉 OpenAI 案升级：要求罢免 CEO 奥特曼",
+      "summary_cn": "埃隆・马斯克为阻止 OpenAI 转型为营利性公司提起诉讼，寻求罢免 OpenAI CEO 萨姆・奥特曼及总裁格雷格・布罗克曼的领导职务，并希望法院下令恢复该公司非营利研究机构地位。马斯克称此举是防止曾共同创立并早期支持的公共慈善机构被置于私人、营利性利益之下。他起诉 OpenAI 和微软，指控其接受微软资金支持并计划重组时背弃创始使命，曾表示计划寻求高达 1340 亿美元赔偿。",
+      "why_it_matters_cn": "这场诉讼可能重塑 OpenAI 的治理结构，影响整个 AI 行业的非营利与商业化发展方向。",
+      "tags": [
+        "OpenAI",
+        "马斯克",
+        "法律诉讼",
+        "公司治理"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8s9Fo6CPyXy",
+      "published_at": "2026-04-08T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "强脑科技发布 BrainCo Revo 3 智能灵巧手 具备 21 个主动自由度",
+      "title_cn": "强脑科技发布 BrainCo Revo 3 智能灵巧手，具备 21 个主动自由度",
+      "summary_cn": "强脑科技发布 BrainCo Revo 3 智能灵巧手，具备 21 个主动自由度，以全直驱 + 可反驱架构自研高性能驱控一体化微型关节，实现行业级突破。该产品覆盖 33 种抓握手势，有 3Hz 极速开合能力等，搭载全掌触觉阵列及指尖视触觉融合技术，兼容主流开源生态，支持一键部署，降低相关领域开发门槛。",
+      "why_it_matters_cn": "代表中国公司在机器人灵巧手领域的技术突破，为具身智能和机器人应用提供关键硬件基础。",
+      "tags": [
+        "机器人",
+        "灵巧手",
+        "强脑科技",
+        "具身智能"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8s9jqzA4nRM",
+      "published_at": "2026-04-08T22:29:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "阿里组织架构调整：通义实验室升级为事业部 李飞飞出任阿里云 CTO",
+      "title_cn": "阿里组织架构调整：通义实验室升级为事业部，李飞飞出任阿里云 CTO",
+      "summary_cn": "阿里巴巴集团 CEO 吴泳铭发布内部信宣布 AI 相关组织调整，在集团层面设立技术委员会，由吴泳铭任组长，周靖人、吴泽明、李飞飞为成员。通义实验室升级为通义大模型事业部，由周靖人负责，李飞飞出任阿里云 CTO，吴泽明专注集团 CTO 工作，淘宝闪购 CEO 由雷雁群接任。",
+      "why_it_matters_cn": "显示阿里对 AI 战略的高度重视，通过组织升级和引入顶尖人才强化大模型竞争力。",
+      "tags": [
+        "阿里巴巴",
+        "组织架构",
+        "李飞飞",
+        "通义千问"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8s9we5GrdsP",
+      "published_at": "2026-04-08T22:29:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
