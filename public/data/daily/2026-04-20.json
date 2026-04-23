@@ -1,0 +1,26 @@
+{
+  "date": "2026-04-20",
+  "generated_at": "2026-04-23T12:23:23.740742+00:00",
+  "title": "2026-04-20 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Google’s Aletheia Advances the State of the Art of Fully Autonomous Agentic Math Research",
+      "title_cn": "谷歌 Aletheia 推进完全自主 Agent 数学研究的最前沿技术",
+      "summary_cn": "谷歌发布了 Aletheia，这是一个使用 Gemini 3 Deep Think 的 AI 系统，在 FirstProof 挑战中解决了 10 道新数学问题中的 6 道。Aletheia 还在 IMO-ProofBench 上获得了约 91.9% 的分数，标志着无需人工干预的自动化研究级证明发现的重大转变。",
+      "why_it_matters_cn": "这是 AI 在复杂推理领域的重大突破，展示了完全自主系统能够进行人类级别的研究工作，为科学发现自动化开辟了新途径。",
+      "tags": [
+        "AI 研究",
+        "数学证明",
+        "自主 Agent",
+        "DeepMind"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/deepmind-aletheia-agentic-math",
+      "published_at": "2026-04-19T04:38:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
