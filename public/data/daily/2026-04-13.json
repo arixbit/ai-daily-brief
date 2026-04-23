@@ -1,0 +1,58 @@
+{
+  "date": "2026-04-13",
+  "generated_at": "2026-04-23T13:19:24.996441+00:00",
+  "title": "2026-04-13 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI「星门」项目三名核心成员跳槽 Meta",
+      "title_cn": "OpenAI「星门」项目三名核心成员跳槽 Meta",
+      "summary_cn": "知情人士透露，参与 OpenAI 数千亿美元数据中心建设项目的三名核心人员彼得・赫舍勒、沙梅兹・赫马尼、阿努杰・萨哈兰即将加盟 Meta。扎克伯格承诺今年资本支出最高 1350 亿美元用于 AI 基础设施建设。",
+      "why_it_matters_cn": "人才流动反映 AI 基础设施竞赛白热化，Meta 重金投入挑战 OpenAI 算力优势，行业竞争加剧。",
+      "tags": [
+        "人才流动",
+        "AI 基础设施",
+        "Meta",
+        "OpenAI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sGOm7uLIDZ",
+      "published_at": "2026-04-12T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "马斯克：Grok 要接近 Claude Opus 4.6 的水平 需要等到五月",
+      "title_cn": "马斯克：Grok 要接近 Claude Opus 4.6 的水平 需要等到五月",
+      "summary_cn": "马斯克表示，Grok 要达到 Claude Opus 4.6 的接近水平需要等到五月，而完全达到甚至超越该模型则需要到六月。在人工智能快速发展领域，这样的时间跨度已属较长周期。",
+      "why_it_matters_cn": "显示 Grok 与领先模型仍有差距，也反映大模型能力追赶需要实质性时间投入和算力积累。",
+      "tags": [
+        "Grok",
+        "Claude",
+        "模型能力",
+        "时间线"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sG2GagOIQ5",
+      "published_at": "2026-04-12T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "小红书首届黑客松巅峰赛落幕：00 后包揽大奖 最小参赛者仅 12 岁",
+      "title_cn": "小红书首届黑客松巅峰赛落幕：00 后包揽大奖 最小参赛者仅 12 岁",
+      "summary_cn": "小红书首届「黑客松巅峰赛」在上海落幕，200 名入围选手历经 48 小时开发与评选。22 岁叶博文团队凭借口袋吉他智能硬件 Pocket Guitar 摘得全场大奖及 20 万元奖金。超 60% 入围选手为 00 后，最小参赛者仅 12 岁。",
+      "why_it_matters_cn": "年轻开发者展现 AI 创新能力，反映中国青少年对 AI 技术的热情与潜力，生态建设向好。",
+      "tags": [
+        "黑客松",
+        "年轻开发者",
+        "AI 创新",
+        "小红书"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sGTQCjKsUu",
+      "published_at": "2026-04-12T22:29:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
