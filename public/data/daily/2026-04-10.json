@@ -1,0 +1,160 @@
+{
+  "date": "2026-04-10",
+  "generated_at": "2026-04-23T13:24:38.997853+00:00",
+  "title": "2026-04-10 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI 首席营收官：企业业务收入占比超过 40%",
+      "title_cn": "OpenAI 首席营收官：企业业务收入占比超过 40%",
+      "summary_cn": "OpenAI 首席营收官丹妮丝・德雷瑟透露，在消费者业务保持强劲增长的同时，企业业务已占总收入超 40%，预计 2026 年底前将与消费者业务持平。同时 Codex 周活跃用户突破 300 万，显示开发者生态持续扩张。",
+      "why_it_matters_cn": "企业市场成为 OpenAI 重要增长引擎，多元化收入结构降低对单一市场的依赖风险。",
+      "tags": [
+        "OpenAI",
+        "企业市场",
+        "营收"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sAxXsVZKaz",
+      "published_at": "2026-04-09T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "亚马逊考虑向其他公司出售其人工智能芯片",
+      "title_cn": "亚马逊考虑向其他公司出售其人工智能芯片",
+      "summary_cn": "亚马逊 CEO Andy Jassy 表示公司正考虑向其他企业出售自研芯片。该业务年化收入有望超 200 亿美元，涵盖通用计算芯片、AI 加速器及提升服务器效率的芯片，显示亚马逊在芯片领域的雄心。",
+      "why_it_matters_cn": "亚马逊芯片业务若成功将挑战英伟达地位，同时为云业务创造新的利润增长点。",
+      "tags": [
+        "亚马逊",
+        "AI 芯片",
+        "硬件"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sC7HubzN3W",
+      "published_at": "2026-04-09T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "New Future of Work: AI is driving rapid change, uneven benefits",
+      "title_cn": "新工作未来：AI 驱动快速变革，收益分配不均",
+      "summary_cn": "Microsoft Research 发布年度\"新工作未来\"报告，指出生成式 AI 正在加速工作方式的变革。报告追踪五年来的工作变化，今年转变尤为显著，AI 在自动化任务、加速沟通和扩展信息获取方面发挥关键作用。",
+      "why_it_matters_cn": "报告揭示了 AI 带来的变革速度加快，但收益分配不均的问题需要社会关注。",
+      "tags": [
+        "Microsoft",
+        "未来工作",
+        "AI 影响"
+      ],
+      "source": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/new-future-of-work-ai-is-driving-rapid-change-uneven-benefits",
+      "published_at": "2026-04-09T16:11:44+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Ideas: Steering AI toward the work future we want",
+      "title_cn": "观点：引导 AI 走向我们期望的工作未来",
+      "summary_cn": "Microsoft 首席科学家 Jaime Teevan 与研究员团队解读 2025 年新工作未来报告，探讨理想的 AI 驱动工作世界。讨论核心问题：AI 是工具还是合作伙伴？这一区分对塑造未来至关重要。",
+      "why_it_matters_cn": "如何定义 AI 角色将直接影响技术发展方向和人类在工作中的定位。",
+      "tags": [
+        "Microsoft",
+        "AI 战略",
+        "工作未来"
+      ],
+      "source": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/podcast/ideas-steering-ai-toward-the-work-future-we-want",
+      "published_at": "2026-04-09T16:10:37+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
+      "title_cn": "基于 Sentence Transformers 的多模态 Embedding 与 Reranker 模型",
+      "summary_cn": "Hugging Face 推出基于 Sentence Transformers 的多模态 Embedding 和 Reranker 模型，支持文本、图像等多种模态的统一表示学习。这些模型可用于语义搜索、推荐系统和跨模态检索等应用场景。",
+      "why_it_matters_cn": "多模态模型是构建通用 AI 系统的关键技术，降低跨模态应用开发门槛。",
+      "tags": [
+        "Hugging Face",
+        "多模态",
+        "模型"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/multimodal-sentence-transformers",
+      "published_at": "2026-04-09T00:00:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI：已暂停英国「星际之门」项目",
+      "title_cn": "OpenAI：已暂停英国「星际之门」项目",
+      "summary_cn": "OpenAI 宣布暂停英国\"星际之门\"项目，表示将在\"合适条件\"下继续推进英国计划。这一决定反映了公司在国际扩张中的谨慎态度，可能涉及监管、市场或战略考量。",
+      "why_it_matters_cn": "项目暂停显示 OpenAI 在大规模投资前更加审慎，可能影响全球 AI 基础设施布局。",
+      "tags": [
+        "OpenAI",
+        "星际之门",
+        "英国"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sBdNN7ds3F",
+      "published_at": "2026-04-09T22:29:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "马斯克对 xAI 工程团队进行大规模重组",
+      "title_cn": "马斯克对 xAI 工程团队进行大规模重组",
+      "summary_cn": "SpaceX IPO 前夕，马斯克对 xAI 工程团队进行大规模重组。SpaceX 星链高级副总裁迈克尔・尼科尔斯出任 xAI 总裁，称 xAI\"明显落后\"。公司失去多位联合创始人，马斯克称正在从头重建并重新筛选人才。",
+      "why_it_matters_cn": "重组反映马斯克对 xAI 进展不满，效仿特斯拉模式重建可能带来根本性变化。",
+      "tags": [
+        "马斯克",
+        "xAI",
+        "重组"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sAxZVuckaN",
+      "published_at": "2026-04-09T22:29:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Meta 新超级智能团队的首个 AI 模型亮相，转向闭源",
+      "title_cn": "Meta 新超级智能团队的首个 AI 模型亮相，转向闭源",
+      "summary_cn": "Meta 发布首款 AI 模型 Muse Spark，由新组建的超级智能团队开发，将为 Meta AI 聊天机器人提供支持并取代现有 Llama 模型。该模型一改开源策略，采用闭源模式，设计和代码不公开。",
+      "why_it_matters_cn": "Meta 转向闭源标志战略重大转变，反映竞争压力下对技术控制的重视。",
+      "tags": [
+        "Meta",
+        "闭源",
+        "AI 模型"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sAWOZ8SYPM",
+      "published_at": "2026-04-09T22:29:00+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "微信公众号打击自动化 AI 创作行为",
+      "title_cn": "微信公众号打击自动化 AI 创作行为",
+      "summary_cn": "微信公众平台发布新规打击\"非真人自动化创作行为\"，明确三大违规红线，禁止利用 AI 替代真人创作发布。平台将分级处罚违规账号，推动公众号回归\"内容为王\"本质，要求保留人工审核与情感投入。",
+      "why_it_matters_cn": "监管实操化显示平台对 AI 滥用的零容忍，倒逼创作者平衡效率与质量。",
+      "tags": [
+        "微信",
+        "AI 监管",
+        "内容质量"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sBHYdiehov",
+      "published_at": "2026-04-09T22:29:00+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "宇树机器人 R1 现身阿里西溪园区，有望合作「树卖通」项目",
+      "title_cn": "宇树机器人 R1 现身阿里西溪园区，有望合作「树卖通」项目",
+      "summary_cn": "宇树科技最新机器人 R1 现身阿里西溪园区，知情人士透露双方正酝酿出海战略合作。\"树卖通\"项目预计 4 月中旬在深圳品牌大会官宣，可能与速卖通相关，助力品牌出海。",
+      "why_it_matters_cn": "机器人 + 电商出海结合可能创造新的商业模式，推动中国品牌全球化。",
+      "tags": [
+        "宇树科技",
+        "阿里",
+        "机器人"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sB7d5ztXnO",
+      "published_at": "2026-04-09T22:29:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
