@@ -23,6 +23,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from difflib import SequenceMatcher
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
@@ -43,6 +44,56 @@ class NewsItem:
     source: str
     published_at: str
     summary: str
+
+
+class ReadhubDescriptionParser(HTMLParser):
+    """Extract individual stories from Readhub Daily's RSS HTML description."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.items: list[tuple[str, str, str]] = []
+        self._in_item = False
+        self._in_paragraph = False
+        self._paragraph_parts: list[str] = []
+        self._paragraph_href = ""
+        self._title = ""
+        self._url = ""
+        self._summary_parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        tag = tag.lower()
+        if tag == "li":
+            self._in_item = True
+            self._title = ""
+            self._url = ""
+            self._summary_parts = []
+        elif self._in_item and tag == "p":
+            self._in_paragraph = True
+            self._paragraph_parts = []
+            self._paragraph_href = ""
+        elif self._in_paragraph and tag == "a" and not self._paragraph_href:
+            self._paragraph_href = dict(attrs).get("href") or ""
+
+    def handle_data(self, data: str) -> None:
+        if self._in_paragraph:
+            self._paragraph_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        tag = tag.lower()
+        if self._in_paragraph and tag == "p":
+            paragraph = re.sub(r"\s+", " ", "".join(self._paragraph_parts)).strip()
+            if self._paragraph_href and not self._title:
+                self._title = paragraph
+                self._url = self._paragraph_href
+            elif paragraph:
+                self._summary_parts.append(paragraph)
+            self._in_paragraph = False
+            self._paragraph_parts = []
+            self._paragraph_href = ""
+        elif self._in_item and tag == "li":
+            if self._title and self._url:
+                self.items.append((self._title, self._url, " ".join(self._summary_parts)))
+            self._in_item = False
 
 
 def utc_now() -> dt.datetime:
@@ -376,6 +427,50 @@ def parse_hn_algolia(source: dict[str, Any]) -> list[NewsItem]:
     return items
 
 
+def parse_readhub_daily_feed(source: dict[str, Any]) -> list[NewsItem]:
+    """Fetch Readhub Daily RSS and split the daily digest into story items."""
+
+    urls = [str(source["url"]), *[str(url) for url in source.get("fallback_urls", [])]]
+    last_error: Exception | None = None
+    for url in urls:
+        try:
+            text = fetch_text(url)
+            break
+        except (OSError, TimeoutError, urllib.error.URLError) as exc:
+            last_error = exc
+    else:
+        raise ValueError(f"all Readhub RSS endpoints failed: {last_error}")
+
+    root = ET.fromstring(text)
+    items: list[NewsItem] = []
+
+    for entry in root.findall(".//item"):
+        description = child_text(entry, ("description",))
+        page_date_match = re.search(r"日期[：:]\s*(\d{4}-\d{2}-\d{2})", description)
+        published = parse_date(child_text(entry, ("pubdate",))) or utc_now()
+        if page_date_match and not child_text(entry, ("pubdate",)):
+            published = dt.datetime.combine(
+                dt.date.fromisoformat(page_date_match.group(1)),
+                dt.time(0, 0),
+                tzinfo=UTC,
+            )
+
+        parser = ReadhubDescriptionParser()
+        parser.feed(description)
+        for title, url, summary in parser.items:
+            items.append(
+                NewsItem(
+                    title=strip_html(title),
+                    url=normalize_url(url),
+                    source=source["name"],
+                    published_at=published.astimezone(UTC).isoformat(),
+                    summary=strip_html(summary),
+                )
+            )
+
+    return items
+
+
 def fetch_source(source: dict[str, Any]) -> list[NewsItem]:
     """Dispatch source fetching by source type."""
 
@@ -383,6 +478,8 @@ def fetch_source(source: dict[str, Any]) -> list[NewsItem]:
         return parse_feed(source)
     if source.get("type") == "hn_algolia":
         return parse_hn_algolia(source)
+    if source.get("type") == "readhub_daily_feed":
+        return parse_readhub_daily_feed(source)
     raise ValueError(f"Unsupported source type: {source.get('type')}")
 
 

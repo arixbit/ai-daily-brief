@@ -26,9 +26,39 @@
     "inference",
     "token",
     "transformer",
-    "reasoning"
+    "reasoning",
+    "人工智能",
+    "大模型",
+    "智能体",
+    "生成式",
+    "算力",
+    "推理",
+    "机器人",
+    "自动驾驶",
+    "芯片",
+    "训练",
+    "开源模型",
+    "多模态",
+    "图像模型",
+    "语音模型",
+    "视频生成",
+    "AI 编程",
+    "AI 代码"
   ],
   "sources": [
+    {
+      "name": "Readhub Daily",
+      "type": "readhub_daily_feed",
+      "url": "https://rsshub.app/readhub/daily",
+      "fallback_urls": [
+        "https://rss.materium.io/readhub/daily",
+        "https://rsshub.skywt.cn/readhub/daily",
+        "https://rsshub.agrreader.com/readhub/daily"
+      ],
+      "tier": "chinese_aggregator",
+      "weight": 7,
+      "daily_limit": 2
+    },
     {
       "name": "Microsoft Research",
       "type": "feed",
