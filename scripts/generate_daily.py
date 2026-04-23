@@ -713,6 +713,40 @@ def build_daily_payload(
     }
 
 
+def build_empty_payload(
+    errors: list[str],
+    skipped_duplicates: list[str],
+    target_date: str,
+    reason: str,
+) -> dict[str, Any]:
+    """Build a valid daily payload when no source item is available."""
+
+    generated_at = utc_now().isoformat()
+    return {
+        "date": target_date,
+        "generated_at": generated_at,
+        "title": f"{target_date} AI 每日简报",
+        "description": "该日期没有可发布的 AI 资讯。",
+        "items": [],
+        "source_errors": errors,
+        "skipped_duplicates": skipped_duplicates,
+        "status": "empty",
+        "empty_reason_cn": reason,
+    }
+
+
+def should_allow_empty_historical(config: dict[str, Any], target_date: str) -> bool:
+    """Return true for old backfill dates that current RSS feeds cannot cover."""
+
+    try:
+        report_date = dt.date.fromisoformat(target_date)
+    except ValueError:
+        return False
+
+    days = int(config.get("empty_historical_after_days", 3))
+    return report_date <= utc_now().date() - dt.timedelta(days=days)
+
+
 def update_manifest(output_dir: Path, daily_payload: dict[str, Any]) -> None:
     """Update the static site manifest with the generated day."""
 
@@ -768,10 +802,22 @@ def main(argv: list[str]) -> int:
     config = json.loads(args.config.read_text(encoding="utf-8"))
     items, errors, skipped_duplicates = collect_items(config, args.output, args.date)
     if not items:
-        print("No matching AI news items found.", file=sys.stderr)
-        for error in errors:
-            print(f"source error: {error}", file=sys.stderr)
-        return 1
+        if not should_allow_empty_historical(config, args.date):
+            print("No matching AI news items found.", file=sys.stderr)
+            for error in errors:
+                print(f"source error: {error}", file=sys.stderr)
+            return 1
+
+        reason = (
+            "没有找到落在该日报时间窗口内的候选资讯。"
+            "如果这是较早历史日期，通常是因为 RSS 源只保留近期内容，无法可靠回溯。"
+        )
+        payload = build_empty_payload(errors, skipped_duplicates, args.date, reason)
+        write_outputs(payload, args.output)
+        print(f"Generated empty brief for {args.date}: {reason}")
+        if errors:
+            print(f"{len(errors)} source(s) failed; see source_errors in the JSON output.")
+        return 0
 
     payload = build_daily_payload(items, errors, skipped_duplicates, args.date, args.skip_llm)
     write_outputs(payload, args.output)

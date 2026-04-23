@@ -4,6 +4,7 @@
   "timezone_offset": "+08:00",
   "fallback_lookback_hours": 72,
   "history_dedupe_days": 14,
+  "empty_historical_after_days": 3,
   "default_source_daily_limit": 3,
   "default_source_weight": 3,
   "keywords": [
@@ -87,7 +88,7 @@
     {
       "name": "VentureBeat AI",
       "type": "feed",
-      "url": "https://venturebeat.com/category/ai/feed/",
+      "url": "https://venturebeat.com/category/ai/feed",
       "tier": "industry_media",
       "weight": 4,
       "daily_limit": 1
