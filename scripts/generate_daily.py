@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "sources.json"
 DEFAULT_OUTPUT = ROOT / "public" / "data"
 USER_AGENT = "ai-daily-brief/0.1 (+https://ai.arixbit.me)"
+UTC = dt.timezone.utc
 
 
 @dataclass(frozen=True)
@@ -46,7 +47,7 @@ class NewsItem:
 def utc_now() -> dt.datetime:
     """Return the current UTC time with timezone information."""
 
-    return dt.datetime.now(dt.UTC)
+    return dt.datetime.now(UTC)
 
 
 def parse_date(value: str | None) -> dt.datetime | None:
@@ -61,14 +62,14 @@ def parse_date(value: str | None) -> dt.datetime | None:
 
     try:
         parsed = email.utils.parsedate_to_datetime(value)
-        return parsed if parsed.tzinfo else parsed.replace(tzinfo=dt.UTC)
+        return parsed if parsed.tzinfo else parsed.replace(tzinfo=UTC)
     except (TypeError, ValueError):
         pass
 
     normalized = value.replace("Z", "+00:00")
     try:
         parsed = dt.datetime.fromisoformat(normalized)
-        return parsed if parsed.tzinfo else parsed.replace(tzinfo=dt.UTC)
+        return parsed if parsed.tzinfo else parsed.replace(tzinfo=UTC)
     except ValueError:
         return None
 
@@ -165,7 +166,7 @@ def parse_feed(source: dict[str, Any]) -> list[NewsItem]:
                     title=title,
                     url=normalize_url(link),
                     source=source["name"],
-                    published_at=parsed.astimezone(dt.UTC).isoformat(),
+                    published_at=parsed.astimezone(UTC).isoformat(),
                     summary=summary,
                 )
             )
@@ -195,7 +196,7 @@ def parse_hn_algolia(source: dict[str, Any]) -> list[NewsItem]:
                     title=title,
                     url=normalize_url(link),
                     source=source["name"],
-                    published_at=published.astimezone(dt.UTC).isoformat(),
+                    published_at=published.astimezone(UTC).isoformat(),
                     summary=", ".join(metadata),
                 )
             )
@@ -440,7 +441,10 @@ def build_daily_payload(items: list[NewsItem], errors: list[str], target_date: s
     generated_at = utc_now().isoformat()
     entries = []
     briefs = generate_llm_briefs(items, skip_llm)
-    for index, (item, brief) in enumerate(zip(items, briefs, strict=True), start=1):
+    if len(items) != len(briefs):
+        raise RuntimeError("Brief count does not match source item count")
+
+    for index, (item, brief) in enumerate(zip(items, briefs), start=1):
         entries.append(
             {
                 "rank": index,
