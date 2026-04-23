@@ -1,0 +1,159 @@
+{
+  "date": "2026-04-22",
+  "generated_at": "2026-04-23T10:38:22.509231+00:00",
+  "title": "2026-04-22 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI launches workspace agents that turn ChatGPT from a chatbot into a team automation platform",
+      "title_cn": "OpenAI推出workspace agents，将ChatGPT转变为团队自动化平台",
+      "summary_cn": "OpenAI推出workspace agents功能，将ChatGPT从聊天机器人升级为团队自动化平台。该功能由Codex驱动，可自动化复杂团队工作流，即使无人监督也能持续运行。现有custom GPTs暂时保留，后续将提供迁移路径。",
+      "why_it_matters_cn": "标志着AI从对话工具向自主agent平台的战略转型，提升企业生产力。",
+      "tags": [
+        "OpenAI",
+        "agent",
+        "自动化"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-launches-workspace-agents-that-turn-chatgpt-from-a-chatbot-into-a-team-automation-platform",
+      "published_at": "2026-04-22T18:23:33+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Unauthorized users breach Anthropic's restricted Mythos AI model",
+      "title_cn": "未授权用户入侵Anthropic受限的Mythos AI模型",
+      "summary_cn": "据Bloomberg报道，一小群未授权用户成功获取了Anthropic新AI模型Claude Mythos的访问权限。该模型此前被限制访问，此次安全事件暴露了模型分发和访问控制方面的潜在漏洞。",
+      "why_it_matters_cn": "凸显AI模型安全的重要性，尤其是受限模型的访问控制挑战。",
+      "tags": [
+        "Anthropic",
+        "安全",
+        "Claude"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/unauthorized-users-breach-anthropics-restricted-mythos-ai-model",
+      "published_at": "2026-04-22T12:54:43+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Meta tracks US employees' clicks and keystrokes to train AI agents",
+      "title_cn": "Meta追踪美国员工点击和键盘输入以训练AI agents",
+      "summary_cn": "Meta在美国员工电脑上安装监控软件，记录鼠标移动、点击和键盘输入，用于训练AI模型。这一做法引发了关于员工隐私和数据使用的争议，同时也反映了科技巨头获取高质量训练数据的方法。",
+      "why_it_matters_cn": "引发员工隐私担忧，同时展示了企业获取高质量训练数据的新途径。",
+      "tags": [
+        "Meta",
+        "隐私",
+        "训练数据"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/meta-tracks-us-employees-clicks-and-keystrokes-to-train-ai-agents",
+      "published_at": "2026-04-22T12:43:38+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Faru: The Kanban Board for AI Agents",
+      "title_cn": "Faru：AI agents的Kanban看板",
+      "summary_cn": "Faru是一款专为AI agents设计的Kanban看板工具，帮助团队管理和可视化agent的工作流程。作为新兴的agent管理工具，它提供了任务追踪和协作的新方式。",
+      "why_it_matters_cn": "反映了AI agent生态系统中管理工具的需求增长。",
+      "tags": [
+        "工具",
+        "Kanban",
+        "agent"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://fluado.comblog/faru-kanban-board-for-ai-agents",
+      "published_at": "2026-04-23T10:34:40+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Structured planning, execution, and memory for LLM agents (ragbits 1.6)",
+      "title_cn": "LLM agents的结构化规划、执行和记忆功能（ragbits 1.6）",
+      "summary_cn": "ragbits 1.6版本为LLM agents提供结构化规划、执行和记忆功能。该工具增强了AI agent的任务规划能力、执行可见性和持久化记忆，帮助构建更可靠的自主agent系统。",
+      "why_it_matters_cn": "为构建可靠的自主agent系统提供关键的基础设施支持。",
+      "tags": [
+        "LLM",
+        "agent",
+        "开源"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://deepsense.ai/blog/task-planning-execution-visibility-and-persistent-memory-for-ai-agents-ragbits-1-6-release",
+      "published_at": "2026-04-23T10:23:42+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
+      "title_cn": "OpenAI称ChatGPT for Clinicians在临床任务上超越医生",
+      "summary_cn": "OpenAI推出面向医疗专业人士的ChatGPT for Clinicians免费版本。新基准测试显示，GPT-5.4在临床任务上超越人类医生，即使医生拥有无限时间和网络访问权限。",
+      "why_it_matters_cn": "展示AI在专业领域的突破，可能改变医疗诊断和咨询方式。",
+      "tags": [
+        "OpenAI",
+        "医疗",
+        "GPT-5.4"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-says-its-new-chatgpt-for-clinicians-outperforms-doctors-on-clinical-tasks-even-when-they-have-unlimited-time-and-web-access",
+      "published_at": "2026-04-23T10:21:15+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Anthropic tests pulling Claude Code from its Pro plan revealing AI pricing truth",
+      "title_cn": "Anthropic测试从Pro计划移除Claude Code，揭示AI定价真相",
+      "summary_cn": "Anthropic测试从Pro计划中移除Claude Code功能，这一举措揭示了AI定价策略背后的真相。此举可能意味着Claude Code将被单独定价或移至更高价位的订阅层级。",
+      "why_it_matters_cn": "反映AI功能模块化定价趋势，影响开发者和企业用户成本。",
+      "tags": [
+        "Anthropic",
+        "定价",
+        "Claude Code"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://www.europesays.com/ai/13666",
+      "published_at": "2026-04-23T10:01:50+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Show HN: Nova by civai, a platform for managed AI agents",
+      "title_cn": "Nova by civai：托管AI agents平台",
+      "summary_cn": "Nova by civai是一个用于管理AI agents的平台，提供agent部署、监控和协作功能。作为新兴的agent管理平台，它旨在简化企业级agent应用的开发和管理流程。",
+      "why_it_matters_cn": "展示了AI agent管理平台的商业化探索方向。",
+      "tags": [
+        "平台",
+        "agent",
+        "SaaS"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://nova.civai.co",
+      "published_at": "2026-04-23T09:00:52+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Hackers breach Anthropic's 'too dangerous to release' Mythos AI model",
+      "title_cn": "黑客入侵Anthropic'过于危险无法发布'的Mythos AI模型",
+      "summary_cn": "黑客成功入侵Anthropic的Mythos AI模型，该模型被标记为'过于危险而无法发布'。此次安全事件引发了关于AI模型安全存储和访问控制的讨论。",
+      "why_it_matters_cn": "再次强调AI模型安全的重要性，尤其是高风险模型的防护。",
+      "tags": [
+        "安全",
+        "Anthropic",
+        "黑客"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://www.euronews.com/next/2026/04/22/hackers-breach-anthropics-too-dangerous-to-release-mythos-ai-model-report",
+      "published_at": "2026-04-23T08:55:13+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+      "title_cn": "使用LLM进行自动本体构建的研究论文",
+      "summary_cn": "该论文提出混合架构，将LLM与外部本体记忆层结合。相比仅依赖参数化知识和向量检索(RAG)，该方法构建和维护结构化知识图谱(RDF/OWL)，实现持久化、可验证的语义推理。",
+      "why_it_matters_cn": "为LLM提供可验证的推理能力，超越传统RAG方法的局限。",
+      "tags": [
+        "研究",
+        "知识图谱",
+        "RAG"
+      ],
+      "source": "arXiv AI/ML",
+      "url": "https://arxiv.org/abs/2604.20795v1",
+      "published_at": "2026-04-22T17:19:43+00:00"
+    }
+  ],
+  "source_errors": []
+}
