@@ -96,6 +96,51 @@ class ReadhubDescriptionParser(HTMLParser):
             self._in_item = False
 
 
+class ReadhubPageParser(HTMLParser):
+    """Extract story blocks from Readhub's server-rendered daily page."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.blocks: list[tuple[str, str, str]] = []
+        self._tag: str | None = None
+        self._depth = 0
+        self._parts: list[str] = []
+        self._href = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        tag = tag.lower()
+        if self._tag:
+            self._depth += 1
+            if tag == "a" and not self._href:
+                self._href = dict(attrs).get("href") or ""
+            return
+
+        if tag in {"h2", "p"}:
+            self._tag = tag
+            self._depth = 1
+            self._parts = []
+            self._href = ""
+
+    def handle_data(self, data: str) -> None:
+        if self._tag:
+            self._parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if not self._tag:
+            return
+
+        self._depth -= 1
+        if self._depth > 0:
+            return
+
+        text = re.sub(r"\s+", " ", "".join(self._parts)).strip()
+        if text:
+            self.blocks.append((self._tag, text, self._href))
+        self._tag = None
+        self._parts = []
+        self._href = ""
+
+
 def utc_now() -> dt.datetime:
     """Return the current UTC time with timezone information."""
 
@@ -427,8 +472,71 @@ def parse_hn_algolia(source: dict[str, Any]) -> list[NewsItem]:
     return items
 
 
-def parse_readhub_daily_feed(source: dict[str, Any]) -> list[NewsItem]:
-    """Fetch Readhub Daily RSS and split the daily digest into story items."""
+def parse_readhub_daily_page(
+    source: dict[str, Any],
+    config: dict[str, Any],
+    target_date: str,
+) -> list[NewsItem]:
+    """Fetch a Readhub Daily history page for the requested report date."""
+
+    template = source.get("history_url_template")
+    if not template:
+        return []
+
+    report_date = dt.date.fromisoformat(target_date)
+    ts = int(dt.datetime.combine(report_date, dt.time(), tzinfo=UTC).timestamp())
+    text = fetch_text(str(template).format(date=target_date, ts=ts))
+    parser = ReadhubPageParser()
+    parser.feed(text)
+
+    page_text = strip_html(text)
+    page_date_match = re.search(r"(\d{4})\.(\d{1,2})\.(\d{1,2})", page_text)
+    if not page_date_match:
+        return []
+
+    year, month, day = (int(part) for part in page_date_match.groups())
+    if dt.date(year, month, day).isoformat() != target_date:
+        return []
+
+    _, window_end = target_publish_window(config, target_date)
+    published = (window_end - dt.timedelta(minutes=1)).isoformat()
+    items: list[NewsItem] = []
+    pending: tuple[str, str] | None = None
+    for tag, text_content, href in parser.blocks:
+        if tag == "h2":
+            match = re.match(r"^\s*\d{1,2}\s*(.+)$", text_content)
+            title = strip_html(match.group(1) if match else text_content)
+            link = urllib.parse.urljoin("https://readhub.cn/daily", href) if href else source["url"]
+            pending = (title, link) if title else None
+            continue
+
+        if tag == "p" and pending:
+            title, link = pending
+            items.append(
+                NewsItem(
+                    title=title,
+                    url=normalize_url(link),
+                    source=source["name"],
+                    published_at=published,
+                    summary=strip_html(text_content),
+                )
+            )
+            pending = None
+
+    return items
+
+
+def parse_readhub_daily_feed(
+    source: dict[str, Any],
+    config: dict[str, Any] | None = None,
+    target_date: str | None = None,
+) -> list[NewsItem]:
+    """Fetch Readhub Daily and split the digest into story items."""
+
+    if config and target_date:
+        history_items = parse_readhub_daily_page(source, config, target_date)
+        if history_items:
+            return history_items
 
     urls = [str(source["url"]), *[str(url) for url in source.get("fallback_urls", [])]]
     last_error: Exception | None = None
@@ -443,12 +551,16 @@ def parse_readhub_daily_feed(source: dict[str, Any]) -> list[NewsItem]:
 
     root = ET.fromstring(text)
     items: list[NewsItem] = []
+    channel = root.find("channel")
+    channel_published = parse_date(child_text(channel, ("pubdate",))) if channel is not None else None
 
     for entry in root.findall(".//item"):
+        title = strip_html(child_text(entry, ("title",)))
+        link = child_link(entry)
         description = child_text(entry, ("description",))
         page_date_match = re.search(r"日期[：:]\s*(\d{4}-\d{2}-\d{2})", description)
-        published = parse_date(child_text(entry, ("pubdate",))) or utc_now()
-        if page_date_match and not child_text(entry, ("pubdate",)):
+        published = parse_date(child_text(entry, ("pubdate",))) or channel_published or utc_now()
+        if page_date_match and not child_text(entry, ("pubdate",)) and not channel_published:
             published = dt.datetime.combine(
                 dt.date.fromisoformat(page_date_match.group(1)),
                 dt.time(0, 0),
@@ -457,21 +569,38 @@ def parse_readhub_daily_feed(source: dict[str, Any]) -> list[NewsItem]:
 
         parser = ReadhubDescriptionParser()
         parser.feed(description)
-        for title, url, summary in parser.items:
+        if parser.items:
+            for parsed_title, url, summary in parser.items:
+                items.append(
+                    NewsItem(
+                        title=strip_html(parsed_title),
+                        url=normalize_url(url),
+                        source=source["name"],
+                        published_at=published.astimezone(UTC).isoformat(),
+                        summary=strip_html(summary),
+                    )
+                )
+            continue
+
+        if title and link and not title.startswith("Readhub 每日早报"):
             items.append(
                 NewsItem(
-                    title=strip_html(title),
-                    url=normalize_url(url),
+                    title=title,
+                    url=normalize_url(link),
                     source=source["name"],
                     published_at=published.astimezone(UTC).isoformat(),
-                    summary=strip_html(summary),
+                    summary=strip_html(description),
                 )
             )
 
     return items
 
 
-def fetch_source(source: dict[str, Any]) -> list[NewsItem]:
+def fetch_source(
+    source: dict[str, Any],
+    config: dict[str, Any],
+    target_date: str | None = None,
+) -> list[NewsItem]:
     """Dispatch source fetching by source type."""
 
     if source.get("type") == "feed":
@@ -479,7 +608,7 @@ def fetch_source(source: dict[str, Any]) -> list[NewsItem]:
     if source.get("type") == "hn_algolia":
         return parse_hn_algolia(source)
     if source.get("type") == "readhub_daily_feed":
-        return parse_readhub_daily_feed(source)
+        return parse_readhub_daily_feed(source, config, target_date)
     raise ValueError(f"Unsupported source type: {source.get('type')}")
 
 
@@ -522,7 +651,7 @@ def collect_items(
 
     for source in config.get("sources", []):
         try:
-            fetched = fetch_source(source)
+            fetched = fetch_source(source, config, target_date)
         except (ET.ParseError, OSError, TimeoutError, urllib.error.URLError, ValueError, json.JSONDecodeError) as exc:
             errors.append(f"{source.get('name', source.get('url'))}: {exc}")
             continue
@@ -561,6 +690,7 @@ def collect_items(
         for source in config.get("sources", [])
     }
     max_items = int(config.get("max_items", 10))
+    min_items = min(int(config.get("min_items", 10)), max_items)
     for _, _, item in scored:
         source_limit = source_limits.get(item.source, default_source_limit)
         if selected_source_counts.get(item.source, 0) >= source_limit:
@@ -577,23 +707,19 @@ def collect_items(
         if len(selected) >= max_items:
             break
 
-    if len(selected) < max_items:
+    if len(selected) < min_items:
         for _, _, item in scored:
             if normalize_url(item.url) in selected_urls:
-                continue
-            source_limit = source_limits.get(item.source, default_source_limit)
-            if selected_source_counts.get(item.source, 0) >= source_limit:
                 continue
             if is_similar_title(item.title, selected_titles):
                 skipped_duplicates.append(item.title)
                 continue
             selected.append(item)
             selected_urls.add(normalize_url(item.url))
-            selected_source_counts[item.source] = selected_source_counts.get(item.source, 0) + 1
             fingerprint = title_fingerprint(item.title)
             if fingerprint:
                 selected_titles.add(fingerprint)
-            if len(selected) >= max_items:
+            if len(selected) >= min_items:
                 break
 
     return selected, errors, skipped_duplicates
