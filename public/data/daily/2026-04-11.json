@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-11",
+  "generated_at": "2026-04-23T13:22:36.088254+00:00",
+  "title": "2026-04-11 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Anthropic 考虑自研芯片",
+      "title_cn": "Anthropic 考虑自研芯片",
+      "summary_cn": "Anthropic 正在探索自主设计 AI 芯片的可能性，目前计划处于早期阶段。公司尚未确定具体设计方案，也未组建专门团队，最终可能选择直接购买而非自研芯片。",
+      "why_it_matters_cn": "反映大模型公司对算力自主可控的重视，但自研芯片成本高、周期长，存在不确定性。",
+      "tags": [
+        "芯片",
+        "Anthropic",
+        "硬件"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sCabXDqKhh",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI 创始人奥尔特曼住所遭人用燃烧瓶袭击",
+      "title_cn": "OpenAI 创始人奥尔特曼住所遭人用燃烧瓶袭击",
+      "summary_cn": "旧金山警方逮捕一名 20 岁嫌疑人，其向 OpenAI 创始人萨姆・奥尔特曼住所投掷燃烧瓶，并在公司总部外进行威胁。OpenAI 称无人受伤，正在协助警方调查。",
+      "why_it_matters_cn": "AI 行业领军人物遭遇人身威胁，凸显行业争议与社会关注度的双重性。",
+      "tags": [
+        "OpenAI",
+        "安全",
+        "奥尔特曼"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sDwCbx9x0P",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "阿里巴巴领投对 AI 视频生成公司生数科技的一轮 3 亿美元融资",
+      "title_cn": "阿里巴巴领投对 AI 视频生成公司生数科技的一轮 3 亿美元融资",
+      "summary_cn": "阿里巴巴领投 AI 视频生成初创公司生数科技 3 亿美元融资，显示中国科技巨头对 AI 视频生成领域的战略重视与资本投入力度。",
+      "why_it_matters_cn": "3 亿美元融资显示资本对 AI 视频生成赛道的信心，阿里布局内容生成领域。",
+      "tags": [
+        "融资",
+        "AI 视频",
+        "阿里巴巴"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sCeskf8gsC",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "传梁文锋内部发声，DeepSeek V4 将于 4 月下旬发布",
+      "title_cn": "传梁文锋内部发声，DeepSeek V4 将于 4 月下旬发布",
+      "summary_cn": "据知情人士透露，DeepSeek 创始人梁文锋称新一代旗舰大模型 V4 将于 4 月下旬发布。V4 将拥有万亿参数规模和百万级上下文窗口，首次深度适配华为昇腾等国产芯片。",
+      "why_it_matters_cn": "国产大模型向超大规模参数迈进，同时深度适配国产芯片，体现技术自主化趋势。",
+      "tags": [
+        "DeepSeek",
+        "大模型",
+        "国产芯片"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sCmoltoWZN",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "AI 写作年赚 200 万夫妻被封号",
+      "title_cn": "AI 写作年赚 200 万夫妻被封号",
+      "summary_cn": "宣称 AI 写公众号年入 200 万的夫妻，其账号因「非真人自动化创作」被微信封禁。所谓高收入主要来自收取保证金。这是平台整治 AI 违规创作的典型案例。",
+      "why_it_matters_cn": "平台加强 AI 自动化内容监管，自媒体需合规运营，「AI 副业」营销需警惕。",
+      "tags": [
+        "内容合规",
+        "微信",
+        "AI 写作"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sCyEl5bjp9",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "阿里：HappyHorse 模型正处于内测中，近期开放 API",
+      "title_cn": "阿里：HappyHorse 模型正处于内测中，近期开放 API",
+      "summary_cn": "阿里巴巴确认 HappyHorse 模型由 ATH 创新事业部研发，目前处于内测阶段，近期将开放 API。该模型是阿里探索 AI 时代全新交互方式的重要产品之一。",
+      "why_it_matters_cn": "阿里布局新型交互模型，API 开放将推动开发者生态与场景落地。",
+      "tags": [
+        "阿里巴巴",
+        "模型",
+        "API"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sCxS2SMGsJ",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "SBTI 走红网络 作者：初衷是为了劝朋友戒酒",
+      "title_cn": "SBTI 走红网络 作者：初衷是为了劝朋友戒酒",
+      "summary_cn": "AI 人格测试应用 SBTI 凭借荒诞标签和解构式表达在社交平台走红。开发者称初衷是劝朋友戒酒，产品用于娱乐而非科学评估，非心理学专业背景。",
+      "why_it_matters_cn": "AI 娱乐应用切中亚文化审美，但需明确边界，避免伪科学误导用户。",
+      "tags": [
+        "AI 应用",
+        "人格测试",
+        "社交"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sCgIpJQevc",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "追觅俞浩内部发言曝光：扬言年薪 2 亿招首席科学家，把宇树所有客户、标的抢过来",
+      "title_cn": "追觅俞浩内部发言曝光：扬言年薪 2 亿招首席科学家，把宇树所有客户、标的抢过来",
+      "summary_cn": "追觅科技 CEO 俞浩内部发言曝光，扬言以 2 亿年薪抢夺首席科学家，要求团队全面包围竞争对手宇树科技，抢其客户、项目和员工，展现激烈竞争态势。",
+      "why_it_matters_cn": "机器人赛道竞争白热化，天价挖角反映高端人才稀缺与行业争夺战升级。",
+      "tags": [
+        "追觅",
+        "人才竞争",
+        "机器人"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sD2VMt4AX5",
+      "published_at": "2026-04-10T22:29:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
