@@ -1,5 +1,5 @@
 {
-  "max_items": 10,
+  "max_items": 20,
   "daily_cutoff_time": "06:30",
   "timezone_offset": "+08:00",
   "fallback_lookback_hours": 72,

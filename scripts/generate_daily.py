@@ -581,11 +581,15 @@ def collect_items(
         for _, _, item in scored:
             if normalize_url(item.url) in selected_urls:
                 continue
+            source_limit = source_limits.get(item.source, default_source_limit)
+            if selected_source_counts.get(item.source, 0) >= source_limit:
+                continue
             if is_similar_title(item.title, selected_titles):
                 skipped_duplicates.append(item.title)
                 continue
             selected.append(item)
             selected_urls.add(normalize_url(item.url))
+            selected_source_counts[item.source] = selected_source_counts.get(item.source, 0) + 1
             fingerprint = title_fingerprint(item.title)
             if fingerprint:
                 selected_titles.add(fingerprint)
