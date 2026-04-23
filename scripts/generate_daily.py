@@ -551,8 +551,8 @@ def fallback_brief(item: NewsItem) -> dict[str, Any]:
     """Build a usable brief when the local model is unavailable."""
 
     return {
-        "title_cn": item.title,
-        "summary_cn": strip_html(item.summary)[:220] or "暂无摘要，请点击原文查看详情。",
+        "title_cn": f"中文待整理：{item.title}",
+        "summary_cn": strip_html(item.summary)[:220] or "模型暂时不可用，暂无中文摘要；请点击原文查看详情。",
         "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
         "tags": infer_tags(item),
     }
