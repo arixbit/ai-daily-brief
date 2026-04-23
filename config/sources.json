@@ -1,7 +1,10 @@
 {
   "max_items": 10,
-  "lookback_hours": 72,
+  "daily_cutoff_time": "06:30",
+  "timezone_offset": "+08:00",
+  "fallback_lookback_hours": 72,
   "history_dedupe_days": 14,
+  "default_source_daily_limit": 3,
   "keywords": [
     "ai",
     "artificial intelligence",
@@ -27,37 +30,44 @@
     {
       "name": "TechCrunch AI",
       "type": "feed",
-      "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "daily_limit": 2
     },
     {
       "name": "VentureBeat AI",
       "type": "feed",
-      "url": "https://venturebeat.com/category/ai/feed/"
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "daily_limit": 2
     },
     {
       "name": "Hugging Face Blog",
       "type": "feed",
-      "url": "https://huggingface.co/blog/feed.xml"
+      "url": "https://huggingface.co/blog/feed.xml",
+      "daily_limit": 2
     },
     {
       "name": "Google DeepMind Blog",
       "type": "feed",
-      "url": "https://deepmind.google/blog/rss.xml"
+      "url": "https://deepmind.google/blog/rss.xml",
+      "daily_limit": 2
     },
     {
       "name": "The Decoder",
       "type": "feed",
-      "url": "https://the-decoder.com/feed/"
+      "url": "https://the-decoder.com/feed/",
+      "daily_limit": 3
     },
     {
       "name": "arXiv AI/ML",
       "type": "feed",
-      "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=25"
+      "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=25",
+      "daily_limit": 3
     },
     {
       "name": "Hacker News AI",
       "type": "hn_algolia",
-      "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=25"
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=25",
+      "daily_limit": 2
     }
   ]
 }

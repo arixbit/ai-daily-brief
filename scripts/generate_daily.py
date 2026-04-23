@@ -75,6 +75,46 @@ def parse_date(value: str | None) -> dt.datetime | None:
         return None
 
 
+def parse_timezone_offset(value: str) -> dt.timezone:
+    """Parse a fixed timezone offset such as '+08:00'."""
+
+    match = re.fullmatch(r"([+-])(\d{2}):(\d{2})", value.strip())
+    if not match:
+        raise ValueError(f"Invalid timezone_offset: {value}")
+    sign, hours, minutes = match.groups()
+    delta = dt.timedelta(hours=int(hours), minutes=int(minutes))
+    if sign == "-":
+        delta = -delta
+    return dt.timezone(delta)
+
+
+def parse_cutoff_time(value: str) -> dt.time:
+    """Parse HH:MM cutoff time used to build non-overlapping daily windows."""
+
+    try:
+        hour, minute = value.strip().split(":", 1)
+        parsed = dt.time(int(hour), int(minute))
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"Invalid daily_cutoff_time: {value}") from exc
+    return parsed
+
+
+def target_publish_window(config: dict[str, Any], target_date: str) -> tuple[dt.datetime, dt.datetime]:
+    """Return the UTC publish window for a report date.
+
+    A report dated 2026-04-24 with a 06:30 +08:00 cutoff covers articles
+    published from 2026-04-23 06:30 +08:00 up to 2026-04-24 06:30 +08:00.
+    Adjacent report dates therefore do not overlap.
+    """
+
+    report_date = dt.date.fromisoformat(target_date)
+    tz = parse_timezone_offset(str(config.get("timezone_offset", "+08:00")))
+    cutoff = parse_cutoff_time(str(config.get("daily_cutoff_time", "06:30")))
+    end_local = dt.datetime.combine(report_date, cutoff, tzinfo=tz)
+    start_local = end_local - dt.timedelta(days=1)
+    return start_local.astimezone(UTC), end_local.astimezone(UTC)
+
+
 def strip_html(value: str | None) -> str:
     """Convert small HTML snippets from feeds into compact plain text."""
 
@@ -362,7 +402,11 @@ def collect_items(
     """Fetch all sources and return deduplicated, ranked recent items."""
 
     now = utc_now()
-    lookback = dt.timedelta(hours=int(config.get("lookback_hours", 72)))
+    try:
+        window_start, window_end = target_publish_window(config, target_date)
+    except ValueError:
+        fallback = dt.timedelta(hours=int(config.get("fallback_lookback_hours", 72)))
+        window_start, window_end = now - fallback, now
     keywords = list(config.get("keywords", []))
     history_urls, history_titles = load_history_dedupe(
         output_dir,
@@ -383,7 +427,7 @@ def collect_items(
 
         for item in fetched:
             published = parse_date(item.published_at) or now
-            if now - published > lookback:
+            if not (window_start <= published < window_end):
                 continue
             dedupe_key = normalize_url(item.url)
             if dedupe_key in seen:
@@ -403,18 +447,45 @@ def collect_items(
     scored.sort(key=lambda row: (row[0], row[1]), reverse=True)
 
     selected: list[NewsItem] = []
+    selected_urls: set[str] = set()
     selected_titles: set[str] = set()
+    selected_source_counts: dict[str, int] = {}
+    default_source_limit = int(config.get("default_source_daily_limit", 3))
+    source_limits = {
+        str(source.get("name")): int(source.get("daily_limit", default_source_limit))
+        for source in config.get("sources", [])
+    }
     max_items = int(config.get("max_items", 10))
     for _, _, item in scored:
+        source_limit = source_limits.get(item.source, default_source_limit)
+        if selected_source_counts.get(item.source, 0) >= source_limit:
+            continue
         if is_similar_title(item.title, selected_titles):
             skipped_duplicates.append(item.title)
             continue
         selected.append(item)
+        selected_urls.add(normalize_url(item.url))
+        selected_source_counts[item.source] = selected_source_counts.get(item.source, 0) + 1
         fingerprint = title_fingerprint(item.title)
         if fingerprint:
             selected_titles.add(fingerprint)
         if len(selected) >= max_items:
             break
+
+    if len(selected) < max_items:
+        for _, _, item in scored:
+            if normalize_url(item.url) in selected_urls:
+                continue
+            if is_similar_title(item.title, selected_titles):
+                skipped_duplicates.append(item.title)
+                continue
+            selected.append(item)
+            selected_urls.add(normalize_url(item.url))
+            fingerprint = title_fingerprint(item.title)
+            if fingerprint:
+                selected_titles.add(fingerprint)
+            if len(selected) >= max_items:
+                break
 
     return selected, errors, skipped_duplicates
 
