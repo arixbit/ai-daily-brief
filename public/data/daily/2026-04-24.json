@@ -1,0 +1,161 @@
+{
+  "date": "2026-04-24",
+  "generated_at": "2026-04-23T23:27:16.544131+00:00",
+  "title": "2026-04-24 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Anthropic 二级市场估值升至万亿美元，超越 OpenAI",
+      "title_cn": "Anthropic 二级市场估值升至万亿美元，超越 OpenAI",
+      "summary_cn": "Anthropic 在未上市企业股权交易平台上估值升至约 1 万亿美元，超越 OpenAI 的 8800 亿美元。买家抢购其二级市场股票推动估值迅速攀升，标志着这家 Claude 开发者在 AI 竞赛中取得重大里程碑。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "估值",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sYdeTFloF5",
+      "published_at": "2026-04-23T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI 面向医生等开放 ChatGPT 服务",
+      "title_cn": "OpenAI 面向医生等医疗专业人员免费开放 ChatGPT 服务",
+      "summary_cn": "OpenAI 面向经身份验证的医生、执业护士、医师助理与药剂师免费开放专为临床医生开发的 ChatGPT 服务，率先在美国推出。此举旨在提升医疗行业 AI 采用率。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "医疗 AI",
+        "ChatGPT",
+        "OpenAI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sYBlgY8N3H",
+      "published_at": "2026-04-23T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI's new Trusted Access program gives Microsoft its most capable models for cyber defense",
+      "title_cn": "OpenAI 通过 Trusted Access 计划向 Microsoft 提供最强模型用于网络防御",
+      "summary_cn": "OpenAI 与 Microsoft 合作加强网络安全防御，通过新的 Trusted Access 计划向 Microsoft 提供其最强大的 AI 模型。此举回应 AI 模型本身成为安全威胁的挑战，Anthropic 的 Mythos 模型已率先探索自主漏洞检测。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "网络安全",
+        "OpenAI",
+        "Microsoft"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openais-new-trusted-access-program-gives-microsoft-its-most-capable-models-for-cyber-defense",
+      "published_at": "2026-04-23T16:09:29+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI unveils GPT-5.5, claims a \"new class of intelligence\" at double the API price",
+      "title_cn": "OpenAI 发布 GPT-5.5，宣称实现'新类别智能'，API 价格翻倍",
+      "summary_cn": "OpenAI 推出 GPT-5.5，这是一款 agentic 模型，能够通过在多个工具间切换自主完成复杂任务。公司宣称这代表'新类别智能'，但 API 价格翻倍，反映其增强的能力与计算成本。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "GPT-5.5",
+        "Agent",
+        "OpenAI"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-unveils-gpt-5-5-claims-a-new-class-of-intelligence-at-double-the-api-price",
+      "published_at": "2026-04-23T19:01:07+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI releases GPT-5.5, bringing company one step closer to an AI ‘super app’",
+      "title_cn": "OpenAI 发布 GPT-5.5，向 AI'超级应用'愿景迈进一步",
+      "summary_cn": "OpenAI 发布最新模型 GPT-5.5，宣称在广泛类别中提供增强的能力。此举被视为向公司 AI'超级应用'愿景迈出的重要一步，整合多种功能于单一平台。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "GPT-5.5",
+        "超级应用",
+        "OpenAI"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp",
+      "published_at": "2026-04-23T18:29:29+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Bret Taylor’s Sierra buys YC-backed AI startup Fragment",
+      "title_cn": "Bret Taylor 的 Sierra 收购 YC 支持的 AI 初创公司 Fragment",
+      "summary_cn": "由技术专家 Bret Taylor 创立的 AI 客户客服 agent 初创公司 Sierra 宣布收购 YC 支持的法国初创公司 Fragment。此次收购将加强 Sierra 在 AI 客服领域的产品能力。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "收购",
+        "客服 AI",
+        "Sierra"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment",
+      "published_at": "2026-04-23T21:00:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Google's open-source DESIGN.md gives AI agents a prompt-ready blueprint for brand-consistent design",
+      "title_cn": "Google 开源 DESIGN.md，为 AI agent 提供品牌一致设计的提示蓝图",
+      "summary_cn": "Google 开源其 AI 设计工具 Stitch 背后的 agent 提示。DESIGN.md 格式旨在教导 AI agent 如何遵循品牌规范，为开发者提供即用的提示蓝图，确保设计输出符合品牌一致性要求。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "开源",
+        "设计",
+        "Google"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/googles-open-source-design-md-gives-ai-agents-a-prompt-ready-blueprint-for-brand-consistent-design",
+      "published_at": "2026-04-23T17:20:06+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "谷歌确认基于 Gemini AI 的苹果新版 Siri 今年亮相",
+      "title_cn": "谷歌确认基于 Gemini AI 的苹果新版 Siri 将于 2026 年发布",
+      "summary_cn": "在谷歌 Cloud Next 26 大会主题演讲中，谷歌云 CEO 托马斯・库里安确认，基于 Gemini 技术构建的苹果新一代 Siri 将于 2026 年发布。谷歌与苹果于 2026 年 1 月签署多年期协议，谷歌作为首选云服务商提供核心技术支持，年价值约 10 亿美元。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "Siri",
+        "Gemini",
+        "苹果",
+        "谷歌"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sYG3ObYO1G",
+      "published_at": "2026-04-23T22:29:00+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "OpenAI releases open-source model that strips personal data from text",
+      "title_cn": "OpenAI 发布开源模型，可从文本中移除个人数据",
+      "summary_cn": "OpenAI 发布 Privacy Filter，一款开源模型，旨在检测和删除文本中的个人数据。该工具帮助开发者和企业在数据处理中保护用户隐私，符合日益严格的隐私法规要求。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "隐私",
+        "开源",
+        "OpenAI"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-releases-open-source-model-that-strips-personal-data-from-text",
+      "published_at": "2026-04-23T13:53:13+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "OpenAI says its new ChatGPT for Clinicians outperforms doctors on clinical tasks even when they have unlimited time and web access",
+      "title_cn": "OpenAI 称新版 ChatGPT for Clinicians 在临床任务上超越医生",
+      "summary_cn": "OpenAI 推出免费版的 ChatGPT for Clinicians 供医疗专业人员使用。新基准测试显示，GPT-5.4 在临床任务上表现优于人类医生，即使医生拥有无限时间和网络访问权限。",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "医疗 AI",
+        "ChatGPT",
+        "基准测试"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-says-its-new-chatgpt-for-clinicians-outperforms-doctors-on-clinical-tasks-even-when-they-have-unlimited-time-and-web-access",
+      "published_at": "2026-04-23T10:21:15+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
