@@ -1,24 +1,136 @@
 {
   "date": "2026-04-20",
-  "generated_at": "2026-04-23T12:23:23.740742+00:00",
+  "generated_at": "2026-04-24T10:11:58.197086+00:00",
   "title": "2026-04-20 AI 每日简报",
   "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
   "items": [
     {
       "rank": 1,
-      "title": "Google’s Aletheia Advances the State of the Art of Fully Autonomous Agentic Math Research",
-      "title_cn": "谷歌 Aletheia 推进完全自主 Agent 数学研究的最前沿技术",
-      "summary_cn": "谷歌发布了 Aletheia，这是一个使用 Gemini 3 Deep Think 的 AI 系统，在 FirstProof 挑战中解决了 10 道新数学问题中的 6 道。Aletheia 还在 IMO-ProofBench 上获得了约 91.9% 的分数，标志着无需人工干预的自动化研究级证明发现的重大转变。",
-      "why_it_matters_cn": "这是 AI 在复杂推理领域的重大突破，展示了完全自主系统能够进行人类级别的研究工作，为科学发现自动化开辟了新途径。",
+      "title": "微软收购 Fintool，AI 金融研究工具将深度融入 Office 全家桶",
+      "title_cn": "微软收购 Fintool，AI 金融研究工具将深度融入 Office 全家桶",
+      "summary_cn": "微软收购金融科技初创公司 Fintool，虽未正式公布交易及具体条款，但 Fintool 创始人已发布相关信息。Fintool 由尼古拉・布斯塔曼特与爱德华・戈弗雷在旧金山创立，其开发的人工智能助手可协助投资者与分析师开展定性金融研究工作，今年早些时候发布的第五代产品能让 AI 智能体在后台完成多项任务。未来数月，微软将把 Fintool 技术整合进 Microsoft 365。",
+      "why_it_matters_cn": "微软通过收购强化 AI 在金融垂直领域的能力，将专业金融研究工具整合进 Office 生态，拓展企业级市场覆盖。",
       "tags": [
+        "微软",
+        "收购",
+        "金融科技",
+        "AI 智能体"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sS6S3QCc3G",
+      "published_at": "2026-04-19T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "ChatGPT 推出年龄预测功能，为青少年提供适龄体验",
+      "title_cn": "ChatGPT 推出年龄预测功能，为青少年提供适龄体验",
+      "summary_cn": "OpenAI 本周宣布面向全球市场推出 ChatGPT 年龄预测功能，为青少年提供额外安全设置，限制部分敏感内容及特定类型交互。系统会查看与账户相关联的不同信号确认年龄，若判定用户未满 18 岁则启用额外安全设置，不展示广告，谨慎处理不良内容。同时，使用第三方服务 Persona 完成身份验证，用户需提供实时自拍或政府签发的身份证件验证年龄。该功能未来几周将在欧盟上线。",
+      "why_it_matters_cn": "大模型平台加强未成年人保护，通过年龄验证和分级内容策略应对监管要求，提升平台合规性。",
+      "tags": [
+        "ChatGPT",
+        "OpenAI",
+        "青少年安全",
+        "内容分级"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sS9gB5Hz55",
+      "published_at": "2026-04-19T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Google’s Aletheia Advances the State of the Art of Fully Autonomous Agentic Math Research",
+      "title_cn": "Google Aletheia 实现全自动数学研究突破",
+      "summary_cn": "Google 推出 Aletheia，这是使用 Gemini 3 Deep Think 的 AI 系统，在 FirstProof 挑战中解决了 10 道新数学问题中的 6 道。Aletheia 还在 IMO-ProofBench 上获得约 91.9% 的分数，标志着无需人工干预的自动化研究级证明发现取得重大进展，展现了 AI 在复杂推理领域的最新能力。",
+      "why_it_matters_cn": "AI 首次在没有人类干预的情况下实现研究级数学证明发现，标志着自动化科学研究的重大突破。",
+      "tags": [
+        "Google",
         "AI 研究",
         "数学证明",
-        "自主 Agent",
-        "DeepMind"
+        "自主智能"
       ],
       "source": "InfoQ AI/ML",
       "url": "https://www.infoq.com/news/2026/04/deepmind-aletheia-agentic-math",
       "published_at": "2026-04-19T04:38:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "荣耀「闪电」包揽北京亦庄机器人半马比赛前三",
+      "title_cn": "荣耀「闪电」包揽北京亦庄机器人半马比赛前三",
+      "summary_cn": "荣耀「闪电」包揽北京亦庄机器人半马比赛前三，齐天大圣队的「闪电」机器人以 50 分 26 秒（净用时）夺冠，打破人类半程马拉松世界纪录。雷霆闪电队的「闪电」以 50 分 56 秒、星火燎原队的「闪电」机器人以 53 分 01 秒分别位列第二、三名。",
+      "why_it_matters_cn": "人形机器人在长跑耐力测试中超越人类极限，展示运动控制与能源管理技术的显著进步。",
+      "tags": [
+        "机器人",
+        "荣耀",
+        "半程马拉松",
+        "运动 AI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sRit7rs0Lo",
+      "published_at": "2026-04-19T22:29:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "钉钉陈航谈 AI：公司全员禁写文档，被我发现肯定批评",
+      "title_cn": "钉钉陈航谈 AI：公司全员禁写文档，被我发现肯定批评",
+      "summary_cn": "钉钉创始人兼 CEO 陈航在演讲中称，若公司有人以写文档自居，那该公司是过去式，其所在公司一千四五百人，严禁写文档，开会不准做笔记，会议纪要和后续跟进全用 AI。讨论问题用白板，沟通完拍照，AI 自动分析总结成会议纪要并跟进。陈航强调写文档的时代结束了。",
+      "why_it_matters_cn": "企业工作流全面 AI 化，传统文档协作模式被实时智能处理取代，重新定义知识管理方式。",
+      "tags": [
+        "钉钉",
+        "企业 AI",
+        "工作流",
+        "知识管理"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sRq20S9yp1",
+      "published_at": "2026-04-19T22:29:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "DeepSeek 被曝融资 20 亿 投资人：或为期权定价留人才",
+      "title_cn": "DeepSeek 被曝融资 20 亿 投资人：或为期权定价留人才",
+      "summary_cn": "DeepSeek 正计划以超 100 亿美元估值募集至少 3 亿美元资金，这被视为其战略重大转向。引入外部资金可获更多计算资源、防止研究员流失，潜在投资方或多为国内人民币资金。此前 DeepSeek 多次拒绝外部投资，创始人梁文锋担心外部干预决策。有投资人认为融资或为员工期权定价和兑现。AI 领域人才竞争激烈，DeepSeek 多位核心研究员出走。",
+      "why_it_matters_cn": "中国 AI 独角兽首次大规模融资，反映大模型竞赛对资金和人才的巨大消耗，竞争白热化。",
+      "tags": [
+        "DeepSeek",
+        "融资",
+        "人才竞争",
+        "大模型"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sS7C3OJd78",
+      "published_at": "2026-04-19T22:29:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Cursor 即将完成 20 亿美元融资，估值达 500 亿美元",
+      "title_cn": "Cursor 即将完成 20 亿美元融资，估值达 500 亿美元",
+      "summary_cn": "人工智能编程初创企业 Cursor 即将完成新一轮融资，将筹集至少 20 亿美元，现有投资方 Thrive 和安德森・霍洛维茨基金预计牵头，新晋投资方 Battery Ventures 可能参与，战略投资方英伟达亦计划出资，融资前估值 500 亿美元。虽融资已获超额认购，但交易条款未最终敲定。若融资顺利，Cursor 估值将较六个月前近乎翻倍。尽管面临激烈竞争，其营收仍快速增长，预计 2026 年底年化营收突破 60 亿美元。",
+      "why_it_matters_cn": "AI 编程工具赛道爆发，Cursor 凭借自研模型和快速增长成为独角兽，英伟达战略入局显示硬件厂商对垂直应用的重视。",
+      "tags": [
+        "Cursor",
+        "AI 编程",
+        "融资",
+        "英伟达"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sRZE8To0Fg",
+      "published_at": "2026-04-19T22:29:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "宇树 H1 打破人类 1500 米世界纪录",
+      "title_cn": "宇树 H1 打破人类 1500 米世界纪录",
+      "summary_cn": "宇树科技发文称，16 号北京人形机器人马拉松排位赛中，宇树 H1（23 年改版）自主跑完 1.9 公里多弯道赛程，用时 4 分 13 秒，按比例计算打破人类 1500 米世界纪录。",
+      "why_it_matters_cn": "人形机器人在中长跑项目中超越人类极限，展示运动控制、平衡算法和能源效率的突破性进展。",
+      "tags": [
+        "宇树科技",
+        "人形机器人",
+        "世界纪录",
+        "运动 AI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sRaJC0ECGq",
+      "published_at": "2026-04-19T22:29:00+00:00"
     }
   ],
   "source_errors": [],
