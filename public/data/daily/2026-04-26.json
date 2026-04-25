@@ -1,0 +1,171 @@
+{
+  "date": "2026-04-26",
+  "generated_at": "2026-04-25T22:32:21.917099+00:00",
+  "title": "2026-04-26 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "英伟达适配 DeepSeek-V4 AI 模型，开箱性能超 150 tokens/sec/user",
+      "title_cn": "英伟达适配 DeepSeek-V4 AI 模型，开箱性能超 150 tokens/sec/user",
+      "summary_cn": "英伟达宣布 Blackwell 平台适配 DeepSeek-V4-Pro 与 DeepSeek-V4-Flash 两款模型。Pro 版拥有 1.6T 总参数，Flash 版 284B 总参数，均支持 100 万 Token 上下文。DeepSeek-V4-Pro 在 GB200 NVL72 上开箱性能超 150 tokens/sec/user，可通过 NIM 微服务或 vLLM 框架快速部署。",
+      "why_it_matters_cn": "大模型与硬件平台的深度优化，显著提升推理效率，降低企业部署成本。",
+      "tags": [
+        "英伟达",
+        "DeepSeek",
+        "推理性能",
+        "Blackwell"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sc4xEqkavq",
+      "published_at": "2026-04-25T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI 奥尔特曼就未通报枪击案嫌疑人道歉，承认安全流程存在漏洞",
+      "title_cn": "OpenAI 奥尔特曼就未通报枪击案嫌疑人道歉，承认安全流程存在漏洞",
+      "summary_cn": "OpenAI CEO 奥尔特曼致信加拿大坦布勒里奇镇，就未及时向警方通报枪击案嫌疑人活动记录道歉。2025 年 6 月 OpenAI 封禁了嫌疑人的 ChatGPT 账户，但高层未联系执法部门。奥尔特曼承诺加强安全协议，类似情况将移交执法部门。",
+      "why_it_matters_cn": "科技公司内容审核与公共安全责任的边界问题引发行业关注。",
+      "tags": [
+        "OpenAI",
+        "安全",
+        "企业责任",
+        "奥尔特曼"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sbZ9aI9rGA",
+      "published_at": "2026-04-25T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Anthropic says stronger AI models cut better deals, and the losers don't even notice",
+      "title_cn": "Anthropic：更强 AI 模型能谈更好交易，输家甚至没察觉",
+      "summary_cn": "Anthropic 让 69 个 AI agent 在一周内代表员工在内部市场进行交易。实验发现更强模型获得了更优交易条件，而使用较弱 agent 的员工并未察觉差异。这揭示了若 AI 处理真实交易，可能加剧现有经济不平等。",
+      "why_it_matters_cn": "AI 代理能力差异可能导致隐性的经济不平等，引发伦理担忧。",
+      "tags": [
+        "Anthropic",
+        "AI agent",
+        "经济不平等",
+        "实验"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-says-stronger-ai-models-cut-better-deals-and-the-losers-dont-even-notice",
+      "published_at": "2026-04-25T10:18:31+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic created a test marketplace for agent-on-agent commerce",
+      "title_cn": "Anthropic 创建 agent 对 agent 商业测试市场",
+      "summary_cn": "Anthropic 最近创建了一个分类市场，AI agent 同时代表买家和卖家，用真实资金为真实商品达成实际交易。这是验证 AI agent 自主商业能力的实验性平台，探索机器对机器交易的可行性。",
+      "why_it_matters_cn": "验证 AI agent 独立商业交易能力，为自动化经济奠定基础。",
+      "tags": [
+        "Anthropic",
+        "agent 商业",
+        "自动化交易",
+        "实验"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce",
+      "published_at": "2026-04-25T21:43:37+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "The UAE wants half its government run by autonomous AI agents within two years",
+      "title_cn": "阿联酋计划两年内让半数政府由自主 AI agent 运营",
+      "summary_cn": "阿联酋计划在两年内将一半政府运营转移至自主 AI 系统。这一激进计划展示了该国对 AI 自动化的高度信心，旨在提升政府效率并减少人工干预，成为全球政府 AI 化的前沿案例。",
+      "why_it_matters_cn": "国家级 AI 自动化战略，重新定义政府服务与公共管理边界。",
+      "tags": [
+        "阿联酋",
+        "政府 AI",
+        "自动化",
+        "政策"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/the-uae-wants-half-its-government-run-by-autonomous-ai-agents-within-two-years",
+      "published_at": "2026-04-25T09:08:57+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI CEO apologizes to Tumbler Ridge community",
+      "title_cn": "OpenAI CEO 向坦布勒里奇社区道歉",
+      "summary_cn": "OpenAI CEO 山姆・奥尔特曼在致加拿大坦布勒里奇镇居民的信中，对未能就近期大规模枪击案嫌疑人向执法部门发出警告表示'深感抱歉'。此事件暴露了平台安全审核流程中的重大缺陷。",
+      "why_it_matters_cn": "科技巨头在用户安全预警方面的责任与流程缺陷受到审视。",
+      "tags": [
+        "OpenAI",
+        "奥尔特曼",
+        "安全流程",
+        "道歉"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community",
+      "published_at": "2026-04-25T17:17:56+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "The AI Industry Is Discovering That the Public Hates It",
+      "title_cn": "AI 行业发现公众开始讨厌它",
+      "summary_cn": "一篇关于 AI 行业面临公众反弹的文章在 Hacker News 上获得 148 分和 167 条评论。这反映了随着 AI 技术快速渗透，公众对行业发展方向、伦理问题及社会影响的担忧正在累积。",
+      "why_it_matters_cn": "公众接受度是 AI 行业可持续发展的关键，负面舆论需重视。",
+      "tags": [
+        "公众舆论",
+        "行业反思",
+        "AI 伦理"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash",
+      "published_at": "2026-04-25T21:11:11+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "元戎启行全面押注大模型自动驾驶",
+      "title_cn": "元戎启行全面押注大模型自动驾驶",
+      "summary_cn": "元戎启行在北京车展宣布全面转向大模型自动驾驶路线。前 DeepSeek 多模态技术核心研究员阮翀出任首席科学家。公司正从小模型转向统一基座大模型架构，单次模型迭代周期从 100 余小时压缩至 10 余小时。",
+      "why_it_matters_cn": "自动驾驶技术路线重大转向，大模型成为行业新共识。",
+      "tags": [
+        "自动驾驶",
+        "大模型",
+        "元戎启行",
+        "DeepSeek"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8scAJGNJkUS",
+      "published_at": "2026-04-25T22:29:00+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "华为 AI 眼镜开售 自研 AI 芯片＋12 小时续航 2499 元起",
+      "title_cn": "华为 AI 眼镜开售 自研 AI 芯片＋12 小时续航 2499 元起",
+      "summary_cn": "华为 AI 眼镜正式开售，整机仅 35.5 克，业界首款支持 HDR Vivid 标准。配备自研 AI 芯片，支持 AI 闪拍、构图矫正、通话降噪等功能。深度融入鸿蒙生态，续航 12 小时，支持磁吸快充，售价 2499 元起。",
+      "why_it_matters_cn": "轻量化 AI 硬件普及，可穿戴设备成为个人 AI 助手新载体。",
+      "tags": [
+        "华为",
+        "AI 眼镜",
+        "可穿戴设备",
+        "鸿蒙"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sbgIT7CyUq",
+      "published_at": "2026-04-25T22:29:00+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "小马智行携手英伟达，推出全新一代自动驾驶域控制器",
+      "title_cn": "小马智行携手英伟达，推出全新一代自动驾驶域控制器",
+      "summary_cn": "小马智行发布与英伟达合作开发的全新一代自动驾驶域控制器，基于 Drive Hyperion 平台，由 NVIDIA DRIVE AGX Thor 提供支持。面向 L4 级自动驾驶平台，支持全无人驾驶运营规模化及 Robotaxi 商业化。",
+      "why_it_matters_cn": "L4 自动驾驶硬件升级，推动 Robotaxi 规模化商业落地。",
+      "tags": [
+        "小马智行",
+        "英伟达",
+        "L4 自动驾驶",
+        "Robotaxi"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sc4bejxq13",
+      "published_at": "2026-04-25T22:29:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "OpenAI unveils GPT-5.5, claims a \"new class of intelligence\" at double the API price"
+  ]
+}
