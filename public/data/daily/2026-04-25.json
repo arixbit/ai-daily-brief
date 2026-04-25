@@ -1,0 +1,188 @@
+{
+  "date": "2026-04-25",
+  "generated_at": "2026-04-24T22:35:06.538154+00:00",
+  "title": "2026-04-25 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI 正式发布 GPT-5.5",
+      "title_cn": "OpenAI 正式发布 GPT-5.5",
+      "summary_cn": "OpenAI 于周四发布全新 AI 大模型 GPT-5.5，称其为智能程度最高、使用体验最直观的模型。新模型在智能体化、自然交互计算领域有重大突破，运算速度更快、逻辑更精准、消耗令牌更少。在多项基准测试中表现优异，综合评分领先旧版及竞品模型，适用于办公、科研及药物研发等场景。",
+      "why_it_matters_cn": "GPT-5.5 是 OpenAI 打造专属 AI 超级应用的重要铺垫，标志着大模型向一体化服务整合迈出关键一步。",
+      "tags": [
+        "GPT-5.5",
+        "大模型",
+        "OpenAI",
+        "智能体"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sZipgBMR7h",
+      "published_at": "2026-04-24T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "黄仁勋要求英伟达所有员工使用 OpenAI 的 Codex 编程工具",
+      "title_cn": "黄仁勋要求英伟达所有员工使用 OpenAI 的 Codex 编程工具",
+      "summary_cn": "OpenAI 首席执行官萨姆・奥特曼分享英伟达 CEO 黄仁勋发给他的电邮，黄仁勋附上给英伟达全体员工的邮件，要求员工使用 OpenAI 的 Codex 编程工具。基于 GPT-5.5 的 OpenAI Codex 已面向英伟达员工开放，10000 名员工提前体验并取得成果。",
+      "why_it_matters_cn": "英伟达全员采用 Codex 显示 AI 编程工具在顶级芯片公司的认可度，体现企业级 AI 采纳趋势。",
+      "tags": [
+        "Codex",
+        "英伟达",
+        "编程工具",
+        "企业采纳"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sZvhfKeEKG",
+      "published_at": "2026-04-24T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "As agentic AI pushes rivals to raise prices and cap usage, Deepseek ships a good-enough model for almost nothing",
+      "title_cn": "DeepSeek 推出高性价比模型，挑战行业定价",
+      "summary_cn": "中国 AI 实验室 DeepSeek 发布 V4-Pro 和 V4-Flash 两个新模型，参数量高达 1.6 万亿，支持 100 万 token 上下文窗口。定价远低于 OpenAI、Google 和 Anthropic。技术论文还披露了训练数据、蒸馏技术和硬件细节，以极低价格提供足够好的模型。",
+      "why_it_matters_cn": "DeepSeek 的低价策略对行业定价构成挑战，可能迫使竞争对手调整商业策略。",
+      "tags": [
+        "DeepSeek",
+        "定价策略",
+        "开源模型",
+        "上下文窗口"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/as-agentic-ai-pushes-rivals-to-raise-prices-and-cap-usage-deepseek-ships-a-good-enough-model-for-almost-nothing",
+      "published_at": "2026-04-24T08:35:28+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Article: Orchestrating Agentic and Multimodal AI Pipelines with Apache Camel",
+      "title_cn": "使用 Apache Camel 编排智能体和多模态 AI 管道",
+      "summary_cn": "作者 Vignesh Durai 讨论如何使用 Apache Camel 和 LangChain4j 技术构建智能体和多模态 AI 系统。解决方案的关键组件包括基于 LLM 的推理、检索增强生成（RAG）以及图像分类。文章为工程师提供了构建复杂 AI 管道的实用指导。",
+      "why_it_matters_cn": "为企业级 AI 系统整合提供开源技术方案，降低多模态 AI 部署门槛。",
+      "tags": [
+        "Apache Camel",
+        "RAG",
+        "多模态",
+        "工程实践"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/articles/orchestrating-agentic-multimodal-ai-pipelines-apache-camel",
+      "published_at": "2026-04-24T09:00:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "DeepSeek-V4: a million-token context that agents can actually use",
+      "title_cn": "DeepSeek-V4：智能体真正可用的百万 token 上下文",
+      "summary_cn": "Hugging Face 博客介绍 DeepSeek-V4 的百万 token 上下文能力。这一突破性的上下文窗口使智能体能够处理超长文档、完整代码库和复杂多步骤任务，为实际应用场景中的长上下文推理提供了新的可能性。",
+      "why_it_matters_cn": "百万 token 上下文使智能体能够处理真实世界中的超长任务，是实用化的重要里程碑。",
+      "tags": [
+        "DeepSeek-V4",
+        "上下文窗口",
+        "Hugging Face",
+        "智能体"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/deepseekv4",
+      "published_at": "2026-04-24T00:00:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Three reasons why DeepSeek’s new model V4 matters",
+      "title_cn": "DeepSeek 新模型 V4 重要的三个原因",
+      "summary_cn": "中国 AI 公司 DeepSeek 发布了备受期待的新旗舰模型 V4 预览版。得益于新设计，该模型能够比上一代处理更长的提示，更高效地处理大量文本。与 DeepSeek 之前的模型一样，V4 是开源的，这意味着它可供任何人免费使用和修改。",
+      "why_it_matters_cn": "V4 的开源性质和长上下文能力为研究和商业应用提供了强大的免费替代方案。",
+      "tags": [
+        "DeepSeek-V4",
+        "开源",
+        "MIT 科技评论",
+        "长上下文"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters",
+      "published_at": "2026-04-24T21:40:58+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "OpenAI's chief scientist says AI progress has been \"surprisingly slow\" and promises big leaps ahead",
+      "title_cn": "OpenAI 首席科学家称 AI 进展'出奇缓慢'，承诺未来将有重大突破",
+      "summary_cn": "OpenAI 发布了 GPT-5.5，公司领导层表示真正的突破仍在前方。首席科学家 Jakub Pachocki 预计中期将出现'极其显著的改进'，称最近的 AI 进展'出奇缓慢'。这表明公司认为当前进展只是更大变革的前奏。",
+      "why_it_matters_cn": "OpenAI 高层对当前进展的低调评价暗示公司正在研发更具变革性的技术。",
+      "tags": [
+        "OpenAI",
+        "AI 进展",
+        "首席科学家",
+        "未来展望"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openais-chief-scientist-says-ai-progress-has-been-surprisingly-slow-and-promises-big-leaps-ahead",
+      "published_at": "2026-04-24T18:31:15+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "DeepSeek previews new AI model that ‘closes the gap’ with frontier models",
+      "title_cn": "DeepSeek 预览新 AI 模型，'缩小与前沿模型的差距'",
+      "summary_cn": "DeepSeek 表示两个新模型由于架构改进，比 DeepSeek V3.2 更高效、性能更强，在推理基准测试中几乎'缩小了'与当前领先模型（无论是开源还是闭源）的差距。这显示中国 AI 实验室正在快速追赶全球最先进模型。",
+      "why_it_matters_cn": "DeepSeek 的进展表明开源模型正在快速缩小与闭源前沿模型的差距。",
+      "tags": [
+        "DeepSeek",
+        "前沿模型",
+        "推理能力",
+        "开源"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models",
+      "published_at": "2026-04-24T13:30:59+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Google to invest up to $40B in Anthropic in cash and compute",
+      "title_cn": "Google 计划以现金和算力投资 Anthropic 高达 400 亿美元",
+      "summary_cn": "Google 计划向 Anthropic 投资高达 400 亿美元，包括现金和计算资源。这是在 AI 竞争对手竞相确保大规模计算能力的背景下进行的，紧随 Anthropic 发布其强大的、专注于网络安全的 Mythos 模型有限版本之后。",
+      "why_it_matters_cn": "400 亿美元投资凸显计算资源在 AI 竞赛中的战略价值，以及巨头间的合作趋势。",
+      "tags": [
+        "Google",
+        "Anthropic",
+        "投资",
+        "计算资源"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute",
+      "published_at": "2026-04-24T18:00:03+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Presentation: Deepfakes, Disinformation, and AI Content Are Taking Over the Internet",
+      "title_cn": "深度伪造、虚假信息及 AI 内容正在接管互联网",
+      "summary_cn": "Shuman Ghosemajumder 解释生成式 AI 如何从创意好奇转变为大规模虚假信息和欺诈工具。他分享了关于'虚假信息自动化'的见解、AI 世界中 CAPTCHA 的谬误，以及为什么工程领导者必须采用零信任'网络融合'策略来防御模仿人类行为的自动化攻击。",
+      "why_it_matters_cn": "AI 生成的虚假内容威胁网络安全，企业需要新的防御策略应对自动化攻击。",
+      "tags": [
+        "深度伪造",
+        "虚假信息",
+        "网络安全",
+        "零信任"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/presentations/deepfakes-ai",
+      "published_at": "2026-04-24T09:55:00+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "SFO Quiet Airport (2025)",
+      "title_cn": "旧金山机场安静时段（2025）",
+      "summary_cn": "旧金山机场实施了每日 90 分钟的噪音减少措施，旅客反馈称这一改变带来了显著影响。该举措在 Hacker News 上获得 106 个点赞和 56 条评论，引发社区对城市噪音管理和旅行体验的讨论。",
+      "why_it_matters_cn": "此条与 AI 主题关联较弱，可能是误分类内容，建议核实来源。",
+      "tags": [
+        "旧金山",
+        "噪音管理",
+        "旅行",
+        "非 AI 内容"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything",
+      "published_at": "2026-04-24T18:29:53+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "Anthropic confirms Claude Code problems and promises stricter quality controls"
+  ]
+}
