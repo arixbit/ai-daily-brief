@@ -9,16 +9,23 @@
   </head>
   <body>
     <header class="site-header">
-      <div>
+      <div class="masthead">
         <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>ai.arixbit.me</p>
         <h1>AI 每日简报</h1>
+        <p class="dek">面向工程、产品和研究判断的中文 AI 资讯摘读。</p>
       </div>
-      <p id="updatedAt" class="updated-at">加载中</p>
+      <div class="issue-card" aria-label="站点状态">
+        <span>Latest Issue</span>
+        <p id="updatedAt" class="updated-at">加载中</p>
+      </div>
     </header>
 
     <main class="layout">
       <aside class="archive" aria-label="日期归档">
-        <h2>日期</h2>
+        <div class="archive-head">
+          <h2>日期归档</h2>
+          <span>Archive</span>
+        </div>
         <nav id="archiveList" class="archive-list"></nav>
       </aside>
 
@@ -28,7 +35,10 @@
             <p id="briefDate" class="eyebrow">今日</p>
             <h2 id="briefTitle">正在加载简报</h2>
           </div>
-          <p id="briefCount" class="brief-count"></p>
+          <div class="brief-meta">
+            <p id="briefCount" class="brief-count"></p>
+            <span class="meta-rule" aria-hidden="true"></span>
+          </div>
         </div>
 
         <ol id="newsList" class="news-list"></ol>
@@ -38,7 +48,7 @@
 
     <footer class="site-footer">
       <span>中文摘要由本机模型辅助生成</span>
-      <span>来源链接保留原文出处</span>
+      <span>按日期归档，来源链接保留原文出处</span>
     </footer>
 
     <script src="app.js" type="module"></script>

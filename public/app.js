@@ -12,6 +12,11 @@ const dateFormatter = new Intl.DateTimeFormat("zh-CN", {
   day: "numeric",
 });
 
+const archiveDateFormatter = new Intl.DateTimeFormat("zh-CN", {
+  month: "long",
+  day: "numeric",
+});
+
 const timeFormatter = new Intl.DateTimeFormat("zh-CN", {
   year: "numeric",
   month: "2-digit",
@@ -25,14 +30,25 @@ function formatDate(value) {
   return Number.isNaN(date.getTime()) ? value : dateFormatter.format(date);
 }
 
+function formatArchiveDate(value) {
+  const date = new Date(`${value}T00:00:00`);
+  return Number.isNaN(date.getTime()) ? value : archiveDateFormatter.format(date);
+}
+
 function formatTime(value) {
   const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? value : timeFormatter.format(date);
+  return Number.isNaN(date.getTime()) ? "时间未知" : timeFormatter.format(date);
 }
 
 function setActiveDate(date) {
   document.querySelectorAll(".archive-link").forEach((link) => {
-    link.classList.toggle("active", link.dataset.date === date);
+    const isActive = link.dataset.date === date;
+    link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "date");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 }
 
@@ -43,10 +59,14 @@ function renderArchive(days) {
     link.href = `#${day.date}`;
     link.dataset.date = day.date;
     link.className = "archive-link";
+    link.title = day.date;
 
     const date = document.createElement("span");
-    date.textContent = day.date;
+    date.className = "archive-date";
+    date.textContent = formatArchiveDate(day.date);
+
     const count = document.createElement("span");
+    count.className = "archive-count";
     count.textContent = `${day.count} 条`;
 
     link.append(date, count);
@@ -58,6 +78,7 @@ function renderBrief(payload) {
   briefDate.textContent = formatDate(payload.date);
   briefTitle.textContent = payload.title;
   briefCount.textContent = `${payload.items.length} 条资讯`;
+  document.title = `${payload.title} · AI 每日简报`;
   newsList.innerHTML = "";
   emptyState.hidden = payload.items.length > 0;
 
@@ -72,15 +93,24 @@ function renderBrief(payload) {
     const content = document.createElement("article");
 
     const title = document.createElement("h3");
-    title.textContent = item.title_cn || item.title;
+    if (item.url) {
+      const titleLink = document.createElement("a");
+      titleLink.href = item.url;
+      titleLink.target = "_blank";
+      titleLink.rel = "noopener noreferrer";
+      titleLink.textContent = item.title_cn || item.title || "未命名资讯";
+      title.append(titleLink);
+    } else {
+      title.textContent = item.title_cn || item.title || "未命名资讯";
+    }
 
     const summary = document.createElement("p");
     summary.className = "summary";
-    summary.textContent = item.summary_cn;
+    summary.textContent = item.summary_cn || "暂无摘要。";
 
     const why = document.createElement("p");
     why.className = "why";
-    why.textContent = item.why_it_matters_cn;
+    why.textContent = item.why_it_matters_cn || "暂无影响说明。";
 
     const tags = document.createElement("div");
     tags.className = "tags";
@@ -93,18 +123,24 @@ function renderBrief(payload) {
 
     const source = document.createElement("p");
     source.className = "source-line";
+    const sourceLabel = document.createElement("span");
+    sourceLabel.className = "source-label";
+    sourceLabel.textContent = "来源";
     const sourceName = document.createElement("span");
-    sourceName.textContent = item.source;
+    sourceName.textContent = item.source || "未知来源";
     const dot = document.createElement("span");
     dot.textContent = "·";
     const published = document.createElement("span");
     published.textContent = formatTime(item.published_at);
-    const original = document.createElement("a");
-    original.href = item.url;
-    original.target = "_blank";
-    original.rel = "noopener noreferrer";
-    original.textContent = "原文";
-    source.append(sourceName, dot, published, dot.cloneNode(true), original);
+    source.append(sourceLabel, sourceName, dot, published);
+    if (item.url) {
+      const original = document.createElement("a");
+      original.href = item.url;
+      original.target = "_blank";
+      original.rel = "noopener noreferrer";
+      original.textContent = "原文";
+      source.append(dot.cloneNode(true), original);
+    }
 
     content.append(title, summary, why, tags, source);
     row.append(rank, content);
@@ -159,4 +195,3 @@ boot().catch((error) => {
   emptyState.hidden = false;
   emptyState.textContent = error.message;
 });
-
