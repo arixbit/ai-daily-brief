@@ -1,0 +1,116 @@
+{
+  "date": "2026-04-27",
+  "generated_at": "2026-04-27T02:56:39.353362+00:00",
+  "title": "2026-04-27 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI kills its dedicated coding model Codex again, folding it into GPT-5.5",
+      "title_cn": "OpenAI 再次终止专用编程模型 Codex，将其功能整合进 GPT-5.5",
+      "summary_cn": "OpenAI 再次退役其专用编程模型 Codex，将其能力直接整合到主模型中。GPT-5.5 承诺提供更强的 agent 编程能力和更低的 token 消耗。这是 Codex 第二次被整合，显示 OpenAI 倾向于通用模型而非专用模型的战略方向。",
+      "why_it_matters_cn": "反映 OpenAI 从专用模型转向通用模型的战略，可能影响开发者工作流。",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "GPT-5.5",
+        "编程"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-kills-its-dedicated-coding-model-codex-again-folding-it-into-gpt-5-5",
+      "published_at": "2026-04-26T12:49:27+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "AI agents aren't replacing software engineering but expanding it far beyond code, researchers argue",
+      "title_cn": "研究人员称 AI agent 并非取代软件工程，而是将其扩展到代码之外",
+      "summary_cn": "来自查尔默斯理工大学和沃尔沃集团的研究人员发表新论文，反驳 AI agent 正在吞噬编程工作、开发者将过时的流行观点。他们认为 AI agent 实际上在扩展软件工程的边界，超越单纯的代码编写。",
+      "why_it_matters_cn": "为 AI 时代软件工程师的职业前景提供了不同的视角和乐观解读。",
+      "tags": [
+        "AI agent",
+        "软件工程",
+        "研究"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/ai-agents-arent-replacing-software-engineering-but-expanding-it-far-beyond-code-researchers-argue",
+      "published_at": "2026-04-26T08:12:17+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek V4 成 OpenClaw 默认模型",
+      "title_cn": "DeepSeek V4 成为 OpenClaw 默认模型",
+      "summary_cn": "OpenClaw 最新版本接入 DeepSeek V4 双版本，V4 Flash 成为默认大模型，Pro 版也已上线。更新修复了 DeepSeek 在多轮工具调用中的问题，加入 Google Meet 插件支持实时语音通话，改进浏览器自动化功能。",
+      "why_it_matters_cn": "OpenClaw 从聊天产品向工作流系统转型，增强实际生产力应用能力。",
+      "tags": [
+        "DeepSeek",
+        "OpenClaw",
+        "模型集成"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sdTnaMWSgD",
+      "published_at": "2026-04-26T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "To buy this Bay Area home, you’ll need Anthropic equity",
+      "title_cn": "购买这栋湾区房产，你需要 Anthropic 股权",
+      "summary_cn": "有人为位于旧金山以北米尔谷的一处 13 英亩房产提供不寻常的交易方案。买家需要使用 Anthropic 公司的股权作为支付方式，这反映了 AI 公司员工的财富积累。",
+      "why_it_matters_cn": "凸显 AI 行业高薪酬和股权激励带来的财富效应，以及湾区高昂的房价。",
+      "tags": [
+        "Anthropic",
+        "房地产",
+        "湾区"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity",
+      "published_at": "2026-04-26T15:30:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Survey finds Claude's weekly active users in the US skew far wealthier than any rival AI assistant",
+      "title_cn": "调查显示 Claude 美国周活跃用户比任何竞争对手 AI 助手都更富裕",
+      "summary_cn": "一项调查显示 Claude 用户的收入显著高于其他 AI 服务的用户。报告对比了 ChatGPT、Gemini 等竞争对手的用户收入分布情况，显示 Claude 用户群体具有更高的财富水平。",
+      "why_it_matters_cn": "揭示不同 AI 产品的用户群体差异，可能反映产品定位和定价策略的影响。",
+      "tags": [
+        "Claude",
+        "用户调查",
+        "市场细分"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/survey-finds-claudes-weekly-active-users-in-the-us-skew-far-wealthier-than-any-rival-ai-assistant",
+      "published_at": "2026-04-26T08:50:02+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI says old prompts are holding GPT-5.5 back and developers need a fresh baseline",
+      "title_cn": "OpenAI 称旧提示词阻碍 GPT-5.5 发挥，开发者需要全新基线",
+      "summary_cn": "OpenAI 建议开发者不要为 GPT-5.5 沿用旧提示词，而应从最小化开始重新构建。角色定义等曾被认为不必要的元素重新回到框架前端。OpenAI 认为新的模型架构需要全新的提示词策略。",
+      "why_it_matters_cn": "开发者需要调整提示词工程策略，可能影响现有自动化流程。",
+      "tags": [
+        "OpenAI",
+        "GPT-5.5",
+        "提示词工程"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-says-old-prompts-are-holding-gpt-5-5-back-and-developers-need-a-fresh-baseline",
+      "published_at": "2026-04-26T10:20:04+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "500 investment bankers review AI outputs and find none ready for client delivery",
+      "title_cn": "500 名投资银行家审查 AI 输出，发现无一达到客户交付标准",
+      "summary_cn": "新基准测试让 GPT-5.4 和 Claude Opus 4.6 等顶级模型处理初级投资银行家的日常任务。没有 AI 输出被评为可直接发送给客户；结果要么不够精确要么完全错误。但超过半数银行家表示会将其作为起点使用。",
+      "why_it_matters_cn": "显示 AI 在专业领域的实际能力差距，以及人类专家仍不可或缺的现实。",
+      "tags": [
+        "投资银行",
+        "AI 基准测试",
+        "专业工作"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/500-investment-bankers-review-ai-outputs-and-find-none-ready-for-client-delivery",
+      "published_at": "2026-04-26T09:18:16+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": []
+}
