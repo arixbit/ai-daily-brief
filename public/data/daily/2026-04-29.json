@@ -1,0 +1,163 @@
+{
+  "date": "2026-04-29",
+  "generated_at": "2026-04-28T22:31:48.736566+00:00",
+  "title": "2026-04-29 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI 未达成营收目标，甲骨文及多只芯片股应声下跌",
+      "title_cn": "OpenAI 未达成营收目标，甲骨文及多只芯片股应声下跌",
+      "summary_cn": "OpenAI 未达内部增长预期，引发市场对 AI 行业高额开支可持续性的质疑。甲骨文盘前大跌约 7.5%，英伟达等芯片股跌幅 2%-5%，软银暴跌约 10%。CFO 警示若营收增速不提升，未来或难履约算力采购协议。",
+      "why_it_matters_cn": "反映市场开始质疑 AI 行业商业模式可持续性，可能影响后续资本投入",
+      "tags": [
+        "OpenAI",
+        "营收",
+        "芯片股"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8shQEmUnFuW",
+      "published_at": "2026-04-28T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "小米启动百万亿 Token 计划，拟 30 天内免费发放",
+      "title_cn": "小米启动百万亿 Token 计划，拟 30 天内免费发放",
+      "summary_cn": "小米推出百万亿 Token 创造者激励计划，30 天内免费发放 100 万亿 Token 权益。Xiaomi MiMo-V2.5-Pro 正式开源，完成多芯片厂商适配。雷军称今年 AI 研发投入超 160 亿元，全面押注智能体时代。",
+      "why_it_matters_cn": "小米大举投入 AI 领域，通过开源和激励计划构建 Agent 生态",
+      "tags": [
+        "小米",
+        "Token",
+        "开源",
+        "Agent"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sh6BzoRBwT",
+      "published_at": "2026-04-28T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "title_cn": "英伟达推出 Nemotron 3 Nano Omni：长上下文多模态智能体模型",
+      "summary_cn": "英伟达推出 Nemotron 3 Nano Omni 模型，支持长上下文多模态推理，面向文档、音频和视频 Agent 应用场景，为构建复杂多模态智能体提供新选择。",
+      "why_it_matters_cn": "英伟达在长上下文多模态领域推出新模型，强化 Agent 能力",
+      "tags": [
+        "NVIDIA",
+        "多模态",
+        "长上下文"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "published_at": "2026-04-28T15:58:57+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Amazon is already offering new OpenAI products on AWS",
+      "title_cn": "亚马逊已在 AWS 上提供新的 OpenAI 产品",
+      "summary_cn": "在 OpenAI 与微软结束独家协议后一天，AWS 宣布推出多款 OpenAI 模型服务，包括新的 Agent 服务，标志着 OpenAI 产品正式登陆亚马逊云平台。",
+      "why_it_matters_cn": "OpenAI 打破与微软独家合作，AWS 进入竞争，云厂商 AI 服务竞争加剧",
+      "tags": [
+        "AWS",
+        "OpenAI",
+        "云服务商"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws",
+      "published_at": "2026-04-28T19:48:02+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "How Slack Manages Context in Long-running Multi-agent Systems",
+      "title_cn": "Slack 如何管理长运行多 Agent 系统的上下文",
+      "summary_cn": "Slack 工程师分享长运行 Agent 系统的上下文管理方案，从累积聊天日志转向结构化记忆、验证和提炼真相机制，以维持系统连贯性和准确性。",
+      "why_it_matters_cn": "为构建稳定可靠的长运行 Agent 系统提供实践经验和架构参考",
+      "tags": [
+        "Slack",
+        "Agent",
+        "上下文管理"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/slack-agent-context-management",
+      "published_at": "2026-04-28T21:00:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI misses revenue targets as Anthropic and Google close in",
+      "title_cn": "OpenAI 未达营收目标，Anthropic 和 Google 紧追不舍",
+      "summary_cn": "OpenAI 2026 年第一季度未达内部营收目标，Anthropic 和 Google 竞争压力增大，公司内部对巨额支出承诺的紧张关系也在加剧。",
+      "why_it_matters_cn": "OpenAI 面临竞争加剧和内部财务压力的双重挑战",
+      "tags": [
+        "OpenAI",
+        "竞争",
+        "营收"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in",
+      "published_at": "2026-04-28T09:29:03+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Legare Kerrison and Cedric Clyburn on LLM Performance and Evaluations",
+      "title_cn": "LLM 性能评估与优化实践分享",
+      "summary_cn": "RedHat 专家在 Arc of AI 2026 大会上分享 LLM 应用性能评估与优化的实用方法，这对组织采纳 AI 技术至关重要。",
+      "why_it_matters_cn": "提供 LLM 性能评估的实用方法论，助力企业 AI 落地",
+      "tags": [
+        "LLM",
+        "性能评估",
+        "RedHat"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/kerrison-clyburn-llm-performance",
+      "published_at": "2026-04-28T09:05:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Google expands Pentagon’s access to its AI after Anthropic’s refusal",
+      "title_cn": "Google 在 Anthropic 拒绝后扩大五角大楼 AI 访问权限",
+      "summary_cn": "在 Anthropic 拒绝五角大楼将 AI 用于国内大规模监控和自主武器后，Google 签署新合同扩大五角大楼对其 AI 的访问权限。",
+      "why_it_matters_cn": "凸显 AI 伦理分歧，不同公司对军事应用采取不同立场",
+      "tags": [
+        "Google",
+        "AI 伦理",
+        "军事"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal",
+      "published_at": "2026-04-28T18:15:00+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Here is what an LLM that knows nothing after 1930 thinks our world looks like in 2026",
+      "title_cn": "一个只懂 1930 年前知识的 LLM 如何看待 2026 年的世界",
+      "summary_cn": "\"Talkie\"是仅用 1931 年前文本训练的 13B 参数模型，它怀疑二战会发生，将 2026 年想象成蒸汽船、铁路和廉价小说的世界。",
+      "why_it_matters_cn": "有趣地展示训练数据对模型世界观的塑造作用",
+      "tags": [
+        "LLM",
+        "训练数据",
+        "实验"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/here-is-what-an-llm-that-knows-nothing-after-1930-thinks-our-world-looks-like-in-2026",
+      "published_at": "2026-04-28T18:07:13+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Elon Musk and Sam Altman are going to court over OpenAI’s future",
+      "title_cn": "Elon Musk 与 Sam Altman 就 OpenAI 未来对簿公堂",
+      "summary_cn": "经过多年法律纠纷，Elon Musk 与 OpenAI CEO Sam Altman 本周在加州开庭。法院可能裁决 OpenAI 是否可继续以营利企业存在，甚至可能改组管理层。",
+      "why_it_matters_cn": "案件可能决定 OpenAI 企业性质，影响 AI 行业格局",
+      "tags": [
+        "OpenAI",
+        "法律",
+        "Elon Musk"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future",
+      "published_at": "2026-04-27T22:52:57+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "Google Cloud Introduces Agents CLI to Streamline AI Agent Development Lifecycle"
+  ]
+}
