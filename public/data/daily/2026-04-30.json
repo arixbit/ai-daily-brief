@@ -1,0 +1,166 @@
+{
+  "date": "2026-04-30",
+  "generated_at": "2026-04-29T22:32:01.789184+00:00",
+  "title": "2026-04-30 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "QCon AI Boston 2026 Schedule: Agents in Production, Inference Cost, and AI in the SDLC",
+      "title_cn": "QCon AI Boston 2026 日程：生产环境 Agents、推理成本与 AI 在 SDLC 中的应用",
+      "summary_cn": "QCon AI Boston 2026 大会日程已公布，将于 6 月 1-2 日举行。两天议程涵盖上下文工程、推理经济学、agent 可靠性以及 AI 如何改变软件开发生命周期。演讲嘉宾来自 DoorDash、LinkedIn、Netflix、Apple 和 Red Hat 等公司。",
+      "why_it_matters_cn": "顶级科技公司分享 AI 工程化实战经验，对技术决策者极具参考价值。",
+      "tags": [
+        "会议",
+        "Agents",
+        "工程化"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/qconai-boston-2026-schedule-live",
+      "published_at": "2026-04-29T10:00:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI 预计 ChatGPT 订阅用户将达到 1.22 亿",
+      "title_cn": "OpenAI 预计 ChatGPT 订阅用户将达到 1.22 亿",
+      "summary_cn": "OpenAI 推出每月 8 美元的「ChatGPT Go」低价订阅服务，已在 171 个国家上线。公司预计今年消费者订阅用户达 1.22 亿。大规模用户基础将带来安全、延迟和成本挑战，OpenAI 强调保护用户对话隐私。",
+      "why_it_matters_cn": "亿级用户规模验证了 AI 订阅商业模式，同时也暴露基础设施压力。",
+      "tags": [
+        "商业",
+        "订阅",
+        "用户增长"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8si2lZ385Dn",
+      "published_at": "2026-04-29T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "微软松绑独家协议，OpenAI 正式上线亚马逊云",
+      "title_cn": "微软松绑独家协议，OpenAI 正式上线亚马逊云",
+      "summary_cn": "OpenAI 宣布与亚马逊云科技扩大合作，AI 模型将登陆 Bedrock 平台。微软放宽了原有独家条款，OpenAI 将把 GPT-5.5、Codex 等核心模型接入 AWS。亚马逊将推出「OpenAI 支持的 Bedrock 托管智能体」帮助企业规模化部署 AI agents。",
+      "why_it_matters_cn": "打破微软独家合作标志着 AI 模型多云部署新时代，企业获得更多选择权。",
+      "tags": [
+        "云计算",
+        "商业合作",
+        "多云"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8si9ZgjoHng",
+      "published_at": "2026-04-29T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Presentation: Agents, Architecture, & Amnesia: Becoming AI-Native Without Losing Our Minds",
+      "title_cn": "演讲：Agents、架构与失忆症——在不迷失中实现 AI 原生转型",
+      "summary_cn": "Tracy Bannon 通过「魔笛手」故事警示无约束 AI 自主性的风险。她讨论了从 bots 到自主 agents 的转变，解释鲁莽速度如何导致「架构失忆症」。她提供了「最小可行治理」框架，关注身份、委托和 ADRs，以在机器速度下管理 SDLC 中的技术债务。",
+      "why_it_matters_cn": "为快速 AI 化进程中的架构治理提供了实用框架和警示。",
+      "tags": [
+        "架构",
+        "治理",
+        "Agents"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/presentations/ai-autonomy-continuum",
+      "published_at": "2026-04-29T14:15:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Is AI video just a prequel? Runway’s CEO thinks world models are next",
+      "title_cn": "AI 视频只是前奏？Runway CEO 认为世界模型是下一步",
+      "summary_cn": "AI 生成视频几乎一夜之间从新奇变成创意工具。Runway 融资近 8.6 亿美元，估值 53 亿美元，其模型与 Google 和 OpenAI 等资金最充足的实验室竞争。Runway CEO 认为 AI 视频只是前奏，世界模型才是未来方向。",
+      "why_it_matters_cn": "视频生成是通往世界模型的关键路径，代表 AI 理解物理世界的新阶段。",
+      "tags": [
+        "视频生成",
+        "世界模型",
+        "融资"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/podcast/equity-podcast-runway-ceo-cristobal-valenzuela-ai-video-world-models",
+      "published_at": "2026-04-29T18:59:44+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI researchers explain why math is the road to AGI",
+      "title_cn": "OpenAI 研究人员解释为何数学是通往 AGI 的道路",
+      "summary_cn": "AI 模型在两年内从小学算术跃升至奥林匹克级和研究级数学。在 OpenAI Podcast 中，研究人员 Sebastian Bubeck 和 Ernest Ryu 解释为何数学成为通往人工通用智能的关键测试。数学推理能力被认为是衡量 AGI 进展的重要指标。",
+      "why_it_matters_cn": "数学能力成为衡量 AGI 进展的关键指标，反映深层推理能力。",
+      "tags": [
+        "AGI",
+        "数学",
+        "研究"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-researchers-explain-why-math-is-the-road-to-agi",
+      "published_at": "2026-04-29T15:24:12+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "AI evals are becoming the new compute bottleneck",
+      "title_cn": "AI 评估正成为新的计算瓶颈",
+      "summary_cn": "随着 AI 模型规模扩大，评估过程本身消耗的计算资源日益增长，正成为开发流程中的新瓶颈。评估需要大量计算来验证模型性能，特别是在大规模 benchmark 测试中。",
+      "why_it_matters_cn": "评估成本上升可能限制模型迭代速度，影响研发效率。",
+      "tags": [
+        "评估",
+        "计算",
+        "瓶颈"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "published_at": "2026-04-29T16:45:09+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Granite 4.1 LLMs: How They’re Built",
+      "title_cn": "Granite 4.1 LLMs：构建原理揭秘",
+      "summary_cn": "IBM 发布 Granite 4.1 大型语言模型系列的技术详解，介绍其架构设计、训练方法和性能特点。该模型系列针对企业应用场景优化，强调安全性、可解释性和领域适应性。",
+      "why_it_matters_cn": "企业级 LLM 的技术细节公开有助于行业理解模型构建最佳实践。",
+      "tags": [
+        "LLM",
+        "技术架构",
+        "IBM"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "published_at": "2026-04-29T15:01:48+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Google rolls out Gemini memory in Europe and wants you to bring your ChatGPT data along",
+      "title_cn": "Google 在欧洲推出 Gemini 记忆功能，希望你带上 ChatGPT 数据",
+      "summary_cn": "Gemini 现在可以记住用户偏好并从其他 AI 应用导入聊天历史。Google 在欧洲推出此功能，鼓励用户迁移 ChatGPT 数据。这一功能增强了个性化体验，同时也加剧了 AI 平台间的数据竞争。",
+      "why_it_matters_cn": "记忆功能提升用户体验，跨平台数据迁移加剧 AI 生态竞争。",
+      "tags": [
+        "记忆功能",
+        "数据迁移",
+        "竞争"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/google-rolls-out-gemini-memory-in-europe-and-wants-you-to-bring-your-chatgpt-data-along",
+      "published_at": "2026-04-29T11:50:10+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Colby Adcock’s Scout AI raises $100M to train its models for war: We visited its bootcamp",
+      "title_cn": "Colby Adcock 的 Scout AI 融资 1 亿美元训练战争模型：探访其训练营",
+      "summary_cn": "Scout AI 获得 1 亿美元融资，用于训练帮助单个士兵控制自主车辆舰队的 AI agents。我们探访了其训练营，了解这些军事 AI 系统的开发进展。这项技术可能改变现代战争形态。",
+      "why_it_matters_cn": "AI 军事应用引发伦理关注，同时也展示 agents 在高风险场景的潜力。",
+      "tags": [
+        "军事 AI",
+        "融资",
+        "Agents"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/29/coby-adcocks-scout-ai-raises-100-million-to-train-models-for-war-we-visited-its-bootcamp",
+      "published_at": "2026-04-29T09:45:00+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "Anthropic Claude Code 大幅涨价：从预估每日 6 美元翻倍至 13 美元",
+    "White House moves to restore Anthropic access after Pentagon standoff",
+    "OpenAI lands on AWS one day after Microsoft deal restructuring",
+    "Musk and Altman face off in court over OpenAI's for-profit pivot",
+    "With Nemotron 3 Nano Omni, Nvidia reveals what really goes into a modern multimodal model"
+  ]
+}
