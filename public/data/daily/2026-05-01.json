@@ -1,0 +1,174 @@
+{
+  "date": "2026-05-01",
+  "generated_at": "2026-04-30T22:32:06.755172+00:00",
+  "title": "2026-05-01 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale",
+      "title_cn": "中文待整理：Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale",
+      "summary_cn": "Safe agents don’t guarantee a safe ecosystem of interconnected agents. Microsoft Research examines what breaks when AI agents interact and why network-level risks require new approaches. The post Red-teaming a network of",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "agent"
+      ],
+      "source": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale",
+      "published_at": "2026-04-30T21:53:21+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 2,
+      "title": "马斯克诉 OpenAI 案法庭证词与推文矛盾，称特斯拉未研发通用人工智能",
+      "title_cn": "中文待整理：马斯克诉 OpenAI 案法庭证词与推文矛盾，称特斯拉未研发通用人工智能",
+      "summary_cn": "埃隆・马斯克当地时间周三现身加州联邦法院，指控山姆・奥尔特曼及其联合创始人「窃取慈善机构」，质疑 OpenAI 架构模式，称他们蓄意欺骗自己资助非营利机构后设营利部门并掌控机构。庭审中马斯克情绪急躁，连续作证数小时。OpenAI 代理律师举证表明马斯克曾支持 OpenAI 向营利模式转型，马斯克也承认早有相关计划。马斯克坚称收益受限与不受限投资者有本质区别，因微软投资限制取消而发起诉讼。此外，马斯克在特斯拉人工智能布局上自打脸，还被质疑",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "OpenAI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sjuX8B4qGL",
+      "published_at": "2026-04-30T22:29:00+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI 硬件负责人的闭门分享：硬件的「终点」依旧是智能手机",
+      "title_cn": "中文待整理：OpenAI 硬件负责人的闭门分享：硬件的「终点」依旧是智能手机",
+      "summary_cn": "本文围绕 OpenAI 做手机一事展开，分析其背后的逻辑与战略。Richard Ho 在交流中强调 OpenAI 做硬件是为拿回 AI 运行底层控制权，团队已在两年内实现芯片 tape-out，且硬件设计要贴合未来模型发展。手机并非为 agent 设计，OpenAI 需自研以满足 AI 时代原生用户需求，收购 Jony Ive 团队相关公司助力端侧设备设计。对比其他 AI 公司硬件尝试，OpenAI 是唯一做「全栈重新定义」的公司。未来",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "agent",
+        "OpenAI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8siiIGvdYdL",
+      "published_at": "2026-04-30T22:29:00+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 4,
+      "title": "Enabling a new model for healthcare with AI co-clinician",
+      "title_cn": "中文待整理：Enabling a new model for healthcare with AI co-clinician",
+      "summary_cn": "Researching the path to AI-augmented care and development of an AI co-clinician.",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "模型"
+      ],
+      "source": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/ai-co-clinician",
+      "published_at": "2026-04-30T12:14:15+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 5,
+      "title": "Vercel Releases Open Agents to Support Background AI Coding Workflows",
+      "title_cn": "中文待整理：Vercel Releases Open Agents to Support Background AI Coding Workflows",
+      "summary_cn": "Vercel has launched Open Agents, an open-source app that enables the creation and execution of background coding agents. It provides a complete stack for developers to run independent coding workflows without relying on ",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "agent"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/vercel-open-agents",
+      "published_at": "2026-04-30T09:20:00+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
+      "title_cn": "中文待整理：OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
+      "summary_cn": "OpenAI is launching additional opt-in protections for ChatGPT accounts. The new security initiative includes a new partnership with security key provider Yubico.",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/30/openai-announces-new-advanced-security-for-chatgpt-accounts-including-a-partnership-with-yubico",
+      "published_at": "2026-04-30T18:20:03+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 7,
+      "title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
+      "title_cn": "中文待整理：Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
+      "summary_cn": "Link lets users connect cards, banks, and subscriptions, then authorize AI agents to spend securely via approval flows.",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "agent"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping",
+      "published_at": "2026-04-30T17:15:19+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 8,
+      "title": "Anthropic's new benchmark claims Claude can match human experts in bioinformatics",
+      "title_cn": "中文待整理：Anthropic's new benchmark claims Claude can match human experts in bioinformatics",
+      "summary_cn": "With BioMysteryBench, Anthropic wants to show that Claude can solve real bioinformatics problems at an expert level. The results are promising, but come with important caveats. The article Anthropic's new benchmark claim",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "Anthropic",
+        "Claude"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropics-new-benchmark-claims-claude-can-match-human-experts-in-bioinformatics",
+      "published_at": "2026-04-30T12:31:31+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 9,
+      "title": "NVIDIA Launches Ising Open Models for Quantum Computing",
+      "title_cn": "中文待整理：NVIDIA Launches Ising Open Models for Quantum Computing",
+      "summary_cn": "NVIDIA has announced a new family of open models called NVIDIA Ising, designed to address quantum processor calibration and quantum error correction. These are two of the main engineering challenges limiting the scalabil",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "模型"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/04/nvidia-ising-quantum",
+      "published_at": "2026-04-30T20:44:00+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 10,
+      "title": "This startup’s new mechanistic interpretability tool lets you debug LLMs",
+      "title_cn": "中文待整理：This startup’s new mechanistic interpretability tool lets you debug LLMs",
+      "summary_cn": "The San Francisco–based startup Goodfire just released a new tool, called Silico, that lets researchers and engineers peer inside an AI model and adjust its parameters—the settings that determine a model’s behavior—durin",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "模型"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms",
+      "published_at": "2026-04-30T15:59:41+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    },
+    {
+      "rank": 11,
+      "title": "Tencent's 440 MB AI model translates 33 languages offline on your phone",
+      "title_cn": "中文待整理：Tencent's 440 MB AI model translates 33 languages offline on your phone",
+      "summary_cn": "Tencent has released a compact AI translation model as an open-weight model that it claims outperforms Google Translate and runs completely offline on smartphones. The article Tencent's 440 MB AI model translates 33 lang",
+      "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
+      "tags": [
+        "Google",
+        "模型"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/tencents-440-mb-ai-model-translates-33-languages-offline-on-your-phone",
+      "published_at": "2026-04-30T12:24:34+00:00",
+      "llm_error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "OpenAI 计划大幅拓展更廉价的 ChatGPT 服务",
+    "Cloudflare Announces Agent Memory, a Managed Persistent Memory Service for AI Agents",
+    "OpenAI says it hit its 10 gigawatt compute goal years ahead of schedule",
+    "After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too",
+    "Elon Musk testifies that xAI trained Grok on OpenAI models"
+  ]
+}
