@@ -1,0 +1,172 @@
+{
+  "date": "2026-05-02",
+  "generated_at": "2026-05-01T22:32:57.954936+00:00",
+  "title": "2026-05-02 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Article: Securing Autonomous AI Agents on Kubernetes: Trust Boundaries, Secrets, and Observability for a New Category of Cloud Workload",
+      "title_cn": "在 Kubernetes 上保障自主 AI Agent 安全：信任边界、密钥与可观测性",
+      "summary_cn": "自主 AI agent 打破了 Kubernetes 的安全假设，带来动态依赖、多域凭证和不可预测的资源消耗。本文分享生产验证模式：基于 Job 的隔离、Vault 管理短期作用域凭证、从影子模式到自主运行的四阶段信任模型，以及针对非确定性推理周期的可观测性方案。",
+      "why_it_matters_cn": "随着 AI agent 走向生产环境，传统云原生安全架构面临挑战。掌握隔离、凭证管理与可观测性新范式，是保障自主系统稳定运行的关键。",
+      "tags": [
+        "AI Agent",
+        "Kubernetes",
+        "云原生安全",
+        "可观测性"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/articles/securing-autonomous-ai-agents-kubernetes",
+      "published_at": "2026-05-01T09:00:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Meta Deploys Unified AI Agents to Automate Performance Optimization at Hyperscale",
+      "title_cn": "Meta 部署统一 AI Agent 实现超大规模性能自动化优化",
+      "summary_cn": "Meta 推出全新 AI 驱动容量效率平台，利用统一 AI agent 自动检测并解决全球基础设施中的性能瓶颈。该系统标志着超大规模数据中心向自我优化架构迈出关键一步，大幅降低人工运维成本并提升资源利用率。",
+      "why_it_matters_cn": "超大规模基础设施的运维复杂度呈指数级上升。AI agent 实现自动化性能调优，为行业提供了从人工干预转向系统自优化的标杆路径。",
+      "tags": [
+        "Meta",
+        "AI Agent",
+        "基础设施优化",
+        "自动化运维"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/meta-ai-agents-hyperscale",
+      "published_at": "2026-05-01T12:00:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Anthropic launches Claude Security to give defenders the same AI edge attackers already have",
+      "title_cn": "Anthropic 推出 Claude Security 为防御者提供同等 AI 优势",
+      "summary_cn": "Anthropic 正式发布 Claude Security，旨在为网络安全防御者提供与攻击者同等的 AI 能力。该平台借鉴了此前因风险过高而未公开的部分模型能力，帮助安全团队快速识别威胁、自动化响应攻击，缩小攻防技术差距。",
+      "why_it_matters_cn": "AI 攻击工具已普及，防御方亟需对等能力。Claude Security 将前沿模型能力定向赋能安全团队，有望重塑网络攻防平衡。",
+      "tags": [
+        "Anthropic",
+        "Claude Security",
+        "网络安全",
+        "AI 防御"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have",
+      "published_at": "2026-05-01T13:00:10+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "GPT-5.5 matches Claude Mythos in cyber attack tests, UK AI Security Institute finds",
+      "title_cn": "英国 AI 安全研究所：GPT-5.5 在网络攻击测试中表现媲美 Claude Mythos",
+      "summary_cn": "英国 AI 安全研究所测试显示，OpenAI 的 GPT-5.5 成为第二个能自主完成完整网络攻击模拟的 AI 模型。其表现与仅面向少数用户开放的 Claude Mythos 几乎持平，且 GPT-5.5 已通过 ChatGPT 和 API 全面上线。",
+      "why_it_matters_cn": "主流大模型已具备自主网络攻击能力且已公开可用。这凸显了 AI 安全评估的紧迫性，监管机构需加快制定应对自主攻击的防护标准。",
+      "tags": [
+        "GPT-5.5",
+        "Claude Mythos",
+        "AI 安全",
+        "网络攻防"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/gpt-5-5-matches-claude-mythos-in-cyber-attack-tests-uk-ai-security-institute-finds",
+      "published_at": "2026-05-01T10:25:37+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "DeepSeek 公布多模态模型技术报告后又删除",
+      "title_cn": "DeepSeek 发布多模态大模型技术报告后迅速删除",
+      "summary_cn": "DeepSeek 在 GitHub 发布多模态大模型及技术报告，提出基于视觉原语的创新推理框架，以突破空间参照任务瓶颈。报告指出传统链式思维受限于语言学，自然语言模糊性易致推理崩溃。新框架将空间标记作为推理基本单元，提升视觉 token 效率。随后该论文被删除。",
+      "why_it_matters_cn": "该报告探索了突破多模态推理瓶颈的新路径。虽已删除，但其视觉原语思路为行业提供了重要参考，引发对多模态架构演进的关注。",
+      "tags": [
+        "DeepSeek",
+        "多模态大模型",
+        "视觉原语",
+        "技术报告"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8skqPqDbX9X",
+      "published_at": "2026-05-01T22:29:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "今起施行，杭州为具身智能机器人立法",
+      "title_cn": "全国首部具身智能机器人地方性法规在杭州正式施行",
+      "summary_cn": "《杭州市促进具身智能机器人产业发展条例》今日正式施行，成为全国首部该领域地方性法规。杭州已集聚相关企业超 700 家，2025 年产业集群产值达 1068 亿元。立法旨在以高质量法治供给护航科技创新，推动产业高质量发展。",
+      "why_it_matters_cn": "具身智能进入快速发展期，地方立法先行探索监管与扶持边界，为全国构建产业标准与合规框架提供了重要范本。",
+      "tags": [
+        "具身智能",
+        "机器人立法",
+        "杭州",
+        "产业监管"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sltSSyLbXa",
+      "published_at": "2026-05-01T22:29:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Cyber-Insecurity in the AI Era",
+      "title_cn": "AI 时代的网络安全困境：传统防御体系面临重构",
+      "summary_cn": "AI 融入技术栈前，网络安全已承压。如今 AI 大幅扩展攻击面并增加系统复杂性，传统安全方法的局限性日益凸显。MIT EmTech AI 大会探讨指出，安全架构必须将 AI 置于核心进行重新设计，而非事后叠加补丁。",
+      "why_it_matters_cn": "AI 改变了攻防底层逻辑，旧有安全栈已无法应对新型威胁。企业必须将 AI 原生安全纳入架构设计，否则将面临系统性风险。",
+      "tags": [
+        "网络安全",
+        "AI 原生安全",
+        "MIT EmTech",
+        "攻防演进"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/01/1136779/cyber-insecurity-in-the-ai-era",
+      "published_at": "2026-05-01T15:54:01+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Operationalizing AI for Scale and Sovereignty",
+      "title_cn": "规模化与数据主权：企业如何运营 AI 工厂",
+      "summary_cn": "企业正通过掌控自有数据来定制 AI 以满足业务需求。核心挑战在于平衡数据所有权与高质量数据的安全可信流转。MIT EmTech AI 大会探讨指出，AI 工厂能解锁规模化、可持续性与治理新水平，助力企业实现数据主权。",
+      "why_it_matters_cn": "数据主权与 AI 规模化应用存在天然张力。构建可控的 AI 工厂与数据流转机制，是企业实现长期技术自主与合规运营的关键。",
+      "tags": [
+        "AI 工厂",
+        "数据主权",
+        "企业 AI 运营",
+        "MIT EmTech"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/01/1136772/operationalizing-ai-for-scale-and-sovereignty",
+      "published_at": "2026-05-01T15:31:09+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Meta buys robotic startup to bolster its humanoid AI ambitions",
+      "title_cn": "Meta 收购机器人初创公司 Assured Robot Intelligence 强化人形 AI 布局",
+      "summary_cn": "Meta 宣布收购人形机器人初创公司 Assured Robot Intelligence，旨在为其机器人 AI 模型注入更强能力。此举标志着 Meta 加速将 AI 技术从数字交互向物理世界延伸，进一步夯实其在具身智能与人形机器人领域的战略卡位。",
+      "why_it_matters_cn": "科技巨头加速向物理世界渗透。Meta 通过并购补齐硬件与具身智能短板，预示 AI 竞争正从大模型向机器人终端全面拓展。",
+      "tags": [
+        "Meta",
+        "机器人收购",
+        "具身智能",
+        "人形机器人"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/01/meta-buys-robotic-startup-to-bolster-its-humanoid-ai-ambitions",
+      "published_at": "2026-05-01T22:13:27+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks",
+      "title_cn": "美国国防部与 Nvidia、Microsoft 和 AWS 签约，在机密网络部署 AI",
+      "summary_cn": "美国国防部与 Nvidia、Microsoft 及 AWS 签署协议，计划在机密军事网络中部署 AI 系统。此举源于 DOD 在与 Anthropic 就模型使用条款产生争议后，加速推进 AI 供应商多元化战略，以降低单一技术依赖风险。",
+      "why_it_matters_cn": "军方加速引入商业 AI 基础设施，凸显 AI 已成为国防核心资产。供应商多元化策略将深刻影响全球 AI 算力与模型生态格局。",
+      "tags": [
+        "美国国防部",
+        "AI 军事部署",
+        "供应商多元化",
+        "机密网络"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks",
+      "published_at": "2026-05-01T16:02:36+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "ChatGPT Images 2.0 is a hit in India, but not a big winner elsewhere, yet"
+  ]
+}
