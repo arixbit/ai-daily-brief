@@ -33,6 +33,7 @@ DEFAULT_CONFIG = ROOT / "config" / "sources.json"
 DEFAULT_OUTPUT = ROOT / "public" / "data"
 USER_AGENT = "ai-daily-brief/0.1 (+https://ai.arixbit.me)"
 UTC = dt.timezone.utc
+DEFAULT_OPENAI_MODEL = "Qwen3.6-27B-4bit"
 
 
 @dataclass(frozen=True)
@@ -743,7 +744,7 @@ def llm_chat(messages: list[dict[str, str]], timeout: int = 240) -> str:
 
     base_url = os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:12345/v1").rstrip("/")
     api_key = os.environ.get("OPENAI_API_KEY", "smartisan")
-    model = os.environ.get("OPENAI_MODEL", "Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit")
+    model = os.environ.get("OPENAI_MODEL", DEFAULT_OPENAI_MODEL)
     body = json.dumps(
         {
             "model": model,
@@ -833,6 +834,38 @@ def normalize_brief(data: dict[str, Any], item: NewsItem) -> dict[str, Any]:
     }
 
 
+def contains_cjk(value: str) -> bool:
+    """Return true when text contains Chinese, Japanese, or Korean characters."""
+
+    return bool(re.search(r"[\u3400-\u9fff]", value))
+
+
+def validate_publishable_briefs(entries: list[dict[str, Any]], allow_fallback: bool) -> None:
+    """Reject fallback or non-Chinese entries before they can be published."""
+
+    if allow_fallback:
+        return
+
+    failures: list[str] = []
+    for entry in entries:
+        rank = entry["rank"]
+        if entry.get("llm_error"):
+            failures.append(f"#{rank} LLM 失败：{entry['llm_error']}")
+            continue
+        if str(entry.get("title_cn", "")).startswith("中文待整理："):
+            failures.append(f"#{rank} 标题仍是待整理兜底")
+            continue
+        for field in ("title_cn", "summary_cn", "why_it_matters_cn"):
+            if not contains_cjk(str(entry.get(field, ""))):
+                failures.append(f"#{rank} {field} 缺少中文内容")
+                break
+
+    if failures:
+        preview = "；".join(failures[:3])
+        more = f"；另有 {len(failures) - 3} 条" if len(failures) > 3 else ""
+        raise RuntimeError(f"日报内容质量检查失败，拒绝发布：{preview}{more}")
+
+
 def generate_llm_briefs(items: list[NewsItem], skip_llm: bool) -> list[dict[str, Any]]:
     """Generate Chinese briefs in one model call, falling back on errors."""
 
@@ -904,6 +937,7 @@ def build_daily_payload(
     skipped_duplicates: list[str],
     target_date: str,
     skip_llm: bool,
+    allow_fallback: bool,
 ) -> dict[str, Any]:
     """Build the final daily JSON payload."""
 
@@ -928,6 +962,7 @@ def build_daily_payload(
                 **({"llm_error": brief["llm_error"]} if "llm_error" in brief else {}),
             }
         )
+    validate_publishable_briefs(entries, allow_fallback)
 
     return {
         "date": target_date,
@@ -1017,6 +1052,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--date", default=dt.date.today().isoformat())
     parser.add_argument("--skip-llm", action="store_true", help="Use fallback summaries without calling the model.")
+    parser.add_argument(
+        "--allow-fallback",
+        action="store_true",
+        help="Allow fallback summaries to be written. Intended only for manual debugging.",
+    )
     return parser.parse_args(argv)
 
 
@@ -1046,7 +1086,14 @@ def main(argv: list[str]) -> int:
             print(f"{len(errors)} source(s) failed; see source_errors in the JSON output.")
         return 0
 
-    payload = build_daily_payload(items, errors, skipped_duplicates, args.date, args.skip_llm)
+    payload = build_daily_payload(
+        items,
+        errors,
+        skipped_duplicates,
+        args.date,
+        args.skip_llm,
+        args.allow_fallback,
+    )
     write_outputs(payload, args.output)
     print(f"Generated {len(payload['items'])} items for {args.date}.")
     if skipped_duplicates:
