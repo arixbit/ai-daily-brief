@@ -1,0 +1,163 @@
+{
+  "date": "2026-05-03",
+  "generated_at": "2026-05-02T22:32:34.150365+00:00",
+  "title": "2026-05-03 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Even the latest AI models make three systematic reasoning errors, ARC-AGI-3 analysis shows",
+      "title_cn": "最新AI模型仍存在三大系统性推理错误，ARC-AGI-3分析揭示",
+      "summary_cn": "ARC Prize Foundation对OpenAI的GPT-5.5与Anthropic的Opus 4.7在ARC-AGI-3基准上的160次运行进行深度分析，揭示了三大系统性错误模式。研究指出，正是这些底层缺陷导致两款顶尖模型在人类可轻松解决的任务上得分仍徘徊于1%以下。",
+      "why_it_matters_cn": "揭示当前大模型在复杂逻辑推理上的根本瓶颈，为后续模型架构优化与对齐研究提供关键方向，避免盲目乐观。",
+      "tags": [
+        "大模型评测",
+        "推理缺陷",
+        "ARC-AGI-3"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/even-the-latest-ai-models-make-three-systematic-reasoning-errors-arc-agi-3-analysis-shows",
+      "published_at": "2026-05-02T13:31:52+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "五角大楼避开 Anthropic 后，与七大科技巨头达成合作",
+      "title_cn": "五角大楼绕过Anthropic，与七大科技巨头达成AI合作",
+      "summary_cn": "美国国防部宣布与SpaceX、OpenAI等七家科技公司达成协议，允许其在机密网络部署AI工具。此前因Anthropic要求设置安全防护被特朗普政府拉黑，经诉讼叫停后双方重启对话。目前GenAI.mil平台已有130万军方人员使用。",
+      "why_it_matters_cn": "标志美国军方AI采购策略重大转向，安全合规与商业竞争博弈加剧，将深刻影响全球AI军事化应用格局。",
+      "tags": [
+        "军事AI",
+        "政府合作",
+        "合规博弈"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8smYuSJnXax",
+      "published_at": "2026-05-02T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "ChatGPT now tracks users for ads by default as OpenAI looks for new revenue",
+      "title_cn": "ChatGPT免费版默认开启广告追踪，OpenAI寻求新营收",
+      "summary_cn": "OpenAI正式在运行广告的国家为免费ChatGPT用户默认开启营销Cookie追踪功能。该追踪仅针对免费账户生效，付费订阅用户不受影响，用户可在账户设置中手动关闭。此举旨在为平台探索多元化变现路径。",
+      "why_it_matters_cn": "反映OpenAI商业化压力加剧，隐私政策调整可能引发用户反弹，同时预示AI对话产品全面广告化的行业趋势。",
+      "tags": [
+        "ChatGPT",
+        "商业化",
+        "隐私追踪"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/chatgpt-now-tracks-users-for-ads-by-default-as-openai-looks-for-new-revenue",
+      "published_at": "2026-05-02T08:30:15+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "谷歌将为 Gemini 投放广告，目前处于准备阶段",
+      "title_cn": "谷歌确认将为Gemini引入广告功能，目前处于筹备阶段",
+      "summary_cn": "Alphabet首席商务官Philipp Schindler在财报电话会上透露，Gemini未来将引入广告功能。谷歌视其为覆盖数十亿用户的关键手段，目前正进行内部测试与准备，若进展顺利，移动端将率先上线广告模块。",
+      "why_it_matters_cn": "巨头跟进AI产品广告化策略，将重塑生成式AI的盈利模式，同时考验用户体验与商业变现的平衡。",
+      "tags": [
+        "Gemini",
+        "广告变现",
+        "产品策略"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8sn6r8B49X2",
+      "published_at": "2026-05-02T22:29:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "AI-generated actors and scripts are now ineligible for Oscars",
+      "title_cn": "奥斯卡奖正式禁止AI生成演员与剧本参选",
+      "summary_cn": "美国电影艺术与科学学院更新评选规则，明确禁止由AI生成的虚拟演员及剧本参与奥斯卡奖项角逐。此举旨在维护传统影视创作的人类核心地位，此前引发广泛争议的AI虚拟角色Tilly Norwood将失去参选资格。",
+      "why_it_matters_cn": "确立影视行业对AI生成内容的边界，保护人类创作者权益，同时为AI在娱乐产业的应用划定合规红线。",
+      "tags": [
+        "影视行业",
+        "AI伦理",
+        "奥斯卡"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars",
+      "published_at": "2026-05-02T21:54:58+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "The best AI dictation apps, tested and ranked",
+      "title_cn": "最佳AI语音听写应用实测与排名榜单发布",
+      "summary_cn": "TechCrunch AI团队对多款主流AI语音听写应用进行深度实测与横向对比，评估其在邮件回复、会议笔记记录及语音编程等场景的表现。报告详细列出各工具准确率、延迟及多语言支持能力，供开发者参考。",
+      "why_it_matters_cn": "语音交互正成为AI落地的重要入口，精准听写工具将大幅提升办公与开发效率，推动无障碍交互普及。",
+      "tags": [
+        "语音交互",
+        "效率工具",
+        "应用评测"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025",
+      "published_at": "2026-05-02T16:00:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "DuckLake 1.0: Data Lake Format with SQL Catalog Metadata",
+      "title_cn": "DuckLake 1.0发布：采用SQL目录元数据的数据湖格式",
+      "summary_cn": "DuckDB Labs正式发布DuckLake 1.0，这是一种新型数据湖格式，将表元数据存储于SQL数据库而非对象存储的分散文件中。首个实现以DuckDB扩展形式提供，支持目录级增量更新、优化排序分区及Iceberg兼容。",
+      "why_it_matters_cn": "解决传统数据湖元数据管理碎片化痛点，提升查询性能与工程维护效率，为AI训练数据管道提供更强底座。",
+      "tags": [
+        "数据湖",
+        "DuckDB",
+        "基础设施"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/ducklake-sql-catalog",
+      "published_at": "2026-05-02T06:48:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "xAI drops Grok 4.3 with steep price cuts and an Imagine agent mode for creative projects",
+      "title_cn": "xAI发布Grok 4.3：大幅降价并新增Imagine agent创意模式",
+      "summary_cn": "xAI推出Grok 4.3模型，采取大幅降价策略并强化工具调用能力。该版本在实用任务上表现提升，但综合性能仍落后于OpenAI与Anthropic的顶尖模型。同时首发基于agent架构的Imagine图像生成模式。",
+      "why_it_matters_cn": "价格战与agent功能成为AI模型竞争新焦点，xAI试图以性价比和创意工作流抢占市场份额，加速行业洗牌。",
+      "tags": [
+        "Grok",
+        "agent",
+        "价格战"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/xai-drops-grok-4-3-with-steep-price-cuts-and-an-imagine-agent-mode-for-creative-projects",
+      "published_at": "2026-05-02T07:35:24+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "xAI's new Custom Voices feature turns a minute of speech into a usable voice clone",
+      "title_cn": "xAI推出Custom Voices功能：一分钟语音即可生成可用克隆声线",
+      "summary_cn": "xAI正式发布Custom Voices功能，开发者仅需提供一分钟语音样本即可生成高质量克隆声线。该功能基于Grok语音转文字与文字转语音API构建，大幅降低AI语音定制门槛，适用于各类交互应用。",
+      "why_it_matters_cn": "降低个性化语音克隆技术门槛，推动AI语音交互普及，但同时也引发深度伪造与版权保护的伦理担忧。",
+      "tags": [
+        "语音克隆",
+        "API开发",
+        "xAI"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/xais-new-custom-voices-feature-turns-a-minute-of-speech-into-a-usable-voice-clone",
+      "published_at": "2026-05-02T12:14:46+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Nvidia CEO Jensen Huang calls out tech leaders' \"god complex\" over reckless AI job loss predictions",
+      "title_cn": "英伟达CEO黄仁勋批评科技领袖对AI失业预测的“上帝情结”",
+      "summary_cn": "英伟达CEO黄仁勋公开批评部分科技领袖对AI导致大规模失业的恐慌性预测，指责其带有“上帝情结”。他认为散布焦虑不仅无法保护就业，反而会劝退年轻人投身相关领域，对社会造成实质性伤害。",
+      "why_it_matters_cn": "纠正行业过度悲观叙事，强调技术演进应聚焦创造新岗位而非制造恐慌，对稳定人才市场与政策制定具指导意义。",
+      "tags": [
+        "行业观点",
+        "就业影响",
+        "黄仁勋"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/nvidia-ceo-jensen-huang-calls-out-tech-leaders-god-complex-over-reckless-ai-job-loss-predictions",
+      "published_at": "2026-05-02T10:32:09+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "Elon Musk calls himself a fool for giving OpenAI $38 million that became an $800 billion company",
+    "Meta acquires Assured Robot Intelligence to accelerate humanoid robot push"
+  ]
+}
