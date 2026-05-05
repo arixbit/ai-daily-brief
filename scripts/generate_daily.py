@@ -34,6 +34,8 @@ DEFAULT_OUTPUT = ROOT / "public" / "data"
 USER_AGENT = "ai-daily-brief/0.1 (+https://ai.arixbit.me)"
 UTC = dt.timezone.utc
 DEFAULT_OPENAI_MODEL = "Qwen3.6-27B-4bit"
+DEFAULT_LLM_BATCH_SIZE = 10
+DEFAULT_LLM_ATTEMPTS = 2
 
 
 @dataclass(frozen=True)
@@ -739,12 +741,23 @@ def load_env(path: Path) -> None:
         os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
 
 
-def llm_chat(messages: list[dict[str, str]], timeout: int = 240) -> str:
+def positive_int_env(name: str, default: int) -> int:
+    """Read a positive integer environment variable with a safe fallback."""
+
+    try:
+        value = int(os.environ.get(name, "").strip() or default)
+    except ValueError:
+        return default
+    return value if value > 0 else default
+
+
+def llm_chat(messages: list[dict[str, str]], timeout: int | None = None) -> str:
     """Call an OpenAI-compatible chat completions endpoint."""
 
     base_url = os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:12345/v1").rstrip("/")
     api_key = os.environ.get("OPENAI_API_KEY", "smartisan")
     model = os.environ.get("OPENAI_MODEL", DEFAULT_OPENAI_MODEL)
+    request_timeout = timeout or positive_int_env("OPENAI_TIMEOUT_SECONDS", 240)
     body = json.dumps(
         {
             "model": model,
@@ -762,9 +775,42 @@ def llm_chat(messages: list[dict[str, str]], timeout: int = 240) -> str:
         },
         method="POST",
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
+    with urllib.request.urlopen(request, timeout=request_timeout) as response:
         payload = json.loads(response.read().decode("utf-8"))
     return payload["choices"][0]["message"]["content"]
+
+
+def extract_json_object(content: str) -> str:
+    """Extract the first complete JSON object from mixed model output."""
+
+    start = content.find("{")
+    if start < 0:
+        raise json.JSONDecodeError("No JSON object found", content, 0)
+
+    depth = 0
+    in_string = False
+    escaped = False
+    for index in range(start, len(content)):
+        char = content[index]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+            continue
+
+        if char == '"':
+            in_string = True
+        elif char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                return content[start : index + 1]
+
+    raise json.JSONDecodeError("No complete JSON object found", content, start)
 
 
 def parse_llm_json(content: str) -> dict[str, Any]:
@@ -773,10 +819,7 @@ def parse_llm_json(content: str) -> dict[str, Any]:
     try:
         data = json.loads(content)
     except json.JSONDecodeError:
-        match = re.search(r"\{.*\}", content, flags=re.S)
-        if not match:
-            raise
-        data = json.loads(match.group(0))
+        data = json.loads(extract_json_object(content))
 
     if not isinstance(data, dict):
         raise ValueError("LLM returned non-object JSON")
@@ -866,24 +909,21 @@ def validate_publishable_briefs(entries: list[dict[str, Any]], allow_fallback: b
         raise RuntimeError(f"日报内容质量检查失败，拒绝发布：{preview}{more}")
 
 
-def generate_llm_briefs(items: list[NewsItem], skip_llm: bool) -> list[dict[str, Any]]:
-    """Generate Chinese briefs in one model call, falling back on errors."""
-
-    if skip_llm:
-        return [fallback_brief(item) for item in items]
+def build_llm_messages(items: list[NewsItem], start_index: int) -> list[dict[str, str]]:
+    """Build the prompt for a small batch of source items."""
 
     prompt_items = [
         {
-            "index": index,
+            "index": start_index + offset,
             "title": item.title,
             "source": item.source,
             "published_at": item.published_at,
             "url": item.url,
             "source_summary": item.summary[:1000],
         }
-        for index, item in enumerate(items, start=1)
+        for offset, item in enumerate(items)
     ]
-    messages = [
+    return [
         {
             "role": "system",
             "content": (
@@ -905,30 +945,80 @@ def generate_llm_briefs(items: list[NewsItem], skip_llm: bool) -> list[dict[str,
         },
     ]
 
-    try:
-        content = llm_chat(messages)
-        data = parse_llm_json(content)
-        generated = data.get("items", [])
-        if not isinstance(generated, list):
-            raise ValueError("LLM JSON missing items array")
 
-        by_index: dict[int, dict[str, Any]] = {}
-        for brief in generated:
-            if isinstance(brief, dict):
-                try:
-                    by_index[int(brief.get("index"))] = brief
-                except (TypeError, ValueError):
-                    continue
+def generate_llm_brief_batch(
+    items: list[NewsItem],
+    start_index: int,
+    attempts: int,
+    allow_split: bool = True,
+) -> list[dict[str, Any]]:
+    """Generate one LLM batch and split once if the batch keeps failing."""
 
-        return [
-            normalize_brief(by_index.get(index, {}), item)
-            for index, item in enumerate(items, start=1)
-        ]
-    except (OSError, TimeoutError, urllib.error.URLError, KeyError, ValueError, json.JSONDecodeError) as exc:
-        briefs = [fallback_brief(item) for item in items]
-        for brief in briefs:
-            brief["llm_error"] = str(exc)
+    messages = build_llm_messages(items, start_index)
+    last_error: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            content = llm_chat(messages)
+            data = parse_llm_json(content)
+            generated = data.get("items", [])
+            if not isinstance(generated, list):
+                raise ValueError("LLM JSON missing items array")
+
+            by_index: dict[int, dict[str, Any]] = {}
+            for brief in generated:
+                if isinstance(brief, dict):
+                    try:
+                        by_index[int(brief.get("index"))] = brief
+                    except (TypeError, ValueError):
+                        continue
+
+            expected_indexes = range(start_index, start_index + len(items))
+            missing = [index for index in expected_indexes if index not in by_index]
+            if missing:
+                raise ValueError(f"LLM JSON missing item indexes: {missing}")
+
+            return [
+                normalize_brief(by_index[index], item)
+                for index, item in zip(expected_indexes, items)
+            ]
+        except (OSError, TimeoutError, urllib.error.URLError, KeyError, ValueError, json.JSONDecodeError) as exc:
+            last_error = exc
+            if attempt < attempts:
+                time.sleep(min(2 * attempt, 6))
+
+    if allow_split and len(items) > 1:
+        briefs: list[dict[str, Any]] = []
+        for offset, item in enumerate(items):
+            briefs.extend(
+                generate_llm_brief_batch(
+                    [item],
+                    start_index + offset,
+                    attempts,
+                    allow_split=False,
+                )
+            )
         return briefs
+
+    error = str(last_error or "unknown LLM error")
+    briefs = [fallback_brief(item) for item in items]
+    for brief in briefs:
+        brief["llm_error"] = error
+    return briefs
+
+
+def generate_llm_briefs(items: list[NewsItem], skip_llm: bool) -> list[dict[str, Any]]:
+    """Generate Chinese briefs with retry and robust JSON parsing."""
+
+    if skip_llm:
+        return [fallback_brief(item) for item in items]
+
+    batch_size = positive_int_env("AI_DAILY_LLM_BATCH_SIZE", DEFAULT_LLM_BATCH_SIZE)
+    attempts = positive_int_env("AI_DAILY_LLM_ATTEMPTS", DEFAULT_LLM_ATTEMPTS)
+    briefs: list[dict[str, Any]] = []
+    for start in range(0, len(items), batch_size):
+        batch = items[start : start + batch_size]
+        briefs.extend(generate_llm_brief_batch(batch, start + 1, attempts))
+    return briefs
 
 
 def build_daily_payload(
