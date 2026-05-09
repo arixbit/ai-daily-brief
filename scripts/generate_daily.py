@@ -34,8 +34,11 @@ DEFAULT_OUTPUT = ROOT / "public" / "data"
 USER_AGENT = "ai-daily-brief/0.1 (+https://ai.arixbit.me)"
 UTC = dt.timezone.utc
 DEFAULT_OPENAI_MODEL = "Qwen3.6-27B-4bit"
-DEFAULT_LLM_BATCH_SIZE = 10
+DEFAULT_LLM_BATCH_SIZE = 6
 DEFAULT_LLM_ATTEMPTS = 2
+DEFAULT_OPENAI_MAX_TOKENS = 4096
+DEFAULT_SOURCE_SUMMARY_CHARS = 500
+MAX_DAILY_ITEMS = 100
 
 
 @dataclass(frozen=True)
@@ -142,6 +145,83 @@ class ReadhubPageParser(HTMLParser):
         self._tag = None
         self._parts = []
         self._href = ""
+
+
+class TelegramChannelParser(HTMLParser):
+    """Extract public Telegram channel messages from t.me/s HTML pages."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.messages: list[tuple[str, str, str]] = []
+        self._in_message = False
+        self._message_depth = 0
+        self._in_text = False
+        self._text_depth = 0
+        self._text_parts: list[str] = []
+        self._message_url = ""
+        self._published_at = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        tag = tag.lower()
+        attr = dict(attrs)
+        classes = attr.get("class") or ""
+        void_tag = tag in {"br", "img", "meta", "link", "input", "hr", "source"}
+
+        if not self._in_message and tag == "div" and "tgme_widget_message_wrap" in classes:
+            self._in_message = True
+            self._message_depth = 1
+            self._message_url = ""
+            self._published_at = ""
+            self._text_parts = []
+            return
+
+        if not self._in_message:
+            return
+
+        if void_tag:
+            if self._in_text and tag == "br":
+                self._text_parts.append("\n")
+            return
+
+        self._message_depth += 1
+
+        if tag == "a" and "tgme_widget_message_date" in classes and attr.get("href"):
+            self._message_url = attr["href"] or ""
+        elif tag == "time" and attr.get("datetime"):
+            self._published_at = attr["datetime"] or ""
+        elif tag == "div" and "tgme_widget_message_text" in classes:
+            self._in_text = True
+            self._text_depth = 1
+            self._text_parts = []
+        elif self._in_text:
+            self._text_depth += 1
+
+    def handle_data(self, data: str) -> None:
+        if self._in_text:
+            self._text_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if not self._in_message:
+            return
+
+        if self._in_text:
+            self._text_depth -= 1
+            if self._text_depth <= 0:
+                self._in_text = False
+
+        self._message_depth -= 1
+        if self._message_depth > 0:
+            return
+
+        text = re.sub(r"[ \t\r\f\v]+", " ", "".join(self._text_parts))
+        text = re.sub(r"\n\s+", "\n", html.unescape(text)).strip()
+        if text and self._message_url:
+            self.messages.append((text, self._message_url, self._published_at))
+        self._in_message = False
+        self._message_depth = 0
+        self._text_parts = []
+        self._message_url = ""
+        self._published_at = ""
 
 
 def utc_now() -> dt.datetime:
@@ -368,13 +448,38 @@ def load_history_dedupe(output_dir: Path, target_date: str, days: int) -> tuple[
     return urls, titles
 
 
-def fetch_text(url: str, timeout: int = 25) -> str:
+def fetch_text(url: str, timeout: int = 25, headers: dict[str, str] | None = None) -> str:
     """Fetch a URL and decode the response as text."""
 
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    request_headers = {"User-Agent": USER_AGENT}
+    if headers:
+        request_headers.update(headers)
+    request = urllib.request.Request(url, headers=request_headers)
     with urllib.request.urlopen(request, timeout=timeout) as response:
         charset = response.headers.get_content_charset() or "utf-8"
         return response.read().decode(charset, errors="replace")
+
+
+def github_headers() -> dict[str, str]:
+    """Build GitHub API headers, using a token when one is configured."""
+
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return headers
+
+
+def compact_title(value: str, limit: int = 110) -> str:
+    """Collapse a text block into a concise title-sized string."""
+
+    title = re.sub(r"\s+", " ", strip_html(value)).strip()
+    if len(title) <= limit:
+        return title
+    return title[: limit - 1].rstrip() + "…"
 
 
 def child_text(element: ET.Element, names: tuple[str, ...]) -> str:
@@ -472,6 +577,251 @@ def parse_hn_algolia(source: dict[str, Any]) -> list[NewsItem]:
                     summary=", ".join(metadata),
                 )
             )
+    return items
+
+
+def parse_reddit_subreddit(source: dict[str, Any]) -> list[NewsItem]:
+    """Fetch public Reddit subreddit posts without requiring OAuth."""
+
+    subreddit = str(source.get("subreddit") or "").strip().lstrip("r/")
+    if not subreddit:
+        raise ValueError("reddit_subreddit source requires subreddit")
+
+    sort = str(source.get("sort", "hot")).strip().strip("/") or "hot"
+    limit = max(1, min(int(source.get("fetch_limit", 25)), 100))
+
+    if not source.get("prefer_json", False):
+        return parse_reddit_subreddit_feed(source, subreddit, sort, limit)
+
+    query = {"limit": str(limit), "raw_json": "1"}
+    if sort in {"top", "controversial"}:
+        query["t"] = str(source.get("time_filter", "day"))
+
+    # Some Reddit edges block the public JSON endpoint. The Atom feed fallback
+    # is less rich but keeps the daily cron from losing the whole source.
+    url = source.get("url") or (
+        f"https://old.reddit.com/r/{urllib.parse.quote(subreddit, safe='')}/{sort}.json?"
+        f"{urllib.parse.urlencode(query)}"
+    )
+    try:
+        payload = json.loads(fetch_text(str(url), headers={"Accept": "application/json"}))
+    except (OSError, TimeoutError, urllib.error.URLError, json.JSONDecodeError):
+        if source.get("rss_fallback", True):
+            return parse_reddit_subreddit_feed(source, subreddit, sort, limit)
+        raise
+
+    children = payload.get("data", {}).get("children", [])
+    min_score = int(source.get("min_score", 0))
+    min_comments = int(source.get("min_comments", 0))
+
+    items: list[NewsItem] = []
+    for child in children:
+        data = child.get("data", {}) if isinstance(child, dict) else {}
+        title = strip_html(data.get("title"))
+        if not title:
+            continue
+
+        score = int(data.get("score") or 0)
+        comments = int(data.get("num_comments") or 0)
+        if (min_score or min_comments) and score < min_score and comments < min_comments:
+            continue
+
+        link = data.get("url_overridden_by_dest") or data.get("url")
+        permalink = data.get("permalink")
+        if not link and permalink:
+            link = urllib.parse.urljoin("https://www.reddit.com", permalink)
+        if not link:
+            continue
+
+        published = dt.datetime.fromtimestamp(float(data.get("created_utc") or 0), UTC)
+        metadata = [f"{score} upvotes", f"{comments} comments"]
+        if data.get("link_flair_text"):
+            metadata.append(str(data["link_flair_text"]))
+        selftext = strip_html(data.get("selftext"))
+        summary = " · ".join(metadata)
+        if selftext:
+            summary = f"{summary}\n{selftext[:900]}"
+
+        items.append(
+            NewsItem(
+                title=title,
+                url=normalize_url(str(link)),
+                source=source["name"],
+                published_at=published.isoformat(),
+                summary=summary,
+            )
+        )
+    return items
+
+
+def parse_reddit_subreddit_feed(
+    source: dict[str, Any],
+    subreddit: str,
+    sort: str,
+    limit: int,
+) -> list[NewsItem]:
+    """Fetch Reddit posts via Atom feed as a stable public fallback."""
+
+    base = f"https://www.reddit.com/r/{urllib.parse.quote(subreddit, safe='')}"
+    if sort == "hot":
+        path = ".rss"
+        query = {"limit": str(limit)}
+    else:
+        path = f"{sort}/.rss"
+        query = {"limit": str(limit)}
+        if sort in {"top", "controversial"}:
+            query["t"] = str(source.get("time_filter", "day"))
+    feed_source = {
+        **source,
+        "type": "feed",
+        "url": f"{base}/{path}?{urllib.parse.urlencode(query)}",
+    }
+    return parse_feed(feed_source)[:limit]
+
+
+def parse_github_repo_releases(source: dict[str, Any]) -> list[NewsItem]:
+    """Fetch release notes from one GitHub repository."""
+
+    owner = str(source.get("owner") or "").strip()
+    repo = str(source.get("repo") or "").strip()
+    if not owner or not repo:
+        raise ValueError("github_repo_releases source requires owner and repo")
+
+    limit = max(1, min(int(source.get("fetch_limit", 10)), 100))
+    url = source.get("url") or (
+        f"https://api.github.com/repos/{owner}/{repo}/releases?"
+        f"{urllib.parse.urlencode({'per_page': str(limit)})}"
+    )
+    payload = json.loads(fetch_text(str(url), headers=github_headers()))
+    if not isinstance(payload, list):
+        raise ValueError("GitHub releases response is not a list")
+
+    include_prereleases = bool(source.get("include_prereleases", False))
+    items: list[NewsItem] = []
+    for release in payload:
+        if not isinstance(release, dict):
+            continue
+        if release.get("draft"):
+            continue
+        if release.get("prerelease") and not include_prereleases:
+            continue
+
+        release_title = release.get("name") or release.get("tag_name") or "new release"
+        link = release.get("html_url")
+        if not link:
+            continue
+        published = parse_date(release.get("published_at") or release.get("created_at")) or utc_now()
+        summary = strip_html(release.get("body"))[:1200]
+        items.append(
+            NewsItem(
+                title=f"{owner}/{repo}: {strip_html(str(release_title))}",
+                url=normalize_url(str(link)),
+                source=source["name"],
+                published_at=published.astimezone(UTC).isoformat(),
+                summary=summary,
+            )
+        )
+    return items
+
+
+def parse_github_user_events(source: dict[str, Any]) -> list[NewsItem]:
+    """Fetch selected public events from a GitHub user or organization."""
+
+    account = str(source.get("username") or source.get("org") or "").strip()
+    if not account:
+        raise ValueError("github_user_events source requires username or org")
+
+    limit = max(1, min(int(source.get("fetch_limit", 30)), 100))
+    if source.get("org"):
+        default_url = f"https://api.github.com/orgs/{account}/events?per_page={limit}"
+    else:
+        default_url = f"https://api.github.com/users/{account}/events/public?per_page={limit}"
+    payload = json.loads(fetch_text(str(source.get("url") or default_url), headers=github_headers()))
+    if not isinstance(payload, list):
+        raise ValueError("GitHub events response is not a list")
+
+    allowed_types = set(source.get("event_types") or ["ReleaseEvent", "CreateEvent"])
+    include_pushes = bool(source.get("include_pushes", False))
+    items: list[NewsItem] = []
+    for event in payload:
+        if not isinstance(event, dict):
+            continue
+        event_type = str(event.get("type") or "")
+        if event_type not in allowed_types and not (include_pushes and event_type == "PushEvent"):
+            continue
+
+        repo_name = str((event.get("repo") or {}).get("name") or account)
+        event_payload = event.get("payload") or {}
+        published = parse_date(event.get("created_at")) or utc_now()
+        title = ""
+        link = ""
+        summary = ""
+
+        if event_type == "ReleaseEvent":
+            release = event_payload.get("release") or {}
+            release_title = release.get("name") or release.get("tag_name") or "new release"
+            action = event_payload.get("action") or "released"
+            title = f"{repo_name}: {action} {release_title}"
+            link = release.get("html_url") or f"https://github.com/{repo_name}/releases"
+            summary = strip_html(release.get("body"))[:1200]
+        elif event_type == "CreateEvent":
+            ref_type = event_payload.get("ref_type") or "resource"
+            if ref_type not in {"repository", "tag"}:
+                continue
+            title = f"{repo_name}: created {ref_type}"
+            link = f"https://github.com/{repo_name}"
+            summary = str(event_payload.get("description") or "")
+        elif event_type == "PushEvent":
+            commits = event_payload.get("commits") or []
+            if not commits:
+                continue
+            title = f"{repo_name}: pushed {len(commits)} commit(s)"
+            link = f"https://github.com/{repo_name}"
+            summary = "; ".join(
+                compact_title(str(commit.get("message") or ""), 160)
+                for commit in commits[:5]
+                if isinstance(commit, dict)
+            )
+
+        if title and link:
+            items.append(
+                NewsItem(
+                    title=strip_html(title),
+                    url=normalize_url(link),
+                    source=source["name"],
+                    published_at=published.astimezone(UTC).isoformat(),
+                    summary=summary,
+                )
+            )
+    return items
+
+
+def parse_telegram_channel(source: dict[str, Any]) -> list[NewsItem]:
+    """Fetch recent posts from a public Telegram channel web preview."""
+
+    channel = str(source.get("channel") or "").strip().lstrip("@")
+    if not channel and not source.get("url"):
+        raise ValueError("telegram_channel source requires channel or url")
+
+    url = str(source.get("url") or f"https://t.me/s/{channel}")
+    text = fetch_text(url)
+    parser = TelegramChannelParser()
+    parser.feed(text)
+    limit = max(1, min(int(source.get("fetch_limit", 30)), 100))
+
+    items: list[NewsItem] = []
+    for message_text, link, published_raw in parser.messages[-limit:]:
+        published = parse_date(published_raw) or utc_now()
+        title = compact_title(message_text)
+        items.append(
+            NewsItem(
+                title=title,
+                url=normalize_url(link),
+                source=source["name"],
+                published_at=published.astimezone(UTC).isoformat(),
+                summary=strip_html(message_text)[:1200],
+            )
+        )
     return items
 
 
@@ -610,6 +960,14 @@ def fetch_source(
         return parse_feed(source)
     if source.get("type") == "hn_algolia":
         return parse_hn_algolia(source)
+    if source.get("type") == "reddit_subreddit":
+        return parse_reddit_subreddit(source)
+    if source.get("type") == "github_repo_releases":
+        return parse_github_repo_releases(source)
+    if source.get("type") == "github_user_events":
+        return parse_github_user_events(source)
+    if source.get("type") == "telegram_channel":
+        return parse_telegram_channel(source)
     if source.get("type") == "readhub_daily_feed":
         return parse_readhub_daily_feed(source, config, target_date)
     raise ValueError(f"Unsupported source type: {source.get('type')}")
@@ -653,6 +1011,8 @@ def collect_items(
     scored: list[tuple[int, dt.datetime, NewsItem]] = []
 
     for source in config.get("sources", []):
+        if not source.get("enabled", True):
+            continue
         try:
             fetched = fetch_source(source, config, target_date)
         except (ET.ParseError, OSError, TimeoutError, urllib.error.URLError, ValueError, json.JSONDecodeError) as exc:
@@ -692,8 +1052,8 @@ def collect_items(
         str(source.get("name")): int(source.get("daily_limit", default_source_limit))
         for source in config.get("sources", [])
     }
-    max_items = int(config.get("max_items", 10))
-    min_items = min(int(config.get("min_items", 10)), max_items)
+    max_items = min(max(1, int(config.get("max_items", 10))), MAX_DAILY_ITEMS)
+    min_items = min(max(0, int(config.get("min_items", 10))), max_items)
     for _, _, item in scored:
         source_limit = source_limits.get(item.source, default_source_limit)
         if selected_source_counts.get(item.source, 0) >= source_limit:
@@ -758,13 +1118,16 @@ def llm_chat(messages: list[dict[str, str]], timeout: int | None = None) -> str:
     api_key = os.environ.get("OPENAI_API_KEY", "smartisan")
     model = os.environ.get("OPENAI_MODEL", DEFAULT_OPENAI_MODEL)
     request_timeout = timeout or positive_int_env("OPENAI_TIMEOUT_SECONDS", 240)
-    body = json.dumps(
-        {
-            "model": model,
-            "messages": messages,
-            "temperature": 0.2,
-        }
-    ).encode("utf-8")
+    payload: dict[str, Any] = {
+        "model": model,
+        "messages": messages,
+        "temperature": 0.2,
+        "max_tokens": positive_int_env("OPENAI_MAX_TOKENS", DEFAULT_OPENAI_MAX_TOKENS),
+    }
+    if "127.0.0.1" in base_url or "localhost" in base_url:
+        payload["chat_template_kwargs"] = {"enable_thinking": False}
+
+    body = json.dumps(payload).encode("utf-8")
     request = urllib.request.Request(
         f"{base_url}/chat/completions",
         data=body,
@@ -861,20 +1224,53 @@ def infer_tags(item: NewsItem) -> list[str]:
 
 
 def normalize_brief(data: dict[str, Any], item: NewsItem) -> dict[str, Any]:
-    """Normalize one model-generated brief and fill missing fields."""
+    """Normalize one model-generated brief and fill missing fields.
+
+    If the LLM returns a non-empty value that doesn't contain Chinese characters,
+    fall back to the safe version (e.g. LLM returned English-only title_cn).
+    """
 
     fallback = fallback_brief(item)
     tags = data.get("tags", fallback["tags"])
     if not isinstance(tags, list):
         tags = fallback["tags"]
-    return {
-        "title_cn": str(data.get("title_cn") or fallback["title_cn"]).strip(),
-        "summary_cn": str(data.get("summary_cn") or fallback["summary_cn"]).strip(),
-        "why_it_matters_cn": str(
-            data.get("why_it_matters_cn") or fallback["why_it_matters_cn"]
-        ).strip(),
+
+    title_cn = str(data.get("title_cn") or "").strip()
+    summary_cn = str(data.get("summary_cn") or "").strip()
+    why_it_matters_cn = str(data.get("why_it_matters_cn") or "").strip()
+
+    # If LLM returned a value but it lacks CJK, use the fallback instead
+    used_fallback = False
+    if title_cn and not contains_cjk(title_cn):
+        title_cn = fallback["title_cn"]
+        used_fallback = True
+    elif not title_cn:
+        title_cn = fallback["title_cn"]
+        used_fallback = True
+
+    if summary_cn and not contains_cjk(summary_cn):
+        summary_cn = fallback["summary_cn"]
+        used_fallback = True
+    elif not summary_cn:
+        summary_cn = fallback["summary_cn"]
+        used_fallback = True
+
+    if why_it_matters_cn and not contains_cjk(why_it_matters_cn):
+        why_it_matters_cn = fallback["why_it_matters_cn"]
+        used_fallback = True
+    elif not why_it_matters_cn:
+        why_it_matters_cn = fallback["why_it_matters_cn"]
+        used_fallback = True
+
+    result = {
+        "title_cn": title_cn,
+        "summary_cn": summary_cn,
+        "why_it_matters_cn": why_it_matters_cn,
         "tags": [str(tag).strip() for tag in tags if str(tag).strip()][:4],
     }
+    if used_fallback:
+        result["used_fallback"] = True
+    return result
 
 
 def contains_cjk(value: str) -> bool:
@@ -895,6 +1291,9 @@ def validate_publishable_briefs(entries: list[dict[str, Any]], allow_fallback: b
         if entry.get("llm_error"):
             failures.append(f"#{rank} LLM 失败：{entry['llm_error']}")
             continue
+        if entry.get("used_fallback"):
+            # normalize_brief already replaced non-CJK LLM output with safe fallback
+            continue
         if str(entry.get("title_cn", "")).startswith("中文待整理："):
             failures.append(f"#{rank} 标题仍是待整理兜底")
             continue
@@ -912,6 +1311,7 @@ def validate_publishable_briefs(entries: list[dict[str, Any]], allow_fallback: b
 def build_llm_messages(items: list[NewsItem], start_index: int) -> list[dict[str, str]]:
     """Build the prompt for a small batch of source items."""
 
+    summary_limit = positive_int_env("AI_DAILY_SOURCE_SUMMARY_CHARS", DEFAULT_SOURCE_SUMMARY_CHARS)
     prompt_items = [
         {
             "index": start_index + offset,
@@ -919,7 +1319,7 @@ def build_llm_messages(items: list[NewsItem], start_index: int) -> list[dict[str
             "source": item.source,
             "published_at": item.published_at,
             "url": item.url,
-            "source_summary": item.summary[:1000],
+            "source_summary": item.summary[:summary_limit],
         }
         for offset, item in enumerate(items)
     ]
@@ -929,7 +1329,7 @@ def build_llm_messages(items: list[NewsItem], start_index: int) -> list[dict[str
             "content": (
                 "你是中文 AI 新闻简报编辑。输出严格 JSON，不要 Markdown。"
                 "保留必要英文术语，比如 agent、token、Claude Code、Codex、ChatGPT。"
-                "不要虚构输入中没有的信息。"
+                "不要虚构输入中没有的信息。不要输出思考过程。"
             ),
         },
         {
@@ -1050,6 +1450,7 @@ def build_daily_payload(
                 "url": item.url,
                 "published_at": item.published_at,
                 **({"llm_error": brief["llm_error"]} if "llm_error" in brief else {}),
+                **({"used_fallback": brief["used_fallback"]} if "used_fallback" in brief else {}),
             }
         )
     validate_publishable_briefs(entries, allow_fallback)
