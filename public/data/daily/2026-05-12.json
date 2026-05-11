@@ -1,0 +1,599 @@
+{
+  "date": "2026-05-12",
+  "generated_at": "2026-05-11T22:31:02.756798+00:00",
+  "title": "2026-05-12 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "SocialReasoning-Bench: Measuring whether AI agents act in users’ best interests",
+      "title_cn": "微软发布 SocialReasoning-Bench：评估 AI agent 是否真正为用户谋利",
+      "summary_cn": "微软研究团队推出 SocialReasoning-Bench 基准测试，旨在衡量 AI agent 是否真正符合用户最佳利益。研究发现，尽管模型执行任务能力稳定，但在优化用户利益方面表现不佳，即使有明确指令，agent 也常无法持续提升用户处境，揭示了当前代理系统在价值对齐上的深层缺陷。",
+      "why_it_matters_cn": "揭示了当前 AI agent 在价值对齐上的核心缺陷，即执行能力强但缺乏真正的用户利益优化能力，为未来代理系统的安全与伦理设计提供了关键评估标准。",
+      "tags": [
+        "AI Agent",
+        "基准测试",
+        "价值对齐",
+        "微软研究"
+      ],
+      "source": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests",
+      "published_at": "2026-05-11T17:19:28+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI 成立 OpenAI 部署公司，帮助企业构建人工智能系统",
+      "title_cn": "OpenAI 成立部署公司并收购 Tomoro，加速企业 AI 落地",
+      "summary_cn": "OpenAI 正式成立 OpenAI 部署公司，旨在帮助企业构建人工智能系统，并同意收购 AI 咨询与工程公司 Tomoro。该公司由 OpenAI 控股，初始投资超 40 亿美元，用于扩大运营规模及收购。客户与 OpenAI 或其部署公司合作可获得统一体验，标志着 OpenAI 向企业级服务全面转型。",
+      "why_it_matters_cn": "标志着 OpenAI 从单纯模型提供商向企业级服务巨头转型，通过资本运作和统一体验策略，加速 AI 技术在商业领域的规模化落地与应用。",
+      "tags": [
+        "OpenAI",
+        "企业部署",
+        "并购",
+        "AI 商业化"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8t31MYLcQJ6",
+      "published_at": "2026-05-11T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI 同意向欧盟开放全新 AI 模型，而 Anthropic 仍拒绝向欧盟开放 Mythos",
+      "title_cn": "OpenAI 向欧盟开放 GPT-5.5-Cyber，Anthropic 仍拒绝开放 Mythos",
+      "summary_cn": "OpenAI 宣布允许欧盟接入其最新 AI 模型 GPT-5.5-Cyber 的网络安全专用版本，此前已向审核团队开放预览。相比之下，Anthropic 的 Mythos 模型发布一个月仍未获欧盟接入权限。欧盟欢迎 OpenAI 的透明度，称正与 Anthropic 谈判但进度滞后，凸显两家巨头在监管合作态度上的显著差异。",
+      "why_it_matters_cn": "凸显了全球 AI 监管中巨头合作态度的巨大差异，OpenAI 的开放策略可能影响欧盟对其监管立场，而 Anthropic 的保守态度则加剧了合规不确定性。",
+      "tags": [
+        "OpenAI",
+        "Anthropic",
+        "欧盟监管",
+        "模型访问"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8t2pxGL7lfA",
+      "published_at": "2026-05-11T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "The EU wants to regulate AI but needs OpenAI and Anthropic to let regulators through the door",
+      "title_cn": "欧盟欲监管 AI，但依赖 OpenAI 和 Anthropic 的自愿配合",
+      "summary_cn": "文章指出，欧盟希望监管 AI，但严重依赖科技巨头的自愿配合。OpenAI 已提供 GPT-5.5 Cyber 模型供安全审查，而 Anthropic 在多次会议后仍未开放 Mythos 模型访问权。这种差距突显了欧洲 AI 监督机制的脆弱性，即监管效力在很大程度上取决于被监管公司的合作意愿。",
+      "why_it_matters_cn": "揭示了欧盟 AI 监管体系的结构性弱点，即监管效力高度依赖科技巨头的自愿配合，若巨头拒绝开放模型，监管可能陷入僵局。",
+      "tags": [
+        "欧盟 AI 法案",
+        "监管困境",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/the-eu-wants-to-regulate-ai-but-needs-openai-and-anthropic-to-let-regulators-through-the-door",
+      "published_at": "2026-05-11T18:19:50+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Computer build using Intel Optane Persistent Memory - Can run 1 trillion parameter model at over 4 tokens/sec",
+      "title_cn": "使用 Intel Optane 持久内存构建电脑，本地运行万亿参数模型超 4 tokens/sec",
+      "summary_cn": "Reddit 用户分享了一种使用 Intel Optane 持久内存构建的电脑配置，成功在本地以超过 4 tokens/秒的速度运行 1 万亿参数的 Kimi K2.5 模型。Optane PMem 作为一种独特的 DIMM 内存单元，在此前 LLM 推理构建中鲜见，该案例展示了新型硬件在提升本地大模型推理性能上的潜力。",
+      "why_it_matters_cn": "展示了非传统硬件如 Intel Optane 在本地大模型推理中的巨大潜力，为低成本、高性能运行万亿参数模型提供了新的技术路径和硬件参考。",
+      "tags": [
+        "本地部署",
+        "Intel Optane",
+        "大模型推理",
+        "硬件加速"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/na7zo7lmck0h1.jpeg",
+      "published_at": "2026-05-11T19:54:25+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Article: Local-First AI Inference: A Cloud Architecture Pattern for Cost-Effective Document Processing",
+      "title_cn": "Local-First AI 推理模式：通过本地处理降低 75% API 成本",
+      "summary_cn": "InfoQ 文章介绍了一种 Local-First AI 推理云架构模式，将 70-80% 的文档路由至本地确定性提取，零 API 成本，仅对边缘情况调用 Azure OpenAI。在 4700 份工程图纸 PDF 测试中，该模式使 API 成本降低 75%，处理时间缩短 55%，并通过人工审核层控制错误，实现了成本与效率的双重优化。",
+      "why_it_matters_cn": "提供了一种极具性价比的企业 AI 落地架构，通过混合本地处理与云端 API，大幅降低运营成本并提升处理效率，适合大规模文档处理场景。",
+      "tags": [
+        "Local-First",
+        "成本优化",
+        "文档处理",
+        "云架构"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/articles/local-first-ai-inference-cloud",
+      "published_at": "2026-05-11T11:00:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "OpenAI Cooked This Week!",
+      "title_cn": "OpenAI 悄然替换默认模型：GPT-5.5 Instant 上线",
+      "summary_cn": "OpenAI 将 ChatGPT 的默认模型从 GPT-5.3 Instant 静默切换为 GPT-5.5 Instant。这一变更影响了数亿用户，新模型在法律、医疗和金融等敏感领域的幻觉问题显著减少，提升了回答的可靠性与安全性，标志着模型迭代进入更精细的阶段。",
+      "why_it_matters_cn": "默认模型的静默升级直接影响全球数亿用户的日常体验，新模型在关键垂直领域的准确性提升，增强了 AI 在专业场景中的可信度与应用潜力。",
+      "tags": [
+        "OpenAI",
+        "GPT-5.5",
+        "模型更新"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1tae9d6/openai_cooked_this_week",
+      "published_at": "2026-05-11T19:47:36+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Your AI Use Is Breaking My Brain",
+      "title_cn": "AI 内容泛滥引发“僵尸互联网”焦虑",
+      "summary_cn": "Simon Willison 推荐 Jason Koebler 的文章，指出 AI 生成内容在线上的泛滥已难以避免，过滤这些内容令人精神疲惫。文章提出“僵尸互联网”概念，指出现象比“死互联网”更隐蔽，AI 内容正在扭曲正常的人类写作风格，引发对网络生态的担忧。",
+      "why_it_matters_cn": "AI 生成内容的过度渗透正在改变互联网信息生态，不仅增加用户筛选成本，还可能侵蚀人类独特的表达风格，引发对数字环境健康度的深层反思。",
+      "tags": [
+        "AI 伦理",
+        "内容生态",
+        "僵尸互联网"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/11/zombie-internet",
+      "published_at": "2026-05-11T19:21:27+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Baidu's Ernie 5.1 cuts 94 percent of pre-training costs while competing with top models",
+      "title_cn": "百度文心 5.1 预训练成本降低 94%，跻身全球前列",
+      "summary_cn": "百度文心 5.1 采用“一次训练，全部提取”策略，参数量仅为前代三分之一，预训练成本降至同类模型的 6%。在 Search Arena 排行榜上，其性能位居全球第四，仅次于两个 Claude Opus 变体和 GPT-5.5 Search，展现了极高的性价比。",
+      "why_it_matters_cn": "大幅降低预训练成本同时保持顶级性能，证明了高效训练策略的可行性，为 AI 模型的普及和商业化落地提供了新的技术路径和竞争标杆。",
+      "tags": [
+        "百度",
+        "文心 5.1",
+        "模型效率"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/baidus-ernie-5-1-cuts-94-percent-of-pre-training-costs-while-competing-with-top-models",
+      "published_at": "2026-05-11T17:08:06+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "How ChatGPT adoption broadened in early 2026",
+      "title_cn": "ChatGPT 在 2026 年初实现更广泛的主流普及",
+      "summary_cn": "OpenAI 报告显示，2026 年第一季度 ChatGPT 采用率激增。增长最快的人群为 35 岁以上用户，且性别使用比例更加平衡。这一趋势表明 AI 工具已突破早期采用者群体，正在向更广泛的大众市场渗透，成为主流生产力工具。",
+      "why_it_matters_cn": "用户画像的多元化标志着 AI 从极客玩具转变为大众基础设施，35 岁以上人群的高增长预示着 AI 将在传统行业和更广泛的社会层面产生深远影响。",
+      "tags": [
+        "ChatGPT",
+        "用户增长",
+        "主流普及"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/signals/research/2026q1-update",
+      "published_at": "2026-05-11T15:00:00+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "OpenAI Campus Network: Student club interest form",
+      "title_cn": "OpenAI 校园网络启动全球学生社团招募",
+      "summary_cn": "OpenAI 推出校园网络计划，面向全球学生社团开放兴趣表单。参与者可连接世界各地的 AI 社团，获取 AI 工具访问权限，举办活动并构建 AI 驱动的校园社区。此举旨在培养下一代 AI 人才，促进学术与技术的结合。",
+      "why_it_matters_cn": "通过赋能学生社团，OpenAI 正在构建庞大的基层开发者社区，这不仅有助于早期人才的培养，也为 AI 技术的教育普及和生态建设奠定基础。",
+      "tags": [
+        "OpenAI",
+        "教育",
+        "校园社区"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+      "published_at": "2026-05-11T10:00:00+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "Using LLM in the shebang line of a script",
+      "title_cn": "在脚本 Shebang 行中使用 LLM 的新奇玩法",
+      "summary_cn": "Simon Willison 分享了一种在脚本 Shebang 行中直接使用 LLM 的技巧。通过 `#!/usr/bin/env -S llm`，用户可以将英文文本文件直接作为可执行脚本运行，甚至结合工具调用选项。这种创新用法展示了 LLM 在命令行环境中的灵活性和创造性应用潜力。",
+      "why_it_matters_cn": "这种将自然语言处理直接嵌入系统底层执行流的做法，模糊了代码与文本的界限，为开发者提供了更直观、灵活的自动化脚本编写方式，拓展了 LLM 的应用场景。",
+      "tags": [
+        "LLM",
+        "命令行",
+        "开发者工具"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/11/llm-shebang",
+      "published_at": "2026-05-11T18:48:57+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "Netflix Introduces ‘Model Lifecycle Graph’ to Scale Enterprise Machine Learning",
+      "title_cn": "Netflix 推出模型生命周期图谱以扩展企业级机器学习",
+      "summary_cn": "Netflix 开发了基于图谱的机器学习系统管理架构，即模型生命周期图谱。该系统映射数据集、模型、特征和工作流之间的连接，解决扩展 ML 运营的挑战。它增强了可发现性、治理和组件重用，同时支持工程师和数据科学家的自助服务方式。",
+      "why_it_matters_cn": "解决了大规模 ML 运营中的复杂依赖管理问题，提升了企业级 AI 系统的可维护性和协作效率。",
+      "tags": [
+        "Netflix",
+        "MLOps",
+        "模型治理"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/netflix-ml-graph",
+      "published_at": "2026-05-11T07:30:00+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "Quoting James Shore",
+      "title_cn": "引用 James Shore：AI 编码 Agent 必须降低维护成本",
+      "summary_cn": "James Shore 指出，AI 编码 Agent 必须显著降低代码维护成本。如果编码速度提高两倍，维护成本必须减半；提高三倍，成本需降至三分之一。否则，开发者只是用暂时的速度提升换取永久的债务负担。数学逻辑仅当 LLM 降低维护成本且幅度与代码增加率成反比时才成立。",
+      "why_it_matters_cn": "警示开发者警惕 AI 编码工具带来的技术债务，强调维护成本平衡对长期生产力的关键作用。",
+      "tags": [
+        "AI 编码",
+        "技术债务",
+        "生产力"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/11/james-shore",
+      "published_at": "2026-05-11T19:48:32+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "Three things in AI to watch, according to a Nobel-winning economist",
+      "title_cn": "诺贝尔经济学奖得主指出 AI 领域需关注的三件事",
+      "summary_cn": "诺贝尔经济学奖得主 Daron Acemoglu 在 2024 年获奖前发表了一篇在硅谷不受欢迎的论文。他反对大型科技公司对 AI 的某些观点。本文回顾了他提出的 AI 领域三个关键观察点，挑战了主流技术叙事，强调从经济和社会角度审视 AI 发展的必要性。",
+      "why_it_matters_cn": "提供了超越技术视角的 AI 发展批判性思考，帮助理解 AI 对社会结构和经济分配的深远影响。",
+      "tags": [
+        "AI 伦理",
+        "经济学",
+        "Daron Acemoglu"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/11/1137090/three-things-in-ai-to-watch-according-to-a-nobel-winning-economist",
+      "published_at": "2026-05-11T17:35:12+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "Orc (working name) - auditable and declarative AI workflow",
+      "title_cn": "Orc（暂定名）：可审计且声明式的 AI 工作流",
+      "summary_cn": "开发者正在构建一个名为 ORC（Orchestration as Code）的小型仓库，用于管理 LLM 工作流。该项目旨在通过代码定义编排过程，特别针对运行本地模型（如 Ollama、llama.cpp、LM Studio）的用户。目前处于概念验证阶段，寻求社区反馈以评估其有用性。",
+      "why_it_matters_cn": "为本地 LLM 部署提供了标准化的工作流编排方案，增强了 AI 应用的可审计性和可维护性。",
+      "tags": [
+        "LLM 编排",
+        "本地模型",
+        "开源工具"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1ta8v5e/orc_working_name_auditable_and_declarative_ai",
+      "published_at": "2026-05-11T16:44:37+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "Strix Halo or DGX Spark for a home LLM server?",
+      "title_cn": "家庭 LLM 服务器：选择 Strix Halo 还是 DGX Spark？",
+      "summary_cn": "用户在 Reddit 上讨论为家庭 LLM 服务器选择硬件：AMD Strix Halo（128GB 内存，$3,388）与 Nvidia DGX Spark（Asus Ascent GX10）。需求是通过局域网访问类似 ChatGPT 的 Web 界面。用户缺乏本地 LLM 网络托管经验，寻求新手友好的配置建议。",
+      "why_it_matters_cn": "反映了个人开发者对高性能本地 AI 硬件的需求增长，以及不同架构在私有化部署中的权衡。",
+      "tags": [
+        "硬件选择",
+        "本地部署",
+        "DGX Spark"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1ta7ce9/strix_halo_or_dgx_spark_for_a_home_llm_server",
+      "published_at": "2026-05-11T15:51:50+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "Learning on the Shop floor",
+      "title_cn": "Shopify 内部编码 Agent River 的公开协作模式",
+      "summary_cn": "Shopify CEO Tobias Lütke 描述了内部编码 Agent River 的工作方式：它仅在公共 Slack 频道响应，拒绝私信。所有对话公开且可搜索，任何员工均可参与。Tobi 的频道已有超过 100 人参与互动。这种模式促进了知识共享和透明协作，被称为“车间学习”。",
+      "why_it_matters_cn": "展示了 AI Agent 如何促进企业内部知识透明化和协作文化，为组织管理提供新范式。",
+      "tags": [
+        "Shopify",
+        "AI Agent",
+        "协作文化"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor",
+      "published_at": "2026-05-11T15:46:36+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "Fostering breakthrough AI innovation through customer-back engineering",
+      "title_cn": "通过客户逆向工程推动突破性 AI 创新",
+      "summary_cn": "麦肯锡研究显示，多数企业数字化投资回报不足三分之一。问题在于企业常从技术能力出发，而非以客户需求为起点逆向推导。这种本末倒置导致解决方案碎片化，阻碍了 AI 技术的真正价值释放。",
+      "why_it_matters_cn": "强调从客户需求出发而非技术驱动，有助于企业避免资源浪费，实现 AI 落地的高价值转化。",
+      "tags": [
+        "AI 战略",
+        "数字化转型",
+        "客户中心"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/11/1136967/fostering-breakthrough-ai-innovation-through-customer-back-engineering",
+      "published_at": "2026-05-11T13:33:06+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "How enterprises are scaling AI",
+      "title_cn": "企业如何规模化部署 AI",
+      "summary_cn": "OpenAI 发布指南，阐述企业如何从早期实验走向规模化影响。关键在于建立信任、完善治理框架、优化工作流设计，并确保大规模下的质量一致性，从而实现 AI 价值的复利增长。",
+      "why_it_matters_cn": "为企业从试点到全面落地提供路径参考，解决规模化过程中的信任与治理难题。",
+      "tags": [
+        "企业 AI",
+        "规模化",
+        "治理"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "published_at": "2026-05-11T10:00:00+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "Agent view in Claude Code",
+      "title_cn": "Claude Code 新增 Agent 视图",
+      "summary_cn": "Claude Blog 宣布在 Claude Code 中引入 Agent 视图功能。该功能旨在提升开发者对 AI 代理行为的可见性与控制力，优化编码辅助体验，使开发者能更清晰地监控 agent 的执行过程。",
+      "why_it_matters_cn": "增强 AI 编程助手的透明度与控制力，提升开发者使用 Claude Code 时的效率与信任感。",
+      "tags": [
+        "Claude Code",
+        "Agent",
+        "开发者工具"
+      ],
+      "source": "Claude Blog",
+      "url": "https://claude.com/blog/agent-view-in-claude-code",
+      "published_at": "2026-05-11T00:00:00+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "Claude Mythos lands above the trendline for the AI 2027 scenario. The trendline has gone from exponential to superexponential.",
+      "title_cn": "Claude Mythos 超越 AI 2027 趋势线",
+      "summary_cn": "Reddit 讨论指出，Claude Mythos 模型性能已超越 AI 2027 场景预测的趋势线。数据显示，AI 能力增长曲线已从指数级跃升至超指数级，引发社区对技术加速发展的热烈讨论与关注。",
+      "why_it_matters_cn": "反映 AI 能力增长可能快于预期，超指数级增长趋势引发行业对技术奇点临近的重新评估。",
+      "tags": [
+        "Claude",
+        "AI 趋势",
+        "性能评估"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/r1dihprrri0h1.png",
+      "published_at": "2026-05-11T14:35:49+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "Sam Altman Floats 'Goblin' Name for OpenAI's Next AI Model",
+      "title_cn": "Sam Altman 提议将 OpenAI 下一代模型命名为 'Goblin'",
+      "summary_cn": "Sam Altman 在 Reddit 上提出将 OpenAI 下一代 AI 模型命名为 'Goblin'。该提议引发社区热议，获得大量点赞与评论，反映了 OpenAI 在模型命名策略上的新动向及社区反馈。",
+      "why_it_matters_cn": "模型命名影响品牌认知，'Goblin' 的提议展示了 OpenAI 对下一代产品定位的探索。",
+      "tags": [
+        "OpenAI",
+        "Sam Altman",
+        "模型命名"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/5k8xmmoq8g0h1.png",
+      "published_at": "2026-05-11T06:05:52+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "Digg tries again, this time as an AI news aggregator",
+      "title_cn": "Digg 转型为 AI 新闻聚合器",
+      "summary_cn": "老牌新闻网站 Digg 再次尝试转型，此次定位为 AI 新闻聚合器。其目标是追踪领域内最具影响力的声音，并利用 AI 筛选出真正值得关注的新闻，解决信息过载问题。",
+      "why_it_matters_cn": "传统媒体利用 AI 重构内容分发，探索在信息过载时代提供高质量、高相关性新闻的新模式。",
+      "tags": [
+        "AI 应用",
+        "新闻聚合",
+        "Digg"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/11/digg-tries-again-this-time-as-an-ai-news-aggregator",
+      "published_at": "2026-05-11T17:02:35+00:00"
+    },
+    {
+      "rank": 25,
+      "title": "Looks like the writer accidentally left the ChatGPT AI response in",
+      "title_cn": "作者意外将 ChatGPT AI 回复留在最终文本中",
+      "summary_cn": "Reddit 用户分享了一张截图，显示某位作者在发布内容时，似乎忘记删除由 ChatGPT 生成的 AI 回复部分。这一疏忽导致 AI 生成的文本直接暴露在最终展示中，引发了社区关于 AI 辅助写作透明度及编辑严谨性的讨论与调侃。",
+      "why_it_matters_cn": "凸显了 AI 辅助创作中的人为疏忽风险，提醒用户在依赖 AI 工具时需保持警惕，确保最终内容的准确性与原创性声明。",
+      "tags": [
+        "ChatGPT",
+        "AI 伦理",
+        "内容创作"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/ql1ydc93hi0h1.png",
+      "published_at": "2026-05-11T13:36:55+00:00"
+    },
+    {
+      "rank": 26,
+      "title": "The new AI-powered Google Finance is expanding to Europe.",
+      "title_cn": "AI 驱动的 Google Finance 扩展至欧洲市场",
+      "summary_cn": "Google 官方博客宣布，其全新的 AI 驱动版 Google Finance 服务正式向欧洲用户开放。该功能利用 AI 技术增强金融信息的检索与分析能力，旨在为用户提供更智能、个性化的财务洞察和市场动态解读，标志着 Google 在金融科技领域的进一步布局。",
+      "why_it_matters_cn": "AI 技术深入金融垂直领域，提升了普通用户获取和分析复杂金融数据的能力，推动了个人理财服务的智能化升级。",
+      "tags": [
+        "Google",
+        "金融科技",
+        "AI 应用"
+      ],
+      "source": "Google AI Blog",
+      "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe",
+      "published_at": "2026-05-11T06:00:00+00:00"
+    },
+    {
+      "rank": 27,
+      "title": "Markdown browser for LLMs",
+      "title_cn": "为 LLM 打造的 Markdown 浏览器 TextWeb",
+      "summary_cn": "开发者推出 TextWeb，一款专为 AI agent 设计的 Markdown 网页渲染器。它通过将网页转换为 Markdown 格式，让 LLM 能原生理解内容，避免了昂贵的截图和视觉模型处理。支持完整 JavaScript 执行和交互元素标注，提供 CLI 和 MCP 服务器接口。",
+      "why_it_matters_cn": "降低了 AI agent 浏览网页的成本与延迟，通过文本化处理提升了 LLM 对网页内容的推理效率，是 Agent 基础设施的重要进步。",
+      "tags": [
+        "LLM",
+        "Agent",
+        "开源工具"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1t9tsro/markdown_browser_for_llms",
+      "published_at": "2026-05-11T05:23:15+00:00"
+    },
+    {
+      "rank": 28,
+      "title": "Will there be any more Qwen3.6 series models?",
+      "title_cn": "Qwen3.6 系列模型是否会有后续更新？",
+      "summary_cn": "Reddit 社区用户讨论 Qwen3.6 系列的未来规划，许多人期待看到 Qwen3.6-122B 或专门的 Coder 版本。然而，由于目前缺乏官方消息或暗示，社区成员的期待逐渐降低。大家仍在关注通义千问团队是否会发布更大参数或垂直领域的模型。",
+      "why_it_matters_cn": "反映了开源社区对高性能及垂直领域大模型的需求，以及用户对模型迭代节奏的关注，影响开发者选型策略。",
+      "tags": [
+        "Qwen",
+        "开源模型",
+        "社区讨论"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1taafs4/will_there_be_any_more_qwen36_series_models",
+      "published_at": "2026-05-11T17:37:30+00:00"
+    },
+    {
+      "rank": 29,
+      "title": "PowerColor launches Radeon AI PRO R9600D with 32GB GDDR6 memory",
+      "title_cn": "PowerColor 发布搭载 32GB 显存的 Radeon AI PRO R9600D",
+      "summary_cn": "PowerColor 正式推出 Radeon AI PRO R9600D 显卡，配备 32GB GDDR6 显存。该卡采用单槽设计和被动散热，并支持 12V-2x6 连接器。这一发布为本地运行大型 AI 模型提供了新的硬件选择，特别是在需要大显存但空间受限的场景下。",
+      "why_it_matters_cn": "为大显存 AI 推理提供了更多硬件选项，被动散热设计适合服务器或紧凑工作站，丰富了本地 AI 部署的硬件生态。",
+      "tags": [
+        "硬件",
+        "AMD",
+        "AI 推理"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1taa74c/powercolor_launches_radeon_ai_pro_r9600d_with",
+      "published_at": "2026-05-11T17:29:32+00:00"
+    },
+    {
+      "rank": 30,
+      "title": "What's the current best small model?",
+      "title_cn": "当前最佳的 3B 参数小模型是什么？",
+      "summary_cn": "Reddit 用户发起讨论，询问当前表现最佳的约 3B 参数规模的小型语言模型。社区成员分享了各自的测试经验与推荐，旨在帮助资源有限的开发者或边缘设备用户找到在性能与效率之间取得最佳平衡的轻量级模型解决方案。",
+      "why_it_matters_cn": "小模型在边缘计算和低成本部署中至关重要，社区共识有助于开发者快速筛选出高性价比的模型，加速应用落地。",
+      "tags": [
+        "小模型",
+        "LLM",
+        "边缘计算"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1ta6b1u/whats_the_current_best_small_model",
+      "published_at": "2026-05-11T15:15:28+00:00"
+    },
+    {
+      "rank": 31,
+      "title": "Does 'preserve_thinking' work with openwebui?",
+      "title_cn": "OpenWebUI 中 'preserve_thinking' 功能失效问题排查",
+      "summary_cn": "用户在 OpenWebUI 运行 qwen3.6-35b 时发现模型无法通过数字猜测测试，而原生 llama.cpp 界面正常。经社区协助，问题源于连接提供商类型配置变更，需手动指定 provider type 以启用思考过程保留功能。",
+      "why_it_matters_cn": "揭示了本地大模型部署中前端界面与后端推理引擎配置兼容性的常见陷阱，帮助开发者正确启用高级推理功能。",
+      "tags": [
+        "OpenWebUI",
+        "llama.cpp",
+        "本地部署",
+        "配置调试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/gallery/1ta562n",
+      "published_at": "2026-05-11T14:35:38+00:00"
+    },
+    {
+      "rank": 32,
+      "title": "There aren’t enough rockets for space data centers — Cowboy Space raised $275M to build them",
+      "title_cn": "太空数据中心火箭运力不足，Cowboy Space 融资 2.75 亿美元",
+      "summary_cn": "面对 AI 算力的无限需求，数据中心创业者将目光投向太空。然而，将数据中心送入轨道面临火箭运力短缺及高昂成本的双重挑战。Cowboy Space 获 2.75 亿美元融资，旨在解决这一基础设施瓶颈。",
+      "why_it_matters_cn": "凸显了 AI 算力扩张对物理基础设施的极端依赖，太空数据中心成为解决地面能源与空间限制的新前沿方向。",
+      "tags": [
+        "太空数据中心",
+        "AI 算力",
+        "Cowboy Space",
+        "融资"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them",
+      "published_at": "2026-05-11T13:00:00+00:00"
+    },
+    {
+      "rank": 33,
+      "title": "Introducing the Claude Platform on AWS",
+      "title_cn": "Claude Platform 正式登陆 AWS 平台",
+      "summary_cn": "Anthropic 宣布 Claude Platform 现已在 AWS 上推出。这一合作使得企业用户能够更便捷地在亚马逊云基础设施上访问和部署 Claude 模型，进一步整合了顶级大模型与主流云服务商的生态。",
+      "why_it_matters_cn": "标志着主流大模型与顶级云厂商的深度绑定，降低了企业集成 Claude 的技术门槛，加速 AI 应用落地。",
+      "tags": [
+        "Claude",
+        "AWS",
+        "云平台",
+        "Anthropic"
+      ],
+      "source": "Claude Blog",
+      "url": "https://claude.com/blog/claude-platform-on-aws",
+      "published_at": "2026-05-11T00:00:00+00:00"
+    },
+    {
+      "rank": 34,
+      "title": "I let AI build a tool to help me figure out what was waking me up at night",
+      "title_cn": "利用 AI 构建工具分析夜间觉醒原因",
+      "summary_cn": "一位开发者分享其利用 AI 自动构建工具的经历，旨在分析并找出导致其夜间频繁觉醒的具体原因。该案例展示了 AI 在个人健康监控与自动化问题解决中的实际应用潜力，引发社区广泛讨论。",
+      "why_it_matters_cn": "展示了 AI Agent 在个性化生活辅助领域的落地场景，体现了从通用对话向具体问题解决能力的演进。",
+      "tags": [
+        "AI 应用",
+        "个人健康",
+        "自动化",
+        "Hacker News"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night",
+      "published_at": "2026-05-11T21:04:10+00:00"
+    },
+    {
+      "rank": 35,
+      "title": "*OPENAI EMPLOYEES COLLECTIVELY MADE $6.6B IN THE SHARE SALE: WSJ",
+      "title_cn": "OpenAI 员工在股份出售中集体获利 66 亿美元",
+      "summary_cn": "据 WSJ 报道，OpenAI 超过 600 名员工在近期股份出售中集体获利 66 亿美元。这种罕见的私有阶段高流动性事件，标志着 AI 行业进入“淘金热”阶段，早期员工迅速实现财富自由。",
+      "why_it_matters_cn": "反映了 AI 行业巨大的资本回报潜力，可能加剧人才竞争并影响初创公司的股权激励策略。",
+      "tags": [
+        "OpenAI",
+        "员工持股",
+        "财富效应",
+        "行业趋势"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1t9pz3b/openai_employees_collectively_made_66b_in_the",
+      "published_at": "2026-05-11T02:14:13+00:00"
+    },
+    {
+      "rank": 36,
+      "title": "GPT5.5s CoT keeps leaking in the new codex update. Looks like we know how they got token efficency, they cavemanmaxxed",
+      "title_cn": "GPT-5.5s 思维链泄露揭示 Token 效率优化内幕",
+      "summary_cn": "在新版 Codex 更新中，GPT-5.5s 的思维链（CoT）出现泄露。社区分析认为，这暴露了 OpenAI 通过极致压缩和优化思维链过程来提升 Token 效率的技术手段，被戏称为“原始人式最大化”。",
+      "why_it_matters_cn": "泄露细节为理解大模型推理效率优化提供了实证，揭示了商业模型在成本与性能平衡上的技术取舍。",
+      "tags": [
+        "GPT-5.5s",
+        "Codex",
+        "思维链",
+        "Token 效率"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/ac3x8zpdye0h1.png",
+      "published_at": "2026-05-11T01:45:48+00:00"
+    },
+    {
+      "rank": 37,
+      "title": "Why is human LLM annotation so expensive? [D]",
+      "title_cn": "为何人工 LLM 标注成本如此高昂？",
+      "summary_cn": "Scale AI 等服务收费高昂，而 MTurk 虽便宜但缺乏领域理解，质量堪忧。小团队在微调或评估校准时，难以找到性价比合适的中间方案。社区正在探讨是手动处理还是寻找更有效的替代工具，以解决高质量数据标注的困境。",
+      "why_it_matters_cn": "高质量数据是模型性能的关键，高昂的标注成本阻碍了小团队和初创企业的创新，寻找高效且经济的解决方案至关重要。",
+      "tags": [
+        "LLM",
+        "数据标注",
+        "成本控制"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1t9nc40/why_is_human_llm_annotation_so_expensive_d",
+      "published_at": "2026-05-11T00:12:43+00:00"
+    },
+    {
+      "rank": 38,
+      "title": "PhD students in ML, how many hours on average do you work? [D]",
+      "title_cn": "ML 博士生平均工作时长揭秘",
+      "summary_cn": "ML 博士生分享日常作息，通常每天工作 9-10 小时，但非连续进行。早晨专注科研，下午开会，晚上高效产出。周末兼顾生活与少量工作。这种碎片化但高强度的工作模式，反映了该领域学术研究的真实压力与节奏。",
+      "why_it_matters_cn": "揭示了 AI 领域顶尖人才的高强度工作状态，为理解行业竞争压力及人才留存问题提供了微观视角。",
+      "tags": [
+        "博士生",
+        "工作文化",
+        "机器学习"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1t9mwqy/phd_students_in_ml_how_many_hours_on_average_do",
+      "published_at": "2026-05-10T23:54:02+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "Coder Agents Enable Running AI Coding Workflows on Self-Hosted Infrastructure",
+    "OpenAI's internal share sale minted roughly 75 multimillionaires who each cashed out the $30 million cap",
+    "Openclaw ia trending down and will disappear soon",
+    "OpenAI's Codex AI Model Earns $5 by Submitting Open-Source Security Bounty Pull Request",
+    "OpenAI launches DeployCo to help businesses build around intelligence",
+    "langchain-ai/langchain: langchain-core==1.4.0"
+  ]
+}
