@@ -1,0 +1,460 @@
+{
+  "date": "2026-05-14",
+  "generated_at": "2026-05-13T22:31:43.328247+00:00",
+  "title": "2026-05-14 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Luma opens Uni-1.1 image model API at prices and quality matching OpenAI and Google",
+      "title_cn": "Luma 开放 Uni-1.1 图像模型 API，价格与质量对标 OpenAI 和 Google",
+      "summary_cn": "Luma 正式开放 Uni-1.1 图像模型 API，每图起步价 0.04 美元。该模型在 Arena 排行榜位列第三，紧随 Google 和 OpenAI。API 支持网络搜索、内置推理及多达九张参考图，为开发者提供高性价比的图像生成选择。",
+      "why_it_matters_cn": "Luma 以极具竞争力的价格和接近顶尖大厂的画质进入市场，加剧了图像生成领域的竞争，迫使 OpenAI 和 Google 重新评估定价策略，利好开发者生态。",
+      "tags": [
+        "图像生成",
+        "API",
+        "Luma",
+        "竞争格局"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/luma-opens-uni-1-1-image-model-api-at-prices-and-quality-matching-openai-and-google",
+      "published_at": "2026-05-13T15:45:46+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "AWS WorkSpaces Now Lets AI Agents Operate Legacy Desktop Applications Without APIs",
+      "title_cn": "AWS WorkSpaces 允许 AI Agent 在无 API 情况下操作遗留桌面应用",
+      "summary_cn": "AWS 宣布 Amazon WorkSpaces 公测支持 AI Agent 作为托管虚拟桌面。Agent 通过 IAM 认证，利用计算机视觉和输入模拟操作无 API 的遗留应用。基准测试显示，视觉 Agent 的 token 消耗量是 API Agent 的 45 倍。",
+      "why_it_matters_cn": "解决了企业遗留系统缺乏 API 的痛点，使 AI Agent 能直接操作传统软件。但高昂的 token 成本提示企业需权衡自动化收益与推理开销。",
+      "tags": [
+        "AWS",
+        "AI Agent",
+        "遗留系统",
+        "计算机视觉"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/aws-workspaces-ai-agents",
+      "published_at": "2026-05-13T07:31:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Notion just turned its workspace into a hub for AI agents",
+      "title_cn": "Notion 将工作空间转型为 AI Agent 枢纽",
+      "summary_cn": "Notion 推出新开发者平台，允许团队将 AI Agent、外部数据源和自定义代码直接集成到工作空间中。此举标志着 Notion 从文档工具向 Agentic 生产力软件的深度转型，旨在构建以 Agent 为核心的协作生态。",
+      "why_it_matters_cn": "Notion 通过整合 Agent 能力，重新定义协作平台边界，可能成为企业部署 AI 工作流的首选入口，推动生产力软件向自主代理方向演进。",
+      "tags": [
+        "Notion",
+        "AI Agent",
+        "生产力工具",
+        "开发者平台"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents",
+      "published_at": "2026-05-13T21:45:09+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic overtakes OpenAI in B2B adoption for the first time according to Ramp spending data",
+      "title_cn": "Ramp 数据显示 Anthropic 首次在 B2B 采用率上超越 OpenAI",
+      "summary_cn": "根据 Ramp 支出数据，Anthropic 在美国公司的 B2B 采用率首次超越 OpenAI，达到 34.4%，而 OpenAI 为 32.3%。Anthropic 一年内用户覆盖翻四倍，但分析指出三个因素可能迅速侵蚀这一领先优势。",
+      "why_it_matters_cn": "标志着企业 AI 市场格局的重大转折，Anthropic 凭借安全性或成本优势在 B2B 领域取得突破，OpenAI 面临严峻的市场份额挑战。",
+      "tags": [
+        "Anthropic",
+        "OpenAI",
+        "B2B",
+        "市场数据"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data",
+      "published_at": "2026-05-13T18:23:15+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "title_cn": "OpenAI 构建安全沙箱以在 Windows 上启用 Codex",
+      "summary_cn": "OpenAI 详细阐述了为 Windows 构建 Codex 安全沙箱的技术细节。该沙箱通过受控的文件访问和网络限制，确保编码 Agent 在安全、高效的环境中运行，解决了 Windows 平台上的安全与效率平衡问题。",
+      "why_it_matters_cn": "解决了 Windows 用户部署 Codex 的安全顾虑，扩大了 AI 编码助手的适用范围，推动 AI 编程工具在主流操作系统上的普及。",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "Windows",
+        "安全沙箱"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/building-codex-windows-sandbox",
+      "published_at": "2026-05-13T11:00:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "苹果探索在 App Store 纳入 AI 智能体",
+      "title_cn": "苹果探索在 App Store 纳入 AI 智能体",
+      "summary_cn": "据报道，苹果公司正在探索在 App Store 中引入 AI 智能体（AI Agents）。这一举措可能改变应用分发模式，允许用户直接下载和运行具备自主执行能力的 AI 代理，而非传统应用程序。",
+      "why_it_matters_cn": "若成真，App Store 将从应用商店转变为 Agent 市场，重塑 iOS 生态交互逻辑，为开发者提供新的 AI 服务分发渠道，影响深远。",
+      "tags": [
+        "苹果",
+        "App Store",
+        "AI Agent",
+        "生态变革"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8t6cJXvw5IM",
+      "published_at": "2026-05-13T22:29:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "软银因所持 OpenAI 股权增值，入账利润达 120 亿美元",
+      "title_cn": "软银因 OpenAI 股权增值入账 120 亿美元利润",
+      "summary_cn": "软银集团公布首季净利润增至 1.83 万亿日元，主要得益于 OpenAI 投资资产增值。愿景基金本季度获 3.1 万亿日元收益，对 OpenAI 累计浮盈达 450 亿美元。尽管连续五季盈利，但市场质疑其融资压力，软银正通过减持 T-Mobile 等股权及发债来筹措资金。",
+      "why_it_matters_cn": "显示 AI 投资的高回报潜力，同时也揭示了巨额资本投入背后的财务风险与流动性挑战，引发市场对软银债务状况的关注。",
+      "tags": [
+        "软银",
+        "OpenAI",
+        "投资回报",
+        "财务风险"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8t5sdU7LMPR",
+      "published_at": "2026-05-13T22:29:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Anthropic’s Cat Wu says that, in the future, AI will anticipate your needs before you know what they are",
+      "title_cn": "Anthropic 高管：未来 AI 将预判用户需求",
+      "summary_cn": "Anthropic 负责 Claude Code 和 Cowork 的产品负责人 Cat Wu 表示，AI 的下一步重大进展是主动性。未来的 AI 将在用户意识到自身需求之前，就提前预判并满足这些需求，从被动响应转向主动服务，彻底改变人机交互模式。",
+      "why_it_matters_cn": "标志着 AI 交互范式从被动问答向主动代理的转变，预示着更智能、更无缝的用户体验，同时也带来新的隐私与伦理挑战。",
+      "tags": [
+        "Anthropic",
+        "Claude Code",
+        "主动式 AI",
+        "产品战略"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are",
+      "published_at": "2026-05-13T19:28:06+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "GridSFM: A new, small foundation model for the electric grid",
+      "title_cn": "微软发布电网专用小型基础模型 GridSFM",
+      "summary_cn": "微软研究团队推出 GridSFM，一款用于电力电网的小型基础模型。该模型能在毫秒级预测交流最优潮流，显著提升效率并降低成本。它为电网运营商提供了对拥塞、稳定性和系统健康的直接可见性，有助于优化电网运行。",
+      "why_it_matters_cn": "展示了 AI 在关键基础设施领域的垂直应用潜力，通过提升电网效率和稳定性，为能源行业的数字化转型和成本控制提供新方案。",
+      "tags": [
+        "微软研究",
+        "GridSFM",
+        "电力电网",
+        "基础模型"
+      ],
+      "source": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/gridsfm-a-new-small-foundation-model-for-the-electric-grid",
+      "published_at": "2026-05-13T16:00:20+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "MI50s Qwen 3.6 27B @52.8 tps TG @1569 tps PP (no MTP, no Quant)",
+      "title_cn": "Qwen 3.6 27B 在旧显卡上实现高效推理",
+      "summary_cn": "Reddit 用户分享在 2018 年发布的 MI50 显卡上运行 Qwen 3.6 27B 模型的测试结果。在未使用量化和 MTP 的情况下，单提示词推理速度达 52.8 tps，长上下文达 1569 tps。结果显示该模型在旧硬件上表现良好，适合搭配 Claude Code 或 agent 使用。",
+      "why_it_matters_cn": "证明了高效模型在老旧硬件上的可行性，降低了本地部署大模型和 agent 的门槛，使更多开发者能低成本体验先进 AI 能力。",
+      "tags": [
+        "Qwen",
+        "本地部署",
+        "推理性能",
+        "Agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/qddw1tgccy0h1.png",
+      "published_at": "2026-05-13T19:08:24+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "AI chatbots are giving out people’s real phone numbers",
+      "title_cn": "AI 聊天机器人泄露用户真实电话号码",
+      "summary_cn": "用户报告称，Google AI 等聊天机器人泄露了他们的个人联系方式，导致接到大量陌生电话。目前似乎没有简单的方法可以防止这种隐私泄露。这一事件引发了公众对 AI 系统数据隐私保护机制的担忧，以及个人如何控制自身数字足迹的困境。",
+      "why_it_matters_cn": "凸显了生成式 AI 在隐私保护方面的严重漏洞，可能引发大规模骚扰和数据滥用，迫使行业重新审视数据训练与输出的安全边界。",
+      "tags": [
+        "隐私泄露",
+        "Google AI",
+        "数据安全",
+        "伦理风险"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers",
+      "published_at": "2026-05-13T18:09:03+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "AIDC-AI/Ovis2.6-80B-A3B · Hugging Face",
+      "title_cn": "Ovis2.6-80B-A3B：高效多模态大模型",
+      "summary_cn": "AIDC-AI 发布 Ovis2.6-80B-A3B，这是 Ovis 系列多模态大语言模型的最新进展。该模型采用混合专家（MoE）架构，在大幅降低服务成本的同时，提升了长上下文、高分辨率理解及视觉推理能力，实现了性能与效率的平衡。",
+      "why_it_matters_cn": "MoE 架构的进步使得大规模多模态模型更具成本效益，推动了高性能 AI 在更广泛场景中的落地应用，特别是在视觉推理领域。",
+      "tags": [
+        "Ovis",
+        "MoE",
+        "多模态",
+        "Hugging Face"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://huggingface.co/AIDC-AI/Ovis2.6-80B-A3B",
+      "published_at": "2026-05-13T12:29:41+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "Web-Search is coming to a screeching performance halt as Google shuts down their free search index, and traffic defenders like Cloudflare challenge AI at every gateway. What are our options?",
+      "title_cn": "Google 关闭免费搜索索引，Cloudflare 全面拦截 AI 爬虫，Web 搜索面临性能危机",
+      "summary_cn": "Google 宣布将于 2027 年 1 月 1 日关闭免费搜索索引，仅限 50 个域名使用。同时，Cloudflare 与 GoDaddy 合作，默认对所有试图抓取网页信息的 AI 机器人发起挑战。这一系列举措导致 Web 搜索性能急剧下降，开发者正面临严峻的数据获取障碍，急需寻找替代方案。",
+      "why_it_matters_cn": "基础数据源的封闭将直接冲击依赖 Web 搜索的 AI 应用，迫使行业重新评估数据获取策略与成本结构。",
+      "tags": [
+        "Web Search",
+        "Cloudflare",
+        "Google",
+        "AI Ethics"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tcaboi/websearch_is_coming_to_a_screeching_performance",
+      "published_at": "2026-05-13T19:35:29+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "Quoting Boris Mann",
+      "title_cn": "Boris Mann：谈论“拥有 11 个 AI agent”毫无意义，如同列举电子表格",
+      "summary_cn": "Boris Mann 指出，“11 个 AI agent”这一短语缺乏实际意义。他将其比作“我有 11 个电子表格”或“11 个浏览器标签页”来工作，认为这种量化方式无法准确反映 agent 的实际能力或工作流价值。这一观点引发了社区对 agent 定义及评估标准的深入讨论。",
+      "why_it_matters_cn": "挑战了当前对 AI agent 数量的盲目崇拜，促使开发者关注 agent 的实际效用与集成质量。",
+      "tags": [
+        "AI Agents",
+        "Definitions",
+        "Productivity"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/13/boris-mann",
+      "published_at": "2026-05-13T16:15:50+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "I got a real transformer language model running locally on a stock Game Boy Color!",
+      "title_cn": "极客壮举：在原版 Game Boy Color 上本地运行 Transformer 语言模型",
+      "summary_cn": "开发者成功在无需手机、PC 或云推理的原版 Game Boy Color 上运行了 Andrej Karpathy 的 TinyStories-260K 模型。通过 INT8 权重量化与定点数学运算，模型直接在 GBC 硬件上执行。用户可通过 D-pad 和屏幕键盘输入提示，展示了嵌入式 AI 的极致轻量化潜力。",
+      "why_it_matters_cn": "证明了 Transformer 模型可在极低算力设备上本地运行，为边缘计算和嵌入式 AI 提供了新思路。",
+      "tags": [
+        "TinyStories",
+        "Embedded AI",
+        "Game Boy",
+        "Quantization"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/1hl9id7ghs0h1.jpeg",
+      "published_at": "2026-05-12T23:15:42+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "DramaBox - Most Expressive Voice model ever based on LTX 2.3",
+      "title_cn": "DramaBox 发布：基于 LTX 2.3 的最具表现力语音模型",
+      "summary_cn": "Resemble AI 发布了 DramaBox，一款基于 LTX 2.3 架构的语音模型，号称是“最具表现力的语音模型”。该项目已在 GitHub 和 Hugging Face 开源，并提供了在线演示空间。该模型旨在提升语音生成的情感表达与真实感，为内容创作者提供更高质量的音频生成工具。",
+      "why_it_matters_cn": "提升了语音合成的情感表现力，为游戏、影视及互动媒体内容创作提供了更逼真的音频解决方案。",
+      "tags": [
+        "TTS",
+        "Voice AI",
+        "LTX 2.3",
+        "Open Source"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://v.redd.it/5zdi52w4rx0h1",
+      "published_at": "2026-05-13T17:06:11+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "How many of you tried BeeLlama.cpp? How's it? Agentic coding possible with 8GB VRAM?",
+      "title_cn": "BeeLlama.cpp 讨论：8GB VRAM 能否实现 Agentic Coding？",
+      "summary_cn": "社区热议 BeeLlama.cpp 分支在 8GB VRAM 显卡上的表现。用户询问是否能在 Q4 量化下，使用 Qwen3.6-35B-A3B 或 Gemma-4-31B 等大模型进行 Agentic coding。讨论聚焦于在有限显存下实现智能体编程的可行性、吞吐量统计及具体命令细节，探索消费级硬件的极限。",
+      "why_it_matters_cn": "探索在低显存环境下运行大模型进行智能体编程的可能性，对资源受限的开发者具有重要参考价值。",
+      "tags": [
+        "Agentic Coding",
+        "LLM",
+        "VRAM",
+        "Qwen"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tbshsl/how_many_of_you_tried_beellamacpp_hows_it_agentic",
+      "published_at": "2026-05-13T07:31:56+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "Introducing Claude for Small Business",
+      "title_cn": "Anthropic 推出面向小型企业的 Claude 服务",
+      "summary_cn": "Anthropic 正式推出“Claude for Small Business”服务，旨在为小型企业提供专属的 AI 解决方案。该举措标志着 Anthropic 进一步拓展其商业版图，从大型企业和开发者市场下沉至中小企业领域，提供更具针对性和成本效益的 AI 工具，以助力小企业的数字化转型与效率提升。",
+      "why_it_matters_cn": "Anthropic 进军中小企业市场，加剧了 AI 服务领域的竞争，为小企业提供更多元化的 AI 选择。",
+      "tags": [
+        "Claude",
+        "Small Business",
+        "Anthropic",
+        "Enterprise AI"
+      ],
+      "source": "Anthropic News",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "published_at": "2026-05-13T00:00:00+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "qwen3.6 just stops",
+      "title_cn": "Qwen 3.6 在任务中途意外停止",
+      "summary_cn": "Reddit 用户报告在使用 vLLM 部署 Qwen 3.6 模型时，无论是通过 qwen-code CLI 还是 opencode，模型经常在任务执行中途突然停止响应。用户寻求避免此问题的解决方案，目前尚无官方定论，社区正在排查是否为 vLLM nightly 版本或 Docker 配置导致的稳定性问题。",
+      "why_it_matters_cn": "揭示了开源大模型在本地部署和长上下文任务中的稳定性挑战，影响开发者对 Qwen 系列模型在生产环境中可靠性的评估。",
+      "tags": [
+        "Qwen",
+        "vLLM",
+        "本地部署",
+        "稳定性"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tbzr64/qwen36_just_stops",
+      "published_at": "2026-05-13T13:30:59+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "The Trillion-Parameter Dilemma: MiMo-V2.5-Pro went open-source (1.02T params). Is self-hosting worth it when the API costs $70 for 387M tokens?",
+      "title_cn": "小米 MiMo-V2.5-Pro 开源：万亿参数与自托管成本困境",
+      "summary_cn": "小米开源了拥有 1.02 万亿参数（42B 激活）的 MiMo-V2.5-Pro 模型，支持 1M 上下文。尽管模型性能强劲，但用户面临自托管硬件成本高昂与 API 调用费用（3.87 亿 token 约 70 美元）之间的权衡。社区正在讨论在自主编程等长时任务中，自托管是否真的更具经济性。",
+      "why_it_matters_cn": "万亿参数模型的开源降低了技术门槛，但高昂的推理成本使得“自托管”的经济可行性成为开发者必须面对的现实难题。",
+      "tags": [
+        "MiMo",
+        "MoE",
+        "自托管",
+        "成本分析"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went",
+      "published_at": "2026-05-13T08:31:25+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "Best practices for computer and browser use with Claude",
+      "title_cn": "Claude 计算机与浏览器使用最佳实践发布",
+      "summary_cn": "Anthropic 官方博客发布了关于使用 Claude 进行计算机操作和浏览器自动化的最佳实践指南。该指南旨在帮助用户更高效、安全地利用 Claude 的 Agent 能力执行复杂的网页交互和桌面任务，优化提示词策略以提升自动化流程的稳定性和成功率。",
+      "why_it_matters_cn": "随着 AI Agent 在自动化领域的应用加深，官方最佳实践有助于用户规范使用流程，提升 Claude 在复杂交互任务中的表现和安全性。",
+      "tags": [
+        "Claude",
+        "Agent",
+        "浏览器自动化",
+        "最佳实践"
+      ],
+      "source": "Claude Blog",
+      "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+      "published_at": "2026-05-13T00:00:00+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "Rars: a Rust RAR implementation, mostly written by LLMs",
+      "title_cn": "Rars：主要由 LLM 编写的 Rust RAR 实现",
+      "summary_cn": "Hacker News 热议项目 Rars，这是一个用 Rust 语言实现的 RAR 压缩格式处理库。其独特之处在于代码主要由大型语言模型（LLMs）编写。该项目展示了 LLM 在生成复杂系统级代码方面的能力，同时也引发了社区关于 AI 生成代码质量和可维护性的讨论。",
+      "why_it_matters_cn": "展示了 LLM 在生成底层系统代码方面的实际应用能力，为评估 AI 辅助编程在复杂工程任务中的成熟度提供了新案例。",
+      "tags": [
+        "Rust",
+        "LLM 编程",
+        "RAR",
+        "开源项目"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://bitplane.net/log/2026/05/rars",
+      "published_at": "2026-05-13T19:59:35+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "Human-level performance via ML was *not* proven impossible with complexity theory [D]",
+      "title_cn": "反驳“ML 无法实现人类级性能”的复杂性理论证明",
+      "summary_cn": "针对此前声称“通过机器学习实现 AGI 在理论上不可能”的 Ingenia 定理，新论文指出该证明存在缺陷。作者通过复杂性理论分析，反驳了将人类级分类器学习问题简化为 NP-hard 问题的逻辑，表明机器学习实现人类级性能在理论上并非不可能，澄清了此前的学术争议。",
+      "why_it_matters_cn": "澄清了关于 AI 理论极限的学术争议，重申了机器学习在理论上实现人类级智能的可能性，对 AGI 研究信心有积极影响。",
+      "tags": [
+        "AGI",
+        "复杂性理论",
+        "机器学习",
+        "学术争议"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1tc1xr3/humanlevel_performance_via_ml_was_not_proven",
+      "published_at": "2026-05-13T14:50:40+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "Do You Think AI Will Replace More Jobs Soon?",
+      "title_cn": "讨论：AI 是否将很快取代更多工作岗位？",
+      "summary_cn": "Reddit OpenAI 社区发起讨论，询问用户认为 AI 将最快取代哪些工作岗位。随着 AI 工具能力的快速提升，公众情绪在兴奋与担忧之间摇摆。参与者分享了各自行业对 AI 冲击的看法，探讨了哪些职业最可能因自动化而发生根本性变化或消失。",
+      "why_it_matters_cn": "反映了社会对 AI 技术快速进步带来的就业冲击的普遍焦虑，有助于理解不同行业对自动化替代风险的感知差异。",
+      "tags": [
+        "就业影响",
+        "AI 替代",
+        "社会讨论",
+        "自动化"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1tc1a9i/do_you_think_ai_will_replace_more_jobs_soon",
+      "published_at": "2026-05-13T14:27:09+00:00"
+    },
+    {
+      "rank": 25,
+      "title": "CSP Allow-list Experiment",
+      "title_cn": "CSP 白名单实验：利用 AI 构建安全沙箱",
+      "summary_cn": "Simon Willison 展示了一个实验，通过 CSP 保护的沙箱 iframe 加载应用，并使用自定义 fetch() 拦截 CSP 错误。父窗口可提示用户将域名加入白名单并刷新页面。该工具由 GPT-5.5 xhigh 在 Codex 桌面应用中构建，展示了 AI 辅助开发的安全实践。",
+      "why_it_matters_cn": "展示了如何利用 AI 工具构建复杂的安全机制，为开发者处理内容安全策略（CSP）错误提供了创新的自动化解决方案。",
+      "tags": [
+        "CSP",
+        "安全",
+        "Codex"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/13/csp-allow",
+      "published_at": "2026-05-13T04:50:45+00:00"
+    },
+    {
+      "rank": 26,
+      "title": "Sam Altman faces heat as he takes witness stand in landmark OpenAI trial: ‘Are you completely trustworthy?’",
+      "title_cn": "Sam Altman 在 OpenAI 关键庭审中接受质询",
+      "summary_cn": "Sam Altman 首次作为证人出庭，面对 Elon Musk 律师的严厉质询。律师直接询问 Altman 是否“完全值得信赖”，Altman 回应称“我相信是”。这场联邦审判涉及 OpenAI 的未来走向，双方就信任问题展开激烈交锋，引发广泛关注。",
+      "why_it_matters_cn": "OpenAI 与 Musk 的法律纠纷进入关键阶段，Altman 的个人信誉受到直接挑战，结果可能影响公司控制权及 AI 行业格局。",
+      "tags": [
+        "OpenAI",
+        "法律纠纷",
+        "Sam Altman"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://nypost.com/2026/05/12/business/altman-goes-on-offensive-in-landmark-openai-trial",
+      "published_at": "2026-05-13T01:16:45+00:00"
+    },
+    {
+      "rank": 27,
+      "title": "datasette 1.0a29",
+      "title_cn": "Datasette 1.0a29 版本发布",
+      "summary_cn": "Datasette 发布 1.0a29 版本，新增 TokenRestrictions.abbreviated 实用方法。修复了零行表格不显示表头、Mobile Safari 列操作对话框显示异常等问题。还修复了 Datasette.close() 与 Database.close() 竞态条件导致的段错误崩溃问题。",
+      "why_it_matters_cn": "Datasette 是流行的 SQLite 数据库 API 工具，此次更新提升了移动端兼容性和系统稳定性，对开发者友好。",
+      "tags": [
+        "Datasette",
+        "SQLite",
+        "更新"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/12/datasette",
+      "published_at": "2026-05-12T23:41:06+00:00"
+    },
+    {
+      "rank": 28,
+      "title": "Quoting Mo Bitar",
+      "title_cn": "引用 Mo Bitar：职场中的“Ralph Loop”",
+      "summary_cn": "Simon Willison 引用 Mo Bitar 的幽默观点：如果 CEO 没听过“Ralph Loop”，你离升职就不远了。建议向 CEO 索要 18000 美元 API 额度来演示这个概念，但实际上无需做任何事。这是一种讽刺职场中滥用 AI 术语和预算的现象。",
+      "why_it_matters_cn": "以幽默方式讽刺了当前职场中盲目追逐 AI 热点、滥用预算和术语的现象，引发对 AI 落地实效的思考。",
+      "tags": [
+        "职场文化",
+        "AI 讽刺",
+        "幽默"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/12/mo-bitar",
+      "published_at": "2026-05-12T22:59:58+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "Anthropic Launches Claude Platform on AWS",
+    "Presentation: What I Learned Building Multi-Agent Systems From Scratch",
+    "Anthropic launches Claude for Small Business to embed AI into the tools you forgot you pay for",
+    "Anthropic now has more business customers than OpenAI, according to Ramp data",
+    "‘A consistent pattern of lying’: Musk v OpenAI trial exposes what insiders think of Sam Altman | California",
+    "huggingface/transformers: Patch release v5.8.1"
+  ]
+}
