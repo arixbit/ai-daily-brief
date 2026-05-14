@@ -1,0 +1,403 @@
+{
+  "date": "2026-05-15",
+  "generated_at": "2026-05-14T22:31:06.163255+00:00",
+  "title": "2026-05-15 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Anthropic 企业采用率首超 OpenAI",
+      "title_cn": "Anthropic 企业采用率首超 OpenAI",
+      "summary_cn": "Ramp AI Index 报告显示，4 月 Anthropic 企业采用率升至 34.4%，首次超越 OpenAI 的 32.3%。过去一年 Anthropic 采用率增长 4 倍，而 OpenAI 仅增 0.3%。但报告指出，成本上升、算力限制及基于 Token 计费模式可能削弱其优势。",
+      "why_it_matters_cn": "标志着 AI 市场格局重大转变，Anthropic 在企业级市场崛起，但需警惕成本与算力瓶颈对其长期竞争力的潜在威胁。",
+      "tags": [
+        "Anthropic",
+        "OpenAI",
+        "企业采用",
+        "市场竞争"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8t7TD0tsruQ",
+      "published_at": "2026-05-14T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "VS Code's new \"Agents window\" lets you use local AI models. Still requires an Internet connection and a Github Copilot plan (because we can't have nice things)",
+      "title_cn": "VS Code 新增本地 AI 模型窗口，但仍需联网及 Copilot 订阅",
+      "summary_cn": "VS Code 推出新的 Agents window，允许使用本地 AI 模型。然而，该功能仍要求互联网连接及 GitHub Copilot 订阅计划。这一限制引发了社区讨论，许多开发者认为这违背了本地模型部署的初衷，期待更彻底的离线支持。",
+      "why_it_matters_cn": "反映了大型科技公司在推广 AI 工具时，在用户体验与商业变现之间的权衡，本地化 AI 的完全自主权仍是开发者痛点。",
+      "tags": [
+        "VS Code",
+        "GitHub Copilot",
+        "本地模型",
+        "开发者工具"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://code.visualstudio.com/docs/copilot/customization/language-models",
+      "published_at": "2026-05-14T16:45:58+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "微软寻求收购 AI 公司以摆脱对 OpenAI 依赖",
+      "title_cn": "微软寻求收购 AI 公司以摆脱对 OpenAI 依赖",
+      "summary_cn": "知情人士透露，微软正寻求收购 AI 初创公司以减少对 OpenAI 的依赖，并储备人才以推进明年打造先进 AI 模型的目标。此前因监管问题放弃收购 Cursor，目前正与 Inception 谈判，面临 SpaceX 等巨头竞争。",
+      "why_it_matters_cn": "显示微软正加速构建独立 AI 能力，减少对单一合作伙伴的依赖，科技巨头在 AI 人才与技术控制权上的竞争日益激烈。",
+      "tags": [
+        "微软",
+        "OpenAI",
+        "收购",
+        "AI 战略"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8t6s2bFXPB2",
+      "published_at": "2026-05-14T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI is reportedly preparing legal action against Apple; it wouldn’t be the first partner to feel burned",
+      "title_cn": "OpenAI 拟对苹果采取法律行动，合作纠纷升级",
+      "summary_cn": "据报道，OpenAI 因 ChatGPT 集成未达预期的订阅数和曝光度，对苹果感到沮丧，正积极探索对这家 iPhone 制造商采取法律行动。这并非首例合作伙伴感到被“背叛”的案例，凸显了双方合作中的利益冲突。",
+      "why_it_matters_cn": "揭示了 AI 巨头与硬件平台商在合作中的潜在裂痕，法律纠纷可能重塑科技行业合作伙伴关系及 AI 集成模式。",
+      "tags": [
+        "OpenAI",
+        "苹果",
+        "法律纠纷",
+        "ChatGPT"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned",
+      "published_at": "2026-05-14T19:12:03+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Presentation: Accelerating LLM-Driven Developer Productivity at Zoox",
+      "title_cn": "Zoox 展示如何通过 LLM 加速开发者生产力",
+      "summary_cn": "Zoox 工程师分享如何从碎片化文档转向 AI 驱动生态系统。他们构建了集成 RAG、多模态 LLM 和 agent API 的安全平台 Cortex。通过 AI 冠军和黑客松推动采用，强调从确定性工作流向自主 agent 的转变。",
+      "why_it_matters_cn": "提供了自动驾驶领域利用 AI 提升软件开发效率的实战案例，展示了从传统工作流向自主 agent 转型的具体路径。",
+      "tags": [
+        "Zoox",
+        "LLM",
+        "开发者生产力",
+        "Agent"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/presentations/ai-software-development",
+      "published_at": "2026-05-14T13:05:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Data readiness for agentic AI in financial services",
+      "title_cn": "金融服务中 Agentic AI 的数据准备就绪度",
+      "summary_cn": "金融服务公司在业务 AI 方面有独特需求，需在高度监管环境下应对秒级更新的外部事件。文章指出，金融领域 Agentic AI 的成功更多取决于数据准备就绪度，而非系统本身的复杂性，强调了数据基础的重要性。",
+      "why_it_matters_cn": "强调在金融等高监管行业，数据质量与合规性是 Agentic AI 落地的关键瓶颈，而非单纯的技术先进性。",
+      "tags": [
+        "Agentic AI",
+        "金融服务",
+        "数据准备",
+        "监管合规"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/14/1137034/data-readiness-for-agentic-ai-in-financial-services",
+      "published_at": "2026-05-14T13:00:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Work with Codex from anywhere",
+      "title_cn": "随时随地使用 Codex 进行开发",
+      "summary_cn": "OpenAI 宣布可通过 ChatGPT 移动应用在任何地方使用 Codex。用户能够跨设备和远程环境实时监控、引导并批准编码任务，实现真正的移动化 AI 编程体验，让开发者不再受限于固定工作站。",
+      "why_it_matters_cn": "打破了 AI 编程工具对桌面端的依赖，提升了开发者的灵活性与响应速度，标志着 AI 辅助编程向全场景覆盖迈出关键一步。",
+      "tags": [
+        "Codex",
+        "ChatGPT",
+        "移动开发"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/work-with-codex-from-anywhere",
+      "published_at": "2026-05-14T13:00:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Establishing AI and data sovereignty in the age of autonomous systems",
+      "title_cn": "自主系统时代的 AI 与数据主权",
+      "summary_cn": "企业曾以‘先能力后控制’的默契将专有数据投入第三方 AI 模型，但这导致数据流经非自有系统且治理权缺失。文章指出，在自主系统时代，建立明确的 AI 与数据主权机制已刻不容缓，以保障企业核心资产安全。",
+      "why_it_matters_cn": "揭示了当前 AI 部署中的隐性风险，强调在追求效率的同时，企业必须重新夺回数据控制权，以应对日益复杂的合规与安全挑战。",
+      "tags": [
+        "数据主权",
+        "企业 AI",
+        "安全治理"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems",
+      "published_at": "2026-05-14T13:00:00+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Clawdmeter turns your Claude Code usage stats into a tiny desktop dashboard",
+      "title_cn": "Clawdmeter：Claude Code 桌面仪表盘",
+      "summary_cn": "一款名为 Clawdmeter 的新开源小工具，可将 Claude Code 的使用统计数据转化为微型桌面仪表盘。专为 AI 编程重度用户设计，提供直观的数据可视化，帮助用户实时监控其 AI 辅助编程的效率与资源消耗情况。",
+      "why_it_matters_cn": "为开发者提供了量化 AI 辅助编程价值的工具，有助于优化工作流并提升对 AI 工具使用成本的感知与管理能力。",
+      "tags": [
+        "Claude Code",
+        "开源工具",
+        "效率监控"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/14/clawdmeter-turns-your-claude-code-usage-stats-into-a-tiny-desktop-dashboard",
+      "published_at": "2026-05-14T19:05:01+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "inclusionAI/Ring-2.6-1T · Hugging Face",
+      "title_cn": "Ring-2.6-1T：万亿参数推理模型",
+      "summary_cn": "inclusionAI 发布旗舰推理模型 Ring-2.6-1T，拥有万亿参数，专为现实世界复杂任务设计。该模型面向开发者、研究人员及企业环境开放，旨在解决 agent 工作流、工程开发及科研等真实生产场景中的挑战，而非单纯追求规模。",
+      "why_it_matters_cn": "展示了大模型从参数竞赛向实际生产力转化的趋势，为复杂 agent 工作流和企业级应用提供了强大的底层推理能力支持。",
+      "tags": [
+        "Ring-2.6-1T",
+        "大模型",
+        "Agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+      "published_at": "2026-05-14T16:30:57+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "Anyone actually using a local LLM as their daily knowledge base? Not for coding, for life stuff. What's your setup?",
+      "title_cn": "本地 LLM 作为个人知识库的探索",
+      "summary_cn": "Reddit 社区热议将本地 LLM 用作日常个人知识库的可行性。用户希望将笔记、PDF 等私人文档导入模型，实现私密且高效的个人生活信息查询。尽管目前多数资源聚焦于编码或创意写作，但这一用例正引发社区对隐私保护与个性化 AI 应用的深入讨论。",
+      "why_it_matters_cn": "反映了用户对数据隐私的高度关注，以及将 AI 从通用助手转变为个性化私人助理的强烈需求，推动了本地化部署技术的发展。",
+      "tags": [
+        "本地 LLM",
+        "个人知识库",
+        "隐私保护"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tcrtt6/anyone_actually_using_a_local_llm_as_their_daily",
+      "published_at": "2026-05-14T08:24:37+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "The \"the future is fictional\" problem of many local LLMs",
+      "title_cn": "本地 LLM 的‘未来即虚构’问题",
+      "summary_cn": "许多本地模型因过度依赖 RHLF 训练，倾向于将知识截止日期后的信息视为‘虚构’或‘讽刺’。即使配备搜索工具，部分模型仍无法正确处理最新新闻，导致在查询如‘2026 年伊朗战争’等实时事件时出现幻觉或拒绝回答，影响了其实用性。",
+      "why_it_matters_cn": "揭示了当前本地模型在实时信息处理上的局限性，提醒开发者在部署本地 AI 时需警惕其对新知识的偏见，避免误导用户。",
+      "tags": [
+        "本地 LLM",
+        "幻觉问题",
+        "RHLF"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tcrrfq/the_the_future_is_fictional_problem_of_many_local",
+      "published_at": "2026-05-14T08:20:51+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "Helping ChatGPT better recognize context in sensitive conversations",
+      "title_cn": "OpenAI 提升 ChatGPT 在敏感对话中的上下文识别能力",
+      "summary_cn": "OpenAI 发布安全更新，增强 ChatGPT 在敏感对话中的上下文感知能力。新机制能随时间推移更准确地检测风险，从而做出更安全的响应，有效降低误判率并提升用户交互的安全性与可靠性。",
+      "why_it_matters_cn": "提升 AI 在复杂语境下的安全性，减少敏感话题中的误判，增强用户对大模型安全性的信任。",
+      "tags": [
+        "ChatGPT",
+        "AI 安全",
+        "上下文感知"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+      "published_at": "2026-05-14T00:00:00+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "title_cn": "Anthropic 与盖茨基金会达成 2 亿美元合作伙伴关系",
+      "summary_cn": "Anthropic 宣布与比尔及梅琳达·盖茨基金会建立价值 2 亿美元的合作伙伴关系。该合作旨在推动 AI 技术在医疗、教育等关键领域的应用，同时确保技术发展符合安全与伦理标准，促进社会福祉。",
+      "why_it_matters_cn": "巨额资金注入加速 AI 在公益领域的应用，同时强化行业对 AI 安全与伦理标准的重视。",
+      "tags": [
+        "Anthropic",
+        "盖茨基金会",
+        "AI 伦理"
+      ],
+      "source": "Anthropic News",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "published_at": "2026-05-14T00:00:00+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "May 14, 2026Policy2028: Two scenarios for global AI leadership",
+      "title_cn": "Anthropic 发布 2028 年全球 AI 领导力两种情景预测",
+      "summary_cn": "Anthropic 研究团队发布政策报告，描绘了 2028 年全球 AI 领导力的两种可能情景。报告分析了不同监管与技术发展路径下，各国在 AI 领域的竞争格局，为政策制定者提供战略参考与风险预警。",
+      "why_it_matters_cn": "为政府和企业提供未来两年 AI 地缘政治竞争的战略视角，辅助制定长期技术政策。",
+      "tags": [
+        "Anthropic",
+        "AI 政策",
+        "全球竞争"
+      ],
+      "source": "Anthropic Research",
+      "url": "https://www.anthropic.com/research/2028-ai-leadership",
+      "published_at": "2026-05-14T00:00:00+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "llama.cpp constantly reprocessing huge prompts with opencode/pi.dev",
+      "title_cn": "llama.cpp 在使用 opencode/pi.dev 时频繁重新处理巨大提示词",
+      "summary_cn": "Reddit 用户反馈在使用 llama.cpp 配合 opencode 和 pi.dev 时，尽管上下文相似度极高，系统仍频繁回退并重新处理数万 token 的提示词，导致首字生成时间（TTFT）激增至数分钟，严重影响本地模型推理效率。",
+      "why_it_matters_cn": "揭示本地大模型部署中的性能瓶颈，对开发者优化长上下文处理和缓存机制具有重要参考价值。",
+      "tags": [
+        "llama.cpp",
+        "本地部署",
+        "性能优化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1td9stc/llamacpp_constantly_reprocessing_huge_prompts",
+      "published_at": "2026-05-14T20:11:39+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "When is Andrej Karpathy going to look at a chicken nugget and tweet that it helped him solve AGI, which in turn inspires 6 random devs to create GitHub projects giving us actual AGI?",
+      "title_cn": "社区调侃 Andrej Karpathy 的灵感时刻将再次催生 AGI 项目",
+      "summary_cn": "Reddit 社区用户以幽默方式致敬 Andrej Karpathy，调侃他日常生活中的微小举动（如看鸡块）常能激发开发者灵感，进而催生多个实用的 GitHub AI 项目。帖子反映了社区对其作为 AI 领域思想领袖的高度认可与喜爱。",
+      "why_it_matters_cn": "体现 AI 社区对关键意见领袖影响力的认可，展示开源社区如何通过互动快速转化创意为实际项目。",
+      "tags": [
+        "Andrej Karpathy",
+        "开源社区",
+        "AI 文化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1td4ofu/when_is_andrej_karpathy_going_to_look_at_a",
+      "published_at": "2026-05-14T17:14:09+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "Five Horses, according to ChatGPT",
+      "title_cn": "ChatGPT 未能识别“五匹马”陷阱图，引发社区讨论",
+      "summary_cn": "Reddit 用户分享一张包含视觉陷阱的图片，ChatGPT 未能正确识别其中的误导性元素。该帖子获得大量点赞与评论，引发社区关于当前大模型在视觉推理和对抗性测试中局限性的广泛讨论与调侃。",
+      "why_it_matters_cn": "暴露多模态模型在复杂视觉推理上的短板，提醒用户警惕 AI 在特定场景下的幻觉与误判。",
+      "tags": [
+        "ChatGPT",
+        "视觉推理",
+        "AI 幻觉"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/9gabxxftd41h1.jpeg",
+      "published_at": "2026-05-14T15:16:43+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "GPT-5.5 feels like it got discernment, not just better reasoning — did anyone else notice?",
+      "title_cn": "GPT-5.5 展现出更强的洞察力，而非仅仅是推理能力的提升",
+      "summary_cn": "Reddit 用户指出，GPT-5.5 在长期对话中表现出显著的“洞察力”提升。作为职业策略和自我评估的思维伙伴，它在元分析、语言精炼及观点压力测试方面表现更佳，超越了单纯的逻辑推理增强，为用户提供了更深层的思考支持。",
+      "why_it_matters_cn": "标志着大模型从单纯的信息处理向具备深度理解与批判性思维的“思考伙伴”演进，提升了人机协作在复杂认知任务中的价值。",
+      "tags": [
+        "GPT-5.5",
+        "洞察力",
+        "人机协作"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1tcymn2/gpt55_feels_like_it_got_discernment_not_just",
+      "published_at": "2026-05-14T13:43:42+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "NVFP4 Kimi2.6 and Kimi 2.5 released by Nvidia",
+      "title_cn": "Nvidia 发布 Kimi 2.6 和 2.5 的 NVFP4 量化模型",
+      "summary_cn": "Nvidia 发布了 Moonshot AI 的 Kimi-K2.6 和 Kimi 2.5 模型的 NVFP4 量化版本。这些模型采用优化的 Transformer 架构，通过 Nvidia Model Optimizer 进行量化，支持商业和非商业用途，并在基准测试中保持了高精度，便于本地部署。",
+      "why_it_matters_cn": "降低了高性能开源模型的部署门槛，使开发者能在资源受限环境下高效运行 Kimi 系列模型，推动本地化 AI 应用普及。",
+      "tags": [
+        "Nvidia",
+        "Kimi",
+        "量化模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tcxb77/nvfp4_kimi26_and_kimi_25_released_by_nvidia",
+      "published_at": "2026-05-14T12:53:45+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "The founder's playbook: Building an AI-native startup",
+      "title_cn": "创始人指南：构建 AI 原生初创企业",
+      "summary_cn": "Claude Blog 发布了一篇关于构建 AI 原生初创企业的指南。文章探讨了如何在创业初期将 AI 深度融入产品核心与业务流程，为创业者提供了从技术选型到商业模式设计的实用建议，旨在帮助新创公司利用 AI 技术建立竞争优势。",
+      "why_it_matters_cn": "为创业者提供构建 AI 原生企业的战略框架，指导企业如何有效利用 AI 技术重塑产品与商业模式，把握行业先机。",
+      "tags": [
+        "AI 原生",
+        "创业指南",
+        "Claude"
+      ],
+      "source": "Claude Blog",
+      "url": "https://claude.com/blog/the-founders-playbook",
+      "published_at": "2026-05-14T00:00:00+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "I tracked EU GPU prices across 15 stores for 50+ days - RTX 5090 is the only card not dropping in price",
+      "title_cn": "欧盟 GPU 价格追踪：RTX 5090 是唯一未降价的高端卡",
+      "summary_cn": "用户追踪欧盟 15 家商店 50 多天的 GPU 价格发现，除 RTX 5090 外，其他显卡价格均呈下降趋势。中端 AMD 显卡降价 7-9%，RTX 5080 基本持平。RTX 5090 价格逆势上涨，显示出其独特的市场供需状况。",
+      "why_it_matters_cn": "揭示了高端 AI 算力硬件市场的供需失衡，RTX 5090 的坚挺价格反映了本地推理需求激增对顶级 GPU 的强劲拉动。",
+      "tags": [
+        "GPU 价格",
+        "RTX 5090",
+        "本地推理"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1td6ia5/i_tracked_eu_gpu_prices_across_15_stores_for_50",
+      "published_at": "2026-05-14T18:16:15+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "Welcome to the Datasette blog",
+      "title_cn": "Datasette 博客上线：使用 OpenAI Codex 构建",
+      "summary_cn": "Simon Willison 宣布 Datasette 项目拥有官方博客。该博客使用 OpenAI Codex 桌面版构建，利用了其 Markdown 会话转录导出功能。此举展示了 AI 辅助编程工具在实际项目中的高效应用，并预告了更多 Datasette 相关公告。",
+      "why_it_matters_cn": "展示了 Codex 等 AI 编程助手在快速构建实际项目中的潜力，验证了 AI 辅助开发工作流的成熟度与实用性。",
+      "tags": [
+        "Codex",
+        "Datasette",
+        "AI 编程"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/13/welcome-to-the-datasette-blog",
+      "published_at": "2026-05-13T23:59:39+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "Would a 2000-2021 ML paper even get accepted today? [D]",
+      "title_cn": "讨论：2000-2021 年的 ML 论文今天还能被接受吗？",
+      "summary_cn": "Reddit 机器学习社区讨论指出，过去被接受的许多 ML 论文在今天可能因评估不足、消融实验缺失或基线薄弱而被拒。这表明 ML 领域的发表标准已显著提高，对实验严谨性和创新性的要求远超以往，中等水平的旧论文难以通过当前审查。",
+      "why_it_matters_cn": "反映了机器学习领域研究标准的快速演进，提醒研究者需更加注重实验严谨性与基线对比，以适应日益激烈的学术竞争。",
+      "tags": [
+        "机器学习",
+        "学术标准",
+        "论文评审"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today",
+      "published_at": "2026-05-14T11:39:51+00:00"
+    },
+    {
+      "rank": 25,
+      "title": "datasette-ip-rate-limit 0.1a0",
+      "title_cn": "datasette-ip-rate-limit 0.1a0 发布",
+      "summary_cn": "Simon Willison 发布 datasette-ip-rate-limit 插件，用于限制恶意爬虫。该插件由 Codex (GPT-5.5 xhigh) 构建，可配置规则以阻止对特定路径发起高频请求的 IP 地址，保护 datasette.io 站点免受滥用。",
+      "why_it_matters_cn": "展示了利用先进 AI 模型快速生成实用后端安全工具的能力，同时凸显了 AI 基础设施面临爬虫滥用时的防护需求。",
+      "tags": [
+        "Codex",
+        "安全防护",
+        "插件开发",
+        "爬虫治理"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit",
+      "published_at": "2026-05-14T04:10:23+00:00"
+    }
+  ],
+  "source_errors": [
+    "The Decoder: HTTP Error 500: Internal Server Error"
+  ],
+  "skipped_duplicates": [
+    "Anthropic 推出 Claude for Small Business 瞄准中小企业 AI 应用洼地",
+    "苹果探索在 App Store 纳入 AI 智能体",
+    "Anthropic 宣布提升 Claude Code 额度：每周限额叠加增长 50%，持续至 7 月 13 日",
+    "Anthropic Traces Six Weeks of Claude Code Quality Complaints to Three Overlapping Product Changes",
+    "OpenAI says Codex is coming to your phone",
+    "What happens when AI starts building itself?",
+    "Cisco cuts nearly 4,000 jobs to spend more on AI, reports ‘record quarterly revenue’",
+    "How Claude Code works in large codebases: Best practices and where to start"
+  ]
+}
