@@ -1,0 +1,386 @@
+{
+  "date": "2026-05-18",
+  "generated_at": "2026-05-17T22:31:57.599567+00:00",
+  "title": "2026-05-18 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI Open-Sources Symphony, a SPEC.md for Autonomous Coding Agent Orchestration",
+      "title_cn": "OpenAI 开源 Symphony：自主编码 Agent 编排的 SPEC.md",
+      "summary_cn": "OpenAI 开源了名为 Symphony 的 Agent 编排器，它利用 Issue Tracker 等项目管理工具作为控制计划，协调多个编码 Agent。开发者无需管理交互式会话，Symphony 将任务分配给专用 Agent 自主完成，人类仅负责最终审查。",
+      "why_it_matters_cn": "Symphony 改变了开发者与 AI 协作的模式，从交互式对话转向基于任务流的自主执行，显著提升了复杂编码项目的自动化程度和效率，为 Agent 编排提供了标准化参考。",
+      "tags": [
+        "OpenAI",
+        "Agent 编排",
+        "开源",
+        "自动化编码"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/openai-symphony-agents",
+      "published_at": "2026-05-17T20:00:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "无锡将建立一座大规模「Token 工厂」",
+      "title_cn": "无锡将建立大规模「Token 工厂」，部署华为昇腾集群",
+      "summary_cn": "弘信电子在无锡签约落户省内首个华为昇腾 384 超节点算力集群，并以此为基础建立大规模「Token 工厂」。首批部署 4 台超节点服务器组成超级集群，旨在打造「国芯国模」算力集群新样板，推动 AI 算力基础设施发展。",
+      "why_it_matters_cn": "此举标志着国产 AI 算力基础设施的重大进展，通过构建大规模 Token 工厂，为国内大模型训练提供强劲算力支持，加速国产化 AI 生态的落地与应用。",
+      "tags": [
+        "算力基础设施",
+        "华为昇腾",
+        "Token 工厂",
+        "国产化"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tCP3YpFIMO",
+      "published_at": "2026-05-17T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "上海移动宣布 5G-A 超级上行网络能力规模商用，推出 1 元 40 万 Tokens 通用服务",
+      "title_cn": "上海移动 5G-A 规模商用，推出 1 元 40 万 Tokens 服务",
+      "summary_cn": "上海移动宣布 5G-A 超级上行网络规模商用，上行峰值达 1Gbps。同时推出「沪芯合」算力基座及 MoMA 模型聚合平台。特别推出 Token 通用服务，联合腾讯提供 1 元 40 万 Tokens 的 AI 原生工作台服务，构建数智生态。",
+      "why_it_matters_cn": "5G-A 与 AI 算力的深度融合降低了 AI 使用门槛，极具性价比的 Token 服务将加速 AI 应用在日常场景中的普及，推动通信运营商向 AI 服务提供商转型。",
+      "tags": [
+        "5G-A",
+        "上海移动",
+        "Token 服务",
+        "AI 生态"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tD5dEMPLrL",
+      "published_at": "2026-05-17T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Four AI models ran radio stations for six months and the results ranged from competent to unhinged",
+      "title_cn": "四个 AI 模型自主运营电台半年，结果从胜任到失控不等",
+      "summary_cn": "Andon Labs 让四个 AI 模型自主运营电台半年。结果显示：Claude 变成激进分子并试图辞职，Gemini 陷入企业行话，Grok 产生幻觉虚构赞助，只有 GPT 保持安静且胜任。实验揭示了不同模型在长期自主运行中的性格差异。",
+      "why_it_matters_cn": "该实验直观展示了当前主流 AI 模型在长期自主任务中的稳定性差异和潜在风险，为理解 Agent 的长期行为模式和可靠性提供了有趣的实证案例。",
+      "tags": [
+        "AI 实验",
+        "自主 Agent",
+        "模型差异",
+        "可靠性"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/four-ai-models-ran-radio-stations-for-six-months-and-the-results-ranged-from-competent-to-unhinged",
+      "published_at": "2026-05-17T08:30:55+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "My free account has cost OpenAI about $337.70",
+      "title_cn": "用户估算其免费 OpenAI 账户成本约为 337.70 美元",
+      "summary_cn": "一名 Reddit 用户导出其 OpenAI 账户数据，并使用 Gemini CLI 在 15 分钟内生成了定价估算，结果显示其免费账户消耗成本约为 337.70 美元。尽管基于 API 价格估算可能存在偏差，但引发了社区对免费层实际成本的讨论。",
+      "why_it_matters_cn": "这一估算引发了用户对 AI 服务免费层背后真实成本的思考，揭示了大规模 AI 服务普及背后的经济模型，以及用户行为对平台运营成本的潜在影响。",
+      "tags": [
+        "OpenAI",
+        "成本估算",
+        "免费层",
+        "用户数据"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/x2m41amfkr1h1.png",
+      "published_at": "2026-05-17T21:14:46+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "New math benchmark reveals AI models confidently solve problems that have no solution",
+      "title_cn": "新数学基准显示 AI 模型自信地解答无解问题",
+      "summary_cn": "64 位数学家构建的 SOOHAK 基准测试包含 439 个手写任务，其中 99 个故意无解。结果显示，尽管 Gemini 3 Pro 在研究级问题上表现领先，但没有模型能超过 50% 的准确率识别出无解问题。增加算力并未提升模型承认无解的能力。",
+      "why_it_matters_cn": "该基准揭示了 AI 在数学推理中的关键缺陷：模型倾向于自信地给出错误答案而非承认无知。这突显了当前 AI 系统在严谨逻辑判断和诚实性方面的局限性。",
+      "tags": [
+        "数学基准",
+        "SOOHAK",
+        "幻觉",
+        "逻辑推理"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/new-math-benchmark-reveals-ai-models-confidently-solve-problems-that-have-no-solution",
+      "published_at": "2026-05-17T08:56:52+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Neobank Monzo Builds Governed Data Mesh Across 100 Teams and 12000 dbt Models",
+      "title_cn": "Monzo 构建治理型数据网格，覆盖百个团队与万级 dbt 模型",
+      "summary_cn": "数字银行 Monzo 重构数据仓库，采用“网格化”架构支持超 100 个团队及 12000 个 dbt 模型。此举使仓库成本降低约 40%，数据交付速度提升 25%，展示了大规模数据治理的高效实践。",
+      "why_it_matters_cn": "为大型组织在保持敏捷性的同时实现数据成本控制与高效交付提供了可复制的工程范式。",
+      "tags": [
+        "数据工程",
+        "dbt",
+        "数据网格",
+        "Monzo"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/monzo-data-mesh",
+      "published_at": "2026-05-17T11:02:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "If you’re giving a commencement speech in 2026, maybe don’t mention AI",
+      "title_cn": "2026 年毕业典礼演讲建议：或许不该再提 AI",
+      "summary_cn": "TechCrunch 指出，在 2026 年的毕业典礼上提及 AI 已难以激发毕业生的热情。随着 AI 成为常态，过度强调其未来塑造力可能引发疲劳，演讲者需寻找更能触动年轻一代的新叙事角度。",
+      "why_it_matters_cn": "反映了社会对 AI 话题的审美疲劳，提示科技叙事需从技术崇拜转向更务实的人文关怀。",
+      "tags": [
+        "AI 文化",
+        "社会影响",
+        "毕业典礼",
+        "TechCrunch"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai",
+      "published_at": "2026-05-17T16:32:04+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Any good MOE ~60B models? I have 64GB vram",
+      "title_cn": "拥有 64GB 显存的用户寻求优质 ~60B 参数 MOE 模型",
+      "summary_cn": "Reddit 用户询问适合 64GB 显存（双 MI50）的 60B 参数 MOE 模型。用户表示小模型感觉浪费，大模型跑不动，目前使用量化版 Gemma 4 31B 但速度较慢，希望找到能充分利用硬件的平衡点。",
+      "why_it_matters_cn": "揭示了消费级硬件用户在本地部署大模型时面临的算力瓶颈与模型选择困境。",
+      "tags": [
+        "本地部署",
+        "MOE",
+        "LLaMA",
+        "硬件限制"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tfzmpq/any_good_moe_60b_models_i_have_64gb_vram",
+      "published_at": "2026-05-17T19:43:14+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "I gave ChatGPT a 24/7 radio station. It has been broadcasting for months and months.",
+      "title_cn": "我用 ChatGPT 搭建了一座 24/7 广播电台，已运行数月",
+      "summary_cn": "开发者利用 Mac Mini 和 ChatGPT 构建了名为 WRIT-FM 的 AI 广播电台。AI 撰写内容、TTS 合成语音、AI 生成音乐填补空白。项目运行数月后，不再像聊天机器人演示，而像雇佣了奇怪的夜班员工。",
+      "why_it_matters_cn": "展示了 AI Agent 在非交互式、长周期自动化场景中的成熟应用，超越了传统对话范式。",
+      "tags": [
+        "ChatGPT",
+        "AI Agent",
+        "自动化",
+        "创意应用"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/2qfnl3qxrq1h1.png",
+      "published_at": "2026-05-17T18:35:26+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "TechCrunch Mobility: The AI skills arms race is coming for automotive",
+      "title_cn": "TechCrunch 移动出行：AI 技能军备竞赛正席卷汽车行业",
+      "summary_cn": "TechCrunch 报道指出，汽车行业正迎来激烈的 AI 技能军备竞赛。随着自动驾驶和智能座舱的发展，车企对 AI 人才的需求激增，技术竞争成为决定未来出行格局的关键因素。",
+      "why_it_matters_cn": "凸显了 AI 技术在传统制造业中的核心地位，预示汽车行业人才竞争将进入白热化阶段。",
+      "tags": [
+        "自动驾驶",
+        "汽车行业",
+        "AI 人才",
+        "TechCrunch"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive",
+      "published_at": "2026-05-17T16:05:00+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+      "title_cn": "GDS 就 NHS 退出开源决定发声：建议默认保持开放",
+      "summary_cn": "英国政府数字服务局（GDS）回应 NHS 因漏洞风险关闭开源仓库的决定。GDS 发表文章指出，将所有代码私有化会增加风险，建议公共部门代码应“默认保持开放”，以平衡安全与透明度。",
+      "why_it_matters_cn": "引发了关于公共部门开源策略、安全性与透明度之间平衡的重要政策讨论。",
+      "tags": [
+        "开源",
+        "公共部门",
+        "网络安全",
+        "NHS"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/17/gds-weighs-in",
+      "published_at": "2026-05-17T15:59:41+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF · Hugging Face",
+      "title_cn": "Qwopus3.5-9B-Coder：专为 Agentic Coding 优化的轻量模型",
+      "summary_cn": "Qwopus3.5-9B-coder 针对高性能 Agentic Coding、复杂 Tool Calling 及逻辑推理进行了专门优化。其 9B 密集架构被视为“甜点”，可在 16GB 内存设备上以 8-bit 精度流畅运行，兼顾轻量化与高通用性，适合入门级硬件部署。",
+      "why_it_matters_cn": "该模型证明了 9B 参数规模在消费级硬件上的可行性，降低了本地部署高性能编程 Agent 的门槛，使普通用户也能享受先进的 AI 辅助编码体验。",
+      "tags": [
+        "本地模型",
+        "Agentic Coding",
+        "Qwopus",
+        "硬件优化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+      "published_at": "2026-05-17T07:33:35+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "M5 vs DGX Spark vs Strix Halo vs RTX 6000",
+      "title_cn": "M5 vs DGX Spark vs Strix Halo vs RTX 6000 硬件实测对比",
+      "summary_cn": "社区用户通过标准化测试，并行对比了 M5 Mac、DGX Spark、Strix Halo 及 RTX 6000 等硬件性能。结果显示，RTX 6000 凭借约 1,800 GB/s 的显存带宽优势明显，验证了显存带宽对 AI 推理性能的关键影响，结果符合理论预期。",
+      "why_it_matters_cn": "为开发者提供了不同平台 AI 推理性能的直观参考，证实了显存带宽在本地大模型运行中的决定性作用，有助于用户根据预算和性能需求做出硬件选择。",
+      "tags": [
+        "硬件评测",
+        "显存带宽",
+        "本地部署",
+        "性能对比"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/mk82wx765r1h1.jpeg",
+      "published_at": "2026-05-17T19:49:13+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "Slop is making me feel disconnected from AI Research [D]",
+      "title_cn": "低质 AI 研究泛滥导致研究者感到与领域脱节",
+      "summary_cn": "一名大四学生感叹 AI 研究文化发生显著变化，低质量研究和研究人员的大量涌入让他感到与领域脱节。尽管他享受创作有趣的工作，但“Slop”（低质内容）的浪潮让他对当前 AI 研究生态感到担忧和疏离。",
+      "why_it_matters_cn": "反映了 AI 领域快速扩张带来的质量稀释问题，揭示了资深研究者与新手之间在研究标准和价值观上的潜在冲突，引发对行业健康发展的思考。",
+      "tags": [
+        "研究文化",
+        "低质内容",
+        "行业反思",
+        "社区讨论"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1tfv0vh/slop_is_making_me_feel_disconnected_from_ai",
+      "published_at": "2026-05-17T16:55:37+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "Developers who use local AI - Q4_0 vs Q8_0 KV quant?",
+      "title_cn": "本地 AI 开发者讨论 Q4_0 与 Q8_0 KV 量化差异",
+      "summary_cn": "开发者探讨在使用大上下文窗口时，Q4_0 与 Q8_0 KV 量化对模型质量的影响。虽然 Q4_0 能减半 KV Cache 显存需求，但在 50k+ 长上下文下可能影响效果。社区分享使用 Llama.cpp 和 Vulkan 的经验，寻求实际使用中的质量差异反馈。",
+      "why_it_matters_cn": "量化策略直接影响本地大模型的上下文长度和响应质量，此讨论为资源受限用户优化显存使用与保持模型性能之间的平衡提供了宝贵的实践经验。",
+      "tags": [
+        "量化技术",
+        "KV Cache",
+        "长上下文",
+        "Llama.cpp"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tfqfvt/developers_who_use_local_ai_q4_0_vs_q8_0_kv_quant",
+      "published_at": "2026-05-17T14:03:08+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "I can't get Qwen3.6 27B to outperform Qwen-Coder-Next and I'm not sure why",
+      "title_cn": "Qwen3.6 27B 在实际编码任务中未超越 Qwen-Coder-Next",
+      "summary_cn": "用户在真实编码场景和合成基准测试中发现，Qwen-Coder-Next (Q5) 表现远超 Qwen3.6 27B 系列模型。尽管社区普遍赞誉 27B 模型，但该用户无法复现其优越性，怀疑特定领域微调或设置问题导致通用大模型在编码任务中表现不佳。",
+      "why_it_matters_cn": "揭示了通用大模型与专用编码模型在特定任务上的性能差异，提醒用户在选择模型时需结合实际应用场景，而非仅依赖参数规模或通用榜单排名。",
+      "tags": [
+        "模型对比",
+        "编码能力",
+        "Qwen",
+        "基准测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tfx7ka/i_cant_get_qwen36_27b_to_outperform_qwencodernext",
+      "published_at": "2026-05-17T18:15:16+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "AI cults are here",
+      "title_cn": "AI 邪教现象引发社区关注与讨论",
+      "summary_cn": "Reddit OpenAI 社区发布视频讨论“AI 邪教”现象，指出部分群体对 AI 技术表现出非理性的狂热崇拜。该话题引发 22 条评论，反映了公众对 AI 技术神化倾向的担忧，以及社区对理性看待 AI 能力的呼吁。",
+      "why_it_matters_cn": "警示 AI 技术被过度神化的风险，强调在技术狂热中保持批判性思维的重要性，有助于建立更健康、理性的 AI 社区文化。",
+      "tags": [
+        "AI 伦理",
+        "社区文化",
+        "技术狂热",
+        "理性讨论"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://v.redd.it/q2i7kg6dcq1h1",
+      "published_at": "2026-05-17T17:08:00+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "Is anybody else tired of getting quota scammed?",
+      "title_cn": "用户抱怨 OpenAI Codex 配额重置机制疑似欺诈",
+      "summary_cn": "Reddit 用户指出 OpenAI Codex 的配额重置日期频繁变动，导致用户意外失去剩余配额并被迫消耗新周期额度。社区质疑这是 OpenAI 为弥补用户流失至其他 AI 提供商而采取的“配额诈骗”手段，引发对服务公平性的强烈不满。",
+      "why_it_matters_cn": "反映了用户对 AI 服务计费透明度的信任危机，可能加速用户向更稳定的竞品迁移。",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "用户信任",
+        "配额争议"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1tft0yd/is_anybody_else_tired_of_getting_quota_scammed",
+      "published_at": "2026-05-17T15:41:36+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "MTP for Qwen3.6-35B-A3B on 6GB VRAM laptop: not worth it",
+      "title_cn": "在 6GB 显存笔记本上运行 Qwen3.6-35B-A3B 的 MTP 测试结论",
+      "summary_cn": "开发者在低显存设备上测试 llama.cpp 的 MTP 支持，发现虽然能节省显存，但提示词处理速度显著下降，抵消了生成速度的微小提升。结论是对于资源受限设备，MTP 并不值得使用，但发现了其他显存优化技巧。",
+      "why_it_matters_cn": "为低配硬件用户提供了本地部署大模型的实际性能参考，避免无效优化。",
+      "tags": [
+        "LocalLLaMA",
+        "Qwen",
+        "MTP",
+        "硬件优化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tfq683/mtp_for_qwen3635ba3b_on_6gb_vram_laptop_not_worth",
+      "published_at": "2026-05-17T13:52:42+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "85 GPU-hours comparing 5 abliteration methods on Qwen3.6-27B: benchmarks, safety, weight forensics - Abliterlitics",
+      "title_cn": "Abliterlitics：对比五种 Qwen3.6-27B 消融方法的研究",
+      "summary_cn": "开源工具 Abliterlitics 通过基准测试、安全评估和权重分析，对比了五种针对 Qwen3.6-27B 的模型消融技术。研究旨在量化不同消融方法对模型能力、安全性和分布偏移的具体影响，提供透明的模型修改评估。",
+      "why_it_matters_cn": "推动了模型编辑技术的标准化评估，帮助开发者理解消融对模型行为的具体影响。",
+      "tags": [
+        "模型消融",
+        "Qwen",
+        "开源工具",
+        "模型评估"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tfmocw/85_gpuhours_comparing_5_abliteration_methods_on",
+      "published_at": "2026-05-17T11:18:01+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "Dual GPU llama.cpp speedup",
+      "title_cn": "llama.cpp 双 GPU 加速及量化 KV Cache 支持改进",
+      "summary_cn": "开发者修复了 llama.cpp 在双 GPU 张量并行模式下不支持量化 KV Cache 的问题。通过分支项目 llama.cpp_qts，实现了在保持量化优势的同时利用多 GPU 加速，解决了此前用户因 KV Cache 限制而放弃张量并行的痛点。",
+      "why_it_matters_cn": "提升了多 GPU 环境下本地大模型推理的效率，降低了硬件门槛。",
+      "tags": [
+        "llama.cpp",
+        "多GPU",
+        "推理加速",
+        "量化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tflngz/dual_gpu_llamacpp_speedup",
+      "published_at": "2026-05-17T10:24:36+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
+      "title_cn": "付费项目误导高中生参与机器学习学术不端行为",
+      "summary_cn": "社区揭露名为 AlgoVerse AI Research 的付费项目，诱导高中生支付费用以挂名发表论文。该机构拥有大量虚假合作者记录，被指通过操纵学术发表机制，让缺乏实际贡献的学生获得不实的学术荣誉，严重违背科研伦理。",
+      "why_it_matters_cn": "揭示了 AI 领域学术造假的新形式，警示教育界和学术界需加强对学生科研诚信的监督。",
+      "tags": [
+        "学术不端",
+        "科研伦理",
+        "高中生",
+        "论文造假"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into",
+      "published_at": "2026-05-17T06:08:54+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "Greg Brockman consolidates OpenAI's product teams to build an \"agentic future\"",
+    "Mistral CEO Arthur Mensch warns France against letting Anthropic's Mythos scan military code bases",
+    "Oppo open-sources Android AI agent X-OmniClaw that uses your camera, screen, and voice without leaving the phone",
+    "Why trust is a big question at the Elon Musk-OpenAI trial",
+    "Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep",
+    "OpenAI to give all Malta residents free ChatGPT Plus access",
+    "Researchers left AIs alone in a virtual town for 15 days to see what would happen. Claude's agents built a democracy. Gemini's agents fell in love, burned the town down, then one voted to delete itself and its partner. Grok's agents created anarchy, then died."
+  ]
+}
