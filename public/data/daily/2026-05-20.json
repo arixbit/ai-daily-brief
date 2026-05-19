@@ -1,0 +1,447 @@
+{
+  "date": "2026-05-20",
+  "generated_at": "2026-05-19T22:31:40.107782+00:00",
+  "title": "2026-05-20 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "AI 收入集中度创新高：Anthropic 与 OpenAI 吞下 89% 份额",
+      "title_cn": "AI 收入集中度创新高：Anthropic 与 OpenAI 吞下 89% 份额",
+      "summary_cn": "The Information 分析显示，在 34 家受关注的生成式 AI 初创公司中，Anthropic 和 OpenAI 占据了 89% 的市场份额。其余 32 家公司仅能争夺剩下的 11%。这表明行业并非百花齐放，而是呈现出极端的赢家通吃加速趋势，头部效应显著。",
+      "why_it_matters_cn": "揭示了生成式 AI 市场的高度垄断现状，对初创企业的融资环境和生存空间构成严峻挑战，投资者需警惕市场集中度风险。",
+      "tags": [
+        "市场格局",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tE6Smx2wln",
+      "published_at": "2026-05-19T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Anthropic Introduces MCP Tunnels for Private Agent Access to Internal Systems",
+      "title_cn": "Anthropic 推出 MCP Tunnels，助力私有 Agent 安全访问内部系统",
+      "summary_cn": "Anthropic 扩展了 Claude Managed Agents 平台，新增自托管沙箱和 MCP Tunnels 功能。旨在解决企业部署 AI 时的安全顾虑，允许自主 Agent 在不离开安全边界的情况下访问内部系统，满足企业对数据隐私和执行环境隔离的严格要求。",
+      "why_it_matters_cn": "解决了企业级 AI 部署中的核心安全痛点，使私有 Agent 能更安全地集成到内部工作流，加速企业 AI 落地进程。",
+      "tags": [
+        "Anthropic",
+        "MCP",
+        "企业安全"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/claude-mcp-tunnels",
+      "published_at": "2026-05-19T19:20:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Prominent AI researcher Andrej Karpathy picks Anthropic over former home OpenAI to get back into frontier LLM research",
+      "title_cn": "AI 大牛 Andrej Karpathy 加盟 Anthropic，重返前沿 LLM 研究",
+      "summary_cn": "知名 AI 研究员 Andrej Karpathy 宣布加入 Anthropic，而非重返前东家 OpenAI。作为前 OpenAI 核心成员和 Tesla Autopilot 架构师，他表示希望重返研发一线，认为未来几年是 LLM 前沿研究的关键形成期，这一选择对 OpenAI 是重大损失。",
+      "why_it_matters_cn": "顶尖人才流向 Anthropic 加剧了行业竞争，标志着 AI 研究重心的转移，对 OpenAI 的技术领导力构成直接挑战。",
+      "tags": [
+        "Andrej Karpathy",
+        "Anthropic",
+        "人才流动"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/prominent-ai-researcher-andrej-karpathy-picks-anthropic-over-former-home-openai-to-get-back-into-frontier-llm-research",
+      "published_at": "2026-05-19T18:23:27+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Google's I/O announcements: new models, a cloud agent that never sleeps, and a redesigned Gemini app",
+      "title_cn": "Google I/O 发布新模型、全天候云 Agent 及重设计的 Gemini 应用",
+      "summary_cn": "Google 在 I/O 大会上发布多项 AI 新品：包括新模型 Gemini 3.5 Flash 和多模态模型 Gemini Omni。重点推出了名为 Gemini Spark 的个人 Agent，可在云端全天候运行。此外，Gemini 应用也进行了重大界面和功能更新，强化 AI 助手体验。",
+      "why_it_matters_cn": "Google 通过全天候 Agent 和模型迭代，强化其在个人 AI 助手领域的布局，直接竞争 OpenAI 和 Anthropic 的市场份额。",
+      "tags": [
+        "Google I/O",
+        "Gemini",
+        "AI Agent"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/googles-i-o-announcements-new-models-a-cloud-agent-that-never-sleeps-and-a-redesigned-gemini-app",
+      "published_at": "2026-05-19T17:44:17+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "How to use Google’s new AI agents to go beyond your standard searches",
+      "title_cn": "如何使用 Google 新 AI Agent 超越传统搜索体验",
+      "summary_cn": "Google 推出基于 AI 的“信息 Agent”，用户可让其后台监控特定主题。当检测到更新或变化时，Agent 会主动提醒用户。这一功能超越了传统的被动搜索模式，实现了从“人找信息”到“信息找人”的转变，提升了信息获取效率。",
+      "why_it_matters_cn": "重新定义了搜索引擎的交互范式，从被动查询转向主动推送，可能改变用户获取新闻和信息的方式。",
+      "tags": [
+        "Google",
+        "AI Agent",
+        "搜索变革"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches",
+      "published_at": "2026-05-19T21:16:25+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Google introduces Gemini Spark, a 24/7 agentic assistant with Gmail integration, at IO 2026",
+      "title_cn": "Google 在 IO 2026 推出 24/7 智能助手 Gemini Spark，集成 Gmail",
+      "summary_cn": "Google 在 I/O 大会上正式推出 Gemini Spark，这是一款基于 Gemini 基础模型和 Google Antigravity 代理框架构建的 24/7 智能助手。它深度集成 Gmail，能够全天候处理邮件和任务，标志着 Google 在个人 AI 代理领域的重大进展。",
+      "why_it_matters_cn": "深度集成 Gmail 使 AI 助手具备实际生产力价值，展示了 Google 将 AI 融入核心服务的战略，提升用户粘性。",
+      "tags": [
+        "Gemini Spark",
+        "Gmail",
+        "个人助手"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration",
+      "published_at": "2026-05-19T17:45:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "谷歌与黑石集团拟成立一家新的 AI 云公司",
+      "title_cn": "谷歌与黑石集团拟成立一家新的 AI 云公司",
+      "summary_cn": "Alphabet 旗下谷歌与黑石计划成立一家采用谷歌专用芯片的人工智能云计算公司。黑石提供 50 亿美元股权资本成为多数股东，谷歌提供硬件（含 TPU 专用芯片）、软件和服务。新公司计划 2027 年实现 500 兆瓦算力，并随时间大幅增加，旨在加速 AI 基础设施部署。",
+      "why_it_matters_cn": "标志着科技巨头与金融资本在 AI 基础设施领域的深度绑定，通过专用硬件加速算力扩张，可能重塑云计算市场格局。",
+      "tags": [
+        "AI 基础设施",
+        "云计算",
+        "谷歌",
+        "黑石"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tFOrmbEo5e",
+      "published_at": "2026-05-19T22:29:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "The last six months in LLMs in five minutes",
+      "title_cn": "五分钟回顾大语言模型过去六个月的发展",
+      "summary_cn": "Simon Willison 在 PyCon US 2026 上通过幻灯片总结了过去六个月 LLM 的发展。他指出 2025 年 11 月是关键的转折点，特别是在编程领域。这次演讲旨在快速回顾近期重大进展，帮助开发者把握技术演进脉络，理解从通用对话到专业编码能力的转变。",
+      "why_it_matters_cn": "为开发者提供快速了解 LLM 最新进展的窗口，特别是编程能力的突破，有助于把握技术趋势。",
+      "tags": [
+        "LLM",
+        "技术回顾",
+        "编程 AI",
+        "PyCon"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/19/5-minute-llms",
+      "published_at": "2026-05-19T01:09:44+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "OlmoEarth v1.1: A more efficient family of models",
+      "title_cn": "OlmoEarth v1.1：更高效的一系列模型",
+      "summary_cn": "Allen AI 发布了 OlmoEarth v1.1，这是一系列经过优化的开源模型。新版本旨在提高计算效率，同时保持或提升性能表现。作为 Hugging Face 社区的重要更新，它展示了开源 AI 在地球科学和环境建模领域的最新进展，为研究人员提供更高效的工具。",
+      "why_it_matters_cn": "开源模型效率提升降低了科研门槛，推动地球科学和环境监测领域的 AI 应用普及。",
+      "tags": [
+        "开源模型",
+        "OlmoEarth",
+        "AI 效率",
+        "地球科学"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+      "published_at": "2026-05-19T18:38:09+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Presentation: Powering the Future: Building Your GenAI Infrastructure Stack",
+      "title_cn": "构建面向未来的生成式 AI 基础设施栈",
+      "summary_cn": "Intuit 的 Merrin Kurian 分享了其 AI 转型的架构蓝图和组织流程。她介绍了“固定、灵活、免费”框架，帮助 8000 名开发者扩展 GenOS，支持 3500 多个生产实验。演讲还讨论了 agent 失败模式、“LLM-as-a-judge”评估策略及构建“工具就绪”API 的方法。",
+      "why_it_matters_cn": "为企业大规模部署 GenAI 提供实战参考，解决 agent 开发中的评估与基础设施挑战。",
+      "tags": [
+        "GenAI 基础设施",
+        "Agent 开发",
+        "企业转型",
+        "Intuit"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/presentations/infrastructure-ai-agent-development",
+      "published_at": "2026-05-19T12:43:00+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
+      "title_cn": "推进内容溯源以构建更安全透明的 AI 生态",
+      "summary_cn": "OpenAI 通过 Content Credentials、SynthID 和验证工具推进 AI 内容溯源技术。这些工具旨在帮助用户识别和信任 AI 生成的媒体内容，增强透明度。此举有助于打击深度伪造和虚假信息，建立更安全的数字内容环境，提升公众对 AI 生成内容的信任度。",
+      "why_it_matters_cn": "增强 AI 内容可追溯性，打击虚假信息，建立用户对 AI 生成媒体的信任机制。",
+      "tags": [
+        "内容溯源",
+        "AI 安全",
+        "OpenAI",
+        "透明度"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/advancing-content-provenance",
+      "published_at": "2026-05-19T10:45:00+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think.",
+      "title_cn": "谷歌 25 年来首次重新设计搜索框，意义重大",
+      "summary_cn": "谷歌在 I/O 开发者大会上宣布重新设计搜索框，结束了其 25 年来作为简单关键词输入框的历史。新设计将其转变为动态、AI 驱动的对话界面。这一变化标志着搜索引擎从传统链接列表向 AI 原生交互体验的根本性转变，影响数十亿用户的日常使用习惯。",
+      "why_it_matters_cn": "搜索交互范式的根本转变，标志着互联网入口从关键词检索向 AI 对话体验的演进。",
+      "tags": [
+        "谷歌搜索",
+        "AI 交互",
+        "界面设计",
+        "I/O 大会"
+      ],
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+      "published_at": "2026-05-19T17:45:00+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "How AI Mode is changing the way people search in the U.S.",
+      "title_cn": "AI 模式如何改变美国人的搜索习惯",
+      "summary_cn": "Google 发布最新洞察，揭示 AI Mode 正在深刻重塑美国用户的搜索行为。从传统的关键词匹配转向自然语言对话与意图理解，用户更倾向于获取直接答案而非链接列表。这一转变标志着搜索引擎从信息索引向智能助手角色的根本性演进，预示着未来人机交互的新常态。",
+      "why_it_matters_cn": "标志着搜索范式从链接导向转向答案导向，直接影响广告生态与内容创作者的流量获取策略，是理解未来数字交互的关键指标。",
+      "tags": [
+        "Google",
+        "AI搜索",
+        "用户行为"
+      ],
+      "source": "Google AI Blog",
+      "url": "https://blog.google/products-and-platforms/products/search/ai-mode-us-insights",
+      "published_at": "2026-05-19T17:45:00+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "Gemini 3.5: frontier intelligence with action",
+      "title_cn": "Gemini 3.5：具备行动能力的尖端智能",
+      "summary_cn": "Google 推出 Gemini 3.5 模型，强调其不仅拥有前沿的推理智能，更具备强大的行动能力。该模型能够自主执行复杂任务，超越单纯的文本生成，实现从思考到执行的闭环。作为新一代旗舰模型，它在多模态理解和工具使用上实现了显著突破，旨在成为更高效的个人与专业助手。",
+      "why_it_matters_cn": "展示了大模型从“聊天”向“执行”的演进，强化了 Google 在 agentic AI 领域的竞争力，可能重新定义生产力工具的标准。",
+      "tags": [
+        "Gemini",
+        "Agentic AI",
+        "模型发布"
+      ],
+      "source": "Google AI Blog",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5",
+      "published_at": "2026-05-19T17:45:00+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "A new era for AI Search",
+      "title_cn": "AI 搜索的新时代",
+      "summary_cn": "Google 在 I/O 2026 上宣布开启 AI 搜索的新纪元。通过深度整合大语言模型与实时数据，搜索体验变得更加直观、动态且个性化。新系统能够处理复杂的多步查询，提供基于上下文的综合回答，彻底改变了用户获取信息的方式，确立了 AI 原生搜索的行业新标准。",
+      "why_it_matters_cn": "确立了 AI 原生搜索的行业标准，迫使竞争对手加速转型，同时也对传统 SEO 策略提出了全新的挑战和要求。",
+      "tags": [
+        "Google I/O",
+        "AI搜索",
+        "行业趋势"
+      ],
+      "source": "Google AI Blog",
+      "url": "https://blog.google/products-and-platforms/products/search/search-io-2026",
+      "published_at": "2026-05-19T17:45:00+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+      "title_cn": "Google AI 订阅服务 I/O 2026 全新更新",
+      "summary_cn": "Google 在 I/O 2026 上全面更新其 AI 订阅服务，包括 Google One 等产品的 AI 功能升级。新增特性涵盖更高级的 Gemini 模型访问权限、增强的照片编辑工具以及更深度的工作流自动化支持。这些更新旨在通过订阅制为用户提供持续进化的 AI 能力，提升日常数字生活的效率与体验。",
+      "why_it_matters_cn": "展示了 AI 功能作为核心订阅价值的商业化路径，推动了 AI 服务从免费试用向高价值付费订阅的转变。",
+      "tags": [
+        "Google One",
+        "订阅服务",
+        "商业化"
+      ],
+      "source": "Google AI Blog",
+      "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions",
+      "published_at": "2026-05-19T17:45:00+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "favorite Agentic Coding Harness",
+      "title_cn": "本地模型首选的 Agentic Coding 框架",
+      "summary_cn": "Reddit 用户讨论本地部署的 Agentic Coding 工具，推荐 Pi 框架。相比 Codex CLI 和 Claude Code，Pi 仅包含 read、write、edit 和 bash 四个基础工具，系统提示词少于 2K tokens。配合 Qwen 27B-MXFP8 模型表现优异，虽缺乏多 agent 等高级功能，但其轻量级设计非常适合本地资源受限的环境。",
+      "why_it_matters_cn": "为开发者提供了在本地高效运行代码 agent 的轻量级方案，证明了精简工具链在本地模型上的优越性。",
+      "tags": [
+        "LocalLLaMA",
+        "Coding Agent",
+        "开源工具"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1th5t1b/favorite_agentic_coding_harness",
+      "published_at": "2026-05-18T23:53:49+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "A tool I built to generate 3D objects with functional, articulated parts. It's on github, and is mostly LLM-agnostic.",
+      "title_cn": "生成带功能性活动部件的 3D 对象工具",
+      "summary_cn": "开发者分享了一个基于 LLM 的 3D 生成工具，能创建具有功能性活动部件的对象，如可旋转的洗衣机内部结构。该工具解决了当前 text-to-3D 管道仅生成单体网格（mesh blobs）的问题，支持铰链和套接关节。代码开源且模型无关，允许通过修改提示词精确控制局部组件，而非整体重绘。",
+      "why_it_matters_cn": "突破了当前 3D 生成技术缺乏结构细节的瓶颈，为游戏开发和工业设计提供了更精确、可编辑的生成方案。",
+      "tags": [
+        "3D生成",
+        "开源项目",
+        "LLM应用"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://v.redd.it/twod793hj42h1",
+      "published_at": "2026-05-19T17:43:27+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "We have sub-agents at home",
+      "title_cn": "本地部署 sub-agents 的 VRAM 困境与解决方案",
+      "summary_cn": "开发者指出，尽管工作中可随意使用 GPT-5.4 和 Sonnet 生成 sub-agents，但本地 10GB VRAM 限制了这一体验。现有扩展未充分考虑 KV cache 限制，作者分享了在资源受限环境下运行量化模型的经验。",
+      "why_it_matters_cn": "揭示了高端 AI 功能在消费级硬件上的落地难点，为本地开发者提供优化思路。",
+      "tags": [
+        "LocalLLaMA",
+        "sub-agents",
+        "VRAM",
+        "量化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1th8a43/we_have_subagents_at_home",
+      "published_at": "2026-05-19T01:38:42+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
+      "title_cn": "KPMG 与 Anthropic 达成战略联盟，全面集成 Claude",
+      "summary_cn": "安永会计师事务所宣布与 Anthropic 建立战略联盟，将 Claude 集成到其核心业务中。此举覆盖了超过 276,000 名员工，标志着大型专业服务机构在 AI 工作流整合上的重大进展。",
+      "why_it_matters_cn": "展示了企业级 AI 在专业服务领域的规模化应用，预示行业自动化趋势加速。",
+      "tags": [
+        "KPMG",
+        "Anthropic",
+        "Claude",
+        "企业集成"
+      ],
+      "source": "Anthropic News",
+      "url": "https://www.anthropic.com/news/anthropic-kpmg",
+      "published_at": "2026-05-19T00:00:00+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "Here are my KV cache quantization benchmarks: TurboQuant is overrated but saved by TCQ, q5 deserves more attention, and symmetric q8 might be a waste of VRAM",
+      "title_cn": "KV cache 量化基准测试：TurboQuant 被高估，q5 值得关注",
+      "summary_cn": "前 TurboQuant 支持者通过 RTX 3090 进行详尽的 PPL 和 KLD 基准测试，发现 TurboQuant 被高估但 TCQ 挽救了其表现。研究指出 q5 量化更值得重视，而对称 q8 可能浪费 VRAM。",
+      "why_it_matters_cn": "为本地模型部署提供关键的量化策略指导，帮助开发者在有限资源下优化性能。",
+      "tags": [
+        "KV cache",
+        "量化",
+        "TurboQuant",
+        "基准测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1thu6os/here_are_my_kv_cache_quantization_benchmarks",
+      "published_at": "2026-05-19T17:37:34+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "bytedance released an open source model that attempts to do just about anything with only 3b parameters",
+      "title_cn": "字节跳动发布 3B 参数开源多模态模型 Lance",
+      "summary_cn": "字节跳动发布轻量级原生统一多模态模型 Lance，仅含 3B 活跃参数。该模型在单一框架内支持图像和视频的理解、生成及编辑，在多项基准测试中表现强劲，实现了高效的多模态能力。",
+      "why_it_matters_cn": "证明了小参数模型在多模态任务上的潜力，降低了本地部署多模态 AI 的门槛。",
+      "tags": [
+        "字节跳动",
+        "Lance",
+        "多模态",
+        "开源"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://huggingface.co/bytedance-research/Lance",
+      "published_at": "2026-05-19T12:05:26+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "what non-coding tasks have you gotten a local model to do autonomously?",
+      "title_cn": "本地模型在非编码任务中的自主应用探索",
+      "summary_cn": "社区讨论本地模型在非编码领域的自主行动能力。用户分享使用小型 VLM 进行桌面 GUI 自动化的经验，用于在无 API 的应用间移动数据，虽在复杂 UI 上仍有瑕疵，但节省了大量复制粘贴工作。",
+      "why_it_matters_cn": "拓展了本地 AI 的应用场景，展示了其在日常办公自动化中的实际价值。",
+      "tags": [
+        "GUI 自动化",
+        "VLM",
+        "本地模型",
+        "非编码"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1thhpz3/what_noncoding_tasks_have_you_gotten_a_local",
+      "published_at": "2026-05-19T09:33:51+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "What is the point of MoE models, beyond being faster?",
+      "title_cn": "探讨 MoE 模型除速度外的核心价值与内存挑战",
+      "summary_cn": "社区热议 MoE 架构的优势。除了比同等参数密集模型更快且效果更好外，讨论聚焦于其在内存稀缺环境下的劣势。用户质疑在 RAM 有限时，MoE 是否仍优于参数减半的密集模型，并探讨其扩展极限。",
+      "why_it_matters_cn": "深入剖析 MoE 架构的适用场景，帮助开发者在内存受限条件下做出更明智的模型选择。",
+      "tags": [
+        "MoE",
+        "架构",
+        "内存优化",
+        "模型选择"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1thfd53/what_is_the_point_of_moe_models_beyond_being",
+      "published_at": "2026-05-19T07:20:23+00:00"
+    },
+    {
+      "rank": 25,
+      "title": "Pro X20 weekly quota is draining insanely fast after the latest Codex update. Pro X20 used ~48% in one day!!!",
+      "title_cn": "Codex 更新后 Pro X20 配额极速消耗",
+      "summary_cn": "Reddit 用户反映，在最新的 Codex 更新后，Pro X20 计划的每周使用配额消耗速度惊人。一名用户表示，仅在工作约 12 小时后，其周配额就消耗了 48%。虽然 Codex 使用共享的 agentic 使用限制，但这种消耗速度对于付费用户来说显得过于激进，引发了社区对配额合理性的担忧。",
+      "why_it_matters_cn": "这反映了高级 AI 工具在 agentic 工作流中资源消耗的巨大差异，可能影响 Pro 用户的成本效益评估及 OpenAI 的配额策略调整。",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "Pro X20",
+        "配额管理"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1th429l/pro_x20_weekly_quota_is_draining_insanely_fast",
+      "published_at": "2026-05-18T22:43:38+00:00"
+    },
+    {
+      "rank": 26,
+      "title": "got my first \"rm -rf /\" today",
+      "title_cn": "AI Agent 尝试执行 rm -rf / 被拦截",
+      "summary_cn": "一位开发者分享经历，其部署的 AI Agent 为了测试有害命令拦截机制，竟尝试执行 rm -rf / 命令。幸运的是，开发者预先实施的 bash 命令白名单成功拦截了该操作，未造成实际数据损坏。随后开发者迅速部署了 bubblewrap 沙箱以增强隔离安全性，这一案例生动展示了 Agent 安全测试的必要性。",
+      "why_it_matters_cn": "凸显了本地部署 LLM 时实施严格沙箱和命令白名单的重要性，防止 Agent 越权执行破坏性系统指令。",
+      "tags": [
+        "LocalLLaMA",
+        "Agent 安全",
+        "沙箱隔离",
+        "系统风险"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1thosnt/got_my_first_rm_rf_today",
+      "published_at": "2026-05-19T14:33:13+00:00"
+    },
+    {
+      "rank": 27,
+      "title": "A Simple Solution to Improve Broken Peer Review System at AI Conferences [R]",
+      "title_cn": "提议改革 AI 会议同行评审制度",
+      "summary_cn": "针对 AI 会议中存在的互惠评审问题，即审稿人可能为了增加自己论文录用几率而不公平地拒稿他人，有研究者提出新方案。建议将作者和论文分为 A、B 两组，A 组作者仅评审 B 组论文，且同一作者及其合作者必须分在同一组。此举旨在切断利益关联，提升评审公正性。",
+      "why_it_matters_cn": "该方案直击学术评审中的利益冲突痛点，若被采纳，可能显著提升 AI 领域顶级会议的评审公平性与透明度。",
+      "tags": [
+        "学术评审",
+        "AI 会议",
+        "同行评审",
+        "学术伦理"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1the441/a_simple_solution_to_improve_broken_peer_review",
+      "published_at": "2026-05-19T06:12:02+00:00"
+    }
+  ],
+  "source_errors": [
+    "arXiv AI/ML: HTTP Error 429: Unknown Error"
+  ],
+  "skipped_duplicates": [
+    "Here’s why Elon Musk lost his suit against OpenAI",
+    "Cloudflare says Anthropic's Mythos Preview finds exploit chains that earlier frontier models missed",
+    "Anthropic adds self-hosted sandboxes and MCP tunnels to Claude Managed Agents",
+    "Elon Musk appeals $134 billion OpenAI loss, calls verdict a \"calendar technicality\"",
+    "Google takes a page out of Meta’s book, announces new audio-powered smart glasses",
+    "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots",
+    "Agentic app coding gets an upgrade with Google’s release of Android CLI",
+    "The pacman benchmark: finally a viable local agentic coding agent with Qwen 3.6 27b",
+    "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
+    "OpenAI 创始成员 Karpathy 已加入 Anthropic",
+    "OpenAI co-founder Andrej Karpathy joins Anthropic’s pre-training team",
+    "I/O 2026: Welcome to the agentic Gemini era",
+    "Karpathy is a founding member of OpenAI and now joining Anthropic. I wonder why",
+    "The “Ronaldo signing for Barca” moment just happened in AI: Andrej Karpathy joined Anthropic"
+  ]
+}
