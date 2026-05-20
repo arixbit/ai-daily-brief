@@ -1,0 +1,428 @@
+{
+  "date": "2026-05-21",
+  "generated_at": "2026-05-20T22:31:01.741890+00:00",
+  "title": "2026-05-21 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Deepseek wants to take on Claude Code and OpenAI's Codex with \"Deepseek Code\"",
+      "title_cn": "DeepSeek 组建北京团队开发 DeepSeek Code，剑指 Claude Code 与 Codex",
+      "summary_cn": "DeepSeek 在北京组建新团队开发 AI 代码 agent “DeepSeek Code”，直接对标 Claude Code、Codex 和 Cursor。招聘要求候选人精通 agent loops、MCP 及上下文工程，并重度使用现有编程工具，旨在打造具备竞争力的自主代码生成产品。",
+      "why_it_matters_cn": "标志着中国 AI 巨头在代码 agent 领域发起正面挑战，加剧全球 AI 编程工具竞争，推动底层技术如 MCP 和上下文工程的标准化与应用。",
+      "tags": [
+        "DeepSeek",
+        "AI 编程",
+        "Agent",
+        "竞争格局"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/deepseek-wants-to-take-on-claude-code-and-openais-codex-with-deepseek-code",
+      "published_at": "2026-05-20T18:48:47+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "阿里云峰会：发布「真武 M890」AI 芯片、千问旗舰模型 Qwen3.7-Max 上线",
+      "title_cn": "阿里云峰会发布真武 M890 芯片与 Qwen3.7-Max 模型，展示全栈 AI 实力",
+      "summary_cn": "阿里在云峰会上发布自研 AI 芯片真武 M890 及旗舰模型 Qwen3.7-Max。M890 性能提升三倍，平头哥计划 2027-2028 年推出后续芯片并筹备 IPO。Qwen3.7-Max 盲测国产第一，具备长周期执行能力，将通过百炼平台提供 API。",
+      "why_it_matters_cn": "展示了阿里“芯片-云-模型”全栈自主可控能力，回应企业级 Agent 算力需求，3800 亿投资计划落地，强化国产 AI 基础设施竞争力。",
+      "tags": [
+        "阿里云",
+        "真武 M890",
+        "Qwen3.7-Max",
+        "全栈 AI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tHPBsJSTYV",
+      "published_at": "2026-05-20T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "SpaceX 计划在美国 IPO 后 30 天内收购 AI 编程初创公司 Cursor",
+      "title_cn": "SpaceX 计划 IPO 后 30 天内收购 AI 编程初创公司 Cursor",
+      "summary_cn": "知情人士透露，SpaceX 计划在正式 IPO 满 30 天后推进收购 AI 编程初创公司 Cursor，以提升其 AI 自动化编程实力。若交易失败，SpaceX 需支付 100 亿美元反向分手费，显示其对该交易的强烈决心。",
+      "why_it_matters_cn": "SpaceX 进军 AI 编程领域，通过收购 Cursor 强化自动化能力，巨额分手费条款凸显其战略重视程度，可能重塑航天与 AI 交叉领域格局。",
+      "tags": [
+        "SpaceX",
+        "Cursor",
+        "收购",
+        "AI 编程"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tGtl5awr6Z",
+      "published_at": "2026-05-20T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Presentation: The AI Gateway: Scaling Centralized Inference Across Decentralized Teams",
+      "title_cn": "AI Gateway：在去中心化团队中实现集中式推理扩展的关键控制层",
+      "summary_cn": "Meryem Arik 探讨现代工程团队面临的“推理混乱”问题，指出 AI 模型网关作为关键控制层，能平衡去中心化团队选型自由与集中式安全、RBAC 及成本控制。推荐 LiteLLM 等开源方案优化 AI 基础设施。",
+      "why_it_matters_cn": "解决企业大规模部署 AI 时的治理难题，通过网关实现模型统一管理与成本优化，是构建稳健 AI 基础设施的核心架构模式。",
+      "tags": [
+        "AI Gateway",
+        "推理优化",
+        "基础设施",
+        "LiteLLM"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/presentations/ai-gateway-scalability",
+      "published_at": "2026-05-20T12:40:00+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI claims it solved an 80-year-old math problem — for real this time",
+      "title_cn": "OpenAI 宣称解决 80 年数学难题，此前质疑者此次予以背书",
+      "summary_cn": "OpenAI 声称其推理模型推翻了自 1946 年以来未解的几何猜想。与上次尴尬的虚假声明不同，此次此前曾揭露其错误的数学家们确认了该结果的正确性，标志着 AI 在数学证明领域的重大突破。",
+      "why_it_matters_cn": "AI 在复杂数学证明上获得权威认可，验证了推理模型在科学发现中的潜力，增强了业界对 AI 解决高难度逻辑问题的信心。",
+      "tags": [
+        "OpenAI",
+        "数学证明",
+        "推理模型",
+        "科学突破"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time",
+      "published_at": "2026-05-20T20:28:27+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Google pairs its Genie world model with Street View to create explorable AI worlds based on real places",
+      "title_cn": "Google 结合 Genie 世界模型与街景数据，创建基于真实地点的可探索 AI 世界",
+      "summary_cn": "Google DeepMind 将 Genie 3 世界模型与街景图像连接，用户可在地图上定位并进入基于真实地点生成的可步行 AI 世界。街景数据成为训练 AI agent 和机器人的战略资源，不仅用于创意演示，更服务于实际智能体训练。",
+      "why_it_matters_cn": "将真实世界数据转化为 AI 训练资产，为 Agent 和机器人提供高保真模拟环境，加速具身智能在现实场景中的落地与应用。",
+      "tags": [
+        "Google",
+        "Genie",
+        "街景数据",
+        "AI Agent"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/google-pairs-its-genie-world-model-with-street-view-to-create-explorable-ai-worlds-based-on-real-places",
+      "published_at": "2026-05-20T11:30:28+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "title_cn": "OpenAI 模型推翻离散几何核心猜想",
+      "summary_cn": "OpenAI 模型成功解决了困扰学界 80 年的单位距离问题，推翻了离散几何领域的一项主要猜想。这一突破不仅解决了长期未决的数学难题，更标志着 AI 驱动数学研究取得了里程碑式的进展，展示了大模型在复杂逻辑推理和形式化证明方面的强大潜力。",
+      "why_it_matters_cn": "证明 AI 具备解决高难度数学问题的能力，可能加速科学发现进程，并推动数学研究范式的根本性转变。",
+      "tags": [
+        "OpenAI",
+        "数学研究",
+        "离散几何"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "published_at": "2026-05-20T00:00:00+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Anthropic will pay xAI $1.25B per month for compute",
+      "title_cn": "Anthropic 每月支付 xAI 12.5 亿美元算力费用",
+      "summary_cn": "Elon Musk 旗下的 xAI 与 Anthropic 达成重磅交易，后者将每月支付 12.5 亿美元购买算力。这一合作令业界震惊，揭示了顶级 AI 公司对底层基础设施的巨大需求，也反映了当前 AI 竞赛中算力资源的稀缺性与高昂成本。",
+      "why_it_matters_cn": "凸显算力成为 AI 行业核心瓶颈，巨头间的合作与竞争格局正在重塑，基础设施成本成为关键竞争要素。",
+      "tags": [
+        "Anthropic",
+        "xAI",
+        "算力基础设施"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute",
+      "published_at": "2026-05-20T21:29:22+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "How fast is 10 tokens per second really?",
+      "title_cn": "每秒 10 个 token 的实际速度体验",
+      "summary_cn": "Simon Willison 分享了一个由 Mike Veerman 开发的 HTML 应用，可模拟从每秒 5 到 800 个 token 的 LLM 输出速度。该工具帮助用户直观理解“每秒 30 个 token”等营销术语的实际阅读体验，消除对模型响应速度的认知偏差。",
+      "why_it_matters_cn": "帮助用户理性评估模型性能指标，避免被营销话术误导，提升对生成式 AI 实际使用体验的预期管理。",
+      "tags": [
+        "LLM",
+        "用户体验",
+        "Token 速度"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/20/tokens-per-second",
+      "published_at": "2026-05-20T17:57:45+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "huggingface/transformers: Release v5.9.0",
+      "title_cn": "Hugging Face Transformers 发布 v5.9.0 版本",
+      "summary_cn": "Hugging Face 发布 Transformers v5.9.0，新增 Cohere2Moe Command A+ 模型。该模型采用混合专家（MoE）架构，结合滑动窗口与全注意力层，支持共享与路由专家，具备超大上下文窗口，能高效处理长文本序列。",
+      "why_it_matters_cn": "MoE 架构的普及将提升模型效率与上下文处理能力，为开发者提供更强大、灵活的开源模型选择。",
+      "tags": [
+        "Transformers",
+        "Cohere",
+        "MoE 架构"
+      ],
+      "source": "GitHub Releases - Transformers",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.9.0",
+      "published_at": "2026-05-20T14:12:54+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "Re. what ever happened to Cohere’s Command-A series of models?",
+      "title_cn": "Cohere 推出高效 MoE 模型 Command A+",
+      "summary_cn": "Cohere 联合创始人 Nick Frosst 在 Reddit 宣布推出 Command A+ 模型。这是 Cohere 首款混合专家（MoE）模型，旨在提供更高效率与更强性能。此前公司曾暗示正在幕后开发更强大的开放权重模型，此次发布兑现了承诺。",
+      "why_it_matters_cn": "Cohere 进入 MoE 赛道，加剧开源模型市场竞争，为开发者提供除 Llama 系列外的新选择。",
+      "tags": [
+        "Cohere",
+        "Command A+",
+        "开源模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://v.redd.it/3ez116nl0d2h1",
+      "published_at": "2026-05-20T21:25:50+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "The next phase of OpenAI’s Education for Countries",
+      "title_cn": "OpenAI 推进国家教育计划新阶段",
+      "summary_cn": "OpenAI 宣布“国家教育计划”进入新阶段，通过建立新合作伙伴关系、提供教师培训及专用工具，扩大 AI 在学校的应用。此举旨在改善全球学习成果，推动 AI 技术在教育领域的普及与落地，促进教育公平与质量提升。",
+      "why_it_matters_cn": "AI 深入教育领域将重塑教学范式，OpenAI 的举措可能加速全球教育体系的数字化与智能化转型。",
+      "tags": [
+        "OpenAI",
+        "教育科技",
+        "AI 普及"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "published_at": "2026-05-20T00:00:00+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "Quoting SpaceX S-1",
+      "title_cn": "SpaceX 向 Anthropic 提供 AI 算力支持",
+      "summary_cn": "SpaceX 透露其具备支持专有 AI 应用（如正在 COLOSSUS II 训练的 Grok 5）及向第三方提供算力的能力。2026 年 5 月，SpaceX 与 Anthropic 签署云服务协议，允许后者访问 COLOSSUS 系列集群的算力资源，标志着航天巨头正式切入 AI 基础设施市场。",
+      "why_it_matters_cn": "SpaceX 入局 AI 算力市场，为 Anthropic 等公司提供基础设施支持，加剧了全球 AI 算力竞争格局，也展示了其从航天向 AI 基础设施领域的战略延伸。",
+      "tags": [
+        "SpaceX",
+        "Anthropic",
+        "AI 算力",
+        "基础设施"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/20/spacex-s1",
+      "published_at": "2026-05-20T22:26:36+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "langchain-ai/langchain: langchain-fireworks==1.4.0",
+      "title_cn": "LangChain 发布 langchain-fireworks 1.4.0 版本",
+      "summary_cn": "LangChain 发布 langchain-fireworks 1.4.0 版本，主要更新包括迁移至 fireworks-ai 1.x SDK，刷新模型配置文件数据。此外，修复了提示词过长时引发 ContextOverflowError 的问题，并更新了 idna 和 langsmith 等依赖库版本，提升了稳定性。",
+      "why_it_matters_cn": "该更新优化了 LangChain 与 Fireworks AI 的集成体验，解决了长上下文处理的错误问题，有助于开发者更稳定地使用 Fireworks 模型进行应用开发。",
+      "tags": [
+        "LangChain",
+        "Fireworks",
+        "SDK 更新",
+        "开发者工具"
+      ],
+      "source": "GitHub Releases - LangChain",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.0",
+      "published_at": "2026-05-20T21:57:13+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "Waiting on Qwen to drop those 3.7 models be like:",
+      "title_cn": "社区热切期待 Qwen 发布 3.7 系列新模型",
+      "summary_cn": "Reddit LocalLLaMA 社区用户通过幽默的 GIF 图表达对 Qwen 3.7 系列新模型发布的急切期待。用户特别希望看到 27b 和 122b 参数规模的模型，并调侃希望看到“水豚”形象的出现，反映了开源社区对阿里通义千问新模型的高度关注与热情。",
+      "why_it_matters_cn": "社区的高期待值反映了 Qwen 在开源 LLM 领域的强劲影响力，新模型的发布将直接影响开源生态的竞争格局及开发者的选择。",
+      "tags": [
+        "Qwen",
+        "开源模型",
+        "社区动态",
+        "LLM"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/xy1bw1q2hb2h1.gif",
+      "published_at": "2026-05-20T16:11:35+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "How Ramp engineers accelerate code review with Codex",
+      "title_cn": "Ramp 利用 Codex 加速代码审查流程",
+      "summary_cn": "OpenAI 案例研究显示，Ramp 工程师利用 Codex 结合 GPT-5.5 进行代码审查。通过这一工具，团队能够在几分钟内获得实质性反馈，而非传统的数小时，从而显著加速了代码改进和发布流程，提升了工程效率。",
+      "why_it_matters_cn": "展示了 Codex 在实际企业工作流中的落地价值，证明 AI 辅助代码审查能大幅缩短反馈周期，提升软件开发效率和质量。",
+      "tags": [
+        "Codex",
+        "GPT-5.5",
+        "代码审查",
+        "开发效率"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/ramp",
+      "published_at": "2026-05-20T00:00:00+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "How competitive are PhD admissions currently [D]",
+      "title_cn": "机器学习 PhD 申请竞争现状讨论",
+      "summary_cn": "Reddit MachineLearning 社区讨论当前机器学习 PhD 申请的竞争激烈程度。用户询问进入中等梯队项目（定期在受尊重期刊发表）的要求，以及不同地区（如美国、欧洲）的差异。有用户考虑通过无偿研究项目扩展人脉以提升竞争力。",
+      "why_it_matters_cn": "反映了当前 AI 领域顶尖学术职位的高门槛和激烈竞争，为即将完成硕士学业的学生提供了关于学术路径规划和背景提升的重要参考。",
+      "tags": [
+        "PhD 申请",
+        "机器学习",
+        "学术竞争",
+        "职业规划"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1tiw739/how_competitive_are_phd_admissions_currently_d",
+      "published_at": "2026-05-20T19:28:29+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "AI server under 5k?",
+      "title_cn": "5000 美元预算下的 AI 服务器构建咨询",
+      "summary_cn": "Reddit LocalLLaMA 用户咨询如何在 5000 美元预算内构建 AI 服务器。用户目前使用 128GB 内存和 3080 12GB 显卡运行 Qwen 7b，希望从台式机迁移至机架式服务器。社区讨论在预算限制下是选择专用服务器还是继续升级工作站。",
+      "why_it_matters_cn": "体现了个人开发者和小型团队在本地部署大模型时对成本效益的考量，反映了硬件升级路径和预算约束下的技术选型困境。",
+      "tags": [
+        "硬件配置",
+        "本地部署",
+        "服务器",
+        "预算规划"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tirzfm/ai_server_under_5k",
+      "published_at": "2026-05-20T17:06:50+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "Qwen 3.6 35B GGUF: NTP vs MTP quantization results across GPUs and CPUs",
+      "title_cn": "Qwen 3.6 35B GGUF：NTP 与 MTP 量化在 GPU 和 CPU 上的对比结果",
+      "summary_cn": "ByteShape 发布了 Qwen 3.6 35B 的 GGUF 量化版本，包含标准 NTP 和 MTP 两种系列。测试显示，对于 NTP 模型，“选择能容纳的最大量化版本”策略效果出奇地好。相比之下，较低的比特每字（bpw）在 MTP 中表现各异，为本地部署提供了新的量化选择参考。",
+      "why_it_matters_cn": "为本地运行大型 MoE 模型提供了具体的量化策略指导，帮助用户在显存限制下平衡性能与质量。",
+      "tags": [
+        "Qwen",
+        "GGUF",
+        "量化",
+        "本地部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/xjctv0okab2h1.png",
+      "published_at": "2026-05-20T15:42:29+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "AMD Ryzen AI Halo PC will cost 3999$ with 128GB memory on board",
+      "title_cn": "AMD Ryzen AI Halo PC 定价 3999 美元，板载 128GB 内存",
+      "summary_cn": "AMD 宣布其 Ryzen AI Halo PC 的售价为 3999 美元，该设备板载 128GB 内存。这一配置旨在满足本地运行大型 AI 模型的需求，通过大容量内存支持复杂的推理任务，展示了高端 AI PC 在硬件规格上的最新进展。",
+      "why_it_matters_cn": "大容量内存 AI PC 的定价策略将影响消费者选择，推动本地大模型推理硬件市场的竞争。",
+      "tags": [
+        "AMD",
+        "AI PC",
+        "硬件",
+        "内存"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://videocardz.com/newz/amd-ryzen-ai-halo-pc-will-cost-3999-with-128gb-memory-on-board",
+      "published_at": "2026-05-20T14:35:47+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "RTX 5080 16GB: Qwen3.6 35B MoE at 128k context — 56 tok/s, and why MTP doesn't help",
+      "title_cn": "RTX 5080 16GB 运行 Qwen3.6 35B MoE：128k 上下文下 56 tok/s，MTP 无效",
+      "summary_cn": "在 RTX 5080 上测试 Qwen3.6 35B MoE，使用 Q4_K_XL 量化并在 128k 上下文下实现 56 tok/s 生成速度。研究发现，在此长上下文场景下，MTP（多令牌预测）并未带来性能提升，两者收敛至相同瓶颈，提示长上下文推理的优化方向。",
+      "why_it_matters_cn": "揭示了长上下文下 MTP 技术的局限性，为开发者优化 agent 推理速度提供了重要基准数据。",
+      "tags": [
+        "RTX 5080",
+        "Qwen",
+        "MTP",
+        "性能测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tiixql/rtx_5080_16gb_qwen36_35b_moe_at_128k_context_56",
+      "published_at": "2026-05-20T11:33:58+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "Qwen will release another 27B with high probability",
+      "title_cn": "Qwen 极有可能发布另一款 27B 模型",
+      "summary_cn": "社区消息指出，Qwen 团队极有可能发布一款 27B 参数规模的模型。目前官方正在等待确切的路由图发布，相关讨论在社交媒体上引发广泛关注。这一预测基于对现有模型系列布局的分析，可能填补特定性能区间的空白。",
+      "why_it_matters_cn": "新模型发布将丰富开源模型生态，为开发者提供更多中等规模模型的选择。",
+      "tags": [
+        "Qwen",
+        "模型发布",
+        "开源",
+        "预测"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/g5uabdvdic2h1.jpeg",
+      "published_at": "2026-05-20T19:44:24+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "HuggingFace benchmark datasets now let you filter by model size",
+      "title_cn": "HuggingFace 基准数据集现支持按模型大小筛选",
+      "summary_cn": "HuggingFace 更新了其基准数据集功能，现在允许用户按模型大小进行筛选。这一改进使得开发者能够更便捷地查找在特定参数规模（如 32B 以下）下表现最佳的模型，例如在 swebenchverified 等基准测试中的排名，提升了资源检索效率。",
+      "why_it_matters_cn": "简化了模型选型流程，帮助开发者快速找到适合特定硬件约束的高性能模型。",
+      "tags": [
+        "HuggingFace",
+        "基准测试",
+        "工具",
+        "模型选型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/tkn4s42soa2h1.png",
+      "published_at": "2026-05-20T13:33:38+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "Formal Verification Gates for AI Coding Loops",
+      "title_cn": "AI 编码循环的形式验证门控机制",
+      "summary_cn": "文章探讨了在 AI 编码循环中引入形式验证门控（Formal Verification Gates）的重要性。研究表明，结构性的背压机制（structural backpressure）比单纯追求更聪明的 agent 更能有效保证代码质量和安全性，为构建可靠的 AI 编程工具提供了新思路。",
+      "why_it_matters_cn": "强调了通过形式验证提升 AI 编程可靠性的价值，优于单纯依赖模型智能的优化路径。",
+      "tags": [
+        "AI 编程",
+        "形式验证",
+        "Agent",
+        "安全性"
+      ],
+      "source": "Hacker News Agents",
+      "url": "https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents",
+      "published_at": "2026-05-20T15:25:45+00:00"
+    },
+    {
+      "rank": 25,
+      "title": "Machine Learning on Spherical Manifold [R]",
+      "title_cn": "球面流形上的机器学习研究笔记",
+      "summary_cn": "一位受几何深度学习著作启发的研究者，为避免盲目开发，决定撰写技术博客记录学习过程。首篇笔记探讨了球面流形上的机器学习基础，并公开征集该领域的前沿开放问题及研究建议，旨在明确后续项目方向。",
+      "why_it_matters_cn": "反映了开发者对几何深度学习（GDL）落地应用的务实态度，有助于社区聚焦核心难题，推动非欧几里得数据处理的理论研究与工程实践结合。",
+      "tags": [
+        "几何深度学习",
+        "球面流形",
+        "开源研究"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://eesuck1.github.io/machine-learning-on-spherical-manifold",
+      "published_at": "2026-05-20T08:13:57+00:00"
+    },
+    {
+      "rank": 26,
+      "title": "“AI vs Creativity” from ‘GTA’ (TakeTwo) CEO",
+      "title_cn": "GTA CEO 论 AI 与创造力的博弈",
+      "summary_cn": "Take-Two 互动软件（GTA 开发商）CEO 在 Reddit 上引发热烈讨论，话题聚焦于人工智能与人类创造力的关系。该视频或帖子获得了近两千点赞及数百条评论，显示了游戏行业高管对 AI 冲击创意产业的深刻见解。",
+      "why_it_matters_cn": "游戏巨头高管的观点揭示了娱乐产业对 AI 替代人类创意的担忧与思考，反映了科技与艺术边界模糊背景下，行业领袖对内容生成未来的战略考量。",
+      "tags": [
+        "AI 与创意",
+        "游戏产业",
+        "Take-Two"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://v.redd.it/jnstr19gs62h1",
+      "published_at": "2026-05-20T00:26:28+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "谷歌 Gemini 3.5 Pro 模型官宣下月登场：已在内部使用，进步超强",
+    "Designing a Multi-Agent System for Engineering Support at Scale: A Case Study From Grab",
+    "Google's Gemini 3.5 Flash follows Anthropic and OpenAI in making newer AI models significantly pricier",
+    "Gemini 3.5 flags vs gpt 5.5 ?? What's your opinion on it",
+    "How an Anthropic sales leader uses Claude Cowork to run a 4,000-account book",
+    "Using Claude Code: The unreasonable effectiveness of HTML",
+    "Google I/O, Gemini Spark, Antigravity",
+    "llm-gemini 0.32",
+    "Gemini 3.5 Flash: more expensive, but Google plan to use it for everything"
+  ]
+}
