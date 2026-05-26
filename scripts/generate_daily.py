@@ -39,6 +39,7 @@ DEFAULT_LLM_ATTEMPTS = 2
 DEFAULT_OPENAI_MAX_TOKENS = 4096
 DEFAULT_SOURCE_SUMMARY_CHARS = 500
 MAX_DAILY_ITEMS = 100
+LLM_CONFIG: dict[str, Any] = {}
 
 
 @dataclass(frozen=True)
@@ -1111,18 +1112,46 @@ def positive_int_env(name: str, default: int) -> int:
     return value if value > 0 else default
 
 
+def configure_llm(config: dict[str, Any]) -> None:
+    """Load optional LLM settings from project config."""
+
+    global LLM_CONFIG
+    llm_config = config.get("llm")
+    LLM_CONFIG = llm_config if isinstance(llm_config, dict) else {}
+
+
+def llm_string_setting(config_key: str, env_name: str, default: str) -> str:
+    """Read a string LLM setting from project config, then environment."""
+
+    value = LLM_CONFIG.get(config_key)
+    if value is not None and str(value).strip():
+        return str(value).strip()
+    return os.environ.get(env_name, default)
+
+
+def llm_positive_int_setting(config_key: str, env_name: str, default: int) -> int:
+    """Read a positive integer LLM setting from project config, then environment."""
+
+    value = LLM_CONFIG.get(config_key)
+    try:
+        parsed = int(str(value).strip()) if value is not None else 0
+    except ValueError:
+        parsed = 0
+    return parsed if parsed > 0 else positive_int_env(env_name, default)
+
+
 def llm_chat(messages: list[dict[str, str]], timeout: int | None = None) -> str:
     """Call an OpenAI-compatible chat completions endpoint."""
 
-    base_url = os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:12345/v1").rstrip("/")
+    base_url = llm_string_setting("base_url", "OPENAI_BASE_URL", "http://127.0.0.1:12345/v1").rstrip("/")
     api_key = os.environ.get("OPENAI_API_KEY", "smartisan")
-    model = os.environ.get("OPENAI_MODEL", DEFAULT_OPENAI_MODEL)
-    request_timeout = timeout or positive_int_env("OPENAI_TIMEOUT_SECONDS", 240)
+    model = llm_string_setting("model", "OPENAI_MODEL", DEFAULT_OPENAI_MODEL)
+    request_timeout = timeout or llm_positive_int_setting("timeout_seconds", "OPENAI_TIMEOUT_SECONDS", 240)
     payload: dict[str, Any] = {
         "model": model,
         "messages": messages,
         "temperature": 0.2,
-        "max_tokens": positive_int_env("OPENAI_MAX_TOKENS", DEFAULT_OPENAI_MAX_TOKENS),
+        "max_tokens": llm_positive_int_setting("max_tokens", "OPENAI_MAX_TOKENS", DEFAULT_OPENAI_MAX_TOKENS),
     }
     if "127.0.0.1" in base_url or "localhost" in base_url:
         payload["chat_template_kwargs"] = {"enable_thinking": False}
@@ -1558,6 +1587,7 @@ def main(argv: list[str]) -> int:
     load_env(ROOT / ".env")
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
+    configure_llm(config)
     items, errors, skipped_duplicates = collect_items(config, args.output, args.date)
     if not items:
         if not should_allow_empty_historical(config, args.date):

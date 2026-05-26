@@ -3,6 +3,12 @@
   "min_items": 10,
   "daily_cutoff_time": "06:30",
   "timezone_offset": "+08:00",
+  "llm": {
+    "base_url": "http://127.0.0.1:12345/v1",
+    "model": "Qwen3.6-27B-Omnimerge-v4-MLX-4bit",
+    "timeout_seconds": 240,
+    "max_tokens": 4096
+  },
   "fallback_lookback_hours": 72,
   "history_dedupe_days": 14,
   "empty_historical_after_days": 3,
