@@ -1,0 +1,389 @@
+{
+  "date": "2026-05-26",
+  "generated_at": "2026-05-26T01:19:07.062594+00:00",
+  "title": "2026-05-26 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "谷歌 CEO 最新访谈：谷歌多模态能力领先，但 Coding 确实落后了",
+      "title_cn": "谷歌 CEO：多模态领先，Coding 落后，AGI 加速到来",
+      "summary_cn": "谷歌 CEO Sundar Pichai 表示，谷歌在多模态和通用推理上领先，但在代理式编程和指令遵循上暂时落后，正全力追赶。新模型 Gemini 3.5 Flash 存在性能问题将修复。谷歌不会激进切换搜索至全 AI 模式，智能体产品 Spark 计划夏季发布，并向竞争对手开放 TPU 算力。",
+      "why_it_matters_cn": "揭示了科技巨头在 AI 竞赛中的真实短板与战略调整，明确了搜索业务与智能体产品的演进路径，对行业竞争格局有重要影响。",
+      "tags": [
+        "谷歌",
+        "Gemini",
+        "AGI",
+        "智能体"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tPqIEBV3E8",
+      "published_at": "2026-05-25T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Microsoft Introduces MDASH for Large-Scale AI Vulnerability Research",
+      "title_cn": "微软推出 MDASH：大规模 AI 漏洞研究平台",
+      "summary_cn": "微软推出名为 MDASH 的 AI 驱动漏洞发现系统，这是一个多模型代理安全平台，旨在自动化 Windows 等环境的大规模代码审计。该系统结合超过 100 个专用 AI agent，协同扫描、验证、辩论并证明复杂代码库中的漏洞，提升安全性。",
+      "why_it_matters_cn": "展示了 AI agent 在网络安全领域的深度应用，通过自动化大规模代码审计，显著提升了软件漏洞发现的效率与准确性。",
+      "tags": [
+        "微软",
+        "AI 安全",
+        "MDASH",
+        "漏洞研究"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/microsoft-mdash",
+      "published_at": "2026-05-25T16:30:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "谷歌重拳治理「AI 投毒」：GEO 垃圾内容将遭降权与移除",
+      "title_cn": "谷歌重拳治理 AI 投毒：GEO 垃圾内容遭降权",
+      "summary_cn": "谷歌发布新治理准则，将生成式引擎优化（GEO）中的恶意操纵归为垃圾内容，以应对 AI 投毒问题。采取降权、移除、封禁三重措施。业内认为此举治标难治本，未来 SEO 重心将转向证明内容可信度，搜索引擎需在灵活性与纯净间平衡。",
+      "why_it_matters_cn": "标志着搜索引擎对抗 AI 生成虚假信息的升级，直接影响内容创作者策略，推动 SEO 向可信度验证转型，重塑信息生态。",
+      "tags": [
+        "谷歌搜索",
+        "AI 投毒",
+        "GEO",
+        "内容治理"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tQ01HMKcxX",
+      "published_at": "2026-05-25T22:29:00+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "George Hotz says coding agents will be \"one of the most costly mistakes\" in software development",
+      "title_cn": "George Hotz：编码 Agent 将是软件开发最昂贵错误",
+      "summary_cn": "程序员 George Hotz 警告，AI 编码 agent 将成为行业最昂贵的错误之一。经过六个月测试，他认为 LLM 虽能快速生成原型，但在细节上容易出错，产生的 bug 越来越难发现。这反映了 AI 社区对 LLM 在软件开发中角色的深刻分歧。",
+      "why_it_matters_cn": "来自知名开发者的尖锐批评，揭示了当前 AI 编码工具在可靠性上的隐患，引发对过度依赖 AI 进行软件开发的反思。",
+      "tags": [
+        "George Hotz",
+        "编码 Agent",
+        "LLM",
+        "软件开发"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/george-hotz-says-coding-agents-will-be-one-of-the-most-costly-mistakes-in-software-development",
+      "published_at": "2026-05-25T09:05:34+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Gemma 4 Multi-Token Prediction Delivers Up to ~3x Faster Token Generation",
+      "title_cn": "Gemma 4 多 Token 预测实现 3 倍生成加速",
+      "summary_cn": "Gemma 4 模型可结合多 Token 预测（MTP）草稿器，利用投机解码技术并行生成多个 token，并在单次传递中验证，从而实现高达约 3 倍的推理速度提升，且无质量损失。这一技术显著优化了模型生成效率。",
+      "why_it_matters_cn": "展示了开源模型在推理速度上的重大突破，通过投机解码技术大幅降低延迟，提升了 AI 应用的实时响应能力。",
+      "tags": [
+        "Gemma 4",
+        "多 Token 预测",
+        "推理加速",
+        "投机解码"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/05/gemma4-multi-token-prediction",
+      "published_at": "2026-05-25T09:00:00+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+      "title_cn": "OpenAI 与巴西媒体集团达成内容合作",
+      "summary_cn": "OpenAI 与 Grupo Folha 和 Grupo UOL 宣布建立战略合作伙伴关系，将可信的巴西新闻内容引入 ChatGPT。此举旨在扩大新闻访问权限，同时确保内容的归属权和透明度，提升 AI 生成内容的可信度。",
+      "why_it_matters_cn": "体现了 AI 公司与传统媒体在内容可信度上的合作趋势，有助于解决 AI 幻觉问题，增强用户对 AI 新闻服务的信任。",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "媒体合作",
+        "内容可信度"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+      "published_at": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Google Deepmind's AlphaProof Nexus solves decades-old math problems for a few hundred dollars",
+      "title_cn": "Google DeepMind AlphaProof Nexus 以低成本解决数十年数学难题",
+      "summary_cn": "Google DeepMind 的 AlphaProof Nexus 自主解决了九个未解的 Erdős 问题，其中包括困扰数学家 56 年的难题。该系统使用 Lean 编译器自动验证每一步证明，推理成本仅几百美元。尽管整体成功率仅为 2.5%，但这标志着 AI 在形式化数学证明领域的重大突破，展示了其在解决复杂逻辑问题上的潜力。",
+      "why_it_matters_cn": "这证明了 AI 在形式化数学领域的巨大潜力，可能加速数学研究进程，并为科学发现提供新的自动化验证工具。",
+      "tags": [
+        "Google DeepMind",
+        "AlphaProof",
+        "数学证明",
+        "AI 研究"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars",
+      "published_at": "2026-05-25T10:41:19+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+      "title_cn": "Hugging Face 发布 AI Agent 术语指南：Harness、Scaffold 等",
+      "summary_cn": "Hugging Face 博客发布了一篇关于 AI Agent 术语的指南，重点解释了 Harness、Scaffold 等关键概念。随着 AI Agent 技术的快速发展，统一和明确这些术语对于开发者社区至关重要，有助于减少沟通误解，促进工具链的标准化和互操作性，推动整个生态系统的健康发展。",
+      "why_it_matters_cn": "统一 AI Agent 术语有助于消除社区沟通障碍，促进工具标准化，加速开发者构建和集成智能体应用。",
+      "tags": [
+        "Hugging Face",
+        "AI Agent",
+        "术语定义",
+        "开发者工具"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/agent-glossary",
+      "published_at": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Update on 12x32gb sxm v100 cluster / local AI for legal drafting",
+      "title_cn": "律师使用 12 块 V100 集群和 Claude Code 进行本地法律起草",
+      "summary_cn": "一位律师分享了其使用 12 块 V100-SXM2 32GB GPU 和 Threadripper Pro 构建的本地 AI 集群进展。他通过 Claude Code 驱动整个流程，成功实现了本地法律文档起草。尽管他自认并非技术专家，但该配置已稳定运行，展示了本地部署大模型在专业垂直领域落地的可行性。",
+      "why_it_matters_cn": "展示了非技术人员利用本地高性能硬件和 AI 工具解决专业领域问题的实际案例，推动了 AI 在垂直行业的落地。",
+      "tags": [
+        "本地部署",
+        "V100",
+        "Claude Code",
+        "法律科技"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://i.redd.it/4h07vk82uc3h1.jpeg",
+      "published_at": "2026-05-25T21:50:30+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "Norway's 2 petabytes of Huawei flash storage and LLM training",
+      "title_cn": "挪威使用 2PB 华为闪存存储进行 LLM 训练",
+      "summary_cn": "据报道，挪威正在利用 2PB 的华为闪存存储系统进行大语言模型（LLM）的训练。这一举措引发了关于全球 AI 基础设施供应链多样性的讨论，特别是在地缘政治背景下，使用非美国主导的硬件进行前沿 AI 训练可能带来的技术自主性和供应链安全影响。",
+      "why_it_matters_cn": "反映了全球 AI 基础设施供应链的多元化趋势，凸显了地缘政治对 AI 硬件选择和训练生态的影响。",
+      "tags": [
+        "华为",
+        "LLM 训练",
+        "AI 基础设施",
+        "供应链"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
+      "published_at": "2026-05-25T19:37:57+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "Server build for local inference. 128 gb 3200 or 256 gb 2133mhz RAM?",
+      "title_cn": "本地推理服务器构建：128GB 3200MHz 还是 256GB 2133MHz RAM？",
+      "summary_cn": "Reddit 用户讨论为双 RTX 3090 构建本地推理服务器的内存选择。在 Epyc 7642 平台上，用户纠结于选择 128GB 3200MHz 还是更便宜的 256GB 2133MHz 内存。讨论焦点在于运行如 Qwen 3.5 397B 等 Mixture of Experts (MoE) 模型时，内存容量与速度之间的权衡，以及使用系统内存加载模型的价值。",
+      "why_it_matters_cn": "反映了本地运行超大参数模型时，硬件配置中内存容量与速度权衡的实际工程挑战。",
+      "tags": [
+        "本地推理",
+        "硬件配置",
+        "MoE 模型",
+        "RTX 3090"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tnixkl/server_build_for_local_inference_128_gb_3200_or",
+      "published_at": "2026-05-25T19:16:18+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "The famous METR AI time horizons graph contains numerous severe errors [D]",
+      "title_cn": "METR AI 时间跨度图表存在严重错误，结论不可靠",
+      "summary_cn": "NYU Stern 的研究人员指出著名的 METR AI 时间跨度图表存在严重错误。文章批评 METR 的 Long Tasks 基准测试存在诸多缺陷，且这些缺陷可能以不可预测的方式相互叠加，导致无法从中得出有意义的结论。这一批评引发了社区对 AI 能力评估基准测试可靠性的广泛讨论。",
+      "why_it_matters_cn": "质疑了广泛引用的 AI 能力评估基准的可靠性，提醒社区在解读 AI 进展数据时需保持谨慎。",
+      "tags": [
+        "METR",
+        "AI 评估",
+        "基准测试",
+        "研究争议"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://old.reddit.com/r/MachineLearning/comments/1tnhnh5/the_famous_metr_ai_time_horizons_graph_contains",
+      "published_at": "2026-05-25T18:30:21+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "AI content detector based on Qwen 0.8b fine-tuned on Pangram dataset",
+      "title_cn": "基于 Qwen 0.8B 微调的 AI 内容检测器",
+      "summary_cn": "开发者利用 Pangram 数据集微调 Qwen 3.5 0.8B 模型，推出 Chrome 扩展程序。用户选中文字即可在 1 秒内获取 AI 生成概率分布。相比 Pangram 发布的 Llama 3.2 3B 模型，该轻量级模型在本地运行速度更快，适合实时检测需求。",
+      "why_it_matters_cn": "展示了小模型在垂直领域的高效应用，为本地化、低延迟的 AI 内容检测提供了低成本且实用的解决方案。",
+      "tags": [
+        "Qwen",
+        "AI 检测",
+        "本地部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://v.redd.it/h0w2t67xkb3h1",
+      "published_at": "2026-05-25T17:52:16+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "What ClickUp’s mass layoff tells us about the future of work",
+      "title_cn": "ClickUp 大规模裁员揭示工作未来",
+      "summary_cn": "成立九年的初创公司 ClickUp 宣布大规模裁员，计划用数千个 AI agent 取代数百名员工。这一举动被视为企业利用人工智能重构工作流程、降低人力成本的极端案例，引发了关于自动化替代人类工作的广泛讨论。",
+      "why_it_matters_cn": "标志着 AI agent 从辅助工具向核心生产力转变，预示企业可能通过大规模自动化重塑组织结构。",
+      "tags": [
+        "AI Agent",
+        "裁员",
+        "未来工作"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work",
+      "published_at": "2026-05-25T16:00:00+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "The pope’s AI encyclical isn’t really about AI",
+      "title_cn": "教皇 AI 通谕实则关注权力集中",
+      "summary_cn": "利奥十四世教皇的首篇通谕虽以 AI 为题，实则借 AI 之镜审视更深层的社会问题：权力过度集中、民主侵蚀以及科技精英利用技术优势塑造世界。文章指出 AI 只是表象，核心在于技术对社会结构的冲击。",
+      "why_it_matters_cn": "超越了技术本身，从伦理和社会治理角度审视 AI 影响，提醒公众关注技术背后的权力分配问题。",
+      "tags": [
+        "AI 伦理",
+        "社会影响",
+        "科技治理"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai",
+      "published_at": "2026-05-25T15:09:41+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "Is Qwen3.6 current king for local agentic use?",
+      "title_cn": "Qwen3.6 是否为本地 Agent 之王？",
+      "summary_cn": "Reddit 用户测试发现，Qwen3.6 35B A3B 模型在本地 Agent 应用中表现卓越，远超 Gemma4 和 GLM 4.7 Flash。其他模型常出现循环或工具调用错误，而 Qwen3.6 在 Unsloth 量化下表现稳定，成为当前本地 Agent 首选。",
+      "why_it_matters_cn": "确立了 Qwen 系列在本地 Agent 领域的领先地位，为开发者选择高效、稳定的本地模型提供了重要参考。",
+      "tags": [
+        "Qwen3.6",
+        "本地 Agent",
+        "模型评测"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use",
+      "published_at": "2026-05-25T15:09:33+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "the people saying AI makes you stupider are already missing the point",
+      "title_cn": "AI 让人变笨的观点误解了重点",
+      "summary_cn": "Reddit 用户反驳“AI 让人变笨”的观点，认为这如同说计算器让人数学变差。关键在于使用方式：若仅复制粘贴则无益，但作为对话伙伴，通过多方式解释直至理解，AI 能显著提升学习效率，促进深度思考。",
+      "why_it_matters_cn": "纠正了对 AI 教育应用的误解，强调了主动学习和批判性思维在使用 AI 过程中的重要性。",
+      "tags": [
+        "AI 教育",
+        "批判性思维",
+        "学习工具"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1tneg6e/the_people_saying_ai_makes_you_stupider_are",
+      "published_at": "2026-05-25T16:37:03+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "How local AI improved your live?",
+      "title_cn": "本地 AI 如何改善你的生活？",
+      "summary_cn": "Reddit 社区分享本地 AI 应用案例，包括家庭助手、心理帮助、本地编码和深度研究。一位用户正在开发本地健康追踪器，将血液检查 PDF 转化为结构化数据，用于分析追踪各项指标，保护隐私的同时提升生活质量。",
+      "why_it_matters_cn": "展示了本地 AI 在个人隐私保护和个性化服务方面的巨大潜力，推动了 AI 在日常生活中的落地应用。",
+      "tags": [
+        "本地 AI",
+        "隐私保护",
+        "生活应用"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tn5vmf/how_local_ai_improved_your_live",
+      "published_at": "2026-05-25T11:06:05+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "OpenAI is paying people in NYC to install 360-degree cameras in their homes that record everything. Vacuuming, washing dishes, cooking, etc.",
+      "title_cn": "OpenAI 付费让纽约居民家中安装 360 度监控摄像头",
+      "summary_cn": "据报道，OpenAI 正在向纽约市居民支付费用，以在其家中安装 360 度摄像头。这些设备将全天候记录包括吸尘、洗碗和烹饪在内的所有日常活动。此举引发了关于隐私侵犯和数据收集的广泛争议，显示了科技巨头在数据获取上的激进策略。",
+      "why_it_matters_cn": "此举凸显了 AI 公司在数据收集上的激进策略，引发了严重的隐私担忧。它可能成为未来智能家居监控和数据滥用的先例，对公众信任造成冲击。",
+      "tags": [
+        "OpenAI",
+        "隐私争议",
+        "数据收集"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://i.redd.it/ul2r26m1983h1.png",
+      "published_at": "2026-05-25T06:25:28+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp",
+      "title_cn": "llama.cpp 修复检查点创建问题以优化 Agent 上下文",
+      "summary_cn": "llama.cpp 项目合并了修复检查点创建的 Pull Request。该修复旨在解决本地模型在 agentic coding 场景下的上下文优化问题。当 Agent 执行代码生成后，某些工具如 opencode 会修改对话历史以节省 token，导致后续交互出现异常等待。",
+      "why_it_matters_cn": "该修复提升了本地大模型在 Agent 开发中的稳定性。它解决了上下文管理中的关键 Bug，确保开发者在使用本地模型进行自动化编码时能获得更流畅的体验。",
+      "tags": [
+        "llama.cpp",
+        "Agent",
+        "本地模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://github.com/ggml-org/llama.cpp/pull/22929",
+      "published_at": "2026-05-25T06:22:12+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "The Financial Times has published an article about Heretic",
+      "title_cn": "《金融时报》报道 Heretic 工具可快速移除 Llama 安全护栏",
+      "summary_cn": "《金融时报》报道了 Heretic 工具，该工具可在 10 分钟内无需专业硬件即可移除 Meta Llama 3.3 模型的安全护栏。自发布以来，已有超过 3500 个“去审查”模型被创建。这显示了开源模型安全护栏被轻易绕过的风险。",
+      "why_it_matters_cn": "这揭示了开源大模型安全性的脆弱性。即使没有专业硬件，普通用户也能轻松移除安全限制，可能导致有害内容的生成，对 AI 安全治理构成挑战。",
+      "tags": [
+        "Llama",
+        "安全护栏",
+        "开源模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tna22m/the_financial_times_has_published_an_article",
+      "published_at": "2026-05-25T14:00:26+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "NuExtract3 released: open-weight 4B VLM for Markdown, OCR and structured extraction (self-hostable)",
+      "title_cn": "NuExtract3 发布：4B 参数开源 VLM 支持文档结构化提取",
+      "summary_cn": "Numind 发布了基于 Qwen3.5-4B 的开源视觉语言模型 NuExtract3。该模型采用 Apache-2.0 许可证，专注于从 PDF、截图、表格等复杂文档中提取信息并转换为 Markdown。它支持自托管，旨在使信息提取更实用。",
+      "why_it_matters_cn": "该模型为文档处理提供了高效的开源解决方案。其强大的 OCR 和结构化提取能力，使得企业和个人能以低成本实现复杂的文档自动化处理。",
+      "tags": [
+        "VLM",
+        "文档处理",
+        "开源模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/gallery/1tn8utn",
+      "published_at": "2026-05-25T13:14:58+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren't staged demos anymore.",
+      "title_cn": "Figure AI 机器人连续 8 天 24 小时直播分拣包裹",
+      "summary_cn": "Figure AI 进行了为期 8 天的直播，展示其机器人全天候不间断分拣包裹。这不再是精心策划的演示，而是真实的连续作业。直播展示了机器人在长时间运行中的稳定性和可靠性，标志着机器人技术从实验室走向实际应用的重大进展。",
+      "why_it_matters_cn": "这证明了通用机器人在真实工业环境中的可行性。连续 8 天的稳定运行打破了以往演示的局限，预示着物流自动化即将迎来大规模落地。",
+      "tags": [
+        "Figure AI",
+        "机器人",
+        "物流自动化"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://v.redd.it/sgiquoabu93h1",
+      "published_at": "2026-05-25T11:46:27+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "People should understand the basics of how AI works before using it at work",
+      "title_cn": "职场人士应了解 AI 基本原理以避免被误导",
+      "summary_cn": "Reddit 用户分享经历，其团队领导利用 AI 验证对其工作的负面看法，导致其自信心受挫。文章指出，AI 具有主观性，会迎合用户的偏见。人们在使用 AI 辅助工作前，应理解其工作原理，避免被 AI 的“意见”误导。",
+      "why_it_matters_cn": "这提醒职场人士需具备 AI 素养。盲目信任 AI 的输出可能导致错误的判断和人际冲突，理解 AI 的局限性对于正确使用工具至关重要。",
+      "tags": [
+        "AI 素养",
+        "职场",
+        "AI 偏见"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://old.reddit.com/r/OpenAI/comments/1tn0v9e/people_should_understand_the_basics_of_how_ai",
+      "published_at": "2026-05-25T06:38:33+00:00"
+    }
+  ],
+  "source_errors": [
+    "arXiv AI/ML: HTTP Error 429: Unknown Error"
+  ],
+  "skipped_duplicates": [
+    "At the launch of Pope Leo XIV's encyclical, Anthropic co-founder says AI models show signs of introspection",
+    "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+    "datasette 1.0a30",
+    "datasette-agent 0.1a4"
+  ]
+}
