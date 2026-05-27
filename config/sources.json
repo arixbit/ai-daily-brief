@@ -1,6 +1,6 @@
 {
-  "max_items": 20,
-  "min_items": 10,
+  "max_items": 100,
+  "min_items": 20,
   "daily_cutoff_time": "06:30",
   "timezone_offset": "+08:00",
   "llm": {
@@ -12,7 +12,7 @@
   "fallback_lookback_hours": 72,
   "history_dedupe_days": 14,
   "empty_historical_after_days": 3,
-  "default_source_daily_limit": 3,
+  "default_source_daily_limit": 6,
   "default_source_weight": 3,
   "keywords": [
     "ai",
@@ -148,6 +148,171 @@
       "daily_limit": 1,
       "min_points": 80,
       "min_comments": 20
+    },
+    {
+      "name": "Hacker News Agents",
+      "type": "hn_algolia",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=agent&tags=story&hitsPerPage=25",
+      "tier": "community",
+      "weight": 2,
+      "daily_limit": 3,
+      "min_points": 60,
+      "min_comments": 15
+    },
+    {
+      "name": "Hacker News LLM",
+      "type": "hn_algolia",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=LLM&tags=story&hitsPerPage=25",
+      "tier": "community",
+      "weight": 2,
+      "daily_limit": 3,
+      "min_points": 60,
+      "min_comments": 15
+    },
+    {
+      "name": "Reddit LocalLLaMA",
+      "type": "reddit_subreddit",
+      "subreddit": "LocalLLaMA",
+      "sort": "hot",
+      "prefer_json": true,
+      "fetch_limit": 40,
+      "min_score": 80,
+      "min_comments": 20,
+      "tier": "community",
+      "weight": 4,
+      "daily_limit": 8
+    },
+    {
+      "name": "Reddit MachineLearning",
+      "type": "reddit_subreddit",
+      "subreddit": "MachineLearning",
+      "sort": "hot",
+      "prefer_json": true,
+      "fetch_limit": 40,
+      "min_score": 60,
+      "min_comments": 15,
+      "tier": "community",
+      "weight": 4,
+      "daily_limit": 6
+    },
+    {
+      "name": "Reddit OpenAI",
+      "type": "reddit_subreddit",
+      "subreddit": "OpenAI",
+      "sort": "hot",
+      "prefer_json": true,
+      "fetch_limit": 40,
+      "min_score": 80,
+      "min_comments": 20,
+      "tier": "community",
+      "weight": 3,
+      "daily_limit": 6
+    },
+    {
+      "name": "OpenAI News",
+      "type": "feed",
+      "url": "https://openai.com/news/rss.xml",
+      "tier": "official_vendor",
+      "weight": 9,
+      "daily_limit": 4
+    },
+    {
+      "name": "Anthropic News",
+      "type": "feed",
+      "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+      "tier": "official_vendor",
+      "weight": 9,
+      "daily_limit": 4
+    },
+    {
+      "name": "Anthropic Research",
+      "type": "feed",
+      "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml",
+      "tier": "official_vendor",
+      "weight": 9,
+      "daily_limit": 3
+    },
+    {
+      "name": "Claude Blog",
+      "type": "feed",
+      "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml",
+      "tier": "official_vendor",
+      "weight": 8,
+      "daily_limit": 3
+    },
+    {
+      "name": "Google AI Blog",
+      "type": "feed",
+      "url": "https://blog.google/technology/ai/rss/",
+      "tier": "official_vendor",
+      "weight": 8,
+      "daily_limit": 4
+    },
+    {
+      "name": "GitHub Blog AI",
+      "type": "feed",
+      "url": "https://github.blog/ai-and-ml/feed/",
+      "tier": "engineering_media",
+      "weight": 6,
+      "daily_limit": 4
+    },
+    {
+      "name": "Simon Willison",
+      "type": "feed",
+      "url": "https://simonwillison.net/atom/everything/",
+      "tier": "practitioner",
+      "weight": 6,
+      "daily_limit": 4
+    },
+    {
+      "name": "GitHub Releases - Transformers",
+      "type": "github_repo_releases",
+      "owner": "huggingface",
+      "repo": "transformers",
+      "fetch_limit": 10,
+      "tier": "developer_ecosystem",
+      "weight": 6,
+      "daily_limit": 3
+    },
+    {
+      "name": "GitHub Releases - vLLM",
+      "type": "github_repo_releases",
+      "owner": "vllm-project",
+      "repo": "vllm",
+      "fetch_limit": 10,
+      "tier": "developer_ecosystem",
+      "weight": 6,
+      "daily_limit": 3
+    },
+    {
+      "name": "GitHub Releases - Ollama",
+      "type": "github_repo_releases",
+      "owner": "ollama",
+      "repo": "ollama",
+      "fetch_limit": 10,
+      "tier": "developer_ecosystem",
+      "weight": 6,
+      "daily_limit": 3
+    },
+    {
+      "name": "GitHub Releases - LangChain",
+      "type": "github_repo_releases",
+      "owner": "langchain-ai",
+      "repo": "langchain",
+      "fetch_limit": 10,
+      "tier": "developer_ecosystem",
+      "weight": 5,
+      "daily_limit": 2
+    },
+    {
+      "name": "GitHub Releases - MCP Servers",
+      "type": "github_repo_releases",
+      "owner": "modelcontextprotocol",
+      "repo": "servers",
+      "fetch_limit": 10,
+      "tier": "developer_ecosystem",
+      "weight": 5,
+      "daily_limit": 2
     }
   ]
 }

@@ -3,6 +3,11 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
+# Use virtual environment
+if [ -d venv ]; then
+  source venv/bin/activate
+fi
+
 if [ -f .env ]; then
   set -a
   # shellcheck disable=SC1091
@@ -10,7 +15,7 @@ if [ -f .env ]; then
   set +a
 fi
 
-python3 scripts/generate_daily.py "$@"
+python scripts/generate_daily.py "$@"
 
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git add public/data

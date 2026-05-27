@@ -1,0 +1,13 @@
+{
+  "name": "ai-daily-brief",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "xhs:publish": "node scripts/publish_xhs.mjs",
+    "x:auth": "node scripts/x_api_auth.mjs",
+    "x:publish": "node scripts/publish_x_api.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.53.0"
+  }
+}

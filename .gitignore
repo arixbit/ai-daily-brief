@@ -1,7 +1,10 @@
 .env
+.env.example
 .DS_Store
 __pycache__/
 *.pyc
 .venv/
+venv/
 node_modules/
-
+xhs-drafts/
+x-drafts/
