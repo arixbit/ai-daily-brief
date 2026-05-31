@@ -1,0 +1,410 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-05-31T22:31:56.381703+00:00",
+  "title": "2026-06-01 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "How do you handle runaway API costs across multiple OpenAI agents? I built something to solve this",
+      "title_cn": "LedgerAI：解决多 Agent 环境下失控 API 成本问题",
+      "summary_cn": "CS 学生开发了 LedgerAI，这是一个针对 LLM agent 的成本追踪和预算执行层。与大多数在调用后记录成本的工具不同，LedgerAI 在每次 LLM 请求前通过 SDK 命中预算检查端点。如果 agent 超过每日限额，请求将被阻止，从而防止因单个 agent 失控导致的巨额账单。",
+      "why_it_matters_cn": "随着多 agent 系统在生产环境中的普及，API 成本失控成为主要痛点。事前预算执行机制比事后审计更具实际价值，能有效保护开发者免受意外高额费用困扰。",
+      "tags": [
+        "LLM Agent",
+        "成本控制",
+        "API 管理",
+        "LedgerAI"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tt1kcd/how_do_you_handle_runaway_api_costs_across",
+      "published_at": "2026-05-31T17:27:18+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "Unable to make decision between gemini and chatgpt.",
+      "title_cn": "印度学生纠结于 Gemini 与 ChatGPT 订阅选择",
+      "summary_cn": "一位印度理科学生正在为学术自学和 AI 自动化技能构建寻找合适的 AI 助手。他计划在 Gemini 和 ChatGPT 之间选择 399 卢比的订阅服务。他需要助手能辅助学习、提升批判性思维和问题解决能力，同时支持 AI 自动化技能构建，而不产生过度依赖。",
+      "why_it_matters_cn": "反映了全球用户在选择主流 AI 模型时的普遍困境，特别是在平衡学术辅助、技能提升与成本效益方面的考量，凸显了 AI 工具在教育和个人发展中的角色定位问题。",
+      "tags": [
+        "ChatGPT",
+        "Gemini",
+        "教育科技",
+        "AI 订阅"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tt1qec/unable_to_make_decision_between_gemini_and_chatgpt",
+      "published_at": "2026-05-31T17:33:35+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "AI search agents often confirm what they already know instead of actually researching the web",
+      "title_cn": "AI 搜索 Agent 往往确认已知信息而非真正研究网络",
+      "summary_cn": "哈尔滨工业大学研究人员发现，GPT-5.4 和 Kimi K2.6 等领先 AI 搜索 Agent 在基准测试中并未进行真正的网络研究，而是主要利用网络来确认训练期间已学到的知识。使用仅询问最近 90 天事件的 LiveBrowseComp 基准测试显示，一旦模型无法依赖记忆，其表现就会大幅下降，现有排名被重新洗牌。",
+      "why_it_matters_cn": "揭示了当前 AI 搜索 Agent 在实时信息获取上的局限性，表明它们更多是检索增强而非真正的实时研究者。这对依赖 AI 进行最新信息获取的用户和开发者提出了警示。",
+      "tags": [
+        "AI 搜索",
+        "Agent 评估",
+        "基准测试",
+        "实时信息"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/ai-search-agents-often-confirm-what-they-already-know-instead-of-actually-researching-the-web",
+      "published_at": "2026-05-31T07:48:41+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "I trained gpt-1 on my local machine (RTX 2060 Super 8GB VRAM)",
+      "title_cn": "在本地 RTX 2060 Super 上训练 GPT-1",
+      "summary_cn": "一位软件工程师在拥有 8GB VRAM 的 NVIDIA RTX 2060 Super 上成功训练了原始的 GPT-1 模型。由于资金有限且云训练成本高昂，他选择了比 GPT-2 小 10 倍的 GPT-1。他指出，现在每个游戏玩家都能在本地训练 1B 规模的模型，且存在许多优秀的专用小模型，证明了本地训练小型模型的可行性。",
+      "why_it_matters_cn": "证明了在消费级硬件上进行基础模型训练的可行性，降低了 AI 研究和实验的门槛。对于资源有限的开发者而言，本地训练小型专用模型成为一种经济高效的替代方案。",
+      "tags": [
+        "本地训练",
+        "GPT-1",
+        "消费级硬件",
+        "小模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tt75k0/i_trained_gpt1_on_my_local_machine_rtx_2060_super",
+      "published_at": "2026-05-31T20:54:01+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "The solution might be cancelling my AI subscription",
+      "title_cn": "解决 AI 工具过度使用的方法可能是取消订阅",
+      "summary_cn": "Simon Willison 评论了 David Wilson 的文章，指出许多 AI 项目并非有意为之，而是从“写个快速脚本”开始，一小时后却变成了未解决问题的复杂产物。这种技术导致用户陷入无意义的构建循环，未能解决原始问题。Willison 认为，取消 AI 订阅可能是摆脱这种低效使用模式的解决方案。",
+      "why_it_matters_cn": "引发了对 AI 工具使用效率和目的性的反思。当 AI 辅助编程导致更多而非更少的混乱时，重新评估订阅价值和回归基础编程思维可能成为更明智的选择。",
+      "tags": [
+        "AI 编程",
+        "生产力工具",
+        "订阅经济",
+        "效率反思"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription",
+      "published_at": "2026-05-31T16:31:32+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Arabic ASR model struggling to converge during training [D]",
+      "title_cn": "阿拉伯语 ASR 模型在训练期间难以收敛",
+      "summary_cn": "一位开发者正在使用 SpeechBrain 的 LibriSpeech 配方（不含语言模型）在 100 小时方言阿拉伯语数据集上训练 ASR 模型。模型架构采用 Conformer-small 编码器和 Transformer 解码器，共约 1300 万参数。训练使用 CTC 和 KL 散度组合损失函数，但在前几次权重更新后损失迅速下降并陷入平台期，难以进一步收敛。",
+      "why_it_matters_cn": "展示了在非英语、特别是方言数据上训练语音识别模型的技术挑战。损失函数平台期问题反映了数据质量、模型架构或超参数调整在低资源语言 ASR 中的复杂性。",
+      "tags": [
+        "ASR",
+        "阿拉伯语",
+        "模型训练",
+        "SpeechBrain"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1tt7jt2/arabic_asr_model_struggling_to_converge_during",
+      "published_at": "2026-05-31T21:08:58+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "Whats actually happening when a model spills out of VRAM into system memory?",
+      "title_cn": "模型从 VRAM 溢出到系统内存时究竟发生了什么？",
+      "summary_cn": "用户在 Reddit 讨论使用 llama.cpp 运行 Gemma 26B 模型时，因显存不足导致模型数据溢出至系统内存的情况。他希望能深入了解底层机制，以便更好地优化多设备计算设置和参数，提升本地部署效率。",
+      "why_it_matters_cn": "理解内存溢出机制对优化本地大模型部署至关重要，有助于开发者在有限硬件资源下平衡性能与稳定性，提升推理效率。",
+      "tags": [
+        "llama.cpp",
+        "本地部署",
+        "显存管理",
+        "Gemma"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tt50bu/whats_actually_happening_when_a_model_spills_out",
+      "published_at": "2026-05-31T19:32:46+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Putting together a pc. Are my assumptions correct?",
+      "title_cn": "组装 PC 用于运行本地 LLM，我的假设正确吗？",
+      "summary_cn": "一位开发者分享其为运行中小型 LLM 而组装的高性能 PC 配置。他强调更关注 token 生成速度而非提示处理速度，并质疑动态启动微型 agent 的必要性，寻求社区对其硬件选型和假设的反馈。",
+      "why_it_matters_cn": "反映了本地 LLM 用户对硬件性能侧重点的转变，即从通用计算转向追求高吞吐量的 token 生成，对硬件选型具有参考价值。",
+      "tags": [
+        "硬件组装",
+        "本地 LLM",
+        "Token 生成",
+        "性能优化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tt1ana/putting_together_a_pc_are_my_assumptions_correct",
+      "published_at": "2026-05-31T17:17:13+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "We need some polls on many topics - 2026",
+      "title_cn": "2026 年我们需要关于多个主题的民意调查",
+      "summary_cn": "社区成员发起投票倡议，涵盖编码助手（如 Cline、Aider）、Agent 框架（如 CrewAI、AutoGPT）及推理引擎（如 llama.cpp）的使用情况。旨在了解当前开发者在 AI 工具链中的实际选择与偏好。",
+      "why_it_matters_cn": "通过社区投票可直观反映当前 AI 开发工具的市场占有率和流行趋势，帮助开发者选择主流且稳定的技术栈。",
+      "tags": [
+        "社区调查",
+        "编码助手",
+        "Agent 框架",
+        "推理引擎"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tsyng6/we_need_some_polls_on_many_topics_2026",
+      "published_at": "2026-05-31T15:37:20+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "OpenClaw is cool but have you met WhiteClawd? I built a drunk AI lobster that gives terrible life advice",
+      "title_cn": "OpenClaw 很酷，但你见过 WhiteClawd 吗？我造了个醉酒的 AI 龙虾",
+      "summary_cn": "受 OpenClaw 等 AI 龙虾热潮启发，开发者利用 Cloudflare Workers AI 和开源模型创建了一个名为 Clawrence 的醉酒龙虾 Agent。它不提供有用建议，而是给出糟糕的人生建议，纯属娱乐。",
+      "why_it_matters_cn": "展示了 AI Agent 在娱乐和创意领域的低成本应用潜力，反映了社区对 AI 拟人化和幽默互动的兴趣。",
+      "tags": [
+        "AI Agent",
+        "Cloudflare",
+        "开源模型",
+        "创意应用"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tswo7s/openclaw_is_cool_but_have_you_met_whiteclawd_i",
+      "published_at": "2026-05-31T14:20:56+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "Anthropic bans AI tools during job interviews to see how candidates actually think",
+      "title_cn": "Anthropic 在面试中禁止使用 AI 工具以考察候选人真实思维",
+      "summary_cn": "Anthropic 在招聘面试中禁止使用 AI 工具，通过多达五轮测试评估候选人的技能、价值观和伦理思维。尽管薪资高达 85 万美元，但部分求职者仍花费数千元参加由前员工提供的匿名辅导。",
+      "why_it_matters_cn": "揭示了顶级 AI 公司对基础思维能力和伦理判断的重视，表明在 AI 时代，人类的核心思考能力仍是招聘的关键考量。",
+      "tags": [
+        "Anthropic",
+        "招聘面试",
+        "AI 伦理",
+        "人才评估"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-bans-ai-tools-during-job-interviews-to-see-how-candidates-actually-think",
+      "published_at": "2026-05-31T10:10:14+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "Erin Brockovich takes aim at data center secrecy",
+      "title_cn": "艾琳·布罗科维奇瞄准数据中心保密问题",
+      "summary_cn": "著名环保活动家艾琳·布罗科维奇开启新使命，针对数据中心行业的保密行为发起挑战。她致力于揭露数据中心对环境的影响，推动行业透明度和问责制，引发公众对 AI 基础设施环境影响的关注。",
+      "why_it_matters_cn": "凸显了 AI 基础设施扩张带来的环境争议，公众人物介入可能推动政策变革，促使科技公司承担更多环境责任。",
+      "tags": [
+        "数据中心",
+        "环保活动",
+        "行业透明度",
+        "AI 基础设施"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy",
+      "published_at": "2026-05-31T21:05:14+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "I ported NVIDIA Parakeet (speech-to-text) to ggml: same output as NeMo, faster, GGUF-quantized, no Python",
+      "title_cn": "NVIDIA Parakeet 语音转文本模型移植至 ggml：无需 Python，性能超越 NeMo",
+      "summary_cn": "开发者将 NVIDIA Parakeet 语音转文本模型移植到纯 C++/ggml 引擎，支持 CPU 和 GPU 运行，无需 Python 或 PyTorch。其输出与 NeMo 完全一致，且在 GPU 上运行速度比 NeMo 原生 PyTorch 运行时快约 5 倍，实现了真正的跨平台部署。",
+      "why_it_matters_cn": "实现了语音识别模型的高效本地化部署，摆脱了对 Python 生态的依赖，显著提升了推理速度，为边缘计算和嵌入式设备提供了更优的解决方案。",
+      "tags": [
+        "语音识别",
+        "ggml",
+        "本地部署",
+        "NVIDIA"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tt6oja/i_ported_nvidia_parakeet_speechtotext_to_ggml",
+      "published_at": "2026-05-31T20:35:51+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "I built mlx-Chronos — a community benchmark leaderboard for local LLM engines on Apple Silicon (oMLX, Rapid-MLX, mlx-lm, Ollama)",
+      "title_cn": "mlx-Chronos：Apple Silicon 本地 LLM 引擎社区基准测试排行榜",
+      "summary_cn": "一名 CS 学生开发了 mlx-Chronos，这是一个开源 CLI 工具，用于在 Apple Silicon 上对 oMLX、Rapid-MLX、mlx-lm 和 Ollama 等引擎进行标准化基准测试。它测量冷启动和缓存 TTFT，并允许用户提交结果至共享社区排行榜，解决现有基准测试缺乏可比性的问题。",
+      "why_it_matters_cn": "填补了 Apple Silicon 平台缺乏统一、公正的 LLM 推理引擎性能对比标准的空白，帮助用户更准确地选择最适合其硬件的推理后端。",
+      "tags": [
+        "Apple Silicon",
+        "基准测试",
+        "MLX",
+        "开源工具"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tswxqb/i_built_mlxchronos_a_community_benchmark",
+      "published_at": "2026-05-31T14:31:45+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "Speed difference between Windows 11 and Linux with llama.cpp: a myth when using medium and large MoE models",
+      "title_cn": "llama.cpp 在 Windows 11 与 Linux 上的速度差异：中大型 MoE 模型的神话破灭",
+      "summary_cn": "测试显示，在使用 llama.cpp 运行中大型 MoE 模型时，Windows 11 与 Linux 之间没有显著的速度差异。作者通过详细测试 Core Ultra 7 处理器在不同操作系统下的表现，证明长期存在的“Linux 性能更好”的观念在特定场景下并不成立，消除了对 Windows 性能的误解。",
+      "why_it_matters_cn": "纠正了开发者对操作系统性能差异的固有认知，表明在特定 AI 工作负载下，Windows 用户无需为了追求极致性能而强制切换到 Linux。",
+      "tags": [
+        "llama.cpp",
+        "Windows",
+        "Linux",
+        "性能测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tsqwtu/speed_difference_between_windows_11_and_linux",
+      "published_at": "2026-05-31T09:49:29+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "G7 agrees on shared language around open-source AI and open weights AI",
+      "title_cn": "G7 就开源 AI 与开放权重 AI 的共享语言达成一致",
+      "summary_cn": "G7 成员国政府就“开源 AI”和“开放权重 AI”的定义达成了共识。这一协议旨在统一各国政府对 AI 模型开放程度的理解，尽管内容多为已知信息，但标志着政府层面正式承认并规范了这些关键术语，有助于未来政策制定和国际协调。",
+      "why_it_matters_cn": "政府层面的术语统一有助于消除监管模糊性，为未来全球 AI 治理框架奠定基础，影响开源社区的政策环境。",
+      "tags": [
+        "G7",
+        "开源 AI",
+        "政策",
+        "监管"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tt7t1x/g7_agrees_on_shared_language_around_opensource_ai",
+      "published_at": "2026-05-31T21:19:02+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "Making sense of the debate over AI psychosis",
+      "title_cn": "解读“AI 精神病”辩论：科技 CEO 是否对此异常敏感？",
+      "summary_cn": "TechCrunch 的 Equity 节目最新一期探讨了关于“AI 精神病”的辩论，讨论科技行业首席执行官们是否对 AI 的潜力和风险表现出独特的过度反应或非理性狂热。节目分析了这种心态背后的原因及其对行业发展的潜在影响。",
+      "why_it_matters_cn": "揭示了科技领袖在 AI 叙事中的心理状态，有助于公众更理性地看待 AI  hype 与实际进展之间的差距，避免盲目跟风。",
+      "tags": [
+        "AI 伦理",
+        "科技文化",
+        "CEO",
+        "媒体评论"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis",
+      "published_at": "2026-05-31T15:30:00+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "Openclaws, an accessory for openclaw agents",
+      "title_cn": "Openclaws：专为 Openclaw agents 设计的配件",
+      "summary_cn": "Reddit 用户分享了一个名为 Openclaws 的项目，它是为 Openclaw agents 设计的配件。虽然具体技术细节未在摘要中详述，但这表明围绕 Openclaw 代理生态正在出现硬件或软件层面的扩展工具，旨在增强 agent 的功能或交互体验。",
+      "why_it_matters_cn": "展示了 AI agent 生态系统的扩展性，配件的出现意味着 agent 技术正从纯软件走向软硬结合，可能带来新的交互范式。",
+      "tags": [
+        "AI Agent",
+        "Openclaw",
+        "配件",
+        "生态扩展"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tssw2a/openclaws_an_accessory_for_openclaw_agents",
+      "published_at": "2026-05-31T11:35:09+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "Is the Group Chat option in ChatGPT rollbacked?",
+      "title_cn": "ChatGPT 群聊功能是否已回滚？",
+      "summary_cn": "Reddit 用户反映 ChatGPT 的群聊功能似乎已不可用。该功能此前对多用户协作非常有用，但最近几周无法访问。社区正在讨论该功能是被官方回滚还是暂时故障，并寻求替代方案。",
+      "why_it_matters_cn": "群聊功能直接影响 ChatGPT 的多用户协作体验。其可用性变化反映了 OpenAI 对产品功能迭代和稳定性的调整策略。",
+      "tags": [
+        "ChatGPT",
+        "功能更新",
+        "用户体验"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tt8bwz/is_the_group_chat_option_in_chatgpt_rollbacked",
+      "published_at": "2026-05-31T21:39:39+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "My literature review keeps being flagged as ai",
+      "title_cn": "文献综述被误判为 AI 生成",
+      "summary_cn": "一名学生抱怨其手动撰写的文献综述被教授的 AI 检测工具标记为 AI 生成。尽管未使用任何 AI 辅助，检测结果仍导致学术诚信疑虑。这突显了当前 AI 检测技术的局限性及误报问题。",
+      "why_it_matters_cn": "AI 检测工具的误报可能损害学术公平，引发对检测技术可靠性的质疑，并影响师生间的信任关系。",
+      "tags": [
+        "AI 检测",
+        "学术诚信",
+        "误报问题"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tt48pq/my_literature_review_keeps_being_flagged_as_ai",
+      "published_at": "2026-05-31T19:04:31+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "How would you model this \"strand\" clustering problem? [P]",
+      "title_cn": "如何建模“线状”聚类问题？",
+      "summary_cn": "一位开发者在构建计算机视觉应用时，成功训练 YOLO 模型检测目标物体。现在面临挑战：如何根据分离距离对图像中的线状物体进行聚类，并返回描述性字符串。社区正在讨论建模方法。",
+      "why_it_matters_cn": "该问题涉及计算机视觉中复杂的对象关系建模，对工业检测和自动化分析场景具有实际应用价值。",
+      "tags": [
+        "计算机视觉",
+        "YOLO",
+        "聚类算法"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1tst8w4/how_would_you_model_this_strand_clustering",
+      "published_at": "2026-05-31T11:53:03+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "I built a tool to browse and plan CVPR workshop/tutorial days [P]",
+      "title_cn": "构建工具浏览和规划 CVPR 研讨会日程",
+      "summary_cn": "开发者分享了一个新工具，用于帮助参会者浏览和规划 CVPR 研讨会及教程日程。该工具解决了信息分散在多个网站和 PDF 中的痛点，整合了工作坊信息、兴趣匹配和日程安排功能。",
+      "why_it_matters_cn": "该工具提升了顶级学术会议的信息获取效率，展示了 AI 社区如何通过实用工具改善参会体验。",
+      "tags": [
+        "CVPR",
+        "会议工具",
+        "开发者项目"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1tsy7rz/i_built_a_tool_to_browse_and_plan_cvpr",
+      "published_at": "2026-05-31T15:21:00+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "Talk Is Cheap: The Operational Impact of LLM Use",
+      "title_cn": "空谈无益：LLM 使用的运营影响",
+      "summary_cn": "Hacker News 上的一篇讨论文章探讨了大型语言模型（LLM）在实际运营中的影响。文章指出，尽管 LLM 技术备受瞩目，但其实际部署带来的运营挑战和成本往往被低估，需关注落地实效。",
+      "why_it_matters_cn": "该讨论提醒业界关注 LLM 从技术演示到实际运营落地的差距，强调评估其真实业务价值的重要性。",
+      "tags": [
+        "LLM",
+        "运营影响",
+        "技术落地"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://unessays.substack.com/p/talk-is-cheap",
+      "published_at": "2026-05-31T16:37:47+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "Quoting Karen Kwok for Reuters Breakingviews",
+      "title_cn": "Anthropic 定义“年化营收”的方式",
+      "summary_cn": "Simon Willison 引用路透社报道，披露 Anthropic 定义“年化营收”的方法：将按消耗计费客户的最近 28 天销售额乘以 13，加上月度订阅收入的 12 倍。这一财务指标定义引发关注。",
+      "why_it_matters_cn": "Anthropic 的营收计算方式反映了其混合商业模式，对投资者评估 AI 公司财务健康状况具有参考价值。",
+      "tags": [
+        "Anthropic",
+        "财务指标",
+        "商业模式"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/May/31/anthropic-run-rate",
+      "published_at": "2026-05-31T01:48:12+00:00"
+    },
+    {
+      "rank": 25,
+      "title": "Bayesian Opt. GPs vs Linear models and Neural Networks for parameter optimizations [R]",
+      "title_cn": "贝叶斯优化：高斯过程、线性模型与神经网络的参数优化对比",
+      "summary_cn": "一位深度学习新手在 Reddit 上发起讨论，寻求关于时间序列数据和频谱分析参数优化的最佳方法建议。目前该用户主要使用高斯过程（GP）并取得了良好效果，但希望了解不同模型在计算开销等方面的权衡与优劣。",
+      "why_it_matters_cn": "高斯过程虽在贝叶斯优化中表现优异，但计算成本高。了解其与线性模型及神经网络在特定场景下的权衡，有助于开发者根据资源限制选择最优策略。",
+      "tags": [
+        "贝叶斯优化",
+        "高斯过程",
+        "深度学习",
+        "参数调优"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1tsi17b/bayesian_opt_gps_vs_linear_models_and_neural",
+      "published_at": "2026-05-31T01:57:20+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "软银承诺斥资 750 亿欧元在法国建设人工智能设施",
+    "Anthropic study finds men use AI coding agents more than twice as often as women in social science research",
+    "Qwen3.6-35B vs Gemma4-26B on 7900 XTX",
+    "mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF just released !",
+    "AGI is here | Claude Opus 4.6 Max vs. the calendar"
+  ]
+}
