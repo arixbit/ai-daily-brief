@@ -1,0 +1,405 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-07T22:31:04.376047+00:00",
+  "title": "2026-06-08 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "title": "OpenAI 芯片元老「002 号员工」转投 Anthropic",
+      "title_cn": "OpenAI 芯片元老「002 号员工」转投 Anthropic",
+      "summary_cn": "OpenAI 自研芯片项目核心成员 Clive Chan 宣布离职并加入 Anthropic。他曾在特斯拉、谷歌等公司任职，拥有深厚的 AI 基础设施经验。这一人事变动被视为大模型竞争从软件层面向芯片和算力基础设施延伸的重要信号，凸显了硬件在 AI 发展中的关键地位。",
+      "why_it_matters_cn": "标志着 AI 巨头竞争焦点向底层硬件转移，Anthropic 可能加速自研芯片进程，以应对即将到来的 IPO 竞争。",
+      "tags": [
+        "Anthropic",
+        "OpenAI",
+        "芯片",
+        "人才流动"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tl8u2yTi5p",
+      "published_at": "2026-06-07T22:29:00+00:00"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI 计划大幅升级 ChatGPT 以创造更多收入",
+      "title_cn": "OpenAI 计划大幅升级 ChatGPT 以创造更多收入",
+      "summary_cn": "OpenAI 计划对 ChatGPT 进行最大幅度升级，将其转型为整合编程工具与人工智能体的「超级应用」。此举旨在通过新增高收入产品吸引企业客户，并提升编程产品 Codex 的地位。公司认为智能体是 AI 未来，旨在通过内部重组增强竞争力。",
+      "why_it_matters_cn": "ChatGPT 向智能体平台转型将重塑 AI 应用形态，提升 OpenAI 在企业市场的竞争力和盈利能力。",
+      "tags": [
+        "ChatGPT",
+        "Codex",
+        "智能体",
+        "商业化"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8tlCsENHyEB",
+      "published_at": "2026-06-07T22:29:00+00:00"
+    },
+    {
+      "rank": 3,
+      "title": "Perplexity's \"Search as Code\" lets AI models write their own search pipelines instead of calling fixed APIs",
+      "title_cn": "Perplexity 推出「搜索即代码」架构，让 AI 模型自主编写搜索流程",
+      "summary_cn": "Perplexity 推出「搜索即代码」架构，允许 AI 模型在沙箱中用 Python 编写搜索例程，取代固定的 API 调用。该架构让 agent 自主处理过滤和去重，在关键基准测试中超越 OpenAI 和 Anthropic，同时降低高达 85% 的 token 成本，显著提升了搜索效率和性价比。",
+      "why_it_matters_cn": "通过让模型自主控制搜索流程，大幅降低推理成本并提升准确性，为 AI 搜索设定了新标准。",
+      "tags": [
+        "Perplexity",
+        "Search as Code",
+        "Agent",
+        "成本优化"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/perplexitys-search-as-code-lets-ai-models-write-their-own-search-pipelines-instead-of-calling-fixed-apis",
+      "published_at": "2026-06-07T10:28:33+00:00"
+    },
+    {
+      "rank": 4,
+      "title": "Hear Me Out, Pi Fans Lurking Here",
+      "title_cn": "Reddit 热议：Pi 框架并非为本地 LLM 设计",
+      "summary_cn": "Reddit 用户指出，Pi 框架的创建者 Mario Zechner 将其打造为类似 Claude CLI 的精简版工具，主要面向 API 用户。尽管 Pi 以简短的系统提示和较少的开箱即用工具著称，但社区认为其设计并未充分考虑本地 LLM 的需求，引发了关于其适用性的讨论。",
+      "why_it_matters_cn": "揭示了当前 AI 框架在本地部署与云端 API 使用场景下的设计差异，影响开发者选择。",
+      "tags": [
+        "Pi",
+        "Local LLM",
+        "框架设计",
+        "社区讨论"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzq1qb/hear_me_out_pi_fans_lurking_here",
+      "published_at": "2026-06-07T22:27:43+00:00"
+    },
+    {
+      "rank": 5,
+      "title": "Amazing Digital Dentures (a failed project)",
+      "title_cn": "Amazing Digital Dentures（一个失败的项目）",
+      "summary_cn": "Hugging Face 博客分享了一个名为「Amazing Digital Dentures」的失败项目案例。该项目旨在通过 AI 技术解决数字假牙相关问题，但最终未能成功。文章详细记录了项目从构思到失败的全过程，为开发者提供了宝贵的经验教训，展示了 AI 项目落地中的挑战。",
+      "why_it_matters_cn": "通过展示失败案例，帮助开发者识别 AI 项目中的潜在风险，避免重蹈覆辙。",
+      "tags": [
+        "Hugging Face",
+        "项目失败",
+        "经验分享",
+        "AI 应用"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
+      "published_at": "2026-06-07T19:44:27+00:00"
+    },
+    {
+      "rank": 6,
+      "title": "Anthropic poaches OpenAI's second-ever chip engineer as both companies race toward IPOs",
+      "title_cn": "Anthropic 挖走 OpenAI 第二位芯片工程师，双方竞逐 IPO",
+      "summary_cn": "OpenAI 自研芯片项目的第二位硬件工程师 Clive Chan 跳槽至 Anthropic。他拥有特斯拉 Autopilot ASIC 及 OpenAI-Broadcom 合作经验。此举发生在两家公司筹备 IPO 之际，据报道 Anthropic 正考虑开发自研 AI 芯片，以在即将到来的资本市场竞争中占据优势。",
+      "why_it_matters_cn": "Anthropic 通过引进关键人才加速硬件布局，为 IPO 后的独立运营和竞争力提升做准备。",
+      "tags": [
+        "Anthropic",
+        "OpenAI",
+        "IPO",
+        "自研芯片"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-poaches-openais-second-ever-chip-engineer-as-both-companies-race-toward-ipos",
+      "published_at": "2026-06-07T08:33:06+00:00"
+    },
+    {
+      "rank": 7,
+      "title": "OpenAI is still working on that ‘super app’",
+      "title_cn": "OpenAI 仍在开发“超级应用”",
+      "summary_cn": "据 TechCrunch 报道，OpenAI 内部高级员工声称“聊天已死”，暗示公司战略重心正从单纯的对话界面转向更复杂的超级应用。尽管面临内部争议，OpenAI 仍在持续推进这一旨在整合多种服务的大型项目，试图重新定义用户与 AI 的交互方式。",
+      "why_it_matters_cn": "这标志着 OpenAI 可能正在放弃以 ChatGPT 为核心的纯聊天模式，转向更广泛的平台化战略，将深刻影响其未来产品形态及市场竞争格局。",
+      "tags": [
+        "OpenAI",
+        "超级应用",
+        "产品战略"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app",
+      "published_at": "2026-06-07T16:23:22+00:00"
+    },
+    {
+      "rank": 8,
+      "title": "Preferred two LLM combo",
+      "title_cn": "本地部署 LLM 的双模型组合偏好",
+      "summary_cn": "Reddit 用户分享在 MacBook Pro 上运行 Qwen3.5-35B 作为编程 agent 的经验，并询问社区关于双 LLM 组合的最佳实践。讨论聚焦于如何结合不同硬件（如 M1 Pro 与 5070 Ti）的优势，优化模型分工以提升开发效率。",
+      "why_it_matters_cn": "反映了开发者社区对本地化 AI 部署的深入探索，展示了如何通过硬件组合与模型分工来最大化个人计算资源的利用效率。",
+      "tags": [
+        "本地部署",
+        "Qwen",
+        "LLM 组合"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzo75c/preferred_two_llm_combo",
+      "published_at": "2026-06-07T21:11:29+00:00"
+    },
+    {
+      "rank": 9,
+      "title": "Is this the dawn of the Tokenpocalypse?",
+      "title_cn": "“Token 末日”是否正在降临？",
+      "summary_cn": "TechCrunch 分析指出，随着大型 AI 公司计划上市，为了追求更高的财务回报，API 调用价格可能会进一步上涨。这种趋势可能导致开发者成本激增，引发社区对“Token 末日”的担忧，即高昂的使用成本可能阻碍 AI 应用的普及。",
+      "why_it_matters_cn": "AI 基础设施成本的上升将直接冲击初创公司和独立开发者，可能迫使行业寻找更高效的模型或转向开源替代方案。",
+      "tags": [
+        "API 定价",
+        "Token 成本",
+        "AI 商业化"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/07/is-this-the-dawn-of-the-tokenpocalypse",
+      "published_at": "2026-06-07T20:26:13+00:00"
+    },
+    {
+      "rank": 10,
+      "title": "I built a PyTorch MoE/MoD training framework with custom CUDA kernels [Apache 2.0]",
+      "title_cn": "基于 PyTorch 的 MoE/MoD 训练框架发布",
+      "summary_cn": "开发者发布了一个开源的 PyTorch 训练框架，支持 MoE 和 MoD 架构，并包含自定义 CUDA 内核。该框架在 T4 显卡上比原生 PyTorch 快 2-7 倍，具备自适应训练编排器，可自动监控指标并调整学习率、修剪专家节点，显著提升了训练效率。",
+      "why_it_matters_cn": "该框架降低了复杂混合专家模型的训练门槛，通过自定义内核和自动化优化，为研究者提供了高效、灵活的实验平台。",
+      "tags": [
+        "PyTorch",
+        "MoE",
+        "开源框架"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzmtuk/i_built_a_pytorch_moemod_training_framework_with",
+      "published_at": "2026-06-07T20:17:44+00:00"
+    },
+    {
+      "rank": 11,
+      "title": "openai blocking chat history export without a phone number",
+      "title_cn": "OpenAI 限制无手机号用户导出聊天记录",
+      "summary_cn": "Reddit 用户反映，OpenAI 最近强制要求提供手机号码才能导出聊天记录，即使账户已启用强密码和 OTP 双重验证。此举被用户质疑为过度收集隐私信息，引发了关于数据所有权和隐私政策的广泛讨论与不满。",
+      "why_it_matters_cn": "此举加剧了用户对平台数据控制权的担忧，可能促使更多用户寻找替代方案或推动更严格的隐私保护法规。",
+      "tags": [
+        "OpenAI",
+        "隐私政策",
+        "数据导出"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tzmn49/openai_blocking_chat_history_export_without_a",
+      "published_at": "2026-06-07T20:10:31+00:00"
+    },
+    {
+      "rank": 12,
+      "title": "2-bit QAT model releases",
+      "title_cn": "2-bit QAT 模型发布引发关注",
+      "summary_cn": "社区讨论聚焦于 2-bit 量化感知训练（QAT）模型的潜力。相比传统的 4-bit 模型，2-bit 模型能在 64/128GB 内存的消费级电脑上运行更大规模的 MoE 模型（120b-400b），可能成为从头训练三元 LLM 的更优替代方案。",
+      "why_it_matters_cn": "极致的量化技术使得在消费级硬件上运行超大模型成为可能，为本地化部署高性能 AI 提供了新的技术路径。",
+      "tags": [
+        "量化",
+        "QAT",
+        "本地模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzlt37/2bit_qat_model_releases",
+      "published_at": "2026-06-07T19:38:31+00:00"
+    },
+    {
+      "rank": 13,
+      "title": "Narrative change: Anthropic",
+      "title_cn": "叙事转变：Anthropic 光环褪去",
+      "summary_cn": "Reddit 用户认为 Anthropic 将失去 AI 行业宠儿地位。尽管不影响其 IPO 前景，但叙事正在改变。主要因素包括 AI 成本飙升、开源模型性价比提升，以及 Notion 公开批评其模型表现。",
+      "why_it_matters_cn": "这反映了市场对闭源模型垄断地位的质疑，开源模型的崛起可能重塑行业竞争格局，影响投资者对头部 AI 公司的估值预期。",
+      "tags": [
+        "Anthropic",
+        "开源模型",
+        "行业叙事"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tzjh2u/narrative_change_anthropic",
+      "published_at": "2026-06-07T18:12:07+00:00"
+    },
+    {
+      "rank": 14,
+      "title": "Is it's inability to look up AI tools some sort of safety feature?",
+      "title_cn": "AI 无法检索工具是安全特性吗？",
+      "summary_cn": "用户在使用 Gemini 和 ChatGPT 时，即使开启搜索模式也无法正确识别特定 Google 产品。尽管提供了首字母和数字线索，模型仍给出错误答案。用户怀疑这并非能力不足，而是某种安全限制。",
+      "why_it_matters_cn": "揭示了当前 AI 模型在特定知识检索上的局限性，引发对模型安全机制是否过度限制实用性的讨论，影响用户体验。",
+      "tags": [
+        "Gemini",
+        "ChatGPT",
+        "安全限制"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tzhrye/is_its_inability_to_look_up_ai_tools_some_sort_of",
+      "published_at": "2026-06-07T17:09:10+00:00"
+    },
+    {
+      "rank": 15,
+      "title": "When do you think the ChatGPT super app is releasing?",
+      "title_cn": "ChatGPT 超级应用何时发布？",
+      "summary_cn": "传闻 OpenAI 正在开发统一的 ChatGPT 超级应用，整合 ChatGPT、Codex 和 Atlas 浏览器。社区热议其发布时机，认为这可能标志着 OpenAI 产品战略的重大整合。",
+      "why_it_matters_cn": "超级应用的推出将改变用户与 AI 交互的方式，可能确立 OpenAI 在个人 AI 助手领域的绝对主导地位，挤压竞争对手空间。",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "超级应用"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tzf67s/when_do_you_think_the_chatgpt_super_app_is",
+      "published_at": "2026-06-07T15:29:20+00:00"
+    },
+    {
+      "rank": 16,
+      "title": "Qwen3.6 35B-A3B on a Laptop: My Zero to One Moment",
+      "title_cn": "笔记本运行 Qwen3.6 35B 体验",
+      "summary_cn": "用户在配备 RTX 4060 的笔记本上成功运行 Qwen3.6 35B 模型。在 32k 上下文下生成速度达 27 TPS，支持文件读写和 CLI 命令执行，标志着本地模型性能的重大突破。",
+      "why_it_matters_cn": "证明了高性能大模型在消费级硬件上的可行性，降低了 AI 使用门槛，推动了本地化 AI 应用的普及和发展。",
+      "tags": [
+        "Qwen",
+        "本地模型",
+        "端侧 AI"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzernu/qwen36_35ba3b_on_a_laptop_my_zero_to_one_moment",
+      "published_at": "2026-06-07T15:13:30+00:00"
+    },
+    {
+      "rank": 17,
+      "title": "Which lab do you think will have the most intelligent/capable model by the end of June?",
+      "title_cn": "六月末最强 AI 模型预测",
+      "summary_cn": "社区讨论六月末哪家实验室将推出最强模型。Anthropic 已发布 Opus 4.8，Google 确认 Gemini 3.5 Pro，OpenAI 传闻将发布 GPT-5.6。增量更新成为常态。",
+      "why_it_matters_cn": "反映了 AI 竞赛进入高频迭代阶段，各大厂商通过快速发布新版本维持竞争力，用户需关注最新模型性能对比。",
+      "tags": [
+        "模型竞赛",
+        "Gemini",
+        "GPT-5"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tzcxw7/which_lab_do_you_think_will_have_the_most",
+      "published_at": "2026-06-07T14:00:57+00:00"
+    },
+    {
+      "rank": 18,
+      "title": "What’s your most unusual non-LLM AI you actually use daily?",
+      "title_cn": "日常使用的非 LLM AI 工具",
+      "summary_cn": "Reddit 用户分享日常使用的非大语言模型 AI 工具。讨论聚焦于那些小众、奇特或非显而易见的 AI 应用，探索 LLM 之外的 AI 技术在日常生活中的实际价值。",
+      "why_it_matters_cn": "拓宽了 AI 应用的视野，表明除了 LLM 外，其他 AI 技术也在特定场景中发挥重要作用，丰富了 AI 生态多样性。",
+      "tags": [
+        "非 LLM AI",
+        "小众工具",
+        "AI 应用"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzbxsm/whats_your_most_unusual_nonllm_ai_you_actually",
+      "published_at": "2026-06-07T13:18:32+00:00"
+    },
+    {
+      "rank": 19,
+      "title": "5 Months Later: open-deepthink Now Has Full Knowledge Distillation Mode",
+      "title_cn": "open-deepthink 现已支持完整的知识蒸馏模式",
+      "summary_cn": "open-deepthink 项目经过五个月迭代，现已推出完整的知识蒸馏模式。该工具旨在超越传统的扁平多 agent 架构，构建具有深度的网络结构。用户可在本地使用 llama.cpp 或通过 OpenRouter 运行，并导出进化后的网络以供复用，标志着其从概念验证走向成熟应用。",
+      "why_it_matters_cn": "实现了从扁平架构到深度网络的突破，提升了本地大模型推理的效率与灵活性，为开发者提供了更强大的模型优化与复用工具。",
+      "tags": [
+        "open-deepthink",
+        "知识蒸馏",
+        "本地部署",
+        "多 agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tz0zwy/5_months_later_opendeepthink_now_has_full",
+      "published_at": "2026-06-07T03:24:48+00:00"
+    },
+    {
+      "rank": 20,
+      "title": "Gemma 4 31B QAT Q4 vs standard Q4 — Top1 KLD benchmark results have me confused. Someone please explain or poke holes in this.",
+      "title_cn": "Gemma 4 31B QAT 与标准 Q4 量化对比引发困惑",
+      "summary_cn": "社区用户对比 Gemma 4 31B 的 QAT 与标准 Q4 量化模型时，发现 Top1 KLD 基准测试结果令人困惑。深入分析表明，由于未使用 BF16 QAT 模型作为参考，导致对比并非“苹果对苹果”。结论指出，当前认为 QAT 表现更差的结论存在重大保留，需重新评估基准测试的有效性。",
+      "why_it_matters_cn": "揭示了量化评估中的常见陷阱，提醒开发者在进行模型压缩对比时，必须确保参考模型的一致性，以避免得出误导性结论。",
+      "tags": [
+        "Gemma 4",
+        "量化",
+        "QAT",
+        "基准测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyxu55/gemma_4_31b_qat_q4_vs_standard_q4_top1_kld",
+      "published_at": "2026-06-07T00:49:07+00:00"
+    },
+    {
+      "rank": 21,
+      "title": "I used codex to help design a PCB and do component selection",
+      "title_cn": "使用 Codex 辅助设计 PCB 及组件选型",
+      "summary_cn": "一位硬件工程师分享使用 Codex 辅助设计印刷电路板（PCB）并进行组件选型的经历。Codex 不仅帮助生成了数百行微控制器 C 代码以自动化高压安全检查，还节省了大量繁琐的手工劳动。这展示了 AI 在硬件工程领域的实际应用潜力，提升了工作效率并增强了安全性。",
+      "why_it_matters_cn": "证明了 AI 工具如 Codex 在硬件工程和嵌入式开发中的实用价值，能够显著降低人工成本并提高系统安全性。",
+      "tags": [
+        "Codex",
+        "PCB 设计",
+        "硬件工程",
+        "自动化"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tzkado/i_used_codex_to_help_design_a_pcb_and_do",
+      "published_at": "2026-06-07T18:41:40+00:00"
+    },
+    {
+      "rank": 22,
+      "title": "If LLMs Have Human-Like Attributes, Then So Does Age of Empires II",
+      "title_cn": "若 LLM 具备人类属性，帝国时代 II 亦然",
+      "summary_cn": "一篇 Arxiv 论文引发讨论，标题暗示如果大型语言模型（LLM）被认为具有类似人类的属性，那么经典游戏《帝国时代 II》也具备同样的属性。该帖子在 Hacker News 上获得 67 个点赞和 44 条评论，引发了关于智能本质、涌现行为以及我们如何定义“类人”特征的哲学与技术探讨。",
+      "why_it_matters_cn": "挑战了当前对 AI 智能属性的认知边界，促使人们反思将复杂系统行为拟人化的合理性及潜在误区。",
+      "tags": [
+        "LLM",
+        "人工智能哲学",
+        "游戏 AI",
+        "涌现"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://arxiv.org/abs/2605.31514",
+      "published_at": "2026-06-07T18:54:55+00:00"
+    },
+    {
+      "rank": 23,
+      "title": "ExtendDB: Open Source Amazon DynamoDB Compatible Adapter with Pluggable Storage Backends",
+      "title_cn": "ExtendDB：开源的 DynamoDB 兼容适配器",
+      "summary_cn": "AWS 宣布推出 ExtendDB，这是一个兼容 DynamoDB 的开源适配器，允许开发者使用 DynamoDB API 连接不同的存储后端，目前支持 PostgreSQL。该项目无需修改现有 SDK 和工具即可运行，为团队提供了在原生 DynamoDB 之外运行类似工作负载的灵活性，同时保持与应用和流程的兼容性。",
+      "why_it_matters_cn": "打破了云数据库的厂商锁定，允许企业利用现有基础设施运行 DynamoDB 风格的工作负载，降低了迁移成本和依赖风险。",
+      "tags": [
+        "ExtendDB",
+        "DynamoDB",
+        "开源",
+        "数据库"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter",
+      "published_at": "2026-06-07T06:25:00+00:00"
+    },
+    {
+      "rank": 24,
+      "title": "Research collection of Arxiv whitepapers [R]",
+      "title_cn": "ChatGPT 发布以来的 Arxiv 白皮书研究合集",
+      "summary_cn": "一位研究者分享了自 ChatGPT 发布以来收集的约 1700 篇 Arxiv 白皮书合集。这些论文被整理到 Obsidian 中，并划分为 90 多个类别，涵盖了新方法、技术和模型。该资源库现已公开，旨在帮助社区更高效地追踪和理解机器学习领域的最新进展与研究脉络。",
+      "why_it_matters_cn": "为研究人员和开发者提供了一个结构化的知识宝库，极大地降低了追踪海量 AI 论文的难度，促进了知识共享。",
+      "tags": [
+        "Arxiv",
+        "研究合集",
+        "ChatGPT",
+        "知识管理"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1tz7014/research_collection_of_arxiv_whitepapers_r",
+      "published_at": "2026-06-07T08:59:58+00:00"
+    },
+    {
+      "rank": 25,
+      "title": "ML reading group to read recent interesting and trending papers from ICML/ICLR/NeurIPS [D]",
+      "title_cn": "ML 读书会：共读 ICML/ICLR/NeurIPS 最新热门论文",
+      "summary_cn": "一名博士生发起机器学习读书会，专注于可解释性与鲁棒性研究。该小组计划每周末深入研读来自 ICML、ICLR 和 NeurIPS 等顶级会议的最新有趣且热门的论文，旨在通过集体讨论获取不同视角与见解，欢迎相关领域的博士生及研究人员加入。",
+      "why_it_matters_cn": "促进学术社区对前沿论文的深度理解与交流，帮助研究者从多角度审视最新研究成果，提升对可解释性与鲁棒性等关键议题的认知。",
+      "tags": [
+        "机器学习",
+        "学术社区",
+        "论文阅读",
+        "可解释性"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1tyy0vj/ml_reading_group_to_read_recent_interesting_and",
+      "published_at": "2026-06-07T00:58:14+00:00"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [
+    "OpenAI says \"chat is dead\" and plans to rebuild ChatGPT as a full-blown agent app",
+    "Qwen 3.6 27B on DeepSWE",
+    "what user data is actually useful for personalizing an OpenAI app?",
+    "Prompt: a chic very realistic portrait of a dream girl like Instagram influencers, I have asked Chatgpt to create these prompts with a stylish taste. Hope you enjoy!",
+    "Prompt: a chic very realistic image like many photographers I see, I have asked Chatgpt to create these prompts with a stylish taste. Hope you enjoy!",
+    "Prompt: a very realistic stylish image like many Instagram influencers I see, I have asked Chatgpt to create these prompts with a chic taste. Hope you enjoy!"
+  ]
+}
