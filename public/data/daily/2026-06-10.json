@@ -1,534 +1,38 @@
 {
   "date": "2026-06-10",
-  "generated_at": "2026-06-10T01:02:31.996197+00:00",
+  "generated_at": "2026-06-10T12:59:16.906865+00:00",
   "title": "2026-06-10 AI 每日简报",
   "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
   "items": [
     {
       "rank": 1,
-      "title": "Setting a custom price for a model in AgentsView",
-      "title_cn": "在 AgentsView 中为模型设置自定义价格",
-      "summary_cn": "Simon Willison 分享了在 AgentsView 中为 Claude Fable 5 设置自定义价格的技巧。由于新模型尚未纳入定价数据库，他通过逆向工程找到了配置方法，并展示了使用 AgentsView 以树状图形式追踪不同 coding agent 的 token 使用情况。",
-      "why_it_matters_cn": "展示了开发者如何利用开源工具灵活管理 AI 成本，特别是针对尚未被主流监控工具收录的新模型，提供了实用的自定义配置方案。",
-      "tags": [
-        "AgentsView",
-        "Claude Fable 5",
-        "Token 管理",
-        "开发者工具"
-      ],
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
-      "published_at": "2026-06-09T21:35:31+00:00"
-    },
-    {
-      "rank": 2,
-      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
-      "title_cn": "语音 Agent 能否处理双语客户？基准测试前沿 ASR 在语码转换语音上的表现",
-      "summary_cn": "Hugging Face 博客发布了一项关于语音识别的研究，重点评估前沿 ASR 模型在处理语码转换（Code-Switched）语音时的表现。研究旨在解决语音 Agent 在面对双语或多语言混合输入时的理解难题，提升跨语言交互的自然度和准确性。",
-      "why_it_matters_cn": "随着全球化应用需求增加，解决语码转换识别难题对于提升语音 Agent 在多语言环境下的用户体验和实用性至关重要。",
-      "tags": [
-        "语音识别",
-        "ASR",
-        "语码转换",
-        "语音 Agent"
-      ],
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
-      "published_at": "2026-06-09T19:38:28+00:00"
-    },
-    {
-      "rank": 3,
-      "title": "OpenAI 向美国证监会秘密提交 IPO 文件，尚未决定上市时间",
-      "title_cn": "OpenAI 向美国证监会秘密提交 IPO 文件，尚未决定上市时间",
-      "summary_cn": "OpenAI 于 6 月 8 日向 SEC 秘密提交了 IPO 的 S-1 草案，表示尚未确定上市时间，此举旨在保留快速进入公开市场的选项。此前报道指出，OpenAI 正与高盛和摩根士丹利合作，争取最快在今年秋季完成上市。",
-      "why_it_matters_cn": "OpenAI 的 IPO 动向标志着 AI 行业资本化进程的重大里程碑，其上市时间表和估值将深刻影响整个科技行业的投资风向和竞争格局。",
-      "tags": [
-        "OpenAI",
-        "IPO",
-        "资本市场",
-        "科技新闻"
-      ],
-      "source": "Readhub Daily",
-      "url": "https://readhub.cn/topic/8to2eqQpLXq",
-      "published_at": "2026-06-09T22:29:00+00:00"
-    },
-    {
-      "rank": 4,
-      "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
-      "title_cn": "Gemini 3.5 Live Translate 实现流畅自然的语音翻译",
-      "summary_cn": "Google DeepMind 推出 Gemini 3.5 Live Translate，将近乎实时的自然语音翻译功能引入 Google AI Studio、Google Translate 和 Google Meet。该功能致力于消除语言障碍，提供流畅且自然的跨语言交流体验。",
-      "why_it_matters_cn": "实时语音翻译技术的突破将极大促进全球沟通效率，特别是在会议和即时通讯场景中，标志着 AI 在消除语言壁垒方面迈出了重要一步。",
-      "tags": [
-        "Gemini 3.5",
-        "实时翻译",
-        "Google DeepMind",
-        "语音交互"
-      ],
-      "source": "Google DeepMind Blog",
-      "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate",
-      "published_at": "2026-06-09T15:16:25+00:00"
-    },
-    {
-      "rank": 5,
-      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
-      "title_cn": "Agent 如何通过链接两个 Hugging Face Spaces 构建 3D 巴黎画廊",
-      "summary_cn": "Hugging Face 博客展示了一个案例，说明 Agent 如何通过链接两个 Hugging Face Spaces 来构建一个 3D 巴黎画廊。这演示了 Agent 在协调不同模型和服务以完成复杂多步骤任务方面的能力，展示了模块化 AI 应用的潜力。",
-      "why_it_matters_cn": "证明了 Agent 能够自主编排和链接多个独立模型服务，为构建复杂的多模态应用提供了新的技术路径和灵感。",
-      "tags": [
-        "Agent",
-        "Hugging Face",
-        "3D 生成",
-        "模型编排"
-      ],
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
-      "published_at": "2026-06-09T10:46:19+00:00"
-    },
-    {
-      "rank": 6,
-      "title": "Anthropic 明天或将发布公开版本 Mythos",
-      "title_cn": "Anthropic 明天或将发布公开版本 Mythos",
-      "summary_cn": "Anthropic 计划发布 Mythos 的公开版本，可能命名为 Claude Fable 5。该版本加入实质性安全护栏，在网络安全等敏感领域开放程度低于内部版本，但在长周期复杂任务上表现大幅提升。这是 Anthropic 首次向大众提供 Mythos 级能力。",
-      "why_it_matters_cn": "顶级 AI 模型能力的下放将改变商业市场格局，Claude Fable 5 的发布标志着 Anthropic 在平衡安全性与高性能方面取得了新进展。",
-      "tags": [
-        "Anthropic",
-        "Claude Fable 5",
-        "Mythos",
-        "模型发布"
-      ],
-      "source": "Readhub Daily",
-      "url": "https://readhub.cn/topic/8toe9Jmup3z",
-      "published_at": "2026-06-09T22:29:00+00:00"
-    },
-    {
-      "rank": 7,
-      "title": "Watch agents fight: a live challenge to speed up Gemma 4 E4B inference on a single A10G",
-      "title_cn": "观看 Agent 对决：加速单张 A10G 上 Gemma 4 E4B 推理的实时挑战",
-      "summary_cn": "Reddit 社区发起一项实时挑战，邀请开发者通过优化 Agent 策略，在单张 A10G GPU 上加速 Gemma 4 E4B 模型的推理速度。该活动旨在探索边缘设备上的高效部署方案，展示社区在模型优化方面的创造力与竞争精神，推动开源模型在资源受限环境下的性能突破。",
-      "why_it_matters_cn": "展示了社区对开源模型极致优化的热情，为边缘计算场景下的模型部署提供了宝贵的实践经验和优化思路。",
-      "tags": [
-        "Gemma",
-        "Agent",
-        "推理优化",
-        "开源社区"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1blp1/watch_agents_fight_a_live_challenge_to_speed_up",
-      "published_at": "2026-06-09T17:22:46+00:00"
-    },
-    {
-      "rank": 8,
-      "title": "Why does it seems to be so difficult to control a model's reasoning process?",
-      "title_cn": "为何控制模型的推理过程如此困难？",
-      "summary_cn": "开发者在 Reddit 上探讨为何难以通过系统提示词控制大模型的推理过程。许多用户发现，即使发出简单指令，模型仍会生成大量冗余的推理步骤或变体。这一现象揭示了当前 LLM 在遵循复杂逻辑约束方面的局限性，引发了对模型内部机制及可控性的深入讨论。",
-      "why_it_matters_cn": "触及了当前大模型应用的核心痛点，即推理过程的可控性与效率，对提升模型实用性和用户体验至关重要。",
-      "tags": [
-        "LLM",
-        "推理控制",
-        "提示词工程",
-        "模型局限"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1ales/why_does_it_seems_to_be_so_difficult_to_control_a",
-      "published_at": "2026-06-09T16:48:23+00:00"
-    },
-    {
-      "rank": 9,
-      "title": "llm 0.32a3",
-      "title_cn": "llm 0.32a3 发布：几乎完全由 Claude Fable 5 编写",
-      "summary_cn": "Simon Willison 发布了 llm 工具的 0.32a3 版本，该版本几乎完全由新的 Claude Fable 5 模型编写。这一里程碑事件展示了高级 AI 模型在代码生成和软件维护方面的强大能力，标志着 AI 辅助编程从辅助工具向自主开发者的重大转变，验证了 AI 在复杂项目中的实际生产力。",
-      "why_it_matters_cn": "证明了先进 AI 模型具备独立编写和维护复杂软件项目的能力，预示着软件开发范式的根本性变革。",
-      "tags": [
-        "Claude",
-        "AI 编程",
-        "llm 工具",
-        "自动化"
-      ],
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Jun/9/llm",
-      "published_at": "2026-06-09T22:27:03+00:00"
-    },
-    {
-      "rank": 10,
-      "title": "Can tech companies learn to love cheaper AI models?",
-      "title_cn": "科技公司能学会爱上更便宜的 AI 模型吗？",
-      "summary_cn": "TechCrunch 文章探讨科技公司是否愿意采用成本更低的 AI 模型。如果廉价模型能在不影响质量的前提下处理相同的工作负载，将引发 AI 经济学的巨大转变。文章分析了当前市场对高性能模型的依赖，以及转向成本效益更高方案可能带来的商业影响和行业格局变化。",
-      "why_it_matters_cn": "揭示了 AI 行业从追求极致性能向追求成本效益转变的趋势，可能重塑 AI 服务的定价策略和市场结构。",
-      "tags": [
-        "AI 经济学",
-        "成本控制",
-        "模型效率",
-        "商业策略"
-      ],
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models",
-      "published_at": "2026-06-09T18:56:09+00:00"
-    },
-    {
-      "rank": 11,
-      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
-      "title_cn": "从一次性提示到工作流：在 GitHub Copilot CLI 中使用自定义 Agent",
-      "summary_cn": "GitHub 博客介绍了如何在 Copilot CLI 中使用自定义 Agent，将一次性终端提示转化为可重复、可审查的工作流。自定义 Agent 能够理解技术栈和团队工作流，显著提升开发效率。这一功能使开发者能够构建更复杂的自动化任务，实现从简单问答到复杂工程流程的跨越。",
-      "why_it_matters_cn": "提升了 AI 编程工具在复杂工程场景中的实用性，使开发者能够构建可重复、标准化的自动化工作流。",
-      "tags": [
-        "GitHub Copilot",
-        "Agent",
-        "工作流自动化",
-        "开发者工具"
-      ],
-      "source": "GitHub Blog AI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
-      "published_at": "2026-06-09T16:00:00+00:00"
-    },
-    {
-      "rank": 12,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
       "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
-      "title_cn": "介绍 Gemma 4 12B：一个统一的无编码器多模态模型",
-      "summary_cn": "Google DeepMind 发布了 Gemma 4 12B 模型，这是一个统一的、无编码器的多模态模型。该模型旨在简化多模态处理架构，通过去除独立的编码器模块，实现更高效的跨模态交互。这一架构创新有望降低多模态模型的复杂度和计算成本，同时提升不同模态间的融合效果。",
-      "why_it_matters_cn": "无编码器架构简化了多模态模型设计，可能成为未来多模态 AI 发展的新标准，降低开发门槛。",
+      "title_cn": "Google DeepMind 发布 Gemma 4 12B：统一且无编码器的多模态模型",
+      "summary_cn": "Google DeepMind 发布了 Gemma 4 12B 模型，这是一个统一的多模态模型，其显著特点是无需独立的编码器。该模型旨在简化架构，通过统一处理不同模态的数据，提升效率与性能，为开发者提供更灵活、高效的开源多模态 AI 解决方案。",
+      "why_it_matters_cn": "无编码器架构降低了多模态模型的复杂度和计算成本，有助于推动更轻量、高效的多模态 AI 应用落地，对开源社区具有重要参考价值。",
       "tags": [
-        "Gemma",
+        "Gemma 4",
         "多模态",
-        "模型架构",
-        "Google DeepMind"
+        "开源模型"
       ],
       "source": "Google DeepMind Blog",
       "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model",
-      "published_at": "2026-06-09T14:10:19+00:00"
+      "published_at": "2026-06-09T14:10:19+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 100,
+      "selected": true
     },
     {
-      "rank": 13,
-      "title": "Phinite — multi-agent OS with first-class agent identity, composable skills, behavioral evaluation [P]",
-      "title_cn": "Phinite：具备一等 agent 身份的多 agent 操作系统",
-      "summary_cn": "Phinite 旨在解决多 agent 系统缺乏基础设施的问题。它提供 agent 注册表，赋予每个 agent 唯一身份、版本及技能图谱。针对 agent 的非确定性，它采用行为评估而非传统函数测试，填补了微服务网格在 agent 领域的空白。",
-      "why_it_matters_cn": "解决了多 agent 协作中身份缺失和评估困难的核心痛点，为构建复杂 agent 系统提供了关键的基础设施层。",
-      "tags": [
-        "多 agent 系统",
-        "基础设施",
-        "行为评估"
-      ],
-      "source": "Reddit MachineLearning",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1jqmf/phinite_multiagent_os_with_firstclass_agent",
-      "published_at": "2026-06-09T22:17:47+00:00"
-    },
-    {
-      "rank": 14,
-      "title": "Quoting Andrej Karpathy",
-      "title_cn": "Andrej Karpathy 谈软件需求激增与杰文斯悖论",
-      "summary_cn": "Andrej Karpathy 指出，随着软件生成变得像自来水一样便捷，杰文斯悖论正在显现，他对软件的需求反而大幅增加。人们可以随意定制解释器、可视化仪表板或专用应用，极大地释放了创造力，实现了“解放你的思想”。",
-      "why_it_matters_cn": "揭示了 AI 降低开发门槛后，用户需求可能不降反升的趋势，预示了软件消费模式的根本性转变。",
-      "tags": [
-        "杰文斯悖论",
-        "软件需求",
-        "AI 创造力"
-      ],
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy",
-      "published_at": "2026-06-09T19:03:10+00:00"
-    },
-    {
-      "rank": 15,
-      "title": "OpenAI's widely cited $14B 2026 loss target leaves out ~$10B of stock-based comp",
-      "title_cn": "OpenAI 2026 年亏损目标未包含约 100 亿美元股权激励",
-      "summary_cn": "OpenAI 广泛引用的 140 亿美元 2026 年亏损目标未包含股权激励成本。若加上 70 亿至 100 亿美元的股权薪酬，GAAP 净亏损将升至 250 亿至 260 亿美元，比非 GAAP 数字高出约 80%，显著缩短了资金跑道。",
-      "why_it_matters_cn": "真实亏损远高于预期，意味着 OpenAI 的资金跑道缩短至约 5 年，盈利压力比表面数据大得多。",
-      "tags": [
-        "OpenAI",
-        "财务状况",
-        "股权激励"
-      ],
-      "source": "Reddit OpenAI",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1u17fvh/openais_widely_cited_14b_2026_loss_target_leaves",
-      "published_at": "2026-06-09T14:59:34+00:00"
-    },
-    {
-      "rank": 16,
-      "title": "How engineers at Nextdoor use Codex to build without limits",
-      "title_cn": "Nextdoor 工程师利用 Codex 突破开发限制",
-      "summary_cn": "Nextdoor 工程师使用 Codex 结合 GPT-5.5 来调查难以复现的问题，并在多平台间构建应用。这种工作流帮助他们专注于产品成果，利用 AI 处理复杂的技术细节，从而提升开发效率和产品质量。",
-      "why_it_matters_cn": "展示了 Codex 在实际企业开发中的落地应用，证明 AI 能辅助解决高难度技术问题并提升生产力。",
-      "tags": [
-        "Codex",
-        "GPT-5.5",
-        "开发效率"
-      ],
-      "source": "OpenAI News",
-      "url": "https://openai.com/index/nextdoor",
-      "published_at": "2026-06-09T12:00:00+00:00"
-    },
-    {
-      "rank": 17,
-      "title": "OpenAI now says \"entirely automating everything is not the future we want\"",
-      "title_cn": "OpenAI 称“完全自动化并非我们想要的未来”",
-      "summary_cn": "OpenAI 正从 2028 年完全自主 AI 研究的目标后退，转而强调人机“协同”。Altman 和 Pachocki 呼吁建立国际机构，必要时可减缓前沿 AI 的发展速度，表明其对完全自动化持谨慎态度。",
-      "why_it_matters_cn": "标志着 OpenAI 战略转向人机协作，并承认需要外部监管来确保 AI 发展的安全性与可控性。",
-      "tags": [
-        "OpenAI",
-        "人机协作",
-        "AI 监管"
-      ],
-      "source": "The Decoder",
-      "url": "https://the-decoder.com/openai-says-entirely-automating-everything-is-not-the-future-we-want",
-      "published_at": "2026-06-09T10:40:44+00:00"
-    },
-    {
-      "rank": 18,
-      "title": "Learning to lead in a hybrid human-AI enterprise",
-      "title_cn": "在混合人机企业中学习领导力",
-      "summary_cn": "随着 AI agent 采用率预计在未来两年激增 300%，领导团队正在仔细考量混合人机工作队的含义。与依赖手动输入的现有自动化不同，AI agent 能自主协调复杂任务并与多工具交互，这对管理提出了新挑战。",
-      "why_it_matters_cn": "AI agent 的自主性将重塑企业工作流，领导者需适应从管理任务到管理自主智能体的转变。",
-      "tags": [
-        "AI agent",
-        "企业转型",
-        "领导力"
-      ],
-      "source": "MIT Technology Review AI",
-      "url": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise",
-      "published_at": "2026-06-09T10:20:06+00:00"
-    },
-    {
-      "rank": 19,
-      "title": "What Codex unlocks for Notion",
-      "title_cn": "Codex 为 Notion 解锁的新能力",
-      "summary_cn": "Notion 利用 Codex 实现一次性生成规范，并构建网页版 AI 语音输入功能。这一举措显著提升了小型工程团队的开发效率，展示了 AI 代理在提升生产力工具中的实际价值，让非专业开发者也能快速构建复杂功能。",
-      "why_it_matters_cn": "展示了 AI 代理如何赋能生产力工具，降低开发门槛，提升小团队工程效率。",
-      "tags": [
-        "Codex",
-        "Notion",
-        "AI 代理",
-        "生产力"
-      ],
-      "source": "OpenAI News",
-      "url": "https://openai.com/index/notion",
-      "published_at": "2026-06-09T10:00:00+00:00"
-    },
-    {
-      "rank": 20,
-      "title": "OpenAI says going public is \"a complicated set of tradeoffs\" and is unsure about the timing",
-      "title_cn": "OpenAI 称上市是“复杂的权衡”，时间未定",
-      "summary_cn": "OpenAI 已向 SEC 秘密提交 S-1 注册文件，迈出 IPO 正式第一步。公司表示上市涉及复杂权衡，暂无明确时间表。竞争对手 Anthropic 近期也提交了 IPO 文件，这可能增加了 OpenAI 的压力，市场对其上市进程充满猜测。",
-      "why_it_matters_cn": "OpenAI 上市进程受竞对压力影响，其战略选择将重塑 AI 行业融资格局。",
-      "tags": [
-        "OpenAI",
-        "IPO",
-        "Anthropic",
-        "融资"
-      ],
-      "source": "The Decoder",
-      "url": "https://the-decoder.com/openai-says-going-public-is-a-complicated-set-of-tradeoffs-and-is-unsure-about-the-timing",
-      "published_at": "2026-06-09T09:30:05+00:00"
-    },
-    {
-      "rank": 21,
-      "title": "Siri AI at WWDC 2026",
-      "title_cn": "WWDC 2026 上的 Siri AI",
-      "summary_cn": "鉴于苹果此前宣传的落差，作者对 WWDC 2026 的新 Siri 功能持保留态度。新 Siri 基于定制的 Gemini 衍生模型，利用私有云计算运行，并借助视觉大模型从用户界面提取信息，技术上看似可行，但实际体验待验证。",
-      "why_it_matters_cn": "苹果通过私有云和定制模型提升 Siri 能力，但用户对其实际落地效果仍存疑虑。",
-      "tags": [
-        "Apple",
-        "Siri",
-        "Gemini",
-        "WWDC"
-      ],
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Jun/8/wwdc",
-      "published_at": "2026-06-08T23:58:04+00:00"
-    },
-    {
-      "rank": 22,
-      "title": "Anthropic’s Fable 5 can make weirdly fun video games with the click of a button",
-      "title_cn": "Anthropic 的 Fable 5 可一键生成趣味游戏",
-      "summary_cn": "Anthropic 推出的 Claude Fable 5 模型能够让用户通过点击按钮即可生成奇特且有趣的视频游戏。这一功能极大地降低了游戏开发门槛，预计将在网络上的氛围编码者群体中引发巨大反响，成为 AI 创意应用的热门工具。",
-      "why_it_matters_cn": "AI 降低游戏开发门槛，Fable 5 有望成为创意编码者的热门工具。",
-      "tags": [
-        "Anthropic",
-        "Claude",
-        "游戏开发",
-        "AI 创意"
-      ],
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button",
-      "published_at": "2026-06-09T20:37:49+00:00"
-    },
-    {
-      "rank": 23,
-      "title": "Newer Qwen models are worse at summarization?",
-      "title_cn": "新版 Qwen 模型在摘要任务上表现更差？",
-      "summary_cn": "Reddit 用户通过人类标注的基准测试发现，在 30B 参数范围内，Qwen 3 的表现优于更新的 Qwen 版本，紧随其后的是 Gemma 4。社区推测新版 Qwen 可能过度优化了代理任务，导致在纯文本摘要等传统任务上性能下降。",
-      "why_it_matters_cn": "模型优化方向可能影响特定任务性能，引发社区对通用性与专精性的讨论。",
-      "tags": [
-        "Qwen",
-        "Gemma",
-        "基准测试",
-        "模型优化"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1ggo9/newer_qwen_models_are_worse_at_summarization",
-      "published_at": "2026-06-09T20:15:26+00:00"
-    },
-    {
-      "rank": 24,
-      "title": "Unsloth Gemma 4 QAT MTP assistant models now available",
-      "title_cn": "Unsloth 发布 Gemma 4 QAT MTP 助手模型",
-      "summary_cn": "Unsloth 发布了基于 Gemma 4 的 QAT MTP 助手模型，提供多种量化版本，包括 q8_0 及更大量化格式。这些模型以 GGUF 格式发布，支持在本地设备上高效运行，为开发者提供了更多轻量化、高性能的开源模型选择。",
-      "why_it_matters_cn": "提供更多轻量化开源模型选择，促进本地端 AI 应用的开发与部署。",
-      "tags": [
-        "Gemma",
-        "Unsloth",
-        "开源模型",
-        "量化"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u19k2h/unsloth_gemma_4_qat_mtp_assistant_models_now",
-      "published_at": "2026-06-09T16:12:02+00:00"
-    },
-    {
-      "rank": 25,
-      "title": "Still a VERY lightweight open web-search tool for smaller local LLMs - now with SearXNG support",
-      "title_cn": "TinySearch v0.2.0 发布：为小型本地 LLM 提供轻量级开源网络搜索工具",
-      "summary_cn": "TinySearch v0.2.0 首个稳定测试版发布。鉴于 DuckDuckGo 频繁限制访问，新版本默认采用 SearXNG 作为搜索后端，解决了单一数据源脆弱的问题。该工具专为依赖网络搜索的 agent 设计，确保在本地运行小型 LLM 时能稳定获取实时信息，提升了系统的鲁棒性。",
-      "why_it_matters_cn": "解决了本地部署 LLM 时网络搜索工具因单一数据源受限而失效的问题，通过多源聚合提升了 agent 获取实时信息的稳定性。",
-      "tags": [
-        "LocalLLM",
-        "Agent",
-        "SearXNG",
-        "开源工具"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u106rc/still_a_very_lightweight_open_websearch_tool_for",
-      "published_at": "2026-06-09T09:34:46+00:00"
-    },
-    {
-      "rank": 26,
-      "title": "OpenAI joins Anthropic in thinking humanity may need to pause AI",
-      "title_cn": "OpenAI 加入 Anthropic 阵营，认为人类可能需要暂停 AI 发展",
-      "summary_cn": "OpenAI 发布新计划，与 Anthropic 立场趋同，暗示人类可能需要暂停 AI 发展以应对潜在风险。这一表态标志着主流 AI 巨头在安全伦理上的共识加深，从单纯追求技术突破转向更审慎的发展策略，引发了业界对 AI 监管和暂停协议的广泛讨论。",
-      "why_it_matters_cn": "两大巨头立场趋同，标志着行业从单纯追求技术突破转向审慎发展，可能推动全球 AI 监管和暂停协议的实质性进展。",
-      "tags": [
-        "OpenAI",
-        "Anthropic",
-        "AI 安全",
-        "行业趋势"
-      ],
-      "source": "Reddit OpenAI",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1u0xitd/openai_joins_anthropic_in_thinking_humanity_may",
-      "published_at": "2026-06-09T06:55:08+00:00"
-    },
-    {
-      "rank": 27,
-      "title": "Grit: Rewriting Git in Rust with Agents",
-      "title_cn": "Grit 项目：使用 Agent 用 Rust 重写 Git",
-      "summary_cn": "Grit 项目宣布使用 Agent 辅助，用 Rust 语言重写 Git。这一尝试展示了 AI Agent 在复杂系统重构中的潜力，旨在通过现代语言提升版本控制系统的性能和安全性。该话题在 Hacker News 上引发热烈讨论，体现了开发者社区对 AI 辅助编程和系统底层优化的关注。",
-      "why_it_matters_cn": "展示了 AI Agent 在复杂系统重构中的实际应用潜力，探索了用现代语言重写核心基础设施的可能性，引发社区对 AI 编程能力的关注。",
-      "tags": [
-        "Git",
-        "Rust",
-        "Agent",
-        "系统重构"
-      ],
-      "source": "Hacker News Agents",
-      "url": "https://blog.gitbutler.com/true-grit",
-      "published_at": "2026-06-09T19:58:21+00:00"
-    },
-    {
-      "rank": 28,
-      "title": "zai-org/SCAIL-2 · Hugging Face",
-      "title_cn": "zai-org 发布 SCAIL-2：统一受控角色动画的端到端模型",
-      "summary_cn": "zai-org 在 Hugging Face 发布 SCAIL-2，这是一个用于端到端受控角色动画的开源模型。它通过驱动视频动画化参考角色，支持角色替换和多角色场景，无需依赖中间姿态表示。该模型克服了传统方法对骨架图等中间表示的依赖，提升了动画生成的灵活性和质量。",
-      "why_it_matters_cn": "突破了传统角色动画对中间姿态表示的依赖，实现了端到端的灵活控制，为开源社区提供了更高质量的角色动画生成方案。",
-      "tags": [
-        "SCAIL-2",
-        "角色动画",
-        "开源模型",
-        "计算机视觉"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1dw38/zaiorgscail2_hugging_face",
-      "published_at": "2026-06-09T18:43:26+00:00"
-    },
-    {
-      "rank": 29,
-      "title": "Jetson Orin NX Build for Hermes Agent + Benchmarking",
-      "title_cn": "Jetson Orin NX 构建 Hermes Agent 并基准测试：打造静音小型 LLM 服务器",
-      "summary_cn": "开发者利用闲置的 Jetson Orin NX 构建了一个小型 LLM 服务器，用于运行 Hermes Agent。通过改装散热系统，实现了静音运行，并达到了每秒 10 个 token 的生成速度和 300 个 token 的预处理速度，支持 65K 上下文。这证明了在边缘设备上高效运行现代 MoE 模型和 Agent 的可行性。",
-      "why_it_matters_cn": "证明了在边缘设备上高效运行现代 MoE 模型和 Agent 的可行性，为个人开发者提供了低成本、低噪音的本地 AI 部署方案。",
-      "tags": [
-        "Jetson Orin",
-        "Hermes Agent",
-        "边缘计算",
-        "MoE"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u11wvo/jetson_orin_nx_build_for_hermes_agent_benchmarking",
-      "published_at": "2026-06-09T11:10:02+00:00"
-    },
-    {
-      "rank": 30,
-      "title": "Five things you need to know about AI",
-      "title_cn": "MIT 科技评论：关于 AI 你需要知道的五件事",
-      "summary_cn": "MIT 科技评论分享了在 SXSW London 演讲中的核心观点，总结了当前 AI 领域的五大重要主题。这些观点源自其年度 AI10 趋势指南，旨在帮助公众理解这个喧嚣领域中的关键趋势，涵盖了从技术突破到社会影响等多个维度的深度洞察。",
-      "why_it_matters_cn": "权威媒体梳理当前 AI 领域五大核心主题，帮助公众和从业者厘清技术喧嚣，把握行业发展的关键趋势和方向。",
-      "tags": [
-        "MIT Tech Review",
-        "AI 趋势",
-        "行业洞察",
-        "SXSW"
-      ],
-      "source": "MIT Technology Review AI",
-      "url": "https://www.technologyreview.com/2026/06/09/1138582/five-things-you-need-to-know-about-ai",
-      "published_at": "2026-06-09T09:16:45+00:00"
-    },
-    {
-      "rank": 31,
-      "title": "AI Epistemic Risks: Emerging Mechanisms & Evidence [R]",
-      "title_cn": "AI 认识论风险：新兴机制与证据",
-      "summary_cn": "由30位专家共同撰写的新论文探讨了AI带来的认识论风险，即AI对我们集体准确形成信念、良好推理及维持健康信息环境能力的威胁。研究指出，AI系统具有高度说服力，可能导致政治和经济操纵、煽动及极端化等危害，严重干扰人类的独立思考与判断能力。",
-      "why_it_matters_cn": "揭示了AI对人类认知自主性的潜在威胁，强调了在AI普及背景下维护信息环境健康和防止操纵的紧迫性，对政策制定者和技术开发者具有重要警示意义。",
-      "tags": [
-        "AI安全",
-        "认识论风险",
-        "信息操纵"
-      ],
-      "source": "Reddit MachineLearning",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1ew6q/ai_epistemic_risks_emerging_mechanisms_evidence_r",
-      "published_at": "2026-06-09T19:18:47+00:00"
-    },
-    {
-      "rank": 32,
-      "title": "Releasing Cohere North Mini Code",
-      "title_cn": "发布 Cohere North Mini Code 模型",
-      "summary_cn": "Cohere 正式推出 North Mini Code 模型，回应社区反馈。该模型权重可在 Hugging Face 下载（支持 fp8 格式），也可在 OpenCode 上免费试用。官方提供了技术博客以解答关于模型细节的疑问，旨在为开发者提供高效、轻量级的代码生成解决方案。",
-      "why_it_matters_cn": "为开发者提供了新的开源代码生成工具选择，特别是其轻量级特性适合资源受限环境，有助于推动代码辅助工具在更广泛场景下的落地应用。",
-      "tags": [
-        "Cohere",
-        "代码生成",
-        "开源模型"
-      ],
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1ci1r/releasing_cohere_north_mini_code",
-      "published_at": "2026-06-09T17:54:36+00:00"
-    },
-    {
-      "rank": 33,
-      "title": "ChatGPT sets a new benchmark in global AI adoption.",
-      "title_cn": "ChatGPT 在全球 AI 采用率方面树立新标杆",
-      "summary_cn": "ChatGPT 在全球范围内的人工智能采用率方面设立了新的基准。这一里程碑事件反映了 ChatGPT 作为主流 AI 助手在用户普及度和市场影响力上的巨大成功，标志着生成式 AI 技术已深入全球用户的日常生活和工作流程中。",
-      "why_it_matters_cn": "突显了 ChatGPT 在推动全球 AI 普及方面的领导地位，为衡量其他 AI 产品的市场渗透率和用户接受度提供了重要的参考标准。",
-      "tags": [
-        "ChatGPT",
-        "AI采用率",
-        "市场标杆"
-      ],
-      "source": "Reddit OpenAI",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1u16llc/chatgpt_sets_a_new_benchmark_in_global_ai_adoption",
-      "published_at": "2026-06-09T14:28:43+00:00"
-    },
-    {
-      "rank": 34,
+      "rank": 2,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
       "title": "Claude Fable 5 and Claude Mythos 5",
-      "title_cn": "Claude Fable 5 与 Claude Mythos 5 发布",
-      "summary_cn": "Anthropic 发布了 Claude Fable 5 和 Claude Mythos 5 两款新模型。虽然具体技术细节未在摘要中详述，但这两款模型的推出标志着 Anthropic 在 Claude 系列模型上的持续迭代，可能针对特定应用场景或性能指标进行了优化。",
-      "why_it_matters_cn": "展示了 Anthropic 在大型语言模型领域的持续创新能力，新模型的发布可能带来新的功能特性或性能提升，影响 AI 助手市场的竞争格局。",
+      "title_cn": "Anthropic 发布 Claude Fable 5 和 Claude Mythos 5",
+      "summary_cn": "Anthropic 官方新闻宣布推出 Claude Fable 5 和 Claude Mythos 5。虽然具体技术细节未在摘要中详述，但这标志着 Anthropic 在模型系列上的进一步扩展，可能涉及特定领域或能力的增强。",
+      "why_it_matters_cn": "Anthropic 持续迭代其模型产品线，展示了其在不同应用场景下的布局，开发者需关注这些新模型带来的具体能力变化及 API 更新。",
       "tags": [
         "Anthropic",
         "Claude",
@@ -536,119 +40,296 @@
       ],
       "source": "Anthropic News",
       "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "published_at": "2026-06-09T00:00:00+00:00"
+      "published_at": "2026-06-09T00:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 100,
+      "selected": true
     },
     {
-      "rank": 35,
-      "title": "So finally it’s not AGI yet. Anyone tested it? How does it really stack against GPT 5.5 in real world coding?",
-      "title_cn": "尚未实现 AGI：实测对比 GPT 5.5 的编码能力",
-      "summary_cn": "社区讨论指出目前尚未实现通用人工智能（AGI）。用户正在测试新模型，并探讨其在真实世界编码任务中与 GPT 5.5 的实际表现对比。这一讨论反映了开发者对当前 AI 模型实际工程能力的关注，以及对 AGI 进展的理性审视。",
-      "why_it_matters_cn": "反映了业界对当前 AI 模型实际能力的务实评估，有助于纠正对 AGI 的过度炒作，引导开发者关注模型在具体任务中的真实表现。",
+      "rank": 3,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Unsloth Gemma 4 QAT MTP assistant models now available",
+      "title_cn": "Unsloth Gemma 4 QAT MTP 助手模型发布",
+      "summary_cn": "Unsloth 发布了基于 Gemma 4 的 QAT MTP 助手模型，提供多种量化版本（如 q8_0 及更大量化），适用于不同硬件环境。这些模型在 Hugging Face 上可用，旨在优化本地部署性能。",
+      "why_it_matters_cn": "为本地部署高性能开源模型提供了更多优化选择，促进边缘计算应用。",
       "tags": [
-        "AGI",
-        "GPT 5.5",
-        "编码能力"
+        "Gemma",
+        "Unsloth",
+        "本地部署"
       ],
-      "source": "Reddit OpenAI",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1u1jpg4/so_finally_its_not_agi_yet_anyone_tested_it_how",
-      "published_at": "2026-06-09T22:16:28+00:00"
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u19k2h/unsloth_gemma_4_qat_mtp_assistant_models_now",
+      "published_at": "2026-06-09T16:12:02+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 58,
+      "selected": true
     },
     {
-      "rank": 36,
-      "title": "What will be the next breakthrough in ASR? [D]",
-      "title_cn": "自动语音识别（ASR）的下一个突破是什么？",
-      "summary_cn": "讨论聚焦于 ASR 模型的进展，指出伪标签数据的增长推动了监督模型的快速提升。Whisper-large-v3 使用500万小时弱监督数据训练，而 Nvidia Parakeet v3 使用66万小时标注数据训练，且后者在性能上超越了前者，展示了数据规模和质量对 ASR 性能的关键影响。",
-      "why_it_matters_cn": "揭示了数据策略在 ASR 模型发展中的核心作用，为研究人员优化语音识别模型提供了新的视角，即高质量标注数据可能比海量弱监督数据更具价值。",
+      "rank": 4,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "zai-org/SCAIL-2 · Hugging Face",
+      "title_cn": "zai-org/SCAIL-2 开源模型发布",
+      "summary_cn": "SCAIL-2 是一个开源模型，用于端到端控制角色动画。它通过驱动视频动画化参考角色，支持角色替换和多角色场景，无需依赖中间姿态表示，统一了受控角色动画与上下文条件。",
+      "why_it_matters_cn": "简化了角色动画生成流程，无需中间姿态表示，提升了动画生成的灵活性与效率。",
+      "tags": [
+        "SCAIL-2",
+        "角色动画",
+        "开源模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1dw38/zaiorgscail2_hugging_face",
+      "published_at": "2026-06-09T18:43:26+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+      "title_cn": "Gemini 3.5 Live Translate 实现流畅自然的语音翻译",
+      "summary_cn": "Google DeepMind 宣布 Gemini 3.5 Live Translate 功能上线，支持在 Google AI Studio、Google Translate 和 Google Meet 中实现近乎实时的自然语音翻译。该功能旨在提供流畅、自然的跨语言语音交互体验，消除语言障碍。",
+      "why_it_matters_cn": "实时语音翻译是打破语言壁垒的关键技术。Gemini 3.5 的集成应用将显著提升远程会议和多语言沟通的效率，推动 AI 在日常生活和工作场景中的普及。",
+      "tags": [
+        "Gemini 3.5",
+        "语音翻译",
+        "Google DeepMind",
+        "实时交互"
+      ],
+      "source": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate",
+      "published_at": "2026-06-09T15:16:25+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 92,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "What Codex unlocks for Notion",
+      "title_cn": "Codex 为 Notion 解锁的新能力",
+      "summary_cn": "Notion 利用 Codex 实现一次性生成规范，构建网页版 AI 语音输入功能，并显著提升了小型工程团队的开发效率。这一案例展示了 AI 编码助手如何帮助初创团队以少胜多，加速产品迭代与功能落地。",
+      "why_it_matters_cn": "展示了 AI 编码工具如何赋能小型团队，提升工程效率并加速产品创新。",
+      "tags": [
+        "Codex",
+        "Notion",
+        "工程效率"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/notion",
+      "published_at": "2026-06-09T10:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 92,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+      "title_cn": "GitHub Copilot CLI 支持自定义 Agent 工作流",
+      "summary_cn": "GitHub 博客介绍如何在 GitHub Copilot CLI 中使用自定义 Agent。自定义 Agent 能让 Copilot 理解技术栈和团队工作流，将一次性终端提示转化为可重复、可审查的流程。这一功能提升了开发效率，使 AI 辅助编程更贴合实际项目需求，实现从简单问答到复杂工作流的转变。",
+      "why_it_matters_cn": "自定义 Agent 功能使 AI 编程助手能更好地融入团队工作流，提升开发过程的规范性和效率，是 AI 编程工具的重要进化。",
+      "tags": [
+        "GitHub Copilot",
+        "Agent",
+        "开发者工具"
+      ],
+      "source": "GitHub Blog AI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+      "published_at": "2026-06-09T16:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Anthropic’s Fable 5 can make weirdly fun video games with the click of a button",
+      "title_cn": "Anthropic 的 Fable 5 可一键生成趣味游戏",
+      "summary_cn": "Anthropic 推出的 Claude Fable 5 模型能够一键生成奇特且有趣的视频游戏。这一功能预计将在网络上的“氛围编码者”群体中大受欢迎，降低了游戏开发的门槛。",
+      "why_it_matters_cn": "展示了生成式 AI 在创意内容生产领域的潜力，进一步降低游戏开发门槛。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "游戏开发"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button",
+      "published_at": "2026-06-09T20:37:49+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "llm 0.32a3",
+      "title_cn": "llm 0.32a3 发布：由 Claude Fable 5 编写",
+      "summary_cn": "Simon Willison 发布了 llm 工具的 0.32a3 版本。该版本几乎完全由新的 Claude Fable 5 模型编写，展示了高级 AI 模型在代码生成和工具开发方面的强大能力。这一发布不仅更新了工具功能，也验证了 Claude Fable 5 在实际软件开发任务中的高效性和可靠性。",
+      "why_it_matters_cn": "AI 辅助编程工具由 AI 自身编写，标志着 AI 在软件开发领域的自主性进一步提升，展示了前沿模型的实际工程价值。",
+      "tags": [
+        "llm",
+        "Claude Fable 5",
+        "开发者工具"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/9/llm",
+      "published_at": "2026-06-09T22:27:03+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 70,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Siri AI at WWDC 2026",
+      "title_cn": "WWDC 2026 上的 Siri AI",
+      "summary_cn": "鉴于此前苹果 AI 宣传的落差，作者对 WWDC 2026 的新 Siri 功能持保留态度。新 Siri 基于定制的 Gemini 衍生模型，运行于私有云计算，并利用视觉 LLM 提取信息，技术可行性较高。",
+      "why_it_matters_cn": "苹果在 AI 领域的持续投入及与 Google 模型的潜在合作，可能重塑移动端 AI 体验。",
+      "tags": [
+        "Siri",
+        "Apple",
+        "Gemini"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/8/wwdc",
+      "published_at": "2026-06-08T23:58:04+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 70,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Apple announced new on device inference engine for Apple Silicon",
+      "title_cn": "苹果发布 Apple Silicon 新设备端推理引擎 CoreAI",
+      "summary_cn": "苹果在 WWDC 上低调发布 CoreAI，作为 CoreML 的未来替代品及 MLX/llama.cpp 的竞争对手。该引擎专为手机和平板等设备端优化推理，模型权重需通过 Python 脚本转换。目前支持模型列表主要涵盖 2025 年中发布的中期模型，引发社区关注。",
+      "why_it_matters_cn": "苹果强化端侧 AI 能力，CoreAI 可能重塑移动端 AI 应用开发生态，挑战现有开源方案。",
+      "tags": [
+        "苹果",
+        "端侧 AI",
+        "CoreAI"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1516w/apple_announced_new_on_device_inference_engine",
+      "published_at": "2026-06-09T13:29:13+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 44,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+      "title_cn": "语音 Agent 能否处理双语客户？基准测试前沿 ASR 在语码转换语音上的表现",
+      "summary_cn": "Hugging Face 博客发布了一项关于语音识别的研究，探讨前沿 ASR 模型在处理语码转换（Code-Switched）语音时的表现。研究旨在评估语音 Agent 在面对双语或多语言混合输入时的实际能力，为构建更自然的多语言交互体验提供数据支持。",
+      "why_it_matters_cn": "随着语音交互在全球化场景中的应用增加，处理混合语言输入的能力成为关键瓶颈。该研究有助于开发者了解当前 ASR 技术的局限，优化多语言语音 Agent 的用户体验。",
       "tags": [
         "ASR",
         "语音识别",
-        "数据训练"
+        "语码转换",
+        "多语言交互"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+      "published_at": "2026-06-09T19:38:28+00:00",
+      "source_role": "research",
+      "source_role_label": "研究/生态",
+      "editorial_score": 73,
+      "selected": true
+    },
+    {
+      "rank": 13,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models",
+      "title_cn": "ReasonAlloc：推理模型的分层解码时 KV Cache 预算分配",
+      "summary_cn": "arXiv 发布新论文 ReasonAlloc，针对大语言模型推理中因长思维链导致的 KV Cache 增长瓶颈提出解决方案。不同于现有的均匀预算分配或静态预填充分配，该方法在解码时进行分层非均匀预算分配，以更好地捕捉逐步上下文需求。",
+      "why_it_matters_cn": "长思维链推理是提升模型性能的关键，但也带来巨大的内存压力。该研究提出的动态预算分配策略有望显著降低推理延迟和内存占用，提升推理模型的效率。",
+      "tags": [
+        "KV Cache",
+        "推理优化",
+        "长思维链",
+        "论文研究"
+      ],
+      "source": "arXiv AI/ML",
+      "url": "https://arxiv.org/abs/2606.11164v1",
+      "published_at": "2026-06-09T17:44:23+00:00",
+      "source_role": "research",
+      "source_role_label": "研究/生态",
+      "editorial_score": 73,
+      "selected": true
+    },
+    {
+      "rank": 14,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
+      "title_cn": "ABC-Bench：生物安全领域的 Agent 能力基准测试",
+      "summary_cn": "随着 LLM 在生物研究中的能力增强，AI 带来的生物安全风险也在上升。研究人员提出 ABC-Bench，这是一个专门用于评估 AI Agent 在生物安全领域能力的基准测试。该基准旨在衡量 AI 在模拟生物学任务中的表现，以应对新兴的 AI 生物安全挑战，平衡科学发现机会与潜在风险。",
+      "why_it_matters_cn": "随着 AI 在生物领域的应用加深，建立标准化的安全评估基准对于防范潜在生物风险、确保技术安全发展至关重要。",
+      "tags": [
+        "ABC-Bench",
+        "生物安全",
+        "Agent"
+      ],
+      "source": "arXiv AI/ML",
+      "url": "https://arxiv.org/abs/2606.11150v1",
+      "published_at": "2026-06-09T17:35:37+00:00",
+      "source_role": "research",
+      "source_role_label": "研究/生态",
+      "editorial_score": 73,
+      "selected": true
+    },
+    {
+      "rank": 15,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "AI Epistemic Risks: Emerging Mechanisms & Evidence [R]",
+      "title_cn": "AI 认识论风险：新兴机制与证据",
+      "summary_cn": "由 30 位专家共同撰写的新论文探讨了 AI 带来的认识论风险，即 AI 对集体准确形成信念、理性推理及维护健康信息环境能力的威胁。研究指出 AI 可能通过说服与操纵等机制造成危害，包括政治经济操纵、煽动极端主义及滥用等问题。",
+      "why_it_matters_cn": "深入揭示 AI 对人类认知能力和信息环境的潜在威胁，为制定安全策略提供理论依据。",
+      "tags": [
+        "AI 风险",
+        "学术论文",
+        "认知安全"
       ],
       "source": "Reddit MachineLearning",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1cklt/what_will_be_the_next_breakthrough_in_asr_d",
-      "published_at": "2026-06-09T17:57:14+00:00"
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1ew6q/ai_epistemic_risks_emerging_mechanisms_evidence_r",
+      "published_at": "2026-06-09T19:18:47+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": true
     },
     {
-      "rank": 37,
-      "title": "One small prompt change that made ChatGPT 5 times more useful for me.",
-      "title_cn": "一个让 ChatGPT 实用性提升 5 倍的小提示技巧",
-      "summary_cn": "用户在 Reddit 分享，通过在提示词中加入“不要解释你要做什么，直接做”以及“不确定时先问我”，有效减少了 ChatGPT 的废话并提高了复杂任务的准确性。这一简单的提示词调整显著改善了交互体验，引发了社区对高效提示词技巧的广泛讨论。",
-      "why_it_matters_cn": "展示了如何通过微调提示词来优化大模型输出，帮助用户更高效地利用 AI 工具，减少无效信息干扰。",
-      "tags": [
-        "ChatGPT",
-        "提示词工程",
-        "用户体验"
-      ],
-      "source": "Reddit OpenAI",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1u1c39f/one_small_prompt_change_that_made_chatgpt_5_times",
-      "published_at": "2026-06-09T17:39:55+00:00"
-    },
-    {
-      "rank": 38,
-      "title": "iOS 27 Siri is using WaveRNN and FastSpeech2 [D]",
-      "title_cn": "iOS 27 中的 Siri 使用 WaveRNN 和 FastSpeech2",
-      "summary_cn": "开发者在 iOS 模拟器文件中发现，iOS 27 的 Siri 语音合成（TTS）系统采用了 WaveRNN 和 FastSpeech2 模型，并以 Espresso 格式存储。此外还发现了一个用于音乐会排名的 CoreML 模型。这一发现揭示了苹果在语音技术上的底层架构选择。",
-      "why_it_matters_cn": "揭示了苹果在最新 iOS 版本中采用的具体语音合成技术栈，为开发者了解苹果 AI 基础设施提供了线索。",
-      "tags": [
-        "Siri",
-        "语音合成",
-        "iOS 27"
-      ],
-      "source": "Reddit MachineLearning",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1ht5x/ios_27_siri_is_using_wavernn_and_fastspeech2_d",
-      "published_at": "2026-06-09T21:04:16+00:00"
-    },
-    {
-      "rank": 39,
-      "title": "Time Series Forecasting for Agriculture/Crop Volume & Pricing – Looking for Advice [D]",
-      "title_cn": "农业产量与定价的时间序列预测求助",
-      "summary_cn": "一位在大型浆果公司工作的专业人士在 Reddit 上寻求建议，他负责预测行业作物产量和未来价格。作为机器学习新手，他正在使用 USDA 等数据源进行尝试，希望获得关于时间序列预测模型构建的专业指导，以优化其预测流程。",
-      "why_it_matters_cn": "反映了机器学习在农业垂直领域的实际应用需求，展示了行业从业者如何利用 AI 解决具体的商业预测问题。",
-      "tags": [
-        "时间序列预测",
-        "农业 AI",
-        "机器学习应用"
-      ],
-      "source": "Reddit MachineLearning",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1brfv/time_series_forecasting_for_agriculturecrop",
-      "published_at": "2026-06-09T17:28:18+00:00"
-    },
-    {
-      "rank": 40,
-      "title": "What is the best Ai for studying",
-      "title_cn": "学习高等数学和物理的最佳免费 AI 推荐",
-      "summary_cn": "一名学习高等数学、物理和少量电学的学生在 Reddit 上询问，有哪些免费的 AI 工具最适合辅助学习。该帖子引发了社区关于不同 AI 工具在学术辅导方面表现的讨论，旨在寻找能提供免费且高质量学术支持的 AI 助手。",
-      "why_it_matters_cn": "体现了学生群体对免费 AI 学习工具的迫切需求，反映了 AI 在教育普及化过程中的角色。",
-      "tags": [
-        "AI 教育",
-        "学习工具",
-        "免费资源"
-      ],
-      "source": "Reddit OpenAI",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1u18iag/what_is_the_best_ai_for_studying",
-      "published_at": "2026-06-09T15:35:44+00:00"
-    },
-    {
-      "rank": 41,
-      "title": "Are privacy-preserving techniques actually being used in production ML systems? [D]",
-      "title_cn": "隐私保护技术是否真的在生产级 ML 系统中使用？",
-      "summary_cn": "一位从业者询问差分隐私、联邦学习和设备端推理等隐私保护机器学习技术在工业界的实际部署情况。他关注这些技术在生产环境中的工程挑战、对模型性能的影响以及基础设施成本，旨在了解学术界研究与工业界落地之间的差距。",
-      "why_it_matters_cn": "探讨了隐私保护技术在现实世界中的落地难题，对于平衡 AI 发展与数据隐私合规具有重要参考价值。",
-      "tags": [
-        "隐私保护",
-        "联邦学习",
-        "工业部署"
-      ],
-      "source": "Reddit MachineLearning",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1u12bpa/are_privacypreserving_techniques_actually_being",
-      "published_at": "2026-06-09T11:30:16+00:00"
-    },
-    {
-      "rank": 42,
+      "rank": 16,
+      "category": "industry",
+      "category_label": "行业动态",
       "title": "Industrial policy for the Intelligence Age",
-      "title_cn": "智能时代的产业政策",
-      "summary_cn": "OpenAI 发布了一份关于智能时代产业政策的报告，提出了以人为本的政策理念。报告聚焦于在先进智能技术演进过程中，如何扩大机会、分享繁荣并建立具有韧性的机构，旨在引导 AI 技术的发展方向以造福社会。",
-      "why_it_matters_cn": "展示了头部 AI 公司对技术社会影响的思考，为政策制定者和技术社区提供了关于 AI 治理和发展的宏观视角。",
+      "title_cn": "智能时代的产业政策：OpenAI 发布新愿景",
+      "summary_cn": "OpenAI 发布关于智能时代产业政策的文章，提出以人为本的政策理念。重点在于扩大机会、共享繁荣及建立韧性机构，旨在应对高级智能发展带来的社会变革，确保技术进步惠及大众并维持社会稳定。",
+      "why_it_matters_cn": "OpenAI 从技术公司转向政策倡导者，其产业政策建议可能影响全球 AI 监管框架及社会资源分配方向。",
       "tags": [
         "OpenAI",
         "产业政策",
@@ -656,7 +337,554 @@
       ],
       "source": "OpenAI News",
       "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-      "published_at": "2026-06-09T00:00:00+00:00"
+      "published_at": "2026-06-09T00:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 17,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Can tech companies learn to love cheaper AI models?",
+      "title_cn": "科技公司能否学会爱上更便宜的 AI 模型？",
+      "summary_cn": "TechCrunch 探讨科技公司是否愿意采用更便宜的 AI 模型。如果相同的工作负载可以由低成本模型处理且不影响质量，这将带来 AI 经济学的巨大转变。文章分析了当前行业对高端模型的依赖，以及转向成本效益更高模型的潜在挑战和机遇。",
+      "why_it_matters_cn": "AI 推理成本高昂是普及瓶颈，转向性价比更高的模型可能重塑 AI 产业的经济结构和商业模式。",
+      "tags": [
+        "AI 成本",
+        "模型经济性",
+        "行业趋势"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models",
+      "published_at": "2026-06-09T18:56:09+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 18,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI now says \"entirely automating everything is not the future we want\"",
+      "title_cn": "OpenAI 转变立场：完全自动化并非我们想要的未来",
+      "summary_cn": "OpenAI 正在远离 2028 年实现完全自主 AI 研究的目标，转而强调人机协作的“同步”模式。Altman 和 Pachocki 还呼吁建立国际机构，必要时可减缓前沿 AI 的发展速度，以确保安全可控。",
+      "why_it_matters_cn": "OpenAI 战略转向人机协作，并支持国际监管，标志着 AI 行业从追求完全自主向安全可控、人机共生的方向转变。",
+      "tags": [
+        "OpenAI",
+        "AI 安全",
+        "人机协作"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-says-entirely-automating-everything-is-not-the-future-we-want",
+      "published_at": "2026-06-09T10:40:44+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 19,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Learning to lead in a hybrid human-AI enterprise",
+      "title_cn": "在混合人机企业中学习领导力：AI Agent 激增带来的挑战",
+      "summary_cn": "随着 AI Agent 采用率预计在未来两年激增 300%，领导团队正在仔细考虑混合人机工作队的含义。与依赖手动输入的现有自动化不同，AI Agent 能够自主协调复杂任务，与多个工具和环境交互，这对管理提出了新要求。",
+      "why_it_matters_cn": "AI Agent 的自主性将重塑企业工作流程，领导者需适应从管理任务到管理自主智能体的转变，这对组织变革至关重要。",
+      "tags": [
+        "AI Agent",
+        "企业转型",
+        "领导力"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise",
+      "published_at": "2026-06-09T10:20:06+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 20,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI says going public is \"a complicated set of tradeoffs\" and is unsure about the timing",
+      "title_cn": "OpenAI 称上市是“复杂的权衡”，时间未定",
+      "summary_cn": "OpenAI 已向 SEC 秘密提交 S-1 注册文件，迈出 IPO 正式第一步。公司表示上市涉及复杂权衡，暂无明确时间表。竞争对手 Anthropic 近期也提交了 IPO 文件，加剧了行业竞争压力。",
+      "why_it_matters_cn": "OpenAI 启动 IPO 流程标志着 AI 巨头商业化进程加速，行业竞争格局面临新变化。",
+      "tags": [
+        "OpenAI",
+        "IPO",
+        "Anthropic"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-says-going-public-is-a-complicated-set-of-tradeoffs-and-is-unsure-about-the-timing",
+      "published_at": "2026-06-09T09:30:05+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 21,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "How engineers at Nextdoor use Codex to build without limits",
+      "title_cn": "Nextdoor 工程师如何利用 Codex 和 GPT-5.5 突破开发限制",
+      "summary_cn": "OpenAI 案例研究显示，Nextdoor 工程师使用 Codex 结合 GPT-5.5 来解决难以复现的问题，跨平台构建应用，并专注于产品成果。通过 AI 辅助，团队能够更高效地处理复杂技术挑战，提升开发效率与产品质量。",
+      "why_it_matters_cn": "展示了 Codex 在实际企业开发中的落地价值，证明 AI 工具能显著提升工程师解决复杂问题和跨平台开发的能力。",
+      "tags": [
+        "Codex",
+        "GPT-5.5",
+        "开发者工具"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/nextdoor",
+      "published_at": "2026-06-09T12:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 66,
+      "selected": true
+    },
+    {
+      "rank": 22,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+      "title_cn": "Agent 如何通过链接两个 Hugging Face Spaces 构建 3D 巴黎画廊",
+      "summary_cn": "Hugging Face 博客展示了一个案例，说明 Agent 如何通过链接两个 Hugging Face Spaces 来构建一个 3D 巴黎画廊。该案例演示了 Agent 在协调不同模型和服务以完成复杂任务方面的能力，展示了模块化 AI 应用的潜力。",
+      "why_it_matters_cn": "该案例展示了 Agent 工程在整合现有 AI 服务方面的强大能力。通过链接不同的 Spaces，开发者可以快速构建复杂的多模态应用，降低了开发门槛并提高了创新速度。",
+      "tags": [
+        "Agent",
+        "Hugging Face Spaces",
+        "3D 生成",
+        "应用构建"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+      "published_at": "2026-06-09T10:46:19+00:00",
+      "source_role": "research",
+      "source_role_label": "研究/生态",
+      "editorial_score": 60,
+      "selected": true
+    },
+    {
+      "rank": 23,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Setting a custom price for a model in AgentsView",
+      "title_cn": "在 AgentsView 中为模型设置自定义价格",
+      "summary_cn": "Simon Willison 分享了在 AgentsView 中为 Claude Fable 5 设置自定义价格的技巧。由于该模型尚未纳入定价数据库，他通过逆向工程找到了配置方法，并展示了按不同 coding agent 分类的 token 使用量树状图，帮助用户更精准地监控本地运行成本。",
+      "why_it_matters_cn": "随着本地运行多个 coding agent 成为常态，精确追踪各模型的 token 消耗至关重要。掌握自定义定价技巧可避免成本估算偏差，提升开发者对 AI 工具使用效率的掌控力。",
+      "tags": [
+        "AgentsView",
+        "Claude Fable 5",
+        "Token 监控",
+        "开发者工具"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
+      "published_at": "2026-06-09T21:35:31+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 24,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Five things you need to know about AI",
+      "title_cn": "关于 AI 你需要知道的五件事",
+      "summary_cn": "作者在 SXSW London 演讲中分享了当前 AI 领域的五大核心主题。内容源自年度 AI10 趋势指南，旨在梳理这个喧嚣领域中最重要、最具影响力的发展趋势，帮助公众和从业者理清 AI 发展的关键脉络与未来方向。",
+      "why_it_matters_cn": "提炼行业核心趋势，帮助从业者和公众快速把握 AI 领域的关键动态与未来走向。",
+      "tags": [
+        "行业趋势",
+        "AI 教育",
+        "SXSW"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/06/09/1138582/five-things-you-need-to-know-about-ai",
+      "published_at": "2026-06-09T09:16:45+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 40,
+      "selected": true
+    },
+    {
+      "rank": 25,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Quoting Andrej Karpathy",
+      "title_cn": "Andrej Karpathy 谈软件需求激增：杰文斯悖论在 AI 时代显现",
+      "summary_cn": "Andrej Karpathy 指出，随着 AI 让软件生成变得像“打开水龙头”一样容易，杰文斯悖论正在发生。他对软件的需求反而大幅增长，包括定制应用、测试套件优化等。他认为 AI 释放了创造力，让人们可以要求更多样化、个性化的软件服务。",
+      "why_it_matters_cn": "揭示了 AI 降低开发门槛后，用户需求并未减少反而爆炸式增长的趋势，预示软件行业将迎来新一轮定制化需求浪潮。",
+      "tags": [
+        "Andrej Karpathy",
+        "杰文斯悖论",
+        "软件需求"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy",
+      "published_at": "2026-06-09T19:03:10+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 38,
+      "selected": true
+    },
+    {
+      "rank": 26,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Releasing Cohere North Mini Code",
+      "title_cn": "发布 Cohere North Mini Code 模型",
+      "summary_cn": "Cohere 正式推出 North Mini Code 模型，回应社区对未发布版本的反馈。该模型权重可在 Hugging Face 下载（支持 fp8），也可在 OpenCode 上免费试用。官方提供了技术博客和详细解答，旨在优化代码生成能力，满足开发者需求。",
+      "why_it_matters_cn": "Cohere 推出轻量级代码模型，为开发者提供高效、易用的代码生成工具选择。",
+      "tags": [
+        "代码模型",
+        "Cohere",
+        "模型发布"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1ci1r/releasing_cohere_north_mini_code",
+      "published_at": "2026-06-09T17:54:36+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 58,
+      "selected": false,
+      "editorial_note": "社区源精选配额已满"
+    },
+    {
+      "rank": 27,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "iOS 27 Siri is using WaveRNN and FastSpeech2 [D]",
+      "title_cn": "iOS 27 Siri 使用 WaveRNN 和 FastSpeech2",
+      "summary_cn": "开发者从 iOS 模拟器文件中发现，iOS 27 的 Siri 语音合成（TTS）使用了 WaveRNN 和 FastSpeech2 模型，格式为 espresso。此外还发现用于音乐会排名的 CoreML 模型，看似是简单的逻辑回归。",
+      "why_it_matters_cn": "揭示了苹果在系统级语音合成技术上的具体选型，为移动端语音交互优化提供了技术参考，同时也展示了逆向工程在了解大厂技术栈中的作用。",
+      "tags": [
+        "Siri",
+        "TTS",
+        "iOS"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1ht5x/ios_27_siri_is_using_wavernn_and_fastspeech2_d",
+      "published_at": "2026-06-09T21:04:16+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 44,
+      "selected": false,
+      "editorial_note": "社区源精选配额已满"
+    },
+    {
+      "rank": 28,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "What will be the next breakthrough in ASR? [D]",
+      "title_cn": "ASR 领域的下一个突破点在哪里？",
+      "summary_cn": "Reddit 机器学习社区探讨自动语音识别（ASR）的未来突破。指出伪标签数据增长推动监督模型快速崛起，Whisper-large-v3 使用 500 万小时弱监督数据，Nvidia Parakeet v3 使用 66 万小时标注数据且表现更优。",
+      "why_it_matters_cn": "揭示了 ASR 技术从弱监督到强监督数据的演进趋势，Nvidia 模型的优异表现可能预示行业新标准，对语音交互应用开发具有重要参考价值。",
+      "tags": [
+        "ASR",
+        "Whisper",
+        "Nvidia"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1cklt/what_will_be_the_next_breakthrough_in_asr_d",
+      "published_at": "2026-06-09T17:57:14+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": false,
+      "editorial_note": "社区源精选配额已满"
+    },
+    {
+      "rank": 29,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI's widely cited $14B 2026 loss target leaves out ~$10B of stock-based comp",
+      "title_cn": "OpenAI 2026 年亏损预测若计入股权激励，实际亏损或达 250 亿美元",
+      "summary_cn": "Reddit 用户指出，OpenAI 广泛引用的 2026 年 140 亿美元亏损预测未包含股权激励成本。若加上 70 亿至 100 亿美元的股权激励，GAAP 净亏损可能接近 250 亿至 260 亿美元，比非 GAAP 数字高出约 80%，这将显著缩短其资金跑道。",
+      "why_it_matters_cn": "真实亏损远高于预期，意味着 OpenAI 的资金跑道可能从 8-9 年缩短至 5 年，盈利压力剧增，影响其长期战略稳定性。",
+      "tags": [
+        "OpenAI",
+        "财务亏损",
+        "股权激励"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1u17fvh/openais_widely_cited_14b_2026_loss_target_leaves",
+      "published_at": "2026-06-09T14:59:34+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 30,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 30,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "It's not just Anthropic anymore, OpenAI researchers are signaling support for a global AI pause",
+      "title_cn": "不仅是 Anthropic，OpenAI 研究人员也支持全球 AI 暂停",
+      "summary_cn": "Reddit 社区讨论指出，支持全球 AI 暂停的呼声不再局限于 Anthropic。OpenAI 内部研究人员也开始发出信号，表达对暂停 AI 研发或部署的支持。这一动向表明，关于 AI 安全风险的担忧正在主要科技公司内部蔓延，引发更广泛的行业反思。",
+      "why_it_matters_cn": "反映 AI 安全担忧在头部公司间的扩散，可能影响未来监管政策及行业研发节奏。",
+      "tags": [
+        "AI 安全",
+        "OpenAI",
+        "行业伦理"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1u0w2yd/its_not_just_anthropic_anymore_openai_researchers",
+      "published_at": "2026-06-09T05:33:41+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 30,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 31,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Jetson Orin NX Build for Hermes Agent + Benchmarking",
+      "title_cn": "Jetson Orin NX 构建 Hermes Agent 及基准测试",
+      "summary_cn": "开发者利用闲置的 Jetson Orin NX 硬件，结合 MoE 架构和小模型优势，重新打造微型 LLM 服务器。目标是实现静音运行，推理速度超过 10 tok/s，前处理速度达 300 tok/s，并支持至少 65K 上下文窗口，同时通过改装散热片确保外观酷炫。",
+      "why_it_matters_cn": "展示了边缘设备在 MoE 时代的新潜力，为个人开发者提供低成本、高性能的本地 AI 部署方案。",
+      "tags": [
+        "边缘计算",
+        "Hermes Agent",
+        "硬件改装"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u11wvo/jetson_orin_nx_build_for_hermes_agent_benchmarking",
+      "published_at": "2026-06-09T11:10:02+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 32,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "I put together a Rust-native, CPU-only implementation of LFM2.5-8B-A1B",
+      "title_cn": "Rust 原生 CPU 版 LFM2.5-8B-A1B 实现发布",
+      "summary_cn": "开发者发布基于 Rust 的纯 CPU 实现 LFM2.5-8B-A1B 模型。支持工具调用回调，内存占用约 7GB，可在 16GB RAM 机器上运行。解码速度约 37 tokens/s，预填充速度正在优化中，支持多 Agent 实例复用权重。",
+      "why_it_matters_cn": "展示了在低资源环境下运行大模型的可行性，Rust 实现的高效率为边缘计算和轻量级 Agent 部署提供了新的技术路径和参考实现。",
+      "tags": [
+        "Rust",
+        "CPU 推理",
+        "Agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u14kte/i_put_together_a_rustnative_cpuonly",
+      "published_at": "2026-06-09T13:11:08+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 33,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "What Codex Plugins are actually improving your workflow",
+      "title_cn": "哪些 Codex 插件真正提升了工作流效率",
+      "summary_cn": "Reddit 用户发起讨论，询问哪些 Codex 插件在实际使用中真正改善了开发工作流。该话题旨在收集社区反馈，帮助开发者筛选出高价值插件，避免在海量工具中浪费时间，优化编程体验。",
+      "why_it_matters_cn": "反映了开发者对提升编码效率工具的迫切需求，社区反馈有助于识别真正实用的 AI 编程辅助工具。",
+      "tags": [
+        "Codex",
+        "插件",
+        "开发效率"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1u15clo/what_codex_plugins_are_actually_improving_your",
+      "published_at": "2026-06-09T13:41:47+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 34,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Watch agents fight: a live challenge to speed up Gemma 4 E4B inference on a single A10G",
+      "title_cn": "社区挑战：在单张 A10G 上加速 Gemma 4 E4B 推理",
+      "summary_cn": "Reddit 社区发起一项实时挑战，邀请开发者竞争在单张 A10G GPU 上加速 Gemma 4 E4B 模型的推理速度。这一活动展示了社区对优化大模型推理效率的热情，通过“Agent 对战”的形式激发创新，探索在有限硬件资源下提升模型性能的技术方案。",
+      "why_it_matters_cn": "降低大模型推理成本和提升效率是行业热点，社区驱动的优化竞赛有助于挖掘更多高效的推理加速技术。",
+      "tags": [
+        "Gemma",
+        "推理优化",
+        "社区挑战"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1blp1/watch_agents_fight_a_live_challenge_to_speed_up",
+      "published_at": "2026-06-09T17:22:46+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 35,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Have we reached the point where open-source LLMs are “just good enough”?",
+      "title_cn": "开源 LLM 是否已达到“足够好”的临界点？",
+      "summary_cn": "Reddit 社区热议开源大模型是否已能满足 95% 的需求。讨论焦点在于剩余 5% 的差距是否值得付费，包括回答质量提升、自动化流程优化以及降低面临内部或外部批评的风险，探讨开源与闭源模型的价值权衡。",
+      "why_it_matters_cn": "这反映了开源模型成熟度的关键转折点，帮助开发者评估在成本与性能之间做出取舍，决定何时采用开源方案以替代昂贵的商业 API。",
+      "tags": [
+        "开源模型",
+        "LLM",
+        "成本效益"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0yo32/have_we_reached_the_point_where_opensource_llms",
+      "published_at": "2026-06-09T08:02:32+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 36,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "So finally it’s not AGI yet. Anyone tested it? How does it really stack against GPT 5.5 in real world coding?",
+      "title_cn": "AGI 尚未到来：新模型与 GPT 5.5 的真实编码能力对比",
+      "summary_cn": "Reddit 用户讨论最新 AI 模型是否真正实现了 AGI，并关注其在真实世界编码任务中与 GPT 5.5 的表现对比。社区成员分享测试经验，评估当前模型在复杂编程场景下的实际效能与局限性。",
+      "why_it_matters_cn": "通过真实编码场景的横向对比，帮助开发者理性看待 AGI 进展，选择最适合实际工程需求的模型工具，避免被营销概念误导。",
+      "tags": [
+        "AGI",
+        "GPT 5.5",
+        "编码能力"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1u1jpg4/so_finally_its_not_agi_yet_anyone_tested_it_how",
+      "published_at": "2026-06-09T22:16:28+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 37,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Time Series Forecasting for Agriculture/Crop Volume & Pricing – Looking for Advice [D]",
+      "title_cn": "农业产量与定价的时间序列预测求助",
+      "summary_cn": "一位莓果公司员工在 Reddit 上寻求建议，他负责行业作物产量及未来价格预测。作为机器学习新手，他目前使用 USDA 数据，希望获得关于时间序列预测模型构建及最佳实践的专业指导，以提升预测准确性。",
+      "why_it_matters_cn": "展示了 ML 在农业垂直领域的实际应用挑战，反映了行业对精准预测的需求及新手从业者在落地过程中的常见困惑。",
+      "tags": [
+        "时间序列",
+        "农业",
+        "预测"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1u1brfv/time_series_forecasting_for_agriculturecrop",
+      "published_at": "2026-06-09T17:28:18+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 38,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "What is the best Ai for studying",
+      "title_cn": "寻找最适合学习的高阶学科 AI 工具",
+      "summary_cn": "Reddit 用户询问是否有免费的 AI 工具能辅助学习高阶数学、物理及电力知识。该讨论反映了学生群体对利用 AI 提升学习效率的强烈需求，以及寻找免费且高质量教育辅助工具的迫切愿望。",
+      "why_it_matters_cn": "体现了 AI 在教育领域的普及趋势，用户正积极寻找工具以应对高难度学科的学习挑战，推动了教育科技的发展。",
+      "tags": [
+        "教育",
+        "AI 工具",
+        "学习"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1u18iag/what_is_the_best_ai_for_studying",
+      "published_at": "2026-06-09T15:35:44+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 39,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "2021 ai image generation",
+      "title_cn": "能否访问 2021 年的早期 AI 图像生成模型",
+      "summary_cn": "用户在 Reddit 上询问是否能在 2026 年访问 DALL-E 等 2021 年的早期图像生成模型。用户认为 2020-2021 年的 AI 艺术具有独特美学，希望将其用于当前的艺术项目中，引发对模型版本回溯的讨论。",
+      "why_it_matters_cn": "反映了用户对早期 AI 艺术风格的怀旧与特定需求，揭示了模型迭代过程中旧版本可访问性对创意工作流的影响。",
+      "tags": [
+        "图像生成",
+        "DALL-E",
+        "艺术"
+      ],
+      "source": "Reddit OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1u1342k/2021_ai_image_generation",
+      "published_at": "2026-06-09T12:07:42+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 40,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Are privacy-preserving techniques actually being used in production ML systems? [D]",
+      "title_cn": "隐私保护技术在实际 ML 系统中的落地情况",
+      "summary_cn": "Reddit 用户探讨差分隐私、联邦学习等隐私保护 ML 技术在工业界的实际采用情况。询问从业者关于工程挑战、对模型性能及基础设施成本的影响，以及具体的适用场景，旨在了解研究与落地的差距。",
+      "why_it_matters_cn": "揭示了隐私保护技术从学术研究到工业部署的关键障碍，为开发者评估技术可行性及合规成本提供参考。",
+      "tags": [
+        "隐私保护",
+        "联邦学习",
+        "工程落地"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1u12bpa/are_privacypreserving_techniques_actually_being",
+      "published_at": "2026-06-09T11:30:16+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 41,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Understanding Pytorch better and Moving forward from papers [D]",
+      "title_cn": "深入理解 PyTorch 并从论文中汲取灵感",
+      "summary_cn": "一位即将毕业的工程学生在 Reddit 上分享心路历程。他虽能阅读论文并理解架构，但在处理 PyTorch 代码中复杂的维度变换和辅助函数耦合时感到吃力。他渴望构建结合视觉、音频和文本的多模态编码器，却不知如何从当前阶段进阶，寻求社区建议。",
+      "why_it_matters_cn": "反映了开发者从理论到工程实践的常见瓶颈，特别是多模态模型开发中的代码实现挑战，对初学者具有参考价值。",
+      "tags": [
+        "PyTorch",
+        "多模态",
+        "学习路径"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1u12axw/understanding_pytorch_better_and_moving_forward",
+      "published_at": "2026-06-09T11:29:15+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
     }
   ],
   "source_errors": [],
@@ -664,14 +892,31 @@
     "Anthropic releases Claude Fable 5 and Mythos 5 with major gains in coding and science",
     "Apple Intelligence gets a second shot with help from Google and Nvidia",
     "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
+    "EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents",
     "OpenAI Confidentially Files for IPO as Traders Bet on $1.5T Valuation",
-    "what context would you let an openai app request from you?",
     "New in Claude Managed Agents: run agents on a schedule and store environment variables in vaults",
     "langchain-ai/langchain: langchain-perplexity==1.4.0",
     "langchain-ai/langchain: langchain-openai==1.3.0",
     "langchain-ai/langchain: langchain-core==1.4.3",
     "Google's Gemini 3.5 Live Translate delivers real-time voice translation across 70+ languages",
-    "It's not just Anthropic anymore, OpenAI researchers are signaling support for a global AI pause",
-    "Claude Fable 5 and Claude Mythos 5"
+    "Claude Fable 5 and Claude Mythos 5",
+    "OpenAI 向美国证监会秘密提交 IPO 文件，尚未决定上市时间",
+    "Anthropic 明天或将发布公开版本 Mythos"
+  ],
+  "editorial_dropped_items": [
+    {
+      "title": "OpenAI 向美国证监会秘密提交 IPO 文件，尚未决定上市时间",
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8to2eqQpLXq",
+      "duplicate_of": "OpenAI says going public is \"a complicated set of tradeoffs\" and is unsure about the timing",
+      "reason": "被更高可信来源覆盖"
+    },
+    {
+      "title": "Anthropic 明天或将发布公开版本 Mythos",
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8toe9Jmup3z",
+      "duplicate_of": "Anthropic’s Fable 5 can make weirdly fun video games with the click of a button",
+      "reason": "被更高可信来源覆盖"
+    }
   ]
 }
