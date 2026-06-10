@@ -40,6 +40,87 @@ DEFAULT_OPENAI_MAX_TOKENS = 4096
 DEFAULT_SOURCE_SUMMARY_CHARS = 500
 MAX_DAILY_ITEMS = 100
 LLM_CONFIG: dict[str, Any] = {}
+CATEGORY_ORDER = [
+    "model_release",
+    "product_update",
+    "paper_research",
+    "industry",
+    "developer_agent",
+    "tips",
+    "community_light",
+]
+CATEGORY_LABELS = {
+    "model_release": "模型发布/更新",
+    "product_update": "产品发布/更新",
+    "paper_research": "论文研究",
+    "industry": "行业动态",
+    "developer_agent": "开发者工具 / Agent 工程",
+    "tips": "技巧与观点",
+    "community_light": "轻量社区动态",
+}
+CATEGORY_ALIASES = {
+    "model": "model_release",
+    "模型发布": "model_release",
+    "模型更新": "model_release",
+    "product": "product_update",
+    "产品发布": "product_update",
+    "产品更新": "product_update",
+    "paper": "paper_research",
+    "论文": "paper_research",
+    "研究": "paper_research",
+    "行业": "industry",
+    "开发者工具": "developer_agent",
+    "agent工程": "developer_agent",
+    "技巧": "tips",
+    "观点": "tips",
+    "社区动态": "community_light",
+}
+CATEGORY_PRIORITY = {category: index for index, category in enumerate(CATEGORY_ORDER)}
+SOURCE_ROLE_LABELS = {
+    "official": "官方",
+    "research": "研究/生态",
+    "media": "媒体",
+    "practitioner": "实践者",
+    "developer_ecosystem": "开发者生态",
+    "aggregator": "聚合",
+    "community": "社区",
+}
+SOURCE_ROLE_PRIORITY = {
+    "official": 0,
+    "research": 1,
+    "media": 2,
+    "practitioner": 3,
+    "developer_ecosystem": 4,
+    "aggregator": 5,
+    "community": 6,
+}
+OFFICIAL_SOURCE_HINTS = (
+    "Anthropic News",
+    "Anthropic Research",
+    "Claude Blog",
+    "Google DeepMind Blog",
+    "Google AI Blog",
+    "OpenAI News",
+    "OpenAI Blog",
+    "Microsoft Research",
+)
+SPECULATIVE_TERMS = ("或将", "可能", "明天", "预计", "传闻", "reportedly", "may ", "could ")
+EVENT_TERMS = (
+    "anthropic", "claude", "fable", "mythos", "openai", "gpt", "chatgpt",
+    "google", "deepmind", "gemini", "gemma", "qwen", "deepseek", "cohere",
+)
+MODEL_RELEASE_CUES = (
+    "release", "released", "releasing", "launch", "launched",
+    "introducing", "introduced", "announce", "announces", "announced",
+    "unveil", "unveils", "unveiled", "preview", "weights", "checkpoint",
+    "available", "发布", "推出", "上线", "预览", "权重",
+)
+DEVELOPER_OVERRIDE_TERMS = (
+    "agentsview", "claude code", "codex", "copilot", "mcp", "tinysearch",
+    "workflow", "workflows", "token", "pricing", "price", "cost", "llm 0.",
+    "llm tool", "llm cli", "llm 工具", "开发者工具", "开源工具",
+    "token 管理", "工作流", "配置", "成本",
+)
 
 
 @dataclass(frozen=True)
@@ -1226,6 +1307,7 @@ def fallback_brief(item: NewsItem) -> dict[str, Any]:
         "summary_cn": strip_html(item.summary)[:220] or "模型暂时不可用，暂无中文摘要；请点击原文查看详情。",
         "why_it_matters_cn": "该条资讯与 AI 产业、模型能力或开发者生态相关，建议结合原文进一步判断影响。",
         "tags": infer_tags(item),
+        "category": infer_category(item),
     }
 
 
@@ -1250,6 +1332,124 @@ def infer_tags(item: NewsItem) -> list[str]:
     ]
     tags = [label for needle, label in tag_rules if needle in text]
     return tags[:4] or ["AI"]
+
+
+def text_has_any(text: str, needles: tuple[str, ...]) -> bool:
+    """Return true when any needle is present in the lowercase text."""
+
+    return any(needle in text for needle in needles)
+
+
+def normalize_category_value(value: str) -> str:
+    """Normalize a model or heuristic category into the supported taxonomy."""
+
+    key = re.sub(r"\s+", " ", value.strip().lower())
+    compact = key.replace(" ", "")
+    if key in CATEGORY_ORDER:
+        return key
+    for category, label in CATEGORY_LABELS.items():
+        label_key = label.lower()
+        if key == label_key or compact == label_key.replace(" ", ""):
+            return category
+    return CATEGORY_ALIASES.get(key) or CATEGORY_ALIASES.get(compact) or ""
+
+
+def infer_category(item: NewsItem) -> str:
+    """Infer a stable category when the LLM omits or mislabels one."""
+
+    text = f"{item.title} {item.summary} {item.source}".lower()
+
+    paper_terms = ("arxiv", "paper", "论文", "research paper", "technical report", "研究论文", "技术报告")
+    if text_has_any(text, paper_terms):
+        return "paper_research"
+
+    model_names = (
+        "gpt", "claude", "gemini", "grok", "llama", "qwen", "deepseek",
+        "mistral", "gemma", "ernie", "minimax", "kimi", "hunyuan",
+        "sensenova", "nemotron", "mimo", "sora", "veo", "imagen", "flux",
+    )
+    title_text = item.title.lower()
+    title_is_model_release = text_has_any(title_text, model_names) and text_has_any(
+        title_text,
+        MODEL_RELEASE_CUES,
+    )
+    if text_has_any(text, DEVELOPER_OVERRIDE_TERMS) and not title_is_model_release:
+        return "developer_agent"
+
+    if text_has_any(text, model_names) and text_has_any(text, MODEL_RELEASE_CUES):
+        return "model_release"
+    if text_has_any(
+        text,
+        ("模型发布", "新模型发布", "新模型上线", "发布模型", "推出模型", "模型上线", "权重发布"),
+    ):
+        return "model_release"
+
+    if text_has_any(
+        text,
+        ("benchmark", "eval", "swe-bench", "terminal-bench", "frontiercode", "基准测试", "评测"),
+    ):
+        return "paper_research"
+
+    product_terms = (
+        "api", "sdk", "platform", "app", "feature", "integration", "tool",
+        "工具", "产品", "功能", "平台", "应用", "插件", "集成", "notebooklm",
+        "chatgpt", "openrouter", "cursor", "runway", "luma", "midjourney",
+    )
+    update_terms = ("发布", "上线", "推出", "新增", "launch", "release", "introduce", "roll out")
+    if text_has_any(text, product_terms) and text_has_any(text, update_terms):
+        return "product_update"
+
+    developer_terms = (
+        "agent", "agents", "mcp", "codex", "claude code", "copilot",
+        "coding agent", "workflow", "workflows", "token", "vllm", "langchain",
+        "llamaindex", "智能体", "开发者", "工程", "代码", "编程", "工作流",
+    )
+    if text_has_any(text, developer_terms):
+        return "developer_agent"
+
+    if item.source.lower().startswith("reddit") and text_has_any(
+        text,
+        ("?", "[d]", "discussion", "looking for advice", "recommend", "推荐"),
+    ):
+        return "community_light"
+
+    industry_terms = (
+        "funding", "ipo", "valuation", "acquisition", "lawsuit", "regulation",
+        "policy", "data center", "chip", "nvidia", "bloomberg", "stock",
+        "revenue", "loss", "headcount", "融资", "上市", "估值", "收购",
+        "诉讼", "监管", "政策", "数据中心", "芯片", "裁员", "营收", "亏损", "股权",
+    )
+    if text_has_any(text, industry_terms):
+        return "industry"
+
+    tips_terms = (
+        "how to", "guide", "tips", "best practice", "opinion", "takeaway",
+        "best ai", "recommend", "advice", "教程", "指南", "技巧", "观点",
+        "方法", "建议", "推荐", "学习",
+    )
+    if text_has_any(text, tips_terms):
+        return "tips"
+
+    if text_has_any(text, ("meme", "rumor", "rumour", "fun", "梗", "传闻", "趣闻")):
+        return "community_light"
+
+    return "industry"
+
+
+def normalized_category(brief: dict[str, Any], item: NewsItem) -> str:
+    """Return a supported category, preferring LLM output when valid."""
+
+    raw_category = str(brief.get("category") or "")
+    category = normalize_category_value(raw_category)
+    heuristic = infer_category(item)
+    item_text = f"{item.title} {item.summary} {item.source}".lower()
+    if (
+        heuristic == "developer_agent"
+        and category in {"model_release", "product_update", "industry", "tips"}
+        and text_has_any(item_text, DEVELOPER_OVERRIDE_TERMS)
+    ):
+        return heuristic
+    return category or heuristic
 
 
 def normalize_brief(data: dict[str, Any], item: NewsItem) -> dict[str, Any]:
@@ -1296,6 +1496,7 @@ def normalize_brief(data: dict[str, Any], item: NewsItem) -> dict[str, Any]:
         "summary_cn": summary_cn,
         "why_it_matters_cn": why_it_matters_cn,
         "tags": [str(tag).strip() for tag in tags if str(tag).strip()][:4],
+        "category": normalized_category(data, item),
     }
     if used_fallback:
         result["used_fallback"] = True
@@ -1366,9 +1567,14 @@ def build_llm_messages(items: list[NewsItem], start_index: int) -> list[dict[str
             "content": (
                 "请把这些 AI 资讯整理成中文简报。输出 JSON 对象，唯一顶层字段是 items。"
                 "items 必须是数组，长度和输入一致，每项字段必须是："
-                "index, title_cn, summary_cn, why_it_matters_cn, tags。"
+                "index, title_cn, summary_cn, why_it_matters_cn, tags, category。"
                 "summary_cn 控制在 80-140 个中文字符；why_it_matters_cn 控制在 40-90 个中文字符；"
-                "tags 是 2-4 个短标签。输入："
+                "tags 是 2-4 个短标签。"
+                "category 必须从以下枚举中选择一个："
+                "model_release=模型发布/更新；product_update=产品发布/更新；"
+                "paper_research=论文研究；industry=行业动态；"
+                "developer_agent=开发者工具或 Agent 工程；tips=技巧与观点；"
+                "community_light=轻量社区动态。输入："
                 f"{json.dumps(prompt_items, ensure_ascii=False)}"
             ),
         },
@@ -1450,6 +1656,283 @@ def generate_llm_briefs(items: list[NewsItem], skip_llm: bool) -> list[dict[str,
     return briefs
 
 
+def infer_source_role(source: str, url: str) -> str:
+    """Classify source trust/role for editorial ordering."""
+
+    source_lower = source.lower()
+    url_lower = url.lower()
+    if source_lower.startswith("reddit") or source_lower.startswith("hacker news"):
+        return "community"
+    if source == "Readhub Daily" or "readhub.cn" in url_lower:
+        return "aggregator"
+    if source_lower.startswith("github releases"):
+        return "developer_ecosystem"
+    if source == "Simon Willison":
+        return "practitioner"
+    if source in {"Microsoft Research", "Hugging Face Blog", "arXiv AI/ML"}:
+        return "research"
+    if is_first_party_source(source, url):
+        return "official"
+    if source in {
+        "MIT Technology Review AI",
+        "InfoQ AI/ML",
+        "The Decoder",
+        "TechCrunch AI",
+        "VentureBeat AI",
+        "GitHub Blog AI",
+    }:
+        return "media"
+    return "media"
+
+
+def is_first_party_source(source: str, url: str) -> bool:
+    """Return true for vendor/research labs publishing on their own sites."""
+
+    url_lower = url.lower()
+    return any(source.startswith(hint) for hint in OFFICIAL_SOURCE_HINTS) or any(
+        domain in url_lower
+        for domain in (
+            "anthropic.com/news",
+            "openai.com/news",
+            "deepmind.google",
+            "blog.google",
+            "microsoft.com/en-us/research",
+        )
+    )
+
+
+def source_quality_score(entry: dict[str, Any]) -> int:
+    """Convert source role to a coarse quality score."""
+
+    role = str(entry.get("source_role") or "")
+    return {
+        "official": 100,
+        "research": 88,
+        "media": 76,
+        "practitioner": 70,
+        "developer_ecosystem": 66,
+        "aggregator": 50,
+        "community": 40,
+    }.get(role, 60)
+
+
+def editorial_score(entry: dict[str, Any]) -> int:
+    """Score whether an item belongs in the front of the daily brief."""
+
+    category = str(entry.get("category") or "")
+    role = str(entry.get("source_role") or "")
+    text = entry_search_text(entry)
+    base = {
+        "model_release": 68,
+        "product_update": 62,
+        "paper_research": 55,
+        "industry": 48,
+        "developer_agent": 42,
+        "tips": 30,
+        "community_light": 18,
+    }.get(category, 30)
+    role_bonus = {
+        "official": 24,
+        "research": 18,
+        "media": 10,
+        "practitioner": 8,
+        "developer_ecosystem": 6,
+        "aggregator": -6,
+        "community": -18,
+    }.get(role, 0)
+    score = base + role_bonus
+    if category == "model_release" and text_has_any(text, MODEL_RELEASE_CUES):
+        score += 8
+    if category == "product_update" and role == "official":
+        score += 6
+    if role == "community" and category in {"tips", "community_light"}:
+        score -= 14
+    if is_speculative_entry(entry):
+        score -= 35
+    return max(0, min(100, score))
+
+
+def sort_entries_by_category(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Sort entries by selected status, category priority, then editorial score."""
+
+    sorted_entries = sorted(
+        entries,
+        key=lambda entry: (
+            0 if entry.get("selected", True) else 1,
+            CATEGORY_PRIORITY.get(str(entry.get("category") or ""), len(CATEGORY_ORDER)),
+            -int(entry.get("editorial_score") or 0),
+            SOURCE_ROLE_PRIORITY.get(str(entry.get("source_role") or ""), len(SOURCE_ROLE_PRIORITY)),
+            int(entry.get("rank") or 999),
+        ),
+    )
+    for index, entry in enumerate(sorted_entries, start=1):
+        entry["rank"] = index
+    return sorted_entries
+
+
+def entry_search_text(entry: dict[str, Any]) -> str:
+    """Return normalized text used for final duplicate checks."""
+
+    return " ".join(
+        str(entry.get(key) or "")
+        for key in ("title", "title_cn", "summary_cn", "why_it_matters_cn", "source")
+    ).lower()
+
+
+def event_terms(entry: dict[str, Any]) -> set[str]:
+    """Extract coarse product/model terms that identify the same AI event."""
+
+    text = entry_search_text(entry)
+    terms = {term for term in EVENT_TERMS if term in text}
+    if {"anthropic", "claude"} <= terms and ({"fable", "mythos"} & terms):
+        terms.add("anthropic_claude_release")
+    if "openai" in terms and text_has_any(text, ("ipo", "s-1", "sec", "上市")):
+        terms.add("openai_ipo")
+    return terms
+
+
+def is_official_entry(entry: dict[str, Any]) -> bool:
+    """Return true for first-party or clearly official source rows."""
+
+    return str(entry.get("source_role") or "") == "official"
+
+
+def is_speculative_entry(entry: dict[str, Any]) -> bool:
+    """Return true for preview, rumor, or likely superseded aggregator rows."""
+
+    text = entry_search_text(entry)
+    source = str(entry.get("source") or "")
+    return source == "Readhub Daily" and any(term in text for term in SPECULATIVE_TERMS)
+
+
+def suppress_superseded_entries(
+    entries: list[dict[str, Any]],
+    skipped_duplicates: list[str],
+    editorial_dropped_items: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    """Drop lower-trust rows when a stronger source covers the same event."""
+
+    kept: list[dict[str, Any]] = []
+    for index, entry in enumerate(entries):
+        signature = event_terms(entry)
+        duplicate_candidates: list[dict[str, Any]] = []
+        for other_index, other in enumerate(entries):
+            if other_index == index:
+                continue
+            other_signature = event_terms(other)
+            if not same_editorial_event(signature, other_signature):
+                continue
+            if source_quality_score(other) <= source_quality_score(entry):
+                continue
+            if not (
+                is_speculative_entry(entry)
+                or str(entry.get("source_role") or "") in {"aggregator", "community"}
+            ):
+                continue
+            duplicate_candidates.append(other)
+
+        if duplicate_candidates:
+            duplicate_of = max(
+                duplicate_candidates,
+                key=lambda candidate: (
+                    source_quality_score(candidate),
+                    int(candidate.get("editorial_score") or 0),
+                ),
+            )
+            title = str(entry.get("title") or entry.get("title_cn") or "")
+            skipped_duplicates.append(title)
+            editorial_dropped_items.append(
+                {
+                    "title": title,
+                    "source": str(entry.get("source") or ""),
+                    "url": str(entry.get("url") or ""),
+                    "duplicate_of": str(duplicate_of.get("title") or duplicate_of.get("title_cn") or ""),
+                    "reason": "被更高可信来源覆盖",
+                }
+            )
+            continue
+        kept.append(entry)
+    return kept
+
+
+def same_editorial_event(left: set[str], right: set[str]) -> bool:
+    """Return true when two term sets identify one concrete event."""
+
+    overlap = left & right
+    if not overlap:
+        return False
+    canonical = {"anthropic_claude_release", "openai_ipo"}
+    if overlap & canonical:
+        return True
+    return len(overlap) >= 3
+
+
+def apply_selection_limits(entries: list[dict[str, Any]]) -> None:
+    """Keep noisy community items from crowding the first 12/20 slots."""
+
+    community_total = 0
+    community_by_category: dict[str, int] = {}
+    community_category_caps = {
+        "model_release": 2,
+        "product_update": 1,
+        "paper_research": 1,
+        "industry": 1,
+        "developer_agent": 2,
+        "tips": 0,
+        "community_light": 0,
+    }
+    ranked = sorted(
+        entries,
+        key=lambda entry: (
+            CATEGORY_PRIORITY.get(str(entry.get("category") or ""), len(CATEGORY_ORDER)),
+            -int(entry.get("editorial_score") or 0),
+            SOURCE_ROLE_PRIORITY.get(str(entry.get("source_role") or ""), len(SOURCE_ROLE_PRIORITY)),
+            int(entry.get("rank") or 999),
+        ),
+    )
+    for entry in ranked:
+        if int(entry.get("editorial_score") or 0) < 35:
+            entry["selected"] = False
+            entry["editorial_note"] = "分数低于精选阈值"
+            continue
+
+        role = str(entry.get("source_role") or "")
+        category = str(entry.get("category") or "")
+        if role != "community":
+            entry["selected"] = True
+            continue
+
+        category_count = community_by_category.get(category, 0)
+        category_cap = community_category_caps.get(category, 1)
+        if community_total >= 6 or category_count >= category_cap:
+            entry["selected"] = False
+            entry["editorial_note"] = "社区源精选配额已满"
+            continue
+
+        community_total += 1
+        community_by_category[category] = category_count + 1
+        entry["selected"] = True
+
+
+def apply_editorial_review(
+    entries: list[dict[str, Any]],
+    skipped_duplicates: list[str],
+    editorial_dropped_items: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    """Apply global editorial metadata, dedupe, scoring, and selection."""
+
+    for entry in entries:
+        role = infer_source_role(str(entry.get("source") or ""), str(entry.get("url") or ""))
+        entry["source_role"] = role
+        entry["source_role_label"] = SOURCE_ROLE_LABELS.get(role, "其他")
+        entry["editorial_score"] = editorial_score(entry)
+        entry["selected"] = True
+
+    entries = suppress_superseded_entries(entries, skipped_duplicates, editorial_dropped_items)
+    apply_selection_limits(entries)
+    return sort_entries_by_category(entries)
+
+
 def build_daily_payload(
     items: list[NewsItem],
     errors: list[str],
@@ -1462,14 +1945,18 @@ def build_daily_payload(
 
     generated_at = utc_now().isoformat()
     entries = []
+    editorial_dropped_items: list[dict[str, str]] = []
     briefs = generate_llm_briefs(items, skip_llm)
     if len(items) != len(briefs):
         raise RuntimeError("Brief count does not match source item count")
 
     for index, (item, brief) in enumerate(zip(items, briefs), start=1):
+        category = normalized_category(brief, item)
         entries.append(
             {
                 "rank": index,
+                "category": category,
+                "category_label": CATEGORY_LABELS[category],
                 "title": item.title,
                 "title_cn": brief["title_cn"],
                 "summary_cn": brief["summary_cn"],
@@ -1482,6 +1969,7 @@ def build_daily_payload(
                 **({"used_fallback": brief["used_fallback"]} if "used_fallback" in brief else {}),
             }
         )
+    entries = apply_editorial_review(entries, skipped_duplicates, editorial_dropped_items)
     validate_publishable_briefs(entries, allow_fallback)
 
     return {
@@ -1492,6 +1980,7 @@ def build_daily_payload(
         "items": entries,
         "source_errors": errors,
         "skipped_duplicates": skipped_duplicates,
+        "editorial_dropped_items": editorial_dropped_items,
     }
 
 
@@ -1512,6 +2001,7 @@ def build_empty_payload(
         "items": [],
         "source_errors": errors,
         "skipped_duplicates": skipped_duplicates,
+        "editorial_dropped_items": [],
         "status": "empty",
         "empty_reason_cn": reason,
     }

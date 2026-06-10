@@ -66,6 +66,154 @@ class GenerateDailyTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertEqual(skipped, [])
 
+    def test_build_daily_payload_sorts_by_editorial_category_order(self) -> None:
+        published = "2026-06-10T00:00:00+00:00"
+        fixtures = [
+            ("AI startup announces IPO financing plan", "industry", "AI funding and IPO market news"),
+            ("Claude Code MCP agent workflow guide", "developer", "Developer workflow for coding agents"),
+            ("NotebookLM app adds a new AI feature", "product", "Product update launched for users"),
+            ("New arXiv paper improves AI reasoning", "paper", "Research paper with benchmark results"),
+            ("Claude Fable 5 model released", "model", "New model release with updated inference pricing"),
+            ("AI prompt tips for product teams", "tips", "Guide and best practices"),
+            ("AI meme rumor circulates on X", "community", "Fun community rumor"),
+        ]
+        items = [
+            gd.NewsItem(
+                title=title,
+                url=f"https://example.com/{slug}",
+                source="Fixture",
+                published_at=published,
+                summary=summary,
+            )
+            for title, slug, summary in fixtures
+        ]
+
+        payload = gd.build_daily_payload(items, [], [], "2026-06-10", skip_llm=True, allow_fallback=True)
+
+        self.assertEqual([item["rank"] for item in payload["items"]], list(range(1, 8)))
+        self.assertEqual(
+            [item["category"] for item in payload["items"]],
+            [
+                "model_release",
+                "product_update",
+                "paper_research",
+                "industry",
+                "developer_agent",
+                "tips",
+                "community_light",
+            ],
+        )
+        self.assertEqual(payload["items"][0]["category_label"], "模型发布/更新")
+
+    def test_build_daily_payload_suppresses_speculative_duplicate_when_official_exists(self) -> None:
+        published = "2026-06-10T00:00:00+00:00"
+        items = [
+            gd.NewsItem(
+                title="Anthropic 明天或将发布公开版本 Mythos",
+                url="https://readhub.cn/topic/example",
+                source="Readhub Daily",
+                published_at=published,
+                summary="Anthropic 可能发布 Claude Fable 5 和 Mythos。",
+            ),
+            gd.NewsItem(
+                title="Claude Fable 5 and Claude Mythos 5",
+                url="https://www.anthropic.com/news/claude-fable-5-mythos-5",
+                source="Anthropic News",
+                published_at=published,
+                summary="Anthropic released Claude Fable 5 and Claude Mythos 5.",
+            ),
+            gd.NewsItem(
+                title="Anthropic’s Fable 5 can make weirdly fun video games",
+                url="https://techcrunch.com/example",
+                source="TechCrunch AI",
+                published_at=published,
+                summary="Coverage of Claude Fable 5 from Anthropic.",
+            ),
+        ]
+        skipped: list[str] = []
+
+        payload = gd.build_daily_payload(items, [], skipped, "2026-06-10", skip_llm=True, allow_fallback=True)
+
+        self.assertEqual(len(payload["items"]), 2)
+        self.assertEqual(payload["items"][0]["source"], "Anthropic News")
+        self.assertIn("Anthropic 明天或将发布公开版本 Mythos", skipped)
+        self.assertEqual(payload["editorial_dropped_items"][0]["reason"], "被更高可信来源覆盖")
+        self.assertEqual(
+            payload["editorial_dropped_items"][0]["duplicate_of"],
+            "Claude Fable 5 and Claude Mythos 5",
+        )
+
+    def test_build_daily_payload_adds_editorial_metadata_and_prefers_official_sources(self) -> None:
+        published = "2026-06-10T00:00:00+00:00"
+        items = [
+            gd.NewsItem(
+                title="Claude Fable 5 model released",
+                url="https://www.reddit.com/r/LocalLLaMA/comments/example",
+                source="Reddit LocalLLaMA",
+                published_at=published,
+                summary="Community post about the Claude Fable 5 model release.",
+            ),
+            gd.NewsItem(
+                title="Claude Fable 5 and Claude Mythos 5",
+                url="https://www.anthropic.com/news/claude-fable-5-mythos-5",
+                source="Anthropic News",
+                published_at=published,
+                summary="Anthropic released Claude Fable 5 and Claude Mythos 5.",
+            ),
+        ]
+
+        payload = gd.build_daily_payload(items, [], [], "2026-06-10", skip_llm=True, allow_fallback=True)
+
+        self.assertEqual(payload["items"][0]["source"], "Anthropic News")
+        self.assertEqual(payload["items"][0]["source_role"], "official")
+        self.assertEqual(payload["items"][0]["source_role_label"], "官方")
+        self.assertGreater(payload["items"][0]["editorial_score"], payload["items"][1]["editorial_score"])
+        self.assertTrue(payload["items"][0]["selected"])
+
+    def test_build_daily_payload_limits_selected_community_items_per_category(self) -> None:
+        published = "2026-06-10T00:00:00+00:00"
+        items = [
+            gd.NewsItem(
+                title=f"Gemma community model release {index}",
+                url=f"https://www.reddit.com/r/LocalLLaMA/comments/model_{index}",
+                source="Reddit LocalLLaMA",
+                published_at=published,
+                summary="Gemma model weights released for local inference.",
+            )
+            for index in range(4)
+        ]
+
+        payload = gd.build_daily_payload(items, [], [], "2026-06-10", skip_llm=True, allow_fallback=True)
+        selected = [item for item in payload["items"] if item["selected"]]
+        demoted = [item for item in payload["items"] if not item["selected"]]
+
+        self.assertEqual(len(selected), 2)
+        self.assertEqual(len(demoted), 2)
+        self.assertTrue(all(item["source_role"] == "community" for item in payload["items"]))
+        self.assertTrue(all(item.get("editorial_note") == "社区源精选配额已满" for item in demoted))
+
+    def test_normalize_brief_corrects_developer_tool_category(self) -> None:
+        item = gd.NewsItem(
+            title="llm 0.32a3",
+            url="https://simonwillison.net/2026/Jun/9/llm",
+            source="Simon Willison",
+            published_at="2026-06-10T00:00:00+00:00",
+            summary="Release notes for an llm CLI tool update written using Claude Fable 5.",
+        )
+
+        brief = gd.normalize_brief(
+            {
+                "title_cn": "llm 0.32a3 发布",
+                "summary_cn": "Simon Willison 发布 llm 命令行工具更新。",
+                "why_it_matters_cn": "这是开发者工具生态的重要更新。",
+                "tags": ["llm", "开发者工具"],
+                "category": "product_update",
+            },
+            item,
+        )
+
+        self.assertEqual(brief["category"], "developer_agent")
+
     def test_parse_github_repo_releases_skips_prerelease_by_default(self) -> None:
         payload = [
             {
