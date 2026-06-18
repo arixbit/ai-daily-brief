@@ -52,25 +52,105 @@ function setActiveDate(date) {
   });
 }
 
-function renderArchive(days) {
-  archiveList.innerHTML = "";
+function getToday() {
+  const d = new Date();
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  return `${d.getFullYear()}-${mm}-${dd}`;
+}
+
+function buildMonths(days) {
+  const map = new Map();
   for (const day of days) {
-    const link = document.createElement("a");
-    link.href = `#${day.date}`;
-    link.dataset.date = day.date;
-    link.className = "archive-link";
-    link.title = day.date;
+    const monthKey = day.date.slice(0, 7);
+    if (!map.has(monthKey)) {
+      map.set(monthKey, []);
+    }
+    map.get(monthKey).push(day);
+  }
+  const monthLabels = {
+    "01": "1月", "02": "2月", "03": "3月", "04": "4月",
+    "05": "5月", "06": "6月", "07": "7月", "08": "8月",
+    "09": "9月", "10": "10月", "11": "11月", "12": "12月",
+  };
+  return Array.from(map.entries())
+    .sort(([a], [b]) => b.localeCompare(a))
+    .map(([month, entries]) => ({
+      month,
+      label: `${month.slice(0, 4)}年${monthLabels[month.slice(5)] || ""}`,
+      total: entries.reduce((sum, d) => sum + d.count, 0),
+      days: entries,
+    }));
+}
 
-    const date = document.createElement("span");
-    date.className = "archive-date";
-    date.textContent = formatArchiveDate(day.date);
+function renderArchive(days, months) {
+  archiveList.innerHTML = "";
+  const today = getToday();
+  const currentMonth = today.slice(0, 7);
+  const groups = months && months.length
+    ? months
+    : buildMonths(days);
 
-    const count = document.createElement("span");
-    count.className = "archive-count";
-    count.textContent = `${day.count} 条`;
+  for (const group of groups) {
+    const isCurrentMonth = group.month === currentMonth;
 
-    link.append(date, count);
-    archiveList.append(link);
+    const container = document.createElement("div");
+    container.className = "month-group";
+
+    const header = document.createElement("button");
+    header.className = "month-header";
+    header.setAttribute("aria-expanded", String(isCurrentMonth));
+    header.type = "button";
+
+    const arrow = document.createElement("span");
+    arrow.className = "month-arrow";
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.textContent = isCurrentMonth ? "▼" : "▶";
+
+    const label = document.createElement("span");
+    label.className = "month-label";
+    label.textContent = group.label;
+
+    const total = document.createElement("span");
+    total.className = "month-total";
+    total.textContent = `${group.total} 条`;
+
+    header.append(arrow, label, total);
+
+    const body = document.createElement("div");
+    body.className = "month-body";
+    if (!isCurrentMonth) {
+      body.classList.add("collapsed");
+    }
+
+    for (const day of group.days) {
+      const link = document.createElement("a");
+      link.href = `#${day.date}`;
+      link.dataset.date = day.date;
+      link.className = "archive-link";
+      link.title = day.date;
+
+      const date = document.createElement("span");
+      date.className = "archive-date";
+      date.textContent = formatArchiveDate(day.date);
+
+      const count = document.createElement("span");
+      count.className = "archive-count";
+      count.textContent = `${day.count} 条`;
+
+      link.append(date, count);
+      body.append(link);
+    }
+
+    header.addEventListener("click", () => {
+      const expanded = header.getAttribute("aria-expanded") === "true";
+      header.setAttribute("aria-expanded", String(!expanded));
+      arrow.textContent = expanded ? "▶" : "▼";
+      body.classList.toggle("collapsed", !!expanded);
+    });
+
+    container.append(header, body);
+    archiveList.append(container);
   }
 }
 
@@ -167,7 +247,8 @@ async function boot() {
     ? `更新于 ${formatTime(manifest.updated_at)}`
     : "等待首次生成";
 
-  renderArchive(days);
+  const months = manifest.months || [];
+  renderArchive(days, months);
 
   if (days.length === 0) {
     briefTitle.textContent = "暂无简报";
@@ -177,7 +258,12 @@ async function boot() {
   }
 
   const fromHash = decodeURIComponent(window.location.hash.replace("#", ""));
-  const selected = days.find((day) => day.date === fromHash) || days[0];
+  let selected;
+  if (fromHash) {
+    selected = days.find((day) => day.date === fromHash) || days[0];
+  } else {
+    selected = days.find((day) => day.date === getToday()) || days[0];
+  }
   await loadBrief(selected.path);
 
   window.addEventListener("hashchange", async () => {
