@@ -1,0 +1,451 @@
+{
+  "date": "2026-06-20",
+  "generated_at": "2026-06-19T22:31:39.804787+00:00",
+  "title": "2026-06-20 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "A startup claims it broke through a bottleneck that’s holding back LLMs",
+      "title_cn": "初创公司声称突破了限制 LLM 发展的瓶颈",
+      "summary_cn": "迈阿密 AI 初创公司 Subquadratic 结束隐身模式，宣称解决了困扰大语言模型近十年的数学瓶颈。尽管初期细节较少且引发质疑，但该公司开始提供证据支持其主张，试图证明其技术能显著提升 LLM 性能。",
+      "why_it_matters_cn": "若该技术属实，将极大推动 LLM 效率提升，可能改变当前模型训练和推理的成本结构，对行业产生深远影响。",
+      "tags": [
+        "Subquadratic",
+        "LLM",
+        "技术突破"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms",
+      "published_at": "2026-06-19T10:40:24+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 65,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Amazon drops its OpenAI drama film after signing a $50 billion deal with Sam Altman's company",
+      "title_cn": "亚马逊取消 OpenAI 传记电影，此前已签署 500 亿美元协议",
+      "summary_cn": "亚马逊 MGM 工作室取消了由 Luca Guadagnino 执导、Andrew Garfield 主演的 OpenAI 传记电影《Artificial》。此前亚马逊已与 OpenAI 签署 500 亿美元合作协议。内部人士称，电影中 Altman 和 Musk 形象不佳。此举引发关于商业关系限制创作自由的讨论。",
+      "why_it_matters_cn": "科技巨头间的深度商业合作可能影响文化产品的创作自由，反映了 AI 行业资本与内容产业之间日益复杂的利益纠葛。",
+      "tags": [
+        "Amazon",
+        "OpenAI",
+        "商业合作"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/amazon-drops-its-openai-drama-film-after-signing-a-50-billion-deal-with-sam-altmans-company",
+      "published_at": "2026-06-19T17:14:33+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Is the US government’s Anthropic ban accidentally helping the brand?",
+      "title_cn": "美国政府禁令是否在意外帮助 Anthropic 品牌？",
+      "summary_cn": "TechCrunch 报道，美国政府以国家安全为由强制 Anthropic 下架 Fable 5 和 Mythos 5 模型。尽管安全研究人员签署公开信警告此举危险，且 Anthropic 指出其他模型也存在类似漏洞，但这一事件引发了关于禁令是否反而提升了品牌知名度的讨论。",
+      "why_it_matters_cn": "揭示了政府监管与 AI 安全之间的复杂关系，以及禁令可能带来的“斯特赖桑德效应”，对行业合规策略产生深远影响。",
+      "tags": [
+        "Anthropic",
+        "监管",
+        "AI 安全"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand",
+      "published_at": "2026-06-19T16:08:17+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Billionaire Ambani wants AI in every call, app, and home",
+      "title_cn": "安巴尼希望将 AI 融入每一通电话、应用和家庭",
+      "summary_cn": "Reliance 正致力于将 AI 技术深度整合到其电信服务中，这些服务覆盖超过 5 亿用户。这一举措旨在通过 AI 增强通信体验，将智能技术普及到日常通话、应用程序交互以及家庭场景中，推动大规模用户群体的智能化升级。",
+      "why_it_matters_cn": "作为全球主要电信运营商，Reliance 的 AI 战略将直接影响数亿用户的日常交互方式，标志着 AI 从垂直应用向基础通信设施的全面渗透。",
+      "tags": [
+        "Reliance",
+        "AI 整合",
+        "电信行业"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home",
+      "published_at": "2026-06-19T15:23:28+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Meta 据悉同数据中心公司 Crusoe 签署 AI 算力协议",
+      "title_cn": "Meta 据悉与数据中心公司 Crusoe 签署 AI 算力协议",
+      "summary_cn": "据报道，Meta 已与数据中心公司 Crusoe 签署了一项 AI 算力协议。此举旨在满足 Meta 日益增长的 AI 基础设施需求。该消息源自 Readhub Daily 的报道，具体细节尚未完全公开，但显示了 Meta 在算力布局上的新动向。",
+      "why_it_matters_cn": "Meta 持续扩大算力合作，表明大型科技公司正在通过多元化合作伙伴关系来保障 AI 发展的底层基础设施供应。",
+      "tags": [
+        "Meta",
+        "算力",
+        "基础设施"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8u4ZRvylibG",
+      "published_at": "2026-06-19T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Windows Platform Security and the Race to Secure AI Agents",
+      "title_cn": "Windows 平台安全与 AI Agent 的安全竞赛",
+      "summary_cn": "微软在 Windows 开发者博客中发布文章，将 Windows 定位为自主 Agent 的可信操作系统。文章介绍了 Microsoft Execution Containers (MXC) SDK 作为核心策略，强调操作系统必须内置隔离、身份验证和可管理性，以保障 AI Agent 的安全运行。",
+      "why_it_matters_cn": "随着 AI Agent 的自主性增强，操作系统层面的安全隔离变得至关重要，微软此举旨在确立其在 Agent 安全领域的标准。",
+      "tags": [
+        "Windows",
+        "Agent 安全",
+        "MXC"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/06/windows-security-agents",
+      "published_at": "2026-06-19T08:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Azure Functions Ships Serverless Agents Runtime at Build 2026",
+      "title_cn": "Azure Functions 在 Build 2026 发布 Serverless Agent 运行时",
+      "summary_cn": "Azure Functions 在 Build 2026 上推出了 Serverless Agent 运行时的公开预览版。Agent 通过 .agent.md 文件定义，支持 YAML 触发器、MCP 服务器访问及 1400+ 连接器，并提供沙箱执行环境。官方确认该运行时不增加冷启动延迟，且无额外计费溢价。",
+      "why_it_matters_cn": "微软将 Agent 工程深度集成到云原生基础设施中，降低了企业构建和部署 AI Agent 的门槛，同时保持了 Serverless 的成本效益。",
+      "tags": [
+        "Azure",
+        "Serverless",
+        "Agent"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/06/azure-functions-serverless-agent",
+      "published_at": "2026-06-19T08:57:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "How we built an internal data analytics agent",
+      "title_cn": "GitHub 如何构建内部数据分析 Agent",
+      "summary_cn": "GitHub 博客分享了其内部数据分析 Agent Qubot 的构建经验。该 Agent 基于 Copilot 技术，允许员工使用自然语言查询数据。文章详细阐述了开发过程中的关键学习点，展示了企业级 Agent 在数据洞察方面的实际应用。",
+      "why_it_matters_cn": "提供了企业构建内部 AI Agent 的实战案例，展示了如何将自然语言处理能力转化为具体的业务价值，对开发者具有参考价值。",
+      "tags": [
+        "GitHub",
+        "Agent",
+        "数据分析"
+      ],
+      "source": "GitHub Blog AI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent",
+      "published_at": "2026-06-19T16:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "title_cn": "Datasette Apps：在 Datasette 中托管自定义 HTML 应用",
+      "summary_cn": "Simon Willison 发布了 Datasette 的新插件 datasette-apps。该插件允许在 Datasette 应用中托管自包含的 HTML+JavaScript 应用，这些应用在受限的 iframe 沙箱中运行，可执行只读 SQL 查询，并在特定条件下支持写入操作，扩展了 Datasette 的功能。",
+      "why_it_matters_cn": "增强了 Datasette 作为数据探索工具的能力，允许开发者构建更丰富的交互式数据应用，提升了数据可视化的灵活性。",
+      "tags": [
+        "Datasette",
+        "插件",
+        "Web 应用"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/18/datasette-apps",
+      "published_at": "2026-06-18T23:58:38+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "蔡崇信：阿里全面投入 AI，全栈布局有巨大优势",
+      "title_cn": "蔡崇信：阿里全面投入 AI，全栈布局有巨大优势",
+      "summary_cn": "阿里巴巴集团主席蔡崇信在欧洲科技峰会 VivaTech 上阐述全栈 AI 战略。他认为 AI 潜在市场规模巨大，阿里凭借能源、基础设施、模型层（如 Qwen）及应用层生态优势，正全面投入 AI。他还强调中国企业在推动全球 AI 开源方面发挥着主要作用。",
+      "why_it_matters_cn": "阿里明确全栈 AI 战略，展示了其在从底层算力到上层应用的全链条布局优势，并强调开源贡献，对全球 AI 生态格局有重要影响。",
+      "tags": [
+        "阿里巴巴",
+        "全栈 AI",
+        "Qwen"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8u52NCFZx9Y",
+      "published_at": "2026-06-19T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 36,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Commission selects EUROPA consortium as the winner of the Frontier AI Grande Challenge, a project to build European open-source frontier AI model in all 24 EU languages",
+      "title_cn": "EUROPA 联盟赢得欧盟前沿 AI 大挑战",
+      "summary_cn": "欧盟委员会选定由意大利公司 Domyn 领导的 EUROPA 联盟，作为前沿 AI 大挑战的获胜者。该项目旨在构建一个覆盖欧盟全部 24 种官方语言的开源前沿 AI 模型，以增强欧洲在 AI 领域的能力并减少对外部技术的依赖。",
+      "why_it_matters_cn": "这是欧盟在开源 AI 领域的重要战略举措，旨在通过多语言支持提升欧洲在全球 AI 竞争中的自主性和影响力。",
+      "tags": [
+        "EU",
+        "Open Source",
+        "Multilingual"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ua5otx/commission_selects_europa_consortium_as_the",
+      "published_at": "2026-06-19T15:53:48+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 30,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 12,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "马斯克回复智谱等中国大模型何时赶上 Fable 水平：或在 2027 年一季度",
+      "title_cn": "马斯克预测中国大模型 2027 年赶上 Fable，智谱回应：不需要那么久",
+      "summary_cn": "针对网友关于中国大模型何时达到 Anthropic Fable 水平的提问，马斯克预测可能在 2027 年一季度。智谱创始人唐杰迅速回应称无需这么久。此前智谱已开源 GLM-5.2，该模型在 Code Arena 前端开发评估中位居全球第一，主攻长程任务。",
+      "why_it_matters_cn": "此互动反映了全球对中国 AI 发展速度的关注与竞争态势，智谱的强势回应展示了中国大模型在特定垂直领域的领先实力。",
+      "tags": [
+        "马斯克",
+        "智谱 GLM-5.2",
+        "大模型竞争"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8u42BPO67ro",
+      "published_at": "2026-06-19T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 7,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 13,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "The economics of AI are starting to favor open models",
+      "title_cn": "AI 经济学开始偏向开放模型",
+      "summary_cn": "过去认为高智能必须依赖付费封闭 API 的观念正在瓦解。最新数据显示，DeepSeek、Qwen 等开放权重模型在提供高智能的同时成本极低，占据了“高智能、低成本”的优势象限。大多数实际工作负载不再需要顶级封闭模型。",
+      "why_it_matters_cn": "开放模型在性价比上的突破正在改变 AI 部署的经济逻辑，促使企业和开发者从封闭 API 转向开源解决方案。",
+      "tags": [
+        "Open Source",
+        "Cost",
+        "Economics"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ua5b16/the_economics_of_ai_are_starting_to_favor_open",
+      "published_at": "2026-06-19T15:38:43+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 14,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Improving local models with an API based \"consultant\"?",
+      "title_cn": "使用基于 API 的“顾问”改进本地模型工作流？",
+      "summary_cn": "Reddit 用户提出一种新工作流：在本地 AI 工作流中引入更强大的基于 API 的“顾问” Agent（如 GLM 5.2），用于优化计划和反思。社区正在讨论这种混合架构的潜力，旨在结合本地模型的隐私优势与云端模型的强大推理能力。",
+      "why_it_matters_cn": "探索了混合 AI 架构的新范式，通过结合本地与云端模型优势，可能显著提升本地模型在复杂任务中的表现。",
+      "tags": [
+        "LocalLLaMA",
+        "混合工作流",
+        "Agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ua5nnv/improving_local_models_with_an_api_based",
+      "published_at": "2026-06-19T15:52:33+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 15,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "[NEW MODEL] SupraLabs just released SupraVL-Nano-900k, a Vision-Language Model built entirely from scratch!",
+      "title_cn": "SupraLabs 发布从头构建的视觉语言模型 SupraVL-Nano-900k",
+      "summary_cn": "SupraLabs 发布了首个视觉语言模型 SupraVL-Nano-900k。该模型拥有约 90 万个参数，完全从头训练，架构简单到可放入单个 Jupyter Notebook。它并非生产模型，而是作为透明蓝图，帮助开发者理解图像到文本模型的工作原理。",
+      "why_it_matters_cn": "提供了一个极简且透明的 VLM 实现示例，降低了理解复杂多模态模型门槛，对教育和研究具有重要价值。",
+      "tags": [
+        "SupraLabs",
+        "VLM",
+        "开源模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9q6m2/new_model_supralabs_just_released_supravlnano900k",
+      "published_at": "2026-06-19T02:53:02+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 16,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Website \"In the Weights\" shows whether AI models know who you are",
+      "title_cn": "网站“In the Weights”揭示 AI 模型是否认识你",
+      "summary_cn": "两名前 OpenAI 员工创建了“In the Weights”网站，用于检测 AI 模型仅凭训练数据能回忆起哪些人。该网站通过最高 996 分的强度分数展示人物嵌入深度，莫扎特、莎士比亚和泰勒·斯威夫特位居榜首。",
+      "why_it_matters_cn": "这一工具直观展示了训练数据对模型记忆的影响，引发了关于个人隐私、名人效应及 AI 记忆边界的讨论。",
+      "tags": [
+        "Privacy",
+        "Training Data",
+        "OpenAI"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/website-in-the-weights-shows-whether-ai-models-know-who-you-are",
+      "published_at": "2026-06-19T08:24:50+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 28,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Best Local Agents - Jun 2026",
+      "title_cn": "2026年6月最佳本地 Agent 讨论汇总",
+      "summary_cn": "Reddit LocalLLaMA 社区发起关于当前最佳本地 Agent 的讨论。帖子首先澄清了 Agent 术语的定义，指出目前尚无统一标准，可能是炒作也可能是新范式。社区成员将在此探讨和辩论目前可用的最佳本地 Agent 工具及其特性。",
+      "why_it_matters_cn": "随着本地部署 AI 的普及，明确 Agent 的定义并评估现有工具，有助于开发者选择最适合自身需求的本地化解决方案。",
+      "tags": [
+        "LocalLLaMA",
+        "Agent",
+        "社区讨论"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uaebfe/best_local_agents_jun_2026",
+      "published_at": "2026-06-19T21:29:33+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "I need help to run local Hermes Agent on my rig. llama-cpp self compiled",
+      "title_cn": "求助：如何在本地硬件上运行 Hermes Agent",
+      "summary_cn": "一位 Reddit 用户寻求在本地高性能硬件上运行 Hermes Agent 的帮助。其配置包括 Ryzen 9 5950X、72GB 显存（双 RTX 3080 + 双 RTX 3090）及 Fedora 44 系统。用户坚持使用自编译的 llama-cpp 和本地 LLM，拒绝云服务以确保数据隐私。",
+      "why_it_matters_cn": "反映了开发者对数据隐私的强烈需求，以及社区在复杂硬件环境下部署本地 Agent 时面临的技术挑战。",
+      "tags": [
+        "LocalLLM",
+        "Hermes",
+        "Privacy"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uad893/i_need_help_to_run_local_hermes_agent_on_my_rig",
+      "published_at": "2026-06-19T20:44:33+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Watching a local AI voice assistant get dumber (A 9B to 0.8B agent experiment on my RTX 5060 Ti)",
+      "title_cn": "观察本地 AI 语音助手变笨的过程",
+      "summary_cn": "一位开发者在 RTX 5060 Ti 上进行了从 9B 到 0.8B 的 Qwen 3.5 模型降级实验，以寻找本地语音助手智能的底线。结果显示，虽然响应速度随参数减少而提升，但 Agent 推理能力出现断崖式下跌，被形容为“慢动作脑白质切除术”。",
+      "why_it_matters_cn": "揭示了在消费级硬件上运行 Agent 时，模型规模与推理能力之间的关键权衡，为本地部署提供了实证参考。",
+      "tags": [
+        "LocalLLM",
+        "Qwen",
+        "Experiment"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9zt2w/watching_a_local_ai_voice_assistant_get_dumber_a",
+      "published_at": "2026-06-19T11:46:48+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "How do you guys setup search with your AI models?",
+      "title_cn": "如何为自托管 AI 模型配置搜索功能？",
+      "summary_cn": "用户在 Reddit 询问如何为自托管的 Gemma 4 12B 模型集成搜索功能。由于 OpenWebUI 的搜索功能存在缺陷，且不愿使用 Brave 或 Google 的 API 密钥，社区正在讨论替代方案，如使用 DuckDuckGo 或其他开源工具进行本地化搜索集成。",
+      "why_it_matters_cn": "反映了本地部署 AI 模型时，用户对于隐私保护与功能完整性之间的权衡需求，推动了更自主的搜索集成方案探索。",
+      "tags": [
+        "LocalLLaMA",
+        "Gemma",
+        "搜索集成"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ua6xfw/how_do_you_guys_setup_search_with_your_ai_models",
+      "published_at": "2026-06-19T16:40:40+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests"
+  ],
+  "skipped_duplicates": [
+    "Presentation: AI Agents to Make Sense of Data at OpenAI",
+    "Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic",
+    "OpenAI researchers show small doses of \"beneficial trait\" training make AI models broadly safer and harder to manipulate",
+    "The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care",
+    "Researchers trained a Deep Research agent with 32 H100s and open-sourced everything",
+    "New Agentic Benchmark Out: Claude Fable and GLM 5.2 Top Their Cohorts"
+  ],
+  "editorial_dropped_items": []
+}
