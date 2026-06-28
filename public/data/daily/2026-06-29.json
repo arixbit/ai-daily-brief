@@ -1,0 +1,450 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-28T22:31:33.849093+00:00",
+  "title": "2026-06-29 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "GLM 5.2 beats Claude in our benchmarks",
+      "title_cn": "GLM 5.2 在基准测试中击败 Claude",
+      "summary_cn": "Snyk 发布的基准测试显示，智谱 GLM 5.2 在网络安全代码审查任务中表现优异，得分超越 Claude 模型。该测试基于 Mythos 数据集，评估模型识别和修复代码漏洞的能力，展示了国产大模型在垂直领域的强劲竞争力。",
+      "why_it_matters_cn": "表明国产大模型在特定垂直领域已具备国际竞争力，为开发者提供了高性价比的替代方案，推动了 AI 安全工具链的多元化发展。",
+      "tags": [
+        "GLM 5.2",
+        "Claude",
+        "基准测试",
+        "代码安全"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks",
+      "published_at": "2026-06-28T17:50:47+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Sina's open model VibeThinker-3B aims to show reasoning compresses well but factual knowledge doesn't",
+      "title_cn": "新浪开源模型 VibeThinker-3B：推理可压缩，事实知识难压缩",
+      "summary_cn": "新浪开源的 VibeThinker-3B 模型仅含 30 亿参数，却在数学和编程基准测试中匹敌 DeepSeek V3.2 等超大模型。其核心在于多阶段后训练，研究提出假设：逻辑推理能力易于压缩至小模型，但广泛的世界知识难以压缩。",
+      "why_it_matters_cn": "该发现挑战了“大模型必然更强”的传统认知，为小模型在特定推理任务上的高效部署提供了理论依据，有助于降低 AI 应用成本。",
+      "tags": [
+        "VibeThinker-3B",
+        "模型压缩",
+        "新浪"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/sinas-open-model-vibethinker-3b-aims-to-show-reasoning-compresses-well-but-factual-knowledge-doesnt",
+      "published_at": "2026-06-28T07:44:41+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 65,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "I had 55 LLMs blind-grade each other (22k judgments, all open). Every model family with enough data is biased toward its own siblings. Qwen judges favor Qwen by ~0.9 points. Mistral penalizes its own by ~1.0.",
+      "title_cn": "55 个 LLM 盲测互评揭示同家族模型评分偏见",
+      "summary_cn": "一项包含 22,000 次判断的开放评估实验显示，所有拥有足够数据的模型家族均存在显著的“同族偏好”偏见。例如 Qwen 评判者倾向于给自家模型高 0.9 分，而 Mistral 则倾向于给自家模型低 1.0 分。该研究代码和数据均开源，揭示了当前评估体系的潜在偏差。",
+      "why_it_matters_cn": "挑战了现有模型评估的客观性，指出自我评估或同族评估可能导致结果失真，对行业基准测试提出警示。",
+      "tags": [
+        "模型评估",
+        "偏见研究",
+        "开源实验"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uhi81a/i_had_55_llms_blindgrade_each_other_22k_judgments",
+      "published_at": "2026-06-28T00:10:51+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Ford rehires ‘gray beard’ engineers after AI falls short",
+      "title_cn": "福特因 AI 表现不佳重新雇佣“灰胡子”工程师",
+      "summary_cn": "福特汽车承认，此前错误地认为仅引入人工智能就能生产出高质量产品。由于 AI 在产品开发中未能达到预期效果，公司决定重新雇佣经验丰富的“灰胡子”工程师，以弥补 AI 在复杂工程问题上的不足。",
+      "why_it_matters_cn": "这一事件揭示了 AI 在复杂工业场景中的局限性，强调了人类专家经验在关键工程决策中不可替代的价值，提醒企业理性看待 AI 能力边界。",
+      "tags": [
+        "福特",
+        "AI 局限",
+        "工程师"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short",
+      "published_at": "2026-06-28T19:05:39+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Why Wall Street thinks US memory maker Micron is the next Nvidia",
+      "title_cn": "华尔街为何认为美光科技是下一个英伟达？",
+      "summary_cn": "TechCrunch 报道，华尔街投资者渴望找到能像英伟达一样成功的 AI 相关上市公司，并认为美光科技（Micron）是潜在赢家。作为美国内存制造商，美光因 AI 对高带宽内存的巨大需求而受到关注。",
+      "why_it_matters_cn": "反映资本市场对 AI 基础设施上游组件的关注转移，内存芯片可能成为继 GPU 之后的下一个投资热点。",
+      "tags": [
+        "美光",
+        "英伟达",
+        "投资"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia",
+      "published_at": "2026-06-28T15:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Coinbase joins the rush to Chinese AI models as Western labs face a pricing stress test",
+      "title_cn": "Coinbase 转向中国 AI 模型，西方实验室面临定价压力测试",
+      "summary_cn": "Coinbase CEO Brian Armstrong 宣布将公司转向使用 GLM 5.2 和 Kimi 2.7 等中国 AI 模型。通过自动路由系统选择最佳模型并优化缓存，其 AI 支出减半，同时 token 使用量持续攀升，应对西方实验室的定价压力。",
+      "why_it_matters_cn": "此举显示中国 AI 模型在性价比上的竞争力，迫使西方实验室重新审视定价策略，同时也反映了全球 AI 基础设施成本的优化趋势。",
+      "tags": [
+        "Coinbase",
+        "中国 AI 模型",
+        "成本控制"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/coinbase-joins-the-rush-to-chinese-ai-models-as-western-labs-face-a-pricing-stress-test",
+      "published_at": "2026-06-28T12:14:38+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "AWS Previews FinOps Agent for Cost Analysis and Optimization",
+      "title_cn": "AWS 预览 FinOps Agent 以优化成本分析",
+      "summary_cn": "亚马逊发布 AWS FinOps Agent 公开预览版，这是一项托管服务，可自动化常见的 FinOps 工作流。该 Agent 能调查成本异常，将支出变化与 AWS 活动数据关联，并集成 Slack 和 Jira 等工具，将发现路由给资源所有者。",
+      "why_it_matters_cn": "降低云成本管理门槛，通过自动化 Agent 帮助企业和开发者更高效地监控和优化 AWS 资源支出。",
+      "tags": [
+        "AWS",
+        "FinOps",
+        "Agent"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/06/aws-finops-agent",
+      "published_at": "2026-06-28T05:55:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Quoting Jon Udell",
+      "title_cn": "Jon Udell：重构“人在回路”叙事，邀请 Agent 加入团队",
+      "summary_cn": "Jon Udell 批评“人在回路”这一说法将权威让渡给机器，主张翻转叙事：这是我们的回路，我们像往常一样工作，只是招募 Agent 加入团队。他提倡将 Agent 视为团队成员，而非黑盒，推动更具协作性的 Agent 辅助软件开发。",
+      "why_it_matters_cn": "这一观点重塑了人机协作的认知框架，强调人类在 Agent 工作流中的主导权，有助于消除对 AI 自动化的恐惧，促进更健康的 Agent 工程实践。",
+      "tags": [
+        "Agent",
+        "人机协作",
+        "观点"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/28/jon-udell",
+      "published_at": "2026-06-28T21:57:41+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 38,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "智元第 15000 台通用具身机器人正式量产下线",
+      "title_cn": "智元第 15000 台通用具身机器人精灵 G2 正式量产下线",
+      "summary_cn": "智元机器人宣布其第 15000 台通用具身机器人精灵 G2 正式量产下线。这一里程碑标志着智元在具身智能领域的规模化生产能力得到验证，推动了通用机器人从实验室走向大规模商业应用。",
+      "why_it_matters_cn": "量产下线意味着具身智能技术正从概念验证迈向大规模商业化，对制造业和物流行业可能产生深远影响，加速机器人普及进程。",
+      "tags": [
+        "智元",
+        "具身智能",
+        "机器人量产"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8uKFO1QbeHl",
+      "published_at": "2026-06-28T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 21,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 10,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Do LLMs pass the mirror test?",
+      "title_cn": "LLM 能通过镜子测试吗？",
+      "summary_cn": "Hacker News 讨论 LLM 是否具备自我意识，通过镜子测试来评估。文章引发社区关于大语言模型是否真正理解自身存在及具备自我认知的深入辩论，涉及 AI 意识与智能本质的哲学探讨。",
+      "why_it_matters_cn": "触及 AI 意识与自我认知的核心争议，有助于厘清当前 LLM 能力的边界及未来发展方向。",
+      "tags": [
+        "LLM",
+        "AI 意识",
+        "哲学"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://blog.pascalschuster.de/article/do-llms-pass-the-mirror-test",
+      "published_at": "2026-06-28T19:06:07+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": false,
+      "editorial_note": "社区源精选配额已满"
+    },
+    {
+      "rank": 11,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "China Has Matched Anthropic in Cybersecurity, Resetting AI Race",
+      "title_cn": "中国在网络安全领域追平 Anthropic，重置 AI 竞赛格局",
+      "summary_cn": "据报道，中国在网络安全领域的 AI 能力已达到与 Anthropic 相当的水平。这一进展被视为全球 AI 竞赛格局的重大转折点，表明开源或特定领域的技术突破正在缩小与头部闭源模型厂商的差距，引发行业对技术竞争新态势的广泛关注。",
+      "why_it_matters_cn": "标志着全球 AI 竞争从单纯的大模型参数竞赛转向垂直领域能力的较量，凸显了网络安全等关键基础设施领域的重要性。",
+      "tags": [
+        "网络安全",
+        "Anthropic",
+        "AI 竞赛"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ui3tck/china_has_matched_anthropic_in_cybersecurity",
+      "published_at": "2026-06-28T17:51:28+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 30,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 12,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "A barebones CPU-only inference engine for Qwen 3, written from scratch in pure C",
+      "title_cn": "Qwen 3 的极简纯 C 语言 CPU 推理引擎",
+      "summary_cn": "开发者发布了一个为 Qwen 3（4B 及以下尺寸）编写的极简 CPU 推理引擎。该引擎使用纯 C 语言从头编写，无外部依赖，支持从 HF safetensors 加载、4 位仿射量化、KV 缓存及内置聊天界面，适合资源受限环境。",
+      "why_it_matters_cn": "纯 C 语言实现的轻量级推理引擎降低了部署门槛，使得在普通 CPU 设备上运行大模型成为可能，推动了边缘计算和本地化部署的发展。",
+      "tags": [
+        "Qwen 3",
+        "CPU 推理",
+        "开源工具"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uht9rf/a_barebones_cpuonly_inference_engine_for_qwen_3",
+      "published_at": "2026-06-28T09:58:10+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 13,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Script to monitor llama cpp and analyze memory usage",
+      "title_cn": "用于监控 llama.cpp 并分析内存使用的脚本",
+      "summary_cn": "一位开发者分享了用于监控 llama.cpp 内存使用的脚本，旨在解决消费级硬件运行大模型时 VRAM 和 RAM 需求预测困难的问题。由于不同量化级别（如 Q4、Q6、Q8）对内存的影响难以预估，该工具帮助开发者更精准地管理资源，提升硬件利用率。",
+      "why_it_matters_cn": "为在消费级硬件上本地运行大模型提供了实用的优化工具，降低了本地部署的技术门槛和资源浪费。",
+      "tags": [
+        "llama.cpp",
+        "内存优化",
+        "本地部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ui0u4v/script_to_monitor_llama_cpp_and_analyze_memory",
+      "published_at": "2026-06-28T15:53:47+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 14,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Tokenmaxxing is dead, long live tokenmaxxing",
+      "title_cn": "Tokenmaxxing 已死，Tokenmaxxing 万岁",
+      "summary_cn": "文章探讨了 Agent 工程中 Token 优化策略的演变。虽然传统的极致压缩 Token 方法（Tokenmaxxing）因影响模型推理质量而逐渐式微，但通过更智能的上下文管理和结构化提示，新的优化范式正在兴起，旨在平衡成本与性能。",
+      "why_it_matters_cn": "反映了 Agent 开发从单纯追求低成本向追求高质量推理的转变，提示开发者需关注更高效的上下文管理技术而非盲目压缩 Token。",
+      "tags": [
+        "Tokenmaxxing",
+        "Agent 工程",
+        "上下文管理",
+        "成本优化"
+      ],
+      "source": "Hacker News Agents",
+      "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
+      "published_at": "2026-06-28T16:24:10+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 15,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Are there good closed vs open LLM rankings? Also, are 70B–350B models actually worth it?",
+      "title_cn": "闭源与开源 LLM 排名对比及 70B-350B 模型价值探讨",
+      "summary_cn": "用户询问是否存在可靠的闭源与开源 LLM 对比排名，并质疑 70B 至 350B 参数规模的模型是否值得投入资源。目前大多数基准测试碎片化，难以直接回答本地运行最佳模型的选择问题，社区正在寻找更清晰的性能对比数据。",
+      "why_it_matters_cn": "帮助开发者在有限的硬件资源下做出更明智的模型选择，避免盲目追求大参数而忽视实际效能。",
+      "tags": [
+        "模型排名",
+        "开源 vs 闭源",
+        "模型选型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uhusqt/are_there_good_closed_vs_open_llm_rankings_also",
+      "published_at": "2026-06-28T11:24:17+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 16,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Hack Your Summer",
+      "title_cn": "Hack Your Summer：学生暑期黑客马拉松计划",
+      "summary_cn": "Simon Willison 介绍 Hack Your Summer 计划，这是一个为期四周的高强度生产冲刺项目，面向本科生、研究生及应届毕业生。旨在帮助学生识别项目、取得进展并获得导师支持，创造可展示给未来雇主的公开作品。",
+      "why_it_matters_cn": "应对美国大学生实习危机，提供构建实际项目经验的途径，增强毕业生在 AI 领域的就业竞争力。",
+      "tags": [
+        "教育",
+        "黑客马拉松",
+        "职业发展"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/28/hack-your-summer",
+      "published_at": "2026-06-28T19:26:11+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 26,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Trying to understand why so many trash fine-tuned models on HuggingFace ...",
+      "title_cn": "HuggingFace 上大量低质微调模型引发社区质疑",
+      "summary_cn": "社区用户指出 HuggingFace 上存在大量性能甚至不如基础模型的劣质微调模型。许多人认为这些模型并非出于技术探索，而是作者为了在繁荣的 AI 就业市场中获取高薪职位而制造的“简历装饰”，类似于早期的 GitHub 项目刷量行为。",
+      "why_it_matters_cn": "揭示了 AI 行业泡沫下的就业焦虑与诚信问题，提醒开发者警惕无效的微调工作，避免资源浪费。",
+      "tags": [
+        "HuggingFace",
+        "微调模型",
+        "行业乱象"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ui7xoj/trying_to_understand_why_so_many_trash_finetuned",
+      "published_at": "2026-06-28T20:31:23+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Best case for dual RTX 3090 (250W each) on Crosshair VIII Hero?",
+      "title_cn": "双 RTX 3090 在 Crosshair VIII Hero 主板上的最佳配置探讨",
+      "summary_cn": "一位用户正在构建本地 LLM 工作站，寻求关于在 ASUS Crosshair VIII Hero 主板上运行双 RTX 3090 显卡的建议。计划将两张显卡功耗限制在 250W 左右，并关注机箱散热与预算平衡，希望获得已有类似配置用户的经验分享。",
+      "why_it_matters_cn": "反映了社区对高性价比本地 AI 硬件搭建方案的持续探索，为其他开发者提供硬件兼容性参考。",
+      "tags": [
+        "硬件配置",
+        "RTX 3090",
+        "本地工作站"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uhv2hi/best_case_for_dual_rtx_3090_250w_each_on",
+      "published_at": "2026-06-28T11:38:46+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Are GB10 devices worth it over consumer GPUs?",
+      "title_cn": "GB10 设备在模型训练上是否优于消费级 GPU？",
+      "summary_cn": "Reddit 用户探讨 GB10 设备在模型训练（包括预测模型和 LLM）中的价值。虽然 128GB 统一内存极具吸引力，但带宽似乎受限。社区讨论其相比双 RTX 显卡在训练场景下的性价比，关注内存容量与带宽之间的权衡。",
+      "why_it_matters_cn": "为开发者选择本地训练硬件提供参考，帮助权衡高内存容量与高带宽在 LLM 训练中的实际影响。",
+      "tags": [
+        "硬件",
+        "LLM 训练",
+        "GPU"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ui8gsy/are_gb10_devices_worth_it_over_consumer_gpus",
+      "published_at": "2026-06-28T20:53:07+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Librepods: AirPods liberated",
+      "title_cn": "Librepods：解放你的 AirPods",
+      "summary_cn": "Hacker News 热议开源项目 Librepods，该项目旨在让 AirPods 摆脱苹果生态限制。通过开源固件，用户可以将 AirPods 用于其他设备或自定义功能，实现真正的硬件自由，引发社区广泛讨论。",
+      "why_it_matters_cn": "推动硬件开源与互操作性，赋予用户更多控制权，挑战科技巨头的封闭生态系统。",
+      "tags": [
+        "开源",
+        "AirPods",
+        "硬件"
+      ],
+      "source": "Hacker News AI",
+      "url": "https://github.com/librepods-org/librepods",
+      "published_at": "2026-06-28T18:48:53+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests"
+  ],
+  "skipped_duplicates": [
+    "Google limits Meta's use of its Gemini AI models"
+  ],
+  "editorial_dropped_items": []
+}
