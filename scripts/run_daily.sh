@@ -15,13 +15,25 @@ if [ -f .env ]; then
   set +a
 fi
 
+target_date=""
+previous_arg=""
+for arg in "$@"; do
+  if [[ "$previous_arg" == "--date" ]]; then
+    target_date="$arg"
+    break
+  fi
+  previous_arg="$arg"
+done
+
 python scripts/generate_daily.py "$@"
 
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-  git add public/data
+  if [[ -z "$target_date" ]]; then
+    target_date="$(python3 scripts/latest_publishable_date.py)"
+  fi
+  git add public/data/manifest.json "public/data/daily/${target_date}.json"
   if ! git diff --cached --quiet; then
-    latest_date="$(python3 -c 'import json; print(json.load(open("public/data/manifest.json"))["days"][0]["date"])')"
-    git commit -m "Update AI brief ${latest_date}"
+    git commit -m "Update AI brief ${target_date}"
     git push
   fi
 fi

@@ -67,15 +67,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [[ -z "$date_arg" ]]; then
-  date_arg="$(
-    python3 - <<'PY'
-import json
-from pathlib import Path
-
-payload = json.loads(Path("public/data/manifest.json").read_text(encoding="utf-8"))
-print(payload["days"][0]["date"])
-PY
-  )"
+  date_arg="$(python3 scripts/latest_publishable_date.py)"
 fi
 
 python3 scripts/generate_xhs_kami_html.py --date "$date_arg" --count "$count"

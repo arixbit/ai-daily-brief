@@ -376,6 +376,29 @@ def target_publish_window(config: dict[str, Any], target_date: str) -> tuple[dt.
     return start_local.astimezone(UTC), end_local.astimezone(UTC)
 
 
+def local_today(config: dict[str, Any]) -> dt.date:
+    """Return today's date in the configured report timezone."""
+
+    tz = parse_timezone_offset(str(config.get("timezone_offset", "+08:00")))
+    return utc_now().astimezone(tz).date()
+
+
+def is_future_report_date(config: dict[str, Any], target_date: str) -> bool:
+    """Return true if a report date is after today's configured local date."""
+
+    return dt.date.fromisoformat(target_date) > local_today(config)
+
+
+def validate_target_date(config: dict[str, Any], target_date: str) -> None:
+    """Reject invalid or future report dates before any output is written."""
+
+    try:
+        if is_future_report_date(config, target_date):
+            raise ValueError(f"日报日期不能晚于今天：{target_date} > {local_today(config).isoformat()}")
+    except ValueError as exc:
+        raise ValueError(f"无效日报日期 {target_date}: {exc}") from exc
+
+
 def strip_html(value: str | None) -> str:
     """Convert small HTML snippets from feeds into compact plain text."""
 
@@ -1522,7 +1545,7 @@ def validate_publishable_briefs(entries: list[dict[str, Any]], allow_fallback: b
             failures.append(f"#{rank} LLM 失败：{entry['llm_error']}")
             continue
         if entry.get("used_fallback"):
-            # normalize_brief already replaced non-CJK LLM output with safe fallback
+            failures.append(f"#{rank} 使用了中文兜底内容")
             continue
         if str(entry.get("title_cn", "")).startswith("中文待整理："):
             failures.append(f"#{rank} 标题仍是待整理兜底")
@@ -1612,10 +1635,19 @@ def generate_llm_brief_batch(
             if missing:
                 raise ValueError(f"LLM JSON missing item indexes: {missing}")
 
-            return [
+            normalized = [
                 normalize_brief(by_index[index], item)
                 for index, item in zip(expected_indexes, items)
             ]
+            fallback_indexes = [
+                index
+                for index, brief in zip(expected_indexes, normalized)
+                if brief.get("used_fallback")
+            ]
+            if fallback_indexes:
+                raise ValueError(f"LLM returned incomplete/non-Chinese fields for item indexes: {fallback_indexes}")
+
+            return normalized
         except (OSError, TimeoutError, urllib.error.URLError, KeyError, ValueError, json.JSONDecodeError) as exc:
             last_error = exc
             if attempt < attempts:
@@ -2016,10 +2048,10 @@ def should_allow_empty_historical(config: dict[str, Any], target_date: str) -> b
         return False
 
     days = int(config.get("empty_historical_after_days", 3))
-    return report_date <= utc_now().date() - dt.timedelta(days=days)
+    return report_date <= local_today(config) - dt.timedelta(days=days)
 
 
-def update_manifest(output_dir: Path, daily_payload: dict[str, Any]) -> None:
+def update_manifest(output_dir: Path, daily_payload: dict[str, Any], config: dict[str, Any]) -> None:
     """Update the static site manifest with the generated day."""
 
     manifest_path = output_dir / "manifest.json"
@@ -2035,23 +2067,54 @@ def update_manifest(output_dir: Path, daily_payload: dict[str, Any]) -> None:
         "path": f"data/daily/{daily_payload['date']}.json",
         "generated_at": daily_payload["generated_at"],
     }
-    days = [day for day in manifest.get("days", []) if day.get("date") != daily_payload["date"]]
+    days = []
+    for day in manifest.get("days", []):
+        day_date = str(day.get("date") or "").strip()
+        if day_date == daily_payload["date"]:
+            continue
+        try:
+            if is_future_report_date(config, day_date):
+                continue
+        except ValueError:
+            continue
+        days.append(day)
     days.append(day_entry)
     days.sort(key=lambda day: day["date"], reverse=True)
 
     manifest["updated_at"] = daily_payload["generated_at"]
     manifest["days"] = days
+
+    # Build month-grouped index for the archive sidebar.
+    months_map: dict[str, list[dict[str, Any]]] = {}
+    for day in days:
+        month_key = str(day["date"])[:7]  # "2026-06"
+        months_map.setdefault(month_key, []).append(day)
+    month_labels = {
+        "01": "1月", "02": "2月", "03": "3月", "04": "4月",
+        "05": "5月", "06": "6月", "07": "7月", "08": "8月",
+        "09": "9月", "10": "10月", "11": "11月", "12": "12月",
+    }
+    manifest["months"] = [
+        {
+            "month": month,
+            "label": f"{month[:4]}年{month_labels.get(month[5:], '')}",
+            "total": sum(day.get("count", 0) for day in entries),
+            "days": entries,
+        }
+        for month, entries in sorted(months_map.items(), reverse=True)
+    ]
+
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def write_outputs(payload: dict[str, Any], output_dir: Path) -> None:
+def write_outputs(payload: dict[str, Any], output_dir: Path, config: dict[str, Any]) -> None:
     """Write daily data and manifest files for the static site."""
 
     daily_dir = output_dir / "daily"
     daily_dir.mkdir(parents=True, exist_ok=True)
     daily_path = daily_dir / f"{payload['date']}.json"
     daily_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    update_manifest(output_dir, payload)
+    update_manifest(output_dir, payload, config)
 
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
@@ -2077,6 +2140,12 @@ def main(argv: list[str]) -> int:
     load_env(ROOT / ".env")
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
+    try:
+        validate_target_date(config, args.date)
+    except ValueError as exc:
+        print(f"日报发布失败：{exc}", file=sys.stderr)
+        return 1
+
     configure_llm(config)
     items, errors, skipped_duplicates = collect_items(config, args.output, args.date)
     if not items:
@@ -2084,6 +2153,7 @@ def main(argv: list[str]) -> int:
             print("No matching AI news items found.", file=sys.stderr)
             for error in errors:
                 print(f"source error: {error}", file=sys.stderr)
+            print("日报发布失败：当天日报没有候选资讯，未写入空日报。", file=sys.stderr)
             return 1
 
         reason = (
@@ -2091,7 +2161,7 @@ def main(argv: list[str]) -> int:
             "如果这是较早历史日期，通常是因为 RSS 源只保留近期内容，无法可靠回溯。"
         )
         payload = build_empty_payload(errors, skipped_duplicates, args.date, reason)
-        write_outputs(payload, args.output)
+        write_outputs(payload, args.output, config)
         print(f"Generated empty brief for {args.date}: {reason}")
         if errors:
             print(f"{len(errors)} source(s) failed; see source_errors in the JSON output.")
@@ -2105,7 +2175,7 @@ def main(argv: list[str]) -> int:
         args.skip_llm,
         args.allow_fallback,
     )
-    write_outputs(payload, args.output)
+    write_outputs(payload, args.output, config)
     print(f"Generated {len(payload['items'])} items for {args.date}.")
     if skipped_duplicates:
         print(f"Skipped {len(skipped_duplicates)} historical duplicate(s).")

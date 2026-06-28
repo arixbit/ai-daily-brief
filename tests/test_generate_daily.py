@@ -66,6 +66,51 @@ class GenerateDailyTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertEqual(skipped, [])
 
+    def test_validate_target_date_rejects_future_local_date(self) -> None:
+        config = {"timezone_offset": "+08:00"}
+        self.patch_attr("utc_now", lambda: dt.datetime(2026, 6, 28, 1, 0, tzinfo=gd.UTC))
+
+        with self.assertRaisesRegex(ValueError, "日报日期不能晚于今天"):
+            gd.validate_target_date(config, "2026-07-01")
+
+        gd.validate_target_date(config, "2026-06-28")
+
+    def test_update_manifest_filters_future_days(self) -> None:
+        config = {"timezone_offset": "+08:00"}
+        self.patch_attr("utc_now", lambda: dt.datetime(2026, 6, 28, 1, 0, tzinfo=gd.UTC))
+        payload = {
+            "date": "2026-06-28",
+            "generated_at": "2026-06-28T01:00:00+00:00",
+            "title": "2026-06-28 AI 每日简报",
+            "items": [{"title_cn": "正常日报"}],
+        }
+
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest_path = Path(tmp) / "manifest.json"
+            manifest_path.write_text(
+                json.dumps(
+                    {
+                        "updated_at": "2026-06-27T03:44:18+00:00",
+                        "days": [
+                            {
+                                "date": "2026-07-01",
+                                "title": "2026-07-01 AI 每日简报",
+                                "count": 0,
+                                "path": "data/daily/2026-07-01.json",
+                                "generated_at": "2026-06-27T03:44:18+00:00",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            gd.update_manifest(Path(tmp), payload, config)
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+        self.assertEqual([day["date"] for day in manifest["days"]], ["2026-06-28"])
+        self.assertEqual([month["month"] for month in manifest["months"]], ["2026-06"])
+
     def test_build_daily_payload_sorts_by_editorial_category_order(self) -> None:
         published = "2026-06-10T00:00:00+00:00"
         fixtures = [
@@ -213,6 +258,73 @@ class GenerateDailyTests(unittest.TestCase):
         )
 
         self.assertEqual(brief["category"], "developer_agent")
+
+    def test_validate_publishable_briefs_rejects_fallback_entries_by_default(self) -> None:
+        entries = [
+            {
+                "rank": 1,
+                "title_cn": "中文待整理：English title",
+                "summary_cn": "这是一段中文摘要。",
+                "why_it_matters_cn": "这是一段中文影响说明。",
+                "used_fallback": True,
+            }
+        ]
+
+        with self.assertRaisesRegex(RuntimeError, "使用了中文兜底内容"):
+            gd.validate_publishable_briefs(entries, allow_fallback=False)
+
+        gd.validate_publishable_briefs(entries, allow_fallback=True)
+
+    def test_generate_llm_brief_batch_retries_fallback_output(self) -> None:
+        item = gd.NewsItem(
+            title="English AI agent release",
+            url="https://example.com/agent",
+            source="Fixture",
+            published_at="2026-06-24T00:00:00+00:00",
+            summary="AI agent release notes.",
+        )
+        calls: list[int] = []
+
+        def fake_llm_chat(messages):
+            calls.append(1)
+            if len(calls) == 1:
+                return json.dumps(
+                    {
+                        "items": [
+                            {
+                                "index": 1,
+                                "title_cn": "English title",
+                                "summary_cn": "English summary",
+                                "why_it_matters_cn": "English impact",
+                                "tags": ["agent"],
+                                "category": "developer_agent",
+                            }
+                        ]
+                    }
+                )
+            return json.dumps(
+                {
+                    "items": [
+                        {
+                            "index": 1,
+                            "title_cn": "AI agent 工具发布",
+                            "summary_cn": "该工具发布了新的 agent 工作流能力。",
+                            "why_it_matters_cn": "这会影响开发者使用 agent 的方式。",
+                            "tags": ["agent", "开发者工具"],
+                            "category": "developer_agent",
+                        }
+                    ]
+                }
+            )
+
+        self.patch_attr("llm_chat", fake_llm_chat)
+        self.patch_attr("time", type("TimeStub", (), {"sleep": staticmethod(lambda seconds: None)})())
+
+        brief = gd.generate_llm_brief_batch([item], 1, attempts=2, allow_split=False)[0]
+
+        self.assertEqual(len(calls), 2)
+        self.assertNotIn("used_fallback", brief)
+        self.assertEqual(brief["title_cn"], "AI agent 工具发布")
 
     def test_parse_github_repo_releases_skips_prerelease_by_default(self) -> None:
         payload = [
