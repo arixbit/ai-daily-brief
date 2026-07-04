@@ -1,0 +1,449 @@
+{
+  "date": "2026-07-05",
+  "generated_at": "2026-07-04T22:31:24.957842+00:00",
+  "title": "2026-07-05 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "豆包：智能体功能将于 7 月 15 日下线",
+      "title_cn": "豆包智能体功能将于 7 月 15 日下线",
+      "summary_cn": "由于产品功能调整，豆包智能体功能将于 2026 年 7 月 15 日下线。用户可在过渡期内查看并保存智能体信息及历史对话，10 月 15 日后将无法恢复。建议用户提前备份重要内容，以免数据丢失。",
+      "why_it_matters_cn": "这反映了国内大模型产品在 Agent 功能探索上的策略调整，用户需关注平台变动并及时迁移数据。",
+      "tags": [
+        "豆包",
+        "产品更新",
+        "数据备份"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8uT4KcA0QPj",
+      "published_at": "2026-07-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 56,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "消息称苹果带摄像头 AirPods Pro 项目「暂停」，距量产仅一步之遥",
+      "title_cn": "苹果带摄像头 AirPods Pro 项目暂停，受困于欧盟隐私法规",
+      "summary_cn": "苹果内部代号 H90 的带红外摄像头 AirPods Pro 项目已暂停。虽接近量产，但因欧盟隐私法规要求采集生物识别数据需获明确同意，合规难度极大。此前因 Siri 视觉智能优化延迟至 2027 年，现面临彻底搁置风险。",
+      "why_it_matters_cn": "硬件创新遭遇隐私法规壁垒，苹果在空间计算与 AI 耳机领域的激进尝试受阻，反映全球监管对 AI 硬件的严格限制。",
+      "tags": [
+        "苹果",
+        "AirPods Pro",
+        "隐私法规"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8uSxxIpz6RC",
+      "published_at": "2026-07-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 56,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Ran a classic(medival europe) fantasy RP/agentic benchmark across 8 local models Qwen3.6-27B held up better than its size suggests",
+      "title_cn": "Qwen3.6-27B 在奇幻角色扮演基准测试中表现优异",
+      "summary_cn": "在针对 8 个本地模型的奇幻角色扮演/Agent 基准测试中，Qwen3.6-27B 表现超出其规模预期，通过率 82%，仅次于 gemma-4-31B 的 87%。测试涵盖任务完成、场景结束、物品追踪等维度，由外部 LLM 评分。",
+      "why_it_matters_cn": "展示了中型模型在复杂 Agent 任务中的潜力，为本地部署高性能角色扮演应用提供了高性价比的选择。",
+      "tags": [
+        "Qwen",
+        "本地模型",
+        "基准测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unbm45/ran_a_classicmedival_europe_fantasy_rpagentic",
+      "published_at": "2026-07-04T15:15:49+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
+      "title_cn": "Mistral AI：OpenAI 竞争对手全景解析",
+      "summary_cn": "Mistral AI 自 2023 年成立以来已筹集大量资金，致力于提供开源 AI 模型。其愿景是将前沿 AI 技术普及给所有人，成为 OpenAI 的有力竞争者，推动开源生态的发展与成熟。",
+      "why_it_matters_cn": "Mistral 的崛起加剧了 AI 领域的竞争，促进了开源模型的发展，为开发者提供了更多元、透明的选择。",
+      "tags": [
+        "Mistral AI",
+        "开源模型",
+        "行业竞争"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor",
+      "published_at": "2026-07-04T15:51:32+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "New Google commercial imagines a Declaration of Independence written with help from AI",
+      "title_cn": "谷歌新广告想象 AI 协助起草独立宣言",
+      "summary_cn": "谷歌发布新商业广告，设想如果建国先贤拥有 Google Workspace 会怎样。广告以独立宣言签署 250 周年为背景，展示 AI 工具如何辅助历史文档的创作与协作，突显 AI 在办公场景中的历史意义与未来潜力。",
+      "why_it_matters_cn": "通过历史隐喻强化 AI 在生产力工具中的核心价值，谷歌以此营销手段强调其 AI 功能对创意和协作的变革性影响，提升品牌科技感。",
+      "tags": [
+        "谷歌",
+        "AI 营销",
+        "生产力工具"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai",
+      "published_at": "2026-07-04T20:55:25+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic launches its own drug discovery programs to tackle diseases Big Pharma considers unprofitable",
+      "title_cn": "Anthropic 启动药物发现项目，攻克制药巨头认为无利可图的疾病",
+      "summary_cn": "Anthropic 启动自有药物开发项目，专注于制药行业认为无利可图的被忽视疾病。诺华 CEO 认为 AI 可将研发时间从 12 年缩短至 7-8 年，并将成功率从 8% 提升至 16%。此举标志着 AI 巨头正式进军医药研发领域。",
+      "why_it_matters_cn": "AI 巨头亲自下场做药，不仅挑战传统制药模式，更可能通过技术优势解决长期被忽视的医疗难题，重塑医药研发格局。",
+      "tags": [
+        "Anthropic",
+        "药物研发",
+        "AI 医疗"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-launches-its-own-drug-discovery-programs-to-tackle-diseases-big-pharma-considers-unprofitable",
+      "published_at": "2026-07-04T08:11:18+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+      "title_cn": "Midjourney 要求好莱坞制片厂披露 AI 使用细节",
+      "summary_cn": "Midjourney 在与三家好莱坞制片厂的持续法律纠纷中，正寻求强制这些制片厂披露其自身使用 AI 的具体细节。此举旨在通过法律手段获取对方使用 AI 技术的透明度，以应对潜在的版权或合规争议，反映了 AI 行业与娱乐业之间日益激烈的法律博弈。",
+      "why_it_matters_cn": "揭示了 AI 公司与传统内容产业在版权和法律层面的激烈冲突，可能为未来 AI 内容使用的法律界定提供重要判例。",
+      "tags": [
+        "Midjourney",
+        "好莱坞",
+        "法律纠纷",
+        "AI 版权"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage",
+      "published_at": "2026-07-04T18:00:05+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "规范引导情感陪伴人形机器人健康发展 两协会联合倡议",
+      "title_cn": "两协会联合倡议规范情感陪伴人形机器人健康发展",
+      "summary_cn": "中国人形机器人百人会和中国机械工业联合会联合发布倡议，强调科技向善，将安全伦理融入产品全流程。重点加强个人信息保护与质量管理，防范人身伤害，并聚焦核心技术研发与产业平台搭建，提升竞争力。",
+      "why_it_matters_cn": "行业组织主动介入伦理规范，为人形机器人特别是情感陪伴类产品的商业化落地划定安全红线，引导产业有序发展。",
+      "tags": [
+        "人形机器人",
+        "行业倡议",
+        "伦理安全"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8uUEBHsUf5j",
+      "published_at": "2026-07-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "7-11 起诉耐克 指控其新鞋配色抄袭 7-11 标志性颜色",
+      "title_cn": "7-11 起诉耐克，指控新鞋配色抄袭标志性三色条纹",
+      "summary_cn": "7-Eleven 在得州联邦法院起诉耐克，指控其 7 月 11 日推出的 Air Max 95 运动鞋抄袭 7-11 标志性的橙、绿、红三色条纹。7-11 认为颜色极易混淆，且发售日期恰逢其年度促销活动，构成不正当竞争。",
+      "why_it_matters_cn": "品牌跨界维权案例，凸显品牌视觉资产保护的重要性，也反映了快消品与运动品牌在营销节点上的潜在冲突。",
+      "tags": [
+        "7-11",
+        "耐克",
+        "知识产权"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8uTrQUAo2Cs",
+      "published_at": "2026-07-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "OpenAI cofounder envisions \"almost no interface\" future where nobody learns software anymore",
+      "title_cn": "OpenAI 联合创始人展望“几乎无界面”的未来",
+      "summary_cn": "Greg Brockman 承认 ChatGPT 插件因模型未准备好而失败。他不再看好应用扩展，而是预见未来将转向隐形、上下文感知的 agent。尽管 OpenAI 的 Codex 距离这一愿景仍有差距，但这代表了 AI 交互范式的重大转变。",
+      "why_it_matters_cn": "这标志着 AI 交互从显式指令向隐式意图理解的转变，预示着软件使用门槛将大幅降低，用户无需学习复杂操作即可完成任务。",
+      "tags": [
+        "OpenAI",
+        "Agent",
+        "交互设计"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-cofounder-envisions-almost-no-interface-future-where-nobody-learns-software-anymore",
+      "published_at": "2026-07-04T09:53:21+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Alibaba reportedly bans employees from using Claude Code",
+      "title_cn": "阿里巴巴据报禁止员工使用 Claude Code",
+      "summary_cn": "据报道，阿里巴巴已将 Claude Code 归类为高风险软件，并禁止员工使用。这一举措反映了大型科技企业在面对外部 AI 编码工具时，出于数据安全和代码合规性的考量，采取的严格内部管控措施，凸显了企业级 AI 工具落地的安全挑战。",
+      "why_it_matters_cn": "反映了大型科技企业在采用外部 AI 编码工具时的安全顾虑，可能影响其他企业对类似工具的政策制定。",
+      "tags": [
+        "阿里巴巴",
+        "Claude Code",
+        "企业安全",
+        "AI 编码"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code",
+      "published_at": "2026-07-04T16:32:08+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "[Paper] Multi-Block Diffusion Language Models",
+      "title_cn": "论文：多块扩散语言模型",
+      "summary_cn": "新论文提出多块扩散语言模型（MultiBD），旨在通过并发解码连续块来实现块间并行，改进基于扩散的文本生成。现有模型多采用教师强制训练，仅观察一个噪声块，而 MultiBD 试图解决这一限制，提升生成效率与灵活性。",
+      "why_it_matters_cn": "扩散模型在文本生成领域的应用正在深化。该研究通过并行解码优化推理速度，可能为扩散语言模型带来显著的性能提升，推动其在实际场景中的落地。",
+      "tags": [
+        "扩散模型",
+        "论文研究",
+        "并行解码"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un8y5p/paper_multiblock_diffusion_language_models",
+      "published_at": "2026-07-04T13:21:18+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": false,
+      "editorial_note": "社区源精选配额已满"
+    },
+    {
+      "rank": 13,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "possible evidence of literal prompt injection by anthropic",
+      "title_cn": "Anthropic 可能存在字面提示注入的证据",
+      "summary_cn": "Reddit 用户分享了关于 Anthropic 模型可能存在字面提示注入（literal prompt injection）的证据。该讨论引发了社区对模型安全性的关注，特别是针对 Claude 等模型在处理特定提示时是否会被底层指令覆盖或操纵。",
+      "why_it_matters_cn": "提示注入是 AI 安全的核心问题。如果主流模型存在此类漏洞，将直接影响企业级应用的安全性，迫使开发者采取更严格的防御措施。",
+      "tags": [
+        "AI 安全",
+        "提示注入",
+        "Anthropic"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unif51/possible_evidence_of_literal_prompt_injection_by",
+      "published_at": "2026-07-04T19:54:57+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 30,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 14,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "A fully local, self-hosted repo index for coding agents (Rust, MIT, runs offline)",
+      "title_cn": "完全本地化的代码 Agent 仓库索引工具 basemind",
+      "summary_cn": "basemind 是一个完全本地化、自托管的仓库索引工具，支持 Rust 和 MIT 协议，可离线运行。它通过 MCP 提供代码映射、Git 历史和文档 RAG，返回签名和行号而非完整文件，显著节省 token 消耗，优化上下文窗口使用。",
+      "why_it_matters_cn": "解决了本地代码 Agent 上下文窗口受限的问题，通过结构化索引大幅降低 token 成本，提升开发效率。",
+      "tags": [
+        "basemind",
+        "开发者工具",
+        "代码 Agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un430x/a_fully_local_selfhosted_repo_index_for_coding",
+      "published_at": "2026-07-04T08:54:19+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 15,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Is dSpark, dflash, MTP, QAT, and similar tech going to increase inference speed enough to where model spillover to disk will be more tolerable?",
+      "title_cn": "dSpark 等技术能否让磁盘溢出推理变得可接受？",
+      "summary_cn": "社区讨论 dSpark、dflash、MTP 等推理加速技术是否足以提升速度，使得模型溢出到磁盘时的性能下降变得可容忍。过去磁盘溢出会导致速度从每秒 4-5 token 骤降至 0.5 token，用户想知道新技术是否改变了这一瓶颈，让本地大模型运行更流畅。",
+      "why_it_matters_cn": "这关系到本地部署大模型的实际可用性。如果磁盘溢出不再导致严重卡顿，将极大降低硬件门槛，让更多用户能在消费级设备上流畅运行更大参数量的模型。",
+      "tags": [
+        "推理优化",
+        "本地部署",
+        "性能瓶颈"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un6f8u/is_dspark_dflash_mtp_qat_and_similar_tech_going",
+      "published_at": "2026-07-04T11:14:47+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 16,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Gemma4 with audio input: 16.8 tok/s on Macbook M2 Max 64GB",
+      "title_cn": "Gemma4 音频输入在 M2 Max 上的推理速度",
+      "summary_cn": "开发者分享了在 MacBook M2 Max 上运行 Gemma4-12b 模型处理音频输入的性能数据。使用 llama.cpp 和 Metal 加速，模型达到 16.8 token/s 的速度。该配置展示了多模态模型在本地设备上的高效运行能力。",
+      "why_it_matters_cn": "证明了苹果 Silicon 芯片在处理多模态大模型时的强大潜力，为开发者在本地构建高效音频处理应用提供了可行的技术参考和性能基准。",
+      "tags": [
+        "Gemma4",
+        "本地推理",
+        "多模态"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un9cjq/gemma4_with_audio_input_168_toks_on_macbook_m2",
+      "published_at": "2026-07-04T13:39:30+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Doing the actual math on a $20k local AI rig breakeven",
+      "title_cn": "2 万美元本地 AI 主机的盈亏平衡点计算",
+      "summary_cn": "博主详细计算了拥有 2 万美元本地 AI 硬件后的实际成本，指出“买硬件后免费”的说法忽略了电费。通过对比中等订阅服务，分析了持续高负载推理下的电力成本，寻找真正的盈亏平衡点。",
+      "why_it_matters_cn": "纠正了本地部署“零边际成本”的误解，帮助用户更理性地评估自建 AI 基础设施的经济性，避免盲目投入硬件而忽视长期运营成本。",
+      "tags": [
+        "本地部署",
+        "成本分析",
+        "硬件投资"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un6njn/doing_the_actual_math_on_a_20k_local_ai_rig",
+      "published_at": "2026-07-04T11:27:31+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "美光斥资 90 亿美元扩建日本西部芯片工厂",
+      "title_cn": "美光斥资 90 亿美元扩建日本西部芯片工厂",
+      "summary_cn": "美光科技启动日本西部工厂扩建，总投资 1.5 万亿日元，旨在生产先进存储芯片以满足 AI 产业需求。日本政府将提供最高 5000 亿日元补贴。新产线预计 2028 年夏季投产，将提升 AI 服务和自动驾驶芯片的能效与数据传输效率。",
+      "why_it_matters_cn": "此举强化了全球 AI 硬件供应链，特别是高带宽存储芯片的产能，对满足日益增长的 AI 算力需求至关重要。",
+      "tags": [
+        "美光",
+        "芯片制造",
+        "AI 基础设施"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8uU1GO07OJI",
+      "published_at": "2026-07-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 1,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "千问：拟人化互动类智能体及用户自建智能体功能将于 7 月 10 日正式下线",
+      "title_cn": "千问平台拟人化互动及用户自建智能体功能将于 7 月 10 日下线",
+      "summary_cn": "千问平台宣布，因功能升级与维护，拟人化互动类智能体及用户自建智能体功能将于 2026 年 7 月 10 日正式下线。届时用户将无法访问相关配置信息及历史对话记录，建议用户提前备份重要数据。",
+      "why_it_matters_cn": "大厂调整产品策略，下线自建智能体功能可能意味着平台重心转向更标准化的服务，影响依赖该功能的开发者生态。",
+      "tags": [
+        "千问",
+        "智能体",
+        "产品下线"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8uTvfJzpxPz",
+      "published_at": "2026-07-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 1,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Is there some KDL chart for MiMo-V2.5 or something regarding the quants quality?",
+      "title_cn": "MiMo-V2.5 量化模型推理循环问题及 KDL 图表讨论",
+      "summary_cn": "Reddit 用户在使用 MiMo-V2.5 模型进行代码生成时，发现模型在推理过程中陷入严重循环，无法自主做出决策。尽管推理逻辑看似合理，但需人工干预才能完成任务。用户询问是否有 KDL 图表来评估量化质量。",
+      "why_it_matters_cn": "揭示了当前开源模型在特定任务中可能存在的稳定性问题，为开发者优化量化模型和调试 Agent 提供了实际案例参考。",
+      "tags": [
+        "MiMo-V2.5",
+        "量化模型",
+        "推理循环"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unfyfo/is_there_some_kdl_chart_for_mimov25_or_something",
+      "published_at": "2026-07-04T18:12:47+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests"
+  ],
+  "skipped_duplicates": [
+    "Open-source tool pxpipe hides text in PNGs to cut Claude Code and Fable 5 token costs up to 70%",
+    "Anthropic developer shares prompting tips for Fable 5 that focus on finding your own blind spots first",
+    "Using local models with Hermes vs Claude code"
+  ],
+  "editorial_dropped_items": []
+}
