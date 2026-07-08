@@ -8,6 +8,7 @@ import datetime as dt
 import html
 import json
 import re
+import shutil
 from pathlib import Path
 from typing import Any
 
@@ -21,7 +22,6 @@ LUO_FONT_URL = "https://cdn.jsdelivr.net/gh/tw93/Luo@main/dist/Luo-Regular.woff2
 XHS_TITLE_PREFIX = "AI 日报"
 XHS_CONTENT_TYPE_DECLARATION = "笔记含AI合成内容"
 XHS_COLLECTION = "AI 日报"
-DEFAULT_XHS_COUNT = 15
 
 
 def compact(value: str, limit: int) -> str:
@@ -29,8 +29,9 @@ def compact(value: str, limit: int) -> str:
     return text if len(text) <= limit else text[: limit - 1].rstrip("，。；、 ") + "…"
 
 
-def top_items(payload: dict[str, Any], count: int) -> list[dict[str, Any]]:
-    return sorted(payload["items"], key=lambda item: int(item.get("rank", 999)))[:count]
+def top_items(payload: dict[str, Any], count: int | None) -> list[dict[str, Any]]:
+    items = sorted(payload["items"], key=lambda item: int(item.get("rank", 999)))
+    return items if count is None else items[:count]
 
 
 def esc(value: object) -> str:
@@ -221,7 +222,7 @@ def page_html(item: dict[str, Any], date: str, index: int, total: int) -> str:
       </div>
     </section>
 
-    <div class="xhs-meta"><span>ArixBit · AI Daily Brief</span><span>{index:02d}/{total:02d}</span></div>
+    <div class="xhs-meta"><span>ArixBit · AI Daily Brief</span></div>
   </main>
 </body>
 </html>
@@ -260,7 +261,7 @@ def write_publish_settings(output_dir: Path, title: str) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate Kami-based XHS news card HTML.")
     parser.add_argument("--date", default=dt.date.today().isoformat())
-    parser.add_argument("--count", type=int, default=DEFAULT_XHS_COUNT)
+    parser.add_argument("--count", type=int)
     parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     return parser.parse_args()
@@ -272,12 +273,17 @@ def main() -> int:
 
     output_dir = args.output_dir / f"{args.date}-kami-news"
     html_dir = output_dir / "html"
+    if html_dir.exists():
+        shutil.rmtree(html_dir)
     html_dir.mkdir(parents=True, exist_ok=True)
 
     items = top_items(payload, args.count)
     for index, item in enumerate(items, start=1):
         filename = f"{index:02d}-news-{int(item['rank']):02d}.html"
-        (html_dir / filename).write_text(page_html(item, payload["date"], index, len(items)), encoding="utf-8")
+        (html_dir / filename).write_text(
+            page_html(item, payload["date"], index, len(items)),
+            encoding="utf-8",
+        )
 
     title = xhs_title(payload["date"])
     write_post_text(items, output_dir, title)

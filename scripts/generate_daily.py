@@ -109,6 +109,25 @@ EVENT_TERMS = (
     "anthropic", "claude", "fable", "mythos", "openai", "gpt", "chatgpt",
     "google", "deepmind", "gemini", "gemma", "qwen", "deepseek", "cohere",
 )
+GENERIC_EVENT_TERMS = {
+    "ai",
+    "llm",
+    "gpt",
+    "chatgpt",
+    "openai",
+    "anthropic",
+    "claude",
+    "google",
+    "deepmind",
+    "microsoft",
+    "meta",
+    "nvidia",
+}
+CANONICAL_EVENT_TERMS = {
+    "anthropic_claude_release",
+    "openai_ipo",
+    "openai_gpt_live_voice",
+}
 MODEL_RELEASE_CUES = (
     "release", "released", "releasing", "launch", "launched",
     "introducing", "introduced", "announce", "announces", "announced",
@@ -1820,6 +1839,18 @@ def event_terms(entry: dict[str, Any]) -> set[str]:
         terms.add("anthropic_claude_release")
     if "openai" in terms and text_has_any(text, ("ipo", "s-1", "sec", "上市")):
         terms.add("openai_ipo")
+    gpt_live_terms = ("gpt-live", "gpt‑live", "gpt live")
+    voice_terms = (
+        "voice",
+        "语音",
+        "full-duplex",
+        "全双工",
+        "listen and talk",
+        "同时听和说",
+        "实时对话",
+    )
+    if text_has_any(text, gpt_live_terms) or ("openai" in terms and text_has_any(text, voice_terms)):
+        terms.add("openai_gpt_live_voice")
     return terms
 
 
@@ -1856,10 +1887,16 @@ def suppress_superseded_entries(
                 continue
             if source_quality_score(other) <= source_quality_score(entry):
                 continue
-            if not (
+            role = str(entry.get("source_role") or "")
+            has_official_duplicate = is_official_entry(other) or any(
+                is_official_entry(candidate) for candidate in duplicate_candidates
+            )
+            should_drop_lower_trust = (
                 is_speculative_entry(entry)
-                or str(entry.get("source_role") or "") in {"aggregator", "community"}
-            ):
+                or role in {"aggregator", "community"}
+                or (role == "media" and has_official_duplicate)
+            )
+            if not should_drop_lower_trust:
                 continue
             duplicate_candidates.append(other)
 
@@ -1893,10 +1930,10 @@ def same_editorial_event(left: set[str], right: set[str]) -> bool:
     overlap = left & right
     if not overlap:
         return False
-    canonical = {"anthropic_claude_release", "openai_ipo"}
-    if overlap & canonical:
+    if overlap & CANONICAL_EVENT_TERMS:
         return True
-    return len(overlap) >= 3
+    distinctive_overlap = overlap - GENERIC_EVENT_TERMS
+    return len(overlap) >= 3 and bool(distinctive_overlap)
 
 
 def apply_selection_limits(entries: list[dict[str, Any]]) -> None:

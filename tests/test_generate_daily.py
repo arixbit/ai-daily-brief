@@ -179,13 +179,66 @@ class GenerateDailyTests(unittest.TestCase):
 
         payload = gd.build_daily_payload(items, [], skipped, "2026-06-10", skip_llm=True, allow_fallback=True)
 
-        self.assertEqual(len(payload["items"]), 2)
+        self.assertEqual(len(payload["items"]), 1)
         self.assertEqual(payload["items"][0]["source"], "Anthropic News")
         self.assertIn("Anthropic 明天或将发布公开版本 Mythos", skipped)
         self.assertEqual(payload["editorial_dropped_items"][0]["reason"], "被更高可信来源覆盖")
         self.assertEqual(
             payload["editorial_dropped_items"][0]["duplicate_of"],
             "Claude Fable 5 and Claude Mythos 5",
+        )
+
+    def test_build_daily_payload_drops_media_duplicate_when_official_event_exists(self) -> None:
+        published = "2026-07-09T00:00:00+00:00"
+        items = [
+            gd.NewsItem(
+                title="Introducing GPT-Live",
+                url="https://openai.com/index/introducing-gpt-live",
+                source="OpenAI News",
+                published_at=published,
+                summary="OpenAI launched GPT-Live, a new generation of voice models powering ChatGPT Voice.",
+            ),
+            gd.NewsItem(
+                title="OpenAI releases new voice models for more natural live conversations",
+                url="https://techcrunch.com/openai-voice",
+                source="TechCrunch AI",
+                published_at=published,
+                summary="OpenAI's GPT-Live voice model enables full-duplex ChatGPT conversations.",
+            ),
+            gd.NewsItem(
+                title="ChatGPT can now listen and talk at the same time",
+                url="https://the-decoder.com/chatgpt-voice",
+                source="The Decoder",
+                published_at=published,
+                summary="ChatGPT Voice now uses GPT-Live for simultaneous listening and speaking.",
+            ),
+        ]
+        skipped: list[str] = []
+
+        payload = gd.build_daily_payload(items, [], skipped, "2026-07-09", skip_llm=True, allow_fallback=True)
+
+        self.assertEqual(len(payload["items"]), 1)
+        self.assertEqual(payload["items"][0]["source"], "OpenAI News")
+        self.assertEqual(len(payload["editorial_dropped_items"]), 2)
+        self.assertTrue(all(drop["duplicate_of"] == "Introducing GPT-Live" for drop in payload["editorial_dropped_items"]))
+
+    def test_same_editorial_event_does_not_match_only_generic_openai_terms(self) -> None:
+        gpt_live = {
+            "title": "Introducing GPT-Live",
+            "summary_cn": "OpenAI 推出 GPT-Live 语音模型，驱动 ChatGPT Voice。",
+            "source": "OpenAI News",
+        }
+        generic_chatgpt_complaint = {
+            "title": "The standard free ChatGPT LLM feels too small",
+            "summary_cn": "用户吐槽 OpenAI 免费 ChatGPT LLM 的质量和搜索体验。",
+            "source": "Reddit OpenAI",
+        }
+
+        self.assertFalse(
+            gd.same_editorial_event(
+                gd.event_terms(gpt_live),
+                gd.event_terms(generic_chatgpt_complaint),
+            )
         )
 
     def test_build_daily_payload_adds_editorial_metadata_and_prefers_official_sources(self) -> None:

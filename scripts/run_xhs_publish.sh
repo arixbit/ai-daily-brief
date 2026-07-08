@@ -8,7 +8,7 @@ if [ -d venv ]; then
   source venv/bin/activate
 fi
 
-count="${XHS_CARD_COUNT:-15}"
+count="${XHS_CARD_COUNT:-}"
 date_arg=""
 publish=1
 publisher_args=()
@@ -70,7 +70,11 @@ if [[ -z "$date_arg" ]]; then
   date_arg="$(python3 scripts/latest_publishable_date.py)"
 fi
 
-python3 scripts/generate_xhs_kami_html.py --date "$date_arg" --count "$count"
+generate_args=(--date "$date_arg")
+if [[ -n "$count" ]]; then
+  generate_args+=(--count "$count")
+fi
+python3 scripts/generate_xhs_kami_html.py "${generate_args[@]}"
 python3 scripts/render_xhs_kami_html.py --date "$date_arg"
 actual_count="$(find "xhs-drafts/${date_arg}-kami-news/cards" -maxdepth 1 -name '*.png' | wc -l | tr -d ' ')"
 

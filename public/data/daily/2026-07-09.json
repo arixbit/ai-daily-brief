@@ -91,48 +91,6 @@
     },
     {
       "rank": 5,
-      "category": "product_update",
-      "category_label": "产品发布/更新",
-      "title": "OpenAI releases new voice models for more natural live conversations",
-      "title_cn": "OpenAI 发布新语音模型，实现更自然的实时对话",
-      "summary_cn": "OpenAI 推出全新语音模式，支持同时说话和倾听，实现了全双工通信。这一关键能力使得实时翻译和更自然的互动成为可能，大幅提升了语音交互的流畅度与真实感，标志着 AI 语音助手向人类对话体验迈出了重要一步。",
-      "why_it_matters_cn": "全双工语音交互消除了传统语音助手的等待延迟，使 AI 对话更接近真人交流，极大提升了用户体验和实时应用场景的可行性。",
-      "tags": [
-        "OpenAI",
-        "语音交互",
-        "全双工"
-      ],
-      "source": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations",
-      "published_at": "2026-07-08T17:00:00+00:00",
-      "source_role": "media",
-      "source_role_label": "媒体",
-      "editorial_score": 72,
-      "selected": true
-    },
-    {
-      "rank": 6,
-      "category": "product_update",
-      "category_label": "产品发布/更新",
-      "title": "ChatGPT can now listen and talk at the same time, making AI conversations seem more human",
-      "title_cn": "ChatGPT 现支持同时听和说，使 AI 对话更人性化",
-      "summary_cn": "OpenAI 的 GPT-Live 采用全双工架构，支持同时倾听和说话。复杂问题后台交由 GPT-5.5 处理，显著提升响应质量。GPT-Live-1 已对付费用户开放，免费用户可用迷你版，API 即将推出。这一更新让 AI 对话体验更接近真人。",
-      "why_it_matters_cn": "全双工交互和后台复杂模型处理相结合，不仅提升了对话的自然度，还通过分层处理优化了响应质量和资源利用效率。",
-      "tags": [
-        "ChatGPT",
-        "GPT-Live",
-        "全双工"
-      ],
-      "source": "The Decoder",
-      "url": "https://the-decoder.com/chatgpt-can-now-listen-and-talk-at-the-same-time-making-ai-conversations-seem-more-human",
-      "published_at": "2026-07-08T18:18:55+00:00",
-      "source_role": "media",
-      "source_role_label": "媒体",
-      "editorial_score": 72,
-      "selected": true
-    },
-    {
-      "rank": 7,
       "category": "paper_research",
       "category_label": "论文研究",
       "title": "Separating signal from noise in coding evaluations",
@@ -154,7 +112,7 @@
       "selected": true
     },
     {
-      "rank": 8,
+      "rank": 6,
       "category": "paper_research",
       "category_label": "论文研究",
       "title": "QLLM, no transformer, no mamba and new noval architecture with O(1) inference is finally out as model",
@@ -175,7 +133,7 @@
       "selected": true
     },
     {
-      "rank": 9,
+      "rank": 7,
       "category": "industry",
       "category_label": "行业动态",
       "title": "Helping K–12 educators build practical AI skills",
@@ -196,7 +154,7 @@
       "selected": true
     },
     {
-      "rank": 10,
+      "rank": 8,
       "category": "industry",
       "category_label": "行业动态",
       "title": "Our approach to government and national security partnerships",
@@ -217,7 +175,7 @@
       "selected": true
     },
     {
-      "rank": 11,
+      "rank": 9,
       "category": "industry",
       "category_label": "行业动态",
       "title": "Working at the frontier: How Thomson Reuters builds AI for high-stakes professional work",
@@ -238,7 +196,7 @@
       "selected": true
     },
     {
-      "rank": 12,
+      "rank": 10,
       "category": "industry",
       "category_label": "行业动态",
       "title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents",
@@ -259,7 +217,7 @@
       "selected": true
     },
     {
-      "rank": 13,
+      "rank": 11,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "Data for Agents",
@@ -280,7 +238,7 @@
       "selected": true
     },
     {
-      "rank": 14,
+      "rank": 12,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "Native-speed vLLM transformers modeling backend",
@@ -301,7 +259,7 @@
       "selected": true
     },
     {
-      "rank": 15,
+      "rank": 13,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "Presentation: The Multi-Agent Approach: Building Reliable and Controllable Software Development Automation",
@@ -323,7 +281,7 @@
       "selected": true
     },
     {
-      "rank": 16,
+      "rank": 14,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
@@ -344,7 +302,7 @@
       "selected": true
     },
     {
-      "rank": 17,
+      "rank": 15,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
@@ -365,7 +323,7 @@
       "selected": true
     },
     {
-      "rank": 18,
+      "rank": 16,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "微软开始在部分软件中改用自研 AI 模型 减少对 OpenAI 和 Anthropic 依赖",
@@ -386,7 +344,7 @@
       "selected": true
     },
     {
-      "rank": 19,
+      "rank": 17,
       "category": "tips",
       "category_label": "技巧与观点",
       "title": "Quoting Kenton Varda",
@@ -407,7 +365,7 @@
       "selected": true
     },
     {
-      "rank": 20,
+      "rank": 18,
       "category": "paper_research",
       "category_label": "论文研究",
       "title": "Literature Review: LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load | Bnechmarking LLMs on Phones [R]",
@@ -430,7 +388,7 @@
       "editorial_note": "社区源精选配额已满"
     },
     {
-      "rank": 21,
+      "rank": 19,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "What is the right way to collect quality feedback from a coding agent?",
@@ -452,7 +410,7 @@
       "editorial_note": "分数低于精选阈值"
     },
     {
-      "rank": 22,
+      "rank": 20,
       "category": "developer_agent",
       "category_label": "开发者工具 / Agent 工程",
       "title": "DeepSeek V4 Flash with DSpark via SGLang",
@@ -475,7 +433,7 @@
       "editorial_note": "分数低于精选阈值"
     },
     {
-      "rank": 23,
+      "rank": 21,
       "category": "community_light",
       "category_label": "轻量社区动态",
       "title": "4-bit GLM-5.2 (753B MoE) on 4× DGX Spark: 70.8% on Terminal-Bench 2.1 vs 81.0% for the full model",
@@ -497,7 +455,7 @@
       "editorial_note": "分数低于精选阈值"
     },
     {
-      "rank": 24,
+      "rank": 22,
       "category": "community_light",
       "category_label": "轻量社区动态",
       "title": "AI has completely revolutionized how I play RPGs",
@@ -520,7 +478,7 @@
       "editorial_note": "分数低于精选阈值"
     },
     {
-      "rank": 25,
+      "rank": 23,
       "category": "community_light",
       "category_label": "轻量社区动态",
       "title": "Ask HN: Another \"Hacker News\" with less AI and more human-focused hacking news?",
@@ -557,7 +515,8 @@
     "langchain-ai/langchain: langchain-core==1.4.9",
     "Show HN: Microsoft releases Flint, a visualization language for AI agents",
     "OpenAI 推出 GPT-Live 语音模型",
-    "The standard free ChatGPT LLM you get after a few messages HAS to be some sub-20b model with online search enabled, no other way to explain how awful it is"
+    "OpenAI releases new voice models for more natural live conversations",
+    "ChatGPT can now listen and talk at the same time, making AI conversations seem more human"
   ],
   "editorial_dropped_items": [
     {
@@ -568,9 +527,16 @@
       "reason": "被更高可信来源覆盖"
     },
     {
-      "title": "The standard free ChatGPT LLM you get after a few messages HAS to be some sub-20b model with online search enabled, no other way to explain how awful it is",
-      "source": "Reddit LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uqz1d4/the_standard_free_chatgpt_llm_you_get_after_a_few",
+      "title": "OpenAI releases new voice models for more natural live conversations",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations",
+      "duplicate_of": "Introducing GPT-Live",
+      "reason": "被更高可信来源覆盖"
+    },
+    {
+      "title": "ChatGPT can now listen and talk at the same time, making AI conversations seem more human",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/chatgpt-can-now-listen-and-talk-at-the-same-time-making-ai-conversations-seem-more-human",
       "duplicate_of": "Introducing GPT-Live",
       "reason": "被更高可信来源覆盖"
     }
