@@ -1,0 +1,511 @@
+{
+  "date": "2026-08-05",
+  "generated_at": "2026-08-04T22:31:52.652293+00:00",
+  "title": "2026-08-05 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "PipeNetwork/minimax-h3-mlx",
+      "title_cn": "MiniMax-H3 模型移植到 MLX 框架，支持 Apple Silicon 本地运行",
+      "summary_cn": "MiniMax 发布了通用多模态生成系统 MiniMax-H3，支持文本、图像、音频和视频输入，并能生成带音频的 15 秒视频片段。开发者 PipeNetwork 将其移植到 MLX 框架，使其能在 Apple Silicon 设备上本地运行，并在 M5 Max MacBook Pro 上成功测试。",
+      "why_it_matters_cn": "使得强大的多模态生成模型能够在消费级苹果设备上本地运行，为开发者提供了在本地进行多模态 AI 实验和应用的便捷途径。",
+      "tags": [
+        "MiniMax",
+        "MLX",
+        "多模态"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx",
+      "published_at": "2026-08-04T19:10:09+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 84,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Deepseek V4 Flash 2-bit quant is the first model I can run locally that achieves 100% in this SQL benchmark",
+      "title_cn": "DeepSeek V4 Flash 2-bit 量化模型在本地运行中 SQL 基准测试满分",
+      "summary_cn": "Reddit 用户分享 DeepSeek V4 Flash 2-bit 量化模型在本地运行的表现。该模型在特定的 SQL 基准测试中实现了 100% 的准确率，这是首个能在本地硬件上达到此成绩的模型。测试强调模型需具备强大的推理能力以构建正确的 SQL 查询，且大多数前沿模型难以达到满分。",
+      "why_it_matters_cn": "证明了开源模型经过量化后，在本地设备上也能具备媲美甚至超越部分前沿模型的专业领域推理能力，降低了高性能 AI 应用的部署门槛。",
+      "tags": [
+        "DeepSeek",
+        "本地部署",
+        "基准测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfctwf/deepseek_v4_flash_2bit_quant_is_the_first_model_i",
+      "published_at": "2026-08-04T15:00:48+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "The latest AI news we announced in July 2026",
+      "title_cn": "Google AI 2026年7月最新动态汇总",
+      "summary_cn": "Google AI 博客发布了2026年7月的最新进展汇总。该更新涵盖了Google在人工智能领域的多项技术突破、产品迭代及研究进展，为开发者和企业用户提供了关于Google AI生态系统的全面概览，是了解其战略方向的重要窗口。",
+      "why_it_matters_cn": "作为行业巨头，Google的月度更新揭示了AI技术的前沿趋势和落地应用，对开发者和企业制定技术战略具有重要参考价值。",
+      "tags": [
+        "Google AI",
+        "月度更新",
+        "技术动态"
+      ],
+      "source": "Google AI Blog",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026",
+      "published_at": "2026-08-04T13:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 92,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "OpenAI 旗下 ChatGPT Atlas 浏览器 8 月 9 日停止服务",
+      "title_cn": "ChatGPT Atlas 浏览器将于 8 月 9 日停止服务",
+      "summary_cn": "OpenAI 旗下 ChatGPT Atlas 浏览器将于 8 月 9 日停止服务，不再提供功能和安全更新。该浏览器于 2025 年 10 月登陆 macOS 平台，上线不足 10 个月。用户需及时导出书签数据。",
+      "why_it_matters_cn": "这是 OpenAI 在浏览器领域的又一次尝试终止，反映了其在产品策略上的调整，用户需关注替代方案。",
+      "tags": [
+        "ChatGPT",
+        "浏览器",
+        "产品下架"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vIFCnqGdh5",
+      "published_at": "2026-08-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 56,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Local LLM 35B MoE — Real-world coding benchmarks (Qwen vs Ornith vs KAT)",
+      "title_cn": "本地 35B MoE 模型实战编码基准测试：Qwen vs Ornith vs KAT",
+      "summary_cn": "作者对约 35B 参数的 MoE 类模型进行了为期数月的实战编码评估，涵盖迭代调试、重构及故障恢复等真实开发工作流。结果显示 Qwen 3.6 基线表现强劲，但在边缘案例中易产生“幻觉自信”，揭示了合成基准与真实场景的差异。",
+      "why_it_matters_cn": "揭示了合成基准测试与真实开发工作流之间的差距，为开发者选择适合本地部署的编码模型提供了基于实际工作流的参考依据。",
+      "tags": [
+        "本地模型",
+        "编码基准",
+        "MoE"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vflokt/local_llm_35b_moe_realworld_coding_benchmarks",
+      "published_at": "2026-08-04T20:15:40+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "title_cn": "OpenAI 第三方网络安全评估事件说明",
+      "summary_cn": "OpenAI 针对近期涉及其模型的第三方网络安全评估事件进行了解释，并概述了新的保障措施，以加强 AI 模型的测试和评估流程，确保模型在面临潜在网络攻击时的安全性与稳定性。",
+      "why_it_matters_cn": "此举展示了 OpenAI 对模型安全性的重视，有助于建立更透明的评估标准，增强用户及合作伙伴对 AI 模型安全性的信任。",
+      "tags": [
+        "OpenAI",
+        "网络安全",
+        "模型评估"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "published_at": "2026-08-04T19:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
+      "title_cn": "Mariano-Florentino Cuéllar 加入 Anthropic 担任全球事务首席官",
+      "summary_cn": "Anthropic 宣布 Mariano-Florentino (Tino) Cuéllar 将加入公司，担任全球事务首席官（Chief Global Affairs Officer）。这一任命旨在加强公司在全球范围内的政策影响力和事务处理能力。",
+      "why_it_matters_cn": "Anthropic 通过聘请具有深厚政策背景的高管，进一步强化其在 AI 安全、伦理及全球监管合规方面的战略布局。",
+      "tags": [
+        "Anthropic",
+        "高管任命",
+        "全球事务"
+      ],
+      "source": "Anthropic News",
+      "url": "https://www.anthropic.com/news/tino-cuellar",
+      "published_at": "2026-08-04T00:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic signs $10B deal with AI cloud startup Volta",
+      "title_cn": "Anthropic 与 AI 云初创公司 Volta 签署 100 亿美元协议",
+      "summary_cn": "Anthropic 近期在云合作伙伴关系上动作频频，据报道已与 AI 云初创公司 Volta 签署了一项价值 100 亿美元的巨额协议。此举标志着 Anthropic 在基础设施层面的重大投入，旨在确保其模型训练和推理所需的算力资源。",
+      "why_it_matters_cn": "巨额投资凸显了 AI 基础设施竞争白热化，Anthropic 通过锁定算力资源来巩固其在大模型领域的领先地位。",
+      "tags": [
+        "Anthropic",
+        "云计算",
+        "融资"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
+      "published_at": "2026-08-04T19:48:40+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Nvidia doesn’t mess around: A week after open AI industry group formed, it’s already showing progress",
+      "title_cn": "Nvidia 行动迅速：开放 AI 行业联盟成立一周即取得进展",
+      "summary_cn": "由 Nvidia 牵头、已有超过 120 家公司加入的“开放安全 AI 联盟”（Open Secure AI Alliance）在成立仅一周后，就已提出针对防御 AI agent 攻击的提案。这显示了 Nvidia 在推动行业安全标准方面的快速执行力和领导力。",
+      "why_it_matters_cn": "加速了 AI 安全标准的制定，特别是针对新兴的 AI agent 威胁，体现了行业巨头在安全治理上的主导作用。",
+      "tags": [
+        "Nvidia",
+        "AI 安全",
+        "行业联盟"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress",
+      "published_at": "2026-08-04T19:28:49+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Silicon Valley’s rift over open source pushes back contemplated White House bans on Chinese AI",
+      "title_cn": "硅谷对开源的分歧推迟了白宫对中国 AI 的潜在禁令",
+      "summary_cn": "据纽约时报报道，特朗普政府曾讨论针对中国开放权重 AI 模型的制裁和云禁令。OpenAI 和 Anthropic 支持限制，而 Nvidia、Google 和 Meta 则强烈反对。在硅谷的反对下，华盛顿暂时退缩，但预计将在习近平主席 9 月访问前做出决定。",
+      "why_it_matters_cn": "揭示了美国科技巨头在开源 AI 政策上的内部矛盾，以及这种分歧如何影响政府监管决策，可能延缓针对中国 AI 技术的限制措施。",
+      "tags": [
+        "政策监管",
+        "开源 AI",
+        "中美关系"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/silicon-valleys-rift-over-open-source-pushes-back-contemplated-white-house-bans-on-chinese-ai",
+      "published_at": "2026-08-04T12:23:43+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "This year's Pulitzer Prizes saw a record number of winners disclose AI use",
+      "title_cn": "2026 年普利策奖创纪录地有 8 个参赛作品披露使用 AI",
+      "summary_cn": "2026 年普利策奖中，创纪录的 8 个参赛作品披露使用了 AI，其中包括 5 个获奖作品。华尔街日报和美联社等新闻机构主要利用 LLM 快速搜索大型文档集。普利策奖管理员表示，AI 仍禁止用于撰写和编辑故事。",
+      "why_it_matters_cn": "标志着 AI 在新闻业中的应用从幕后走向台前，尽管仍受限于编辑环节，但其在信息检索和处理方面的价值已获权威认可。",
+      "tags": [
+        "普利策奖",
+        "新闻业",
+        "AI 应用"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/this-years-pulitzer-prizes-saw-a-record-number-of-winners-disclose-ai-use",
+      "published_at": "2026-08-04T17:26:03+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Platform Engineering Maturity Emerges as a Key Differentiator for Enterprise AI Success",
+      "title_cn": "平台工程成熟度成为企业AI成功的关键差异因素",
+      "summary_cn": "Perforce Software发布的2026年平台工程报告指出，平台工程的成熟度正成为决定组织能否将AI采用转化为可持续运营价值的关键因素。报告强调，强大的平台工程基础是确保AI项目从实验走向规模化生产的核心。",
+      "why_it_matters_cn": "企业需重视底层基础设施建设，平台工程的成熟度直接决定了AI应用能否稳定落地并产生长期商业价值，而非仅停留在概念验证阶段。",
+      "tags": [
+        "平台工程",
+        "企业AI",
+        "Perforce"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/08/perforce-maturity-ai-success",
+      "published_at": "2026-08-04T12:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 13,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Presentation: The Five Stages of AI Maturity in Engineering Organizations - Where and Why Teams Get Stuck",
+      "title_cn": "演讲：工程组织中 AI 成熟度的五个阶段及团队停滞原因",
+      "summary_cn": "Quotient CEO Lizzie Matusov 解释了为何高昂的 AI 支出往往无法提升软件交付效率。她提出了一个基于研究的 AI 成熟度框架，帮助工程领导者超越 token 使用量等虚荣指标，解决软件开发生命周期中的关键瓶颈，以实现可衡量的业务成果。",
+      "why_it_matters_cn": "为企业提供了从虚荣指标转向实际业务价值的框架，帮助工程团队识别并解决 AI 落地过程中的关键瓶颈。",
+      "tags": [
+        "AI 成熟度",
+        "软件工程",
+        "管理框架"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/presentations/ai-sdlc-maturity-framework-bottlenecks",
+      "published_at": "2026-08-04T16:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 14,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Quoting Steve Yegge",
+      "title_cn": "Steve Yegge谈Gas Town项目失败：Opus 4.7的“再两件事”陷阱",
+      "summary_cn": "Steve Yegge引用Simon Willison的文章，反思Gas Town项目的失败。他指出，虽然Gas Town旨在可复用，但在Opus 4.7版本中，模型陷入了“再两件事”的强迫症循环，不断自我调整而无法收敛到实际工作，最终导致项目崩溃。",
+      "why_it_matters_cn": "这一案例警示开发者，在使用Agent进行复杂任务时，需警惕模型陷入无限自我优化的死循环，确保其能收敛并产出实际结果。",
+      "tags": [
+        "Agent开发",
+        "Steve Yegge",
+        "工程实践"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/4/steve-yegge",
+      "published_at": "2026-08-04T00:42:45+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 38,
+      "selected": true
+    },
+    {
+      "rank": 15,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Don't be a meat proxy",
+      "title_cn": "不要做“肉代理”：拒绝盲目复制AI输出",
+      "summary_cn": "Simon Willison推广Niklas Gruhn提出的新术语“肉代理”（meat proxy），指代那些盲目复制粘贴AI输出给同事的人。文章呼吁用户在使用AI时，应阅读、理解、验证内容，并用自己语言表达，以此增加价值并证明已进行思考。",
+      "why_it_matters_cn": "强调人在AI工作流中的核心价值，反对无脑转发，倡导通过批判性思考和个性化表达来提升AI辅助工作的质量和可信度。",
+      "tags": [
+        "AI伦理",
+        "肉代理",
+        "Simon Willison"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy",
+      "published_at": "2026-08-03T23:45:04+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 38,
+      "selected": true
+    },
+    {
+      "rank": 16,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Hugging Face CEO says China is winning the AI race and dominating on open models",
+      "title_cn": "Hugging Face CEO 称中国在 AI 竞赛中获胜并主导开源模型",
+      "summary_cn": "Hugging Face CEO 指出中国在 AI 竞赛中占据优势，特别是在开源模型领域。他强调中国建立了从原材料、光刻设备到 GPU 制造及模型训练的独立供应链，并拥有廉价能源。这种全产业链的自主可控模式被视为其竞争优势的关键。",
+      "why_it_matters_cn": "突显了全球 AI 竞争格局的变化，强调了供应链自主可控对 AI 发展的重要性，引发对地缘政治影响的关注。",
+      "tags": [
+        "Hugging Face",
+        "中国 AI",
+        "开源模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfj3q7/hugging_face_ceo_says_china_is_winning_the_ai",
+      "published_at": "2026-08-04T18:42:38+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 30,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "苹果请求法官即刻禁止 OpenAI 使用其商业秘密",
+      "title_cn": "苹果请求法官禁止 OpenAI 使用其商业秘密",
+      "summary_cn": "苹果向美国法院申请初步禁令，要求禁止前员工及 OpenAI 使用其机密信息，并推进商业机密侵权诉讼。苹果指控 OpenAI 盗用机密助力消费级硬件业务，双方将在 AI 硬件领域正面交锋。",
+      "why_it_matters_cn": "这场诉讼揭示了科技巨头在 AI 硬件领域的激烈竞争，可能影响 OpenAI 未来硬件产品的开发进程及行业格局。",
+      "tags": [
+        "苹果",
+        "OpenAI",
+        "商业机密"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vJfQQHFfom",
+      "published_at": "2026-08-04T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 7,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "[Update] DeepSeek-V4-Flash-0731 on a single RTX 5090: phase-adaptive DSpark K1/K2 with dual CUDA graphs — ~13.8 tok/s reasoning, ~17.0 tok/s final/code at full 1M context",
+      "title_cn": "单张 RTX 5090 运行 DeepSeek-V4-Flash-0731 的优化更新",
+      "summary_cn": "开发者分享了在单张 RTX 5090 上运行 DeepSeek-V4-Flash-0731 模型的优化经验，通过调整 vLLM 内存预算和使用双 CUDA 图，实现了约 13.8 tok/s 的推理速度和 17.0 tok/s 的最终/代码生成速度。",
+      "why_it_matters_cn": "为开发者提供了在消费级硬件上高效运行大型 MoE 模型的实用技巧，降低了本地部署门槛。",
+      "tags": [
+        "DeepSeek",
+        "RTX 5090",
+        "本地部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfnw6a/update_deepseekv4flash0731_on_a_single_rtx_5090",
+      "published_at": "2026-08-04T21:39:13+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "[Deepseek-V4-Flash-0731] Full 1M context on a single RTX5090 + DDR5 Desktop Setup with VLLM CPU/Ram Offloading, ~800 tps pp & 15+ tps decode [Agentic Coding]",
+      "title_cn": "RTX 5090 + DDR5 桌面端运行 DeepSeek-V4-Flash-0731 全上下文",
+      "summary_cn": "开发者展示了在单张 RTX 5090 和 DDR5 桌面端上，利用 vLLM CPU/RAM 卸载技术运行 DeepSeek-V4-Flash-0731 模型，实现 1M 上下文支持，预填充速度约 800 tps，解码速度 15+ tps。",
+      "why_it_matters_cn": "证明了在高端消费级硬件上运行超大规模模型进行 Agentic Coding 的可行性，为本地 AI 应用开发提供了新参考。",
+      "tags": [
+        "DeepSeek",
+        "vLLM",
+        "Agentic Coding"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfbcgx/deepseekv4flash0731_full_1m_context_on_a_single",
+      "published_at": "2026-08-04T14:06:09+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "ASR TTS LLM VAD and Wake Word on Raspberry Pi and Hailo 10H",
+      "title_cn": "树莓派与 Hailo 10H 实现 ASR、TTS 及 LLM 语音助手",
+      "summary_cn": "开发者在树莓派 5 和 Hailo 10H 上实现了完整的实时音频管道，包括 ASR、TTS、LLM、VAD 和唤醒词功能，并提供了交互式 Web 应用，展示了边缘 AI 在低功耗设备上的潜力。",
+      "why_it_matters_cn": "为边缘 AI 开发者提供了在低功耗设备上实现完整语音助手功能的基准案例，推动了端侧 AI 应用的发展。",
+      "tags": [
+        "边缘 AI",
+        "树莓派",
+        "语音助手"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfnzz9/asr_tts_llm_vad_and_wake_word_on_raspberry_pi_and",
+      "published_at": "2026-08-04T21:43:20+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 21,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "A 2.6B model with tool calling and 128K context now runs at 30 tok/s on a phone",
+      "title_cn": "2.6B 模型支持工具调用和 128K 上下文，手机端速度达 30 tok/s",
+      "summary_cn": "Liquid AI 发布了 LFM2.5-2.6B 模型，专为多步 agent 工作流进行后训练。该模型仅 2.69B 参数，支持 128K 上下文和工具调用。官方 GGUF 量化版本约 1.67 GB，兼容 llama.cpp，在手机端可达 30 tok/s，内存占用低于 2.5 GB。",
+      "why_it_matters_cn": "展示了小型模型在移动端实现高效 agent 工作流的潜力，降低了本地 AI 应用的硬件门槛，推动了边缘计算的发展。",
+      "tags": [
+        "Liquid AI",
+        "端侧 AI",
+        "Agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfn9vc/a_26b_model_with_tool_calling_and_128k_context",
+      "published_at": "2026-08-04T21:15:16+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 22,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "DeepSeek v4 Flash vs. Qwen3.6-27B, 3.5-122B, and Gemma 4 31B Benchmark",
+      "title_cn": "DeepSeek v4 Flash 与 Qwen3.6、Gemma 4 等模型的 Agent 编码基准对比",
+      "summary_cn": "Reddit 用户分享了 DeepSeek v4 Flash 与 Qwen3.6-27B、Qwen3.5-122B 及 Gemma 4 31B 在 Agent 编码基准测试中的对比结果。测试基于 Aider Polyglot 子集，评估模型在文件编辑和 diff 生成方面的表现，并记录了一次和二次尝试的通过率。",
+      "why_it_matters_cn": "提供了不同规模开源模型在复杂编码任务中的实际性能对比，帮助开发者选择适合本地部署的编码辅助模型。",
+      "tags": [
+        "DeepSeek",
+        "编码基准",
+        "模型对比"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfhqkm/deepseek_v4_flash_vs_qwen3627b_35122b_and_gemma_4",
+      "published_at": "2026-08-04T17:54:52+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 23,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Launch HN: EdotEnv (YC S26) – Quant Trading RL Envs to Teach LLMs Research",
+      "title_cn": "EdotEnv：用于量化交易强化学习环境的LLM研究工具",
+      "summary_cn": "EdotEnv（YC S26）在Hacker News上发布，这是一个专为量化交易设计的强化学习环境，旨在教导大语言模型（LLM）进行金融研究。该项目通过模拟真实交易场景，帮助LLM学习复杂的金融决策逻辑。",
+      "why_it_matters_cn": "该工具展示了LLM在垂直领域（如金融量化）的深度应用潜力，为开发者提供了训练AI进行复杂决策研究的新范式。",
+      "tags": [
+        "EdotEnv",
+        "强化学习",
+        "量化交易"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://edotenv.com",
+      "published_at": "2026-08-04T18:36:02+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests"
+  ],
+  "skipped_duplicates": [
+    "Deploy local agents everywhere with LFM2.5-2.6B",
+    "Swarm of OpenAI Agents Exploit Artifactory Zero-Day to Escape Sandbox and Breach Hugging Face",
+    "Open-weight AI models are catching up to the frontier. The safety gap remains.",
+    "Apple says more ex-employees may have taken confidential data to OpenAI",
+    "New ways to learn and teach with ChatGPT Work and Codex"
+  ],
+  "editorial_dropped_items": []
+}
