@@ -1,0 +1,445 @@
+{
+  "date": "2026-08-24",
+  "generated_at": "2026-08-23T22:31:01.126973+00:00",
+  "title": "2026-08-24 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "you can now use MTP in GLM-Air",
+      "title_cn": "GLM-Air 现支持 MTP 加速，适合高内存低算力设备",
+      "summary_cn": "用户指出在 llama.cpp 中启用 MTP 可显著加速 GLM-4.5-Air（106B MoE，12B 激活参数）。该模型适合 Strix Halo 或 DGX Spark 等高内存但算力有限的设备。尽管缺乏 Gemma 4 124B MoE，GLM-Air 在创意写作和角色扮演方面仍表现出色，Hugging Face 上已有多个微调版本可用。",
+      "why_it_matters_cn": "为高内存低算力设备提供了高效的 MoE 模型选择，优化了创意写作场景体验。",
+      "tags": [
+        "GLM",
+        "MoE",
+        "MTP"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwhj0l/you_can_now_use_mtp_in_glmair",
+      "published_at": "2026-08-23T20:08:04+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 44,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Qwen3.5-9B Triple-Loop",
+      "title_cn": "Qwen3.5-9B 三重循环架构实验",
+      "summary_cn": "受 Nanbeige 架构启发，开发者在 Qwen3.5-9B 中尝试引入三重循环（triple loop）结构。该实验基于 Nanbeige 4.5 架构论文，旨在通过在中层循环来提升模型自身的表征能力。该原型展示了小模型通过架构创新提升性能的潜力。",
+      "why_it_matters_cn": "展示了通过架构创新提升小模型性能的路径，为本地模型优化提供新的技术思路。",
+      "tags": [
+        "Qwen",
+        "架构创新",
+        "模型优化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vw6nba/qwen359b_tripleloop",
+      "published_at": "2026-08-23T13:02:37+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Is it legal to train AI models on copyrighted books? It’s complicated",
+      "title_cn": "用版权书籍训练 AI 模型合法吗？情况复杂",
+      "summary_cn": "大多数出版作者在未知情或同意的情况下，为威胁其生计的 AI 工具开发做出了贡献。TechCrunch 指出，用版权书籍训练 AI 模型的合法性并非非黑即白，而是一个复杂的法律议题，涉及作者权益与 AI 发展的平衡。",
+      "why_it_matters_cn": "触及 AI 训练数据版权争议的核心，影响内容创作者权益及 AI 行业的合规成本。",
+      "tags": [
+        "版权",
+        "法律",
+        "训练数据"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated",
+      "published_at": "2026-08-23T15:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
+      "title_cn": "神秘新模型 Ox Alpha 背后是谁？",
+      "summary_cn": "一个名为 Ox Alpha 的神秘新 AI 模型在互联网上引发狂热猜测。TechCrunch 报道指出，该模型被称为“隐形模型”，其背后的开发团队身份成谜，引发了关于其技术来源和市场定位的广泛讨论。",
+      "why_it_matters_cn": "神秘模型的涌现反映了 AI 竞争格局的动态变化，可能预示新玩家或新架构的入场。",
+      "tags": [
+        "Ox Alpha",
+        "神秘模型",
+        "行业动态"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha",
+      "published_at": "2026-08-23T20:01:36+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "阿里拟配售 800 亿港元新股 全部投入 AI 建设",
+      "title_cn": "阿里拟配售 800 亿港元新股，全额投入 AI 建设",
+      "summary_cn": "阿里巴巴拟向美国境外非美国人士配售 800 亿港元新股，这是其 2019 年港股上市以来首次启动新股配售。所得款项净额将 100% 用于投资全栈 AI 能力及加强 AI 基础设施建设。此举表明阿里正加大在人工智能领域的资本投入，以巩固其技术竞争力和市场地位。",
+      "why_it_matters_cn": "巨额资金投入显示巨头对 AI 基础设施的重视，将影响行业竞争格局。",
+      "tags": [
+        "阿里巴巴",
+        "融资",
+        "AI 基建"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vp4jpfnrdz",
+      "published_at": "2026-08-23T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "宇树科技确认缩减世界人形机器人运动会参赛项目 称精力有限致准备不足",
+      "title_cn": "宇树科技缩减世界人形机器人运动会参赛项目，称精力有限",
+      "summary_cn": "宇树科技在第二届世界人形机器人运动会开幕前夕宣布调整部分参赛项目。公司解释称，因新款机器人量产进度与赛事周期存在时间差，且部分新机型稳定性待验证，加之企业资源集中于量产交付，导致赛事准备精力不足。此次调整旨在保障产品质量，其最新机型将逐步应用于工业巡检等场景。",
+      "why_it_matters_cn": "头部厂商在赛事展示与量产交付间做出取舍，反映人形机器人行业正从技术竞赛转向商业化落地与稳定性验证。",
+      "tags": [
+        "宇树科技",
+        "人形机器人",
+        "量产优先"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vov4f4rp7D",
+      "published_at": "2026-08-23T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Google's HEIR Aims to Make Homomorphic-Encrypted Inference a One-Click Capability",
+      "title_cn": "Google 推出 HEIR 简化同态加密推理部署",
+      "summary_cn": "Google 发布开源编译器 HEIR，旨在让同态加密推理成为一键式能力。该工具链可将为明文输入构建的预训练 AI 模型编译为支持加密数据运行的版本，从而简化加密计算的部署流程，提升隐私保护 AI 应用的开发效率。",
+      "why_it_matters_cn": "降低了同态加密在 AI 模型中的工程门槛，有助于推动隐私计算在大规模模型推理中的实际应用。",
+      "tags": [
+        "Google",
+        "同态加密",
+        "隐私计算"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/08/google-heir-homomorphic-llm",
+      "published_at": "2026-08-23T18:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "AI is becoming AI's biggest customer as agentic token usage jumps 14x on OpenRouter",
+      "title_cn": "OpenRouter 数据显示 Agent 代币用量激增 14 倍",
+      "summary_cn": "OpenRouter 数据显示，自 2025 年 2 月起，AI Agent 消耗的 token 已超过人类，且用量增长 14 倍，远超人类的 2.8 倍。尽管近 70% 的 Agent 消耗来自廉价缓存提示，实际成本增速低于原始数据，但 AI 正成为自身最大客户。",
+      "why_it_matters_cn": "反映了 Agent 工作流对算力需求的爆发式增长，揭示了 AI 自动化对基础设施成本结构的潜在冲击。",
+      "tags": [
+        "AI Agent",
+        "Token 消耗",
+        "OpenRouter"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter",
+      "published_at": "2026-08-23T10:02:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "How China's gray market sells Claude tokens at a fraction of the price",
+      "title_cn": "中国灰市如何以低价出售 Claude token",
+      "summary_cn": "Anthropic 针对中国的地理封锁和自拍验证等严格访问控制，正被活跃的“中转站”网络系统性绕过。中国开发者能以低至官方标价 10% 的价格购买 Claude token。分析师 Zilan Qian 警告，这种规避基础设施削弱了出口管制和 Anthropic 自身的安全系统。",
+      "why_it_matters_cn": "揭示了地缘政治下 AI 算力获取的灰色地带，对模型厂商的访问控制策略和出口管制效力构成挑战。",
+      "tags": [
+        "Claude",
+        "灰市",
+        "出口管制"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/how-chinas-gray-market-sells-claude-tokens-at-a-fraction-of-the-price",
+      "published_at": "2026-08-23T07:48:33+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "title_cn": "Anthropic 旗舰模型用户增长乏力，低价工具崛起",
+      "summary_cn": "FT 报道称，尽管 Anthropic 7 月年化营收升至 650 亿美元且预计 Q3 盈利，但其顶级模型在用户吸引力上面临挑战。随着更便宜的工具蓬勃发展，高成本模型的市场扩张受到抑制，显示出价格敏感度在 AI 市场中的关键作用。",
+      "why_it_matters_cn": "揭示了高端模型在成本与性能平衡上的市场困境，以及价格竞争对 AI 商业模式的深远影响。",
+      "tags": [
+        "Anthropic",
+        "市场分析",
+        "营收"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t",
+      "published_at": "2026-08-23T20:24:52+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Anthropic 免费上线内部员工入职培训第一课",
+      "title_cn": "Anthropic 免费开放内部员工入职培训平台",
+      "summary_cn": "Anthropic 将内部培训平台 Claude Academy 免费向公众开放，提供 289 个涵盖 AI 基础、Claude Code 及 Agent 部署的资源。平台基于 AI Fluency 4D 框架，旨在培养用户与 AI 协作的心智，完成课程可获得可验证的结业徽章。",
+      "why_it_matters_cn": "降低了 AI 协作能力的学习门槛，通过系统化课程帮助用户适应 AI 快速迭代，重构人机协作逻辑。",
+      "tags": [
+        "Claude Academy",
+        "AI 教育",
+        "协作技巧"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vp69veyhfz",
+      "published_at": "2026-08-23T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 36,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Quoting Drew Breunig",
+      "title_cn": "Drew Breunig：新模型发布终结了编码优化的“免费午餐”",
+      "summary_cn": "Drew Breunig 指出，过去新模型常以更低价格覆盖旧问题，使优化编码环境显得多余。但 Fable 模型虽强大却昂贵，迫使团队重新评估工作分配。这一变化标志着 AI 编码工具从单纯模型竞争转向工程效率与成本控制的深度博弈。",
+      "why_it_matters_cn": "强调了在模型能力趋同背景下，工程实践与上下文策略对 AI 开发效率的决定性作用。",
+      "tags": [
+        "编码工具",
+        "工程实践",
+        "观点"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig",
+      "published_at": "2026-08-23T19:55:30+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 38,
+      "selected": true
+    },
+    {
+      "rank": 13,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "上纬新材消费级机器人开启预订 预计首批发货最早 9 月",
+      "title_cn": "上纬新材消费级机器人开启预订，预计9月首批发货",
+      "summary_cn": "上纬新材旗下启元 Q1 与 T1 两款消费级机器人正式开启预订，用户可通过多渠道参与。公司预计今年 9 月完成首批发货。此前，上纬新材已与蓝思智能机器人达成万台级产线合作，并与卧龙电驱建立核心部件产线战略合作，旨在加速产品落地与供应链稳定。",
+      "why_it_matters_cn": "消费级机器人进入量产交付阶段，供应链合作深化，推动人形机器人从技术展示走向大众消费市场。",
+      "tags": [
+        "消费级机器人",
+        "量产交付",
+        "供应链合作"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8votJg2G1Nc",
+      "published_at": "2026-08-23T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 21,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 14,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "reasoning-budget for Qwen3.8-27b",
+      "title_cn": "Qwen3.8-27b 的推理预算设置",
+      "summary_cn": "Reddit 用户讨论 Qwen3.8-27b 在本地部署时的推理预算（reasoning budget）设置。用户发现该模型有时思考过久，触发 128k token 的输出上限。用户参考 Qwen 团队文档，询问是否应使用 llama.cpp 的 --reasoning-budget 参数来限制推理阶段，以优化输出效率。",
+      "why_it_matters_cn": "为本地部署大模型提供推理长度调优参考，帮助开发者平衡模型思考深度与输出限制。",
+      "tags": [
+        "Qwen",
+        "本地部署",
+        "推理优化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwjme7/reasoningbudget_for_qwen3827b",
+      "published_at": "2026-08-23T21:30:40+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 15,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "How do you integrate local LLMs into your workflow?",
+      "title_cn": "开发者探讨如何将本地 LLM 整合进工作流",
+      "summary_cn": "Reddit 用户发起讨论，询问如何将 Qwen 3.8 27B 等本地模型整合进实际工作流。部分用户建议采用混合策略，用云端模型处理复杂任务，本地模型处理简单任务。讨论聚焦于 Agent 工作流设计、任务分配策略及实际项目落地经验，旨在探索本地模型的最佳实践。",
+      "why_it_matters_cn": "反映了开发者在本地模型落地时的真实痛点，提供了混合工作流的参考思路。",
+      "tags": [
+        "工作流",
+        "Agent",
+        "混合部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwfw41/how_do_you_integrate_local_llms_into_your_workflow",
+      "published_at": "2026-08-23T19:05:25+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 16,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Benchmark results: what is the best and fastest engine to run Qwen3.8-27B on macOS",
+      "title_cn": "macOS 上运行 Qwen3.8-27B 的最佳与最快引擎基准测试结果",
+      "summary_cn": "用户发布在 macOS 上运行 Qwen3.8-27B 的基准测试，旨在找出最快引擎。由于该模型为密集架构，推理速度较慢，用户对比了不同引擎及加速技术（如 Lightning MTP 和 ANE 支持）对预填充速度的影响。测试旨在验证各引擎宣称的速度提升是否真实有效，帮助用户优化本地部署体验。",
+      "why_it_matters_cn": "为 macOS 用户提供了本地部署 Qwen 3.8 的性能参考，帮助优化推理速度。",
+      "tags": [
+        "macOS",
+        "基准测试",
+        "推理加速"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwbyzr/benchmark_results_what_is_the_best_and_fastest",
+      "published_at": "2026-08-23T16:37:44+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "英伟达通知客户 AI 相关产品涨价超 15%",
+      "title_cn": "英伟达通知客户 AI 服务器产品涨价超 15%",
+      "summary_cn": "英伟达通知客户，明年初交付的搭载 Vera Rubin 和 Grace Blackwell 旗舰芯片的服务器将涨价，多数机型涨幅超过 15%。具体涨幅取决于芯片代次与内存配置，相关代工企业已向微软、谷歌等大客户通报此事。",
+      "why_it_matters_cn": "硬件成本上升可能推高下游 AI 服务价格，影响云厂商及 AI 初创公司的算力预算与利润率。",
+      "tags": [
+        "NVIDIA",
+        "硬件涨价",
+        "算力成本"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8voMmzqjPLN",
+      "published_at": "2026-08-23T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 1,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Best general purpose uncensored or censored coding model with 6GB VRAM and 64GB of RAM?",
+      "title_cn": "6GB 显存下最佳通用编码模型推荐",
+      "summary_cn": "Reddit 用户寻求在 6GB 显存和 64GB 内存配置下，适合 C、C++、C# 和 Python 编码的本地模型推荐。用户表示目前本地模型输出可靠性不足，主要依赖 Claude 免费额度。用户偏好无审查模型，但也接受有审查模型，特别是用于安全相关工作。",
+      "why_it_matters_cn": "反映了低显存环境下本地编码模型的实际痛点，为硬件受限的开发者提供选型参考。",
+      "tags": [
+        "本地模型",
+        "编码",
+        "硬件限制"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwidnm/best_general_purpose_uncensored_or_censored",
+      "published_at": "2026-08-23T20:41:30+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Qwen 3.8 27b helped me with something unique that Opus 4 couldn't - Firmware + Software preservation and emulation on an early 2000's ARM based POS system",
+      "title_cn": "Qwen 3.8 27B 在早期 ARM POS 系统固件与软件保存及模拟中表现优于 Opus 4",
+      "summary_cn": "Reddit 用户分享使用 Qwen 3.8 27B 处理 2000 年代初基于 ARM 的 POS 系统固件保存与模拟的独特案例。该模型在特定技术场景下解决了 Opus 4 未能处理的问题，展示了其在本地部署和特定工程任务中的潜力，引发了社区对模型能力边界的讨论。",
+      "why_it_matters_cn": "展示了开源模型在特定工程场景下的独特优势，为本地 LLM 应用提供了新视角。",
+      "tags": [
+        "Qwen",
+        "本地部署",
+        "固件模拟"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwhcuf/qwen_38_27b_helped_me_with_something_unique_that",
+      "published_at": "2026-08-23T20:01:28+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "New qwen3.8:27b on a 39k line C to single-file HTML / three.js port",
+      "title_cn": "Qwen 3.8 27B 挑战 3.9 万行 C 代码转单文件 HTML/Three.js 移植",
+      "summary_cn": "用户测试 Qwen 3.8 27B 在 FP8 精度下处理 2.1MB C 代码（约 60 万 token）移植为单文件 HTML/Three.js 游戏的能力。由于代码超出上下文窗口，模型需遍历文件并识别关键逻辑。该测试对比了 Qwen 与 Opus 5 在 Claude Code 中的表现，评估了长上下文处理与代码重构能力。",
+      "why_it_matters_cn": "验证了模型在超长上下文代码重构任务中的实际表现，对工程落地有参考价值。",
+      "tags": [
+        "代码移植",
+        "长上下文",
+        "性能测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwde84/new_qwen3827b_on_a_39k_line_c_to_singlefile_html",
+      "published_at": "2026-08-23T17:32:32+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests"
+  ],
+  "skipped_duplicates": [
+    "Nvidia Poolside deal to compete with Chinese Open Weights",
+    "Qwen3.8-27B KLDs"
+  ],
+  "editorial_dropped_items": []
+}
