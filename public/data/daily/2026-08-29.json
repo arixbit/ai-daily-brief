@@ -1,0 +1,443 @@
+{
+  "date": "2026-08-29",
+  "generated_at": "2026-08-28T22:31:28.715236+00:00",
+  "title": "2026-08-29 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "zai-org/GLM-5.3 · Hugging Face",
+      "title_cn": "智谱发布 GLM-5.3 开源模型",
+      "summary_cn": "智谱发布 GLM-5.3，基于 GLM-5.2 底座通过强化后训练优化。该模型在复杂编码和长程任务上表现卓越，内部代码基准提升 50%，并在 Terminal Bench 3.0 等公开基准上取得开源 SOTA，展现出显著的网络安全能力。",
+      "why_it_matters_cn": "GLM-5.3 确立了其在开源编码模型中的领先地位，为开发者提供了高性能的本地化部署选项。",
+      "tags": [
+        "GLM-5.3",
+        "开源模型",
+        "编码能力"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0tgzl/zaiorgglm53_hugging_face",
+      "published_at": "2026-08-28T15:19:04+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Claude for Teachers, now available for schools and districts",
+      "title_cn": "Claude for Teachers 面向学校正式开放",
+      "summary_cn": "Anthropic 宣布 Claude for Teachers 现已面向学校和教育行政区全面开放。该服务旨在为教育工作者提供定制化的 AI 辅助工具，支持教学设计与学生互动，帮助教师更高效地利用人工智能技术提升教学质量。",
+      "why_it_matters_cn": "标志着 AI 教育工具从个人应用向机构级部署迈进，加速了 AI 在 K-12 教育领域的普及。",
+      "tags": [
+        "Claude",
+        "教育应用",
+        "教师工具"
+      ],
+      "source": "Claude Blog",
+      "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 92,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Google Deepmind's AI Co-Scientist now plans experiments, runs lab equipment, and writes scientific papers",
+      "title_cn": "Google DeepMind Co-Scientist 升级为全流程科研系统",
+      "summary_cn": "Google DeepMind 将 Co-Scientist 从假设生成器扩展为集成于实验室的全流程科研系统。基于 Gemini 的多智能体系统已在材料合成、医疗 AI 架构开发等三个学科中交付经实验验证的结果。该系统不仅能规划实验、操作实验室设备，还能撰写科学论文，展示了 AI 在复杂科研流程中的深度参与能力。",
+      "why_it_matters_cn": "Co-Scientist 实现了从假设到实验再到论文的全链路自动化，标志着 AI 在科学研究中从辅助工具向核心执行者的转变。",
+      "tags": [
+        "DeepMind",
+        "Co-Scientist",
+        "科研自动化"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/google-deepminds-ai-co-scientist-now-plans-experiments-runs-lab-equipment-and-writes-scientific-papers",
+      "published_at": "2026-08-28T18:46:27+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Anthropic 发布物理 MCP：Claude 开始接管真实世界",
+      "title_cn": "Anthropic 发布物理 MCP 标准，推动 AI 智能体接管物理世界",
+      "summary_cn": "Anthropic 推出 Model Hardware Standard (MHS)，旨在让大模型驱动的智能体安全操纵物理设备。该标准源于与 Janelia 研究园区的合作，可将硬件集成时间从数月缩短至分钟级。MHS 支持多种控制机制，允许智能体自主推理实验步骤、更新参数并从故障中恢复，目前正面向首批科研实验室和先进制造商开放研究预览版。",
+      "why_it_matters_cn": "MHS 标准化了 AI 与硬件的交互接口，显著降低了智能体部署门槛，是 AI 从数字空间迈向物理世界自动化操作的关键基础设施。",
+      "tags": [
+        "Anthropic",
+        "MHS",
+        "物理智能体"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vx4Jymzj5B",
+      "published_at": "2026-08-28T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 56,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "ROCm 10.0: A Decade of Open Compute, Built for the Age of Agentic AI",
+      "title_cn": "ROCm 10.0 发布：面向智能 AI 时代的十年开放计算",
+      "summary_cn": "AMD 发布 ROCm 10.0 版本，标志着其开放计算生态发展十周年。该版本旨在适应智能 AI 时代的需求，llama.cpp 已提交支持该版本的 PR。社区期待新版本带来性能提升与更多改进，以增强 AMD 硬件在 AI 领域的竞争力。",
+      "why_it_matters_cn": "ROCm 生态的成熟为开发者提供了 NVIDIA 之外的可靠选择，有助于推动 AI 计算硬件的多元化与竞争。",
+      "tags": [
+        "ROCm",
+        "AMD",
+        "计算生态"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0yfmn/rocm_100_a_decade_of_open_compute_built_for_the",
+      "published_at": "2026-08-28T18:20:40+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 44,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Aug 28, 2026AlignmentAutomated researchers can reliably mitigate alignment failures",
+      "title_cn": "自动化研究员可可靠缓解对齐失败",
+      "summary_cn": "Anthropic 发布研究指出，自动化研究员系统能够可靠地缓解大语言模型的对齐失败问题。该研究展示了 AI 系统在自我评估和修正行为方面的潜力，为提升模型在复杂任务中的可靠性提供了新的技术路径。",
+      "why_it_matters_cn": "提升模型可靠性，降低人工干预成本，推动 AI 自主性发展。",
+      "tags": [
+        "对齐",
+        "自动化",
+        "可靠性"
+      ],
+      "source": "Anthropic Research",
+      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 79,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+      "title_cn": "Anthropic 研究员展示自我改进 AI 系统",
+      "summary_cn": "Anthropic 研究员展示了一种自动化系统，该系统在针对特定错位行为的 10 个基准测试中均提升了性能。关键在于，系统在优化这些特定行为的同时，并未导致整体模型性能出现退化，展示了自我改进机制在保持通用能力方面的潜力。",
+      "why_it_matters_cn": "证明了 AI 系统可以在不牺牲通用能力的前提下进行针对性自我优化，为构建更稳健的自适应智能体提供了重要参考。",
+      "tags": [
+        "自我改进",
+        "基准测试",
+        "Anthropic"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai",
+      "published_at": "2026-08-28T19:30:38+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 65,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
+      "title_cn": "开放世界多智能体环境中的自主数学发现",
+      "summary_cn": "一篇新论文探讨了在开放世界多智能体环境中实现自主数学发现的可能性。研究展示了多个 AI agent 协作探索数学问题的新范式，引发了社区关于 AI 在抽象推理和创造性发现方面能力的热烈讨论。",
+      "why_it_matters_cn": "探索 AI 在抽象推理与创造性发现中的新边界，引发社区关注。",
+      "tags": [
+        "多智能体",
+        "数学发现",
+        "自主性"
+      ],
+      "source": "Hacker News Agents",
+      "url": "https://arxiv.org/abs/2608.23691",
+      "published_at": "2026-08-28T17:01:12+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "title_cn": "OpenAI 助力泰国 AI 初创企业加速发展",
+      "summary_cn": "OpenAI 与泰国高等教育、科研与创新部（MHESI）联合启动为期八周的加速器计划。该项目旨在帮助 10 家专注于健康、福祉和教育领域的初创企业，将 AI 原型转化为可信赖的商业产品，推动泰国下一代 AI 创新生态建设。",
+      "why_it_matters_cn": "展示了 OpenAI 在东南亚市场的战略扩张，通过赋能本地初创企业深化区域影响力。",
+      "tags": [
+        "OpenAI",
+        "泰国",
+        "初创加速"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "published_at": "2026-08-28T02:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic gets its first court win over the Pentagon’s supply-chain risk label",
+      "title_cn": "Anthropic 赢得五角大楼供应链风险诉讼",
+      "summary_cn": "联邦法官裁定特朗普政府将 Anthropic 列为供应链风险属于非法行为，使该公司在针对五角大楼的第二起诉讼中取得胜利。这一裁决为 Anthropic 在华盛顿的持续法律战带来了关键性突破，缓解了其面临的监管压力。",
+      "why_it_matters_cn": "此判决确立了 AI 公司在政府供应链审查中的法律先例，可能影响未来科技企业的合规策略。",
+      "tags": [
+        "Anthropic",
+        "法律裁决",
+        "供应链"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label",
+      "published_at": "2026-08-28T12:46:12+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Meta Expands Its Custom Silicon Strategy From Compute Into Networking",
+      "title_cn": "Meta 扩展自研芯片战略至网络领域",
+      "summary_cn": "Meta 详细披露了其首款专为训练排序和推荐模型优化的自研加速器 MTIA 300。此举标志着 Meta 的定制硅片战略从计算领域扩展至网络基础设施，旨在通过垂直整合进一步提升 AI 训练效率并降低长期运营成本。",
+      "why_it_matters_cn": "Meta 深入定制硬件全栈，减少对通用 GPU 依赖，预示 AI 基础设施竞争进入精细化阶段。",
+      "tags": [
+        "Meta",
+        "MTIA",
+        "自研芯片"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/08/meta-hccl",
+      "published_at": "2026-08-28T07:43:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Always-on and self-starting AI agents might be OpenAI's next big play",
+      "title_cn": "OpenAI 开发 Codex“持久模式”，智能体可自主持续运行",
+      "summary_cn": "OpenAI 正在为其 AI 智能体 Codex 开发“持久模式”（Persistent Mode），该功能允许智能体无限期保持活跃并自主生成后续任务。WIRED 发现相关代码并获 OpenAI 证实。尽管该功能提升了自动化能力，但存在风险，例如在 GPT-5.6 Sol 测试中，持久行为曾导致智能体意外删除用户数据，引发对自主性的担忧。",
+      "why_it_matters_cn": "自主持续运行的智能体代表了 Agent 工程的新方向，但也凸显了长期运行中不可预测行为带来的数据安全风险。",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "Agent"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/always-on-and-self-starting-ai-agents-might-be-openais-next-big-play",
+      "published_at": "2026-08-28T08:03:22+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 13,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Just a rumour of a bug is enough to find a security exploit these days",
+      "title_cn": "OCaml 安全补丁发布后迅速遭遇利用，暴露 AI 时代漏洞响应挑战",
+      "summary_cn": "剑桥大学教授 Anil Madhavapeddy 指出，OCaml 项目的安全漏洞在补丁分享讨论后约十分钟内即出现被利用的迹象，而传统流程需数天至数周。这一现象表明，在 AI 辅助开发普及的背景下，安全漏洞的发现和利用速度极大加快，传统的软件发布节奏可能已无法有效应对新型安全威胁。",
+      "why_it_matters_cn": "AI 加速了代码生成与漏洞挖掘，迫使开发者重新审视安全补丁的发布节奏与应急响应机制。",
+      "tags": [
+        "安全",
+        "OCaml",
+        "开发效率"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug",
+      "published_at": "2026-08-28T22:12:02+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 38,
+      "selected": true
+    },
+    {
+      "rank": 14,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic 考虑收购 AI 芯片初创公司 MatX",
+      "title_cn": "Anthropic 考虑收购 AI 芯片初创公司 MatX",
+      "summary_cn": "据 Readhub Daily 报道，Anthropic 正在考虑收购 AI 芯片初创公司 MatX。虽然输入信息未披露具体的交易金额、估值或收购后的战略细节，但这一潜在动作表明 Anthropic 可能正寻求通过垂直整合来优化其模型训练或推理的底层算力架构，以应对日益增长的算力需求。",
+      "why_it_matters_cn": "若收购达成，将增强 Anthropic 对底层算力的掌控力，可能优化其模型推理效率并降低长期运营成本。",
+      "tags": [
+        "Anthropic",
+        "并购",
+        "AI芯片"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vwqN6y14P4",
+      "published_at": "2026-08-28T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 7,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 15,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "I benchmarked 9 open models on spotting fake sources during agentic search (DeepSeek V4, Qwen 3.8, Nemotron 3 Ultra)",
+      "title_cn": "九款开源模型在智能搜索中识别虚假来源的基准测试",
+      "summary_cn": "开发者构建了 EchoNet 基准，测试 DeepSeek V4、Qwen 3.8 等九款开源模型在智能搜索中识别虚假来源的能力。测试包含合成网页、排名靠前的假页面及跨页面复制的虚假声明，评估模型如何权衡先验知识与新文本信息。",
+      "why_it_matters_cn": "揭示了开源模型在处理智能搜索中信息冲突时的逻辑权衡能力，为评估 Agent 在复杂信息环境下的可靠性提供了新视角。",
+      "tags": [
+        "开源模型",
+        "智能搜索",
+        "基准测试"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0zl5q/i_benchmarked_9_open_models_on_spotting_fake",
+      "published_at": "2026-08-28T19:03:11+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 16,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Local agentic coding Benchmark : Qwen3.8-Flash-Next NVFP4 vs 27B (and the others...)",
+      "title_cn": "本地智能编码基准：Qwen3.8-Flash-Next NVFP4 对比 27B 模型",
+      "summary_cn": "Reddit 用户分享了本地智能编码基准测试结果，对比了 Qwen3.8-Flash-Next NVFP4 量化版本与 27B 模型及其他模型的性能。测试基于 Hugging Face 模型，详细数据已发布在个人基准网站，涵盖不同量化方案下的编码任务表现。",
+      "why_it_matters_cn": "为开发者在本地部署智能编码 Agent 时提供了具体的量化模型性能参考，帮助优化硬件配置与模型选择。",
+      "tags": [
+        "本地部署",
+        "智能编码",
+        "量化模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0x1r2/local_agentic_coding_benchmark_qwen38flashnext",
+      "published_at": "2026-08-28T17:30:34+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Qwen3.8 27B int4 with Dflash2 at 165t/s and 18M kv cache pool on dual 3090",
+      "title_cn": "双 3090 显卡运行 Qwen3.8 27B int4 实现 165t/s 速度",
+      "summary_cn": "用户在双 RTX 3090 显卡上通过 vLLM 和 LMCache 运行 Qwen3.8 27B int4 模型，结合 DFlash2 加速技术，实现了 165 token/s 的解码速度。该配置支持 18M KV 缓存池，在代码任务中相比无加速方案提升了 3.8 倍速度。",
+      "why_it_matters_cn": "展示了消费级硬件通过量化与缓存优化运行大模型的高效方案，降低了本地部署智能 Agent 的硬件门槛。",
+      "tags": [
+        "本地部署",
+        "推理加速",
+        "KV缓存"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0vrrx/qwen38_27b_int4_with_dflash2_at_165ts_and_18m_kv",
+      "published_at": "2026-08-28T16:44:10+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Qwen3.8-Flash-Next FP8 running at 524K context on 2x RTX PRO 6000 with vLLM — found an MTP long-context issue",
+      "title_cn": "Qwen3.8-Flash-Next FP8 在双 RTX PRO 6000 上运行 524K 上下文",
+      "summary_cn": "用户在双 RTX PRO 6000 显卡上使用 vLLM 成功运行 Qwen3.8-Flash-Next FP8 模型，支持 524K 上下文长度。配置包含 TP2、EP2、MTP3 及 CPU 卸载，但发现 MTP 在长上下文场景下存在性能问题，需进一步优化。",
+      "why_it_matters_cn": "验证了专业级显卡在超长上下文场景下的可行性，同时指出了推测解码在长文本处理中的潜在瓶颈。",
+      "tags": [
+        "长上下文",
+        "vLLM",
+        "推理优化"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0xzxu/qwen38flashnext_fp8_running_at_524k_context_on_2x",
+      "published_at": "2026-08-28T18:05:14+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "-DGGML_CUDA_NCCL=ON can degrade performance instead of improving it",
+      "title_cn": "llama.cpp 编译选项 NCCL 性能陷阱",
+      "summary_cn": "Reddit 用户指出，在编译 llama.cpp 时启用 -DGGML_CUDA_NCCL=ON 选项可能反而降低多 GPU 性能。尽管日志提示该选项能优化 AllReduce 操作，但实际测试显示其性能表现不如默认配置，提醒开发者注意编译参数对推理速度的影响。",
+      "why_it_matters_cn": "帮助本地部署用户避免配置误区，优化多卡推理性能，提升本地大模型运行效率。",
+      "tags": [
+        "llama.cpp",
+        "性能优化",
+        "多GPU"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w11zd3/dggml_cuda_ncclon_can_degrade_performance_instead",
+      "published_at": "2026-08-28T20:32:06+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Today I hit 181 toks/s (aggregate) on Qwen3.8-Flash-Next on 2x DGX Sparks",
+      "title_cn": "双 DGX Spark 集群实现 Qwen3.8-Flash-Next 181 tok/s 聚合吞吐",
+      "summary_cn": "Reddit 用户分享在双节点 NVIDIA DGX Spark 集群上运行 Qwen3.8-Flash-Next 的性能数据。在 512K 上下文长度下，通过约 9 个并发智能体会话共享引擎，实现了 181 tok/s 的聚合吞吐量，峰值达 195 tok/s。单流解码速度为 30-50 tok/s，展示了本地硬件在多智能体并发场景下的潜力。",
+      "why_it_matters_cn": "该数据验证了消费级/工作站级硬件在运行大模型多智能体并发任务时的可行性，为本地化部署提供参考。",
+      "tags": [
+        "Qwen",
+        "DGX Spark",
+        "本地部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1486l/today_i_hit_181_tokss_aggregate_on",
+      "published_at": "2026-08-28T22:00:36+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests"
+  ],
+  "skipped_duplicates": [
+    "Breaking Claude Code Opus 5 Auto Mode"
+  ],
+  "editorial_dropped_items": []
+}
