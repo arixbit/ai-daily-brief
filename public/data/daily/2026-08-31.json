@@ -1,0 +1,451 @@
+{
+  "date": "2026-08-31",
+  "generated_at": "2026-08-30T22:31:23.119659+00:00",
+  "title": "2026-08-31 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Uncensored Multi-Model Releases, LongCat-Flash-Lite-Sparse with MTPs and LSAs, Qwen3.8-27B with MTPs, Qwen3.5-122B-A10B with MTPs, Qwen3-Coder-Next and Laguna-S2.1 with Vision, All Available in GGUF Format! Bonus: Links to my llama.cpp Fork for LongCat-Flash-Lite Support and J-Wash Enhanced Fork!",
+      "title_cn": "多款无审查模型发布：LongCat、Qwen3.8 及视觉模型 GGUF 版",
+      "summary_cn": "Reddit 用户发布多款无审查模型的 GGUF 格式版本，包括 LongCat-Flash-Lite-Sparse、Qwen3.8-27B、Qwen3.5-122B-A10B 等。其中 LongCat 模型需从头创建 Heretic 支持并适配 llama.cpp，工作量大，旨在为社区提供多样化的本地模型选择。",
+      "why_it_matters_cn": "丰富了本地部署的模型选择，特别是无审查版本，满足用户对模型自由度和特定功能的需求。",
+      "tags": [
+        "GGUF",
+        "llama.cpp",
+        "模型发布"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2iqos/uncensored_multimodel_releases",
+      "published_at": "2026-08-30T14:16:07+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Cloudflare Extends AI Search to Make it Easier for Agents and Developers to Search Custom Data",
+      "title_cn": "Cloudflare 扩展 AI 搜索功能以支持 Agent 检索自定义数据",
+      "summary_cn": "Cloudflare 推出内置 AI Search 服务，为 AI Agent 和应用提供针对自定义数据的即用型搜索引擎。该服务支持 Agent 集成、多模态搜索，并能与其他 Cloudflare 工具无缝对接，帮助开发者更便捷地构建基于私有数据的智能应用。",
+      "why_it_matters_cn": "降低 Agent 接入私有数据的门槛，提升企业级 AI 应用的开发效率与数据检索能力。",
+      "tags": [
+        "Cloudflare",
+        "AI Search",
+        "Agent"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/08/cloudflare-ai-search",
+      "published_at": "2026-08-30T19:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Anthropic's Claude Code limit change is a raise on paper but a cut in practice",
+      "title_cn": "Anthropic 调整 Claude Code 限额：名义上涨，实际削减",
+      "summary_cn": "The Decoder 报道指出，Anthropic 将 Claude Code 的每周使用限额临时提升 50% 改为永久提升 25%，相当于实际削减 17%。虽然官方承诺增加透明度和控制力，但开发者认为这实质上是减少了可用额度，引发社区对成本控制的讨论。",
+      "why_it_matters_cn": "反映了 AI 编程工具在商业化过程中对开发者使用成本的重新平衡，影响重度用户的预算规划。",
+      "tags": [
+        "Claude Code",
+        "Anthropic",
+        "定价策略"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropics-claude-code-limit-change-is-a-raise-on-paper-but-a-cut-in-practice",
+      "published_at": "2026-08-30T09:05:19+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "V0.3.0 of LifeOS is out! End to end runnable on 12GB of vram.",
+      "title_cn": "LifeOS v0.3.0 发布，支持 12GB 显存运行",
+      "summary_cn": "LifeOS 是一款自托管的个人组织工具，v0.3.0 版本现已发布。它利用 Whisper 进行本地语音转文字，再由本地 LLM 将语音内容转化为任务、事件或日记。该版本优化了资源占用，仅需 12GB 显存即可端到端运行，实现了完全私有的智能生活管理。",
+      "why_it_matters_cn": "展示了本地 LLM 在个人生产力场景中的落地潜力，让用户能在低硬件成本下享受隐私安全的自动化服务。",
+      "tags": [
+        "LocalLLM",
+        "Productivity",
+        "Self-hosted"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2tz9d/v030_of_lifeos_is_out_end_to_end_runnable_on_12gb",
+      "published_at": "2026-08-30T21:27:44+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 44,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "AI agents have no sense of time and are not aware of it",
+      "title_cn": "研究显示 AI Agent 缺乏时间感知且高估任务耗时",
+      "summary_cn": "最新研究表明，Claude Code 和 Codex 等 AI 编码助手缺乏时间感知，会系统性高估任务耗时，Codex 误差甚至达实际时长的十倍。此外，它们对自身工作质量的评价也高出约 20 个百分点。这种偏差在长时自主任务中给监督带来挑战。",
+      "why_it_matters_cn": "揭示 Agent 在自主执行长任务时的可靠性瓶颈，提示开发者需加强外部监控机制。",
+      "tags": [
+        "AI Agent",
+        "时间感知",
+        "可靠性"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/ai-agents-have-no-sense-of-time-and-are-not-aware-of-it",
+      "published_at": "2026-08-30T10:41:36+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 65,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "I collected every single LLM coding benchmark, and computed their Intelligence Density",
+      "title_cn": "汇总 LLM 编码基准并计算智能密度",
+      "summary_cn": "作者收集了 SWE-bench Pro、Terminal-Bench 等主流智能体编码基准，构建了 Agentic Coding Index。通过引入超线性指数和参数惩罚项，计算模型的智能密度，旨在公平评估不同规模模型在复杂编码任务中的真实能力表现。",
+      "why_it_matters_cn": "该指标解决了小模型在基准测试中因规模小而被低估的问题，为开发者选择本地部署模型提供了更科学的参考依据。",
+      "tags": [
+        "LLM",
+        "Benchmark",
+        "Coding"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2v97w/i_collected_every_single_llm_coding_benchmark_and",
+      "published_at": "2026-08-30T22:20:36+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+      "title_cn": "卡特彼勒将采矿自动化经验应用于 AI 部署",
+      "summary_cn": "卡特彼勒在远程采矿站点部署自主机器方面拥有数十年经验，现在正将这些经验迁移到 AI 部署领域。公司利用其在极端环境下管理自动化系统的成熟方法论，解决 AI 在工业现场落地时面临的可靠性、维护及环境适应性等关键挑战，推动 AI 在重型工业中的实际应用。",
+      "why_it_matters_cn": "传统工业巨头将成熟的自动化运维经验引入 AI 领域，为 AI 在复杂物理环境中的稳定部署提供了重要参考。",
+      "tags": [
+        "Industry",
+        "AI Deployment",
+        "Automation"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining",
+      "published_at": "2026-08-30T15:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "硅谷知名风投 a16z 成立 11 亿美元基金 布局芯片、内存与机器人",
+      "title_cn": "a16z 成立 11 亿美元基金布局芯片、内存与机器人",
+      "summary_cn": "硅谷知名风投 a16z 成立规模 11 亿美元的首只硬件基础设施基金「Machine Age」。该基金将重点投资人工智能处理器、存储芯片、网络设备、数据存储及机器人等领域，旨在捕捉 AI 时代底层硬件基础设施的投资机会。",
+      "why_it_matters_cn": "显示资本正加速向 AI 底层硬件基础设施倾斜，预示算力与存储赛道竞争加剧。",
+      "tags": [
+        "a16z",
+        "硬件投资",
+        "AI 基础设施"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8w0VcBot1th",
+      "published_at": "2026-08-30T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "AWS Open Sources Kiro Crew for Asynchronous Coding Agents",
+      "title_cn": "AWS 开源 Kiro Crew 异步编码 Agent 系统",
+      "summary_cn": "Amazon 宣布开源 Kiro Crew，这是一个用于跨会话、工具和任务运行多个 Kiro 编码 Agent 的系统。开发者可分配异步任务如事故调查、工单分类和 PR 监控，让 AI 在无监督状态下持续工作，提升开发流程自动化水平。",
+      "why_it_matters_cn": "推动了异步 Agent 在软件开发流程中的落地，使 AI 能独立处理后台任务，释放开发者精力。",
+      "tags": [
+        "Kiro Crew",
+        "AWS",
+        "异步 Agent"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/08/kiro-crew-coding-agents",
+      "published_at": "2026-08-30T08:23:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Introducing Hy4 Preview",
+      "title_cn": "腾讯发布 Hy4 Preview 开源大模型",
+      "summary_cn": "腾讯今日发布 Hy4 Preview，这是一款纯文本输入的开源权重 LLM。模型总参数量达 770B，激活参数 49B，支持 1M token 上下文窗口，Hugging Face 下载量约 1.56TB。相比 7 月的 Hy3，其规模显著扩大，并引入了新的推理模板机制以优化对话能力。",
+      "why_it_matters_cn": "腾讯在开源模型领域持续发力，Hy4 的大规模参数和长上下文支持进一步提升了国产开源模型在复杂任务中的竞争力。",
+      "tags": [
+        "Tencent",
+        "Open Source",
+        "LLM"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/29/hy4",
+      "published_at": "2026-08-29T23:53:13+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Claude Code 额度「明升实降」：永久涨 25%，周额度却少 17%",
+      "title_cn": "Claude Code 额度调整引争议：永久涨幅 25% 但周额度实降 17%",
+      "summary_cn": "Anthropic 宣布 Claude Code 结束临时额度加成，标准周额度永久提升 25%，但相比当前实际额度减少 17%。同期 OpenAI 修复 Codex 额度消耗问题，用户可用量增加 10%-50%。用户对两家厂商维护开发者社区的表现反应不一，部分用户考虑更换模型。",
+      "why_it_matters_cn": "反映头部 Coding Agent 厂商在商业化与开发者体验平衡上的不同策略，影响用户选型。",
+      "tags": [
+        "Claude Code",
+        "Codex",
+        "额度调整"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8w0ZXKr8tRV",
+      "published_at": "2026-08-30T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 36,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Siri AI 尚未登场，苹果 CarPlay 已抢先引入四款第三方 AI 聊天机器人",
+      "title_cn": "苹果 CarPlay 抢先接入四款第三方 AI 聊天机器人",
+      "summary_cn": "苹果在 iOS 26.4 中开放 CarPlay 与对话类应用深度对接，已接入 ChatGPT、Perplexity、Grok 及 Meta AI。尽管 Meta AI 受地域限制暂未全面开放，但此举为 9 月 iOS 27 搭载的升级版 Siri AI 铺路，旨在平衡平台开放性与核心功能可控性。",
+      "why_it_matters_cn": "苹果通过分阶段引入第三方 AI 服务，既维持了 Siri 的核心地位，又丰富了车载智能助手生态，可能重塑车载 AI 竞争格局。",
+      "tags": [
+        "苹果",
+        "CarPlay",
+        "车载AI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8vzrwg67HmD",
+      "published_at": "2026-08-30T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 21,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 13,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Reconstructing 3D bone geometry from 2 X-ray silhouettes using a statistical shape model + differentiable rendering [P]",
+      "title_cn": "利用统计形状模型从 X 光片重建 3D 骨骼几何",
+      "summary_cn": "研究者提出一种无需 CT 和神经网络的管线，从两张正交 X 光片重建患者特定的 3D 远端股骨。方法基于 MedShapeNet 构建 PCA 形状模型，利用 PyTorch3D 软光栅化器和马氏先验进行拟合。该方法通过约 1000 次迭代优化，实现了高精度的患者特异性骨骼重建。",
+      "why_it_matters_cn": "提供了一种低成本、无神经网络的医学影像重建方案，有助于降低临床诊断门槛并提高特定场景下的重建精度。",
+      "tags": [
+        "Medical AI",
+        "3D Reconstruction",
+        "Research"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w2go6l/reconstructing_3d_bone_geometry_from_2_xray",
+      "published_at": "2026-08-30T12:47:10+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 37,
+      "selected": false,
+      "editorial_note": "社区源精选配额已满"
+    },
+    {
+      "rank": 14,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Qwen3.8-Flash-Next turns 4xR9700 into a local AI powerhouse! 120 t/s TG and 12k t/s PP single request with optimized vLLM",
+      "title_cn": "Qwen3.8-Flash-Next 让 4 张 R9700 成为本地 AI  powerhouse",
+      "summary_cn": "Reddit 用户分享使用优化版 vLLM 镜像在 4 张 R9700 显卡上运行 Qwen3.8-Flash-Next 的配置。该方案支持单请求 120 tokens/s 生成速度和 12k tokens/s 预填充速度，总上下文窗口达 70 万 tokens，显著提升了本地部署性能。",
+      "why_it_matters_cn": "证明了通过特定量化和推理引擎优化，消费级显卡集群也能高效运行大模型，降低了本地部署门槛。",
+      "tags": [
+        "Qwen3.8",
+        "vLLM",
+        "本地部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2my8q/qwen38flashnext_turns_4xr9700_into_a_local_ai",
+      "published_at": "2026-08-30T17:00:57+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 15,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Here my pretty good qwen3.8 27B setup, hope it helps",
+      "title_cn": "分享 Qwen3.8 27B 在 7900XTX 上的高效本地部署配置",
+      "summary_cn": "Reddit 用户分享在 Debian 13 系统和 8700G CPU 环境下，使用 24GB VRAM 的 7900XTX 显卡运行 Qwen3.8 27B 模型的配置经验。该配置几乎不占用系统内存，旨在为拥有类似硬件的用户提供一个稳定且高效的本地推理参考方案。",
+      "why_it_matters_cn": "为拥有单张高端消费级显卡的用户提供了具体的模型运行参数参考，有助于优化本地推理体验。",
+      "tags": [
+        "Qwen3.8",
+        "硬件配置",
+        "本地推理"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2pvsd/here_my_pretty_good_qwen38_27b_setup_hope_it_helps",
+      "published_at": "2026-08-30T18:51:03+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 16,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Which is better ninfer vs vllm for Qwen 3.8 27B on RTX 5090?",
+      "title_cn": "RTX 5090 上运行 Qwen 3.8 27B：ninfer 与 vLLM 性能对比",
+      "summary_cn": "Reddit 用户讨论在 RTX 5090 32GB 显卡上运行 Qwen 3.8 27B 模型时，ninfer 与 vLLM 的性能差异。用户目前使用 vLLM 配合 unsloth 量化模型，但关注到 ninfer 可能提供更优的上下文长度和性能，寻求社区的实际使用反馈以决定切换。",
+      "why_it_matters_cn": "帮助开发者在最新硬件上选择最适合的推理引擎，平衡上下文长度与推理速度，优化开发效率。",
+      "tags": [
+        "Qwen 3.8",
+        "RTX 5090",
+        "推理引擎"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2pk15/which_is_better_ninfer_vs_vllm_for_qwen_38_27b_on",
+      "published_at": "2026-08-30T18:38:48+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Are there any interesting architectural innovations that we seem to be on the verge of for LLM models or AI models that might be a big deal? (Excluding maybe N-gram, since everyone is already well aware of that one)",
+      "title_cn": "Reddit 热议：LLM 模型即将迎来哪些重大架构创新？",
+      "summary_cn": "Reddit LocalLLaMA 社区发起讨论，排除 N-gram、量化改进等已知方向，聚焦 LLM 或其他 AI 模型可能出现的根本性架构变革。用户分享近期阅读中引起关注的潜在重大架构创新，探讨这些变化可能带来的影响及社区尚未充分讨论的新趋势。",
+      "why_it_matters_cn": "反映社区对模型底层架构演进的关注，有助于预判未来 AI 技术发展的关键方向。",
+      "tags": [
+        "LLM 架构",
+        "社区讨论",
+        "技术趋势"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2r37q/are_there_any_interesting_architectural",
+      "published_at": "2026-08-30T19:36:21+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Qwen 3.8 27b, Ninfer, and an experiment ... can i use Dario and Sam's own models to build an air-gapped, more than fast enough tok/s replacement for their subs? £50 on a Sunday afternoon - thanks £75 free fable credit!",
+      "title_cn": "用户实验：用 Qwen 3.8 27b 构建本地化替代方案",
+      "summary_cn": "一位开发者利用 Qwen 3.8 27b 和 Ninfer 进行实验，尝试构建本地化环境以替代基于 Web 的前沿模型订阅服务。实验旨在复现 Artifacts、Canvas 及自主工具循环等功能，探索低成本、高速度的本地部署方案，并分享其实现思路与初步成果。",
+      "why_it_matters_cn": "展示开源模型在本地部署中替代昂贵订阅服务的潜力，为开发者提供低成本实践参考。",
+      "tags": [
+        "Qwen",
+        "本地部署",
+        "开源模型"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2uic9/qwen_38_27b_ninfer_and_an_experiment_can_i_use",
+      "published_at": "2026-08-30T21:49:33+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "NeurIPS accepted papers leaked? [D]",
+      "title_cn": "NeurIPS 录用论文列表疑似泄露",
+      "summary_cn": "Reddit 用户发现一个 GitHub 仓库包含约 7000 篇 NeurIPS 2026 录用论文的 HTML 文件。尽管部分论文已匿名化，但细节准确，疑似为真实录用名单。目前社区正在讨论该列表的真实性，许多人希望这只是巧合，因为距离正式公布时间似乎还太早。",
+      "why_it_matters_cn": "若泄露属实，将提前揭示顶级 AI 会议的学术风向和研究热点，影响相关领域的研究布局与竞争态势。",
+      "tags": [
+        "NeurIPS",
+        "Academic",
+        "Community"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w2r1f3/neurips_accepted_papers_leaked_d",
+      "published_at": "2026-08-30T19:34:25+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "*ACL Findings or TMLR? [D]",
+      "title_cn": "Reddit 热议：ACL Findings 与 TMLR 发表选择",
+      "summary_cn": "一位研究者因 NeurIPS 评分较低（5/2/2）预期被拒，正在权衡投稿 ARR 还是 TMLR。他认为 NAACL Findings 比主会录用概率更高，因此发帖询问社区：在学术履历中，大家更倾向于拥有 TMLR 还是 *ACL Findings 的发表记录？",
+      "why_it_matters_cn": "反映了 NLP 领域学者在顶会主会、Findings 与 TMLR 之间的发表策略权衡，是了解当前学术圈评价标准与职业发展的真实窗口。",
+      "tags": [
+        "学术发表",
+        "NLP",
+        "社区讨论"
+      ],
+      "source": "Reddit MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w23w2l/acl_findings_or_tmlr_d",
+      "published_at": "2026-08-30T01:23:36+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests",
+    "GitHub Releases - Transformers: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - vLLM: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - Ollama: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - LangChain: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - MCP Servers: HTTP Error 403: rate limit exceeded"
+  ],
+  "skipped_duplicates": [
+    "Sony and Warner sue Anthropic over \"one of the largest and most blatant ongoing thefts of intellectual property in history\"",
+    "NVIDIA® DGX Station™ Delivering Data-Center-Class Performance from the Desktop",
+    "[R] Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment"
+  ],
+  "editorial_dropped_items": []
+}
