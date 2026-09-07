@@ -1,0 +1,448 @@
+{
+  "date": "2026-09-08",
+  "generated_at": "2026-09-07T22:31:59.449394+00:00",
+  "title": "2026-09-08 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Tell HN: OpenAI brings back 5 hour limit for plus and business standard users",
+      "title_cn": "OpenAI 恢复 Plus 和 Business 用户的 5 小时使用限制",
+      "summary_cn": "Hacker News 社区热议 OpenAI 重新实施针对 Plus 和 Business 标准用户的 5 小时使用时长限制。这一政策调整引发了大量讨论，用户关注其对日常使用体验及重度工作流的影响，反映了用户对服务稳定性的关切。",
+      "why_it_matters_cn": "使用限制的变化直接影响订阅用户的日常体验，是评估 AI 服务商业策略的重要信号。",
+      "tags": [
+        "OpenAI",
+        "订阅政策",
+        "用户反馈"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://news.ycombinator.com/item?id=49600233",
+      "published_at": "2026-09-07T16:40:32+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 44,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Supporting independent journalism in Ukraine",
+      "title_cn": "OpenAI 联合机构支持乌克兰独立新闻业",
+      "summary_cn": "OpenAI 与 AIRPPU 及 WAN-IFRA 合作启动了一项 AI 计划，旨在帮助乌克兰新闻机构利用人工智能技术。该计划致力于增强媒体组织的创新能力、运营韧性，并巩固其在复杂环境下的独立新闻地位。",
+      "why_it_matters_cn": "体现了 AI 技术在支持全球媒体独立性和增强新闻机构韧性方面的实际应用价值。",
+      "tags": [
+        "OpenAI",
+        "媒体行业",
+        "国际合作"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "published_at": "2026-09-07T00:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "ChatGPT claws back web traffic share to 55.5 percent as Gemini's brief comeback fades",
+      "title_cn": "ChatGPT 夺回 55.5% 网页流量，Gemini 短暂反弹后回落",
+      "summary_cn": "Similarweb 数据显示，ChatGPT 在 AI 聊天机器人网站流量中的份额回升至 55.5%。尽管同比领先幅度从 73.3% 大幅缩小，Gemini 份额翻倍且 Claude 增长近五倍，但 ChatGPT 仍保持绝对优势。该统计仅包含网页端，未涵盖移动应用和桌面客户端。",
+      "why_it_matters_cn": "反映 AI 助手市场竞争格局变化，显示头部模型在用户粘性上的持续分化。",
+      "tags": [
+        "ChatGPT",
+        "市场份额",
+        "竞争格局"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades",
+      "published_at": "2026-09-07T16:54:12+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI reports AI \"research interns\" and warns about its own pace at the same time",
+      "title_cn": "OpenAI 报告 AI 研究实习生效率，同时警告自身扩张速度",
+      "summary_cn": "OpenAI 披露其内部 AI Agent 已实现“自动化研究实习生”目标，每人类工作日可处理 3.1 个 AI 工作日的工作量。然而，首席科学家 Pachocki 同时警告，目前没有任何实验室对对齐和监控的掌控力足以支持以最大速度持续扩展，效率提升与安全风险并存。",
+      "why_it_matters_cn": "展示了 AI 辅助科研的效率飞跃，但也凸显了高速迭代背后的对齐风险。",
+      "tags": [
+        "AI 科研",
+        "OpenAI",
+        "自动化"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-reports-ai-research-interns-and-warns-about-its-own-pace-at-the-same-time",
+      "published_at": "2026-09-07T13:05:22+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI 首席科学家称已造出异星心智，呼吁全人类刹车",
+      "title_cn": "OpenAI 首席科学家警告 AI 对齐失效，呼吁全球强制安全立法",
+      "summary_cn": "OpenAI 首席科学家 Jakub Pachocki 发文称 AI 是难以理解的“异星心智”。他指出当前强化学习与预训练对齐路径均失效，思维链监控窗口正在闭合，且 AI 已实现递归自我改进。他警告行业陷入防御悖论，呼吁将对齐框架升级为全球强制法律，放缓前沿研究并建立跨国协调机制。",
+      "why_it_matters_cn": "揭示了前沿 AI 在智能增长与安全性之间的巨大落差，为行业监管与研发节奏提供了关键警示。",
+      "tags": [
+        "AI 对齐",
+        "安全治理",
+        "OpenAI"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8wDbmoh5erm",
+      "published_at": "2026-09-07T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "英伟达拟斥 30 亿美元投穆拉蒂创办的 Thinking Machines Lab",
+      "title_cn": "英伟达拟投资 Thinking Machines Lab",
+      "summary_cn": "英伟达拟斥资 25 亿至 30 亿美元参与 Thinking Machines Lab 融资，该公司由 OpenAI 前 CTO 穆拉蒂创办，投前估值 400 亿美元。结合此前收购 Hugging Face，英伟达正构建从芯片、模型到微调平台的生态闭环，提前锁定下一代前沿模型的算力需求。",
+      "why_it_matters_cn": "英伟达通过资本运作深度绑定模型层，从单纯基建供应商转型为生态主导者，重塑 AI 产业链格局。",
+      "tags": [
+        "英伟达",
+        "Thinking Machines",
+        "融资",
+        "生态闭环"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8wETlfaanuc",
+      "published_at": "2026-09-07T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Presentation: From AI Agent Demo to Production: Automated Testing and Evaluation",
+      "title_cn": "InfoQ 演讲：从演示到生产，AI Agent 自动化测试与评估",
+      "summary_cn": "Zhou Yu 探讨 AI Agent 停滞在演示阶段的原因，分享基于模拟的测试如何解决合规与可靠性瓶颈。通过合成用户画像、轨迹熵和自动化 CI/CD 流水线，评估多轮 Agent 并捕捉边缘案例，从而在生产环境中扩展自学习工作流，实现从 Demo 到落地的跨越。",
+      "why_it_matters_cn": "提供了 Agent 工程化落地的关键方法论，解决从原型到生产环境的可靠性难题。",
+      "tags": [
+        "Agent 工程",
+        "自动化测试",
+        "CI/CD"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/presentations/ai-agent-testing-evaluation",
+      "published_at": "2026-09-07T11:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Quoting Jakub Pachocki",
+      "title_cn": "Simon Willison 引述 OpenAI 关于防御性 AI 的必要性",
+      "summary_cn": "Simon Willison 引述 OpenAI 高管 Jakub Pachocki 的观点，指出快速训练更智能模型的核心动力在于构建防御系统。面对其他 AI 带来的风险，我们需要强大且对齐的 AI 来实时保护基础设施、防御失控 agent 并发明新的保护措施，这将是 OpenAI 部署工作的重点。",
+      "why_it_matters_cn": "揭示了 AI 竞赛背后的安全逻辑，说明防御性 AI 已成为头部实验室的核心战略方向。",
+      "tags": [
+        "OpenAI",
+        "AI安全",
+        "防御性AI"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki",
+      "published_at": "2026-09-07T22:26:25+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Video compressor",
+      "title_cn": "使用 Claude Code 构建基于 WebAssembly 的视频压缩工具",
+      "summary_cn": "Simon Willison 分享了他使用 Claude Code 构建视频压缩工具的过程。该工具利用 FFMPEG 的 WebAssembly 版本，用于优化手机录制的动画视频以便发布。此案例展示了 AI 辅助编程在快速开发前端多媒体工具方面的能力。",
+      "why_it_matters_cn": "展示了 AI 编程助手在集成 WebAssembly 技术、快速原型开发多媒体处理工具时的实用性。",
+      "tags": [
+        "Claude Code",
+        "WebAssembly",
+        "工具开发"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Sep/7/video-compressor",
+      "published_at": "2026-09-07T18:29:07+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Mercator ↔ Equal Earth",
+      "title_cn": "Mercator 与 Equal Earth 投影转换工具",
+      "summary_cn": "Simon Willison 利用 ChatGPT Work 中的 GPT-6 Astra 模型，结合 D3 库开发了地图投影转换工具。该工具实现了从墨卡托投影到 Equal Earth 投影的平滑动画过渡，展示了 AI 辅助编程在地理空间可视化领域的最新应用。",
+      "why_it_matters_cn": "展示了 AI 编程助手在复杂地理空间数据可视化开发中的实际效能，为开发者提供了新的工具参考。",
+      "tags": [
+        "D3",
+        "GPT-6 Astra",
+        "地理空间",
+        "AI编程"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Sep/7/equal-earth",
+      "published_at": "2026-09-07T16:24:16+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Opaque recurrence, and other AI terms that you should probably know",
+      "title_cn": "不透明递归及其他关键 AI 术语指南",
+      "summary_cn": "TechCrunch 发布了一份 AI 术语表，旨在帮助读者理解随着 AI 普及而涌现的大量新词汇和行话。该指南重点解释了包括“不透明递归”在内的重要概念，为公众提供了清晰定义，有助于消除技术沟通中的歧义。",
+      "why_it_matters_cn": "标准化术语定义有助于降低公众理解 AI 技术的门槛，促进更准确的技术交流与行业共识。",
+      "tags": [
+        "AI术语",
+        "科普指南",
+        "TechCrunch"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms",
+      "published_at": "2026-09-07T19:24:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 40,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "字节跳动拟推出实时空间视频生成 AI 模型",
+      "title_cn": "字节跳动拟推实时空间视频生成模型，张一鸣亲自督战",
+      "summary_cn": "字节跳动正筹备推出面向实时空间视频生成的 AI 模型，主要应用于机器人和自主系统领域，将与 Meta、Alphabet 等巨头展开竞争。创始人张一鸣亲自监督开发，协调多部门并投入算力支持，该模型最快下月发布，具体时间可能调整。",
+      "why_it_matters_cn": "显示字节跳动在具身智能与空间计算领域的战略野心，将加剧全球 AI 视频生成竞争。",
+      "tags": [
+        "字节跳动",
+        "空间视频",
+        "具身智能"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8wEa9swP81b",
+      "published_at": "2026-09-07T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 21,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 13,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "The models are fine, our toolings and methods are shit.",
+      "title_cn": "Reddit 热议：模型本身没问题，是我们的工具和方法太差",
+      "summary_cn": "一位拥有 13 年经验的开发者在 Reddit LocalLLaMA 发帖称，自己陷入了 AI 辅助编程的“垃圾陷阱”。虽然早期 Copilot 的辅助体验良好，但当前 AI 生成的代码质量参差不齐，导致开发者不得不花费大量时间清理和调试，怀念早期 AI 仅作为辅助工具而非主导者的阶段。",
+      "why_it_matters_cn": "反映了开发者对当前 AI 编程工具实际效能的失望，提示工具链优化比模型升级更紧迫。",
+      "tags": [
+        "AI编程",
+        "开发者体验",
+        "工具链"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa0l2t/the_models_are_fine_our_toolings_and_methods_are",
+      "published_at": "2026-09-07T18:42:05+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 14,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "My Qwen3.8-27B task-aware quant reaches 99% of BF16 reasoning performance at 15% of the size.",
+      "title_cn": "Qwen3.8-27B 任务感知量化实现 99% BF16 推理性能",
+      "summary_cn": "Reddit 用户分享了一项关于 Qwen3.8-27B 的任务感知量化（TAK）成果。该量化版本在推理基准测试中得分 82.81%，接近 BF16 全精度版本的 83.59%，而体积仅为后者的 15%。作者已将此工作转化为可重复的流水线，并计划将其应用于代码领域，旨在大幅降低本地部署的硬件门槛。",
+      "why_it_matters_cn": "展示了量化技术如何极致压缩模型体积而不显著损失性能，利好本地化部署。",
+      "tags": [
+        "Qwen",
+        "量化",
+        "本地部署"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa5dp9/my_qwen3827b_taskaware_quant_reaches_99_of_bf16",
+      "published_at": "2026-09-07T21:42:09+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 15,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Guide:How to Work Around Qwen3.8 Overthink",
+      "title_cn": "指南：如何通过设置推理预算解决 Qwen3.8 过度思考问题",
+      "summary_cn": "针对 Qwen3.8 模型在简单任务上“过度思考”导致效率低下的问题，Reddit 用户分享了一份实用指南。建议根据任务难度动态设置 reasoning budget：简单脚本设为 512，日常任务设为 2048，复杂代码设为 4096。该方法有效避免了微调模型可能带来的性能下降，提升了自动化流程的效率。",
+      "why_it_matters_cn": "提供了低成本优化模型推理效率的具体参数建议，帮助开发者平衡速度与质量。",
+      "tags": [
+        "Qwen",
+        "推理优化",
+        "参数调优"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa5odg/guidehow_to_work_around_qwen38_overthink",
+      "published_at": "2026-09-07T21:53:57+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 16,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "9 easy steps for llama.cpp, a local model, Freecad (and pi coding agent) to generate solid objects that sound mechanically good and can be also be 3D printed/milled",
+      "title_cn": "九步指南：利用 llama.cpp 与 FreeCAD 生成可打印机械结构",
+      "summary_cn": "Reddit 用户分享了一套在 Linux 上结合 llama.cpp、本地模型（Qwen3.8-27B）与 FreeCAD 的工作流。通过安装 freecad-mcp 插件并使用 pi coding agent，开发者可以生成机械结构良好且适合 3D 打印或铣削的实体对象。该流程展示了本地 AI 在 CAD 自动化领域的具体应用潜力。",
+      "why_it_matters_cn": "展示了 AI Agent 在垂直工程领域（CAD）的落地路径，拓展了本地模型的应用边界。",
+      "tags": [
+        "llama.cpp",
+        "FreeCAD",
+        "AI Agent"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w9r73k/9_easy_steps_for_llamacpp_a_local_model_freecad",
+      "published_at": "2026-09-07T12:45:58+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 17,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "exllamav3 comfortably beats llama.cpp running CPU-offloaded Qwen-3.8-Flash-Next on my setup!",
+      "title_cn": "exllamav3 在 CPU 卸载推理中性能超越 llama.cpp",
+      "summary_cn": "Reddit 用户分享在双 RTX 3080 配置下，exllamav3 运行 Qwen-3.8-Flash-Next 模型的表现优于 llama.cpp。数据显示 exllamav3 在预填充和解码阶段均展现出更高的吞吐量，且其量化方案在尺寸与性能平衡上更具优势。",
+      "why_it_matters_cn": "为本地大模型部署提供了新的性能基准，证明 exllamav3 是高效推理的有力竞争者。",
+      "tags": [
+        "本地部署",
+        "推理性能",
+        "exllamav3"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa1jkb/exllamav3_comfortably_beats_llamacpp_running",
+      "published_at": "2026-09-07T19:16:48+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 18,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Thinking about grabbing an RTX 2000 Ada 16gb to add to my gaming pc for inference due to Wattage constraints, any advice?",
+      "title_cn": "受功耗限制，考虑加装 RTX 2000 Ada 用于推理",
+      "summary_cn": "一位拥有 i9-14900F 和 RTX 4070 Super 的用户，因 700W 电源限制，计划加装一张 16GB 显存的 RTX 2000 Ada 显卡。此举旨在以较低功耗和成本提升显存容量，从而流畅运行 Qwen 27b 等主流稠密模型。",
+      "why_it_matters_cn": "展示了在有限硬件预算和功耗约束下，通过组合显卡实现大模型本地运行的实用思路。",
+      "tags": [
+        "硬件配置",
+        "本地推理",
+        "显存扩展"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w9l8qc/thinking_about_grabbing_an_rtx_2000_ada_16gb_to",
+      "published_at": "2026-09-07T07:23:26+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 19,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Cybersecurity is local AI model's killer use case",
+      "title_cn": "Reddit 热议：网络安全是本地 AI 模型的杀手级应用场景",
+      "summary_cn": "Reddit 用户通过两周实测 1,665 次模型运行，对比前沿与开源模型在真实 GitHub 代码库中的安全审计表现。结果显示，开源模型如 DeepSeek 和 GLM 在发现安全漏洞方面表现优异，甚至优于部分前沿模型，证明本地模型在网络安全领域的巨大潜力。",
+      "why_it_matters_cn": "实证了开源模型在垂直领域的竞争力，为本地部署 AI 提供了高价值落地场景。",
+      "tags": [
+        "本地模型",
+        "网络安全",
+        "开源 AI"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa0ucq/cybersecurity_is_local_ai_models_killer_use_case",
+      "published_at": "2026-09-07T18:51:24+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 20,
+      "category": "community_light",
+      "category_label": "轻量社区动态",
+      "title": "Local LLMs and their use case on your specific hardware",
+      "title_cn": "讨论：特定硬件环境下本地 LLM 的最佳用例选择",
+      "summary_cn": "Reddit 用户询问在 32GB VRAM 硬件上，如何根据具体用例选择最佳本地 LLM。目前该用户主要使用 Qwen3.8-27B（Q4/Q6）进行代码开发，偶尔使用 Gemma4 31B 处理研究或通用问答。社区成员建议建立本地模型与硬件配置的对照表，以优化不同场景下的模型选择策略。",
+      "why_it_matters_cn": "强调了硬件约束对模型选型的决定性作用，有助于用户理性规划本地 AI 栈。",
+      "tags": [
+        "本地LLM",
+        "硬件选型",
+        "Qwen"
+      ],
+      "source": "Reddit LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa0aww/local_llms_and_their_use_case_on_your_specific",
+      "published_at": "2026-09-07T18:31:59+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 0,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "VentureBeat AI: HTTP Error 429: Too Many Requests",
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests"
+  ],
+  "skipped_duplicates": [
+    "Research acceleration: The view inside OpenAI"
+  ],
+  "editorial_dropped_items": []
+}
