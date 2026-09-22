@@ -1,0 +1,470 @@
+{
+  "date": "2026-09-23",
+  "generated_at": "2026-09-22T22:30:57.518177+00:00",
+  "title": "2026-09-23 AI 每日简报",
+  "description": "自动抓取并整理的 AI 资讯，中文摘要，来源可追溯。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "title_cn": "OpenAI 发布 GPT-6 Sol 和 Luna",
+      "summary_cn": "OpenAI 正式推出 GPT-6 Sol 和 Luna 两款模型。它们旨在将前沿智能带入日常工作，通过不同的能力与成本平衡策略，满足多样化需求。这两款模型代表了 OpenAI 在新一代模型架构上的最新进展，面向更广泛的用户群体。",
+      "why_it_matters_cn": "提供不同性价比的前沿模型选择，帮助用户根据具体任务需求在性能与成本间做出最优决策。",
+      "tags": [
+        "GPT-6",
+        "OpenAI",
+        "模型发布"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "published_at": "2026-09-22T18:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 100,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "GitLab Duo Expands Self-Hosted AI Options Through Microsoft Foundry",
+      "title_cn": "GitLab Duo 通过 Microsoft Foundry 扩展自托管选项",
+      "summary_cn": "GitLab 宣布扩展 GitLab Duo Self-Hosted 功能，支持通过 Microsoft Foundry 部署的模型。这一更新允许组织在选定的 Azure 环境中运行 GitLab 的 AI 开发能力，增强了企业级 AI 工具的灵活性和数据主权控制。",
+      "why_it_matters_cn": "为企业提供了更灵活的 AI 部署路径，结合 Azure 生态与 GitLab 开发流程，提升数据安全性。",
+      "tags": [
+        "GitLab",
+        "Microsoft Foundry",
+        "自托管"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/09/gitlab-microsoft-foundry",
+      "published_at": "2026-09-22T12:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "阿里平头哥发布 AI 芯片真武 V900，算力达 M890 三倍",
+      "title_cn": "阿里平头哥发布算力达三倍的真武 V900 AI 芯片",
+      "summary_cn": "在 2026 云栖大会上，阿里平头哥发布国产 AI 芯片真武 V900，其算力提升至上一代 M890 的 3 倍。基于该芯片构建的单一集群可扩展至 50 万卡，旨在为前沿 AI 模型的大规模训练与推理提供强大的算力支持。",
+      "why_it_matters_cn": "国产算力性能显著提升，有助于降低对进口芯片的依赖，支撑大规模模型训练。",
+      "tags": [
+        "AI 芯片",
+        "阿里平头哥",
+        "算力"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8nuUliUskC7",
+      "published_at": "2026-09-22T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 56,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent",
+      "title_cn": "Coverage Cat：个人智能体保险服务",
+      "summary_cn": "YC S22 孵化的 Coverage Cat 推出了一项创新服务，允许用户通过个人智能体（personal agent）购买综合保险。该服务在 Hacker News 上获得 35 个点赞和 19 条评论，展示了 AI 智能体在金融服务领域的商业化探索。",
+      "why_it_matters_cn": "将个人智能体引入保险流程，可能简化投保体验并实现个性化服务，是 AI 在金融领域应用的新方向。",
+      "tags": [
+        "保险",
+        "个人智能体",
+        "金融科技"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://www.coveragecat.com",
+      "published_at": "2026-09-22T17:26:36+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 44,
+      "selected": true
+    },
+    {
+      "rank": 5,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "title_cn": "英国 AISI 与 EvalEval 推动基准测试可复现性",
+      "summary_cn": "英国人工智能安全研究所（AISI）与 EvalEval 合作，致力于解决 AI 模型评估中的可复现性问题。通过建立标准化的评估框架和工具，旨在确保不同团队在相同基准测试下能得出一致的结果，从而提升 AI 性能评估的透明度与可信度。",
+      "why_it_matters_cn": "解决基准测试的可复现性是建立 AI 行业信任的基础，有助于消除评估偏差，使模型比较更加公平，为监管机构和开发者提供可靠的数据支持。",
+      "tags": [
+        "模型评估",
+        "可复现性",
+        "AI 安全"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "source_role": "research",
+      "source_role_label": "研究/生态",
+      "editorial_score": 73,
+      "selected": true
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Priorities and principles for effective third party assessments",
+      "title_cn": "OpenAI 阐述第三方 AI 安全评估的原则与优先级",
+      "summary_cn": "OpenAI 发布文章，详细阐述了针对前沿模型及其安全措施的第三方评估原则。文章强调了评估的严谨性、安全性和独立性，旨在建立一套标准化的外部审查机制，以增强公众和监管机构对前沿 AI 系统安全性的信心。",
+      "why_it_matters_cn": "引入独立的第三方评估机制是 AI 治理的重要一步，有助于打破厂商自证清白的局限，为前沿 AI 模型的安全部署提供更具公信力的外部验证标准。",
+      "tags": [
+        "AI 安全",
+        "第三方评估",
+        "治理"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 72,
+      "selected": true
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI calls for international standards on AI that could improve itself",
+      "title_cn": "OpenAI 呼吁制定能自我改进 AI 的国际标准",
+      "summary_cn": "OpenAI 呼吁为递归自我改进（RSI）建立国际标准，即 AI 系统独立构建下一代 AI 的过程。公司警告，若缺乏保障措施，人类可能失去对该进程的控制。OpenAI 建议由美国主导全球测量标准与监督规则，以确保 AI 自我进化过程中的安全性与可控性。",
+      "why_it_matters_cn": "确立 RSI 监管框架，防止 AI 自我迭代失控，保障人类在技术演进中的主导权。",
+      "tags": [
+        "RSI",
+        "国际标准",
+        "OpenAI"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-calls-for-international-standards-on-ai-that-could-improve-itself",
+      "published_at": "2026-09-22T15:29:51+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
+      "title_cn": "高通发布两款侧重 AI 的新智能手机芯片",
+      "summary_cn": "高通宣布推出两款新的旗舰智能手机芯片，重点强调 AI 能力。其中顶级芯片支持在本地运行 30B 参数的混合专家（MoE）模型，标志着移动端 AI 算力进一步提升，使更复杂的模型能在设备端离线运行。",
+      "why_it_matters_cn": "推动端侧 AI 发展，让大模型在移动设备上本地运行成为可能，减少云端依赖。",
+      "tags": [
+        "高通",
+        "端侧AI",
+        "MoE"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai",
+      "published_at": "2026-09-22T20:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "AstroForge is putting AI in command of its next spacecraft",
+      "title_cn": "AstroForge 让 AI 接管其下一艘航天器",
+      "summary_cn": "AstroForge 宣布其名为 Autonomy-1 的太空探测器将搭载一个小型基于 Transformer 的 AI 模型。该模型将负责探测器的自主运行与控制，标志着 AI 在深空探索任务中从辅助角色向核心指挥角色的转变。",
+      "why_it_matters_cn": "小型化 AI 模型在太空环境的应用，验证了自主决策系统在极端条件下的可行性，为未来低成本、高自主性的深空探测任务提供了关键技术路径。",
+      "tags": [
+        "太空探索",
+        "自主系统",
+        "Transformer"
+      ],
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft",
+      "published_at": "2026-09-22T15:00:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Roundtables: The Deadly Failures of The Virtual Border Wall",
+      "title_cn": "圆桌讨论：虚拟边境墙的致命失败",
+      "summary_cn": "MIT Technology Review 调查指出，美国过去 25 年投入数十亿美元在南部边境部署监控塔构成的“虚拟墙”，承诺能检测并挽救生命。但调查发现，超过一千人在这些监控区域活动，揭示了技术监控在复杂现实中的局限性与潜在的人道主义失败。",
+      "why_it_matters_cn": "该调查揭示了 AI 监控技术在边境管理中的实际效能与宣传之间的巨大差距，引发了关于技术部署中数据准确性、隐私及人道主义后果的深层反思。",
+      "tags": [
+        "AI 监控",
+        "边境安全",
+        "技术伦理"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/09/22/1144890/roundtables-the-deadly-failures-of-the-virtual-border-wall",
+      "published_at": "2026-09-22T13:42:05+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 58,
+      "selected": true
+    },
+    {
+      "rank": 11,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI 内部 AI 可自主训练模型，发布全球 AI 安全倡议",
+      "title_cn": "OpenAI 展示自主训练模型能力并发起全球安全倡议",
+      "summary_cn": "OpenAI 内部 AI 已能自主接管实验性模型训练全流程，通过多智能体协作压缩耗时并优化 GPU 内核，展现 RSI 雏形。公司发布全球安全倡议，呼吁建立统一技术标准与人类监督机制，并与 Anthropic 敲定交叉测试协议以规避自审盲区。",
+      "why_it_matters_cn": "AI 自主研发能力加速演进，全球监管框架的建立对确保人类控制权至关重要。",
+      "tags": [
+        "OpenAI",
+        "RSI",
+        "AI 安全"
+      ],
+      "source": "Readhub Daily",
+      "url": "https://readhub.cn/topic/8wcv3FNB7qX",
+      "published_at": "2026-09-22T22:29:00+00:00",
+      "source_role": "aggregator",
+      "source_role_label": "聚合",
+      "editorial_score": 42,
+      "selected": true
+    },
+    {
+      "rank": 12,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "title_cn": "Parallel 利用 GPT-6 Astra 将研究时间与成本减半",
+      "summary_cn": "OpenAI 宣布 Parallel 使用 GPT-6 Astra 模型，使其 Agent 在研究并综合劳动力市场数据时，相比之前的模型，所需时间和成本均减少了一半。这表明新一代模型在特定复杂任务上的效率提升显著，优化了自动化研究流程。",
+      "why_it_matters_cn": "展示了前沿模型在降低 Agent 运行成本和提升处理速度方面的实际商业价值。",
+      "tags": [
+        "GPT-6 Astra",
+        "Agent",
+        "效率"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "published_at": "2026-09-22T12:00:00+00:00",
+      "source_role": "official",
+      "source_role_label": "官方",
+      "editorial_score": 66,
+      "selected": true
+    },
+    {
+      "rank": 13,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Transformers now runs llama.cpp quants",
+      "title_cn": "Transformers 库现支持 llama.cpp 量化模型",
+      "summary_cn": "Hugging Face 宣布其 Transformers 库新增对 llama.cpp 量化模型的支持。这一更新允许开发者直接在 Python 环境中加载和使用经过量化的 LLM 模型，简化了从量化推理到应用开发的流程，降低了本地部署大模型的技术门槛。",
+      "why_it_matters_cn": "打通了高效推理引擎与主流开发框架之间的壁垒，使开发者能更便捷地在本地或边缘设备上部署高性能大模型，加速了 AI 应用的落地与迭代。",
+      "tags": [
+        "开发工具",
+        "模型部署",
+        "量化"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "source_role": "research",
+      "source_role_label": "研究/生态",
+      "editorial_score": 60,
+      "selected": true
+    },
+    {
+      "rank": 14,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "OpenAI's GPT-6 Sol and Luna cut prices in half but barely move the needle on performance",
+      "title_cn": "OpenAI 发布 GPT-6 Sol 和 Luna，价格减半但性能提升有限",
+      "summary_cn": "OpenAI 推出 GPT-6 Sol 和 Luna 两款低价模型，token 价格减半以对标 Anthropic 的高价产品。独立分析指出，尽管成本降低，但实际智能水平提升甚微。此举被视为对 Anthropic 同期发布 Opus 5.5 的回应，旨在通过价格竞争维持市场份额。",
+      "why_it_matters_cn": "价格战加剧，但性能瓶颈显现，开发者需权衡成本与模型实际能力。",
+      "tags": [
+        "GPT-6",
+        "价格竞争",
+        "OpenAI"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance",
+      "published_at": "2026-09-22T20:06:51+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 15,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents",
+      "title_cn": "Google 开源 AX：面向自主 AI Agent 的 Kubernetes 风格编排器",
+      "summary_cn": "Google 开源了 AX，一个用于管理自主 AI Agent 工作负载的编排器。它基于 Agent Substrate 运行时，将 Agent 视为有状态实体，提供资源高效的挂起与恢复机制。AX 具备 Kubernetes 风格的控制平面，用于优化 Agent 任务与资源管理，降低空闲延迟。",
+      "why_it_matters_cn": "为大规模部署 Agent 提供标准化基础设施，解决资源调度与状态管理难题。",
+      "tags": [
+        "Google",
+        "Agent 编排",
+        "开源"
+      ],
+      "source": "InfoQ AI/ML",
+      "url": "https://www.infoq.com/news/2026/09/google-ax-orchestrator",
+      "published_at": "2026-09-22T14:14:00+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 52,
+      "selected": true
+    },
+    {
+      "rank": 16,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "title_cn": "Jev 引入新型 LLM：System One 决策模型",
+      "summary_cn": "TypeSafe AI 发布 Jev，一种被称为 System One 或决策模型的新类别。它接受文本输入，但输出对应类别、是否判断、评分及置信度的浮点数，而非传统文本。Simon Willison 认为“决策模型”是更贴切的命名，该模型旨在作为前端处理特定逻辑判断。",
+      "why_it_matters_cn": "拓展了 LLM 的输出范式，从生成文本转向结构化数值决策，为特定场景提供更精确的置信度反馈。",
+      "tags": [
+        "Jev",
+        "决策模型",
+        "TypeSafe"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Sep/21/jev",
+      "published_at": "2026-09-21T23:09:20+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 17,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "llm-typesafe 0.1a0",
+      "title_cn": "llm-typesafe 0.1a0 插件发布",
+      "summary_cn": "Simon Willison 发布了 llm-typesafe 0.1a0 插件，为 LLM 工具添加对 TypeSafe AI 新模型 Jev 的支持。用户安装插件并设置 API 密钥后，即可通过命令行向 Jev 发送“是否”类或选择类问题，获取包含置信度的结构化 JSON 输出。",
+      "why_it_matters_cn": "降低了开发者集成新型决策模型 Jev 的门槛，使其能便捷地融入现有的 LLM 工作流中。",
+      "tags": [
+        "llm-cli",
+        "Jev",
+        "插件"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe",
+      "published_at": "2026-09-22T15:54:16+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 50,
+      "selected": true
+    },
+    {
+      "rank": 18,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Don’t be fooled by this summer of AI hype",
+      "title_cn": "MIT 科技评论：勿被今夏 AI 炒作热潮所迷惑",
+      "summary_cn": "文章指出近期 AI 领域炒作频繁，包括 Anthropic 宣称 Claude Mythos 在漏洞发现上超越专家，以及 OpenAI 与 Hugging Face 发生黑客事件后，Anthropic 和 Meta 相继披露类似模型事故。作者提醒读者理性看待这些高调声明，警惕过度营销带来的认知偏差。",
+      "why_it_matters_cn": "提醒从业者区分技术突破与营销噪音，建立更客观的 AI 能力评估视角。",
+      "tags": [
+        "AI 炒作",
+        "行业观点",
+        "安全事件"
+      ],
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype",
+      "published_at": "2026-09-22T11:04:51+00:00",
+      "source_role": "media",
+      "source_role_label": "媒体",
+      "editorial_score": 40,
+      "selected": true
+    },
+    {
+      "rank": 19,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Quoting @therealcornpop",
+      "title_cn": "Simon Willison 评论：AI 写作缺乏独特声音",
+      "summary_cn": "Simon Willison 引用 @therealcornpop 的观点，指出用 AI 撰写 TikTok 和 YouTube 脚本的内容具有明显的“AI 味”。除了常见的句式套路和破碎的节奏感外，更致命的是缺乏作者独特的观点、声音和“矛尖”，导致内容空洞且缺乏个性。",
+      "why_it_matters_cn": "提醒内容创作者，AI 虽能提升效率，但若过度依赖而忽视个人视角与独特表达，将导致内容同质化，削弱创作者在数字媒体中的核心竞争力。",
+      "tags": [
+        "内容创作",
+        "AI 写作",
+        "观点"
+      ],
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Sep/22/therealcornpop",
+      "published_at": "2026-09-22T18:03:21+00:00",
+      "source_role": "practitioner",
+      "source_role_label": "实践者",
+      "editorial_score": 38,
+      "selected": true
+    },
+    {
+      "rank": 20,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "LLM Ass Bench",
+      "title_cn": "LLM Ass Bench 基准测试",
+      "summary_cn": "LLM Ass Bench 是一个用于评估大语言模型性能的基准测试平台。该平台在 Hacker News 上引发了广泛讨论，获得了 123 个点赞和 40 条评论。它旨在通过标准化的测试任务，帮助开发者和研究者客观比较不同 LLM 在特定场景下的表现。",
+      "why_it_matters_cn": "标准化的基准测试是评估模型能力的关键工具，有助于开发者在选型时获得客观参考，推动模型评估体系的完善。",
+      "tags": [
+        "LLM",
+        "基准测试",
+        "模型评估"
+      ],
+      "source": "Hacker News LLM",
+      "url": "https://www.assbench.com",
+      "published_at": "2026-09-22T20:34:19+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 30,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    },
+    {
+      "rank": 21,
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "title": "Unreal Agent",
+      "title_cn": "Unreal Agent 智能体发布",
+      "summary_cn": "Unreal Labs 发布了名为 Unreal Agent 的新产品。该智能体在 Hacker News 上获得了 91 个点赞和 54 条评论，显示出社区对其技术实现和应用场景的高度关注。它代表了 AI 智能体在特定垂直领域或通用任务中的最新进展。",
+      "why_it_matters_cn": "智能体技术的落地应用是 AI 发展的核心趋势，Unreal Agent 的发布展示了该技术在解决实际问题方面的潜力。",
+      "tags": [
+        "Agent",
+        "智能体",
+        "AI 应用"
+      ],
+      "source": "Hacker News Agents",
+      "url": "https://unreallabs.ai/blog/unreal-agent",
+      "published_at": "2026-09-22T18:15:53+00:00",
+      "source_role": "community",
+      "source_role_label": "社区",
+      "editorial_score": 24,
+      "selected": false,
+      "editorial_note": "分数低于精选阈值"
+    }
+  ],
+  "source_errors": [
+    "VentureBeat AI: HTTP Error 429: Too Many Requests",
+    "Reddit LocalLLaMA: HTTP Error 429: Too Many Requests",
+    "Reddit MachineLearning: HTTP Error 429: Too Many Requests",
+    "Reddit OpenAI: HTTP Error 429: Too Many Requests",
+    "GitHub Releases - Transformers: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - vLLM: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - Ollama: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - LangChain: HTTP Error 403: rate limit exceeded",
+    "GitHub Releases - MCP Servers: HTTP Error 403: rate limit exceeded"
+  ],
+  "skipped_duplicates": [
+    "Anthropic 推出 Claude Opus 5.5",
+    "Claude Opus 5.5 matches Fable 5.1 performance at lower cost and promises less \"Claudish\" writing",
+    "Xiaomi's affordable flagship AI leads the open models, and Anthropic says Claude helped get it there",
+    "OpenAI says its internal model solved over 100 long-standing math problems after just a month of training",
+    "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes"
+  ],
+  "editorial_dropped_items": []
+}
