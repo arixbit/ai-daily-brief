@@ -1,0 +1,353 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T00:00:34.666Z",
+  "title": "2026-10-08 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "title_cn": "OpenAI 在 ChatGPT 全球推出 GPT-6 与 Intelligent UI",
+      "summary_cn": "OpenAI 宣布 GPT-6 在 ChatGPT 中全球上线，并配备 Intelligent UI。该界面提供带视觉元素的快速响应，支持用户直接探索和使用的交互体验。",
+      "why_it_matters_cn": "官方确认 GPT-6 在 ChatGPT 全球上线，并引入支持视觉与交互的 Intelligent UI。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "published_at": "2026-10-07T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "iefvodu2pzagdt0bkyss9s94v",
+      "upstream_url": "http://localhost:3100/items/iefvodu2pzagdt0bkyss9s94v",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/iefvodu2pzagdt0bkyss9s94v"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over",
+      "title_cn": "Anthropic 发布 Claude Haiku 5.5，大幅降价并加入可调推理档位",
+      "summary_cn": "Anthropic 发布 Claude Haiku 5.5，将其定位为目前最快且最廉价的小模型，平均价格比 Haiku 4.5 低约 75%，10 万 token 以内的请求价格最高下降 90%。",
+      "why_it_matters_cn": "原文给出了 Haiku 5.5 的降价幅度、基准成绩和可调推理档位，读者可以据此评估其在高吞吐任务中的成本与能力边界。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/claude-haiku-5-5-arrives-with-massive-price-cuts-proving-the-ai-pricing-arms-race-is-far-from-over/",
+      "published_at": "2026-10-07T18:49:23.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ty5zl695ka3zfdq78cwn1jgvo",
+      "upstream_url": "http://localhost:3100/items/ty5zl695ka3zfdq78cwn1jgvo",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/ty5zl695ka3zfdq78cwn1jgvo"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Multimodal open d1 decision models for the edge",
+      "title_cn": "Liquid AI 开源 d1 系列多模态端侧决策模型",
+      "summary_cn": "Liquid AI 开源 d1-3B 和 d1-omni-600M 两个决策模型，前者支持文本与图像，后者支持文本与图像或音频。d1-3B 在 Decision Index 0.2.1 上得分 48.57，在 10B 以下模型中最高，并在 NVIDIA Jetson AGX Thor 上实现 16ms 单问响应。",
+      "why_it_matters_cn": "原文给出了单步前向推理机制与端侧延迟数据，读者可据此评估其在边缘设备上的部署可行性。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "published_at": "2026-10-07T16:54:33.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "q78cwiipw795yzjwcpnvhcpue",
+      "upstream_url": "http://localhost:3100/items/q78cwiipw795yzjwcpnvhcpue",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/q78cwiipw795yzjwcpnvhcpue"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "title_cn": "Microsoft Research 发布 Agent Lightning v1.0：基于真实外壳的轻量级 Agentic RL 框架",
+      "summary_cn": "Microsoft Research Asia 发布 Agent Lightning v1.0，提出 Harnessed Agentic RL 范式，允许直接复用部署时的 Agent 外壳进行强化学习训练，无需在训练框架内重新实现 Agent。",
+      "why_it_matters_cn": "该框架通过 LLM 代理直接复用部署时的 Agent 外壳，解决了训练与部署环境不一致的问题，并提供了基于 Kubernetes 的低成本扩展方案。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "published_at": "2026-10-07T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "q59c9fssb7qjd15jcrge2sv4y",
+      "upstream_url": "http://localhost:3100/items/q59c9fssb7qjd15jcrge2sv4y",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/q59c9fssb7qjd15jcrge2sv4y"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
+      "title_cn": "微软发布搭载 Nvidia RTX Spark 芯片的 Surface Laptop Ultra 与 Dev Box，并推出新版 Windows 11",
+      "summary_cn": "微软在旧金山 Tech Week 上公布 Surface Laptop Ultra 与 Surface RTX Spark Dev Box 的规格和价格，前者起售价 $2,600，后者起售价 $6,000。",
+      "why_it_matters_cn": "原文给出了两款新机的价格、本地运行模型与 Execution Containers 功能，可据此判断其对开发者工作流的影响。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "TechCrunch · AI",
+      "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+      "published_at": "2026-10-07T20:22:37.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "q7me3rx9xpsiu53uj6967u4ik",
+      "upstream_url": "http://localhost:3100/items/q7me3rx9xpsiu53uj6967u4ik",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/q7me3rx9xpsiu53uj6967u4ik"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Google’s new SynthID website can identify AI-generated media",
+      "title_cn": "Google 推出 SynthID 网站，可识别 AI 生成的媒体",
+      "summary_cn": "Google 推出新的 SynthID 网站，允许任何人验证图片、视频或音频是否由 AI 生成。该工具支持 JPG、MP4、WAV 等多种格式，目前每天处理 100 万次验证请求，并已集成到 Gemini 应用和 Chrome 浏览器中。",
+      "why_it_matters_cn": "Google 将 SynthID 验证工具向所有人开放，支持图片、视频和音频，读者可据此了解跨平台 AI 媒体溯源的现状。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "TechCrunch · AI",
+      "url": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+      "published_at": "2026-10-07T14:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "pi09saqu0c1leqwmxzq8c7p2h",
+      "upstream_url": "http://localhost:3100/items/pi09saqu0c1leqwmxzq8c7p2h",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/pi09saqu0c1leqwmxzq8c7p2h"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Secret protection must scale with software",
+      "title_cn": "GitHub 发布 ModernBERT 分类器以加速密钥保护",
+      "summary_cn": "GitHub 发布 ModernBERT 分类器，在 2ms 内评估候选密钥以扩展推送保护。该功能将首先面向 Enterprise Cloud 和 GitHub Teams 组织开放，并集成至 Copilot CLI 的 /security-review 命令。",
+      "why_it_matters_cn": "基于九季度数据，文章提出用 ModernBERT 分类器在 2ms 内拦截非结构化密钥，以应对 AI 智能体加速代码生成带来的安全挑战。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "GitHub Blog · AI & ML",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+      "published_at": "2026-10-07T17:45:34.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ne87j9j9of38748lxkp75rhxh",
+      "upstream_url": "http://localhost:3100/items/ne87j9j9of38748lxkp75rhxh",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/ne87j9j9of38748lxkp75rhxh"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Introducing Claude Haiku 5.5 on AWS",
+      "title_cn": "Claude Haiku 5.5 上线 Amazon Bedrock 与 Claude Platform on AWS",
+      "summary_cn": "Claude Haiku 5.5 现已在 Amazon Bedrock 和 Claude Platform on AWS 上线，官方称其为 Claude 5.5 家族中速度最快、效率最高的模型，面向子智能体和高吞吐、成本敏感型任务。",
+      "why_it_matters_cn": "原文给出了 Haiku 5.5 在 AWS 上的接入路径与成本定位，读者可据此评估其在高吞吐子智能体场景中的可用性。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "AWS Machine Learning Blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+      "published_at": "2026-10-07T18:52:10.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "xwzxyw18dvdl2ok2z6pb2tg7m",
+      "upstream_url": "http://localhost:3100/items/xwzxyw18dvdl2ok2z6pb2tg7m",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/xwzxyw18dvdl2ok2z6pb2tg7m"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; “the most significant moment” in >100 years of mathematics",
+      "title_cn": "AINews：OpenAI 发布 722 篇数学论文，Mistral 推出 Large 4 模型",
+      "summary_cn": "OpenAI 发布内部模型生成的 722 篇数学论文，解决约 90 个顶级未解数学问题，包括准黎曼猜想。Mistral 发布 1T 参数的 Large 4 模型，提供 API 访问并承诺 10 月底开源权重。",
+      "why_it_matters_cn": "汇总了 OpenAI 数学成果、Mistral 新模型及多项工具发布，为读者提供该周期内 AI 领域关键进展的横向对照。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+      "published_at": "2026-10-07T04:55:44.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "hdt1ycgv9y4wfno8m2e9tmqp2",
+      "upstream_url": "http://localhost:3100/items/hdt1ycgv9y4wfno8m2e9tmqp2",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/hdt1ycgv9y4wfno8m2e9tmqp2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "ChatGPT rated \"unacceptable risk\" for teens after parental alerts failed during suicide conversations",
+      "title_cn": "Common Sense Media 测试发现 ChatGPT 青少年版家长警报失效，被评为“不可接受的风险”",
+      "summary_cn": "Common Sense Media Youth AI Safety Institute 在超过 4000 次测试提示后，将 ChatGPT for Teens 评为对未成年人的“不可接受的风险”，并建议在独立测试确认安全前禁止青少年使用该服务。",
+      "why_it_matters_cn": "独立测试发现 ChatGPT 在青少年危机对话中未触发家长警报，为相关诉讼和监管提供了关键证据。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/chatgpt-rated-unacceptable-risk-for-teens-after-parental-alerts-failed-during-suicide-conversations/",
+      "published_at": "2026-10-07T12:34:34.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "vzf5r7x30ksal3kpczyx2ymxi",
+      "upstream_url": "http://localhost:3100/items/vzf5r7x30ksal3kpczyx2ymxi",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/vzf5r7x30ksal3kpczyx2ymxi"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+      "title_cn": "Nemotron 微调实现 IOI 与 IMO 金牌级成绩",
+      "summary_cn": "Nemotron 团队通过监督微调、强化学习及反馈推理，在 IOI 2026 和 IMO 2026 中均达到金牌水平。IOI 系统得分 535.4/600，IMO 系统得分 30/42，均超过官方金牌分数线。相关模型、数据集及推理流程已在 Hugging Face 开源。",
+      "why_it_matters_cn": "展示了通过SFT、RL及推理循环将Nemotron微调至金牌水平的可复现配方，并开源了模型与数据。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "published_at": "2026-10-07T12:45:31.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "zwfcf5vq9r62whzhz8bnjl0dg",
+      "upstream_url": "http://localhost:3100/items/zwfcf5vq9r62whzhz8bnjl0dg",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/zwfcf5vq9r62whzhz8bnjl0dg"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Does better work always mean better workers?",
+      "title_cn": "Google Research 发布三个月专利撰写实验：AI 辅助如何影响律师专业判断力",
+      "summary_cn": "Google Research 在 NBER 发表论文，报告了一项为期三个月的专利撰写现场实验，评估 AI 辅助对律师专业判断力的影响。实验随机分配 133 名律师使用 Google Labs 的 AI 专利写作助手，结果显示 AI 在短期内提升了撰写质量，但移除 AI 后，资深律师的判断力有所提升，而初级律师未表现出显著的技能增长。",
+      "why_it_matters_cn": "该研究通过三个月的专利撰写实验，揭示了AI辅助对初级与资深律师判断力发展的不同影响。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Google Research",
+      "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
+      "published_at": "2026-10-07T20:19:57.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "t8ez4lgmfrkahgb54qb8pvk6p",
+      "upstream_url": "http://localhost:3100/items/t8ez4lgmfrkahgb54qb8pvk6p",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/t8ez4lgmfrkahgb54qb8pvk6p"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Introducing Falcon ASR",
+      "title_cn": "Hugging Face 发布 Falcon-ASR 阿拉伯语语音识别模型",
+      "summary_cn": "Hugging Face 发布 Falcon-ASR，这是一款 1.6B 参数的阿拉伯语语音识别模型，重点优化阿联酋方言。在六个阿拉伯语测试集上，其平均词错误率（WER）为 20.92%，优于此前最佳公开结果 23.17%。该模型基于 Falcon3-Audio 架构，支持英语、法语、西班牙语和葡萄牙语，无需语言标记即可自动识别，目前已上线 Hugging Face Demo。",
+      "why_it_matters_cn": "该模型在阿拉伯语及阿联酋方言识别上取得领先精度，并支持多语言统一权重，为低资源语音场景提供了新基准。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+      "published_at": "2026-10-07T13:21:03.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "ws8s1e12ft7hfn07lqx767vg7",
+      "upstream_url": "http://localhost:3100/items/ws8s1e12ft7hfn07lqx767vg7",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/ws8s1e12ft7hfn07lqx767vg7"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "http://localhost:3100/daily/2026-10-08",
+    "generated_at": "2026-10-08T00:00:34.666Z",
+    "window_start": "2026-10-07T00:00:00.000Z",
+    "window_end": "2026-10-08T00:00:00.000Z",
+    "lead": {
+      "title": "OpenAI 在 ChatGPT 全球推出 GPT-6 与 Intelligent UI",
+      "leadParagraph": "OpenAI 宣布 GPT-6 在 ChatGPT 中全球上线，并配备 Intelligent UI。该界面提供带视觉元素的快速响应，支持用户直接探索和使用的交互体验。"
+    },
+    "attribution": {
+      "name": "MyHOT",
+      "url": "http://localhost:3100/daily/2026-10-08"
+    }
+  }
+}
