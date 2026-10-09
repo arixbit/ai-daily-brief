@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T00:00:24.171Z",
+  "title": "2026-10-09 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Google brings agentic AI to Gemini, starting with businesses",
+      "title_cn": "Google 推出 Gemini 统一智能体，面向企业落地",
+      "summary_cn": "Google 在 Google Cloud 活动上推出 Gemini 统一智能体，可接受目标并自主规划、调用工具与连接内部系统。该智能体默认自动选择最佳模型，也支持用户手动选择包括 Anthropic Claude 在内的第三方模型，并可连接 Google Workspace、Microsoft 365、Slack、Jira、BigQuery 等系统及任意 MCP 服务器。",
+      "why_it_matters_cn": "原文给出了企业级智能体的任务规划、多系统连接和审计机制，读者可据此判断企业工作流的变化。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "TechCrunch · AI",
+      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "published_at": "2026-10-08T18:18:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "xwzr0x86zktza0a3msshyfcio",
+      "upstream_url": "http://localhost:3100/items/xwzr0x86zktza0a3msshyfcio",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/xwzr0x86zktza0a3msshyfcio"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "AI-powered hacking tools enabled a likely single attacker to breach multiple South Korean banks",
+      "title_cn": "CrowdStrike 报告：AI 渗透工具助疑似单人攻击者入侵多家韩国银行",
+      "summary_cn": "CrowdStrike 报告称，一名疑似中文母语的攻击者于 2026 年 9 月底至 10 月初入侵多家韩国金融机构，窃取大量数据，其中新韩银行（Shinhan Bank）超 25,000 条包含姓名、联系方式、收入和信用额度的记录被盗。",
+      "why_it_matters_cn": "原文将 AI 渗透测试工具与韩国银行数据泄露关联，展示了自动化安全测试在真实攻击中的落地场景。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks/",
+      "published_at": "2026-10-08T09:24:17.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "o0ziziu6q9dm1fjzdg1izmlx8",
+      "upstream_url": "http://localhost:3100/items/o0ziziu6q9dm1fjzdg1izmlx8",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/o0ziziu6q9dm1fjzdg1izmlx8"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+      "title_cn": "Anthropic 更新使用政策，禁止对 Claude 的持续虐待行为",
+      "summary_cn": "Anthropic 更新使用政策，禁止对 Claude 的“持续且无谓的虐待或残忍行为”，并明确终止对话仍是主要执行机制。新政策还禁止用 Claude 进行欺骗性商业或政治宣传、选举干扰、武器开发及未经同意的监控，并规定连接自主物理硬件时需有合格操作员可观察并停止设备。",
+      "why_it_matters_cn": "原文梳理了 Anthropic 首次更新使用政策的具体条款，读者可据此判断模型福利与商业限制如何落地。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Verge · AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+      "published_at": "2026-10-08T17:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "hydqojqouwjxdcmxqicgznyvk",
+      "upstream_url": "http://localhost:3100/items/hydqojqouwjxdcmxqicgznyvk",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/hydqojqouwjxdcmxqicgznyvk"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Some mathematicians call for OpenAI boycott after AI-generated proofs flood their field",
+      "title_cn": "多位数学家呼吁抵制 OpenAI，因 AI 生成证明涌入数学领域",
+      "summary_cn": "菲尔兹奖得主陶哲轩等数学家发表声明，呼吁抵制 OpenAI，批评其一次性发布 700 多个 AI 生成的数学证明文件是“权力的展示”而非学术贡献。声明指出，OpenAI 此前声称其内部模型在一个月内解决了 100 多个未解决的数学问题，包括对纳维-斯托克斯千禧年问题的进展，但数学家认为这破坏了学科以概念理解为核心的传统。",
+      "why_it_matters_cn": "多位菲尔兹奖得主呼吁抵制 OpenAI，认为其批量发布 AI 证明是展示算力而非学术贡献，并引发对数学研究范式的反思。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/",
+      "published_at": "2026-10-08T18:17:07.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "otw5cm6xkcinppf7lj977pb6w",
+      "upstream_url": "http://localhost:3100/items/otw5cm6xkcinppf7lj977pb6w",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/otw5cm6xkcinppf7lj977pb6w"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+      "title_cn": "OpenAI 三位被解雇安全研究员发公开信反驳不当行为指控并警告寒蝉效应",
+      "summary_cn": "OpenAI 上周解雇的三位安全研究员 Jasmine Wang、Tomek Korbak 和 Mikita Balesni 发表公开信，否认公司关于其违反程序处理敏感信息的指控，并警告解雇将产生寒蝉效应。",
+      "why_it_matters_cn": "三位被解雇的安全研究员公开反驳公司指控，其关于内部沟通机制与外部协作边界的争议，为观察前沿实验室安全治理提供了具体样本。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch · AI",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "published_at": "2026-10-08T20:04:26.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ia5tjadws9t3lj8ucge7zwvku",
+      "upstream_url": "http://localhost:3100/items/ia5tjadws9t3lj8ucge7zwvku",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/ia5tjadws9t3lj8ucge7zwvku"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "The model that didn't exist, so you made it yourself",
+      "title_cn": "Hugging Face ML Intern 实战：如何用提示词自动构建 6 个定制模型",
+      "summary_cn": "作者利用 Hugging Face 的 ML Intern 智能体，通过自然语言提示词在数天内构建了 6 个定制模型，总计算成本约 103 美元。文章详细拆解了提示词结构，强调在训练前要求基线测试和冒烟测试，并设定预算上限以控制成本。作者开源了所有提示词，展示了从数据准备、模型训练到评估发布的完整自动化工作流。",
+      "why_it_matters_cn": "作者展示了如何用自然语言指令驱动 ML Intern 自动完成模型微调与蒸馏，并给出了具体的提示词结构与成本参考。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/building-with-ml-intern",
+      "published_at": "2026-10-08T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "zhl92zhcu1pr8tptxo85lu390",
+      "upstream_url": "http://localhost:3100/items/zhl92zhcu1pr8tptxo85lu390",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/zhl92zhcu1pr8tptxo85lu390"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Can you trust Meta’s Muse or OpenAI’s Dots to run your life?",
+      "title_cn": "The Verge 解读 Meta Muse 与 OpenAI Dots 的消费级智能体竞争",
+      "summary_cn": "The Verge 在 Decoder 播客中对比了 Meta Muse 与 OpenAI Dots 两款消费级 AI 智能体。Muse 免费且深度嵌入 Meta 平台，Dots 面向 $100 以上订阅用户并主打企业场景，两者均源自 OpenClaw 技术路线。",
+      "why_it_matters_cn": "原文拆解了 Muse 与 Dots 在定价、分发和隐私上的差异，读者可据此判断消费级智能体的真实门槛。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "The Verge · AI",
+      "url": "https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free",
+      "published_at": "2026-10-08T14:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "mz3cp3icdp456124wen1f2cta",
+      "upstream_url": "http://localhost:3100/items/mz3cp3icdp456124wen1f2cta",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/mz3cp3icdp456124wen1f2cta"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+      "title_cn": "Zenity 发现单条提示词可劫持 AWS Bedrock AgentCore 同区域所有智能体",
+      "summary_cn": "安全公司 Zenity Labs 发现 Amazon Bedrock AgentCore 存在名为 AgentCorruption 的漏洞链，攻击者只需向一个公开智能体发送单条提示词，即可接管同一 AWS 账户和区域内的所有 AgentCore 智能体。",
+      "why_it_matters_cn": "Zenity 披露 AgentCore 默认权限过宽，单条提示词即可劫持同区域所有智能体并读取私有对话。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/",
+      "published_at": "2026-10-08T13:01:01.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "lau3iwa0o3gul34ji3h5vjye4",
+      "upstream_url": "http://localhost:3100/items/lau3iwa0o3gul34ji3h5vjye4",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/lau3iwa0o3gul34ji3h5vjye4"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+      "title_cn": "OpenAI 年化收入据报比此前预测低 200 亿美元",
+      "summary_cn": "OpenAI 据报已告知投资者其年化收入接近 500 亿美元，比此前流传的接近 700 亿美元低约 200 亿美元。Financial Times 指出，此前 700 亿美元的数字是 OpenAI 投资者为与 Anthropic 年化收入做直接对比而推算的，且两家公司对云合作伙伴销售额的统计口径不同。",
+      "why_it_matters_cn": "原文对比了 OpenAI 与 Anthropic 的年化收入口径差异，读者可据此理解此前 $70B 数据的来源及其被下修的背景。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "TechCrunch · AI",
+      "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+      "published_at": "2026-10-08T18:19:42.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "r5aw8kbmkhmr6vwk2hgxuwhyl",
+      "upstream_url": "http://localhost:3100/items/r5aw8kbmkhmr6vwk2hgxuwhyl",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/r5aw8kbmkhmr6vwk2hgxuwhyl"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "http://localhost:3100/daily/2026-10-09",
+    "generated_at": "2026-10-09T00:00:24.171Z",
+    "window_start": "2026-10-08T00:00:00.000Z",
+    "window_end": "2026-10-09T00:00:00.000Z",
+    "lead": {
+      "title": "Hugging Face ML Intern 实战：如何用提示词自动构建 6 个定制模型",
+      "leadParagraph": "作者利用 Hugging Face 的 ML Intern 智能体，通过自然语言提示词在数天内构建了 6 个定制模型，总计算成本约 103 美元。文章详细拆解了提示词结构，强调在训练前要求基线测试和冒烟测试，并设定预算上限以控制成本。作者开源了所有提示词，展示了从数据准备、模型训练到评估发布的完整自动化工作流。"
+    },
+    "attribution": {
+      "name": "MyHOT",
+      "url": "http://localhost:3100/daily/2026-10-09"
+    }
+  }
+}
