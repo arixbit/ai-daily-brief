@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T00:00:11.758Z",
+  "title": "2026-10-10 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel through dynamic workflows",
+      "title_cn": "Anthropic 为 Claude Managed Agents 引入动态工作流，支持并行编排最多 1000 个智能体",
+      "summary_cn": "Anthropic 为 Claude Managed Agents 引入动态工作流，支持在单次执行中并行运行最多 1000 个智能体。在包含 70 个隐藏 bug 的 116,000 行代码库测试中，单个智能体每次运行发现 14 至 27 个 bug，而动态工作流稳定发现 66 个。",
+      "why_it_matters_cn": "原文给出了动态工作流的并行规模与代码库测试数据，读者可据此评估多智能体编排的实际收益。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/",
+      "published_at": "2026-10-09T18:28:25.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "xkxjzjwlyuzi56sowtvpmw5oq",
+      "upstream_url": "http://localhost:3100/items/xkxjzjwlyuzi56sowtvpmw5oq",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/xkxjzjwlyuzi56sowtvpmw5oq"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+      "title_cn": "Postman 如何在 Amazon Bedrock 上为 4000 万开发者运行 Agent Mode",
+      "summary_cn": "Postman 在 Amazon Bedrock 上运行 Agent Mode，通过动态工具选择、基于 Schema 的读取和上下文工程解决生产级 Agent 的扩展难题。架构利用 Bedrock 的跨区域推理、零数据保留和分层 Prompt 缓存，在保持模型灵活性的同时控制了延迟与成本。",
+      "why_it_matters_cn": "文章拆解了 Postman 在 4000 万开发者规模下解决工具膨胀、上下文瓶颈和推理路由的工程模式，为生产级 Agent 落地提供了可复用的架构参考。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "AWS Machine Learning Blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+      "published_at": "2026-10-09T15:35:02.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "juxzd0jt6yat3q8o4wfjjl5ew",
+      "upstream_url": "http://localhost:3100/items/juxzd0jt6yat3q8o4wfjjl5ew",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/juxzd0jt6yat3q8o4wfjjl5ew"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI revenue keeps surging as company seeks $30 billion in fresh capital",
+      "title_cn": "OpenAI 营收持续攀升，寻求 300 亿美元新融资",
+      "summary_cn": "OpenAI 9 月底年化营收约为 500 亿美元，此前近 700 亿美元的口径与 Anthropic 可比，差异源于合作伙伴销售的记账方式。公司正以 1.4 万亿美元投前估值洽谈至少 300 亿美元新融资，第三季度整体年化营收增长 77%，企业营收增长 107%。",
+      "why_it_matters_cn": "文章拆解了 OpenAI 与 Anthropic 营收口径差异，并给出融资估值与增长数据，便于判断 AI 商业化成色。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/openai-revenue-keeps-surging-as-company-seeks-30-billion-in-fresh-capital/",
+      "published_at": "2026-10-09T17:20:34.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "x84kdqei2ffliev91fldrkpci",
+      "upstream_url": "http://localhost:3100/items/x84kdqei2ffliev91fldrkpci",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "MyHOT",
+        "url": "http://localhost:3100/items/x84kdqei2ffliev91fldrkpci"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "http://localhost:3100/daily/2026-10-10",
+    "generated_at": "2026-10-10T00:00:11.758Z",
+    "window_start": "2026-10-09T00:00:00.000Z",
+    "window_end": "2026-10-10T00:00:00.000Z",
+    "lead": {
+      "title": "Postman 如何在 Amazon Bedrock 上为 4000 万开发者运行 Agent Mode",
+      "leadParagraph": "Postman 在 Amazon Bedrock 上运行 Agent Mode，通过动态工具选择、基于 Schema 的读取和上下文工程解决生产级 Agent 的扩展难题。架构利用 Bedrock 的跨区域推理、零数据保留和分层 Prompt 缓存，在保持模型灵活性的同时控制了延迟与成本。"
+    },
+    "attribution": {
+      "name": "MyHOT",
+      "url": "http://localhost:3100/daily/2026-10-10"
+    }
+  }
+}
