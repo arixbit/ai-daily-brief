@@ -1,0 +1,408 @@
+{
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T00:00:19.970Z",
+  "title": "2026-10-13 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Muse Wonder and Muse Wonder Full: a material jump in intelligence over previous Meta models",
+      "title_cn": "Meta 发布 Muse Wonder 和 Muse Wonder Full，Artificial Analysis 实测智能水平较前代显著提升",
+      "summary_cn": "Meta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。",
+      "why_it_matters_cn": "Artificial Analysis 独立实测了两款新模型的智能指数、token 用量和成本，读者可据此对比它们在同类模型中的位置。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Artificial Analysis 完整文章（网页）",
+      "url": "https://artificialanalysis.ai/articles/muse-wonder",
+      "published_at": "2026-10-11T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "v3pogrzxrk9oba4blox86d0w8",
+      "upstream_url": "https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Product·Oct 12, 2026 Introducing The X Subscription",
+      "title_cn": "xAI 推出 The X Subscription 整合 Grok、Grok Bot、Cursor 与 X Premium",
+      "summary_cn": "xAI 推出 The X Subscription 订阅，将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划，未来几天内向全球用户开放。",
+      "why_it_matters_cn": "官方公布四合一订阅的档位价格与共享用量规则，读者可据此对比现有单独订阅的实际成本变化。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "xAI：News（网页）",
+      "url": "https://x.ai/news/x-subscription",
+      "published_at": "2026-10-12T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "uy4hvoyz7fwtyycpu0p62dudn",
+      "upstream_url": "https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Today we are announcing our biggest bet yet on our own silicon.",
+      "title_cn": "微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署",
+      "summary_cn": "微软宣布明年起将 Maia 芯片家族扩展到多吉瓦级部署，作为自家产品和服务的首选推理系统，并发布 Maia 300，每瓦 token 产出比主流 GPU 系统高 40%。Maia 200 已在美国、欧洲和澳大利亚部署，在 Teams 和 Copilot 场景中每瓦 token 产出提升最高 1.7x。",
+      "why_it_matters_cn": "作者本人官宣自研芯片路线，给出了 Maia 300 与 Maia 200 的能效数字和部署范围，可对比主流 GPU 方案的取舍。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：Satya Nadella (@satyanadella)",
+      "url": "https://x.com/satyanadella/status/2109631106404487523",
+      "published_at": "2026-10-12T13:03:45.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "zqlqer8tnl7ejg2ow3xoq7b9q",
+      "upstream_url": "https://aihot.news/items/zqlqer8tnl7ejg2ow3xoq7b9q",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/zqlqer8tnl7ejg2ow3xoq7b9q"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Epic Games reportedly pivoting to \"AI first\" game development model",
+      "title_cn": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
+      "summary_cn": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。",
+      "why_it_matters_cn": "原文援引 Bloomberg 报道和 Tim Sweeney 回应，交代了 AI 先行开发模式的具体做法与项目延期，信息相对完整。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Ars Technica：AI（RSS）",
+      "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
+      "published_at": "2026-10-12T20:59:50.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "kcwro19vl7dr5jgcjgec7mive",
+      "upstream_url": "https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "QGIS bans AI assisted contributions",
+      "title_cn": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
+      "summary_cn": "QGIS 通过 QEP428 提案，将 AI 政策改为严格的 NOT ALLOWED，由 nyalldawson 提交并于 2026 年 10 月 7 日合并进 QGIS-Enhancement-Proposals 仓库。",
+      "why_it_matters_cn": "原文呈现社区内部对禁令理由、措辞模糊处和后续放宽路径的直接讨论，读者可以借此理解开源项目应对 AI 贡献压力的真实权衡。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Hacker News：AI 热帖",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "published_at": "2026-10-12T11:22:24.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "t0gnehm6pcbj4xyn5f3txv1ge",
+      "upstream_url": "https://aihot.news/items/t0gnehm6pcbj4xyn5f3txv1ge",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/t0gnehm6pcbj4xyn5f3txv1ge"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Codex CLI 默认会安装一个持久化且能自动更新的后台守护进程",
+      "title_cn": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+      "summary_cn": "一位 Linux (WSL2) 用户报告，Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon，窗口关闭后仍驻留。",
+      "why_it_matters_cn": "作者实测 Codex CLI 0.157.0 的守护进程默认行为，给出复制目录、自更新、代理污染等细节和完整关闭步骤。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Codex：GitHub Releases（RSS）",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "published_at": "2026-10-12T19:25:54.721Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "amjmxvrvj57q7752kgihp9p9q",
+      "upstream_url": "https://aihot.news/items/amjmxvrvj57q7752kgihp9p9q",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/amjmxvrvj57q7752kgihp9p9q"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "AI models may be capable of self-replicating without access to a datacenter",
+      "title_cn": "Anthropic 研究：小型 AI 模型可能接近在 IoT 设备上自主复制",
+      "summary_cn": "Anthropic 发文评估小型模型在无数据中心条件下自主复制（ARA）的可行性，作者实验显示 9B 模型可在测试的 9 类硬件中 8 类上跑通推理，30B 及以下模型已能完成复制的多数单步。",
+      "why_it_matters_cn": "Anthropic 用自购的 15 台廉价电视盒实测小模型分布式推理与复制链路，读者可据此评估 AI 蠕虫这类威胁的近期可行性。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "published_at": "2026-10-11T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "emc0djmqlomn6b5whge285x7l",
+      "upstream_url": "https://aihot.news/items/emc0djmqlomn6b5whge285x7l",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/emc0djmqlomn6b5whge285x7l"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
+      "title_cn": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审",
+      "summary_cn": "Science 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。",
+      "why_it_matters_cn": "这条报道把系统架构和同行评审安排都讲清了，读者可以据此理解形式化证明工作流的可行性与验证方式。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed/",
+      "published_at": "2026-10-12T09:35:54.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "wzxf68r0rchangmvwm48qqhfk",
+      "upstream_url": "https://aihot.news/items/wzxf68r0rchangmvwm48qqhfk",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wzxf68r0rchangmvwm48qqhfk"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How an in-house review bot cut our PR merge time in half",
+      "title_cn": "Vapi 自研代码审查机器人如何将 PR 合并时间缩短一半",
+      "summary_cn": "Vapi 工程师 Lat Ware 自研 Pedantic Review Bot，使 PR 从开到合并的平均时间从 130 多小时降到 65 小时。机器人会运行测试和小复现来验证发现，分析和发评论分属两个 job，只能评论不能批准或推送；2026 年 9 月 2 日至 10 月 2 日审查了 1,694 个 PR，在 276 个中提出 363 个 blocker 发现。",
+      "why_it_matters_cn": "作者基于自家代码库做了提示词版本、多跑对比和范围指令等实验，给出可直接迁移的代码审查智能体实践结论。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Vapi 产品与 Agent 方法",
+      "url": "https://vapi.ai/blog/ai-code-review-bot",
+      "published_at": "2026-10-12T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "byijxcheeait7w4okuw9ebnh2",
+      "upstream_url": "https://aihot.news/items/byijxcheeait7w4okuw9ebnh2",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/byijxcheeait7w4okuw9ebnh2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
+      "title_cn": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程",
+      "summary_cn": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。",
+      "why_it_matters_cn": "原文给出七步工具分工流程和实际耗时与费用，读者可以直接照搬搭建游戏的工作流。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "X：Meshy (@MeshyAI)",
+      "url": "https://x.com/MeshyAI/status/2109550836934471864",
+      "published_at": "2026-10-12T07:44:47.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "svvvhr5j2nnywgdw29pso7o49",
+      "upstream_url": "https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How to constrain a coding agent using only files you own",
+      "title_cn": "如何只用自己拥有的文件约束编码智能体",
+      "summary_cn": "Tessl 博客文章介绍用四个可拥有的文件杠杆约束编码智能体：CLAUDE.md 指令、.claude/rules/ 路径级规则、.claude/ 下的能力配置和 .claude/hooks/ 钩子。",
+      "why_it_matters_cn": "作者用同一工单三次实测对比 charter 各文件杠杆的效果，方法可迁移到自己的仓库，并指出机器可查与需人审的边界。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Tessl：产品与工程博客",
+      "url": "https://tessl.io/blog/how-to-constrain-a-coding-agent-using-only-files-you-own",
+      "published_at": "2026-10-11T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "twhuaks920iaqd2y7frq8bgbw",
+      "upstream_url": "https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "AI开始逆向一切，你电脑里的每个软件都要被迫开源了。",
+      "title_cn": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
+      "summary_cn": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。",
+      "why_it_matters_cn": "文章以ArtCraft开源Adobe逆向项目为切口，分析AI如何大幅降低逆向工程成本，并追问原创软件在复制时代的护城河问题。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "X：卡兹克 (@Khazix0918)",
+      "url": "https://x.com/Khazix0918/status/2109501787736813663",
+      "published_at": "2026-10-12T04:29:53.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "hvxwaxeyj6i82xv44ef4ce6fz",
+      "upstream_url": "https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+      "title_cn": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构",
+      "summary_cn": "AWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》，提出 priming 方法，复用预训练 Transformer 权重构建混合架构，将预训练成本降低逾 99%，全流程消耗不足源模型 0.5% 的 token 预算。",
+      "why_it_matters_cn": "AWS 团队提出 priming 方法，把预训练 Transformer 改造成混合架构的预训练成本降低逾 99%，并开源了 8B 和 32B 模型与代码。",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "Amazon Science（RSS）",
+      "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+      "published_at": "2026-10-12T17:36:18.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "w2408fxlrc7tc7nt3ivrzh9ys",
+      "upstream_url": "https://aihot.news/items/w2408fxlrc7tc7nt3ivrzh9ys",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/w2408fxlrc7tc7nt3ivrzh9ys"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Announcing FrontierCode on Artificial Analysis: can AI models write code maintainers would merge?",
+      "title_cn": "Artificial Analysis 发布 FrontierCode 1.1 编程评测：Claude Opus 5.5 以 52% 得分居首，领先模型失败率仍超 40%",
+      "summary_cn": "Artificial Analysis 独立运行 Cognition 的 FrontierCode 1.1 Main 编程评测，用统一的 Stirrup agent harness 测试 100 个真实开源仓库任务。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "Artificial Analysis 完整文章（网页）",
+      "url": "https://artificialanalysis.ai/articles/frontiercode",
+      "published_at": "2026-10-11T16:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "fglgvxnnoy7zcxmaxxjrjl1hv",
+      "upstream_url": "https://aihot.news/items/fglgvxnnoy7zcxmaxxjrjl1hv",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fglgvxnnoy7zcxmaxxjrjl1hv"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Recursive Self-Improvement through Collective Intelligence",
+      "title_cn": "Sakana AI 提出多智能体自监督方法 MASS，探索递归自改进",
+      "summary_cn": "Sakana AI 发布多智能体自监督（MASS）：一个共享模型通过虚拟子代理团队解决任务、搜索更优多智能体工作流，并用自身判断选出最佳方案，再将团队经验蒸馏回共享模型。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "Sakana AI：Blog（网页）",
+      "url": "https://sakana.ai/mass/",
+      "published_at": "2026-10-11T15:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "q4ldwa9zmnm1qrrv16ijfdq2w",
+      "upstream_url": "https://aihot.news/items/q4ldwa9zmnm1qrrv16ijfdq2w",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/q4ldwa9zmnm1qrrv16ijfdq2w"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：Artificial Analysis 发布 FrontierCode 1.1 编程评测：Claude Opus 5.5 以 52% 得分居首，领先模型失败率仍超 40%",
+    "推荐理由缺失：Sakana AI 提出多智能体自监督方法 MASS，探索递归自改进"
+  ],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-10-13",
+    "generated_at": "2026-10-13T00:00:19.970Z",
+    "window_start": "2026-10-12T00:00:00.000Z",
+    "window_end": "2026-10-13T00:00:00.000Z",
+    "lead": {
+      "title": "Meta 发布 Muse Wonder 和 Muse Wonder Full，Artificial Analysis 实测智能水平较前代显著提升",
+      "leadParagraph": "Meta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-10-13"
+    }
+  }
+}
