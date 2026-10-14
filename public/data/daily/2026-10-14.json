@@ -1,0 +1,589 @@
+{
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T00:00:27.127Z",
+  "title": "2026-10-14 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "title_cn": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
+      "summary_cn": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。",
+      "why_it_matters_cn": "官方发布带来定价、1M token 上下文、基准成绩和多领域落地案例，读者可以据此评估它在工程与科研工作流中的可用性。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Google Blog：AI（RSS）",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "published_at": "2026-10-13T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "smxxtw5ca2c9jscojk4ppe5hf",
+      "upstream_url": "https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "端侧多模态新上限，350 亿参数 MoE 手机平板 3GB 内存畅跑，MiniCPM-V 4.7正式开源",
+      "title_cn": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+      "summary_cn": "面壁智能联合 OpenBMB 社区于10月13日发布并开源 MiniCPM-V 4.7，包含 35B-A3B 和 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型。",
+      "why_it_matters_cn": "原文详解了 LES 专家调度、权重布局优化和视觉 token 压缩等技术细节，读者可以了解 MoE 模型在 3GB 内存端侧设备上的实现路径。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "公众号：面壁智能（MiniCPM）",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+      "published_at": "2026-10-13T10:29:21.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "fidy0y9chlgs0puyn96qkmj1b",
+      "upstream_url": "https://aihot.news/items/fidy0y9chlgs0puyn96qkmj1b",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fidy0y9chlgs0puyn96qkmj1b"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents",
+      "title_cn": "Liquid AI 发布 LFM2.5-24B-A2B 端侧推理模型",
+      "summary_cn": "Liquid AI 发布开源权重模型 LFM2.5-24B-A2B，总参数 24B、每 token 激活 2B，定位端侧快速智能体。",
+      "why_it_matters_cn": "原文给出完整基准对比、端侧推理速度和开源权重入口，读者可据此评估该模型在本地智能体场景的适用性。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Liquid AI 模型与工程博客（网页）",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "published_at": "2026-10-13T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "j0hjfg7ioz2gs0s8msqnafpjj",
+      "upstream_url": "https://aihot.news/items/j0hjfg7ioz2gs0s8msqnafpjj",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/j0hjfg7ioz2gs0s8msqnafpjj"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Gemini 4 Argon from @GoogleDeepMind is live on OpenRouter, via Google AI Studio and @googlecloud.",
+      "title_cn": "Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter",
+      "summary_cn": "Gemini 4 Argon 已上线 OpenRouter，可通过 Google AI Studio 和 Google Cloud 调用。该模型在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一； introductory 定价为输入 $2/M、输出 $10/M。试用入口：https://openrouter.ai/google/gemini-4-argon",
+      "why_it_matters_cn": "原文给出定价和几项基准成绩，读者可据此评估该模型在 OpenRouter 上的可用性和性价比。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：OpenRouter (@OpenRouter)",
+      "url": "https://x.com/OpenRouter/status/2110044453977403412",
+      "published_at": "2026-10-13T16:26:15.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "d4oyzg3qte4pt0ywsonolctwf",
+      "upstream_url": "https://aihot.news/items/d4oyzg3qte4pt0ywsonolctwf",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/d4oyzg3qte4pt0ywsonolctwf"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Meet Apple HomeView, a new way to enjoy entertainment and manage the home",
+      "title_cn": "Apple 发布 7 英寸智能音箱 HomeView，售价 299 美元并搭载 Siri AI",
+      "summary_cn": "Apple 发布配备 7 英寸 Liquid Retina 显示屏的 HomeView，集娱乐、FaceTime、家庭监控和语音自动化于一体，标准版与壁挂版均定价 299 美元，11 月 13 日起在美英加澳等市场发售。",
+      "why_it_matters_cn": "官方通稿完整给出了定价、上市时间和 Siri AI 能力边界，还说明了欧盟不发售的原因。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Apple：Newsroom（RSS）",
+      "url": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+      "published_at": "2026-10-13T12:59:16.617Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "kjcq4dywmvs5xijl4emac5o40",
+      "upstream_url": "https://aihot.news/items/kjcq4dywmvs5xijl4emac5o40",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/kjcq4dywmvs5xijl4emac5o40"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
+      "title_cn": "NVIDIA 官宣 RTX Spark 软件生态就绪，10 月 16 日笔记本上市",
+      "summary_cn": "NVIDIA 介绍 RTX Spark 平台生态就绪情况，RTX Spark 笔记本将于 10 月 16 日（周五）上市，搭载最高 128GB 统一内存和 1 petaflop AI 算力。",
+      "why_it_matters_cn": "官方汇总了 RTX Spark 上市前的软件生态准备，涵盖本地智能体、创意应用和开发工具的具体更新与可用时间。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "NVIDIA Blog（RSS）",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "published_at": "2026-10-13T12:00:49.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ug7g6psicfobnnft0ebgpyl10",
+      "upstream_url": "https://aihot.news/items/ug7g6psicfobnnft0ebgpyl10",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ug7g6psicfobnnft0ebgpyl10"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "全新N系列AI眼镜和首款AI耳夹式耳机，开售！",
+      "title_cn": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+      "summary_cn": "千问发布三款硬件新品：AI眼镜N1、N1 Pro和AI耳夹式耳机，今日在淘宝、天猫、京东、抖音等平台现货开售，眼镜到手价2218元起，耳机1099元起。",
+      "why_it_matters_cn": "官方发布三款AI穿戴硬件，原文给出具体功能差异与到手价格，读者可据此判断是否值得入手。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "公众号：千问APP（阿里）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+      "published_at": "2026-10-13T08:06:57.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "bnwd1psqg66c268n4i1mal2pi",
+      "upstream_url": "https://aihot.news/items/bnwd1psqg66c268n4i1mal2pi",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/bnwd1psqg66c268n4i1mal2pi"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Just 5 years in, interactive chatbot platform Character.AI files for bankruptcy",
+      "title_cn": "Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney",
+      "summary_cn": "Character.AI 已申请 Chapter 11 破产，法院文件显示其资产和负债在 5000 万至 1 亿美元之间，并同意以 2000 万美元向 Disney 出售部分资产及技术非独占永久许可。出售过程预计 11 月底或 12 月初完成，期间平台继续运营，但尚无竞购方，若无买家平台将关停；此前公司因未成年用户诉讼、德州调查等困境，曾尝试 AI 视频生成、社交信息流和微短剧等转型未果。",
+      "why_it_matters_cn": "原文梳理了 Character.AI 从独角兽到破产的关键节点和 2000 万美元 Disney 资产交易，也点出高用户时长带来的 AI 成本与变现压力。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+      "published_at": "2026-10-13T12:23:42.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "vwu0li2nl5hztqeztnq8b5udc",
+      "upstream_url": "https://aihot.news/items/vwu0li2nl5hztqeztnq8b5udc",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/vwu0li2nl5hztqeztnq8b5udc"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "We discovered a sophisticated recording device that was hidden inside one of our offices. We used our models to understand the device and...",
+      "title_cn": "OpenAI 办公室发现窃密录音装置，涉事员工被捕",
+      "summary_cn": "OpenAI 宣布在办公室内发现一个隐蔽的录音装置，利用自家模型分析该设备及其来源，确认是一名员工几天前安放。OpenAI 已将此事移交 FBI，FBI 已迅速逮捕相关人员，调查仍在进行中。OpenAI 表示目前没有迹象显示该员工不当访问或外泄模型权重、源代码或客户数据，该员工已被解雇，并将此案视为 AI 协助应对复杂安全威胁的实例。",
+      "why_it_matters_cn": "原文给出事件经过、FBI 处理结果和数据安全排查结论，读者可以据此了解该安全事件的完整脉络。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
+      "url": "https://x.com/OpenAINewsroom/status/2110095403198849132",
+      "published_at": "2026-10-13T19:48:42.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "fgxi5gwvctlssc05odpcyf6ov",
+      "upstream_url": "https://aihot.news/items/fgxi5gwvctlssc05odpcyf6ov",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fgxi5gwvctlssc05odpcyf6ov"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "GPT 5.6 Sol btw",
+      "title_cn": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金",
+      "summary_cn": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。",
+      "why_it_matters_cn": "原文给出赏金金额、6 天构建周期和 4 万美元算力等具体细节，可帮助读者理解 AI 辅助漏洞挖掘成本变化的实际案例。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
+      "url": "https://x.com/reach_vb/status/2110086935733833893",
+      "published_at": "2026-10-13T19:15:03.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ekphiltd4fdsskdlueleul8qa",
+      "upstream_url": "https://aihot.news/items/ekphiltd4fdsskdlueleul8qa",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ekphiltd4fdsskdlueleul8qa"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Strengthening our defenses against distillation attacks",
+      "title_cn": "Anthropic 强化针对蒸馏攻击的防御， reasoning token 提取量下降 10 到 100 倍",
+      "summary_cn": "Anthropic 发布博客，介绍其针对 Claude 蒸馏攻击的新防御方法，早期证据显示这些方法使蒸馏者获取的数据减少约 90% 到 99%。",
+      "why_it_matters_cn": "Anthropic 公开其反蒸馏防御的具体做法和效果数据，读者可以据此了解这类防御的成本、权衡和对整个行业的借鉴意义。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "published_at": "2026-10-11T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "lwchujhujmc1tdor61dn39irl",
+      "upstream_url": "https://aihot.news/items/lwchujhujmc1tdor61dn39irl",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/lwchujhujmc1tdor61dn39irl"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Redesigning source control at Anthropic",
+      "title_cn": "Anthropic 自研版本控制系统 Scion，五个月完成 monorepo 从 git 迁移",
+      "summary_cn": "Anthropic 发布工程复盘，因 Claude 使日均合并代码量从 2026 年 5 月约 2,500 增至 9 月超 30,000，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。",
+      "why_it_matters_cn": "Anthropic 自建版本控制系统 Scion 的完整复盘，给出面向智能体规模负载的设计原则、架构细节和实测收益，可迁移到其他大规模仓库场景。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Anthropic：Engineering（事故复盘 + 工程实践 · 网页）",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "published_at": "2026-10-13T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "fpyjwv3o9zwxc9zs7j1bmnw8i",
+      "upstream_url": "https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Muse Wonder (Max) by @AIatMeta has entered Code Arena: WebDev at #15 with 1651 pts and Text Arena at #2 with 1513 pts!",
+      "title_cn": "Meta Muse Wonder (Max) 进入 Arena 榜单：WebDev 第15、文本第2",
+      "summary_cn": "Arena 宣布 Meta 的 Muse Wonder (Max) 进入 Code Arena: WebDev 榜单第15名（1651分），与 Kimi K3 (Max) 的 1655 分相差 4 分。",
+      "why_it_matters_cn": "榜单给出了 Muse Wonder (Max) 与邻近模型的分差和名次变化，读者可以据此比较它在编码与文本上的实际位置。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "X：Arena (@arena)",
+      "url": "https://x.com/arena/status/2110120205464846828",
+      "published_at": "2026-10-13T21:27:15.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "ob6ryetyialrnqhyjusr2s1iz",
+      "upstream_url": "https://aihot.news/items/ob6ryetyialrnqhyjusr2s1iz",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ob6ryetyialrnqhyjusr2s1iz"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
+      "title_cn": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲",
+      "summary_cn": "ElevenLabs 宣布，Baroness Campbell of Surbiton 今日在英国上议院使用由其构建的 AI 重建嗓音发表演讲，为英国议会首次。Baroness 患有脊髓性肌萎缩症影响说话，AI 嗓音复刻了她原声的音调、节奏和音高。ElevenLabs 称其技术已帮助超过 11,000 名因伤病失声者恢复嗓音，并承诺帮助全球 100 万失声人群。",
+      "why_it_matters_cn": "由当事方宣布英国上议院首次有议员用 AI 重建嗓音演讲，读者可从中了解语音 AI 在医疗辅助场景的实际落地。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "X：ElevenLabs (@elevenlabs)",
+      "url": "https://x.com/ElevenLabs/status/2110037384192774210",
+      "published_at": "2026-10-13T15:58:09.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "tggiswcje6mz1ti081jfbro43",
+      "upstream_url": "https://aihot.news/items/tggiswcje6mz1ti081jfbro43",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/tggiswcje6mz1ti081jfbro43"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon",
+      "title_cn": "Google 用 Gemini 4 Argon 无人值守优化 20 万行 Python 代码库 ADK",
+      "summary_cn": "Google 工程师用 Gemini 4 Argon 在 google/adk-python 上无人值守跑 11 小时，提出 6 项优化、审查后合并 2 项，使长会话内存会话准备时间降低约 40%，包导入加快 21%。",
+      "why_it_matters_cn": "作者复盘了让模型无人值守跑通真实大仓库的完整工作流，含被否决的改动和可复用的 .agents/skills 设置方法。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "Google Developers Blog（RSS）",
+      "url": "https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/",
+      "published_at": "2026-10-13T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "z371wogdvjh86jh8s6v6vlrui",
+      "upstream_url": "https://aihot.news/items/z371wogdvjh86jh8s6v6vlrui",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/z371wogdvjh86jh8s6v6vlrui"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Building Long-Running Agents with ScaleDown and Deep Agents",
+      "title_cn": "LangChain 发布 langchain-scaledown 集成，用 ScaleDown 约束解码模型管理长时智能体上下文",
+      "summary_cn": "LangChain 发布 langchain-scaledown 集成，并在 LangSmith LLM Gateway 中支持 ScaleDown 的约束解码模型（CDM），用于降低长时智能体上下文管理的成本和延迟。",
+      "why_it_matters_cn": "文章给出 ScaleDown 约束解码模型与 LangChain、Deep Agents 中间件的具体配置方法，读者可以按场景迁移用于压缩智能体上下文。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "LangChain：Blog（RSS）",
+      "url": "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents",
+      "published_at": "2026-10-13T11:56:53.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "uljn62mk9ujyya1xg51hc6dp8",
+      "upstream_url": "https://aihot.news/items/uljn62mk9ujyya1xg51hc6dp8",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uljn62mk9ujyya1xg51hc6dp8"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 17,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "The code is the graph",
+      "title_cn": "Pydantic AI 创始人 Samuel Colvin：图库是个错误，代码本身就是图",
+      "summary_cn": "Pydantic AI 创始人 Samuel Colvin 发文认为图库是个错误，代码本身就是图，通过类型提示获得类型安全、通过 async 获得并行执行。他提出图 API 存在类似 CAP 定理的取舍，类型安全、并行与快照三者不可兼得，并以此解释为何在 pydantic-graph V2 移除持久化、将持久执行交给 Temporal。",
+      "why_it_matters_cn": "作者以自建图库的亲历论证代码即图，并给出类型安全、并行与快照三者不可兼得的具体分析。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "Pydantic AI 官方文章",
+      "url": "https://pydantic.dev/articles/the-code-is-the-graph",
+      "published_at": "2026-10-13T09:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "tmj0de0vmzpezz0o5j67nqskj",
+      "upstream_url": "https://aihot.news/items/tmj0de0vmzpezz0o5j67nqskj",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/tmj0de0vmzpezz0o5j67nqskj"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 18,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Nvidia VFX Nodes for Video Upscaling, Frame Generation and SDR-to-HDR, for VFX Professionals",
+      "title_cn": "ComfyUI 上线 NVIDIA VFX 节点，支持视频超分、补帧与 SDR 转 HDR",
+      "summary_cn": "NVIDIA 的 RTX 视频特效模型以自定义节点形式登陆 ComfyUI，模型随节点分发并在本地 RTX GPU 上运行。",
+      "why_it_matters_cn": "原文完整给出三个节点的能力参数、推荐串联顺序和 EXR 改进细节，VFX 从业者可据此评估是否接入现有 ComfyUI 工作流。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "Comfy Blog",
+      "url": "https://blog.comfy.org/p/nvidia-vfx-nodes-for-video-upscaling",
+      "published_at": "2026-10-13T19:41:39.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "uy1d8e2pcm6sked0p57flawpq",
+      "upstream_url": "https://aihot.news/items/uy1d8e2pcm6sked0p57flawpq",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uy1d8e2pcm6sked0p57flawpq"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 19,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Amazing to see research move from the lab to real-world clinical utility - congrats to the team on this milestone & @TheLancet paper!",
+      "title_cn": "Hassabis 祝贺 AMIE 前瞻性临床研究发表于 The Lancet",
+      "summary_cn": "Google 与 BIDMC 合作的 AMIE 患者对话式诊断前瞻性研究在 TheLancet 发表，是 AMIE 首次在真实诊所外测试。临床医生报告称 AMIE 的病史摘要在 75% 的病例中有助于访视准备，其鉴别诊断与医生最终诊断的吻合率达 90%，这也是 Google 首篇登上 The Lancet 主刊的论文。",
+      "why_it_matters_cn": "这是 Google 首篇登上 The Lancet 主刊的 AMIE 研究，作者引用了关键数字，可帮助读者了解对话式诊断在真实门诊的表现。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "X：Demis Hassabis (@demishassabis)",
+      "url": "https://x.com/demishassabis/status/2109813775377563908",
+      "published_at": "2026-10-13T01:09:37.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "qbi6xi7a3re15txfell8i9a7c",
+      "upstream_url": "https://aihot.news/items/qbi6xi7a3re15txfell8i9a7c",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qbi6xi7a3re15txfell8i9a7c"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 20,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Moondream is joining Prime Intellect",
+      "title_cn": "Prime Intellect 收购 Moondream，联合创始人加入主导推理与多模态",
+      "summary_cn": "Prime Intellect 宣布收购 Moondream，创始人 Vik Korrapati 和 Jay Allen 加入并负责推理业务及视觉、computer use 等多模态模型工作。",
+      "why_it_matters_cn": "收购方官方公告给出交易目的与产品整合方向，并附 Moondream 3.1 的推理速度和成本对比数字，可作了解两家技术互补的参考。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "Prime Intellect（网页）",
+      "url": "https://www.primeintellect.ai/blog/moondream",
+      "published_at": "2026-10-12T16:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "rruqd7cz78jq6l889kjp56jlz",
+      "upstream_url": "https://aihot.news/items/rruqd7cz78jq6l889kjp56jlz",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/rruqd7cz78jq6l889kjp56jlz"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 21,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Search agent traces by behavior with AI Search in LangSmith",
+      "title_cn": "LangSmith 推出 AI Search，用自然语言按行为搜索 agent 轨迹",
+      "summary_cn": "LangChain 在 LangSmith 中推出 AI Search 公测，允许用自然语言描述行为来查询 agent 轨迹，例如 PII 泄露或用户受挫等无法靠标签和全文检索回答的问题。",
+      "why_it_matters_cn": "原文详述了 AI Search 用决策模型逐条读取轨迹的搜索机制和 8K token 预算的取舍设计，读者可以了解其与向量搜索的差异和实现细节。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "LangChain：Blog（RSS）",
+      "url": "https://www.langchain.com/blog/agent-traces-ai-search-langsmith",
+      "published_at": "2026-10-13T12:59:12.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "cgbpvdepk4p1jrrawgzbfbxov",
+      "upstream_url": "https://aihot.news/items/cgbpvdepk4p1jrrawgzbfbxov",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/cgbpvdepk4p1jrrawgzbfbxov"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 22,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Manus 与 OPPO 合作，将 Agent AI 体验带到智能手机",
+      "title_cn": "Manus 与 OPPO 合作，将 Agent 能力整合进 AI Mind Pilot",
+      "summary_cn": "Manus 宣布与 OPPO 合作，将 Manus 的 Agent 能力整合到 OPPO AI Mind Pilot 的全新 Agent 模式中，让手机 AI 完成分解步骤、调用工具并交付成果的多步骤任务。该能力将在搭载 ColorOS 17 的 OPPO Find X10 系列上首发，本地任务由端侧模型处理、原始内容不上传，需要外部处理时会先征求用户确认，更多可用性详情将在产品发布时公布。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "Manus：Blog（网页）",
+      "url": "https://manus.im/zh-cn/blog/manus-partners-oppo",
+      "published_at": "2026-10-12T16:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "vfvwtsnxhg7yalg8miyxbvd40",
+      "upstream_url": "https://aihot.news/items/vfvwtsnxhg7yalg8miyxbvd40",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/vfvwtsnxhg7yalg8miyxbvd40"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：Manus 与 OPPO 合作，将 Agent 能力整合进 AI Mind Pilot"
+  ],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-10-14",
+    "generated_at": "2026-10-14T00:00:27.127Z",
+    "window_start": "2026-10-13T00:00:00.000Z",
+    "window_end": "2026-10-14T00:00:00.000Z",
+    "lead": {
+      "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
+      "leadParagraph": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-10-14"
+    }
+  }
+}
