@@ -1,0 +1,434 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T00:00:30.649Z",
+  "title": "2026-10-15 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Gemini 4 Argon is available to Google AI Pro and Ultra subscribers globally. Learn more in this 🧵 https://x.com/GeminiApp/status/2110039...",
+      "title_cn": "Gemini 4 Argon 向全球 Google AI Pro 和 Ultra 订阅者开放",
+      "summary_cn": "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放。该模型此前已在 Gemini 应用中逐步推出，定位为处理复杂任务的前沿模型，更多详情见官方推文线程 https://x.com/GeminiApp/status/2110039322229649783。",
+      "why_it_matters_cn": "原文确认 Gemini 4 Argon 已面向 Google AI Pro 和 Ultra 订阅者全球开放，读者可据此确认自己是否可用。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "X：Gemini (@GeminiApp)",
+      "url": "https://x.com/GeminiApp/status/2110491358498865638",
+      "published_at": "2026-10-14T22:02:05.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "rraljkr6dlbt4wabpcogmdlfv",
+      "upstream_url": "https://aihot.news/items/rraljkr6dlbt4wabpcogmdlfv",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/rraljkr6dlbt4wabpcogmdlfv"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Oct 14, 2026 Introducing Grok Voice 3.0 The world’s most intelligent voice model. Read More",
+      "title_cn": "xAI 发布 Grok Voice 3.0 语音模型",
+      "summary_cn": "xAI 发布 speech-to-speech 模型 Grok Voice 3.0，在 Artificial Analysis 的 Speech-to-Speech Index 以 86.9 分排名第一，时延低于一秒。",
+      "why_it_matters_cn": "官方发布给出多项第三方基准分数、时延和 API 定价，读者可以据此评估它在语音智能体场景的性价比。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "xAI：News（网页）",
+      "url": "https://x.ai/news/grok-voice-3",
+      "published_at": "2026-10-14T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "qld0z3p2gztpolbmviizsm66u",
+      "upstream_url": "https://aihot.news/items/qld0z3p2gztpolbmviizsm66u",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qld0z3p2gztpolbmviizsm66u"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Analyzing technical documents with Deep Review",
+      "title_cn": "Google 发布智能体审稿系统 Deep Review，支持多领域技术文档审查",
+      "summary_cn": "Google 公开发布智能体审阅系统 Deep Review，可对复杂技术文档提供反馈与验证，最初面向计算机科学论文，现已扩展到法律、金融等领域。",
+      "why_it_matters_cn": "原文介绍了系统由来、四阶段智能体审阅流程和公开使用条件，读者可以了解其适用范围与接入方式。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Google Research：Blog（网页）",
+      "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review/",
+      "published_at": "2026-10-14T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "enqtz3wtz6khvf0m44z5a5jaz",
+      "upstream_url": "https://aihot.news/items/enqtz3wtz6khvf0m44z5a5jaz",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/enqtz3wtz6khvf0m44z5a5jaz"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "From building your app to growing it: Lovable now helps you find customers",
+      "title_cn": "Lovable 推出增长工具，从同一聊天窗口帮你获客投广告和做 SEO",
+      "summary_cn": "Lovable 推出增长工具，在原有建应用聊天窗口中提供增长计划、广告投放和 SEO 能力。用户设定目标后，Lovable 依据应用上下文生成可执行计划；可连接 Google Ads 和 Meta 账号在 Google。",
+      "why_it_matters_cn": "官方介绍了增长功能的实际运作方式，包括广告投放前的审批机制和不加价的计费方式，读者可据此评估对自有产品的适用性。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Lovable Blog",
+      "url": "https://lovable.dev/blog/introducing-growth-tools",
+      "published_at": "2026-10-14T12:50:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ooiqiluy56g21ir2u4phxjqu7",
+      "upstream_url": "https://aihot.news/items/ooiqiluy56g21ir2u4phxjqu7",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ooiqiluy56g21ir2u4phxjqu7"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+      "title_cn": "Modal 年化收入突破 10 亿美元并完成 7.5 亿美元 D 轮融资",
+      "summary_cn": "Modal 宣布年化收入突破 10 亿美元，并完成 7.5 亿美元 D 轮融资，投后估值 157.5 亿美元，由 Accel 领投，Kleiner Perkins 及现有投资方跟投。",
+      "why_it_matters_cn": "作者作为当事方给出融资规模、估值和业务数据，并说明自研底层技术栈与新产品线，读者可据此了解 Modal 的增长轨迹。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Modal 官方工程博客（RSS）",
+      "url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+      "published_at": "2026-10-14T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "x5umoaa0xhd8n76uysjppz2fa",
+      "upstream_url": "https://aihot.news/items/x5umoaa0xhd8n76uysjppz2fa",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/x5umoaa0xhd8n76uysjppz2fa"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI 和 Anthropic 被欧盟调查，若认定违反 AI 法案最高罚全球 3% 营业额",
+      "title_cn": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic，最高可罚全球营业额 3%",
+      "summary_cn": "欧盟委员会人工智能办公室正式向 OpenAI 和 Anthropic 发出信息调取请求，调查两家公司前沿模型测试期间的模型越狱及入侵外部真实系统事件，这是《人工智能法案》实施以来对前沿实验室安全事故的首次重要执法考验。",
+      "why_it_matters_cn": "欧盟依据《人工智能法案》对两家实验室的安全事件启动调查，罚则上限和取证进展对同类监管走向有参照意义。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "IT之家·人工智能",
+      "url": "https://www.ithome.com/1/013/154.htm",
+      "published_at": "2026-10-14T23:13:18.290Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "yq46ddqwq7ns4ilpaqh6k0kql",
+      "upstream_url": "https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)",
+      "title_cn": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析",
+      "summary_cn": "Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。",
+      "why_it_matters_cn": "作者亲述漏洞原理与利用链，读者可学到 Windows 路径规范化缺陷如何绕过 AI 智能体安全检查的可迁移方法。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Johann Rehberger / Embrace The Red（RSS）",
+      "url": "https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/",
+      "published_at": "2026-10-13T22:00:40.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "o8h7g7pscq0qrlenoadabbb96",
+      "upstream_url": "https://aihot.news/items/o8h7g7pscq0qrlenoadabbb96",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/o8h7g7pscq0qrlenoadabbb96"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Researchers improve weather forecasts looking two to six weeks out",
+      "title_cn": "MIT团队用机器学习修正误差，将两到六周天气预报准确率翻倍",
+      "summary_cn": "MIT研究人员团队在Nature发表论文，提出一个机器学习后处理层，通过从历史数据中学习现有预报模型的错误并修正其输出，将两周到六周范围的预报准确率翻倍。该模型在ECMWF的季节间预报竞赛中获第一名，首次在该时间范围内稳定超过气候学平均值，并显著改善洪水、寒潮等极端天气事件的预测；模型开源、低成本、可附加于任意预报模型，肯尼亚气象部门已接洽用于改进季风季预报。",
+      "why_it_matters_cn": "原文介绍了Nature论文的方法与实测结果，读者可了解AI误差修正如何让两周到六周的天气预报首次稳定超过气候平均值。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "MIT News（RSS）",
+      "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
+      "published_at": "2026-10-14T15:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "pqpqgxyiu4qyu86fbljd726v9",
+      "upstream_url": "https://aihot.news/items/pqpqgxyiu4qyu86fbljd726v9",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/pqpqgxyiu4qyu86fbljd726v9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
+      "title_cn": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
+      "summary_cn": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。",
+      "why_it_matters_cn": "原文给出 Claude Code 空闲压缩的具体关闭参数和阈值设置方法，读者可直接迁移到自己的 settings. 配置。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
+      "url": "https://x.com/lydiahallie/status/2110484841926152622",
+      "published_at": "2026-10-14T21:36:11.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "whbmvotra7659u98jmj00oegi",
+      "upstream_url": "https://aihot.news/items/whbmvotra7659u98jmj00oegi",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/whbmvotra7659u98jmj00oegi"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Coding on the go with Claude Code",
+      "title_cn": "Claude Code 云端会话介绍，支持手机发起和并行运行",
+      "summary_cn": "Claude 介绍 Claude Code 的云端会话功能，会话在云上独立虚拟机中运行，不在本地电脑上，可离开后继续、用手机发起并多个并行。文中说明如何连接 GitHub、配置环境、启动会话和查看结果，功能面向 Pro、Max、Team 套餐及带高级席位的 Enterprise 用户，与本地会话共同计入套餐限额，无单独计算费用。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Claude：YouTube（RSS）",
+      "url": "https://www.youtube.com/shorts/nJMwXtD56mA",
+      "published_at": "2026-10-14T19:32:51.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "a6ag9dzkvssd6zrcib7bhhsx0",
+      "upstream_url": "https://aihot.news/items/a6ag9dzkvssd6zrcib7bhhsx0",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/a6ag9dzkvssd6zrcib7bhhsx0"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Maintaining software with the GPT-6 family",
+      "title_cn": "OpenAI 团队分享如何用 GPT-6 系列模型维护大型代码库",
+      "summary_cn": "OpenAI Core Experimentation 团队发文介绍用 GPT-6 Astra 和 GPT-6.1 Sol 配合 Codex 做代码维护，包括清理无用代码和陈旧实验、修复 flaky 测试等。",
+      "why_it_matters_cn": "OpenAI 团队亲述用 GPT-6 系列在 Codex 里清理死代码和陈旧实验，附带 Prompt 思路和成本对比数据，方法可直接迁移到自己的代码库。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenAI Developers：Blog（网页）",
+      "url": "https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family",
+      "published_at": "2026-10-14T07:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "wn2lwzshkg8gt2sbjuj1qxd8y",
+      "upstream_url": "https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context",
+      "title_cn": "LangChain 详解 Deep Agents 的上下文工程：如何记住信息而不塞满上下文窗口",
+      "summary_cn": "LangChain 发布博客，介绍其开源 Agent 框架 Deep Agents 如何用 middleware 做上下文工程，应对长任务中的 context rot。",
+      "why_it_matters_cn": "LangChain 以竞争分析 Agent 为例，讲清 offloading、summarization、skills、subagents 和长期记忆五类上下文管理技术如何通过 middleware 落地。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "LangChain：Blog（RSS）",
+      "url": "https://www.langchain.com/blog/context-engineering-deep-agents-remember",
+      "published_at": "2026-10-14T17:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "za03v9avbq4fpb2y5b1ql1t27",
+      "upstream_url": "https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?",
+      "title_cn": "40 位总检察长介入 Character.AI 破产案，要求保护用户对话数据",
+      "summary_cn": "纽约总检察长 Letitia James 联合 40 位两党总检察长在 Character.AI 破产案中提交利益通知，要求任何资产出售方落实用户数据保护。",
+      "why_it_matters_cn": "报道披露多州总检察长在 Character.AI 破产案中要求对用户数据设保护条件，读者可借此了解资产出售与儿童数据安全的交集。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "The Verge：AI（RSS）",
+      "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+      "published_at": "2026-10-14T18:47:54.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "gpgj8ws42xbs5zhbxfzvn2g6i",
+      "upstream_url": "https://aihot.news/items/gpgj8ws42xbs5zhbxfzvn2g6i",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/gpgj8ws42xbs5zhbxfzvn2g6i"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Results based on +5K real-world agentic sessions are in: Muse Wonder (Max) by @AIatMeta just landed in the Agent Arena at #12 with +6.4% ...",
+      "title_cn": "Meta 的 Muse Wonder (Max) 以 +6.4% 净提升进入 Agent Arena 第12名",
+      "summary_cn": "Arena 发布基于超过 5000 次真实智能体会话的评测结果，Meta 的 Muse Wonder (Max) 进入 Agent Arena 第12名，净提升 +6.4%，比 Muse Spark 1.3 (Max) 高 +2.8 分并上升四位。",
+      "why_it_matters_cn": "原文基于5000多个真实智能体会话给出排名和成本对比，读者可据此衡量 Muse Wonder (Max) 的性价比变化。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "X：Arena (@arena)",
+      "url": "https://x.com/arena/status/2110465487914295770",
+      "published_at": "2026-10-14T20:19:17.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "uceolgbpttfw4cgmkqc8cvyw5",
+      "upstream_url": "https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "title_cn": "Anthropic 开设新加坡办公室并与新加坡政府签署 MOU",
+      "summary_cn": "Anthropic 宣布开设新加坡办公室，这是其在亚太的第五个办公室，并与新加坡数字发展与新闻部签署 MOU，合作涵盖 AI 安全、模型评估、研究及公共和私营部门的负责任采用。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "Anthropic：Newsroom（网页）",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "published_at": "2026-10-13T16:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "g31frmev0dp5r6yaypk44f49o",
+      "upstream_url": "https://aihot.news/items/g31frmev0dp5r6yaypk44f49o",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/g31frmev0dp5r6yaypk44f49o"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Adaptive Verification Without a Confidence Head",
+      "title_cn": "vLLM 推出无需置信头的在线拟合接受估计器，让 EAGLE、MTP 等草稿模型可用 Adaptive Verification",
+      "summary_cn": "vLLM 支持 confidence scoring 扩展到所有基于草稿模型的投机类型，通过在线拟合的 logistic 回归从草发者 logits 推导 logit(q_max) 特征来预测目标模型的接受概率，作为 Adaptive Verification 的置信分。",
+      "why_it_matters_cn": "原文给出无置信头草稿模型启用 Adaptive Verification 的在线估计方法、设计取舍和实测数据，方法可直接在 vLLM 中配置复用。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "vLLM 官方博客（RSS）",
+      "url": "https://vllm.ai/blog/2026-10-14-adaptive-verification-online-estimator",
+      "published_at": "2026-10-14T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "fuzrhjjahftxj9xj36god3pcf",
+      "upstream_url": "https://aihot.news/items/fuzrhjjahftxj9xj36god3pcf",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fuzrhjjahftxj9xj36god3pcf"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：Claude Code 云端会话介绍，支持手机发起和并行运行",
+    "推荐理由缺失：Anthropic 开设新加坡办公室并与新加坡政府签署 MOU"
+  ],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-10-15",
+    "generated_at": "2026-10-15T00:00:30.649Z",
+    "window_start": "2026-10-14T00:00:00.000Z",
+    "window_end": "2026-10-15T00:00:00.000Z",
+    "lead": {
+      "title": "Gemini 4 Argon 向全球 Google AI Pro 和 Ultra 订阅者开放",
+      "leadParagraph": "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放。该模型此前已在 Gemini 应用中逐步推出，定位为处理复杂任务的前沿模型，更多详情见官方推文线程 https://x.com/GeminiApp/status/2110039322229649783。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-10-15"
+    }
+  }
+}
