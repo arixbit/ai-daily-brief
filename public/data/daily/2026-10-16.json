@@ -1,0 +1,587 @@
+{
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T00:00:41.192Z",
+  "title": "2026-10-16 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Muse Spark Is Now an Open-Weights Model",
+      "title_cn": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+      "summary_cn": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。",
+      "why_it_matters_cn": "Meta 开放了 Muse Spark 的权重，并给出 Helion 内核与 TorchTitan 微调支持，读者可据此评估其部署与定制路径。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "PyTorch：Blog（RSS）",
+      "url": "https://pytorch.org/blog/muse-spark-open/",
+      "published_at": "2026-10-15T17:55:52.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "s80tw5g2v22j1se4bmqejyaq4",
+      "upstream_url": "https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "title_cn": "NVIDIA 发布开源 Nemotron 3.5 Super VL 及 Bolt 两款端侧模型",
+      "summary_cn": "NVIDIA 发布开源 1200 亿参数的 Nemotron 3.5 Super VL 多模态模型，称在其类别中任务完成最快、比同类次优快 5x，并推出两款端侧模型 Bolt 74B-A9B 24GB 与 Bolt E4B 4GB，后者 10 月 23 日上线。模型采用 2-bit 原生量化可在 RTX/DGX Spark 上本地运行，权重、数据集和训练配方开放，已有数十家机构基于自有数据后训练。",
+      "why_it_matters_cn": "官方公布三个开源模型的定位、参数规模与量化方案，覆盖数据中心到桌面端侧，企业可按部署层级选择并自行后训练。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "NVIDIA Blog（RSS）",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "published_at": "2026-10-15T15:00:24.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "l9jgzg24ei3a7m8xu1xfhy9n7",
+      "upstream_url": "https://aihot.news/items/l9jgzg24ei3a7m8xu1xfhy9n7",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/l9jgzg24ei3a7m8xu1xfhy9n7"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "FLUX 3 Image Klein",
+      "title_cn": "Black Forest Labs 发布开源文生图模型 FLUX 3 Image Klein（5.6B）",
+      "summary_cn": "Black Forest Labs 发布 5.6B 参数开源权重模型 FLUX 3 Image Klein，支持文生图、图像编辑和最多 10 张参考图的多参考生成，采用 FLUX Kommunity License。",
+      "why_it_matters_cn": "官方公布了参数规模、显存门槛、生成速度和评测对比，读者可以评估它在本地部署与微调场景中的适配性。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Black Forest Labs：Blog（网页）",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "published_at": "2026-10-15T15:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ybc0etkws56yxmrveyttxz3lm",
+      "upstream_url": "https://aihot.news/items/ybc0etkws56yxmrveyttxz3lm",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ybc0etkws56yxmrveyttxz3lm"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Step 5 Preview is now open weights.",
+      "title_cn": "阶跃星辰开放 Step 5 Preview 权重",
+      "summary_cn": "阶跃星辰（StepFun）宣布 Step 5 Preview 开放权重，BF16 和 FP8 权重已上线 Hugging Face 和 ModelScope，并附技术博客。",
+      "why_it_matters_cn": "官方公告直接给出权重规格和下载入口，需要开源 MoE 权重的读者可据此评估是否纳入自己的工作流。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
+      "url": "https://x.com/StepFun_ai/status/2110717330657616092",
+      "published_at": "2026-10-15T13:00:01.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "v0dw619te36yzweiqtuw7pjxs",
+      "upstream_url": "https://aihot.news/items/v0dw619te36yzweiqtuw7pjxs",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/v0dw619te36yzweiqtuw7pjxs"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+      "title_cn": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力",
+      "summary_cn": "ChatGPT 官宣面向 Chrome 用户带来升级，把 computer use 能力引入 Chrome。在聊天中，ChatGPT 可以查看用户打开的标签页并汇总信息；在工作模式下，它能控制 Chrome 标签页执行操作，如发送消息、填写表单、下载文件，还可帮助整理和分组打开的标签页。",
+      "why_it_matters_cn": "官方说明 ChatGPT 新增读取与控制 Chrome 标签页的能力，聊天和工作两种场景的具体用途都写清楚了。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：ChatGPT (@ChatGPT)",
+      "url": "https://x.com/ChatGPT/status/2110823738531037651",
+      "published_at": "2026-10-15T20:02:51.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "bme0mytjnlk0d2lk8hf7srzoh",
+      "upstream_url": "https://aihot.news/items/bme0mytjnlk0d2lk8hf7srzoh",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/bme0mytjnlk0d2lk8hf7srzoh"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "For Those Who Create. KLING 4.0 Is Now Fully Available. 🎬",
+      "title_cn": "可灵 Kling 4.0 正式全量开放，新增 MCP 和 CLI 接入",
+      "summary_cn": "可灵（Kling AI）宣布 Kling 4.0 正式全量开放，用户可通过 kling.ai 全新创作界面使用，并新增 MCP 和 CLI 接入以融入视频创作工作流。即将推出 4K 和 1080p 的 10-bit HDR 视频输出，以及面向企业客户和开发者的 API 访问。",
+      "why_it_matters_cn": "官方宣布 Kling 4.0 全量开放，除网页入口外还支持 MCP 和 CLI，适合关注视频生成工作流接入方式的读者。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：可灵 Kling AI (@Kling_ai)",
+      "url": "https://x.com/Kling_ai/status/2110747537187709424",
+      "published_at": "2026-10-15T15:00:03.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "uoqzntmcb5v0io1g6obac7amu",
+      "upstream_url": "https://aihot.news/items/uoqzntmcb5v0io1g6obac7amu",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uoqzntmcb5v0io1g6obac7amu"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Krea 3 is now available via Partner Nodes",
+      "title_cn": "Krea 3 图像模型通过 ComfyUI Partner Nodes 上线",
+      "summary_cn": "Krea 3 图像模型现已在 ComfyUI 通过 Partner Nodes 提供，主打基于参考图的生成与编辑。模型强调更快的迭代速度和更低的单张成本，支持按上传顺序引用多张参考图、保持产品标签形状材质不变的前提下修改环境光影构图，并可将生成结果作为新输入继续编辑。",
+      "why_it_matters_cn": "原文介绍了 Krea 3 在 ComfyUI 的可用方式和参考图编辑能力，读者可以据此评估是否接入现有工作流。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Comfy Blog",
+      "url": "https://blog.comfy.org/p/krea-3-is-now-available-via-partner",
+      "published_at": "2026-10-15T21:15:45.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ee1w5w87zh8hhwwwzqm8w65rd",
+      "upstream_url": "https://aihot.news/items/ee1w5w87zh8hhwwwzqm8w65rd",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ee1w5w87zh8hhwwwzqm8w65rd"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic's Q3 revenue hits $16.8B but growth slows ahead of planned November IPO",
+      "title_cn": "Anthropic Q3营收达168亿美元但增速放缓，11月IPO前估值预期或下调",
+      "summary_cn": "Anthropic在面向潜在投资者的会议上公布Q3营收168亿美元，环比增长约45%，但明显低于Q2超140%的增速。据The Information和Financial Times报道，公司年内调整后营业利润率为11%，且现金流为正，每1美元算力支出产生1.70美元收入。部分投资者对其营收数字失望，预计IPO估值可能降至1.5万亿美元以下，低于此前讨论的2万亿美元。",
+      "why_it_matters_cn": "财报细节与IPO估值预期变化并置，读者可据此理解增长放缓与盈利信号之间的张力。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo/",
+      "published_at": "2026-10-15T09:50:43.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "allv4n9g9lhfy72m1pg725apv",
+      "upstream_url": "https://aihot.news/items/allv4n9g9lhfy72m1pg725apv",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/allv4n9g9lhfy72m1pg725apv"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "美国 8 州起诉 OpenAI，指控 ChatGPT 指导青少年如何自伤或伤害他人",
+      "title_cn": "美国 8 州起诉 OpenAI，指控 ChatGPT 指导青少年自伤或伤害他人",
+      "summary_cn": "当地时间 14 日，美国 8 个州的总检察长分别在州法院起诉 OpenAI，指控 ChatGPT 指导包括青少年在内的用户伤害自己或他人，并刻意迎合用户以获取信任。",
+      "why_it_matters_cn": "诉讼细节和法院诉求都有具体内容，读者可以了解各州对 ChatGPT 安全性的指控重点和可能的产品影响。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "IT之家·人工智能",
+      "url": "https://www.ithome.com/1/013/160.htm",
+      "published_at": "2026-10-14T23:39:08.393Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "v5sbitu4hw1bozz0nlopcl3t8",
+      "upstream_url": "https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
+      "title_cn": "The Verge 实测 Eiliko 机器人玩具：68000 台设备数据可被任意访问并可远程劫持",
+      "summary_cn": "The Verge 记者与黑客 Sammy Azdoufal 实测发现，Energize Lab 的 Eiliko 机器人玩具将用户对话、用户画像、儿童照片和音频存放在无防护的服务器上，可访问约 68000 台设备、1300 万条对话，其中超 31000 份儿童档案来自美国。",
+      "why_it_matters_cn": "记者实测并联合黑客演示了 Eiliko 机器人的数据暴露范围，读者可据此评估把 AI 玩具接入家庭的风险。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Verge：AI（RSS）",
+      "url": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
+      "published_at": "2026-10-15T11:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "pd501xipe38ooxo1t7jn7hphn",
+      "upstream_url": "https://aihot.news/items/pd501xipe38ooxo1t7jn7hphn",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/pd501xipe38ooxo1t7jn7hphn"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "An update on independent evaluators",
+      "title_cn": "Anthropic 公布独立评估机制细节，METR 团队获类员工访问权限",
+      "summary_cn": "Anthropic 宣布已向评估前沿 AI 模型的非营利机构 METR 的六名员工提供类员工访问权限，包括公司硬件、办公空间和与内部风险评估团队相当的内部系统访问，METR 将公开发布风险评估结果，Anthropic 不得否决发布但可要求删减少数预定义类别的信息。",
+      "why_it_matters_cn": "原文由 Anthropic 亲自说明独立评估机制的具体安排，读者可以了解第三方如何获得接近员工的访问权限和发布权。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Anthropic：Newsroom（网页）",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "published_at": "2026-10-14T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "xl51s0hyyzi1krwrmown4hoqh",
+      "upstream_url": "https://aihot.news/items/xl51s0hyyzi1krwrmown4hoqh",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/xl51s0hyyzi1krwrmown4hoqh"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "分享一个最近很惊艳的开源Skill，一句话让AI搓出任何原理的科普视频。",
+      "title_cn": "卡兹克实测开源Skill Anatomy，一句话让AI生成原理科普视频",
+      "summary_cn": "作者卡兹克分享实测开源Skill Anatomy（GitHub：https://github.com/wheresryan22/anatomy/tree/main），它能把抽象原理做成可交互的机械模型动画，在其基础上还能让AI一轮直出带讲解配音的科普视频。",
+      "why_it_matters_cn": "作者实测开源Skill Anatomy并给出成本、耗时和适用模型的数字，可帮读者判断是否值得装来生成科普视频。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "X：卡兹克 (@Khazix0918)",
+      "url": "https://x.com/Khazix0918/status/2110587546271191166",
+      "published_at": "2026-10-15T04:24:18.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "kg6bx3goagkn4k8kt7jl9lqgd",
+      "upstream_url": "https://aihot.news/items/kg6bx3goagkn4k8kt7jl9lqgd",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/kg6bx3goagkn4k8kt7jl9lqgd"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "昆仑万维诞生世界上第一款消费级显卡视频大模型游戏，同步开源",
+      "title_cn": "昆仑万维发布并开源单张 RTX 5090 实时运行的视频大模型游戏 Matrix-Game 4.0",
+      "summary_cn": "昆仑万维于2026年10月15日发布 Matrix-Game 4.0，称其为第一款运行在单张消费级显卡上的视频大模型游戏，并同步开源。",
+      "why_it_matters_cn": "原文给出具体硬指标与三模块架构，还对比了同类方案的延迟和算力门槛，读者可据此评估这条实时世界模型路线的落地价值。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "公众号：昆仑万维（天工）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzE1NDc3Mg%3D%3D&mid=2247510565&idx=1&sn=5c72103cec714f282c9260152a552294",
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "eg7f0ohfzuyjux9ndx2ggk72s",
+      "upstream_url": "https://aihot.news/items/eg7f0ohfzuyjux9ndx2ggk72s",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/eg7f0ohfzuyjux9ndx2ggk72s"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Frontier Pre-training at Microsoft AI",
+      "title_cn": "Microsoft AI 公布 MAI-Base-2 预训练细节，2.8T 参数 MoE 模型 FLOPs 效率达 DeepSeek-V4-Pro-Base 的 4.2 至 12.3 倍",
+      "summary_cn": "Microsoft AI 宣布完成 MAI-Base-2 预训练，这是一个 800 亿激活、2.8T 总参数的 MoE 基础模型，在 held-out 评测中 BPB 低于所测全部开源权重模型，预训练 FLOPs 效率比 DeepSeek-V4-Pro-Base 高 4.2 至 12.3 倍。",
+      "why_it_matters_cn": "官方披露了 MAI-Base-2 的完整预训练方法，读者可以从中了解 scaling ladder、Muon 优化和多轮 dropless MoE 等可借鉴的工程细节。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "Microsoft AI：官方博客（网页）",
+      "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+      "published_at": "2026-10-15T16:09:01.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "f7ey01hbckuivmlgen9jq0vaf",
+      "upstream_url": "https://aihot.news/items/f7ey01hbckuivmlgen9jq0vaf",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/f7ey01hbckuivmlgen9jq0vaf"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Ling-3.1-flash 正式开源：让真实业务需求更快变成可用成果",
+      "title_cn": "蚂蚁百灵正式开源 Ling-3.1-flash，560B 参数模型可 4 卡部署",
+      "summary_cn": "蚂蚁百灵正式开源 Ling-3.1-flash，总参数约 560B、每 Token 激活约 25B、最高支持 1M 上下文，权重已上架 Hugging Face 和 ModelScope。",
+      "why_it_matters_cn": "原文给出开源权重入口、量化后部署卡数变化和公开评测数据，读者可据此评估在自己算力环境中落地的可行性。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "公众号：蚂蚁百灵（Ling）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247488073&idx=1&sn=1deff0f84dce1931113975e212a91644",
+      "published_at": "2026-10-15T01:10:27.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "hie2iw214agnrwu3mxy3t79af",
+      "upstream_url": "https://aihot.news/items/hie2iw214agnrwu3mxy3t79af",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/hie2iw214agnrwu3mxy3t79af"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "While sandboxes are a commodity, serving millions of them under production-grade traffic requires a lot of detail to scale agents for bus...",
+      "title_cn": "Perplexity 开源驱动 Perplexity Computer 的沙箱平台 SPACE",
+      "summary_cn": "Perplexity CEO Aravind Srinivas 宣布开源沙箱平台 SPACE，该平台为 Perplexity Computer 的全部沙箱能力提供支撑，仓库地址为 https://github.com/perplexityai/space。他表示沙箱虽是 commodity，但在生产级流量下服务数百万沙箱、为企业和消费者扩展 Agent 需要大量细节，开源旨在支持生态。",
+      "why_it_matters_cn": "作者解释了为什么沙箱本身是 commodity 而生产级规模化才是难点，开源平台可用于自建企业级 Agent 基础设施。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+      "url": "https://x.com/AravSrinivas/status/2110785848958759165",
+      "published_at": "2026-10-15T17:32:17.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "fgtsm4cnci4asmyhhflxzfsga",
+      "upstream_url": "https://aihot.news/items/fgtsm4cnci4asmyhhflxzfsga",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fgtsm4cnci4asmyhhflxzfsga"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 17,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+      "title_cn": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
+      "summary_cn": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+      "why_it_matters_cn": "原文给出了 fast mode 正式开放后的速度、定价和平台覆盖变化，读者可据此评估是否切换到该模式。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+      "published_at": "2026-10-15T20:09:02.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "e2ssy0a7scpnel6ppyl3r9f2t",
+      "upstream_url": "https://aihot.news/items/e2ssy0a7scpnel6ppyl3r9f2t",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/e2ssy0a7scpnel6ppyl3r9f2t"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 18,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "New from @bfl_ai on OpenRouter today:",
+      "title_cn": "Black Forest Labs FLUX 3 系列登陆 OpenRouter：Image Klein 开源权重、视频 upscale 降价并支持 4K 生成",
+      "summary_cn": "OpenRouter 宣布 Black Forest Labs（@bfl_ai）三项新内容上线。FLUX 3 Image Klein 是新的开源权重图像模型，可在单张消费级 GPU 上运行；改进版 FLUX Video Upscale 开启 early access，可将任意视频转为 4K，价格从 $0.59/s 降至 $0.28/s；FLUX 3 Video 现已支持从提示词直接生成 4K 视频。",
+      "why_it_matters_cn": "原文列出三项上线的模型和功能细节，包括开源权重、价格降幅和 4K 视频生成，读者可据此评估接入价值。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：OpenRouter (@OpenRouter)",
+      "url": "https://x.com/OpenRouter/status/2110803343878873473",
+      "published_at": "2026-10-15T18:41:48.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "qb80oc9oxi6d1lffkuvfskl10",
+      "upstream_url": "https://aihot.news/items/qb80oc9oxi6d1lffkuvfskl10",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qb80oc9oxi6d1lffkuvfskl10"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 19,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Gemini 4 Argon from @Google on ARC-AGI (Verified):",
+      "title_cn": "Gemini 4 Argon 在 ARC-AGI (Verified) 评测中公布：ARC-AGI-3 得分 97.5%",
+      "summary_cn": "ARC Prize 公布 Gemini 4 Argon 在 ARC-AGI (Verified) 的评测成绩。ARC-AGI-3 上，provider adapter harness 得分 97.5%、成本 $4.8K，标准 harness 得分 49.8%、成本 $5.8K；ARC-AGI-2 得分 91.3%、$0.32/task；ARC-AGI-1 得分 98.5%、$0.16/task。Google DeepMind 是第二家在 ARC-AGI-3 上得分超过 95% 的前沿 AI 实验室。",
+      "why_it_matters_cn": "ARC Prize 公布了 Gemini 4 Argon 在 ARC-AGI 三个版本上的得分与成本，读者可据此比较不同 harness 设置的差异。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "X：ARC Prize (@arcprize)",
+      "url": "https://x.com/arcprize/status/2110768288523251762",
+      "published_at": "2026-10-15T16:22:30.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "cvpbhz4ao2wr6pxpthix2z15c",
+      "upstream_url": "https://aihot.news/items/cvpbhz4ao2wr6pxpthix2z15c",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/cvpbhz4ao2wr6pxpthix2z15c"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 20,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How Meta Built Forum With AI-Native Engineering",
+      "title_cn": "Meta 如何用 AI 原生工程方式开发 Forum 应用",
+      "summary_cn": "Meta 工程团队详解如何把 AI 智能体作为开发流程参与者来构建独立 Groups 应用 Forum，采用 human-on-the-loop 模式并以验证通过的生产级产出衡量成功。Forum 在八周内达到与 Facebook Groups 的核心功能对齐，自主压测循环在开发期发现并修复了内存问题，内存占用和缺页约减半，上线后智能体还协助根因分析用户反馈。",
+      "why_it_matters_cn": "原文复盘了 Meta 以智能体参与开发全流程的具体做法与度量标准，可迁移的工程经验比较扎实。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "Meta Engineering Blog（RSS）",
+      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+      "published_at": "2026-10-15T19:00:03.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "moaux5xk1dqk4pi3tsx8sabsj",
+      "upstream_url": "https://aihot.news/items/moaux5xk1dqk4pi3tsx8sabsj",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/moaux5xk1dqk4pi3tsx8sabsj"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 21,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Code Review is now generally available",
+      "title_cn": "Anthropic Code Review 正式可用，面向 Team 和 Enterprise 组织",
+      "summary_cn": "Anthropic 宣布 Claude 的 Code Review 结束研究预览，正式向 Claude Team 和 Enterprise 组织开放。",
+      "why_it_matters_cn": "官方正式宣布 Code Review 结束预览开放给团队与企业版，给出提速幅度和审查深度设置细节，便于评估能否接入现有 PR 流程。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/code-review-is-now-generally-available",
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "wmxwoemumqiq2yfrjngl3a5rc",
+      "upstream_url": "https://aihot.news/items/wmxwoemumqiq2yfrjngl3a5rc",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wmxwoemumqiq2yfrjngl3a5rc"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 22,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Evaluating AI agents: moving past the vibe check",
+      "title_cn": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check",
+      "summary_cn": "Google Developers Blog 发布智能体评测实践指南，指出仅靠终端跑几个提示词的 vibe check 无法发现智能体重试循环、工具参数幻觉等隐性失败。",
+      "why_it_matters_cn": "原文给出从 CUJ 定义到 CI/CD 门禁的完整智能体评测流程，可用 agent-eval 工具包直接复现，避开四个常见评测陷阱。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "Google Developers Blog（RSS）",
+      "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/",
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "ojpe4mr67tjbrt5atyi6hyapl",
+      "upstream_url": "https://aihot.news/items/ojpe4mr67tjbrt5atyi6hyapl",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ojpe4mr67tjbrt5atyi6hyapl"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-10-16",
+    "generated_at": "2026-10-16T00:00:41.192Z",
+    "window_start": "2026-10-15T00:00:00.000Z",
+    "window_end": "2026-10-16T00:00:00.000Z",
+    "lead": {
+      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+      "leadParagraph": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-10-16"
+    }
+  }
+}
