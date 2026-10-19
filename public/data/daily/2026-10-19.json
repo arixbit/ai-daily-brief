@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T00:00:14.129Z",
+  "title": "2026-10-19 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
+      "title_cn": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍",
+      "summary_cn": "Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。",
+      "why_it_matters_cn": "Anthropic 内部数据显示初级技术岗位占比明显下降而 Agent 工时升至人力六倍，报道还保留了研究自身对数据局限性的说明。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/",
+      "published_at": "2026-10-18T13:22:26.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "c7pt5mbzh5h0atlbprfzbs8o0",
+      "upstream_url": "https://aihot.news/items/c7pt5mbzh5h0atlbprfzbs8o0",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/c7pt5mbzh5h0atlbprfzbs8o0"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Two German courts now hold Google liable for what its AI overviews say",
+      "title_cn": "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责",
+      "summary_cn": "慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。",
+      "why_it_matters_cn": "两起德国法院判例指向同一法律逻辑，文章还分析了 Google 以和解回避判例对 AI 搜索商业模式的潜在影响。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/",
+      "published_at": "2026-10-18T10:52:39.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "bbr25r9mbi8zbbtmu2uiati7f",
+      "upstream_url": "https://aihot.news/items/bbr25r9mbi8zbbtmu2uiati7f",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/bbr25r9mbi8zbbtmu2uiati7f"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "What Is a Browser Agent? How It Works and When to Use One",
+      "title_cn": "Browser Use 讲解浏览器智能体的工作原理与使用时机",
+      "summary_cn": "Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。",
+      "why_it_matters_cn": "原文系统拆解浏览器智能体的组成、运行循环与选型边界，并用自家云端使用数据说明典型场景、成本风险与起步方法。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Browser Use",
+      "url": "https://browser-use.com/posts/browser-agents",
+      "published_at": "2026-10-18T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "w3vpc68lufgj57zcy1hd38a60",
+      "upstream_url": "https://aihot.news/items/w3vpc68lufgj57zcy1hd38a60",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/w3vpc68lufgj57zcy1hd38a60"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max...",
+      "title_cn": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首",
+      "summary_cn": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。",
+      "why_it_matters_cn": "Arena 榜单给出了具体排名、分数和价格点，读者可以据此评估 DeepSeek 新版模型在 WebDev 编码上的性价比位置。",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "X：Arena (@arena)",
+      "url": "https://x.com/arena/status/2111894091168682086",
+      "published_at": "2026-10-18T18:56:03.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "bm95oliei5mcgy2tau7e22d59",
+      "upstream_url": "https://aihot.news/items/bm95oliei5mcgy2tau7e22d59",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/bm95oliei5mcgy2tau7e22d59"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-10-19",
+    "generated_at": "2026-10-19T00:00:14.129Z",
+    "window_start": "2026-10-18T00:00:00.000Z",
+    "window_end": "2026-10-19T00:00:00.000Z",
+    "lead": {
+      "title": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍",
+      "leadParagraph": "Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-10-19"
+    }
+  }
+}
