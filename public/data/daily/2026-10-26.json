@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T09:24:44.886517+08:00",
+  "title": "2026-10-26 AI 每日简报",
+  "description": "今日临时补充：Readhub 每日早报 1 条、AI 频道 2 条。AIHOT 原刊为空；此补充包含 08:00 后报道，保留各条真实时间。",
+  "items": [
+    {
+      "title_cn": "OpenAI 调整前沿模型训练安全政策，限制真实互联网访问",
+      "summary_cn": "据 Readhub 每日早报汇总，OpenAI 调整前沿模型训练安全政策，禁止训练中的模型访问真实互联网。该措施聚焦训练环境隔离，报道背景包括近期模型越过访问边界的安全事件。",
+      "why_it_matters_cn": "这条关注模型训练环境的安全边界，不等同于面向用户的联网搜索功能被取消。",
+      "category": "industry",
+      "category_label": "行业动态",
+      "tags": [
+        "临时补充",
+        "AI安全"
+      ],
+      "source": "机器之心（Readhub早报）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651069852&idx=1&sn=186ab1f117eb9f3338111205bacf5b80",
+      "published_at": "2026-10-25T09:55:14.104Z",
+      "published_at_origin": "Readhub topic publication time",
+      "discovered_via": "https://readhub.cn/daily",
+      "upstream_url": "https://readhub.cn/topic/8xVU0NN0E6j",
+      "rank": 1,
+      "title": "OpenAI 调整前沿模型训练安全政策，限制真实互联网访问",
+      "selected": true,
+      "edition_kind": "supplement",
+      "summary_origin": "manual_editorial_supplement"
+    },
+    {
+      "title_cn": "Linux 基金会报告：AI 提高编码效率，也增加开源审查负担",
+      "summary_cn": "Readhub AI 频道收录的报道援引 Linux 基金会调查：受访者估计，生成式 AI 让编码任务平均耗时减少 52%；维护者估计约四分之一 PR 属于低质量贡献。比例来自问卷估计，不能视为所有开源项目的客观统计。",
+      "why_it_matters_cn": "提交代码变容易后，测试、解释修改与维护者审查仍是必要成本，不能只用生成速度衡量效率。",
+      "category": "developer_agent",
+      "category_label": "开发者工具 / Agent 工程",
+      "tags": [
+        "临时补充",
+        "开源",
+        "08点后补充"
+      ],
+      "source": "InfoQ / 36氪（Readhub AI）",
+      "url": "https://www.36kr.com/p/4040668159054728",
+      "published_at": "2026-10-26T00:45:59.000Z",
+      "published_at_origin": "Readhub item publishDate",
+      "discovered_via": "https://readhub.cn/news/ai",
+      "upstream_url": "https://readhub.cn/news/ai",
+      "reference_urls": [
+        "https://www.linuxfoundation.org/research/oss-development-gen-ai-era-2026"
+      ],
+      "rank": 2,
+      "title": "Linux 基金会报告：AI 提高编码效率，也增加开源审查负担",
+      "selected": true,
+      "edition_kind": "supplement",
+      "summary_origin": "manual_editorial_supplement"
+    },
+    {
+      "title_cn": "HandsOn 开源灵巧操作基准：66 项任务、1.8 万条示范",
+      "summary_cn": "据 Readhub AI 频道报道及 HandsOn 官方仓库，研究团队公布面向机器人灵巧操作的仿真平台与基准，提供 66 项人工验证任务和 1.8 万条示范。Core-50 用于有示范的执行评测，Transfer-16 用于检验未见任务的迁移能力。",
+      "why_it_matters_cn": "基准把演示过的操作和未见任务分开测试，为机器人双手操作能力提供可比较的评测条件。",
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "tags": [
+        "临时补充",
+        "机器人",
+        "开源基准"
+      ],
+      "source": "机器之心 / 36氪（Readhub AI）",
+      "url": "https://www.36kr.com/p/4041153787892617",
+      "published_at": "2026-10-25T23:59:20.000Z",
+      "published_at_origin": "Readhub item publishDate",
+      "discovered_via": "https://readhub.cn/news/ai",
+      "upstream_url": "https://readhub.cn/news/ai",
+      "reference_urls": [
+        "https://github.com/TsinghuaC3I/HandsOn",
+        "https://arxiv.org/abs/2610.26765"
+      ],
+      "rank": 3,
+      "title": "HandsOn 开源灵巧操作基准：66 项任务、1.8 万条示范",
+      "selected": true,
+      "edition_kind": "supplement",
+      "summary_origin": "manual_editorial_supplement"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "upstream": {
+    "system": "Readhub editorial supplement",
+    "report_url": "https://readhub.cn/daily",
+    "source_pages": [
+      "https://readhub.cn/daily",
+      "https://readhub.cn/news/ai"
+    ],
+    "original_system": "AIHOT",
+    "original_report_url": "https://aihot.news/daily/2026-10-26",
+    "original_edition_empty": true,
+    "original_window_start": "2026-10-25T00:00:00Z",
+    "original_window_end": "2026-10-26T00:00:00Z",
+    "supplement_generated_at": "2026-10-26T09:24:44.886517+08:00",
+    "includes_after_original_cutoff": true
+  },
+  "editorial_note": "仅 2026-10-26 按用户要求补 3 条，不修改后续官方上游规则。"
+}
