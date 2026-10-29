@@ -1,0 +1,496 @@
+{
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T00:00:28.384Z",
+  "title": "2026-10-29 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "title_cn": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+      "summary_cn": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。",
+      "why_it_matters_cn": "官方公布 Gemini 4 Carbon 的安全编码与长程任务成绩和定价，可据此外推其在网络安全防御场景的实际定位。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Google DeepMind：Blog（RSS）",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "published_at": "2026-10-28T17:00:58.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "fjeloaahylonpc0pv5tduusud",
+      "upstream_url": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "走向高效可信的文档智能｜MiniCPM家族首个OCR系列模型发布并开源",
+      "title_cn": "面壁智能发布并开源 MiniCPM-OCR 系列：1.3B 解析模型与 2B 判别模型",
+      "summary_cn": "面壁智能发布并开源 MiniCPM-OCR 系列。MiniCPM-OCR 1.0（1.3B）在 Real5-OmniDocBench 取得 93.68 分、OCRBench v2 取得 54.7 分的 SOTA，经 DSpark 加速后吞吐达 1.217 页/秒，端到端效率提升 55%。",
+      "why_it_matters_cn": "原文给出双 SOTA 得分、吞吐实测与免检比例数据，并首次引入独立的解析结果判别模型，可用于评估文档解析落地方案。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "公众号：面壁智能（MiniCPM）",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499654&idx=1&sn=9bcbf9492c492a5d5e611af41670425f",
+      "published_at": "2026-10-28T11:38:17.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "zd8g1y3609zl72lnwis70owqt",
+      "upstream_url": "https://aihot.news/items/zd8g1y3609zl72lnwis70owqt",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/zd8g1y3609zl72lnwis70owqt"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "GitHub Universe 2026: Evolving every layer of the stack",
+      "title_cn": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
+      "summary_cn": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。",
+      "why_it_matters_cn": "原文是 GitHub 官方对 Universe 2026 新品的集中说明，给出各功能的定位和关键数据，便于读者评估对现有工作流的影响。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "GitHub Blog",
+      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "published_at": "2026-10-28T16:09:28.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "xonc43xgcx39303i40k8022rl",
+      "upstream_url": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/xonc43xgcx39303i40k8022rl"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
+      "title_cn": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
+      "summary_cn": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。",
+      "why_it_matters_cn": "微软官方说明 Copilot harness 的能力和开放方式，开发者可据此评估是否用它托管多模型 Agent 运行时。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Microsoft：Official Blog（RSS）",
+      "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+      "published_at": "2026-10-28T16:51:35.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "tdp7qmrh74fdfarxbi4jaoc6v",
+      "upstream_url": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+      "title_cn": "Anthropic IPO 最大赢家或为 Amazon 而非 VC",
+      "summary_cn": "TechCrunch 根据 Anthropic 的 S-1 分析，VC 持股均不足 5%，而 Amazon 可能是 IPO 最大财务受益方。Amazon 持有 62 亿美元本金可转债、其自估持仓价值 979 亿美元，另投 100 亿美元无投票权优先股，累计投资约 180 亿美元；Anthropic 还承诺未来 10 年在 AWS 至少消费 1100 亿美元。",
+      "why_it_matters_cn": "文章依据 Anthropic S-1 拆解各股东持股结构，说明为何战略投资者而非 VC 是 IPO 最大受益方，并提示云厂商利益冲突。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+      "published_at": "2026-10-28T01:15:28.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "b61d349yqp5mt029fsa0ytbv9",
+      "upstream_url": "https://aihot.news/items/b61d349yqp5mt029fsa0ytbv9",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/b61d349yqp5mt029fsa0ytbv9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "title_cn": "GitHub Octoverse 2026：开发活动创新高，超 40% 的 PR 由智能体起草",
+      "summary_cn": "GitHub 发布 2026 年度 Octoverse 报告：过去 12 个月开发者推送代码 179 亿次，超过 2024 和 2025 年之和，合并 PR 达 13 亿次。",
+      "why_it_matters_cn": "GitHub 用自家遥测数据量化了智能体参与开发的程度，从 PR 占比、模型轮换到行业分布都给出可核对的数字。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "GitHub Blog",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "published_at": "2026-10-28T16:07:40.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "s3m3uzabqoxxed9ae50b73qvc",
+      "upstream_url": "https://aihot.news/items/s3m3uzabqoxxed9ae50b73qvc",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/s3m3uzabqoxxed9ae50b73qvc"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Q3 is in the books! We’re now on a half-trillion annual revenue run rate, with Alphabet revenues growing at 25%.",
+      "title_cn": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
+      "summary_cn": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。",
+      "why_it_matters_cn": "官方披露 Q3 财务与 AI 业务数据，可据此了解 Google Cloud 增速、模型 API token 处理量等一手经营指标。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Sundar Pichai (@sundarpichai)",
+      "url": "https://x.com/sundarpichai/status/2115535455156642066",
+      "published_at": "2026-10-28T20:05:31.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "m5st8pvirbas7phreshbzkrc9",
+      "upstream_url": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Just wrapped our earnings call. It was a fast start to our fiscal year.",
+      "title_cn": "微软财报电话会：Microsoft Cloud 收入超 $63B，同比增长 30%",
+      "summary_cn": "Satya Nadella 结束微软财报电话会，称财年开局强劲。Microsoft Cloud 收入超过 $63B，同比增长加快至 30%。他提到正围绕 agentic 浪潮构建新技术栈，有多项创新亮点。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Satya Nadella (@satyanadella)",
+      "url": "https://x.com/satyanadella/status/2115577764300693644",
+      "published_at": "2026-10-28T22:53:39.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "p2duc8iee22e74ooyyvuch32d",
+      "upstream_url": "https://aihot.news/items/p2duc8iee22e74ooyyvuch32d",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/p2duc8iee22e74ooyyvuch32d"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Claude AI 找漏洞实战：安卓手机锁屏下提取照片、53 分钟攻破 Linux 获取最高权限",
+      "title_cn": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
+      "summary_cn": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、Safari、Android、Windows 和 Linux 中发现漏洞，串联出 5 条可实际运行的攻击链，相关漏洞已按协调披露流程报告并修复。",
+      "why_it_matters_cn": "原文梳理了五条攻击链的关键数字和影响范围，读者可据此评估 AI 自主挖掘漏洞的实际能力边界。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "IT之家·人工智能",
+      "url": "https://www.ithome.com/1/019/268.htm",
+      "published_at": "2026-10-28T22:35:25.040Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "jpt1eeuj2p1mgrxbufuv3ntdn",
+      "upstream_url": "https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Hit Your Claude Code Usage Limit? How to Keep Coding",
+      "title_cn": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
+      "summary_cn": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。",
+      "why_it_matters_cn": "OpenRouter 实测了 Claude Code 走 API key 计费的真实成本，并提醒 Claude Code 自印的价格可能偏高。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenRouter：Announcements（RSS）",
+      "url": "https://openrouter.ai/blog/tutorials/claude-code-usage-limit/",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "wgss1ksoafvu62x799sdfs0fo",
+      "upstream_url": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Getting started with Claude Code Mods",
+      "title_cn": "Addy Osmani 讲解如何上手 Claude Code Mods",
+      "summary_cn": "Addy Osmani 发布 Claude Code Mods 上手指南，说明 mods 是运行在会话中的 JavaScript/TypeScript 文件，可通过 hooks 观察事件、改写行为或渲染自定义界面。",
+      "why_it_matters_cn": "作者亲自讲解 Claude Code Mods 的机制与上手方法，覆盖三个可复用的示例 mod，读者可照做搭建自己的定制界面。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "X：Addy Osmani (@addyosmani)",
+      "url": "https://x.com/addyosmani/status/2115326629488824753",
+      "published_at": "2026-10-28T06:15:43.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "tw5fe5mj6a2zyp6ica2ec3qpb",
+      "upstream_url": "https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "The future of the firm",
+      "title_cn": "OpenAI 员工撰文探讨 AI 进入企业组织架构的三种方式",
+      "summary_cn": "OpenAI 员工 Hemanth Asirvatham 和 Elliott Mokski 发表下一篇经济系列文章，探讨 AI 进入企业组织架构的三种情形：在每位员工之下形成 AI 劳动力 basement、作为同事穿插在现有组织图中、以及夹在人类之间充当协调层。",
+      "why_it_matters_cn": "两位 OpenAI 年轻管理者以亲身经历提出 AI 进入组织架构的三种情形，并讨论其对层级、企业规模和薪酬差距的影响。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "published_at": "2026-10-28T10:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "neprl0bcwv1mo2pd4dk1lvpjr",
+      "upstream_url": "https://aihot.news/items/neprl0bcwv1mo2pd4dk1lvpjr",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/neprl0bcwv1mo2pd4dk1lvpjr"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "AI agents hacked Anthropic, maker of arguably the most capable AI models for cyberdefense",
+      "title_cn": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
+      "summary_cn": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。",
+      "why_it_matters_cn": "安全公司用 AI 智能体渗透 Anthropic 内部系统，双方对影响范围各执一词，可用作观察第三方软件安全短板的案例。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+      "published_at": "2026-10-28T10:56:24.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "klkmnzle2z7p5y6cl477ce7sg",
+      "upstream_url": "https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Utah gave Claude Code to 34 developers across 10 state agencies. 80% had a working environment within 30 minutes, 71% reported saving 20+...",
+      "title_cn": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
+      "summary_cn": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。",
+      "why_it_matters_cn": "作者提供了犹他州为期四周试点的一手数据，读者可据此评估 Claude Code 在政府开发者中的上手速度与实际节省时间。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "X：Boris Cherny (@bcherny)",
+      "url": "https://x.com/bcherny/status/2115491259381072269",
+      "published_at": "2026-10-28T17:09:54.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "fbxzb7x7fzbjn0dmf367ywxrm",
+      "upstream_url": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "From Tokens to Bytes I: Scaling Hierarchical Networks",
+      "title_cn": "Cartesia 发布 H-Net 扩缩律研究：字节级层级网络比 BPE 提升最高 3-5x 计算效率",
+      "summary_cn": "Cartesia 发布系列博客第一篇，报告其层级网络（H-Net）在字节级语言建模上的扩缩律结果：与严格匹配的 BPE Transformer 相比，1-stage H-Net 在验证损失上节省 1.28x 计算，下游评测约 2x，代码任务中位数 2.04x、分布外编程语言中位数达 3.10x（如 Prolog 5.37x）。",
+      "why_it_matters_cn": "Cartesia 原创研究给出 H-Net 替代 BPE 分词的对照实验与 3-5x 计算效率数据，可了解字节级学习的实际进展。",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "Cartesia 产品与研究",
+      "url": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1",
+      "published_at": "2026-10-27T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "ctuk7r4h4qbyyligi680s7gtr",
+      "upstream_url": "https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "The New Security Agenda",
+      "title_cn": "a16z 调研 100 位 CISO：AI 如何改写 2027 年安全议程",
+      "summary_cn": "a16z 发布对 100 名千人员以上企业 CISO 的调研，87% 预期 2027 年安全支出增长，主要受 AI 威胁和自身 AI 部署扩大攻击面驱动。2027 年最受关注的七项安全举措全部与 AI 相关，其中 SOC 自动化获最多首选票，内部 AI agent 安全、SOC 自动化和进攻性安全升幅最大，但 AI SOC 工具生产环境使用率仅 18%。",
+      "why_it_matters_cn": "a16z 基于 100 位 CISO 调研给出 2027 安全预算与采购优先级变化，并点明初创公司切入的缺口在哪。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "a16z：News（RSS）",
+      "url": "https://www.a16z.news/p/the-new-security-agenda",
+      "published_at": "2026-10-28T16:00:31.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "ja57b43t7h52wid2g4zu6vw2t",
+      "upstream_url": "https://aihot.news/items/ja57b43t7h52wid2g4zu6vw2t",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ja57b43t7h52wid2g4zu6vw2t"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 17,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Day 23/ Much requested iCloud Main & Calendar plugins. Just kidding, today is a reset. Still much requested though!",
+      "title_cn": "ChatGPT 上线 iCloud 邮件与日历插件",
+      "summary_cn": "ChatGPT 宣布 iCloud Mail 和 Calendar 插件上线，用户可以让 ChatGPT 查找邮件、处理收件箱、查看日程或更新日历事件。该功能面向所有 ChatGPT 套餐，支持网页、桌面和 iOS 端。作者 Tibo 在转发该公告时以玩笑开头，先说今天是 iCloud 插件，随即改口称今天其实是一次 reset。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：Tibo (@thsottiaux)",
+      "url": "https://x.com/thsottiaux/status/2115273064481218829",
+      "published_at": "2026-10-28T02:42:53.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "swjngpnh646i9tqitw7679bwp",
+      "upstream_url": "https://aihot.news/items/swjngpnh646i9tqitw7679bwp",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/swjngpnh646i9tqitw7679bwp"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 18,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Introducing artifacts for legal work",
+      "title_cn": "Anthropic 为法律工作推出即用型 Artifacts 画廊",
+      "summary_cn": "Anthropic 推出面向法律专业人士的即用型 artifacts，包括合同审查、引用核查、监管时间线和事项看板等交互工具，每个 artifact 附示例和来源链接。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/introducing-artifacts-for-legal-work",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "sa5s9u2trwxumjqnzqmlibs1i",
+      "upstream_url": "https://aihot.news/items/sa5s9u2trwxumjqnzqmlibs1i",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/sa5s9u2trwxumjqnzqmlibs1i"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：微软财报电话会：Microsoft Cloud 收入超 $63B，同比增长 30%",
+    "推荐理由缺失：ChatGPT 上线 iCloud 邮件与日历插件",
+    "推荐理由缺失：Anthropic 为法律工作推出即用型 Artifacts 画廊",
+    "已跳过缺少摘要的条目：Grok Bot 0.77.0 稳定版发布"
+  ],
+  "skipped_incomplete_items": [
+    {
+      "title": "Grok Bot 0.77.0 稳定版发布",
+      "url": "https://x.com/poteto/status/2115242399312290040",
+      "edition_kind": "flash",
+      "reason": "missing_summary"
+    }
+  ],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-10-29",
+    "generated_at": "2026-10-29T00:00:28.384Z",
+    "window_start": "2026-10-28T00:00:00.000Z",
+    "window_end": "2026-10-29T00:00:00.000Z",
+    "lead": {
+      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+      "leadParagraph": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-10-29"
+    }
+  }
+}
