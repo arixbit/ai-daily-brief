@@ -1,0 +1,435 @@
+{
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T00:00:43.744Z",
+  "title": "2026-10-31 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Ultrathink",
+      "title_cn": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
+      "summary_cn": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。",
+      "why_it_matters_cn": "Anthropic 员工确认订阅改名与 Ultra 取消 5 小时限制的细节，订阅者可据此确认是否受影响。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)",
+      "url": "https://x.com/adocomplete/status/2116224220539883992",
+      "published_at": "2026-10-30T17:42:26.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "pd3dehdyyhzkyrjsw4b6bmcyj",
+      "upstream_url": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "October 30, 2026",
+      "title_cn": "Gemini API 的 Computer Use 工具正式开放（GA）",
+      "summary_cn": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。",
+      "why_it_matters_cn": "官方更新日志确认 Computer Use 结束预览进入正式可用，关注 Gemini API 智能体操作能力的读者可查此入口。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Gemini API：更新日志（网页）",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#10-30-2026",
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "qit1hgequ8pknedqqvuei5wfh",
+      "upstream_url": "https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplac...",
+      "title_cn": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+      "summary_cn": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。",
+      "why_it_matters_cn": "Cursor 官方披露扩展市场安全事件细节与处置过程，给出受影响范围和版本升级指引，受影响用户可按步骤自查。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Cursor (@cursor_ai)",
+      "url": "https://x.com/cursor_ai/status/2116074289053175808",
+      "published_at": "2026-10-30T07:46:39.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "iu7xvjx1c2c5wqrpn0rwfxcb5",
+      "upstream_url": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "阿里巴巴：苹果 Apple 智能国行用户可以自主选择是否开通千问集成功能",
+      "title_cn": "阿里巴巴：Apple 智能国行用户可自主选择是否开通千问集成功能",
+      "summary_cn": "阿里巴巴发布公告，说明千问集成 Apple 智能后用户可自主选择是否开通，功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月 iOS 27.3 正式发布时面向中国用户推出。",
+      "why_it_matters_cn": "原文给出开通方式、时间表和隐私处理细节，读者可以据此了解 Apple 智能国行落地后千问集成的具体使用范围。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "IT之家·人工智能",
+      "url": "https://www.ithome.com/1/020/395.htm",
+      "published_at": "2026-10-30T23:09:21.313Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "yrdu4gxaoljhhbkvw1xlvzc3p",
+      "upstream_url": "https://aihot.news/items/yrdu4gxaoljhhbkvw1xlvzc3p",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/yrdu4gxaoljhhbkvw1xlvzc3p"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "This incredible. Gemma 4 became the first LLM to run in space?",
+      "title_cn": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
+      "summary_cn": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。",
+      "why_it_matters_cn": "Google 在轨道卫星上启动 TPU 并让模型完成推理，展示了天基算力实验从发射走向实际运行的进展。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
+      "url": "https://x.com/_philschmid/status/2116235686445502608",
+      "published_at": "2026-10-30T18:28:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "cms82puwtmpssdpbjmajoopr9",
+      "upstream_url": "https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/cms82puwtmpssdpbjmajoopr9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "AWS will be a $1T business, Jassy says — but first, it will spend big",
+      "title_cn": "Jassy 称 AWS 五到十年内将成为万亿美元营收业务，2026 年 capex 约 2200 亿美元",
+      "summary_cn": "Amazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收万亿美元的业务，2026 年现金 capex 预计约 2200 亿美元，大部分投向 AWS，2027 年还将大幅增加。",
+      "why_it_matters_cn": "原文给出 AWS 最新财报数字、2026 约 2200 亿美元 capex 计划和 Jassy 的万亿营收时间表，可帮助读者判断云厂商 AI 投入节奏。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+      "published_at": "2026-10-29T23:42:22.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "fxmexzrmo7pw52vc5j6ej17kl",
+      "upstream_url": "https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Cracks are emerging in the AI spending boom",
+      "title_cn": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
+      "summary_cn": "Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 7400 亿美元，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定。",
+      "why_it_matters_cn": "原文汇总四大科技公司的资本开支与自由现金流数据，可帮读者理解投资者为何开始担忧 AI 基建投入的回报。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "published_at": "2026-10-30T21:17:40.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "fxxkgtzpf2pb8xjnhu4jtis0b",
+      "upstream_url": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Toyota and Waymo Advance Autonomous Driving Collaboration for Safer Streets and Freedom of Movement for All",
+      "title_cn": "Toyota 与 Waymo 深化自动驾驶合作，2027 年在日本测试自动驾驶 bZ4X 车队",
+      "summary_cn": "Toyota 与 Waymo 宣布进入自动驾驶合作新阶段，在 2025 年 4 月初步协议基础上，将于 2027 年起在日本测试和验证自动驾驶 Toyota bZ4X 车队，后续计划部署到英国等其他 Waymo 服务市场。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Waymo：Blog（网页）",
+      "url": "https://waymo.com/blog/2026/10/toyota-bz4x-partnership",
+      "published_at": "2026-10-30T07:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "jdx4wtubcty1d08sl87jqekp9",
+      "upstream_url": "https://aihot.news/items/jdx4wtubcty1d08sl87jqekp9",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/jdx4wtubcty1d08sl87jqekp9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Fair use benefits everyone",
+      "title_cn": "OpenAI 汇编各方法庭之友意见，主张 AI 训练应适用合理使用原则",
+      "summary_cn": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等。各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害，并警告限缩合理使用将阻碍科研进展与美国经济繁荣；完整文件可在法院公开卷宗查阅。",
+      "why_it_matters_cn": "OpenAI 汇编多领域法庭之友意见，读者可据此了解 AI 训练合理使用抗辩的核心论点与《纽约时报》诉讼的争议焦点。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "url": "https://openai.com/index/fair-use-benefits-everyone",
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "oas684tt9kpeds9cq7vgjvo1x",
+      "upstream_url": "https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Our customers’ ambition is accelerating our growth",
+      "title_cn": "Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元",
+      "summary_cn": "Sierra 宣布本周 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿仅用五个月，快于此前六个月的翻倍节奏。",
+      "why_it_matters_cn": "公司官方披露 ARR 增长节奏和按结果计费、Poppy 开放标准等经营思路，读者可据此理解 Agent 商业化的一种路径。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Sierra：Blog（RSS）",
+      "url": "https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth",
+      "published_at": "2026-10-30T12:50:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "hfhskyex3cjrs3huvpmi1z7bg",
+      "upstream_url": "https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "AI can turn public security fixes into working exploits before users receive an update",
+      "title_cn": "Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox",
+      "summary_cn": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。",
+      "why_it_matters_cn": "Epoch AI 用自建实验给出量化数据，展示开源权重模型如何在补丁窗口期内低成本复现漏洞利用，并给出缩短发布周期的防御建议。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Epoch AI：Gradient Updates（RSS）",
+      "url": "https://epochai.substack.com/p/glm-patch-gap-exploit-firefox",
+      "published_at": "2026-10-30T12:07:16.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "nxkr9ex5tfbhfhw1gvj9wsjuz",
+      "upstream_url": "https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "如何用 Kimi 创作 3D 作品？官方教程来了",
+      "title_cn": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
+      "summary_cn": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。",
+      "why_it_matters_cn": "官方首次公开内部 3D 工作流程，覆盖建模方式、Harness 选择和 5 条可复用技巧，读者可按案例直接上手。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "公众号：月之暗面（Kimi）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMTY4NTIyNA%3D%3D&mid=2247484364&idx=1&sn=42491c3f098deb797ee8f2a17d147b3a",
+      "published_at": "2026-10-30T04:04:56.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ykvaq4vx3ydt23josezzan62r",
+      "upstream_url": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "US tech stocks see sharp falls over AI cost fears",
+      "title_cn": "AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30%",
+      "summary_cn": "BBC 报道称，因担忧企业对 AI 的巨额投资回报，美股科技股连续第二日大跌。",
+      "why_it_matters_cn": "报道整合了本周多家巨头的股价、市值损失和支出数字，可看出市场对 AI 投入回报的担忧正在集中兑现。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "Hacker News：AI 热帖",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+      "published_at": "2026-10-30T14:50:37.797Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "l7y0gkoqx56dt6jxv6x0mcl0h",
+      "upstream_url": "https://aihot.news/items/l7y0gkoqx56dt6jxv6x0mcl0h",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/l7y0gkoqx56dt6jxv6x0mcl0h"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Silicon Valley wants you to invest in miracles",
+      "title_cn": "The Verge 解读 Anthropic S-1 文件中的奇迹叙事与风险披露",
+      "summary_cn": "The Verge 分析 Anthropic 提交的 335 页 S-1 招股书，其中创始人信以带来奇迹时代为愿景，同时用 94 页风险因素警告模型可能对人类构成灾难性甚至生存风险。",
+      "why_it_matters_cn": "文章把 Anthropic 的 335 页 S-1 与 Apple、Facebook、WeWork 的招股书对比，梳理硅谷宏大叙事如何进入华尔街招股文本。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "The Verge：AI（RSS）",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+      "published_at": "2026-10-30T13:11:05.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "vyd3tzicoe478uo8njsr8zt2v",
+      "upstream_url": "https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Claude Opus vs Sonnet vs Haiku: Which Should You Use?",
+      "title_cn": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
+      "summary_cn": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。",
+      "why_it_matters_cn": "原文用同一批编码与基准任务实测三档模型，给出按工作负载选型的成本与可靠性结论。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "OpenRouter：Announcements（RSS）",
+      "url": "https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku/",
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "gzcwy89nkjreenv5eu1qaysdi",
+      "upstream_url": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Community safety report and new protections for teens",
+      "title_cn": "OpenAI 发布社区安全报告计划并加强对未成年人的武器内容限制",
+      "summary_cn": "OpenAI 宣布两项安全举措：将推出 Community Safety Report，首份报告于 2027 年初发布，覆盖 2026 年下半年，此后每六个月更新一次；并对武器相关内容实施更严格限制。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "published_at": "2026-10-30T09:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "giruo33kygjv4mbcb6lidl2cq",
+      "upstream_url": "https://aihot.news/items/giruo33kygjv4mbcb6lidl2cq",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/giruo33kygjv4mbcb6lidl2cq"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：Toyota 与 Waymo 深化自动驾驶合作，2027 年在日本测试自动驾驶 bZ4X 车队",
+    "推荐理由缺失：OpenAI 发布社区安全报告计划并加强对未成年人的武器内容限制"
+  ],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-10-31",
+    "generated_at": "2026-10-31T00:00:43.744Z",
+    "window_start": "2026-10-30T00:00:00.000Z",
+    "window_end": "2026-10-31T00:00:00.000Z",
+    "lead": {
+      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+      "leadParagraph": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-10-31"
+    }
+  }
+}
