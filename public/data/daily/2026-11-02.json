@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T00:00:35.685Z",
+  "title": "2026-11-02 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "ChatGPT和Codex要共用额度了，无限聊天的时代结束了。",
+      "title_cn": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+      "summary_cn": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。",
+      "why_it_matters_cn": "作者以重度用户视角梳理额度合并对聊天和编码习惯的实际冲击，并回溯按条数与按 Token 计费的机制差异，便于理解订阅策略变化的影响。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "公众号：数字生命卡兹克",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647688028&idx=1&sn=e509269da2e0e0b4d4dfbb121b42204b",
+      "published_at": "2026-11-01T00:22:41.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "f6dxzur6d4pwjdhvm1x6m5rfp",
+      "upstream_url": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Build an AI Code Reviewer with OpenRouter",
+      "title_cn": "OpenRouter 教程：用 Responses API 构建可在 Linux 沙箱验证 bug 的 AI 代码审查脚本",
+      "summary_cn": "OpenRouter 发布教程，介绍一个 233 行、仅用标准库的 review.py，通过 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱，让模型实际运行检查确认 bug 并返回 V4A 补丁。",
+      "why_it_matters_cn": "教程给出在沙箱中运行代码验证 bug 的完整脚本与四模型实测数据，读者可照搬接入 pre-push 钩子或 GitHub Actions。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenRouter：Announcements（RSS）",
+      "url": "https://openrouter.ai/blog/tutorials/ai-code-review/",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "yww15c701iat30p8ttjf029ij",
+      "upstream_url": "https://aihot.news/items/yww15c701iat30p8ttjf029ij",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/yww15c701iat30p8ttjf029ij"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Claude Code tip: if a task turns out harder than you expected, type ultrathink while Claude is working. It raises the effort for the rest...",
+      "title_cn": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
+      "summary_cn": "Addy Osmani 分享 Claude Code 技巧：当任务比预期更难时，在 Claude 工作期间输入 ultrathink，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。他引用 @dmwlff 的帖子，其中提到 ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭。",
+      "why_it_matters_cn": "原文给出了一个 Claude Code 实用技巧，输入 ultrathink 可提升当前回合的推理努力，适合编码工作流直接复用。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "X：Addy Osmani (@addyosmani)",
+      "url": "https://x.com/addyosmani/status/2116986087390486816",
+      "published_at": "2026-11-01T20:09:49.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "mhw3rtr5o13p5777y7el9tczk",
+      "upstream_url": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk"
+      },
+      "summary_origin": "report"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-02",
+    "generated_at": "2026-11-02T00:00:35.685Z",
+    "window_start": "2026-11-01T00:00:00.000Z",
+    "window_end": "2026-11-02T00:00:00.000Z",
+    "lead": {
+      "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+      "leadParagraph": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-02"
+    }
+  }
+}
