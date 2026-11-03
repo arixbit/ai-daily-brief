@@ -1,0 +1,204 @@
+{
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T00:00:32.882Z",
+  "title": "2026-11-03 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Make long-running agents faster with message threads",
+      "title_cn": "Claude Platform 推出 message threads 公测，降低长会话智能体延迟",
+      "summary_cn": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。",
+      "why_it_matters_cn": "原文给出了 500k 至 1M token 请求下 TTFT 中位数下降约 35% 的数据，以及线程生命周期和接入方式，便于评估长会话智能体的延迟收益。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/message-threads",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "sg5u3u91kw42j1grtyp3ny65n",
+      "upstream_url": "https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Hyra 2.0 发布：为模型研发打造可复用工具",
+      "title_cn": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
+      "summary_cn": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。",
+      "why_it_matters_cn": "原文把自动化科研的思路从解题转向造工具，并给出蛋白质设计、量子码、处理器等具体成果和可复用的 Harness 分层设计。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "公众号：腾讯混元",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498763&idx=1&sn=279f8fb4e43a987fdc0aa2af0b0f7958",
+      "published_at": "2026-11-02T10:06:28.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "l37ydaic43icz85huclc2io6c",
+      "upstream_url": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/l37ydaic43icz85huclc2io6c"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Introducing the Grid Protectors Program",
+      "title_cn": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰",
+      "summary_cn": "OpenAI 推出 Grid Protectors 计划，与电力公司、监管机构和政策制定者合作，让未来算力校园在电网紧张时降低用电需求，首站为 Effingham County 校园。",
+      "why_it_matters_cn": "OpenAI 首次系统化说明其校园电力弹性安排，给出 Georgia Power 合同的具体可削减容量与电费影响数据。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "published_at": "2026-11-02T15:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "sxbs5a90fgybhyucacmzvrc6w",
+      "upstream_url": "https://aihot.news/items/sxbs5a90fgybhyucacmzvrc6w",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/sxbs5a90fgybhyucacmzvrc6w"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic grows revenue twelvefold but posts $23 billion loss",
+      "title_cn": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元",
+      "summary_cn": "据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。",
+      "why_it_matters_cn": "原文汇总多家媒体信源，把 Anthropic 营收激增与巨额亏损、算力承诺和 IPO 压力放在同一语境下呈现。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/",
+      "published_at": "2026-11-02T16:26:03.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "owfopy087lszd1cpfp3c82pxv",
+      "upstream_url": "https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/owfopy087lszd1cpfp3c82pxv"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Training activation classifiers for safety and alignment",
+      "title_cn": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+      "summary_cn": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。",
+      "why_it_matters_cn": "OpenAI 官方披露激活分类器的架构、训练与部署细节，并给出其相对文本分类器在越狱鲁棒性上的实验对比。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "OpenAI：Alignment 研究博客（RSS）",
+      "url": "https://alignment.openai.com/training-activation-classifiers/",
+      "published_at": "2026-11-02T20:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "wlmiqh13694tqabyvu6nzvlrs",
+      "upstream_url": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "折腾了整整1年，毫无保留地分享一下我这套Agent自动化系统。",
+      "title_cn": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
+      "summary_cn": "自媒体作者卡兹克分享自己搭建近一年的Agent自动化系统，核心是把任务起点从人身上移开，由事件触发Agent工作。系统分为自动化中台、Agent执行、CI中台和飞书决策四层：中台用rules.json统一管理事件触发和Agent调度，本地MacMini跑Agent任务，自建CI中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。",
+      "why_it_matters_cn": "作者把自己一年搭建的Agent自动化架构拆成事件中台、执行、CI和飞书决策四层，给出可复用的规则与流程细节。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "公众号：数字生命卡兹克",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647688060&idx=1&sn=e00d7e57b6f0e3670f0e267e677047df",
+      "published_at": "2026-11-02T00:19:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "dzwfvd9xp6v4qaj6olxezpier",
+      "upstream_url": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic has committed $895.4B to computing and infrastructure, with $447.5B due before 2031.",
+      "title_cn": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付",
+      "summary_cn": "Anthropic 在更新的 IPO 文件中首次披露第三季度业绩，算力与基础设施合同承诺总额约 $895.4B，其中 $447.5B 须在 2031 年前支付，仅 $213.8B 可取消或附带条件。",
+      "why_it_matters_cn": "原文梳理了 Anthropic 更新 IPO 文件中的算力承诺结构和可取消比例，读者可以据此评估其现金流与扩张风险。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2117368258571784296",
+      "published_at": "2026-11-02T21:28:26.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "xiu342i7osbgfxe2ezhrjndl0",
+      "upstream_url": "https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-03",
+    "generated_at": "2026-11-03T00:00:32.882Z",
+    "window_start": "2026-11-02T00:00:00.000Z",
+    "window_end": "2026-11-03T00:00:00.000Z",
+    "lead": {
+      "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰",
+      "leadParagraph": "OpenAI 推出 Grid Protectors 计划，与电力公司、监管机构和政策制定者合作，让未来算力校园在电网紧张时降低用电需求，首站为 Effingham County 校园。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-03"
+    }
+  }
+}
