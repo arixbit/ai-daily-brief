@@ -1,0 +1,332 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T00:00:33.781Z",
+  "title": "2026-11-04 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "The story of how Le Chonk was built, told by the team behind it.",
+      "title_cn": "Mistral Large 4 以开放权重发布并附技术报告",
+      "summary_cn": "Mistral 团队成员 Pierre Stock 宣布 ML4（Mistral Large 4）正式开放权重，称其在代码智能体与网络安全方向具备前沿能力，且比三周前的 Preview 版本更高效、更紧凑。技术报告讲述其研发过程：https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/assets/technical_report.pdf，Mistral AI 官方转发并称可在 alphaxiv 上阅读这一研发故事（https://www.alphaxiv.org/abs/2611.mistral-large-4）。",
+      "why_it_matters_cn": "原文给出模型权重开放入口与技术报告链接，读者可以据此了解模型在代码智能体与安全方向的能力定位。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "X：Mistral AI (@MistralAI)",
+      "url": "https://x.com/MistralAI/status/2117562068220195097",
+      "published_at": "2026-11-03T10:18:34.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "bfx52184e0ssnqgdq42o8dg36",
+      "upstream_url": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "November 2, 2026",
+      "title_cn": "Google AI Studio 弃用 Gemini 2.5 Pro 与 2.5 Flash，API 请求将于 12 月 1 日起自动路由",
+      "summary_cn": "Gemini 2.5 Pro 与 Gemini 2.5 Flash 已弃用，无法再在 Google AI Studio 中选择。",
+      "why_it_matters_cn": "原文明确了弃用时间、自动路由目标和计费规则，以及破坏性 API 变更点，方便开发者提前迁移。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Gemini API：更新日志（网页）",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ewvepczpb5fewcbzo2tkqdldm",
+      "upstream_url": "https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "AMD reported its 3Q-2026 earnings and it now expects revenue to grow more than 80% in 2027, ahead of the 77% analysts had modeled.",
+      "title_cn": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
+      "summary_cn": "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 80%，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。",
+      "why_it_matters_cn": "财报数据具体完整，可据此了解数据中心芯片在 AMD 2027 年增长预期中的占比和 Meta 等客户订单规模。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2117757237557088263",
+      "published_at": "2026-11-03T23:14:06.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ir9nzccipff0uowu3tghi4n3o",
+      "upstream_url": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Revolut moves to self-hosted GLM",
+      "title_cn": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
+      "summary_cn": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。",
+      "why_it_matters_cn": "案例显示自托管开源模型在成本大幅下降后改变了工程师的使用习惯，对思考前沿 API 定价有参考意义。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Hacker News：AI 热帖",
+      "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
+      "published_at": "2026-11-02T22:11:24.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "op93lgz2xx0ck3znfm724ebfu",
+      "upstream_url": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "title_cn": "OpenAI 任命前美国陆军部长 Dan Driscoll 为国家安全现代化高级顾问",
+      "summary_cn": "OpenAI 宣布任命 Dan Driscoll 为新设的国家安全现代化高级顾问，就先进 AI 如何加强国家与网络安全提供建议，重点与美国盟友合作推动民主 AI 的负责任使用。",
+      "why_it_matters_cn": "原文交代了这一新设职位的职责范围和 Driscoll 的军方背景，读者可据此了解 OpenAI 在国家安全方向的布局。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "url": "https://openai.com/index/dan-driscoll-joins-openai",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "hf03pwablxanh9desil5cbu9d",
+      "upstream_url": "https://aihot.news/items/hf03pwablxanh9desil5cbu9d",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/hf03pwablxanh9desil5cbu9d"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Eval-production behavior gaps in agent safety and the role of eval-awareness",
+      "title_cn": "OpenAI 研究：智能体安全评测与生产行为存在差距，评测目标误判是关键因素",
+      "summary_cn": "OpenAI Alignment 团队对比六个模型在 Respecting Warnings 安全评测与匹配的 Codex 生产决策上的表现，发现评测成功率普遍低于生产，差距为 10.2 至 37.4 个百分点。模型普遍口头表现出评测意识（评测中一般性意识率 57.0%–83.7%），但仅告知",
+      "why_it_matters_cn": "原文用六个模型对比评测与生产数据，发现评测成绩反而更低，并把差距归因于模型对评测目标的误判。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "OpenAI：Alignment 研究博客（RSS）",
+      "url": "https://alignment.openai.com/eval-production-behavior-gap/",
+      "published_at": "2026-11-03T08:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "fvf2qsdi4s11bz1denqd5rzff",
+      "upstream_url": "https://aihot.news/items/fvf2qsdi4s11bz1denqd5rzff",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/fvf2qsdi4s11bz1denqd5rzff"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "LifeVal",
+      "title_cn": "OpenAI 推出 LifeVal 评测，衡量 AI 在日常任务上的进展",
+      "summary_cn": "OpenAI 构建了 LifeVal 评测，覆盖照护、健康、教育、家庭事务、个人理财、购物和政府服务等日常任务，用于追踪模型过去一年在日常任务上的表现。该评测基于美国时间使用调查等两项大型研究，并新增 3995 名受访者的代表性调查来确定用户最需要帮助的领域。OpenAI 称最新模型在多项 LifeVal 任务上得分很高，GPT‑6 Astra 在部分任务上达到 100%。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "url": "https://openai.com/index/lifeval",
+      "published_at": "2026-11-02T09:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "kok1qlnli1qd48t9soqgk6c3x",
+      "upstream_url": "https://aihot.news/items/kok1qlnli1qd48t9soqgk6c3x",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/kok1qlnli1qd48t9soqgk6c3x"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Running Dry",
+      "title_cn": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
+      "summary_cn": "Ed Zitron 撰文认为 AI 行业资金正在枯竭。OpenAI 上周以 1.25 万亿美元估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；据 The Information，其 Q1 2026 成本收入与研发支出合计 121 亿美元，截至 3 月底持有逾 730 亿美元现金及有价证券。",
+      "why_it_matters_cn": "作者基于 OpenAI 融资缩水与 Anthropic 修订后的 S-1/A 数据，逐项拆解两家公司的成本、承诺与依赖结构，提供可核对的财务细节。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Ed Zitron 长文 / Where’s Your Ed At（RSS）",
+      "url": "https://www.wheresyoured.at/running-dry/",
+      "published_at": "2026-11-03T17:16:20.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "zv5dl1agqwo6tkmhdamy17lt5",
+      "upstream_url": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "DeepSeek Harness养鱼教程来了，一文送你的肥鱼当上主播。",
+      "title_cn": "DeepSeek Harness 养鱼教程：在 QQ、微信、飞书养大肥鱼并放上 B 站抖音直播",
+      "summary_cn": "数字生命卡兹克发布一篇 DeepSeek Harness 养鱼教程，讲解如何在 QQ、微信、飞书接入大肥鱼，并让它去 B 站刷视频、在抖音发视频和直播。",
+      "why_it_matters_cn": "作者亲测给出从配置、人设到防泄露的完整流程，读者可照步骤在 QQ、微信、飞书养出自己的大肥鱼。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "公众号：数字生命卡兹克",
+      "url": "https://mp.weixin.qq.com/s/-LcRUPe5OYBRjiTEzYXKog",
+      "published_at": "2026-11-03T00:18:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "v41vn9hb5ywv10e68wycj1bjk",
+      "upstream_url": "https://aihot.news/items/v41vn9hb5ywv10e68wycj1bjk",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/v41vn9hb5ywv10e68wycj1bjk"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Post-Train a Model for Your Own Agent Harness with OpenHands and Snowflake",
+      "title_cn": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
+      "summary_cn": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。",
+      "why_it_matters_cn": "原文展示了直接用现有 OpenHands harness 做 RL 后训练的完整流程和实验结果，开发者可据此评估是否把后训练纳入自己的 agent 开发循环。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenHands 官方博客",
+      "url": "https://www.openhands.dev/blog/post-train-ai-models-openhands-snowflake",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "recqqiy27l866jfbhjk0cusqh",
+      "upstream_url": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "A Practical Guide to Security in November 2026",
+      "title_cn": "Cognition 发布2026年11月实用安全指南：从 Binance 被盗到 Claude Code Cursor 扩展投毒的应对清单",
+      "summary_cn": "Cognition 发布2026年11月实用安全指南，回顾近期重大安全事件并给出公司可执行的安全加固清单。",
+      "why_it_matters_cn": "原文把近期多起安全事件拆成可控的攻击路径，并给出立即与30天内可执行的公司安全清单，方法可迁移。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "Cognition 模型 / Devin 博客（网页）",
+      "url": "https://cognition.com/blog/practical-guide-to-security-november-2026",
+      "published_at": "2026-11-02T16:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "dmvn8r8406f7g9vutizbxqesj",
+      "upstream_url": "https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Critical thinking when agents do the work",
+      "title_cn": "Addy Osmani 谈 Agent 时代如何保持批判性思维",
+      "summary_cn": "Addy Osmani 发文探讨在大量使用 Agent 工作流后如何保持批判性思维。他提出认知卸载、拖延、认知投降三段光谱，认为模型越强、输出越流畅，人越容易在不知不觉中放弃独立判断；并给出具体做法，包括提问前先写假设、把验证标准前置为可执行测试、要求 Agent 列出它替你做的决策与假设、用测验收尾而不是读摘要，以及定期手写代码做校准练习。他强调可以卸载工作和审计，但不能卸载责任。",
+      "why_it_matters_cn": "作者基于自身 Agent 工作流经验，提出从认知卸载到认知投降的判断框架和一套可自查的提问清单，方法可直接迁移到日常 AI 协作。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "X：Addy Osmani (@addyosmani)",
+      "url": "https://x.com/addyosmani/status/2117512471930167377",
+      "published_at": "2026-11-03T07:01:29.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "uinaiwkzg4u2exkfgv4oha9p7",
+      "upstream_url": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：OpenAI 推出 LifeVal 评测，衡量 AI 在日常任务上的进展"
+  ],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-04",
+    "generated_at": "2026-11-04T00:00:33.781Z",
+    "window_start": "2026-11-03T00:00:00.000Z",
+    "window_end": "2026-11-04T00:00:00.000Z",
+    "lead": {
+      "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
+      "leadParagraph": "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 80%，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-04"
+    }
+  }
+}
