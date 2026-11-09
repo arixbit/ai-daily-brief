@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T00:00:22.503Z",
+  "title": "2026-11-09 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "NVIDIA officially released a statement from its board of directors.",
+      "title_cn": "NVIDIA 董事会宣布就 CEO 黄仁勋遭外国情报行动瞄准一事启动独立调查",
+      "summary_cn": "NVIDIA 董事会于 11 月 8 日发布声明，就近期有关创始人兼 CEO 黄仁勋成为外国情报行动目标的报道启动独立调查。调查由独立董事组成的委员会在外部独立律师协助下监督，黄仁勋全力配合。董事会表示没有理由认为国家安全或 NVIDIA 机密已受损，但调查将审视所有可用信息，并表示对黄仁勋及其领导团队有信心。",
+      "why_it_matters_cn": "作者转述 NVIDIA 董事会官方声明全文，读者可以直接核对董事会调查的安排口径和官方表态。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2119540787147059491",
+      "published_at": "2026-11-08T21:21:17.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "mg4znyraf1xbbwg1vd915wqoi",
+      "upstream_url": "https://aihot.news/items/mg4znyraf1xbbwg1vd915wqoi",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/mg4znyraf1xbbwg1vd915wqoi"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "史上最全 GPT Image 2.6 10 大 GIF 邪修玩法，肝了两天的我决定把提示语都公开了",
+      "title_cn": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
+      "summary_cn": "作者实测前两天上线的 GPT-Image-2.6，整理出 10 个 GIF 玩法提示词（黏土定格动画、表情包、剪辑贴纸、loading 图、PPT 动态图表、爆炸拆解图等）并测试三项新能力。",
+      "why_it_matters_cn": "作者实测 GPT-Image-2.6 的 GIF 与静态新能力，附 10 个可复用提示词，也指出成本翻倍和人脸一致性短板。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "X：卡尔的 AI 沃茨 (@aiwarts)",
+      "url": "https://x.com/aiwarts/status/2119435411667980473",
+      "published_at": "2026-11-08T14:22:34.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "kss7rjmanc8dv5mpj60jtdzgd",
+      "upstream_url": "https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-09",
+    "generated_at": "2026-11-09T00:00:22.503Z",
+    "window_start": "2026-11-08T00:00:00.000Z",
+    "window_end": "2026-11-09T00:00:00.000Z",
+    "lead": {
+      "title": "NVIDIA 董事会宣布就 CEO 黄仁勋遭外国情报行动瞄准一事启动独立调查",
+      "leadParagraph": "NVIDIA 董事会于 11 月 8 日发布声明，就近期有关创始人兼 CEO 黄仁勋成为外国情报行动目标的报道启动独立调查。调查由独立董事组成的委员会在外部独立律师协助下监督，黄仁勋全力配合。董事会表示没有理由认为国家安全或 NVIDIA 机密已受损，但调查将审视所有可用信息，并表示对黄仁勋及其领导团队有信心。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-09"
+    }
+  }
+}
