@@ -1,0 +1,488 @@
+{
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T00:00:14.631Z",
+  "title": "2026-11-12 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "ERNIE 5.5 Flash Preview",
+      "title_cn": "百度发布 ERNIE 5.5 Flash Preview，权重将于 11 月 25 日前开源",
+      "summary_cn": "百度发布 ERNIE 5.5 Flash Preview，是基于此前 Base 模型的首个后训练版本，总参数 280B、激活参数 14B，支持 1M 上下文。模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源；官方展示了游戏开发、3D 建模、知识工作、视频创作等 Agent 场景成果，并称该版本为后训练中间版本，正式版仍将持续优化。",
+      "why_it_matters_cn": "官方给出总参 280B、激活 14B、1M 上下文等规格和基准对比，可据此评估该模型在编码与 Agent 任务上的定位。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "百度文心 ERNIE 官方博客",
+      "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/",
+      "published_at": "2026-11-10T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "qd3f4j2hd0t98tqf28iv7pu2j",
+      "upstream_url": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Praxis-1 Is Now Available",
+      "title_cn": "Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可",
+      "summary_cn": "Runway 宣布世界动作模型 Praxis-1 以 Apache 2.0 开放权重面向所有人开放。该模型为 27B 参数 MoE 扩散 Transformer，同时预测视频与动作，在 NVIDIA RoboLab-120 榜单以 46.2% 成功率居首，超过 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）和 π0.5（28.0%）。",
+      "why_it_matters_cn": "原文给出 RoboLab-120 榜单具体成绩、开源范围和适配方式，读者可以据此评估它在自有硬件上的部署可行性。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Runway：News（网页）",
+      "url": "https://runwayml.com/news/company-news/praxis-1-is-now-available",
+      "published_at": "2026-11-11T23:25:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "bx3sq4dxfqblyztkuiktiz0wv",
+      "upstream_url": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "title_cn": "Google DeepMind 发布 AlphaGenome 2，预测基因变异对特定细胞类型的影响",
+      "summary_cn": "Google DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，可预测 DNA 变异如何影响数百种人类细胞类型中的基因表达。模型改为条件式架构，训练数据超过 1.07 亿个单细胞样本、覆盖 68 种组织，在 TenK10K 数据集上识别的因果变异数量接近上一代的两倍（30% vs 16%），并能在不重新训练的情况下泛化到新的单细胞实验。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Google DeepMind：Blog（RSS）",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "published_at": "2026-11-11T15:00:15.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "wp91dm5fgirnzvh99js3vv6j2",
+      "upstream_url": "https://aihot.news/items/wp91dm5fgirnzvh99js3vv6j2",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wp91dm5fgirnzvh99js3vv6j2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "title_cn": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
+      "summary_cn": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。",
+      "why_it_matters_cn": "原文给出延迟、价格和基准对比等具体数据，读者可以据此评估这个封闭式决策接口是否适合替代自训分类器。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Google Blog：AI（RSS）",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "published_at": "2026-11-11T18:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "r8hsm3m3munjwk1n3u885zszw",
+      "upstream_url": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it still trails Anthropic",
+      "title_cn": "OpenAI Q3 营收达 100 亿美元，效率仍落后于 Anthropic",
+      "summary_cn": "据《华尔街日报》和 The Information 报道，OpenAI Q3 环比增长约 50% 至 100 亿美元，但调整后经营亏损从 101 亿升至 109 亿美元。",
+      "why_it_matters_cn": "报道汇总了两家公司财报数据，读者可以据此比较 OpenAI 与 Anthropic 在企业市场和经营效率上的差距。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/",
+      "published_at": "2026-11-11T12:12:47.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "mzxxannvi5wge7wz0c0jfdyz5",
+      "upstream_url": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "马斯克旗下 Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼",
+      "title_cn": "Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼",
+      "summary_cn": "据彭博社报道，多名未成年受害者就 Grok 被用于把普通照片篡改成儿童性虐待材料（CSAM）对马斯克旗下 xAI 提起多起集体诉讼，律师估计符合索赔条件的受害者可能多达数千人。",
+      "why_it_matters_cn": "报道借受害者案例梳理多起针对 xAI 的集体诉讼，呈现 AI 生成内容责任归属与第 230 条适用之争的争议焦点。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "IT之家·人工智能",
+      "url": "https://www.ithome.com/1/025/809.htm",
+      "published_at": "2026-11-11T13:56:44.467Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "iz168hjk4ew8jpiokzjqcwbgi",
+      "upstream_url": "https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline",
+      "title_cn": "安全公司 Claroc：94.7% 的 Grok 构建应用可被任意访问，含患者数据和 SpaceXSI 内部文件",
+      "summary_cn": "安全公司 Claroc 报告称，在检查的 37,571 个仍在线的 Grok 构建应用中，35,578 个（94.7%）无需登录即可访问，原因是发布对话框默认预选\"Anyone with the link\"，且每个应用的独立子域名会进入可检索的 passive DNS 数据库。",
+      "why_it_matters_cn": "报告给出可复现的暴露机制和具体数字，读者可以据此审视 AI 生成应用分享默认设置的安全风险。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
+      "published_at": "2026-11-11T12:53:07.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "wlmgb3vb5ycgom7wq44felnin",
+      "upstream_url": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic reveals in its amended S1 filing today, more than $10 billion in new agreements with Microsoft and Google.",
+      "title_cn": "Anthropic 修订版 S1 文件披露与 Microsoft 和 Google 超 100 亿美元级新算力协议",
+      "summary_cn": "Anthropic 在当日修订的 S1 文件中披露与 Microsoft 和 Google 达成超 100 亿美元的新协议。Microsoft 承诺到 2033 年 6 月支出至少 472 亿、最高 492 亿美元，Google 最低承诺从约 1145 亿升至约 1213 亿美元，两笔均不可撤销、无论是否使用容量都须付款。文件还提到上季度短期算力支出 50 亿美元且价格明显更高。",
+      "why_it_matters_cn": "S1 修正案披露了 Microsoft 和 Google 云承诺的最新金额和不问使用照付的条款，可以据此理解 Anthropic 的算力开支结构。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2120369586096976098",
+      "published_at": "2026-11-11T04:14:38.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "xshgfc1vcvgrdkvnomagmefwy",
+      "upstream_url": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams",
+      "title_cn": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
+      "summary_cn": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。",
+      "why_it_matters_cn": "Anthropic 用四个模拟环境测出多用户多智能体团队的协调失败模式，并发布 MAMUBench 供社区复测。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Anthropic：Alignment Science Blog（网页）",
+      "url": "https://alignment.anthropic.com/2026/worse-together/",
+      "published_at": "2026-11-11T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "z9u4n1e7zfapxjozcn97quhdp",
+      "upstream_url": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "MCP vs CLI vs Skills: What Each Costs in Context",
+      "title_cn": "OpenRouter 实测 MCP vs CLI vs Skills 的上下文 token 成本",
+      "summary_cn": "OpenRouter 实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 成本：在 Claude Sonnet 5.5 上 CLI 用 1。",
+      "why_it_matters_cn": "原文实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 开销，给出缩窄工具和 Tool Search 的降本方法，可直接迁移到自己的智能体。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenRouter：Announcements（RSS）",
+      "url": "https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/",
+      "published_at": "2026-11-11T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "wkpj021rmg6sgthgj9zwevei4",
+      "upstream_url": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "LLM Quantization: What fp8 and fp4 Do to Quality and Price",
+      "title_cn": "OpenRouter 实测 fp8 与 fp4 量化对模型质量和价格的影响",
+      "summary_cn": "OpenRouter 发布量化解析文章，讲解 LLM 量化原理，并报告 2026 年 10 月 20 日对 1455 个 provider 端点和 Qwen3.8 27B 六个端点的实测。",
+      "why_it_matters_cn": "作者基于自家 280 个任务的实测数据讨论量化精度与价格的关系，并给出 provider.quantizations 的可操作用法，结论边界交代得清楚。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenRouter：Announcements（RSS）",
+      "url": "https://openrouter.ai/blog/insights/llm-quantization/",
+      "published_at": "2026-11-11T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "i3gp1xj4j11gi4qoreya18izb",
+      "upstream_url": "https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Claude Fable 5.2证明了，AI可以靠代码吞噬一切。",
+      "title_cn": "Claude Fable 5.2 实测观察：大模型正用代码吞噬审美与创作",
+      "summary_cn": "作者实测 Claude Fable 5.2 与 Gemini 4 Carbon 并对比后认为，Fable 5.2 的突出差异在于审美，这是无法用 Benchmark 评估但可直观感受的东西。",
+      "why_it_matters_cn": "作者以设计师出身的一手实测和社区案例，讨论大模型用代码承载审美、吞噬数字创作的趋势判断。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "公众号：数字生命卡兹克",
+      "url": "https://mp.weixin.qq.com/s/zgBGhOsuh6Z_5Enmzos3rQ",
+      "published_at": "2026-11-10T23:56:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "uditkv6u7rrzmtj1nx7pxbgjj",
+      "upstream_url": "https://aihot.news/items/uditkv6u7rrzmtj1nx7pxbgjj",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uditkv6u7rrzmtj1nx7pxbgjj"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "WSJ: Nvidia’s board, which publicly backed Jensen Huang on Sunday, is now close to deciding whether to remove its founder CEO.",
+      "title_cn": "WSJ 报道 Nvidia 董事会接近决定是否罢免 CEO 黄仁勋",
+      "summary_cn": "WSJ 报道，Nvidia 董事会此前公开支持黄仁勋，如今接近决定是否罢免这位创始人 CEO。起因是黄仁勋与一名被指为中国情报人员的女子交往，随后又曝出与一名 Nvidia 员工的第二段婚外情；周日开始独立调查时董事会表示没有理由认为 Nvidia 机密泄露。",
+      "why_it_matters_cn": "原文汇总了董事会调查、持股与接班安排等关键事实，读者可据此理解 Nvidia 治理层面的最新走向。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2120663635479625930",
+      "published_at": "2026-11-11T23:43:05.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "aoxmmcsudy1gf9xmti7slu1wd",
+      "upstream_url": "https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "FT: Anthropic’s bankers plan to raise its IPO price after heavy investor demand, lifting the target valuation back to $1.5T or more.",
+      "title_cn": "Anthropic 投资需求火热，承销商拟将 IPO 目标估值上调回 $1.5T 或更高",
+      "summary_cn": "FT 报道，因投资者需求旺盛，Anthropic 承销商计划上调 IPO 定价，把目标估值拉回 $1.5T 或更高。周二文件设定 $70-$78 的发行区间，计入员工期权和受限股后对应 $1.26T-$1.41T 估值；若定价超出区间，募资将超过 $100B，其中 Google、Nvidia 和 Microsoft 将按 IPO 价格投资 $26B。",
+      "why_it_matters_cn": "报道补充了定价区间、募资用途和三大科技公司的入股安排，可帮助读者理解这桩 IPO 的资金结构与定价逻辑。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2120320127484969162",
+      "published_at": "2026-11-11T00:58:06.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "m7ul4psbkb5zyp0t254fr986o",
+      "upstream_url": "https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "We just shipped multiplayer in Cursor Projects",
+      "title_cn": "Cursor Projects 推出多人协作功能",
+      "summary_cn": "Cursor 宣布在 Projects 中上线多人协作（multiplayer）功能，每个人拥有自己的 Agent，基于同一共享任务板和共享上下文工作。当某个 Agent 需要队友的工作成果时，会直接向队友的 Agent 发起请求。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：Matt Palmer（SpaceXSI，Grok Bot） (@mattyp)",
+      "url": "https://x.com/mattyp/status/2120307529674883177",
+      "published_at": "2026-11-11T00:08:03.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "wybngr5g8p05ojp6m139opvra",
+      "upstream_url": "https://aihot.news/items/wybngr5g8p05ojp6m139opvra",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/wybngr5g8p05ojp6m139opvra"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Welcome to the B2A Economy",
+      "title_cn": "a16z 提出 B2A 经济：AI 智能体正成为新的流量与分发渠道",
+      "summary_cn": "a16z 发布文章提出 B2A 经济概念，认为 AI 智能体已占大多数网络流量，正从回答问题转向代替用户完成任务和消费。",
+      "why_it_matters_cn": "a16z 提出 B2A 经济框架，用 Shopify、Vercel、Stripe 等多组增长数据拆解智能体如何成为新的分发渠道。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "a16z：News（RSS）",
+      "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy",
+      "published_at": "2026-11-11T15:02:38.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "bisaluc0ii0f4s1gzi2zxbr1k",
+      "upstream_url": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 17,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Fable 5.2 or Opus? When to use each model in Claude Code",
+      "title_cn": "Claude Code 中如何选择 Fable 5.2 与 Opus 等模型",
+      "summary_cn": "Claude 发布视频教程，讲解在 Claude Code 中何时使用 Fable 5.2、Opus 5.5，何时降级到 Sonnet 5.5 或 Haiku 5.5，以及如何把一个任务拆分给多个模型。视频覆盖复杂编码与开放式技术工作、低成本明确任务等场景，并提供在自有任务上测量各模型表现的指南链接；可用性与用量限制因套餐而异。",
+      "why_it_matters_cn": "官方给出在 Claude Code 中按任务复杂度和成本在 Fable 5.2、Opus 5.5、Sonnet 5.5、Haiku 5.5 间选择的场景划分，并提供自测指南链接。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "Claude：YouTube（RSS）",
+      "url": "https://www.youtube.com/watch?v=C33hJGt-ySg",
+      "published_at": "2026-11-11T17:30:20.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "ep5oqt7m4l7gn3tqieilznmuk",
+      "upstream_url": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 18,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Qwen4预览版，上千问APP抢先体验！",
+      "title_cn": "Qwen4 预览版上线千问APP，千问Go!会员可抢先体验",
+      "summary_cn": "千问APP已同步接入Qwen4-Max预览版，用户通过千问Go!即可抢先体验。全新一代千问大模型Qwen4即将发布，知识理解、世界感知以及Coding与Agentic能力均有进阶。11月11日起千问Go!会员推出限时折扣，最低9.9元。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "公众号：千问APP（阿里）",
+      "url": "https://mp.weixin.qq.com/s/qwA5CKjzDgEIxQJYgmdX7Q",
+      "published_at": "2026-11-11T03:40:19.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "toajz2icztxxscbv2l1k3ascx",
+      "upstream_url": "https://aihot.news/items/toajz2icztxxscbv2l1k3ascx",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/toajz2icztxxscbv2l1k3ascx"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：Google DeepMind 发布 AlphaGenome 2，预测基因变异对特定细胞类型的影响",
+    "推荐理由缺失：Cursor Projects 推出多人协作功能",
+    "推荐理由缺失：Qwen4 预览版上线千问APP，千问Go!会员可抢先体验"
+  ],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-12",
+    "generated_at": "2026-11-12T00:00:14.631Z",
+    "window_start": "2026-11-11T00:00:00.000Z",
+    "window_end": "2026-11-12T00:00:00.000Z",
+    "lead": {
+      "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
+      "leadParagraph": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-12"
+    }
+  }
+}
