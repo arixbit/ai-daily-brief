@@ -1,0 +1,513 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T00:00:48.174Z",
+  "title": "2026-11-13 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "title_cn": "Google DeepMind 发布 Gemini 4 Hydrogen",
+      "summary_cn": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。",
+      "why_it_matters_cn": "官方给出了与同类模型的多项基准对比和定价细节，读者可以据此判断它在多模型工作流中的定位。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Google DeepMind：Blog（RSS）",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "published_at": "2026-11-12T18:00:50.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "uy1ayrrlqx1snqsv4lub7whsa",
+      "upstream_url": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Introducing Claude Meetings",
+      "title_cn": "Anthropic 推出 Claude Meetings，Claude 以参会者身份加入视频会议",
+      "summary_cn": "Anthropic 推出 Claude Meetings beta，Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。",
+      "why_it_matters_cn": "官方原文给出 beta 范围、免费期限和隐私默认设置，读者可以据此评估是否把它纳入团队会议流程。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/claude-meetings",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "l36ne5q2gsdx6thyia7fi10kn",
+      "upstream_url": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Using Claude Opus 5.5 as your daily driver for knowledge work",
+      "title_cn": "Anthropic 建议把 Claude Opus 5.5 作为知识工作的日常主力模型",
+      "summary_cn": "Anthropic 宣布 Claude Opus 5.5 成为 Pro、Max、Ultra 和 Team 套餐的默认模型，并推荐将其作为研究、分析和写作等知识工作的日常主力。",
+      "why_it_matters_cn": "官方给出各档模型在知识工作中的定位、价格与用法建议，并附带可执行的提示词习惯调整方法。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "t5pucqx6ac58z0ed1b0875ci0",
+      "upstream_url": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Pre-order today at https://glasses.google and demo them in select Warby Parker, Gentle Monster, and Google stores (shipping Dec 10th!)",
+      "title_cn": "Google 智能眼镜开放预购，12 月 10 日发货",
+      "summary_cn": "Josh Woodward 宣布 Google 智能眼镜开启预购，用户可在 https://glasses.google 下单，12 月 10 日发货。首批用户可到部分 Warby Parker、Gentle Monster 和 Google 门店试戴体验。",
+      "why_it_matters_cn": "Google Labs VP 本人官宣预购，给出了官网入口、线下试戴门店和 12 月 10 日发货日期，信息具体可查。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：Josh Woodward (@joshwoodward, Google Labs VP)",
+      "url": "https://x.com/joshwoodward/status/2120990821902397885",
+      "published_at": "2026-11-12T21:23:12.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "hjhcsj440ym8b7ynttcx4433j",
+      "upstream_url": "https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Replit Agent can now buy for your business and help you reach customers",
+      "title_cn": "Replit Agent 新增代购能力和 Google Ads 投放功能",
+      "summary_cn": "Replit 给 Replit Agent 新增两项能力：通过 Stripe Link 和 Visa 为企业代购物资，以及在 Replit 内直接创建和投放 Google Ads 覆盖 Search、YouTube 等渠道。",
+      "why_it_matters_cn": "原文说明两项新能力的具体流程和安全设计，例如支付需逐笔审批、审批检查由代码强制执行，可帮助读者判断适用场景。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Replit：Blog（RSS）",
+      "url": "https://replit.com/blog/replit-agent-ads-commerce",
+      "published_at": "2026-11-12T16:45:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "k7sfjumcmtq0zswb5yj5kmju1",
+      "upstream_url": "https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "NVIDIA Announces CEO Transition",
+      "title_cn": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
+      "summary_cn": "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。",
+      "why_it_matters_cn": "NVIDIA 官方公告了 CEO 变动的完整安排，读者可以从中了解过渡机制、临时人选和后续财报安排等关键事实。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "NVIDIA：Newsroom（RSS）",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "published_at": "2026-11-12T13:48:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "qsbjbz754aodhcijq56puh6va",
+      "upstream_url": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Our initial public offering: https://ipo.anthropic.com",
+      "title_cn": "Anthropic 官宣首次公开募股（IPO）",
+      "summary_cn": "Anthropic 官方宣布启动首次公开募股（IPO），并公布入口 ipo.anthropic.com。Anthropic 已向 SEC 提交注册声明及招股说明书，证券在注册声明生效前不得出售，初步招股说明书可经高盛与摩根士丹利获取。",
+      "why_it_matters_cn": "Anthropic 官方宣布 IPO 并给出注册文件与承销商信息，读者可自行查阅 SEC 招股说明书了解发行细节。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Anthropic (@AnthropicAI)",
+      "url": "https://x.com/AnthropicAI/status/2120841731302154708",
+      "published_at": "2026-11-12T11:30:46.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "k99zjo9hbtous9r6vmmz7pxyh",
+      "upstream_url": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "When the Central Bank of AI Changes Chairs",
+      "title_cn": "Jensen Huang 辞任 Nvidia CEO 后对 AI 经济的五点影响分析",
+      "summary_cn": "Tomasz Tunguz 分析 Jensen Huang 即日辞任 Nvidia 总裁、CEO 及董事后对 AI 行业的影响，CFO Colette Kress 出任临时 CEO。",
+      "why_it_matters_cn": "作者把 Nvidia 换帅类比央行换主席，用投融资和担保数据拆解其对初创融资、开源与定制芯片格局的传导路径。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Tomasz Tunguz 博客（VC 分析）",
+      "url": "https://tomtunguz.com/the-impact-of-jensens-resignation/",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ivpl9ziip8mpoa90avi3ke9pj",
+      "upstream_url": "https://aihot.news/items/ivpl9ziip8mpoa90avi3ke9pj",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ivpl9ziip8mpoa90avi3ke9pj"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
+      "title_cn": "民主党对 Nvidia 对华芯片销售启动调查，致函质疑黄仁勋与特朗普的安排",
+      "summary_cn": "民主党议员 Rep. Richard Neal 和 Sen. Ron Wyden 就特朗普政府处理 Nvidia 对华芯片销售一事开启调查，并致函商务部长 Howard Lutnick 要求保存相关记录。",
+      "why_it_matters_cn": "原文梳理了民主党对 Nvidia 对华芯片销售安排的调查要点，包括关税分成与许可细节，读者可借此了解监管争议的具体脉络。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+      "published_at": "2026-11-12T22:42:51.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "cfh0nazzl7eedgttz8n99fza4",
+      "upstream_url": "https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Apple 1985 (Steve Jobs), Atari 1978 (Nolan Bushnell), Uber 2017 (Travis Kalanick), OpenAI 2023 (Sam Altman).",
+      "title_cn": "Rohan Paul 类比乔布斯被逐，评 NVIDIA 放走黄仁勋",
+      "summary_cn": "Lex Fridman 发文称 NVIDIA 让黄仁勋离开对美国和人类都是巨大错误，堪比 Apple 当年解雇 Steve Jobs 但影响更大，并为其品格辩护、回应间谍传闻。Rohan Paul 转引并列举 Atari 1978（Nolan Bushnell）、Apple 1985（Steve Jobs）、Uber 2017（Travis Kalanick）、OpenAI 2023（Sam Altman），称每隔几年董事会就会重新认识到创始人本身就是战略。",
+      "why_it_matters_cn": "作者以历史先例类比 NVIDIA 请辞黄仁勋事件，指出创始人往往就是公司战略本身，提供了一个观察董事会决策的视角。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2120994977421705296",
+      "published_at": "2026-11-12T21:39:43.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "k1kga19xtdab67lhplor8he8n",
+      "upstream_url": "https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/k1kga19xtdab67lhplor8he8n"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How We Built a Self-Correcting Localization System for OpenRouter",
+      "title_cn": "OpenRouter 详解自纠错网站本地化流水线：GPT-6.1 Sol 翻译 7 种语言全站约 $460",
+      "summary_cn": "OpenRouter 上线简体中文、日语等 7 种语言 Beta 本地化，并详解配套的自纠错翻译流水线：GPT-6.1 Sol 翻译 16,918 条字符串，经代码检查、同模型校验和每日 AI 审查重试，最坏情况每条约 20 次模型调用。全站重译 7 种语言约 $460，约为 Smartling 机器翻译牌价的 6%，错误报告会转化为术语规则、风格注释或评测用例。",
+      "why_it_matters_cn": "原文完整披露了自校验本地化流水线的设计、评测数据和成本对比，其指纹重排与代码前置检查方法可直接迁移。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenRouter：Announcements（RSS）",
+      "url": "https://openrouter.ai/blog/announcements/openrouter-in-8-languages/",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "cve017k4le2q7l8x1bfr2xdjx",
+      "upstream_url": "https://aihot.news/items/cve017k4le2q7l8x1bfr2xdjx",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/cve017k4le2q7l8x1bfr2xdjx"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How to Stop an AI Agent Stuck in an Infinite Loop",
+      "title_cn": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
+      "summary_cn": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。",
+      "why_it_matters_cn": "原文用六个模型的实测数据给出防止 Agent 死循环的四层防护，含配置细节和成本对比，方法可直接迁移到自己的 Agent 代码。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenRouter：Announcements（RSS）",
+      "url": "https://openrouter.ai/blog/tutorials/ai-agent-infinite-loop/",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "vq9nwgwhtm31cgoliyb7ydyde",
+      "upstream_url": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Atlas is now available to everyone!! I’m very excited to see what users can build with our newest world model! 🤩🌎",
+      "title_cn": "World Labs 开放世界模型 Atlas，支持生成关键帧、视频片段和 3D Gaussian splats",
+      "summary_cn": "World Labs 宣布 Atlas 世界模型向所有人开放，李飞飞转发并表达期待用户用它构建的内容。官方为用户提供了应用和 API 端点，可用 Atlas 生成关键帧、视频片段或 3D Gaussian splats。",
+      "why_it_matters_cn": "World Labs 官宣世界模型 Atlas 向所有人开放，并说明可通过应用和 API 生成关键帧、视频片段或 3D Gaussian splats。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
+      "url": "https://x.com/drfeifei/status/2120942509786558671",
+      "published_at": "2026-11-12T18:11:14.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "lazmov9ciw8y5uqpuda9qcizm",
+      "upstream_url": "https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "The Claude Tag guide for startups",
+      "title_cn": "Anthropic 发布 Claude Tag 创业公司使用指南",
+      "summary_cn": "Anthropic 发布 Claude Tag（beta）创业公司使用指南，基于对 Kikoff、NavigateAI、Orderful、Moritz 等 8 家高增长创业公司的访谈，总结了 on-call 分诊、Thread to PR、公司大脑、自助数据、例行报告五大场景及频道配置建议。",
+      "why_it_matters_cn": "Anthropic 结合八家创业公司的真实部署，给出 Claude Tag 在告警分诊、Thread 到 PR、公司知识库等场景的具体配置方法。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/claude-tag-guide-for-startups",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "djhxmxr9hq0ekn8iwdqt5usih",
+      "upstream_url": "https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "What Huawei’s Horinger data center reveals about China’s compute gap",
+      "title_cn": "Epoch AI 分析华为和林格尔数据中心，揭示中美算力差距",
+      "summary_cn": "Epoch AI 通过卫星影像和冷却设备模型估算，华为和林格尔数据中心已投运约 105,000 颗 Ascend 910C 和 8,000 颗 Ascend 910B 芯片，对应约 81,000 H100 等效算力，为全球最大 AI 数据中心 SpaceX Colossus 2 的约 7%。",
+      "why_it_matters_cn": "Epoch AI 用卫星影像和冷却模型测算华为和林格尔数据中心的算力规模，读者可以看到中美算力差距的具体量化方法。",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "Epoch AI：Gradient Updates（RSS）",
+      "url": "https://epochai.substack.com/p/what-huaweis-horinger-data-center",
+      "published_at": "2026-11-12T16:03:15.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "adkgofriq3tvp6qrawfc63yw4",
+      "upstream_url": "https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Improving Fuzzy Robustness in LLM Safety with Automated Red Teaming",
+      "title_cn": "OpenAI 用自动化红队训练提升 GPT-6 Astra 和 Sol 在高风险领域的模糊鲁棒性",
+      "summary_cn": "OpenAI 研究团队介绍如何用自动化红队提升模型在网络、生物等高风险双用途领域的模糊鲁棒性，通过扩大攻击者模型的测试时算力迭代搜索越狱，并要求攻击在多次重复测试中成功（worst@n），生成可靠的对抗训练数据用于 RL 训练。",
+      "why_it_matters_cn": "OpenAI 自己披露的训练方法细节，展示了用自动化攻击生成数据提升模糊鲁棒性的可控实验和结果。",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "OpenAI：Alignment 研究博客（RSS）",
+      "url": "https://alignment.openai.com/fuzzy-robustness/",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "yg97h3u5vthadivuv5po5f0aw",
+      "upstream_url": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 17,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "How 3D transforms and Figma’s agent brought a launch video to life",
+      "title_cn": "Figma 3D transforms 开放测试上线，品牌团队分享用它制作发布视频的过程",
+      "summary_cn": "Figma 宣布 3D transforms 进入 open beta，面向所有 Full seat 用户开放，可用 3D transform 和 perspective 效果在空间中倾斜、旋转和排布文本、图像、矢量与框架，效果非破坏性，原稿保持可编辑。",
+      "why_it_matters_cn": "原文以团队自做 3D transforms 发布视频为例，展示该功能与 Figma agent 协作的具体工作流，读者可参考可迁移的用法思路。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "Figma AI / Agent / Make",
+      "url": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
+      "published_at": "2026-11-12T14:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "x751c9ptxg9qviw1ts32aoa79",
+      "upstream_url": "https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 18,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Introducing Grok Bot 1.0. AI teammates that work alongside your whole team.",
+      "title_cn": "Grok Bot 1.0 发布，主打团队协作的 AI 智能体队友",
+      "summary_cn": "Grok Bot 发布 1.0 版本，定位为能与整个团队协作的 AI 智能体队友。用户可以分享 Bot，在 Slack 和 Teams 中与它们协作，邀请它们参加会议，并观察它们逐步学习、变得更高效。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：Grok Bot (@bot)",
+      "url": "https://x.com/bot/status/2120582957782200586",
+      "published_at": "2026-11-11T18:22:30.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "yl9gdujoqcqyf76ih8c75nnx3",
+      "upstream_url": "https://aihot.news/items/yl9gdujoqcqyf76ih8c75nnx3",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/yl9gdujoqcqyf76ih8c75nnx3"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 19,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Inkling 2 Small’s weights are now available for download on HuggingFace under an Apache 2.0 license.",
+      "title_cn": "Thinking Machines 开源 Inkling 2 Small 模型权重，采用 Apache 2.0 许可",
+      "summary_cn": "Thinking Machines 宣布 Inkling 2 Small 的模型权重现已在 HuggingFace 开放下载，采用 Apache 2.0 许可，链接为 https://huggingface.co/thinkingmachines/Inkling-2-Small，鼓励用户按自己的需求进行定制。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "X：Thinking Machines (@thinkymachines)",
+      "url": "https://x.com/thinkymachines/status/2120982625582195011",
+      "published_at": "2026-11-12T20:50:38.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "qnfdpojlsa0nsd1h801kt1b9s",
+      "upstream_url": "https://aihot.news/items/qnfdpojlsa0nsd1h801kt1b9s",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qnfdpojlsa0nsd1h801kt1b9s"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：Grok Bot 1.0 发布，主打团队协作的 AI 智能体队友",
+    "推荐理由缺失：Thinking Machines 开源 Inkling 2 Small 模型权重，采用 Apache 2.0 许可"
+  ],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-13",
+    "generated_at": "2026-11-13T00:00:48.174Z",
+    "window_start": "2026-11-12T00:00:00.000Z",
+    "window_end": "2026-11-13T00:00:00.000Z",
+    "lead": {
+      "title": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
+      "leadParagraph": "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-13"
+    }
+  }
+}
