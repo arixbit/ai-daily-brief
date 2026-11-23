@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23T00:00:32.455Z",
+  "title": "2026-11-23 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Exactly! 💙 The real impact of small models comes from making AI accessible, affordable, and useful in everyday life. Excited to see more...",
+      "title_cn": "MiniCPM 8B 成为老挝国家模型，端侧小模型加速落地多国",
+      "summary_cn": "面壁智能转发并认同 @xiaoanlab 对 MiniCPM 端侧落地的观察：截至 2026 年 11 月 MiniCPM 下载量超过 7000 万，其 8B 老挝国家模型接入老挝政府 G-Chat v2 通讯软件，老挝翻译在国际基准上超过 GPT-4o。马来西亚用 VoxCPM2 做语音交互，肯尼亚一家银行在其上运行端侧风控 Agent，开发者基于它推出离线应用；小模型之争正从参数量转向谁真正嵌入日常系统。",
+      "why_it_matters_cn": "引用内容梳理了 MiniCPM 在老挝、马来西亚、肯尼亚等实际落地情况，读者可借此看小模型如何嵌入日常系统而非比拼参数量。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "url": "https://x.com/OpenBMB/status/2124464239670964531",
+      "published_at": "2026-11-22T11:25:20.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "dr26culfdd1cb21w56i8iruts",
+      "upstream_url": "https://aihot.news/items/dr26culfdd1cb21w56i8iruts",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/dr26culfdd1cb21w56i8iruts"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Perplexity and Intelligence",
+      "title_cn": "OpenAI 提议以困惑度作为行业共享指标并公开内部预训练测量数据",
+      "summary_cn": "OpenAI 撰文提议将 perplexity（交叉熵损失）确立为跨模型开发者比较和安全标准的共享指标，并公开其内部预训练测量数据。",
+      "why_it_matters_cn": "OpenAI 公开自 GPT-3.5 以来的内部 log-perplexity 数据，并提出以困惑度作为跨实验室共享的安全限速指标。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "published_at": "2026-11-22T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "r7kb35fpdwc1m2iqsmd310tdj",
+      "upstream_url": "https://aihot.news/items/r7kb35fpdwc1m2iqsmd310tdj",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/r7kb35fpdwc1m2iqsmd310tdj"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Thanks for the detailed hands-on review! 💙 Great to see MiniCPM5-2B being used in a local-first workflow. We really appreciate you shari...",
+      "title_cn": "用户实测用 MiniCPM5-2B 在 Mac 上本地跑通体检报告分析",
+      "summary_cn": "用户@cxjwin 分享在 Mac（M4 Pro、48GB）上用 Homebrew 装 llama.cpp 跑 minicpm5-2b、colima 起 Docker 本地运行开源项目 Mirobody 的实测：14 页 PDF 首次处理漏掉 3 页扫描版化验单，截图单独上传后 58 行化验数值逐项与原件对上，其中 20 行成功映射到 LOINC 标准编码，肌酐因名称歧义留空未猜。问超标指标时 2B 模型走 11 步找到全部 5 项箭头指标，但把一项在范围内的血糖误判为超标。接 Claude Code 时改用演示账号避免数据上传。Mirobody 由 Theta Health 以 Apache-2.0 开源，网页版和微信小程序也基于它。",
+      "why_it_matters_cn": "用户实测记录了本地跑通 Mirobody 的完整流程，也包括扫描页漏读、LOINC 编码对不上和 2B 模型答错的细节，可作本地部署健康数据工作流的参考。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "url": "https://x.com/OpenBMB/status/2124461770043785636",
+      "published_at": "2026-11-22T11:15:31.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "g3vdho0vzm8rzriiz5grruy3m",
+      "upstream_url": "https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "菲尔兹奖得主梅纳德谈“AI 攻克黎曼猜想”：相信证明正确，但成果被人理解、才可能得到认可",
+      "title_cn": "菲尔兹奖得主梅纳德谈 Claude 合作证明黎曼猜想：相信证明正确，但需被理解才可能获认可",
+      "summary_cn": "2022 年菲尔兹奖得主、牛津大学数学教授詹姆斯·梅纳德（James Maynard）在采访中表示，他认为 Anthropic 数学家莱文特·阿尔珀格（Levent Alpöge）与 Claude 合作完成的黎曼猜想证明是正确的，依据是该证明已通过 Lean 库形式化验证并经独立核实，且阿尔珀格过往有可靠记录。",
+      "why_it_matters_cn": "菲尔兹奖得主梅纳德对 AI 辅助黎曼猜想证明的判断，提醒读者形式化验证通过不等于数学界认可，理解证明思想才是关键。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "IT之家·人工智能",
+      "url": "https://www.ithome.com/1/030/677.htm",
+      "published_at": "2026-11-22T09:35:58.183Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "p9h5xzsooms0foxeakoivy7qt",
+      "upstream_url": "https://aihot.news/items/p9h5xzsooms0foxeakoivy7qt",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/p9h5xzsooms0foxeakoivy7qt"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-23",
+    "generated_at": "2026-11-23T00:00:32.455Z",
+    "window_start": "2026-11-22T00:00:00.000Z",
+    "window_end": "2026-11-23T00:00:00.000Z",
+    "lead": {
+      "title": "OpenAI 提议以困惑度作为行业共享指标并公开内部预训练测量数据",
+      "leadParagraph": "OpenAI 撰文提议将 perplexity（交叉熵损失）确立为跨模型开发者比较和安全标准的共享指标，并公开其内部预训练测量数据。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-23"
+    }
+  }
+}
