@@ -1,0 +1,432 @@
+{
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T00:00:16.903Z",
+  "title": "2026-11-24 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "GLM-5.4：瞄向泛Coding，首个Loop Transformer带来的惊喜",
+      "title_cn": "智谱发布GLM-5.4：首个Loop Transformer架构旗舰模型开启泛Coding",
+      "summary_cn": "智谱发布旗舰模型GLM-5.4，为第一代采用Loop Transformer架构的模型，让28层共享权重循环执行两轮，在参数量不变下获得更深推理，智能水平达到2-3T级模型效果，并开启泛Coding能力。",
+      "why_it_matters_cn": "原文给出Loop Transformer的架构细节、30B对比实验和部署成本数据，读者可以据此理解权重共享循环深度在旗舰规模上的落地方式。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "公众号：智谱（GLM）",
+      "url": "https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ",
+      "published_at": "2026-11-23T09:42:11.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "d4hhqnlmrclsx7d6idtvq95wz",
+      "upstream_url": "https://aihot.news/items/d4hhqnlmrclsx7d6idtvq95wz",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/d4hhqnlmrclsx7d6idtvq95wz"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Introducing Claude Ship",
+      "title_cn": "Anthropic 推出 Claude Ship 测试版，自动完成 PR 审查、修复与审批",
+      "summary_cn": "Anthropic 发布 Claude Ship 测试版，由 Code Review（已正式可用）、PR Steward 和 Claude Approvals 两个 beta 智能体组成，可审查 PR、推送修复并按团队写进仓库的策略文件决定能否合并。",
+      "why_it_matters_cn": "原文给出三个组件的分工、审批策略文件和计费细节，读者可据此评估如何把 PR 流程交给智能体托管。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/introducing-claude-ship",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "t7jlbaldqf2zcliuva1sofoks",
+      "upstream_url": "https://aihot.news/items/t7jlbaldqf2zcliuva1sofoks",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/t7jlbaldqf2zcliuva1sofoks"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "You should feel a significant jump in quality of answers on ChatGPT once rolled out to you.",
+      "title_cn": "ChatGPT 推出面向日常对话优化的 GPT-6.2 Sol",
+      "summary_cn": "ChatGPT 宣布在 Chat 标签页推出面向日常对话优化的 GPT-6.2 Sol，今日起面向 Plus、Pro、Business 和 Enterprise 用户开放。该版本更擅长处理复杂请求和在线信息查找，能识别照片中标签文字、路牌符号等细节，并更好地根据价格、位置等偏好缩小选项范围。转发者 Tibo 表示答案质量会有明显提升，年底前应用体验还会更快、更简洁。",
+      "why_it_matters_cn": "转发了 GPT-6.2 Sol 的具体改进点与覆盖范围，可以了解这次日常对话体验的实际变化。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：Tibo (@thsottiaux)",
+      "url": "https://x.com/thsottiaux/status/2124998553856844186",
+      "published_at": "2026-11-23T22:48:30.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "gl6fl6hsisrt26tg83li0j4gk",
+      "upstream_url": "https://aihot.news/items/gl6fl6hsisrt26tg83li0j4gk",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/gl6fl6hsisrt26tg83li0j4gk"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "title_cn": "Google Search AI Mode 支持连接 Google Wallet、Drive 和 Gemini 应用",
+      "summary_cn": "Google 宣布在 Search 的 AI Mode 中扩展 Personal Intelligence，用户可选择安全连接 Google Wallet、Drive 和 Gemini 应用，Wallet 即日起开放，Drive 和 Gemini 应用将在未来数周跟进。",
+      "why_it_matters_cn": "原文说明了 Google Search AI Mode 接入 Wallet、Drive 和 Gemini 应用的功能范围与隐私控制方式，读者可据此评估个人化搜索的实用边界。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Google Blog：AI（RSS）",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "published_at": "2026-11-23T17:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "cyorgi8t8dm2fo6ee3b5a6qs2",
+      "upstream_url": "https://aihot.news/items/cyorgi8t8dm2fo6ee3b5a6qs2",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/cyorgi8t8dm2fo6ee3b5a6qs2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "There’s now one way to connect your tools to Claude, teach it a new skill, or do both.",
+      "title_cn": "Claude 推出插件，统一连接器与技能的接入方式",
+      "summary_cn": "Claude 官方宣布将连接器和技能合并为插件，提供统一的方式为 Claude 接入工具或教授新技能。插件已在 Free、Pro、Max 和 Ultra 套餐上线，Team 和 Enterprise 即将支持，用户可在 https://claude.ai/plugins 浏览 10,000 多个插件。",
+      "why_it_matters_cn": "官方宣布连接器与技能合并为插件，读者可据此了解 Claude 工具接入方式的统一变化和覆盖套餐。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：Claude (@claudeai)",
+      "url": "https://x.com/claudeai/status/2124970294523945328",
+      "published_at": "2026-11-23T20:56:12.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "h1vnjuwxsli7ku7rpocjlr3s2",
+      "upstream_url": "https://aihot.news/items/h1vnjuwxsli7ku7rpocjlr3s2",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/h1vnjuwxsli7ku7rpocjlr3s2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Jensen Huang is now back!",
+      "title_cn": "NVIDIA 宣布黄仁勋复任总裁兼 CEO 并重回董事会",
+      "summary_cn": "NVIDIA 于 11 月 23 日宣布黄仁勋即刻复任总裁、CEO 及董事会成员，董事会一致投票通过，临时 CEO Colette Kress 继续担任 CFO。复职决定参考了美国政府高层意见，董事会认为其不构成国家安全风险，此前因黄仁勋成为外国情报行动目标而启动的独立董事调查将继续进行，董事会另设国家安全与出口管制委员会并招聘首席合规官。",
+      "why_it_matters_cn": "原文转引 NVIDIA 官方声明，交代了黄仁勋复职的过程和调查背景，读者可以了解事件的关键细节。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "X：X.PIN (@thexpin)",
+      "url": "https://x.com/thexpin/status/2124866686025400819",
+      "published_at": "2026-11-23T14:04:30.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ajcxs84uezjqgsgxpdtr31o0l",
+      "upstream_url": "https://aihot.news/items/ajcxs84uezjqgsgxpdtr31o0l",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ajcxs84uezjqgsgxpdtr31o0l"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Trump 力挺黄仁勋回归 Nvidia，称美国政府无其不当行为的证据",
+      "title_cn": "Trump 力挺黄仁勋回归 Nvidia，称美国政府无其不当行为的证据",
+      "summary_cn": "Trump 在 Truth Social 上表态支持 Nvidia 董事会复职黄仁勋为 CEO 兼总裁，称美国政府没有理由认为其回归构成国家安全风险。他称司法部长 Todd Blanche 已确认政府没有黄仁勋违法行为的证据，但 Blanche 本人尚未正式声明。",
+      "why_it_matters_cn": "报道梳理了 Nvidia 董事会复职黄仁勋的决策链条与白宫表态之间的先后关系，读者可借此看到政治表态与调查程序的错位。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/",
+      "published_at": "2026-11-23T15:04:01.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "uop2ab4998l6dxugsgtg7w7rn",
+      "upstream_url": "https://aihot.news/items/uop2ab4998l6dxugsgtg7w7rn",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uop2ab4998l6dxugsgtg7w7rn"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "俄勒冈州和弗吉尼亚州起诉 SpaceX 指控 Grok 生成色情深伪防护不足",
+      "title_cn": "俄勒冈州和弗吉尼亚州起诉 SpaceX 指控 Grok 生成色情深伪防护不足",
+      "summary_cn": "俄勒冈州和弗吉尼亚州总检察长周一分别起诉 SpaceX，指控其忽视行业标准防护并虚假宣传 X 平台和 Grok AI 的安全性，两案均寻求经济赔偿。诉讼核心指向 Grok Imagine：xAI 于 2025 年 8 月为该工具推出生成色情内容的 spicy 模式，2026 年 1 月又允许 X 用户无需同意即可编辑任意图片，导致非自愿色情深伪泛滥。",
+      "why_it_matters_cn": "诉讼指控与 xAI 此后的限制改动同 X 安全团队的回应并列呈现，读者可以对比双方说法评估平台防护与监管压力。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "The Verge：AI（RSS）",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "published_at": "2026-11-23T18:26:47.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "vlxrimiuixb91iodhjh5hxmte",
+      "upstream_url": "https://aihot.news/items/vlxrimiuixb91iodhjh5hxmte",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/vlxrimiuixb91iodhjh5hxmte"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "title_cn": "Anthropic IPO 前三家机构如何重注押注",
+      "summary_cn": "TechCrunch 报道 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic IPO 前的重仓投资逻辑。",
+      "why_it_matters_cn": "报道还原了 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic 上市前的投资决策过程，可了解机构在争议时点押注的依据。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "published_at": "2026-11-23T01:25:53.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "dus34samsjrld1qopq65v54uq",
+      "upstream_url": "https://aihot.news/items/dus34samsjrld1qopq65v54uq",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/dus34samsjrld1qopq65v54uq"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Working with AI",
+      "title_cn": "Anthropic 访谈 58 家企业客户：AI 采用的价值、雇佣影响与组织重组",
+      "summary_cn": "Anthropic 研究团队对 58 家企业客户进行 66 次面对面访谈，分析企业采用 AI 的方式、瓶颈与组织变化。研究发现多数 AI 应用通过扩大产出而非削减成本创造价值；直接裁员案例很少，但约三分之二的公司因 AI 减少招聘，九家削减外包和离岸承包商；高价值应用通常需要更深度的组织重组，如拓宽岗位职责、把员工转向 AI 无法完成的瓶颈任务，以及为非技术员工建设数据和基础设施支持。",
+      "why_it_matters_cn": "Anthropic 基于 58 家企业客户的 66 次访谈，梳理 AI 采用中的价值来源、雇佣影响和组织瓶颈，并给出围绕瓶颈重设岗位的可迁移做法。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "url": "https://www.anthropic.com/research/working-with-ai",
+      "published_at": "2026-11-22T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "gj8mzwrgqlkvim6xe382a35q2",
+      "upstream_url": "https://aihot.news/items/gj8mzwrgqlkvim6xe382a35q2",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/gj8mzwrgqlkvim6xe382a35q2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "title_cn": "Google DeepMind 用 Gemini 4 智能体团队与 Lean 形式化验证改进量子算法",
+      "summary_cn": "Google DeepMind 发布新论文，用多个 Gemini 4 智能体团队结合 Lean 形式化定理证明改进量子算法，生成经数学验证的高效量子电路，并在 GitHub 开源 Lean 库、问题规格和验证解法。",
+      "why_it_matters_cn": "官方论文给出智能体团队配合 Lean 形式化验证改进量子算法的量化结果，并开源了库与解法，方法可迁移到其他科研领域。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Google DeepMind：Blog（RSS）",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "published_at": "2026-11-23T16:59:40.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "pjpgapf3mbvmy98cywxhwf07n",
+      "upstream_url": "https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
+      "title_cn": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
+      "summary_cn": "a16z 联合 The Prompting Company 测试 Grok Bot、Muse、Instinct、Dots 等智能体在 1,270 条提示词、11,307 次完整运行中的购物表现，并比对 YipitData 消费数据。",
+      "why_it_matters_cn": "基于 11,307 次 Agent 购物实测和 YipitData 消费数据，总结出商家被智能体选中的五条可操作规律。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "a16z：News（RSS）",
+      "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents",
+      "published_at": "2026-11-23T15:04:27.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "qkxvs90ewfu3k430sdefndv56",
+      "upstream_url": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "毫无保留地分享一下，我是如何让Claude、GPT和Gemini完美协同的。",
+      "title_cn": "卡兹克分享 Claude、GPT、Gemini 三模型协同调度方法",
+      "summary_cn": "自媒体作者卡兹克分享自己让 Claude、GPT 和 Gemini 协同工作的方法：把 Claude Opus 5.5 当总指挥负责沟通、拆解和验收，Gemini 4 Neon 当军师出方案和改界面文案，GPT 负责后端、算法、修 BUG 和代码审查。",
+      "why_it_matters_cn": "作者以自己半个月的多模型使用实践为基础，给出按模型性格分工的调度结构和可复制的 CLAUDE.md 规则。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "公众号：数字生命卡兹克",
+      "url": "https://mp.weixin.qq.com/s/gwj0xLNHPfToQnQJN7IkMA",
+      "published_at": "2026-11-22T23:56:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "hz782dpcwhurj6584rtd13eaf",
+      "upstream_url": "https://aihot.news/items/hz782dpcwhurj6584rtd13eaf",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/hz782dpcwhurj6584rtd13eaf"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "The Figma agent is now available in FigJam and Slides",
+      "title_cn": "Figma agent 正式开放至 FigJam 和 Figma Slides",
+      "summary_cn": "Figma agent 现已在 FigJam 和 Figma Slides 上对所有付费计划全面开放，支持连接器和附件，可将设计文件、会议记录或研究笔记等材料整理到 FigJam 白板或生成演示文稿初稿。",
+      "why_it_matters_cn": "原文列出了 Figma agent 在 FigJam 和 Slides 中的具体用法与开放范围，读者可据此判断是否引入自己的团队协作流程。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "Figma AI / Agent / Make",
+      "url": "https://www.figma.com/blog/introducing-figma-agent-in-figjam-and-slides/",
+      "published_at": "2026-11-23T20:54:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "zur9ndkrkvtk4lqiix14q468s",
+      "upstream_url": "https://aihot.news/items/zur9ndkrkvtk4lqiix14q468s",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/zur9ndkrkvtk4lqiix14q468s"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Attack policy selection can make monitor evaluations misleading",
+      "title_cn": "AISI 红队论文：攻击策略选择会让 LLM 监视器评估结果失真",
+      "summary_cn": "英国 AI Security Institute 发布论文，测试合成攻击生成方式对监视器评估的影响。评估一个 OpenAI 前生产监视器时，同一监视器对不同攻击策略的漏报率从 0.2%（基础提示）到 23%（转录编辑）不等，优化程度也会显著改变结果。作者指出合成转录只是真实有害行为代理，其代表性难以证明，仅凭监视器评估不足以保证部署安全，需辅以能力限制、人工在环和沙箱等分层防护。",
+      "why_it_matters_cn": "原文用同一监视器实测出 0.2% 到 23% 的漏报率差异，说明合成攻击策略选择会让监视器评估结果失真。",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "英国 AI Security Institute：Blog（网页）",
+      "url": "https://www.aisi.gov.uk/blog/attack-policy-selection-can-make-monitor-evaluations-misleading",
+      "published_at": "2026-11-22T23:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "tl8v9gto8rd3e4x40xfbljj13",
+      "upstream_url": "https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Agentic Attacks: In The Wild",
+      "title_cn": "Wiz Research 披露 ARTEX 智能体攻击框架的真实云入侵案例",
+      "summary_cn": "Wiz Research 发文介绍 ARTEX 等智能体攻击框架正在推动云入侵激增。文中分享了来自真实环境的案例，包括通过攻击操作者泄露的日志看到的一次攻击的双方视角、对 Black October 的更新，以及可捕捉这类嘈杂、机器速度攻击的检测方法。",
+      "why_it_matters_cn": "Wiz Research 基于真实攻击案例和操作者泄露日志分析 ARTEX 等智能体攻击框架，读者可以据此了解这类机器速度攻击的检测思路。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "Wiz：Research（安全研究）",
+      "url": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
+      "published_at": "2026-11-23T14:46:19.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "gp8e9a8oitha0rbip8pzntuff",
+      "upstream_url": "https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-24",
+    "generated_at": "2026-11-24T00:00:16.903Z",
+    "window_start": "2026-11-23T00:00:00.000Z",
+    "window_end": "2026-11-24T00:00:00.000Z",
+    "lead": {
+      "title": "NVIDIA 宣布黄仁勋复任总裁兼 CEO 并重回董事会",
+      "leadParagraph": "NVIDIA 于 11 月 23 日宣布黄仁勋即刻复任总裁、CEO 及董事会成员，董事会一致投票通过，临时 CEO Colette Kress 继续担任 CFO。复职决定参考了美国政府高层意见，董事会认为其不构成国家安全风险，此前因黄仁勋成为外国情报行动目标而启动的独立董事调查将继续进行，董事会另设国家安全与出口管制委员会并招聘首席合规官。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-24"
+    }
+  }
+}
