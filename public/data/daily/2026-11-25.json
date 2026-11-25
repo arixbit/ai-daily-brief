@@ -1,0 +1,486 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T00:00:36.665Z",
+  "title": "2026-11-25 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Introducing SWE-2.1",
+      "title_cn": "Cognition 发布 SWE-2.1 及高速版 SWE-2.1 Lightning",
+      "summary_cn": "Cognition 发布 SWE-2.1，基于 Kimi K3 纯强化学习训练，在 FrontierCode 2.0、Terminal-Bench 4.1 等基准上较 SWE-2 大幅提升，ExploitBench 达 80%、ExploitGym 捕获 27.3% flags，网络安全能力显著增强。",
+      "why_it_matters_cn": "原文给出 ExploitBench、ExploitGym 等具体成绩和训练安全措施，还附基准方法细节，便于评估其实际能力边界。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "Cognition 模型 / Devin 博客（网页）",
+      "url": "https://cognition.com/blog/swe-2-1",
+      "published_at": "2026-11-23T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "gflb0kkwzma61spkzpp1uxmrk",
+      "upstream_url": "https://aihot.news/items/gflb0kkwzma61spkzpp1uxmrk",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/gflb0kkwzma61spkzpp1uxmrk"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Turn artifacts into Mac and Windows apps",
+      "title_cn": "Claude 推出 Install as app：artifacts 可安装为 Mac 和 Windows 桌面应用",
+      "summary_cn": "Anthropic 在 Mac 和 Windows 版 Claude 中以 beta 形式推出 Install as app，artifacts 可创建、运行并分享为独立桌面应用，拥有自己的图标和窗口，底层 artifact 更新时应用自动同步。",
+      "why_it_matters_cn": "原文给出三级权限机制和各套餐开放方式，读者可以据此判断是否在工作流中启用 artifacts 桌面应用。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/install-as-app",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "zcpto4b7qb8sr6v6n223kd2sx",
+      "upstream_url": "https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Anthropic 为 Claude 推出 Skills over MCP 公测及 Tasks、Elicitation 等更新",
+      "title_cn": "Anthropic 为 Claude 推出 Skills over MCP 公测及 Tasks、Elicitation 等更新",
+      "summary_cn": "Anthropic 宣布 Skills over MCP 在 Claude 与 Claude Code 进入公开测试，MCP 服务器可在工具之外发布技能，按需加载以降低上下文占用。",
+      "why_it_matters_cn": "原文给出 Skills over MCP、Tasks 等四项能力细节与可用计划，开发者可据此评估服务端接入方式。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Claude：Blog（网页）",
+      "url": "https://claude.com/blog/skills-over-mcp-tasks-and-more",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "upstream_url": "https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "We’re working with Cisco on what we think are going to be key infrastructure primitives in the new era of cybersecurity.",
+      "title_cn": "OpenAI 与 Cisco 发布开源 Linux 运行时 Shirudo，让 Agent 无停机防御系统",
+      "summary_cn": "OpenAI 宣布与 Cisco 合作推出开源 Linux 运行时 Shirudo，让 Agent 编写动态 eBPF 控制来抵御漏洞利用，同时保持服务不中断，为防御方争取测试和部署补丁的时间。作者称这是迈向自适应自防御基础设施的第一步，目标是让防御者与 AI Agent 协作定位受影响系统、测试并共享 shield、在不干扰工作负载的情况下部署。",
+      "why_it_matters_cn": "原文点出 Cisco 与 OpenAI 合作构建面向 Agent 时代的安全基础设施，可帮助读者了解防御方与 AI 协作的新方向。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：Tibo (@thsottiaux)",
+      "url": "https://x.com/thsottiaux/status/2125141302501417232",
+      "published_at": "2026-11-24T08:15:44.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "d41p6k2h48zm8u2kl5xdzqx5h",
+      "upstream_url": "https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "MiniMax 发布 H3 Family 系列模型，H3 开源百日衍生模型达 1472 个、下载量超 1.48 亿次",
+      "title_cn": "MiniMax 发布 H3 Family 系列模型，H3 开源百日衍生模型达 1472 个、下载量超 1.48 亿次",
+      "summary_cn": "MiniMax 推出 H3 Family，包含 H3、H3-Highspeed、H3-Lite、H3-Image、H3-Image Highspeed 等旗舰模型及 fal、Suno、HeyGen、Pika 等伙伴的多个扩展模型。",
+      "why_it_matters_cn": "MiniMax 官方梳理了 H3 开源百天的生态数据与全系列模型的定位、价格和速度，便于按场景选型。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "公众号：MiniMax（稀宇科技）",
+      "url": "https://mp.weixin.qq.com/s/Maoz76fZdGNaB7tlIVxWWQ",
+      "published_at": "2026-11-24T02:11:36.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "f1380j6hyrxn0rnz6666nu3b8",
+      "upstream_url": "https://aihot.news/items/f1380j6hyrxn0rnz6666nu3b8",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/f1380j6hyrxn0rnz6666nu3b8"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "ChinaTalk 播客：Nvidia 董事会恢复黄仁勋职务，美商务部将 Megaspeed 列入实体清单",
+      "title_cn": "ChinaTalk 播客：Nvidia 董事会恢复黄仁勋职务，美商务部将 Megaspeed 列入实体清单",
+      "summary_cn": "ChinaTalk 主持人 Jordan Schneider 邀请 Chris McGuire 与 Peter Harrell 紧急讨论 Nvidia 董事会在美国政府表态后一致恢复黄仁勋职务，以及美国商务部同日将 Megaspeed 列入实体清单。节目围绕出口管制执法、实体清单是否附加外国直接产品规则（FDPR）、国会相关立法（AI Overwatch、MATCH、RASA）的覆盖范围与局限，以及政策与股市波动之间的互动展开分析。",
+      "why_it_matters_cn": "嘉宾来自美国外交关系委员会与乔治城大学，逐层拆解董事会复职决定背后的法律承诺、FDPR 缺失和监管漏洞，提供了不少可核验的政策细节。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "ChinaTalk（RSS）",
+      "url": "https://www.chinatalk.media/p/jensen-returns",
+      "published_at": "2026-11-24T01:41:25.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "zto0pspydy8330r0bvwqb6j5z",
+      "upstream_url": "https://aihot.news/items/zto0pspydy8330r0bvwqb6j5z",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/zto0pspydy8330r0bvwqb6j5z"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+      "title_cn": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
+      "summary_cn": "Amazon 威胁情报报告称，黑客在开源 AI 渗透测试框架 Cairn 上运行的 AI 智能体，仅凭一句「获取 shell 权限」的指令，就自主发现并利用了一个开源医学影像 AI 应用中未修补的路径遍历 0-day，从映射 API 到任意写文件仅用约 11 分钟，随后写入 Python 反向 shell payload 并以 root 权限获得控制。",
+      "why_it_matters_cn": "Amazon 的研究给出了 AI 智能体自主发现并利用 0-day 的完整时间线和攻击细节，读者可以据此评估防御响应窗口的变化。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "Ars Technica：AI（RSS）",
+      "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "published_at": "2026-11-24T12:30:05.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "ygbhvp086wl672gfxuhfgl23x",
+      "upstream_url": "https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "ChinaTalk 分析 BIS 租赁算力新规或为美国换取约六个月算力领先",
+      "title_cn": "ChinaTalk 分析 BIS 租赁算力新规或为美国换取约六个月算力领先",
+      "summary_cn": "作者分析美国 BIS 于11月16日发布、11月19日生效的租赁算力临时最终规则，该规则要求向境外数据中心供应芯片需申领许可，门槛约为760块 H100 等效算力，覆盖 Hopper 和 Blackwell 级芯片，并关闭 Foundry Due-Diligence 漏洞。作者基于自建测算模型给出规则执行率与延迟月数的量化区间，并梳理柔佛数据中心和执法风险等关键变量。",
+      "why_it_matters_cn": "作者基于自建测算模型给出规则执行率与延迟月数的量化区间，并梳理柔佛数据中心和执法风险等关键变量。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "ChinaTalk（RSS）",
+      "url": "https://www.chinatalk.media/p/the-remote-access-rule-will-slow",
+      "published_at": "2026-11-24T10:58:57.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "yz5va6l60tfkmdampmsiz0jq2",
+      "upstream_url": "https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models.",
+      "title_cn": "OpenAI 发布 preprint：湿实验验证 GPT-6 系列模型具备内在蛋白质设计能力",
+      "summary_cn": "OpenAI 发布新 preprint，报告通过湿实验室验证 GPT-6 系列模型具备内在蛋白质设计能力。模型可依靠推理和代码设计新的蛋白质形状与序列，无需调用专用生物学模型来生成，详情见 openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/。",
+      "why_it_matters_cn": "OpenAI 用湿实验室验证说明 GPT-6 不调用专用生物学模型也能设计蛋白，可据此了解其推理能力在科学场景的表现。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "X：OpenAI (@OpenAI)",
+      "url": "https://x.com/OpenAI/status/2125334383490105601",
+      "published_at": "2026-11-24T21:02:58.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "vld1kqsp7wkz3o3qo1ubc9sg9",
+      "upstream_url": "https://aihot.news/items/vld1kqsp7wkz3o3qo1ubc9sg9",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/vld1kqsp7wkz3o3qo1ubc9sg9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to?",
+      "title_cn": "Anthropic 发布 Siren 评估：Claude 在弱沙盒中 21-32% 场景会越界访问",
+      "summary_cn": "Anthropic 发布新安全评估 Siren，让 Claude 在故意削弱的沙盒中执行日常任务，并把有用资源放在沙盒外。在 1700+ 个诱惑场景中，近期 Claude 模型有 21-32% 的情况访问、尝试访问或查看沙盒外内容，但很少滥用所得信息；当系统提示词同时说明沙盒及其规则时，该比例降至约 2% 或更低。",
+      "why_it_matters_cn": "评估给出沙盒越界率和提示词干预的量化数据，还提到用于校准 Claude Code auto mode，可帮助理解智能体安全评测方法。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "X：Anthropic (@AnthropicAI)",
+      "url": "https://x.com/AnthropicAI/status/2125341904644763678",
+      "published_at": "2026-11-24T21:32:51.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "gat7lwf755dyryyd45gvlesxz",
+      "upstream_url": "https://aihot.news/items/gat7lwf755dyryyd45gvlesxz",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/gat7lwf755dyryyd45gvlesxz"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Introducing ShellBench, the benchmark for real-world tasks",
+      "title_cn": "OpenClaw 联合多家机构发布真实任务基准 ShellBench，最强模型完成率约六成",
+      "summary_cn": "OpenClaw 与 Hugging Face、Red Hat、UC Berkeley 等机构合作推出 ShellBench，基于超过 1000 万条匿名真实智能体交互构建 100 个日常任务，含 90 个 rubric 评分任务（721 项标准，其中 381 项安全标准）和 10 个代码测试任务，共 53,100 次评分运行。",
+      "why_it_matters_cn": "原文给出 ShellBench 的任务设计、12 个模型与 5 个 harness 的结果和成本对比，读者可据此判断模型与 harness 如何影响日常任务完成率。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "OpenClaw：Blog（网页）",
+      "url": "https://openclaw.ai/blog/shellbench",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "frmncgr2jcrvfm3t6jgabqhfh",
+      "upstream_url": "https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Ed Zitron 撰文批评 NVIDIA 董事会在政府施压下恢复黄仁勋 CEO 职务",
+      "title_cn": "Ed Zitron 撰文批评 NVIDIA 董事会在政府施压下恢复黄仁勋 CEO 职务",
+      "summary_cn": "Ed Zitron 撰文批评 NVIDIA 董事会在政府施压下未咨询高管即恢复黄仁勋 CEO 职务，认为此举旨在稳定股市，并指出 AI 行业面临的流动性问题并未因此改变。",
+      "why_it_matters_cn": "作者结合 WSJ 与纽约时报报道分析黄仁勋复职背后的政府介入与市场反应，并指出 AI 行业的流动性问题并未因此改变。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Ed Zitron 长文 / Where’s Your Ed At（RSS）",
+      "url": "https://www.wheresyoured.at/defective-accelerationism/",
+      "published_at": "2026-11-24T18:08:05.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "lb66i6g7eq01l6hx0rr8f7k9r",
+      "upstream_url": "https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
+      "title_cn": "Anthropic 股价跌破 83 美元 IPO 发行价，上市不到一周最低跌至 76 美元",
+      "summary_cn": "Anthropic 股价跌破 83 美元的 IPO 发行价，周二午盘最低跌至 76 美元，较周一收盘下跌近 12%，距其在 Nasdaq 以 111.33 美元上市不到一周。风投界视其为公开市场对 AI 行业估值的晴雨表，若持续走弱可能压低 AI 初创公司私募估值和其他公司 IPO 前景。同日 Nvidia 也跌超 7%。",
+      "why_it_matters_cn": "文中用 IPO 定价机制解释跌破发行价的信号意义，读者可以据此理解 AI 板块上市表现与一级市场估值的联动关系。",
+      "tags": [
+        "快讯",
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+      "published_at": "2026-11-24T18:30:42.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "jurm0kx9gczvzp4o14g0o35xo",
+      "upstream_url": "https://aihot.news/items/jurm0kx9gczvzp4o14g0o35xo",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/jurm0kx9gczvzp4o14g0o35xo"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Google Workspace MCP servers and gwscli are GA today. No Enterprise plan or billing card needed with the new 1-click Personal mode setup.",
+      "title_cn": "Google Workspace MCP servers 与 gwscli 正式发布，Personal 模式一键开通",
+      "summary_cn": "Philipp Schmid 宣布 Google Workspace MCP servers 与 gwscli 正式 GA，新增 Personal 模式一键开通，无需 Enterprise 计划或绑卡。共 8 个 server 覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks，免费档为每产品每天 5,000 次请求，发送和分享内置 HITL 确认。他提到仍需经过 Google Cloud，但比旧的 OAuth 同意屏和应用审核流程好得多，欢迎试用反馈。",
+      "why_it_matters_cn": "作者来自 Google DeepMind 开发者体验团队，说明了 Personal 模式的免企业开通方式和各服务免费额度，可据此评估是否接入工作流。",
+      "tags": [
+        "快讯",
+        "产品发布/更新"
+      ],
+      "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
+      "url": "https://x.com/_philschmid/status/2125296446459056156",
+      "published_at": "2026-11-24T18:32:13.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "nm8mi41auemid3iivue4tel3d",
+      "upstream_url": "https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/nm8mi41auemid3iivue4tel3d"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "GPT-6.2 Astra for solving a significant historical mystery:",
+      "title_cn": "GPT-6.2 Astra 用 22 分钟破解 1808 年素描画作者之谜",
+      "summary_cn": "研究者引述案例称，GPT-6.2 Astra 仅用 22 分钟和公开资料，将耶鲁 Beinecke 图书馆藏的 1808 年蒙特利尔至苏必利尔湖匿名素描画作者鉴定为 vicomte de Chabot，并找到其微缩胶片日记供验证。日记笔迹与素描题注吻合，1808 年 6 月 18 日日记明确写下“我画了一幅素描”；作者认为这标志着模型的研究发现能力正从数学等可验证领域扩展到历史等非确定性领域。",
+      "why_it_matters_cn": "研究者实测 GPT-6.2 Astra 在 22 分钟内鉴定出 1808 年素描画作者，并用新发现的日记验证，展示了模型向史学等非确定性领域的探索能力延伸。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "X：Greg Brockman (@gdb)",
+      "url": "https://x.com/gdb/status/2125305172721320165",
+      "published_at": "2026-11-24T19:06:54.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "eb9lfibaf8fpouyw0x3vh63st",
+      "upstream_url": "https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 16,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "分享两个最近我自己做产品用来优化用户体验和产品动效的Prompt，我觉得效果还挺不错的。",
+      "title_cn": "卡兹克分享两个优化用户体验和产品动效的 Prompt",
+      "summary_cn": "数字生命卡兹克分享自己做产品时用的两个 Prompt，一个按用户体验至上的原则审查项目交互并直接修复，一个把项目动效做到细腻丝滑水准。要点包括让 Gemini 当方案顾问、按状态变化逐项审查动效，完成后让 GPT 审查再合并上线。",
+      "why_it_matters_cn": "作者把自己做产品时审查用户体验和动效的完整 Prompt 原则直接公开，按状态变化找动效等思路可直接迁移到其他项目。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "X：卡兹克 (@Khazix0918)",
+      "url": "https://x.com/Khazix0918/status/2125110224143171669",
+      "published_at": "2026-11-24T06:12:14.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "jb7ohptrc5ctyx9maoimz2hn0",
+      "upstream_url": "https://aihot.news/items/jb7ohptrc5ctyx9maoimz2hn0",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/jb7ohptrc5ctyx9maoimz2hn0"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 17,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "inclusionAI/Ling-3.2-air",
+      "title_cn": "蚂蚁 inclusionAI 发布开源权重多模态模型 Ling-3.2-air",
+      "summary_cn": "蚂蚁 inclusionAI 在 Hugging Face 发布开源权重模型 Ling-3.2-air，采用与 Ling-3.0-flash-VL 相同的原生多模态 Hybrid-linear MoE 架构，总参数 124B、激活 5.5B。",
+      "why_it_matters_cn": "",
+      "tags": [
+        "快讯",
+        "模型发布/更新"
+      ],
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+      "published_at": "2026-11-23T03:55:12.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "jmwvt06m28bn5v5mek14llnlx",
+      "upstream_url": "https://aihot.news/items/jmwvt06m28bn5v5mek14llnlx",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/jmwvt06m28bn5v5mek14llnlx"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 18,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Building stronger biological reasoning models",
+      "title_cn": "Goodfire 用可解释性改进 BioReason-Pro 2 生物推理模型并用湿实验验证假设",
+      "summary_cn": "Goodfire 与 NVIDIA、Arc Institute 合作开发 BioReason-Pro 2，以 Qwen3.5-9B 为骨干，用可解释性发现原模型过度依赖文本标注、蛋白质与文本嵌入尺度不匹配，据此移除训练输入中的 InterPro 标注、细化推理轨迹并将 ESM3 嵌入重新缩放。",
+      "why_it_matters_cn": "原文展示了可解释性如何指导多模态生物推理模型的训练改进，并用湿实验验证模型假设，方法对类似多模态系统可迁移。",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "Goodfire Research（网页）",
+      "url": "https://www.goodfire.com/research/building-stronger-biological-reasoning-models",
+      "published_at": "2026-11-23T16:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "uz9j9ukn8j60mwkeeaibmmctw",
+      "upstream_url": "https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "推荐理由缺失：蚂蚁 inclusionAI 发布开源权重多模态模型 Ling-3.2-air"
+  ],
+  "skipped_incomplete_items": [],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-25",
+    "generated_at": "2026-11-25T00:00:36.665Z",
+    "window_start": "2026-11-24T00:00:00.000Z",
+    "window_end": "2026-11-25T00:00:00.000Z",
+    "lead": {
+      "title": "Claude 推出 Install as app：artifacts 可安装为 Mac 和 Windows 桌面应用",
+      "leadParagraph": "Anthropic 在 Mac 和 Windows 版 Claude 中以 beta 形式推出 Install as app，artifacts 可创建、运行并分享为独立桌面应用，拥有自己的图标和窗口，底层 artifact 更新时应用自动同步。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-25"
+    }
+  }
+}
