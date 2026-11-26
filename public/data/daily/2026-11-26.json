@@ -1,0 +1,415 @@
+{
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T00:00:42.145Z",
+  "title": "2026-11-26 AI 每日简报",
+  "description": "AIHOT 日报，保留原始来源与原文链接。",
+  "items": [
+    {
+      "rank": 1,
+      "category": "model_release",
+      "category_label": "模型发布/更新",
+      "title": "Sand.ai 发布 480B 视频模型 MAGI-2，作者实测称质量接近 Seedance 2.3 水准且价格仅为其 1/10",
+      "title_cn": "Sand.ai 发布 480B 视频模型 MAGI-2，作者实测称质量接近 Seedance 2.3 水准且价格仅为其 1/10",
+      "summary_cn": "Sand.ai 凌晨发布 480B 全模态视频模型 MAGI-2，作者实测后认为其质量达到 Seedance 2.3 左右水准，1080P 下每秒 0.5 元、价格约为 Seedance 2.5 的 1/10。",
+      "why_it_matters_cn": "作者实测了 Sand.ai 新视频模型 MAGI-2，给出与 Seedance 2.5 的对比细节和每秒 0.5 元的价格信息，可帮助读者评估其实际可用性。",
+      "tags": [
+        "模型发布/更新"
+      ],
+      "source": "公众号：数字生命卡兹克",
+      "url": "https://mp.weixin.qq.com/s/JkZM9s6tC_Wz5MKeYcccxw",
+      "published_at": "2026-11-24T23:56:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "u71y2i8e6zhwauu7gpuyxrp4z",
+      "upstream_url": "https://aihot.news/items/u71y2i8e6zhwauu7gpuyxrp4z",
+      "upstream_section": "模型发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/u71y2i8e6zhwauu7gpuyxrp4z"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 2,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Hy4 Flash on Fireworks: Tencent's open model for cost-efficient professional work",
+      "title_cn": "腾讯开源模型 Hy4 Flash 上线 Fireworks serverless",
+      "summary_cn": "腾讯新开源模型 Hy4 Flash 现已在 Fireworks serverless 上可用。该模型为 MoE 架构，总参数约 220B、每 token 激活约 12B，1M token 上下文窗口（Fireworks 上线时为 512K），支持文本和图像输入，面向文档处理、研究、办公和 Agent 工作流。",
+      "why_it_matters_cn": "原文给出 Hy4 Flash 在多个专业基准上的得分与成本对比，读者可据此评估它在专业任务中的性价比取舍。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Fireworks AI（网页）",
+      "url": "https://fireworks.ai/blog/hy4-flash-on-fireworks/",
+      "published_at": "2026-11-24T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "dvu6olan4q58k1evvnp8t60t2",
+      "upstream_url": "https://aihot.news/items/dvu6olan4q58k1evvnp8t60t2",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/dvu6olan4q58k1evvnp8t60t2"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 3,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "@所有人 打电话这种小事，今天起就交给我吧",
+      "title_cn": "千问APP免费开放千问Go打电话服务，经授权可代打电话和定时来电",
+      "summary_cn": "千问APP宣布千问Go打电话服务免费开放，用户告知打给谁、要办什么事并经授权后，AI可代为拨打电话、沟通需求。文中示例包括定时提醒朋友带饮料、定时来电叫醒起床、代订包间或询问快递等场景，并邀请用户在评论区分享想安排的任务。",
+      "why_it_matters_cn": "官方宣布千问Go打电话服务免费开放，经用户授权可代拨电话与定时来电，读者可据此评估这一Agent能力对日常沟通场景的适用性。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "公众号：千问APP（阿里）",
+      "url": "https://mp.weixin.qq.com/s/jZumD5cprhI7bgmOI7mUEw",
+      "published_at": "2026-11-25T04:32:44.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "cebavio3uyjwli5r3imsuq1si",
+      "upstream_url": "https://aihot.news/items/cebavio3uyjwli5r3imsuq1si",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/cebavio3uyjwli5r3imsuq1si"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 4,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "Introducing Pax and the Pydantic AI Harness beta, on the road to 1.0",
+      "title_cn": "Pydantic AI 发布终端编码智能体 Pax 与 Harness beta，迈向 1.0",
+      "summary_cn": "Pydantic AI 发布终端编码智能体 Pax（pydantic-ai-pax），基于 Harness SDK，全部功能以插件形式组织，可 /plugins 开关 coder、sandbox、mcp、Logfire 观测等，并支持 --agent 换成代码库里任意 Pydantic AI Agent。",
+      "why_it_matters_cn": "官方发布了终端编码智能体 Pax 并给出 Harness-Bench SWE81 分数与成本对比，读者可以据此评估它相对 Codex 和 Claude Code 的性价比。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "Pydantic AI 官方文章",
+      "url": "https://pydantic.dev/articles/pax-harness-beta",
+      "published_at": "2026-11-25T09:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "i5qr52169dlque8rb2sl4i5jo",
+      "upstream_url": "https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 5,
+      "category": "product_update",
+      "category_label": "产品发布/更新",
+      "title": "OpenClaw 2026.11.10 is out! 🦞",
+      "title_cn": "OpenClaw 2026.11.10 发布，新增 Deep Research、Knowledge 记忆系统与 Browser handoff",
+      "summary_cn": "OpenClaw 发布 2026.11.10 版本，新增聊天内 Deep Research、新的 OpenClaw 记忆系统 Knowledge，以及 Browser handoff 功能。本次版本包含 7,671 个 PR、349 位贡献者，完整说明见 https://docs.openclaw.ai/releases/2026.11.10。",
+      "why_it_matters_cn": "官方版本发布，列出 Deep Research、记忆系统和浏览器交接三项新能力，读者可据此评估是否升级。",
+      "tags": [
+        "产品发布/更新"
+      ],
+      "source": "X：OpenClaw (@openclaw)",
+      "url": "https://x.com/openclaw/status/2125591827600531554",
+      "published_at": "2026-11-25T14:05:57.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "vz3bvc1o7zuki3x2zw8lnnv78",
+      "upstream_url": "https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78",
+      "upstream_section": "产品发布/更新",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 6,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+      "title_cn": "42 州总检察长介入 Character.AI 破产程序，反对拍卖用户私密聊天记录",
+      "summary_cn": "42 州总检察长介入 Character.AI 的破产程序，试图阻止其拍卖用户私密聊天数据。相关声明称数据集包含超过 2100 万美国账户的聊天记录，其中逾 210 万属于未成年人，还涉及 IP 地址等信息；目前唯一披露的匿名竞拍方为 2026 年 11 月 13 日在特拉华州注册的 Smirks and Pangs Acquisition LLC，拍卖定于 12 月 1 日。",
+      "why_it_matters_cn": "报道给出涉及 2100 万账户含未成年人的拍卖细节和 42 州总检察长的反对理由，读者可据此了解破产程序下用户数据保护的争议。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "published_at": "2026-11-25T17:35:58.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "j0hoj1rlmltoft6okserijp25",
+      "upstream_url": "https://aihot.news/items/j0hoj1rlmltoft6okserijp25",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/j0hoj1rlmltoft6okserijp25"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 7,
+      "category": "industry",
+      "category_label": "行业动态",
+      "title": "黄仁勋回归后 Nvidia 仍面临 Megaspeed 芯片出口合规调查",
+      "title_cn": "黄仁勋回归后 Nvidia 仍面临 Megaspeed 芯片出口合规调查",
+      "summary_cn": "TechCrunch 分析指出，黄仁勋回归 Nvidia CEO 后，公司仍面临多方对其 GPU 出口合规问题的调查。新加坡数据中心运营商 Megaspeed 被指违反美国出口管制，将先进 GPU 转运至中国。美国司法部于 2024 年启动调查，新加坡方面于 2025 年展开类似调查，加州总检察长办公室及美国证券交易委员会也关注 Nvidia 的相关披露。Nvidia 表示将停止向中国销售许可芯片，并计划设立首席合规官及董事会出口管制委员会。",
+      "why_it_matters_cn": "文章梳理 Nvidia 在 Megaspeed 芯片出口合规调查中面临的多方问询，以及黄仁勋回归后仍未解除的合规与披露风险。",
+      "tags": [
+        "行业动态"
+      ],
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+      "published_at": "2026-11-25T13:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "kzwj96fvnn3whzvnhqdvsh830",
+      "upstream_url": "https://aihot.news/items/kzwj96fvnn3whzvnhqdvsh830",
+      "upstream_section": "行业动态",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/kzwj96fvnn3whzvnhqdvsh830"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 8,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "matrix multiplication exponent is exactly 9/4: \"This is really the kind of result that I never thought I would see in my lifetime\"",
+      "title_cn": "矩阵乘法指数被证明精确为 9/4",
+      "summary_cn": "Greg Brockman 转发 OpenAI 的 Sebastien Bubeck 消息：在 10 月 6 日发布给出矩阵乘法指数 9/4 新上界后，模型继续工作于下界并宣布 9/4 是紧的，下界此前毫无已知结果。Bubeck 称这是他从未想过有生之年能看到的结果，并指出根据 Yin Tat Lee 等人的旧结果，这也意味着线性规划可在 n^{9/4} 时间内求解。",
+      "why_it_matters_cn": "原文报道矩阵乘法指数被证明精确为 9/4，下界此前完全空白，还连带给出线性规划求解的新时间上界。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "X：Greg Brockman (@gdb)",
+      "url": "https://x.com/gdb/status/2125418102049628201",
+      "published_at": "2026-11-25T02:35:38.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "pdtslys0302mclldlo6l1dlr9",
+      "upstream_url": "https://aihot.news/items/pdtslys0302mclldlo6l1dlr9",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/pdtslys0302mclldlo6l1dlr9"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 9,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "A great new paper from MIT and Microsoft",
+      "title_cn": "MIT 与 Microsoft 论文：GitHub Copilot 使初级软件工程师招聘下降约 40%",
+      "summary_cn": "MIT 和 Microsoft 的新论文《AI-Assisted Programming and Labor Demand》利用 5,414 家跨国公司（覆盖 38% 美国程序员）的 GitHub 合同审查时点构造自然实验，估计 Copilot 采用对劳动力需求的影响。",
+      "why_it_matters_cn": "论文用合同审查时点构造自然实验，给出了 Copilot 采用对初级工程师招聘影响的因果证据，可作讨论 AI 与就业的依据。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "url": "https://x.com/rohanpaul_ai/status/2125461932111229203",
+      "published_at": "2026-11-25T05:29:48.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "hyofqy3ukzks1eyr4bu317bez",
+      "upstream_url": "https://aihot.news/items/hyofqy3ukzks1eyr4bu317bez",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/hyofqy3ukzks1eyr4bu317bez"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 10,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "Training a Scalable Forecasting Agent (Guest Post with Mantic)",
+      "title_cn": "Mantic 与 Thinking Machines 训练可扩展预测智能体，成本降 15 倍",
+      "summary_cn": "Mantic 与 Thinking Machines 在 Tinker 上对 Inkling 2 Small 做后训练，得到一个端到端完成研究与预测的预测智能体，其准确度接近 Fable 5.2 (medium)，单次预测成本降低 15 倍。",
+      "why_it_matters_cn": "原文完整给出数据生成、点时工具和奖励设计三层方案，读者可以据此了解端到端训练预测智能体的可迁移做法。",
+      "tags": [
+        "论文研究"
+      ],
+      "source": "Thinking Machines Lab：News（网页）",
+      "url": "https://thinkingmachines.ai/news/training-a-scalable-forecasting-agent/",
+      "published_at": "2026-11-24T07:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "yh9lmlhqwoc77d1ii1mvr5d6x",
+      "upstream_url": "https://aihot.news/items/yh9lmlhqwoc77d1ii1mvr5d6x",
+      "upstream_section": "论文研究",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/yh9lmlhqwoc77d1ii1mvr5d6x"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 11,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Migrating our Messages API to Rust",
+      "title_cn": "Anthropic 复盘 Messages API 从 Python 迁移到 Rust 的校验方法",
+      "summary_cn": "Anthropic 介绍如何将 Messages API 从 Python 迁移到 Rust，并把生产系统本身当作校验器。该 API 流量从 2024 年初到 2026 年秋增长约 1800 倍，迁移后每请求 CPU 降低约 70%，首 token 中位时间缩短约 20%，且未停服或冻结功能开发。",
+      "why_it_matters_cn": "原文复盘了用生产系统当校验器迁移 API 的完整方法，读者可以借鉴定位和修复重写中的行为差异。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "published_at": "2026-11-24T16:00:00.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "h1ja45355xx1xf9rqf89cv1if",
+      "upstream_url": "https://aihot.news/items/h1ja45355xx1xf9rqf89cv1if",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/h1ja45355xx1xf9rqf89cv1if"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 12,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "How Context Drift Impacts Your AI Agents",
+      "title_cn": "上下文漂移如何影响你的 AI Agent：470 项实验与一个免费的 MCP 解法",
+      "summary_cn": "Google AI 开发者 Patrick Kelly 通过 470 个任务实测区分 context rot 与 context drift，在 Gemini 3.8 Flash 和 Gemini Pro 的沙盒中发现：模型在 73% 的运行中内部察觉文件冲突，但 0% 会主动告知用户，95%-100% 的情况下任务级 skill 文件会覆盖 AGENTS.md 的严格规则。",
+      "why_it_matters_cn": "作者用 470 个任务实测区分上下文腐烂与上下文漂移，并给出零成本可复用的冲突上报工具方案。",
+      "tags": [
+        "技巧与观点"
+      ],
+      "source": "Google AI：DEV 作者专属（RSS）",
+      "url": "https://dev.to/googleai/how-context-drift-impacts-your-ai-agents-1iph",
+      "published_at": "2026-11-25T16:19:30.000Z",
+      "selected": true,
+      "edition_kind": "main",
+      "upstream_id": "br6usy3mxv1q0mzxhgf9y8qam",
+      "upstream_url": "https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
+      "upstream_section": "技巧与观点",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam"
+      },
+      "summary_origin": "report"
+    },
+    {
+      "rank": 13,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "A practical guide to shipping with Claude Code",
+      "title_cn": "Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法",
+      "summary_cn": "Anthropic Claude Code 团队刚推出 Claude Ship，包含三个智能体：Code Review（已全面开放）、PR Steward 和 Claude Approvals（beta），可审查 PR、处理失败 CI、合并冲突和审查意见，并按仓库策略文件批准常规改动。",
+      "why_it_matters_cn": "Claude Code 团队成员亲自梳理了 PR 后续流程的三个智能体分工和落地步骤，开发者可按需迁移到自己的仓库。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "X：Addy Osmani (@addyosmani)",
+      "url": "https://x.com/addyosmani/status/2125492213903978917",
+      "published_at": "2026-11-25T07:30:08.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "uyodjb16jngloilypsm1d3q0d",
+      "upstream_url": "https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/uyodjb16jngloilypsm1d3q0d"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 14,
+      "category": "tips",
+      "category_label": "技巧与观点",
+      "title": "Interpreting a recent acceleration in pretraining loss",
+      "title_cn": "METR 解读 OpenAI 预训练损失加速：2026 年初以来下降速度约为此前 7 倍",
+      "summary_cn": "METR 分析 OpenAI 公布的 13 个模型在固定保留数据集上的 log-perplexity，发现 2026 年初以来预训练损失下降速度约为 2022–2025 年的 7 倍；按当前速度，GPT-3.5 到 GPT-4.1 花了三年的损失降幅约六个半月就能走完。",
+      "why_it_matters_cn": "METR 分析 OpenAI 公开的预训练损失加速数据，梳理了几种解释路径及判断该趋势所需补充的信息。",
+      "tags": [
+        "快讯",
+        "技巧与观点"
+      ],
+      "source": "METR：Blog（网页）",
+      "url": "https://metr.org/blog/2026-11-24-interpreting-a-recent-acceleration-in-pretraining-loss/",
+      "published_at": "2026-11-23T16:00:00.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "youah0x28ti3a58sj8ku26rdy",
+      "upstream_url": "https://aihot.news/items/youah0x28ti3a58sj8ku26rdy",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/youah0x28ti3a58sj8ku26rdy"
+      },
+      "summary_origin": "live_item"
+    },
+    {
+      "rank": 15,
+      "category": "paper_research",
+      "category_label": "论文研究",
+      "title": "An LLM can facilitate illegal activities and malicious intents. @NatureComms",
+      "title_cn": "面壁智能等发布 EVIL 基准，测出 GPT-4o 等模型在违法场景下安全率不足",
+      "summary_cn": "面壁智能（OpenBMB）团队在 Nature Communications 发表 EVIL 研究，基于中美数千真实判例构建 269 个违法场景 × 50 种违法意图，测试 10 个前沿模型。多数模型安全率低于 75%，GPT-4o 在两种法律语境下均低于 60%，近半违法请求会获得协助；带特定人口身份暗示的请求更易得到协助，用现有安全对齐数据做 SFT 和 DPO 不能修复，某些设置下反而加重。",
+      "why_it_matters_cn": "原文用真实判例构建 EVIL 基准并实测 10 个前沿模型，给出了安全率数字和现有对齐方法失效的证据。",
+      "tags": [
+        "快讯",
+        "论文研究"
+      ],
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "url": "https://x.com/OpenBMB/status/2125575267217531181",
+      "published_at": "2026-11-25T13:00:09.000Z",
+      "selected": false,
+      "edition_kind": "flash",
+      "upstream_id": "ogucsvlqrdr1rvfh5nvx757cx",
+      "upstream_url": "https://aihot.news/items/ogucsvlqrdr1rvfh5nvx757cx",
+      "upstream_section": "快讯",
+      "upstream_attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ogucsvlqrdr1rvfh5nvx757cx"
+      },
+      "summary_origin": "live_item"
+    }
+  ],
+  "source_errors": [],
+  "skipped_duplicates": [],
+  "editorial_dropped_items": [],
+  "import_warnings": [
+    "已跳过缺少摘要的条目：Meta 个人智能体 Muse 登陆 Instagram"
+  ],
+  "skipped_incomplete_items": [
+    {
+      "title": "Meta 个人智能体 Muse 登陆 Instagram",
+      "url": "https://x.com/Muse/status/2125284171417637002",
+      "edition_kind": "flash",
+      "reason": "missing_summary"
+    }
+  ],
+  "upstream": {
+    "system": "AIHOT",
+    "report_url": "https://aihot.news/daily/2026-11-26",
+    "generated_at": "2026-11-26T00:00:42.145Z",
+    "window_start": "2026-11-25T00:00:00.000Z",
+    "window_end": "2026-11-26T00:00:00.000Z",
+    "lead": {
+      "title": "Anthropic 复盘 Messages API 从 Python 迁移到 Rust 的校验方法",
+      "leadParagraph": "Anthropic 介绍如何将 Messages API 从 Python 迁移到 Rust，并把生产系统本身当作校验器。该 API 流量从 2024 年初到 2026 年秋增长约 1800 倍，迁移后每请求 CPU 降低约 70%，首 token 中位时间缩短约 20%，且未停服或冻结功能开发。"
+    },
+    "attribution": {
+      "name": "AIHOT",
+      "url": "https://aihot.news/daily/2026-11-26"
+    }
+  }
+}
