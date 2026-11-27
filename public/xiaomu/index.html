@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="小幕下载页：开源免费的桌面影视播放器，支持 macOS 和 Windows。" />
+    <title>小幕 · 下载</title>
+    <style>
+      :root {
+        --bg: #0a1128;
+        --panel: #16224a;
+        --frame: #465fa0;
+        --text: #ffffff;
+        --muted: #b2c4eb;
+        --dim: #788ab4;
+        --coral: #ff6f61;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(900px 500px at 80% -10%, #26449655, transparent 60%),
+          linear-gradient(180deg, #0d1634, #090f26);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+        line-height: 1.6;
+      }
+      main { max-width: 640px; margin: 0 auto; padding: 56px 24px 40px; }
+      h1 { font-size: 40px; margin: 0 0 8px; }
+      .dek { color: var(--muted); font-size: 18px; margin: 0 0 36px; }
+      h2 {
+        font-size: 22px; margin: 36px 0 12px; padding-left: 14px;
+        border-left: 6px solid var(--coral); line-height: 1.3;
+      }
+      p { color: var(--muted); margin: 8px 0; }
+      .btn {
+        display: block; text-align: center; text-decoration: none;
+        background: var(--coral); color: #fff; font-size: 19px; font-weight: 700;
+        padding: 15px 20px; border-radius: 14px; margin: 14px 0 6px;
+      }
+      .btn:active { opacity: 0.85; }
+      .file { color: var(--dim); font-size: 14px; text-align: center; margin: 0 0 4px; }
+      .tip {
+        background: var(--panel); border: 1px solid var(--frame); border-radius: 14px;
+        padding: 14px 18px; margin-top: 28px;
+      }
+      .tip p { margin: 6px 0; font-size: 15px; }
+      footer { margin-top: 48px; color: var(--dim); font-size: 14px; text-align: center; }
+      footer a { color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>小幕</h1>
+      <p class="dek">开源免费的桌面影视播放器，macOS / Windows 都能装。导入自己的片源配置就能看。</p>
+
+      <h2>Windows 电脑</h2>
+      <a class="btn" id="btnWin" href="https://github.com/arixbit/xiaomu-desktop/releases/latest">下载 Windows 版</a>
+      <p class="file" id="fileWin">安装包：xiaomu-setup-版本号-amd64.exe，双击安装</p>
+
+      <h2>Mac 电脑 · 苹果芯片（M 系列）</h2>
+      <a class="btn" id="btnMacArm" href="https://github.com/arixbit/xiaomu-desktop/releases/latest">下载 Mac 版（苹果芯片）</a>
+      <p class="file" id="fileMacArm">安装包：xiaomu-版本号-arm64.dmg</p>
+
+      <h2>Mac 电脑 · Intel 芯片</h2>
+      <a class="btn" id="btnMacIntel" href="https://github.com/arixbit/xiaomu-desktop/releases/latest">下载 Mac 版（Intel）</a>
+      <p class="file" id="fileMacIntel">安装包：xiaomu-版本号-amd64.dmg</p>
+
+      <div class="tip">
+        <p>不知道自己的 Mac 是哪种芯片：点左上角苹果图标 → 关于本机，看「芯片」那一行，写 Apple M 开头就是苹果芯片，写 Intel 就是 Intel。</p>
+        <p>Mac 首次打开如果提示无法验证：右键点应用 → 打开；或到「系统设置 → 隐私与安全性」点「仍要打开」。</p>
+        <p>装好之后：在首页粘贴自己的配置地址，导入就能看。</p>
+      </div>
+
+      <footer>
+        开源项目 · CC BY-NC-SA 4.0 ·
+        <a href="https://github.com/arixbit/xiaomu-desktop">源码与全部版本</a>
+      </footer>
+    </main>
+    <script>
+      // Point the buttons at the latest release's direct downloads when the
+      // GitHub API is reachable; otherwise they stay on the releases page.
+      fetch("https://api.github.com/repos/arixbit/xiaomu-desktop/releases/latest")
+        .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+        .then((rel) => {
+          const assets = rel.assets || [];
+          const pick = (suffix) => assets.find((a) => a.name.endsWith(suffix));
+          const set = (btnId, fileId, asset) => {
+            if (!asset) return;
+            document.getElementById(btnId).href = asset.browser_download_url;
+            document.getElementById(fileId).textContent = "安装包：" + asset.name;
+          };
+          set("btnWin", "fileWin", pick("-amd64.exe"));
+          set("btnMacArm", "fileMacArm", pick("-arm64.dmg"));
+          set("btnMacIntel", "fileMacIntel", pick("-amd64.dmg"));
+        })
+        .catch(() => {});
+    </script>
+  </body>
+</html>
