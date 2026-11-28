@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="小幕新手指南：配置是什么、去哪找、怎么导入。导入自己的 TVBox 配置和 IPTV 列表，网盘功能用自己的账号登录。" />
+    <meta property="og:title" content="小幕新手指南 — 配置是什么、去哪找、怎么导入" />
+    <meta property="og:description" content="小幕是播放器，不带片源。导入一个配置地址就能搜片看，这里一步步说清楚。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ai.arixbit.me/xiaomu/guide/" />
+    <title>小幕新手指南 — 配置是什么、去哪找、怎么导入</title>
+    <style>
+      :root {
+        --panel: #16224a;
+        --frame: #465fa0;
+        --text: #ffffff;
+        --muted: #b2c4eb;
+        --dim: #788ab4;
+        --coral: #ff6f61;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(900px 500px at 80% -10%, #26449655, transparent 60%),
+          linear-gradient(180deg, #0d1634, #090f26);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+        line-height: 1.7;
+      }
+      main { max-width: 640px; margin: 0 auto; padding: 56px 24px 40px; }
+      h1 { font-size: 34px; margin: 0 0 8px; line-height: 1.3; }
+      .dek { color: var(--muted); font-size: 17px; margin: 0 0 12px; }
+      h2 {
+        font-size: 22px; margin: 38px 0 10px; padding-left: 14px;
+        border-left: 6px solid var(--coral); line-height: 1.3;
+      }
+      p, li { color: var(--muted); font-size: 16px; }
+      p { margin: 10px 0; }
+      ol, ul { margin: 10px 0; padding-left: 22px; }
+      li { margin: 6px 0; }
+      strong { color: var(--text); }
+      .tip {
+        background: var(--panel); border: 1px solid var(--frame); border-radius: 14px;
+        padding: 14px 18px; margin-top: 16px;
+      }
+      .tip p { margin: 6px 0; font-size: 15px; }
+      .btn {
+        display: block; text-align: center; text-decoration: none;
+        background: var(--coral); color: #fff; font-size: 18px; font-weight: 700;
+        padding: 14px 20px; border-radius: 14px; margin: 36px 0 6px;
+      }
+      footer { margin-top: 40px; color: var(--dim); font-size: 14px; text-align: center; }
+      footer a { color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>第一次用小幕？先看这里</h1>
+      <p class="dek">小幕是播放器，本身不带片源。导入一个"配置"，它才知道去哪搜片、播片。下面一步步说清楚。</p>
+
+      <h2>一、配置是什么</h2>
+      <p>配置就是一个链接地址，里面列了一堆影视站点。把它粘贴进小幕，导入成功后首页就能搜片名了。导入一次就行，之后配置会存在你电脑本地，不用每次都弄。</p>
+
+      <h2>二、配置去哪找</h2>
+      <p>小幕用的是 TVBox 生态的配置，网上公开的很多。在浏览器里搜 <strong>TVBox 配置</strong> 或 <strong>影视仓 配置</strong>，就能找到不少，影视社区和群组里也经常有人分享。</p>
+      <p>挑一个最近还在更新的，复制它的地址。一般长这样：一个以 .json 结尾的链接，或者一个仓库地址（里面有多个配置可以选）。</p>
+      <div class="tip">
+        <p>提醒一句：配置是别人维护的，质量参差不齐，有的过段时间会失效。失效了换一个重新导入就行，不影响小幕本身。</p>
+      </div>
+
+      <h2>三、怎么导入</h2>
+      <ol>
+        <li>打开小幕，在首页找到粘贴配置地址的地方</li>
+        <li>把配置地址粘贴进去，点导入</li>
+        <li>导入成功后，回到首页搜片名，选集就能播</li>
+      </ol>
+      <p>想看直播：侧边栏"直播"页可以导入 m3u 频道列表，方法一样，粘贴地址导入就行。</p>
+      <p>想换配置：到"片源"页重新导入一个新的，会替换掉旧的。同一时间只保留一个配置。</p>
+
+      <h2>四、网盘怎么用</h2>
+      <p>想看网盘里的 4K 原画，需要你自己的网盘账号。在小幕里登录你的网盘（比如夸克、阿里云盘、百度网盘），就能播你自己存的资源，画质和速度取决于你的账号。</p>
+      <p>配置里网盘只是入口，账号得是你自己的，小幕不会替你存任何账号信息到别处。</p>
+
+      <h2>五、常见问题</h2>
+      <ul>
+        <li><strong>提示"这个地址里没有站点"</strong>：你贴的可能是单个站点的接口地址，不是配置。要贴完整的配置地址。</li>
+        <li><strong>某个源打不开或很慢</strong>：到"片源"页测一下速，换个快的；实在不行换一个配置。</li>
+        <li><strong>播放卡顿</strong>：播放页里可以换源，进度会接着走，不用从头看。</li>
+        <li><strong>配置失效了</strong>：重新找一个导入即可，播放记录和追剧都在本地，不会丢。</li>
+      </ul>
+
+      <a class="btn" href="/xiaomu/">还没装？去下载小幕</a>
+
+      <footer>
+        小幕是开源播放器，不提供、不收录任何影视内容，配置和片源由使用者自己提供。
+      </footer>
+    </main>
+  </body>
+</html>
