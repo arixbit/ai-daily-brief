@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="小幕（Xiaomu）桌面影视播放器下载：开源免费，支持 macOS、Windows 与 Linux。导入自己的 TVBox 配置和 IPTV 列表，跨站搜索、弹幕、继续观看、追剧提醒。" />
+    <meta name="description" content="小幕（Xiaomu）桌面影视播放器下载：开源免费，支持 macOS 和 Windows。导入自己的 TVBox 配置和 IPTV 列表，跨站搜索、弹幕、继续观看、追剧提醒。" />
     <meta property="og:title" content="小幕 Xiaomu 下载 — 桌面影视播放器" />
-    <meta property="og:description" content="开源免费的桌面影视播放器，macOS / Windows / Linux。导入自己的 TVBox 配置和 IPTV 列表就能看。" />
+    <meta property="og:description" content="开源免费的桌面影视播放器，macOS / Windows。导入自己的 TVBox 配置和 IPTV 列表就能看。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ai.arixbit.me/xiaomu/" />
-    <title>小幕 Xiaomu 下载 — macOS / Windows / Linux 桌面影视播放器</title>
+    <title>小幕 Xiaomu 下载 — macOS / Windows 桌面影视播放器</title>
     <style>
       :root {
         --bg: #0a1128;
@@ -55,12 +55,16 @@
   <body>
     <main>
       <h1>小幕 Xiaomu</h1>
-      <p class="dek">开源免费的桌面影视播放器，macOS / Windows / Linux 都能装。导入自己的片源配置就能看。</p>
+      <p class="dek">开源免费的桌面影视播放器，macOS / Windows 都能装。导入自己的片源配置就能看。</p>
       <p>小幕是一款原生桌面播放器：导入自己的 TVBox 配置、IPTV 直播列表，或直接打开视频链接。支持跨站搜索、播放中换源、弹幕、继续观看和追剧更新提醒，播放进度都存在本地。软件本身不提供任何内容，片源由你自己提供。</p>
 
-      <h2>Windows 电脑</h2>
+      <h2>Windows 电脑 · x64</h2>
       <a class="btn" id="btnWin" href="https://github.com/arixbit/xiaomu-desktop/releases/latest">下载 Windows 版</a>
       <p class="file" id="fileWin">安装包：xiaomu-setup-版本号-amd64.exe，双击安装</p>
+
+      <h2>Windows 电脑 · ARM64</h2>
+      <a class="btn" id="btnWinArm" href="https://github.com/arixbit/xiaomu-desktop/releases/latest">下载 Windows 版（ARM64）</a>
+      <p class="file" id="fileWinArm">安装包：xiaomu-setup-版本号-arm64.exe，双击安装</p>
 
       <h2>Mac 电脑 · 苹果芯片（M 系列）</h2>
       <a class="btn" id="btnMacArm" href="https://github.com/arixbit/xiaomu-desktop/releases/latest">下载 Mac 版（苹果芯片）</a>
@@ -96,6 +100,7 @@
             document.getElementById(fileId).textContent = "安装包：" + asset.name;
           };
           set("btnWin", "fileWin", pick("-amd64.exe"));
+          set("btnWinArm", "fileWinArm", pick("-arm64.exe"));
           set("btnMacArm", "fileMacArm", pick("-arm64.dmg"));
           set("btnMacIntel", "fileMacIntel", pick("-amd64.dmg"));
         })
